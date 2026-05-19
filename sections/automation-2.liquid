@@ -2674,9 +2674,10 @@ function placeKnotBeads() {
   const cordOffset = (20 / 100) * parkerSize; // matches static_image_left/right offset=20
   const cordDist   = radiusPx + cordOffset;
   const halfImg    = 50; // ~half of 150px cord image height (tip position)
+  const knotBeadPlaceholder = `{% if product.metafields.bracelets.beads_placeholder_image.value %}url('{{ product.metafields.bracelets.beads_placeholder_image.value | image_url }}'){% else %}none{% endif %}`;
   const beads = [
-    { id: 'knot-bead-left',  angle: 250, color: 'radial-gradient(circle at 35% 30%, #555, #111)' },
-    { id: 'knot-bead-right', angle: 290, color: 'radial-gradient(circle at 35% 30%, #8B6040, #3d2010)' }
+    { id: 'knot-bead-left',  angle: 250 },
+    { id: 'knot-bead-right', angle: 290 }
   ];
   beads.forEach(bead => {
     const angleRad    = bead.angle * Math.PI / 180;
@@ -2689,7 +2690,7 @@ function placeKnotBeads() {
     const dot = document.createElement('div');
     dot.id = bead.id;
     dot.className = 'knot-bead-dropper';
-    dot.dataset.color = bead.color;
+    dot.dataset.placeholder = knotBeadPlaceholder;
     dot.style.cssText = `
       position: absolute;
       left: ${tipX}px;
@@ -2697,9 +2698,12 @@ function placeKnotBeads() {
       transform: translate(-50%, -50%);
       width: ${beadPx}px;
       height: ${beadPx}px;
-      background: ${bead.color};
+      background-image: ${knotBeadPlaceholder};
+      background-size: contain;
+      background-repeat: no-repeat;
+      background-position: center;
       border-radius: 50%;
-      box-shadow: 0 2px 6px rgba(0,0,0,0.5);
+      opacity: 0.3;
       z-index: 9;
       cursor: pointer;
       overflow: hidden;
@@ -2722,28 +2726,9 @@ function placeKnotBeads() {
   {% endif %}
 }
 
-// Sync knot bead color/image with placed bracelet beads (style-3)
+// Knot beads (style-3) are reserved for clasp only — no bead image sync
 function syncKnotBeadColors() {
-  {% if product.handle contains 'style-3' or template.suffix == 'style-3' %}
-  const firstStoneImg = document.querySelector('#parker .dropper .selected-stone:not(.selected-clasp) img');
-  document.querySelectorAll('.knot-bead-dropper:not([data-has-clasp])').forEach(dot => {
-    if (firstStoneImg) {
-      if (!dot.querySelector('img')) {
-        dot.innerHTML = '';
-        const img = document.createElement('img');
-        img.src = firstStoneImg.src;
-        img.style.cssText = 'width:100%; height:100%; object-fit:cover; display:block; border-radius:50%;';
-        dot.appendChild(img);
-        dot.style.background = 'transparent';
-      } else {
-        dot.querySelector('img').src = firstStoneImg.src;
-      }
-    } else {
-      dot.innerHTML = '';
-      dot.style.background = dot.dataset.color;
-    }
-  });
-  {% endif %}
+  // Intentionally empty: knot beads show only placeholder or clasp image (handled by placeClaspImage)
 }
 
 // ============================================
