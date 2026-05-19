@@ -2661,14 +2661,6 @@ function placeKnotBeads() {
   {% if product.handle contains 'style-3' or template.suffix == 'style-3' %}
   const parker = document.getElementById('parker');
   if (!parker) return;
-  // If clasp is selected, it renders at cord tips instead of CSS circles
-  if (selectedClasp) {
-    ['knot-bead-left', 'knot-bead-right'].forEach(id => {
-      const el = document.getElementById(id);
-      if (el) el.remove();
-    });
-    return;
-  }
   ['knot-bead-left', 'knot-bead-right'].forEach(id => {
     const el = document.getElementById(id);
     if (el) el.remove();
@@ -2691,12 +2683,13 @@ function placeKnotBeads() {
     const totalRotRad = (bead.angle + 90) * Math.PI / 180;
     const cordCX = centerX + cordDist * Math.cos(angleRad);
     const cordCY = centerY + cordDist * Math.sin(angleRad);
-    // rotate tip offset (0, -halfImg) by totalRotRad
     const tipX = cordCX + halfImg * Math.sin(totalRotRad);
     const tipY = cordCY - halfImg * Math.cos(totalRotRad) + parkerSize * 0.05;
     const beadPx = beadSettings.size;
     const dot = document.createElement('div');
     dot.id = bead.id;
+    dot.className = 'knot-bead-dropper';
+    dot.dataset.color = bead.color;
     dot.style.cssText = `
       position: absolute;
       left: ${tipX}px;
@@ -2708,8 +2701,22 @@ function placeKnotBeads() {
       border-radius: 50%;
       box-shadow: 0 2px 6px rgba(0,0,0,0.5);
       z-index: 9;
-      pointer-events: none;
+      cursor: pointer;
+      overflow: hidden;
     `;
+    // Click to toggle selection (same as regular droppers)
+    dot.addEventListener('click', () => {
+      dot.classList.toggle('selected');
+      if (dot.classList.contains('selected')) {
+        dot.style.outline = '2.5px solid #ffd700';
+        dot.style.outlineOffset = '3px';
+        dot.style.boxShadow = '0 0 0 3px rgba(255,215,0,0.5), 0 0 12px 4px rgba(255,215,0,0.45)';
+      } else {
+        dot.style.outline = '';
+        dot.style.outlineOffset = '';
+        dot.style.boxShadow = '0 2px 6px rgba(0,0,0,0.5)';
+      }
+    });
     parker.appendChild(dot);
   });
   {% endif %}
@@ -2849,6 +2856,19 @@ function resetClasp() {
     selectedClasp = null;
   }
   document.getElementById('clasp-image-container').innerHTML = '';
+  // Remove clasp from any droppers (style-3)
+  document.querySelectorAll('.dropper[data-has-clasp]').forEach(d => {
+    d.querySelector('.selected-clasp')?.remove();
+    d.removeAttribute('data-has-clasp');
+  });
+  // Remove clasp from knot beads (style-3)
+  document.querySelectorAll('.knot-bead-dropper[data-has-clasp]').forEach(d => {
+    d.innerHTML = '';
+    d.removeAttribute('data-has-clasp');
+    d.style.background = d.dataset.color;
+    d.style.outline = '';
+    d.style.boxShadow = '0 2px 6px rgba(0,0,0,0.5)';
+  });
   updateTotalPrice();
   updateClaspCosting();
 }
@@ -2884,7 +2904,53 @@ function initClaspSidebar() {
       updateClaspStockUI(card, newInventory);
       updateTotalPrice();
       updateClaspCosting();
+      {% if product.handle contains 'style-3' or template.suffix == 'style-3' %}
+      // Style-3: place clasp image in user-selected dropper/knot-bead positions
+      const selectedDroppers   = document.querySelectorAll('.dropper.selected');
+      const selectedKnotBeads  = document.querySelectorAll('.knot-bead-dropper.selected');
+      // Remove existing clasp from any previous position
+      document.querySelectorAll('.dropper[data-has-clasp]').forEach(d => {
+        d.querySelector('.selected-clasp')?.remove();
+        d.removeAttribute('data-has-clasp');
+      });
+      document.querySelectorAll('.knot-bead-dropper[data-has-clasp]').forEach(d => {
+        d.querySelector('.selected-clasp')?.remove();
+        d.removeAttribute('data-has-clasp');
+        d.style.background = d.dataset.color;
+        d.style.outline = '';
+        d.style.outlineOffset = '';
+        d.style.boxShadow = '0 2px 6px rgba(0,0,0,0.5)';
+      });
+      // Place clasp in regular selected droppers
+      selectedDroppers.forEach(pos => {
+        const existingStone = pos.querySelector('.selected-stone');
+        if (existingStone) existingStone.remove();
+        const claspDiv = document.createElement('div');
+        claspDiv.classList.add('selected-stone', 'selected-clasp');
+        const img = document.createElement('img');
+        img.src = image;
+        claspDiv.appendChild(img);
+        pos.appendChild(claspDiv);
+        pos.setAttribute('data-has-clasp', 'true');
+        pos.classList.remove('selected');
+      });
+      // Place clasp in selected knot beads (cord tips)
+      selectedKnotBeads.forEach(dot => {
+        dot.innerHTML = '';
+        const img = document.createElement('img');
+        img.src = image;
+        img.style.cssText = 'width:100%; height:100%; object-fit:cover; display:block; border-radius:50%;';
+        dot.appendChild(img);
+        dot.setAttribute('data-has-clasp', 'true');
+        dot.classList.remove('selected');
+        dot.style.background = 'transparent';
+        dot.style.outline = '';
+        dot.style.outlineOffset = '';
+        dot.style.boxShadow = '0 2px 6px rgba(0,0,0,0.5)';
+      });
+      {% else %}
       placeClaspImage();
+      {% endif %}
       const claspSidebar = document.getElementById('clasp-sidebar');
       if (claspSidebar) claspSidebar.classList.remove('active');
     });
@@ -3390,11 +3456,6 @@ document.addEventListener('DOMContentLoaded', function() {
   droppers.forEach(dropper => dropper.addEventListener('click', () => dropper.classList.toggle('selected')));
   // Initialize clasp sidebar
   initClaspSidebar();
-  // Auto-select first available clasp so it renders immediately
-  setTimeout(() => {
-    const firstClasp = document.querySelector('.clasp-card:not(.is-disabled)');
-    if (firstClasp) firstClasp.click();
-  }, 300);
   // Resize handling for static images and clasp
   let resizeTimeout;
   window.addEventListener('resize', function() {
