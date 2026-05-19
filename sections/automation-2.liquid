@@ -2722,6 +2722,30 @@ function placeKnotBeads() {
   {% endif %}
 }
 
+// Sync knot bead color/image with placed bracelet beads (style-3)
+function syncKnotBeadColors() {
+  {% if product.handle contains 'style-3' or template.suffix == 'style-3' %}
+  const firstStoneImg = document.querySelector('#parker .dropper .selected-stone:not(.selected-clasp) img');
+  document.querySelectorAll('.knot-bead-dropper:not([data-has-clasp])').forEach(dot => {
+    if (firstStoneImg) {
+      if (!dot.querySelector('img')) {
+        dot.innerHTML = '';
+        const img = document.createElement('img');
+        img.src = firstStoneImg.src;
+        img.style.cssText = 'width:100%; height:100%; object-fit:cover; display:block; border-radius:50%;';
+        dot.appendChild(img);
+        dot.style.background = 'transparent';
+      } else {
+        dot.querySelector('img').src = firstStoneImg.src;
+      }
+    } else {
+      dot.innerHTML = '';
+      dot.style.background = dot.dataset.color;
+    }
+  });
+  {% endif %}
+}
+
 // ============================================
 // CLASP FUNCTIONALITY
 // ============================================
@@ -3021,6 +3045,7 @@ function resetProductForm() {
     const selectedStone = dropper.querySelector('.selected-stone');
     if (selectedStone) selectedStone.remove();
   });
+  syncKnotBeadColors();
   const beadWarning = document.getElementById('bead-warning');
   if (beadWarning) beadWarning.style.display = 'none';
   const addToCartBtn = document.querySelector('.add-cart');
@@ -3449,6 +3474,7 @@ document.addEventListener('DOMContentLoaded', function() {
         pos.appendChild(div);
         pos.classList.remove("selected");
       });
+      syncKnotBeadColors();
     });
   });
   // Dropper click toggling
