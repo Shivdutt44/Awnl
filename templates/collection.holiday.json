@@ -1,0 +1,363 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "collection-banner": {
+      "type": "collection-banner",
+      "disabled": true,
+      "custom_css": [],
+      "settings": {
+        "color_scheme": "scheme-3",
+        "image_size": "auto",
+        "allow_transparent_header": false,
+        "reveal": true,
+        "enable_parallax": false,
+        "show_image": true,
+        "show_collection_title": false,
+        "show_collection_description": false,
+        "show_breadcrumb": true,
+        "content_width": "xs",
+        "overlay_color": "#000000",
+        "overlay_opacity": 0
+      }
+    },
+    "video_XAbeaj": {
+      "type": "video",
+      "settings": {
+        "autoplay": true,
+        "show_controls": false,
+        "video_size": "md",
+        "video": "shopify://files/videos/2025-christmas-holiday-video-landing-page-16-9.mp4",
+        "external_video_url": "",
+        "text_color": "#ffffff"
+      }
+    },
+    "rich_text_WejAxC": {
+      "type": "rich-text",
+      "blocks": {
+        "heading_dANF4e": {
+          "type": "heading",
+          "settings": {
+            "text": "新年福輪· 幸運加倍",
+            "heading_tag": "h1"
+          }
+        },
+        "richtext_rdTik4": {
+          "type": "richtext",
+          "settings": {
+            "content": "<p>本次活動已結束，感謝您的參與，敬請期待下次與您相見！</p>"
+          }
+        }
+      },
+      "block_order": [
+        "heading_dANF4e",
+        "richtext_rdTik4"
+      ],
+      "settings": {
+        "color_scheme": "scheme-938d5f74-4374-4d18-be48-317078a6b23c",
+        "separate_section_with_border": false,
+        "content_width": "sm",
+        "text_position": "center",
+        "remove_vertical_spacing": false
+      }
+    },
+    "scrolling_content_QfNxcT": {
+      "type": "scrolling-content",
+      "blocks": {
+        "image_GTxFKC": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/2025-holiday-lucky-spin-gift_10.jpg"
+          }
+        },
+        "image_XhN69x": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/2025-holiday-lucky-spin-gift_5.jpg"
+          }
+        },
+        "image_Tt4EV7": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/2025-holiday-lucky-spin-gift_1.jpg"
+          }
+        },
+        "image_aimzWL": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/2025-holiday-lucky-spin-gift_2.jpg"
+          }
+        },
+        "image_wFMtHd": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/2025-holiday-lucky-spin-gift_18.jpg"
+          }
+        },
+        "image_ABfNqn": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/2025-holiday-lucky-spin-gift_25.jpg"
+          }
+        },
+        "image_VRFcVm": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/2025-holiday-lucky-spin-gift_13.jpg"
+          }
+        },
+        "image_iVCeED": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/2025-holiday-lucky-spin-gift_2.jpg"
+          }
+        },
+        "image_Fx4Qc7": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/2025-holiday-lucky-spin-gift_16.jpg"
+          }
+        }
+      },
+      "block_order": [
+        "image_GTxFKC",
+        "image_XhN69x",
+        "image_Tt4EV7",
+        "image_aimzWL",
+        "image_wFMtHd",
+        "image_ABfNqn",
+        "image_VRFcVm",
+        "image_iVCeED",
+        "image_Fx4Qc7"
+      ],
+      "settings": {
+        "separate_section_with_border": false,
+        "scrolling_speed": 0.2,
+        "scroll_direction": "left",
+        "pause_on_hover": true,
+        "text_font": "heading",
+        "text_font_size_mobile": 60,
+        "text_font_size_desktop": 110,
+        "section_vertical_spacing_mobile": 18,
+        "section_vertical_spacing_desktop": 10,
+        "item_horizontal_spacing_mobile": 10,
+        "item_horizontal_spacing_desktop": 10,
+        "background": "#f1f1e8",
+        "text_color": ""
+      }
+    },
+    "rich_text_Eqfiff": {
+      "type": "rich-text",
+      "blocks": {
+        "heading_zmBwGQ": {
+          "type": "heading",
+          "settings": {
+            "text": "2025 開運福袋",
+            "heading_tag": "h1"
+          }
+        },
+        "richtext_cYHKpk": {
+          "type": "richtext",
+          "settings": {
+            "content": "<p>已售完</p>"
+          }
+        }
+      },
+      "block_order": [
+        "heading_zmBwGQ",
+        "richtext_cYHKpk"
+      ],
+      "disabled": true,
+      "settings": {
+        "color_scheme": "scheme-b6ff34e7-93bc-4dc6-8d81-c55b1ed3fd08",
+        "separate_section_with_border": false,
+        "content_width": "sm",
+        "text_position": "center",
+        "remove_vertical_spacing": false
+      }
+    },
+    "featured_product_qb9iiT": {
+      "type": "featured-product",
+      "blocks": {
+        "title_kWyPAK": {
+          "type": "title",
+          "settings": {
+            "heading_tag": "h2"
+          }
+        },
+        "price_egFeAP": {
+          "type": "price",
+          "settings": {
+            "show_taxes_notice": false
+          }
+        },
+        "variant_picker_4fjYwg": {
+          "type": "variant_picker",
+          "settings": {
+            "hide_sold_out_variants": false,
+            "selector_style": "block",
+            "swatch_selector_style": "swatch",
+            "variant_image_options": "",
+            "size_chart_page": ""
+          }
+        },
+        "quantity_selector_NMwwH6": {
+          "type": "quantity_selector",
+          "settings": {}
+        },
+        "buy_buttons_zJyKKa": {
+          "type": "buy_buttons",
+          "settings": {
+            "show_payment_button": true,
+            "show_gift_card_recipient": true,
+            "atc_button_background": "",
+            "atc_button_text_color": "",
+            "payment_button_background": "",
+            "payment_button_text_color": ""
+          }
+        },
+        "separator_jbmnVH": {
+          "type": "separator",
+          "settings": {}
+        },
+        "description_mRg6yQ": {
+          "type": "description",
+          "settings": {
+            "collapse_content": false
+          }
+        }
+      },
+      "block_order": [
+        "title_kWyPAK",
+        "price_egFeAP",
+        "variant_picker_4fjYwg",
+        "quantity_selector_NMwwH6",
+        "buy_buttons_zJyKKa",
+        "separator_jbmnVH",
+        "description_mRg6yQ"
+      ],
+      "disabled": true,
+      "custom_css": [
+        "h2,span {font-weight: 500;}",
+        "h5,strong {font-weight: 500;}"
+      ],
+      "settings": {
+        "color_scheme": "scheme-be32a33a-f66b-4e25-b492-3917fe1e1c0e",
+        "product": "holiday-lucky-bag",
+        "separate_section_with_border": false,
+        "container_size": "full",
+        "product_info_size": 46,
+        "center_basic_info": true,
+        "desktop_media_layout": "grid",
+        "desktop_media_grid_gap": 30,
+        "mobile_controls": "thumbnails",
+        "enable_media_autoplay": false,
+        "enable_video_looping": false,
+        "enable_image_zoom": false,
+        "max_image_zoom_level": 3,
+        "subheading": "",
+        "title": "",
+        "content": ""
+      }
+    },
+    "main": {
+      "type": "main-collection",
+      "disabled": true,
+      "settings": {
+        "color_scheme": "scheme-2",
+        "hide_product_information": false,
+        "products_per_page": 24,
+        "products_per_row_mobile": "2",
+        "products_size_desktop": "medium",
+        "show_grid_mode_selector": true,
+        "horizontal_spacing_factor": 1.5,
+        "vertical_spacing_factor": 1.5,
+        "filter_layout": "drawer",
+        "quick_links_menu": "link-list-2",
+        "show_sort_by": true,
+        "show_filters": true,
+        "show_results_count": true,
+        "show_filter_group_name": false,
+        "show_filter_values_count": true,
+        "open_filters_by_default": false
+      }
+    },
+    "media_grid_QkApUx": {
+      "type": "media-grid",
+      "blocks": {
+        "image_Fmc3nP": {
+          "type": "image",
+          "settings": {
+            "color_scheme": "",
+            "image": "shopify://shop_images/2025-holiday-edit-landing-page_1.jpg",
+            "column_count": "6",
+            "row_count": 2,
+            "title": "",
+            "heading_tag": "h4",
+            "content": "",
+            "link_text": "",
+            "link_url": "",
+            "link_style": "link",
+            "text_position": "place-self-center text-center",
+            "overlay_color": "#000000",
+            "overlay_opacity": 0
+          }
+        },
+        "image_ccg6kM": {
+          "type": "image",
+          "settings": {
+            "color_scheme": "",
+            "image": "shopify://shop_images/2025-holiday-edit-landing-page_3.jpg",
+            "column_count": "6",
+            "row_count": 2,
+            "title": "假日精選禮物",
+            "heading_tag": "h4",
+            "content": "",
+            "link_text": "解鎖9折禮物",
+            "link_url": "shopify://collections/holiday-gift-edit",
+            "link_style": "solid",
+            "text_position": "place-self-end-center text-center",
+            "overlay_color": "#000000",
+            "overlay_opacity": 0
+          }
+        }
+      },
+      "block_order": [
+        "image_Fmc3nP",
+        "image_ccg6kM"
+      ],
+      "disabled": true,
+      "custom_css": [
+        "div.prose--tight {margin-bottom: 30px;}"
+      ],
+      "settings": {
+        "color_scheme": "scheme-938d5f74-4374-4d18-be48-317078a6b23c",
+        "separate_section_with_border": false,
+        "desktop_row_height": 290,
+        "mobile_row_height": 180,
+        "section_width": "full",
+        "spacing": "none",
+        "subheading": "",
+        "title": "",
+        "content": ""
+      }
+    }
+  },
+  "order": [
+    "collection-banner",
+    "video_XAbeaj",
+    "rich_text_WejAxC",
+    "scrolling_content_QfNxcT",
+    "rich_text_Eqfiff",
+    "featured_product_qb9iiT",
+    "main",
+    "media_grid_QkApUx"
+  ]
+}

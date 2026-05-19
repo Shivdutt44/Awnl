@@ -1,0 +1,1425 @@
+div#wishlisthero-product-page-button-container,
+.Bquantity {
+  display: none !important;
+}
+
+.twocol-wrapper {
+  padding: 20px;
+  display: flex;
+  gap: 20px;
+}
+
+.stone-card.is-disabled {
+  opacity: 0.4;
+  filter: grayscale(100%);
+  pointer-events: none;
+}
+
+.stone-card.is-disabled img {
+  cursor: not-allowed;
+}
+
+.bead-stock {
+  font-size: 8px;
+  margin-top: 0px;
+}
+
+
+
+.engraving-options {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  margin-top: 5px;
+}
+
+.engraving-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border: 2px solid #ccc;
+  border-radius: 10px;
+  padding: 12px 3px;
+  cursor: pointer;
+  transition: border-color 0.3s, box-shadow 0.3s;
+  width: calc(33.333% - 13.33px);
+  /* 3 per row */
+  box-sizing: border-box;
+  text-align: center;
+  position: relative;
+}
+
+.engraving-card input[type="radio"] {
+  display: none;
+  /* hide default radio */
+}
+
+.engraving-card .engraving-preview img {
+  width: 100px;
+  height: auto;
+  object-fit: contain;
+  margin-bottom: 8px;
+}
+
+.engraving-card .engraving-name {
+  font-size: 14px;
+  font-weight: 500;
+}
+
+#Engraving_text_field {
+  display: none;
+}
+
+/* Modern browsers: highlight card border */
+.engraving-card:has(input[type="radio"]:checked) {
+  border-color: #007bff;
+  box-shadow: 0 0 10px rgba(0, 123, 255, 0.4);
+}
+
+/* Modern browsers: highlight card border */
+.engraving-card:has(input[type="radio"]:checked) {
+  border-color: #007bff;
+  box-shadow: 0 0 10px rgba(0, 123, 255, 0.4);
+}
+
+
+
+div#instruction {
+  position: absolute;
+  top: 42%;
+  text-align: center;
+  margin: 0 auto;
+  border-radius: 6px;
+  width: 55%;
+  left: 22%;
+  z-index: 1;
+}
+
+div#instruction p {
+  width: 90%;
+  margin: 0 auto;
+  background: #ddd;
+  padding: 14px 7px;
+  border-radius: 15px;
+  font-size: .8em;
+}
+
+#close-instruction {
+  position: absolute;
+  top: -12px;
+  right: -0px;
+  background: #999;
+  color: #fff;
+  border: none;
+  border-radius: 50%;
+  width: 24px;
+  height: 24px;
+  cursor: pointer;
+  font-size: 16px;
+  line-height: 15px;
+}
+
+.product-wrapper {
+  flex-basis: 100%;
+  display: flex;
+}
+
+.assets-wrapper {
+  flex-basis: 30%;
+  padding: 16px;
+  background-color: #fff;
+  border: 1px solid #e1e1e1;
+  border-radius: 8px;
+  box-shadow: 0 2px 10px #0000000d;
+}
+
+.product-wrapper .product-cont {
+  flex-basis: 40%;
+  height: 100%;
+  overflow-y: auto;
+}
+
+.product-wrapper .product-beautify {
+  flex-basis: 70%;
+  height: 100%;
+}
+
+.product-wrapper .product-cont h2 {
+  margin: 0;
+  color: #494d51;
+  text-transform: uppercase;
+  line-height: 1.4;
+  font-weight: 400;
+  font-size: 24px;
+  text-align: left;
+}
+
+.product-wrapper .product-cont .product-summery {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  padding: 10px;
+}
+
+.product-wrapper .product-cont .product-summery p {
+  margin: 0;
+  color: #494d51;
+  font-size: 12px;
+  text-align: left;
+}
+
+.product-wrapper .product-cont .stone-costing {
+  padding: 4px;
+}
+
+.product-wrapper .product-cont .stone-costing .stone-group {
+  display: flex;
+  margin-bottom: 4px;
+  border-bottom: 1px solid #bcbcbc;
+}
+
+.product-wrapper .product-cont .stone-costing .stone-group:last-child {
+  margin-bottom: 0;
+  border-bottom: none;
+}
+
+.product-wrapper .product-cont .stone-costing .stone-group div {
+  font-size: 12px;
+  color: #494d51;
+  overflow: hidden;
+  white-space: nowrap;
+  min-width: 40px;
+}
+
+.product-wrapper .product-cont .stone-costing .stone-group div:nth-child(3) {
+  text-align: right;
+}
+
+.product-wrapper .product-cont .product-action {
+  display: flex;
+  gap: 5px;
+}
+
+.product-wrapper .product-cont .product-action .quantity {
+  min-width: 40px;
+  min-height: 40px;
+  text-align: center;
+  margin: 0;
+  padding: 0;
+  border: none;
+  background: #000;
+  color: #fff;
+  font: 14px;
+}
+
+.product-wrapper .product-cont .product-action .add-cart {
+  padding: 0;
+  min-height: 40px;
+  width: 100%;
+  border: none;
+  background: #000;
+  color: #fff;
+  letter-spacing: 0.09em;
+  text-transform: uppercase;
+  font-size: 12px;
+  text-align: center;
+  line-height: normal;
+  cursor: pointer;
+}
+
+.product-wrapper .product-cont .product-action .quantity:focus {
+  outline: none;
+  box-shadow: none;
+}
+
+.assets-wrapper .button-set {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.assets-wrapper .button-set .assets-btn {
+  display: block;
+  margin: 0;
+  width: 100%;
+  height: auto;
+  border: 1px solid #e8e8e8;
+  background-color: #fff;
+  padding: 14px 15px;
+  text-align: center;
+  cursor: pointer;
+  transition: all 0.25s ease-in-out;
+  color: #111;
+  text-transform: uppercase;
+  font-weight: 700;
+  font-size: 13px;
+  letter-spacing: 0.5px;
+  border-radius: 4px;
+  position: relative;
+  overflow: hidden;
+}
+
+.assets-wrapper .button-set .assets-btn::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 0;
+  height: 2px;
+  background: #000;
+  transition: width 0.3s ease;
+}
+
+.assets-wrapper .button-set .assets-btn:hover::after,
+.assets-wrapper .button-set .assets-btn.active-btn::after {
+  width: 100%;
+}
+
+.assets-wrapper .button-set .assets-btn:focus {
+  outline: none;
+  box-shadow: none;
+}
+
+.assets-wrapper .button-set .assets-btn:hover {
+  background-color: #111;
+  color: #fff;
+  border-color: #111;
+}
+
+.assets-wrapper .assets-sidebar {
+  position: fixed;
+  display: none;
+  z-index: 99999;
+  left: 0;
+  top: 0;
+  height: 100%;
+  width: 100%;
+  max-width: 28%;
+  background-color: #fff;
+  box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.1);
+  opacity: 0;
+  transform: translateX(10px);
+  pointer-events: none;
+  /* transition: opacity 0.4s ease, transform 0.4s ease; */
+  overflow-y: auto;
+}
+
+.assets-wrapper .assets-sidebar.active {
+  opacity: 1;
+  display: block;
+  transform: translateX(0);
+  pointer-events: auto;
+}
+
+.assets-wrapper .assets-sidebar .sidebar-actions {
+  position: absolute;
+  width: 100%;
+  left: 0;
+  bottom: 0;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 5px;
+  height: 90px;
+  padding: 22px;
+}
+
+.assets-wrapper .assets-sidebar .sidebar-actions .close-btn {
+  background-color: #000;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 30px;
+  cursor: pointer;
+  color: #fff;
+  transition: all 0.3s ease-in-out;
+}
+
+.assets-wrapper .assets-sidebar .sidebar-actions .close-btn.cross:hover {
+  color: red;
+}
+
+.assets-wrapper .assets-sidebar .sidebar-actions .close-btn.check:hover {
+  color: green;
+}
+
+.assets-wrapper .assets-sidebar .sidebar-cont {
+  padding: 20px;
+  height: calc(100% - 90px);
+  overflow-y: auto;
+}
+
+.assets-wrapper .assets-sidebar .sidebar-cont .sidebar-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 10px;
+}
+
+.assets-wrapper .assets-sidebar .sidebar-header {
+  text-align: center;
+  text-transform: uppercase;
+  font-size: 16px;
+  font-weight: bold;
+  margin: 0;
+  padding: 10px 15px;
+  background-color: #dddddd;
+  color: #000;
+}
+
+.assets-wrapper .assets-sidebar .sidebar-cont .sidebar-grid .size-card,
+.assets-wrapper .assets-sidebar .sidebar-cont .sidebar-grid .gender-card,
+.assets-wrapper .assets-sidebar .sidebar-cont .sidebar-grid .lockstyle-card,
+.assets-wrapper .assets-sidebar .sidebar-cont .sidebar-grid .stringcolor-card {
+  padding: 10px 8px;
+  border: 1px solid #e0e0e0;
+  border-radius: 6px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  cursor: pointer;
+  transition: all 0.2s ease-in-out;
+  background: #fff;
+}
+
+.assets-wrapper .assets-sidebar .sidebar-cont .sidebar-grid .gender-card:hover,
+.assets-wrapper .assets-sidebar .sidebar-cont .sidebar-grid .size-card:hover,
+.assets-wrapper .assets-sidebar .sidebar-cont .sidebar-grid .lockstyle-card:hover,
+.assets-wrapper .assets-sidebar .sidebar-cont .sidebar-grid .stringcolor-card:hover {
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.12);
+  border-color: #999;
+  transform: translateY(-1px);
+}
+
+.size-card.measure {
+  display: flex;
+  justify-content: center;
+  color: black;
+  background: #f5f5f5;
+}
+
+.assets-wrapper .assets-sidebar .sidebar-cont .sidebar-grid .size-card h5,
+.assets-wrapper .assets-sidebar .sidebar-cont .sidebar-grid .gender-card h5 {
+  margin: 0;
+  font-size: 10px;
+  font-weight: bold;
+  color: black;
+  text-transform: uppercase;
+  line-height: normal;
+}
+
+.assets-wrapper .assets-sidebar .sidebar-cont .sidebar-grid .size-card p {
+  color: #7f7f7f;
+  font-size: 12px;
+  margin: 0;
+}
+
+.assets-wrapper .assets-sidebar .sidebar-cont .sidebar-grid .gender-card.active,
+.assets-wrapper .assets-sidebar .sidebar-cont .sidebar-grid .size-card.active,
+.assets-wrapper .assets-sidebar .sidebar-cont .sidebar-grid .lockstyle-card.active,
+.assets-wrapper .assets-sidebar .sidebar-cont .sidebar-grid .stringcolor-card.active {
+  border-color: #000;
+  background: #000;
+  box-shadow: 0 4px 14px rgba(0,0,0,0.25);
+}
+
+.assets-wrapper .assets-sidebar .sidebar-cont .sidebar-grid .gender-card.active h5,
+.assets-wrapper .assets-sidebar .sidebar-cont .sidebar-grid .size-card.active h5,
+.assets-wrapper .assets-sidebar .sidebar-cont .sidebar-grid .size-card.active p,
+.assets-wrapper .assets-sidebar .sidebar-cont .sidebar-grid .size-card.active div {
+  color: #fff !important;
+}
+
+.assets-wrapper .assets-sidebar .sidebar-cont .sidebar-grid .stone-card {
+  background-color: #fafafa;
+  padding: 10px 8px;
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  justify-content: center;
+  text-align: center;
+  cursor: pointer;
+  transition: all 0.2s ease-in-out;
+  border: 1.5px solid #ebebeb;
+  border-radius: 8px;
+  position: relative;
+}
+
+.assets-wrapper .assets-sidebar .sidebar-cont .sidebar-grid .stone-card:hover {
+  border-color: #111;
+  background: #fff;
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.1);
+  transform: translateY(-2px);
+}
+
+.assets-wrapper .assets-sidebar .sidebar-cont .sidebar-grid .stone-card img,
+.assets-wrapper .assets-sidebar .sidebar-cont .sidebar-grid .lockstyle-card img,
+.assets-wrapper .assets-sidebar .sidebar-cont .sidebar-grid .stringcolor-card img {
+  width: 3.7vw;
+  margin: 0 auto;
+  max-width: 10000%;
+  display: block;
+  filter: drop-shadow(0 2px 4px rgba(0,0,0,0.15));
+  transition: transform 0.2s ease;
+}
+
+.assets-wrapper .assets-sidebar .sidebar-cont .sidebar-grid .stone-card:hover img {
+  transform: scale(1.1);
+}
+
+.assets-wrapper .assets-sidebar .sidebar-cont .sidebar-grid .stone-card h6,
+.assets-wrapper .assets-sidebar .sidebar-cont .sidebar-grid .lockstyle-card h6,
+.assets-wrapper .assets-sidebar .sidebar-cont .sidebar-grid .stringcolor-card h6 {
+  margin: 0;
+  font-size: 11px;
+  font-weight: 600;
+  text-transform: uppercase;
+  display: -webkit-box;
+  -webkit-line-clamp: 1;
+  line-clamp: 1;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  letter-spacing: 0.3px;
+  color: #333;
+}
+
+.assets-wrapper .assets-sidebar .sidebar-cont .sidebar-grid .stone-card p {
+  font-size: 9px;
+  margin: 0;
+  color: #777;
+}
+
+.bead-stock {
+  font-size: 9px !important;
+  color: #4caf50 !important;
+  font-weight: 600;
+  margin-top: 2px !important;
+}
+
+.stone-card.is-disabled .bead-stock {
+  color: #e53935 !important;
+}
+
+.assets-wrapper .assets-sidebar .sidebar-cont .sidebar-grid .lockstyle-card.active h6,
+.assets-wrapper .assets-sidebar .sidebar-cont .sidebar-grid .stringcolor-card.active h6 {
+  color: #fff;
+}
+
+.product-wrapper .product-beautify #parker {
+  width: 100%;
+  max-width: 450px;
+  aspect-ratio: 1 / 1;
+  margin: 0 auto;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Circular Path Guide - Matching Reference Image */
+.product-wrapper .product-beautify #parker::before {
+  content: '';
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 78%;
+  height: 78%;
+  border: 1.5px solid #e0e0e0;
+  border-radius: 50%;
+  transform: translate(-50%, -50%);
+  pointer-events: none;
+  z-index: 0;
+}
+
+.product-wrapper .product-beautify #parker #lockEr {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 100%;
+  transform: translate(-50%, -50%);
+  z-index: 5;
+  pointer-events: none;
+}
+
+.product-wrapper .product-beautify #parker #emBrace {
+  z-index: 5;
+  pointer-events: none;
+  width: 100%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  display: block;
+}
+
+.product-wrapper .product-beautify #parker .dropper {
+  width: 12%; 
+  height: 12%;
+  position: absolute;
+  background-size: contain !important;
+  background-repeat: no-repeat;
+  background-position: center;
+  opacity: 0.3;
+  z-index: 6;
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.product-wrapper .product-beautify #parker .dropper.selected {
+  opacity: 1;
+  filter: drop-shadow(0 0 8px var(--premium-gold));
+}
+
+.product-wrapper .product-beautify #parker .dropper .selected-stone img {
+  width: 100%;
+  height: auto;
+  filter: drop-shadow(2px 4px 6px rgba(0,0,0,0.15));
+}
+
+/* Style 1 --------------------------------------------------------------- */
+
+/* Size - XXS */
+
+.product-wrapper .product-beautify.style-1 #parker.size-xxs #drop16,
+.product-wrapper .product-beautify.style-1 #parker.size-xxs #drop17,
+.product-wrapper .product-beautify.style-1 #parker.size-xxs #drop18,
+.product-wrapper .product-beautify.style-1 #parker.size-xxs #drop19,
+.product-wrapper .product-beautify.style-1 #parker.size-xxs #drop20,
+.product-wrapper .product-beautify.style-1 #parker.size-xxs #drop21,
+.product-wrapper .product-beautify.style-1 #parker.size-xxs #drop22,
+.product-wrapper .product-beautify.style-1 #parker.size-xxs #drop23,
+.product-wrapper .product-beautify.style-1 #parker.size-xxs #drop24 {
+  display: none;
+}
+
+.product-wrapper .product-beautify.style-1 #parker.size-xxs #drop1 {
+  top: 10%;
+  left: 23%;
+}
+
+.product-wrapper .product-beautify.style-1 #parker.size-xxs #drop2 {
+  top: 20%;
+  left: 11%;
+}
+
+.product-wrapper .product-beautify.style-1 #parker.size-xxs #drop3 {
+  top: 34%;
+  left: 4.5%;
+}
+
+/* Dynamic positioning will be applied via JavaScript */
+
+.product-wrapper .product-beautify.style-1 #parker.size-xxs #drop10 {
+  bottom: 22%;
+  right: 11.5%;
+}
+
+.product-wrapper .product-beautify.style-1 #parker.size-xxs #drop11 {
+  bottom: 35%;
+  right: 7%;
+  top: auto;
+}
+
+.product-wrapper .product-beautify.style-1 #parker.size-xxs #drop12 {
+  right: 7%;
+  top: 36.5%;
+}
+
+.product-wrapper .product-beautify.style-1 #parker.size-xxs #drop13 {
+  top: 23.5%;
+  right: 12.5%;
+}
+
+/* All size-specific bead positions removed in favor of dynamic JS layout */
+
+/* ===== RESPONSIVE MEDIA QUERIES ===== */
+
+@media (max-width: 1024px) {
+
+  /* ---- Overall Layout ---- */
+  .twocol-wrapper {
+    padding: 0;
+    flex-direction: column;
+    height: auto;
+    gap: 0;
+  }
+
+  .product-wrapper {
+    flex-basis: 100%;
+    order: 2;
+    flex-direction: column;
+    padding-bottom: 80px; /* Space for sticky bottom bar */
+  }
+
+  .product-wrapper .product-beautify,
+  .product-wrapper .product-cont {
+    flex-basis: 100%;
+  }
+
+  .product-wrapper .product-beautify {
+    order: 1;
+  }
+
+  .product-wrapper .product-cont {
+    order: 2;
+    text-align: left;
+    width: 100%;
+    max-width: 100%;
+    padding: 16px;
+  }
+
+  /* ---- Assets Wrapper (holds the bottom bar) ---- */
+  .assets-wrapper {
+    flex-basis: 100%;
+    order: 1;
+    padding: 0;
+    background: transparent;
+    border: none;
+    box-shadow: none;
+  }
+
+  /* ---- Sticky Bottom Navigation Bar ---- */
+  .assets-wrapper .button-set {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    gap: 6px;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    z-index: 10000;
+    padding: 8px 10px 10px;
+    background: #fff;
+    overflow-x: auto;
+    overflow-y: hidden;
+    -webkit-overflow-scrolling: touch;
+    scrollbar-width: none;
+    box-shadow: 0 -2px 20px rgba(0,0,0,0.12);
+    border-top: 1px solid #e8e8e8;
+    align-items: center;
+    /* Safe area for notched phones */
+    padding-bottom: max(10px, env(safe-area-inset-bottom));
+  }
+
+  .assets-wrapper .button-set::-webkit-scrollbar {
+    display: none;
+  }
+
+  .assets-wrapper .button-set .assets-btn {
+    flex: 1 1 0;
+    min-width: 70px;
+    padding: 8px 6px !important;
+    white-space: nowrap;
+    font-size: 10px !important;
+    font-weight: 700;
+    letter-spacing: 0.3px;
+    border-radius: 10px !important;
+    background: #f4f4f4 !important;
+    color: #111 !important;
+    border: 1.5px solid #e0e0e0 !important;
+    text-align: center;
+    transition: all 0.2s ease !important;
+  }
+
+  .assets-wrapper .button-set .assets-btn:active {
+    background: #111 !important;
+    color: #fff !important;
+    border-color: #111 !important;
+    transform: scale(0.96);
+  }
+
+  .assets-wrapper .button-set .assets-btn::after {
+    display: none;
+  }
+
+  /* ---- Bottom-Sheet Overlay Backdrop ---- */
+  .assets-wrapper .assets-sidebar::after {
+    content: '';
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0,0,0,0.45);
+    z-index: -1;
+    opacity: 0;
+    pointer-events: none;
+    transition: opacity 0.3s ease;
+  }
+
+  .assets-wrapper .assets-sidebar.active::after {
+    opacity: 1;
+    pointer-events: auto;
+  }
+
+  /* ---- Bottom-Sheet Drawer ---- */
+  .assets-wrapper .assets-sidebar {
+    position: fixed !important;
+    max-width: 100% !important;
+    width: 100% !important;
+    height: 75vh !important;
+    max-height: 90vh !important;
+    top: auto !important;
+    bottom: -100% !important;
+    left: 0 !important;
+    right: 0;
+    background: #fff;
+    border-radius: 20px 20px 0 0;
+    box-shadow: 0 -8px 50px rgba(0,0,0,0.22);
+    opacity: 0;
+    display: flex !important;
+    flex-direction: column;
+    z-index: 999999;
+    transition: bottom 0.4s cubic-bezier(0.16, 1, 0.3, 1), opacity 0.3s ease;
+    pointer-events: none;
+    transform: none !important;
+    overflow: hidden;
+  }
+
+  .assets-wrapper .assets-sidebar.active {
+    bottom: 0 !important;
+    opacity: 1;
+    pointer-events: auto;
+    transform: none !important;
+    top: auto !important;
+  }
+
+  /* ---- Drag Handle ---- */
+  .assets-wrapper .assets-sidebar::before {
+    content: '';
+    display: block;
+    width: 44px;
+    height: 5px;
+    background: #d0d0d0;
+    border-radius: 3px;
+    margin: 14px auto 6px;
+    flex-shrink: 0;
+  }
+
+  /* ---- Sidebar Header ---- */
+  .assets-wrapper .assets-sidebar .sidebar-header {
+    display: block !important;
+    font-size: 14px;
+    font-weight: 700;
+    text-align: center;
+    letter-spacing: 1.5px;
+    padding: 4px 20px 14px;
+    border-bottom: 1px solid #f0f0f0;
+    flex-shrink: 0;
+    text-transform: uppercase;
+    color: #111;
+    background: transparent;
+    margin: 0;
+  }
+
+  /* ---- Scrollable Content Area ---- */
+  .assets-wrapper .assets-sidebar .sidebar-cont {
+    flex: 1;
+    overflow-y: auto !important;
+    overflow-x: hidden;
+    padding: 16px 14px !important;
+    min-height: auto !important;
+    display: block;
+    -webkit-overflow-scrolling: touch;
+    height: auto !important;
+  }
+
+  /* ---- Option Grid: 2 columns for clarity ---- */
+  .assets-wrapper .assets-sidebar .sidebar-cont .sidebar-grid,
+  .assets-sidebar .sidebar-cont .sidebar-grid {
+    display: grid !important;
+    grid-template-columns: repeat(2, 1fr) !important;
+    grid-auto-flow: unset !important;
+    gap: 12px !important;
+    position: relative !important;
+  }
+
+  /* ---- Size / Gender / Lock / String Cards ---- */
+  .assets-wrapper .assets-sidebar .sidebar-cont .sidebar-grid .size-card,
+  .assets-wrapper .assets-sidebar .sidebar-cont .sidebar-grid .gender-card,
+  .assets-wrapper .assets-sidebar .sidebar-cont .sidebar-grid .lockstyle-card,
+  .assets-wrapper .assets-sidebar .sidebar-cont .sidebar-grid .stringcolor-card {
+    min-width: 0;
+    padding: 14px 10px;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+    border: 1.5px solid #e0e0e0;
+    background: #fff;
+  }
+
+  .assets-wrapper .assets-sidebar .sidebar-cont .sidebar-grid .size-card.active,
+  .assets-wrapper .assets-sidebar .sidebar-cont .sidebar-grid .lockstyle-card.active,
+  .assets-wrapper .assets-sidebar .sidebar-cont .sidebar-grid .stringcolor-card.active {
+    border-color: #111 !important;
+    background: #111 !important;
+  }
+
+  /* ---- Size Card Text ---- */
+  .assets-wrapper .assets-sidebar .sidebar-cont .sidebar-grid .size-card h5 {
+    font-size: 14px !important;
+    margin-bottom: 4px;
+  }
+
+  .assets-wrapper .assets-sidebar .sidebar-cont .sidebar-grid .size-card div {
+    font-size: 10px !important;
+    color: #888;
+    line-height: 1.3;
+  }
+
+  .assets-wrapper .assets-sidebar .sidebar-cont .sidebar-grid .size-card.active div {
+    color: #ccc !important;
+  }
+
+  /* ---- Bead / Stone Cards: 3-column for beads ---- */
+  .assets-wrapper #beads-sidebar .sidebar-cont .sidebar-grid,
+  .assets-wrapper #ebeads-sidebar .sidebar-cont .sidebar-grid {
+    grid-template-columns: repeat(3, 1fr) !important;
+    gap: 10px !important;
+  }
+
+  .assets-wrapper .assets-sidebar .sidebar-cont .sidebar-grid .stone-card {
+    min-width: 0;
+    padding: 10px 8px;
+    border-radius: 10px;
+  }
+
+  /* ---- Images inside sidebar cards ---- */
+  .assets-wrapper .assets-sidebar .sidebar-cont .sidebar-grid .stone-card img {
+    width: 100%;
+    max-width: 56px;
+    margin: 0 auto 4px;
+  }
+
+  .assets-wrapper .assets-sidebar .sidebar-cont .sidebar-grid .lockstyle-card img,
+  .assets-wrapper .assets-sidebar .sidebar-cont .sidebar-grid .stringcolor-card img {
+    width: 100%;
+    max-width: 60px;
+    margin: 0 auto 6px;
+  }
+
+  /* ---- Text in cards ---- */
+  .assets-wrapper .assets-sidebar .sidebar-cont .sidebar-grid .stone-card h6 {
+    font-size: 11px !important;
+    margin-bottom: 2px;
+  }
+
+  .assets-wrapper .assets-sidebar .sidebar-cont .sidebar-grid .lockstyle-card h6,
+  .assets-wrapper .assets-sidebar .sidebar-cont .sidebar-grid .stringcolor-card h6 {
+    font-size: 11px !important;
+  }
+
+  .assets-wrapper .assets-sidebar .sidebar-cont .sidebar-grid .stone-card p {
+    font-size: 9px !important;
+    color: #888;
+  }
+
+  .assets-wrapper .assets-sidebar .sidebar-cont .sidebar-grid .gender-card h5 {
+    font-size: 13px !important;
+    padding: 0 !important;
+  }
+
+  /* ---- Bead Stock Label ---- */
+  .bead-stock {
+    font-size: 9px !important;
+    font-weight: 600;
+  }
+
+  /* ---- Size Guide Card (measure) ---- */
+  .size-card.measure {
+    grid-column: 1 / -1; /* full width */
+    border: 1.5px dashed #ccc;
+    background: #fafafa;
+    padding: 12px;
+  }
+
+  .size-card.measure h5 {
+    font-size: 12px !important;
+    color: #555 !important;
+    text-decoration: underline;
+  }
+
+  /* ---- Bottom Action Row (Cancel / Confirm) ---- */
+  .assets-wrapper .assets-sidebar .sidebar-actions {
+    position: relative !important;
+    width: 100% !important;
+    left: auto !important;
+    right: auto !important;
+    bottom: auto !important;
+    height: auto !important;
+    padding: 12px 16px max(14px, env(safe-area-inset-bottom)) !important;
+    grid-template-columns: 1fr 2fr !important;
+    gap: 10px;
+    background: #fff;
+    border-top: 1px solid #f0f0f0;
+    flex-shrink: 0;
+  }
+
+  .assets-wrapper .assets-sidebar .sidebar-actions .close-btn {
+    border-radius: 10px !important;
+    font-size: 20px;
+    height: 50px;
+    transition: all 0.2s ease;
+  }
+
+  .assets-wrapper .assets-sidebar .sidebar-actions .close-btn.cross {
+    background-color: #f4f4f4 !important;
+    color: #555 !important;
+    font-size: 18px;
+  }
+
+  .assets-wrapper .assets-sidebar .sidebar-actions .close-btn.cross:hover {
+    background-color: #ffe0e0 !important;
+    color: #e53935 !important;
+  }
+
+  .assets-wrapper .assets-sidebar .sidebar-actions .close-btn.check {
+    display: flex;
+    background-color: #111 !important;
+    color: #fff !important;
+    font-size: 20px;
+    font-weight: bold;
+  }
+
+  .assets-sidebar center {
+    display: none;
+  }
+
+  /* ---- Product Summary on Mobile ---- */
+  .product-wrapper .product-cont .product-summery p {
+    font-size: 12px;
+  }
+
+  .product-wrapper .product-cont .stone-costing {
+    margin: 0;
+    text-align: left;
+  }
+
+  .product-wrapper .product-cont h2 {
+    font-size: 1.2rem;
+    text-align: left;
+  }
+
+}
+
+/* ---- Tablet landscape ---- */
+@media (max-width: 991px) {
+  .product-wrapper .product-beautify #parker {
+    max-width: 95vw;
+  }
+
+  .size-card div {
+    font-size: 9px;
+  }
+}
+
+/* ---- Phone ---- */
+@media (max-width: 767px) {
+  .product-wrapper .product-beautify #parker .dropper {
+    width: 12vw;
+    height: 12vw;
+    background-size: 12vw 12vw !important;
+  }
+
+  .product-wrapper .product-beautify.style-1 #parker.size-xl .dropper {
+    width: 10vw;
+    height: 10vw;
+    background-size: 10vw 10vw !important;
+  }
+
+  .product-wrapper .product-beautify.style-1 #parker.size-xxl .dropper {
+    width: 10vw;
+    height: 10vw;
+    background-size: 10vw 10vw !important;
+  }
+
+  .product-wrapper .product-beautify.style-1 #parker.size-xxxl .dropper {
+    width: 10vw;
+    height: 10vw;
+    background-size: 10vw 10vw !important;
+  }
+
+  .product-wrapper .product-beautify.style-1 #parker.size-4xl .dropper {
+    width: 10.2vw;
+    height: 10.2vw;
+    background-size: 10.2vw 10.2vw !important;
+  }
+
+  .assets-wrapper .assets-sidebar .sidebar-cont .sidebar-grid .size-card p {
+    font-size: 8px;
+  }
+}
+
+/* ---- Small phone ---- */
+@media (max-width: 480px) {
+  /* Bead cards: 3 columns on small screens */
+  .assets-wrapper #beads-sidebar .sidebar-cont .sidebar-grid,
+  .assets-wrapper #ebeads-sidebar .sidebar-cont .sidebar-grid {
+    grid-template-columns: repeat(3, 1fr) !important;
+  }
+
+  /* Size cards: 2 per row is still fine */
+  .assets-wrapper #bracelet-size-sidebar .sidebar-cont .sidebar-grid {
+    grid-template-columns: repeat(2, 1fr) !important;
+  }
+
+  .assets-wrapper .button-set .assets-btn {
+    font-size: 9px !important;
+    min-width: 60px;
+  }
+}
+
+
+
+
+
+/* Selected dropper highlight ring - removed per user request */
+.product-wrapper .product-beautify #parker .dropper.selected {
+  opacity: 1 !important;
+  outline: none;
+}
+
+/* Selected stone container — must NOT overflow to avoid bead overlap */
+.product-wrapper .product-beautify #parker .dropper .selected-stone {
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  border-radius: 50%;
+}
+
+/* Bead image — fills the dropper exactly, 3D look via shadows/filters only */
+.product-wrapper .product-beautify #parker .dropper .selected-stone img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+  border-radius: 50%;
+  filter:
+    drop-shadow(-2px -3px 4px rgba(255,255,255,0.25))
+    drop-shadow(2px 4px 8px rgba(0,0,0,0.55))
+    contrast(1.1)
+    brightness(1.05);
+  transition: filter 0.25s ease;
+}
+
+/* Subtle hover: deepen the shadow for a "pressed" effect */
+.product-wrapper .product-beautify #parker .dropper:hover .selected-stone img {
+  filter:
+    drop-shadow(-2px -3px 4px rgba(255,255,255,0.3))
+    drop-shadow(3px 6px 12px rgba(0,0,0,0.65))
+    contrast(1.15)
+    brightness(1.08);
+}
+
+.product-wrapper .product-beautify #parker .dropper:has(.selected-stone) {
+  background-image: none !important;
+  opacity: 1;
+}
+
+/* Main Product Container */
+.product-cont {
+  margin: 0 auto;
+  padding: 20px;
+  border: 1px solid #efefef;
+  border-radius: 10px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.05);
+  background: #fff;
+}
+
+.product-cont h2 {
+  font-size: 1.4rem;
+  color: #111;
+  margin-bottom: 1.2rem;
+  padding-bottom: 0.8rem;
+  border-bottom: 1px solid #f0f0f0;
+  letter-spacing: 0.5px;
+  font-weight: 500;
+}
+
+/* Product Summary Section */
+.product-summery {
+  background: #fafafa;
+  padding: 12px 14px;
+  border-radius: 8px;
+  margin-bottom: 12px;
+  border: 1px solid #f2f2f2;
+}
+
+.product-summery p {
+  margin: 0;
+  display: flex;
+  justify-content: space-between;
+  padding: 6px 0;
+  border-bottom: 1px dashed #ebebeb;
+  align-items: center;
+  color: #555;
+  font-size: 12px;
+  gap: 10px;
+}
+
+.product-summery p:last-child {
+  border-bottom: none;
+  padding-bottom: 0;
+}
+
+.product-summery b {
+  font-weight: 600;
+  color: #111;
+}
+
+/* Price Display */
+.price span,
+.price-count {
+  color: #111;
+  font-weight: 700;
+  font-size: 1.1em;
+}
+
+/* Product Actions */
+.product-action {
+  display: flex;
+  gap: 10px;
+  margin-top: 16px;
+}
+
+.quantity {
+  width: 70px;
+  padding: 0.75rem;
+  border: 1px solid #ddd;
+  border-radius: 6px;
+  text-align: center;
+  font-size: 1rem;
+  background: #fafafa;
+}
+
+.add-cart {
+  flex: 1;
+  background: #111;
+  color: white;
+  border: none;
+  padding: 0.75rem;
+  border-radius: 6px;
+  font-size: 13px;
+  font-weight: 700;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  cursor: pointer;
+  transition: all 0.25s ease;
+}
+
+.add-cart:hover:not(:disabled) {
+  background: #333;
+  transform: translateY(-1px);
+  box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+}
+
+.add-cart:disabled {
+  opacity: 0.45;
+  cursor: not-allowed;
+}
+
+/* Wishlist Button */
+.wishlisthero-product-page-button-container {
+  margin-top: 1rem;
+}
+
+.wishlisthero-product-page-button-container button {
+  width: 100%;
+  background: #f8f8f8 !important;
+  border: 1px solid #ddd !important;
+  color: #333 !important;
+  padding: 0.8rem !important;
+  border-radius: 4px !important;
+  font-size: 1rem !important;
+  transition: all 0.2s ease !important;
+}
+
+.wishlisthero-product-page-button-container button:hover {
+  background: #f0f0f0 !important;
+  border-color: #ccc !important;
+}
+
+.wishlisthero-product-page-button-container svg {
+  color: #d32f2f !important;
+}
+
+/* Responsive Adjustments */
+@media (max-width: 480px) {
+  .product-cont {
+    padding: 1rem;
+  }
+
+  .product-action {
+    flex-direction: column;
+  }
+
+  .quantity {
+    width: 100%;
+  }
+}
+
+/* Stone Costing Section */
+.stone-costing {
+  margin: 0.5rem 0;
+  border-radius: 6px;
+  overflow: hidden;
+}
+
+.stone-group {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.5rem 1rem;
+  background: #fff;
+  border-bottom: 1px solid #f0f0f0;
+  transition: background 0.2s ease;
+}
+
+.stone-group:last-child {
+  border-bottom: none;
+}
+
+.stone-group:hover {
+  background: #f9f9f9;
+}
+
+.stone-title {
+  font-weight: 500;
+  color: #333;
+}
+
+.stone-price {
+  font-weight: 600;
+  color: #d32f2f;
+}
+
+/* Responsive adjustments */
+@media (max-width: 480px) {
+  .stone-group {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 0.5rem;
+    padding: 0.8rem 1rem;
+  }
+
+  .stone-price {
+    align-self: flex-end;
+    font-size: 0.9rem;
+  }
+}
+
+.radio-form {
+  display: flex;
+  gap: 8px;
+  margin: 2px 0;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  width: 80%;
+}
+
+.radio-form label {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  padding: 5px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: all .2s ease;
+  white-space: nowrap
+}
+
+.radio-form label:hover {
+  border-color: #888;
+  background: #f8f8f8
+}
+
+.radio-form input[type=radio] {
+  margin: 0;
+  width: 14px;
+  height: 14px;
+  accent-color: #000
+}
+
+@media(max-width:480px) {
+  .radio-form {
+    gap: 6px
+  }
+
+  .radio-form label {
+    padding: 4px 8px;
+    font-size: 10px
+  }
+
+  .radio-form input[type=radio] {
+    width: 12px;
+    height: 12px
+  }
+}
+
+input#engraving-text {
+  border: 1px solid #ddd;
+  border-radius: 2px;
+  width: 100%;
+  padding: 2px;
+}
+
+/* accordion css */
+
+.accordion {
+  max-width: 100%;
+  margin: 15px auto;
+  border-top: 1px solid #000;
+}
+
+.accordion-item {
+  border-bottom: 1px solid #000;
+}
+
+.accordion-header {
+  display: flex;
+  align-items: center;
+  padding: 12px 12px;
+  cursor: pointer;
+  justify-content: space-between;
+}
+
+.accordion-header .symbol {
+  margin-right: 20px;
+  font-weight: bold;
+  transition: transform 0.2s ease;
+}
+
+.accordion-header .title {
+  flex: 1;
+}
+
+.accordion-content {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.3s ease;
+  padding: 0 20px;
+}
+
+.accordion-content p {
+  margin: 0px 0px 10px 0px;
+  color: #333;
+}
+
+.accordion-item.active .accordion-content {
+  max-height: 200px;
+  /* Adjust as needed */
+}
+
+.accordion-item.active .symbol {
+  transform: rotate(45deg);
+  /* Turns + into × (like open) */
+}
+
+
+/* media query */

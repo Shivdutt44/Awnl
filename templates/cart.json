@@ -1,0 +1,68 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "main": {
+      "type": "main-cart",
+      "custom_css": [],
+      "settings": {
+        "color_scheme": "scheme-1b02ad27-67f6-4363-902b-7afc4c7eb905",
+        "show_cart_note": true,
+        "show_order_weight": false,
+        "show_shipping_text": true,
+        "show_accelerated_buttons": false,
+        "show_shipping_estimator": false
+      }
+    },
+    "1738985280cef90f1e": {
+      "type": "apps",
+      "blocks": {
+        "essential_upsell_app_block_Xf3ixV": {
+          "type": "shopify://apps/essential-upsell/blocks/app-block/50627fd9-24fd-4250-8614-accc12826d80",
+          "settings": {}
+        }
+      },
+      "block_order": [
+        "essential_upsell_app_block_Xf3ixV"
+      ],
+      "custom_css": [
+        "@media (min-width: 769px) {.shopify-app-block {max-width: 1000px; margin-left: auto; margin-right: auto; }}"
+      ],
+      "settings": {
+        "color_scheme": "scheme-1b02ad27-67f6-4363-902b-7afc4c7eb905",
+        "separate_section_with_border": false,
+        "remove_vertical_spacing": true,
+        "remove_horizontal_spacing": false
+      }
+    },
+    "recently-viewed-products": {
+      "type": "recently-viewed-products",
+      "settings": {
+        "separate_section_with_border": true,
+        "color_scheme": "scheme-1b02ad27-67f6-4363-902b-7afc4c7eb905",
+        "hide_product_information": false,
+        "stack_products": false,
+        "products_count": 14,
+        "products_per_row_mobile": "2",
+        "products_per_row_desktop": 5,
+        "horizontal_spacing_factor": 1,
+        "vertical_spacing_factor": 0.2,
+        "subheading": "",
+        "title": "歷史瀏覽商品",
+        "content": ""
+      }
+    }
+  },
+  "order": [
+    "main",
+    "1738985280cef90f1e",
+    "recently-viewed-products"
+  ]
+}

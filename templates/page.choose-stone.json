@@ -1,0 +1,145 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "image_with_text_overlay_f8b7b3": {
+      "type": "image-with-text-overlay",
+      "blocks": {
+        "heading_cWNeJw": {
+          "type": "heading",
+          "settings": {
+            "text": "能量晶石選擇指引",
+            "heading_tag": "h1"
+          }
+        },
+        "richtext_qhVwUg": {
+          "type": "richtext",
+          "settings": {
+            "content": "<p>我們的身體與周圍的能量時刻互動。某些天然石和能量石所蘊含的能量，能對特定磁場產生調和或改善的作用。選擇適合自己的天然石並長時間佩戴，可以調整身體的磁場平衡，讓積極、正向的能量在身心中回響。</p>"
+          }
+        }
+      },
+      "block_order": [
+        "heading_cWNeJw",
+        "richtext_qhVwUg"
+      ],
+      "settings": {
+        "color_scheme": "",
+        "image_size": "sm",
+        "image": "shopify://shop_images/gemstone-jewelry-collection-banner-pc.jpg",
+        "allow_transparent_header": false,
+        "reveal_on_scroll": true,
+        "remove_vertical_spacing": true,
+        "content_width": "xs",
+        "mobile_text_position": "place-self-center text-center",
+        "desktop_text_position": "sm:place-self-center sm:text-center",
+        "overlay_color": "#000000",
+        "overlay_opacity": 39
+      }
+    },
+    "custom_liquid_a8RjDU": {
+      "type": "custom-liquid",
+      "custom_css": [
+        "div.text-center {max-width: 800px; margin-left: auto; margin-right: auto; margin-top: -30px;}"
+      ],
+      "settings": {
+        "color_scheme": "scheme-2",
+        "separate_section_with_border": false,
+        "remove_vertical_spacing": false,
+        "remove_horizontal_spacing": false,
+        "liquid": "<style>\n  .custom-menu {\n    display: flex;\n    flex-wrap: wrap;\n    justify-content: center;\n    padding: 0;\n    margin-left:auto;\n    margin-right:auto;\n    list-style: none;\n    max-width:800px;\n  }\n  .custom-menu li {\n    flex-basis: 25%;\n    margin-bottom: 5px;\n  }\n  .custom-menu a {\n    display: block;\n    text-align: center;\n    text-decoration: none;\n    color: #1C1C1C; \n    padding: 10px;\n    margin: 5px;\n    background-color: #e5e6eb;\n    border-radius: 5px;\n    transition: all 0.3s ease;\n    font-size: 16px;\n  }\n .custom-menu-p{\nmargin-bottom:20px;}\n\n  .custom-menu a {\n    color: #9A9A9A; \n  }\n  .custom-menu a:hover {\n    color: #1C1C1C;\n    background-color: \t#d2d4dc;\n    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);\n    font-weight:bold;\n  }\n  @media (max-width: 768px) {\n    .custom-menu li {\n      flex-basis: 50%;\n    }\n    .custom-menu a { \n      padding: 10px;\n      margin: 2px; \n      border-radius: 5px;\n      font-size: 12px;\n    }\n  }\n   h2{\nmargin-bottom:30px;\nfont-size:25px;}\n@media (max-width: 768px){ h2{\nmargin-bottom:18px;\nfont-size:18px;}}\n\n</style>\n<h2>如何選擇能量晶石</h2>\n<p class=\"custom-menu-p\">對於第一次使用天然石的人來說，可能會對天然石的功效與含義，以及如何選擇天然石珠寶感到困惑。希望以下的建議能幫助您找到最適合的天然石珠寶。</p>\n<ul class=\"custom-menu\">\n  <li><a href=\"https://www.awnl.tw/pages/choose-stone-by-name\" class=\"link-1\">依名稱搜尋\n</a></li>\n  <li><a href=\"https://www.awnl.tw/pages/choose-stone-by-birth\" class=\"link-2\">依誕生石搜尋</a></li>\n  <li><a href=\"https://www.awnl.tw/pages/choose-stone-by-zodiac\" class=\"link-3\">依星座搜尋</a></li>\n  <li><a href=\"https://www.awnl.tw/pages/choose-stone-by-wish\" class=\"link-4\">依願望搜尋</a></li>\n  <li><a href=\"https://www.awnl.tw/pages/choose-stone-by-number\" class=\"link-5\">依生命靈數搜尋</a></li>\n  <li><a href=\"https://www.awnl.tw/pages/choose-stone-by-elements\" class=\"link-6\">依五行搜尋</a></li>\n  <li><a href=\"https://www.awnl.tw/pages/choose-stone-by-chakra\" class=\"link-7\">依脈輪搜尋</a></li>\n  <li><a href=\"https://www.awnl.tw/pages/choose-stone-by-color\" class=\"link-8\">依顏色搜尋</a></li>\n</ul>",
+        "text_alignment": "center"
+      }
+    },
+    "blog_posts_AEBrdR": {
+      "type": "blog-posts",
+      "custom_css": [
+        ".blog-post-card img {width: 100%; height: auto; aspect-ratio: 1.6; object-fit: cover; object-position: center; border-radius: 10px;}"
+      ],
+      "settings": {
+        "color_scheme": "scheme-2",
+        "separate_section_with_border": false,
+        "blog": "the-journal",
+        "posts_count": 9,
+        "stack_on_mobile": false,
+        "show_category": true,
+        "show_excerpt": false,
+        "show_read_more": true,
+        "subheading": "",
+        "title": "AWNL部落格",
+        "content": "<p>提供穿搭靈感、晶石能量解析、珠寶推薦，以及品牌合作等多元內容。</p>",
+        "button_link": "shopify://blogs/the-journal",
+        "button_text": "查看更多"
+      }
+    },
+    "image_with_text_overlay_BbJwVm": {
+      "type": "image-with-text-overlay",
+      "blocks": {
+        "heading_aaJT9W": {
+          "type": "heading",
+          "settings": {
+            "text": "為初學者精選的天然石",
+            "heading_tag": "h2"
+          }
+        },
+        "richtext_RenrjK": {
+          "type": "richtext",
+          "settings": {
+            "content": "<p>在繁多的天然石珠寶中，我們精心挑選了幾款最適合初學者的天然石，這些石材不僅易於搭配，且能確保您在日常佩戴中不易出錯。每一顆天然石都蘊含平衡且溫和的療癒能量，能有效幫助您應對生活中的各種需求。</p><p>無論是單獨佩戴，還是與其他天然石搭配使用，都能為您提供量身打造的能量體驗，讓您無憂享受每一天的美好時光。</p>"
+          }
+        },
+        "button_W4QnVf": {
+          "type": "button",
+          "settings": {
+            "style": "solid",
+            "text": "適合初學者的天然石",
+            "url": "shopify://pages/list-stone-collections",
+            "background": "",
+            "text_color": ""
+          }
+        }
+      },
+      "block_order": [
+        "heading_aaJT9W",
+        "richtext_RenrjK",
+        "button_W4QnVf"
+      ],
+      "settings": {
+        "color_scheme": "",
+        "image_size": "lg",
+        "image": "shopify://shop_images/5_-_Energetic_Layers__Crystals_and_Auras.jpg",
+        "allow_transparent_header": false,
+        "reveal_on_scroll": true,
+        "remove_vertical_spacing": true,
+        "content_width": "xs",
+        "mobile_text_position": "place-self-center text-center",
+        "desktop_text_position": "sm:place-self-center sm:text-center",
+        "overlay_color": "#000000",
+        "overlay_opacity": 39
+      }
+    },
+    "main": {
+      "type": "main-page",
+      "disabled": true,
+      "settings": {
+        "color_scheme": "",
+        "show_title": true,
+        "page_width": "xs"
+      }
+    }
+  },
+  "order": [
+    "image_with_text_overlay_f8b7b3",
+    "custom_liquid_a8RjDU",
+    "blog_posts_AEBrdR",
+    "image_with_text_overlay_BbJwVm",
+    "main"
+  ]
+}

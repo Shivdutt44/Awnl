@@ -1,0 +1,542 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "collection-banner": {
+      "type": "collection-banner",
+      "disabled": true,
+      "settings": {
+        "color_scheme": "",
+        "image": "{{ collection.metafields.my_fields.collection_banner_pc.value }}",
+        "mobile_image": "{{ collection.metafields.my_fields.collection_banner_mb.value }}",
+        "image_size": "auto",
+        "allow_transparent_header": false,
+        "reveal": true,
+        "enable_parallax": false,
+        "show_image": true,
+        "show_collection_title": true,
+        "show_collection_description": true,
+        "show_breadcrumb": true,
+        "content_width": "xs",
+        "overlay_color": "#1c1c1c",
+        "overlay_opacity": 20
+      }
+    },
+    "main": {
+      "type": "main-collection",
+      "disabled": true,
+      "settings": {
+        "color_scheme": "",
+        "hide_product_information": false,
+        "products_per_page": 12,
+        "products_per_row_mobile": "2",
+        "products_size_desktop": "medium",
+        "show_grid_mode_selector": true,
+        "horizontal_spacing_factor": 1,
+        "vertical_spacing_factor": 1,
+        "filter_layout": "drawer",
+        "quick_links_menu": "main-menu",
+        "show_sort_by": true,
+        "show_filters": true,
+        "show_results_count": true,
+        "show_filter_group_name": false,
+        "show_filter_values_count": true,
+        "open_filters_by_default": false
+      }
+    },
+    "1d43740f-5ced-4f09-95d2-793ed84267ad": {
+      "type": "image-with-text-overlay",
+      "settings": {
+        "color_scheme": "",
+        "image_size": "md",
+        "image": "shopify://shop_images/collection-jewelry-poseidons-whispers-pc.jpg",
+        "mobile_image": "shopify://shop_images/collection-jewelry-poseidons-whispers-mb.jpg",
+        "allow_transparent_header": false,
+        "reveal_on_scroll": true,
+        "remove_vertical_spacing": true,
+        "content_width": "md",
+        "mobile_text_position": "place-self-center text-center",
+        "desktop_text_position": "sm:place-self-center sm:text-center",
+        "overlay_color": "#000000",
+        "overlay_opacity": 0
+      }
+    },
+    "cd64a43e-af3c-448f-b1c0-02c61ae03daf": {
+      "type": "rich-text",
+      "blocks": {
+        "template--16208201580724__cd64a43e-af3c-448f-b1c0-02c61ae03daf-subheading-1": {
+          "type": "subheading",
+          "settings": {
+            "text": "<strong>探索海洋的神秘力量</strong>"
+          }
+        },
+        "template--16208201580724__cd64a43e-af3c-448f-b1c0-02c61ae03daf-heading-1": {
+          "type": "heading",
+          "settings": {
+            "text": "<strong>波塞頓：深海之傲</strong>",
+            "heading_tag": "h1"
+          }
+        },
+        "template--16208201580724__cd64a43e-af3c-448f-b1c0-02c61ae03daf-richtext-1": {
+          "type": "richtext",
+          "settings": {
+            "content": "<p>希臘神話中的波塞頓，這位深海的統治者，以其不朽的傳奇為這系列注入靈魂。在純熟工藝的淬煉下，海洋的元素被賦予全新的生命。我們將這份來自深海的神聖力量，轉化為觸手可及的奢華臻品。</p><p>讓這些飾品成為你的守護，如同波塞頓的祝福，將浩瀚海洋的能量，注入你的日常。</p>"
+          }
+        }
+      },
+      "block_order": [
+        "template--16208201580724__cd64a43e-af3c-448f-b1c0-02c61ae03daf-subheading-1",
+        "template--16208201580724__cd64a43e-af3c-448f-b1c0-02c61ae03daf-heading-1",
+        "template--16208201580724__cd64a43e-af3c-448f-b1c0-02c61ae03daf-richtext-1"
+      ],
+      "settings": {
+        "color_scheme": "scheme-2",
+        "separate_section_with_border": false,
+        "content_width": "sm",
+        "text_position": "center",
+        "remove_vertical_spacing": false
+      }
+    },
+    "multiple_media_with_text_YqzGVY": {
+      "type": "multiple-media-with-text",
+      "blocks": {
+        "image_i4XTJW": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/mens-poseidon-trident-necklace-with-sodalite-necklaces-awnl-taiwan-2.jpg",
+            "rotation": 0
+          }
+        },
+        "image_WyBWV8": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/mens-poseidon-trident-necklace-with-sodalite-necklaces-awnl-taiwan-5.jpg",
+            "rotation": 0
+          }
+        }
+      },
+      "block_order": [
+        "image_i4XTJW",
+        "image_WyBWV8"
+      ],
+      "settings": {
+        "color_scheme": "scheme-2",
+        "reveal_on_scroll": false,
+        "separate_section_with_border": false,
+        "media_position_desktop": "before_text",
+        "media_position_mobile": "before_text",
+        "media_layout": "overlap",
+        "media_alignment": "center",
+        "media_alignment_offset": 0,
+        "media_mobile_alignment_offset": 0,
+        "text_alignment": "center",
+        "subheading": "",
+        "title": "藍紋石 波塞頓 男士項鍊",
+        "content": "<p>雙面造型設計，讓您可以隨意翻轉佩戴，蠟繩 & 鋼鏈 兩款鏈條輕鬆搭配切換不同風格。</p><h5><strong>$7,560  NTD 起</strong></h5>",
+        "button_1_text": "立即購買",
+        "button_1_link": "shopify://products/mens-poseidon-trident-necklace-with-sodalite",
+        "button_1_style": "solid",
+        "button_2_text": "",
+        "button_2_link": "",
+        "button_2_style": "solid"
+      }
+    },
+    "slideshow_bpLjyp": {
+      "type": "slideshow",
+      "blocks": {
+        "image_dhWVAk": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/2025-valentine-day-homepage-hero-banner-pc_17b2811e-c20a-4649-8e0b-50a3ca144688.jpg",
+            "subheading": "",
+            "title": "",
+            "mobile_text_position": "place-self-center text-center",
+            "desktop_text_position": "sm:place-self-center sm:text-center",
+            "content_max_width": 780,
+            "button_1_text": "",
+            "button_1_link": "",
+            "button_1_style": "solid",
+            "button_1_background": "#ffffff",
+            "button_1_text_color": "#000000",
+            "button_2_text": "",
+            "button_2_link": "",
+            "button_2_style": "outline",
+            "button_2_background": "#ffffff",
+            "button_2_text_color": "#000000",
+            "background": "",
+            "background_opacity": 50,
+            "text_color": "#ffffff",
+            "border_color": "",
+            "gradient_overlay": ""
+          }
+        }
+      },
+      "block_order": [
+        "image_dhWVAk"
+      ],
+      "settings": {
+        "allow_transparent_header": false,
+        "show_next_section_button": false,
+        "media_size": "auto",
+        "show_initial_transition": false,
+        "autoplay": true,
+        "autoplay_pause_on_video": true,
+        "cycle_speed": 5,
+        "background": "#000000",
+        "controls_color": "#ffffff"
+      }
+    },
+    "multiple_media_with_text_fDQNzb": {
+      "type": "multiple-media-with-text",
+      "blocks": {
+        "image_fa84KW": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/poseidon_trident_sodalite_necklace_mini_1.jpg",
+            "rotation": 0
+          }
+        },
+        "image_RXJwwP": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/womens-poseidon-trident-sodalite-necklace-1.jpg",
+            "rotation": 0
+          }
+        }
+      },
+      "block_order": [
+        "image_fa84KW",
+        "image_RXJwwP"
+      ],
+      "settings": {
+        "color_scheme": "scheme-2",
+        "reveal_on_scroll": false,
+        "separate_section_with_border": false,
+        "media_position_desktop": "before_text",
+        "media_position_mobile": "before_text",
+        "media_layout": "separated",
+        "media_alignment": "center",
+        "media_alignment_offset": 0,
+        "media_mobile_alignment_offset": 0,
+        "text_alignment": "center",
+        "subheading": "",
+        "title": "藍紋石 波塞頓NOVA 項鍊",
+        "content": "<p>輕量化情侶三叉戟項鍊，純粹的海洋靈感，凝練於最簡形態。</p><p><strong>$6,220 NTD 起</strong></p>",
+        "button_1_text": "NOVA 男士",
+        "button_1_link": "shopify://products/mens-mini-sodalite-poseidon-trident-necklace",
+        "button_1_style": "solid",
+        "button_2_text": "NOVA 女士",
+        "button_2_link": "shopify://products/womens-poseidon-trident-sodalite-necklace",
+        "button_2_style": "solid"
+      }
+    },
+    "8db0a32d-17f3-49ad-b012-ab1eb480ce60": {
+      "type": "image-with-text",
+      "blocks": {
+        "36ff138c-5260-480c-a571-239719901db7": {
+          "type": "liquid",
+          "settings": {
+            "liquid": "<style>\n    @media (max-width: 768px) {\n        .responsive-image {\n            width: 100%;\n            height: auto;\n        }\n    }\n</style>\n\n<img class=\"responsive-image\" src=\"https://cdn.shopify.com/s/files/1/0586/4026/9492/files/poseidon-dumortierite-onyx-beaded-bracelet_1.jpg?v=1716951451\" style=\"max-width: 400px; display: block; margin-left: auto; margin-right: auto; \">"
+          }
+        },
+        "7505544c-03a9-4d18-bb92-41dca08e2401": {
+          "type": "heading",
+          "settings": {
+            "text": "黑瑪瑙 藍線石 波塞頓 男士手鍊",
+            "heading_tag": "h3"
+          }
+        },
+        "template--16913366155502__8db0a32d-17f3-49ad-b012-ab1eb480ce60-richtext-1": {
+          "type": "richtext",
+          "settings": {
+            "content": "<p>黑與藍的靈動平衡，展現沉穩內斂的紳士風範。</p><h5><strong>$4,150 NTD</strong></h5>"
+          }
+        },
+        "98f112bb-82a8-497a-9bc2-2d562751b79c": {
+          "type": "button",
+          "settings": {
+            "style": "solid",
+            "text": "立即購買",
+            "url": "shopify://products/mens-beaded-bracelet-with-black-onyx-and-blue-dumortierite",
+            "background": "",
+            "text_color": ""
+          }
+        }
+      },
+      "block_order": [
+        "36ff138c-5260-480c-a571-239719901db7",
+        "7505544c-03a9-4d18-bb92-41dca08e2401",
+        "template--16913366155502__8db0a32d-17f3-49ad-b012-ab1eb480ce60-richtext-1",
+        "98f112bb-82a8-497a-9bc2-2d562751b79c"
+      ],
+      "custom_css": [
+        "@media (min-width: 769px) {image-with-text {max-width: 1400px; margin-left: auto; margin-right: auto; }}",
+        ".sm\\:text-start {text-align: center;}"
+      ],
+      "settings": {
+        "color_scheme": "scheme-2",
+        "separate_section_with_border": false,
+        "image": "shopify://shop_images/mens-poseidon-beaded-bracelet-with-black-onyx-and-blue-dumortierite-bracelets-awnl-taiwan-6.jpg",
+        "reveal_on_scroll": true,
+        "image_position": "start",
+        "content_width": "sm",
+        "remove_vertical_spacing": true
+      }
+    },
+    "image_with_text_3djYgL": {
+      "type": "image-with-text",
+      "blocks": {
+        "liquid_V6X3id": {
+          "type": "liquid",
+          "settings": {
+            "liquid": "<style>\n    @media (max-width: 768px) {\n        .responsive-image {\n            width: 100%;\n            height: auto;\n        }\n    }\n</style>\n\n<img class=\"responsive-image\" src=\"https://cdn.shopify.com/s/files/1/0586/4026/9492/files/womens-amphitrite-beaded-bracelet-with-dumortierite-bracelets-awnl-taiwan-1.jpg?v=1693389541\" style=\"max-width: 400px; display: block; margin-left: auto; margin-right: auto; \">"
+          }
+        },
+        "heading_bUkmRP": {
+          "type": "heading",
+          "settings": {
+            "text": "藍線石 海洋女神 女士手鍊",
+            "heading_tag": "h3"
+          }
+        },
+        "richtext_rje9gA": {
+          "type": "richtext",
+          "settings": {
+            "content": "<p>希臘神話中的海洋女神安菲特里忒，以其優雅與神秘征服了波塞頓的心。藍線石在光影間流轉，散發出如同海洋女神般高貴優雅的光芒。</p><h5><strong>$3,420 NTD</strong></h5>"
+          }
+        },
+        "button_yAza3i": {
+          "type": "button",
+          "settings": {
+            "style": "solid",
+            "text": "立即購買",
+            "url": "shopify://products/womens-amphitrite-beaded-dumortierite-bracelet",
+            "background": "",
+            "text_color": ""
+          }
+        }
+      },
+      "block_order": [
+        "liquid_V6X3id",
+        "heading_bUkmRP",
+        "richtext_rje9gA",
+        "button_yAza3i"
+      ],
+      "custom_css": [
+        "@media (min-width: 769px) {image-with-text {max-width: 1400px; margin-left: auto; margin-right: auto; }}",
+        ".sm\\:text-start {text-align: center;}"
+      ],
+      "settings": {
+        "color_scheme": "scheme-2",
+        "separate_section_with_border": false,
+        "image": "shopify://shop_images/womens-amphitrite-beaded-bracelet-with-dumortierite-bracelets-awnl-taiwan-5.jpg",
+        "reveal_on_scroll": true,
+        "image_position": "end",
+        "content_width": "sm",
+        "remove_vertical_spacing": true
+      }
+    },
+    "c11c2bdb-6fd4-44fc-8523-21bf4a17a802": {
+      "type": "multiple-media-with-text",
+      "blocks": {
+        "220f5f9b-32ff-4a55-980c-12095109de84": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/womens-amphitrite-beaded-bracelet-with-dumortierite-bracelets-awnl-taiwan-1.jpg",
+            "rotation": 0
+          }
+        }
+      },
+      "block_order": [
+        "220f5f9b-32ff-4a55-980c-12095109de84"
+      ],
+      "disabled": true,
+      "custom_css": [
+        "@media (min-width: 769px) {.multiple-media-with-text__media-wrapper {max-width: 450px; margin: 0 auto; display: flex; align-items: center; justify-content: center; overflow: hidden; } .multiple-media-with-text__media-wrapper img {width: 100%; height: auto; object-fit: cover; }}"
+      ],
+      "settings": {
+        "color_scheme": "scheme-2",
+        "reveal_on_scroll": true,
+        "separate_section_with_border": false,
+        "media_position_desktop": "before_text",
+        "media_position_mobile": "before_text",
+        "media_layout": "separated",
+        "media_alignment": "center",
+        "media_alignment_offset": 0,
+        "media_mobile_alignment_offset": 0,
+        "text_alignment": "center",
+        "subheading": "",
+        "title": "藍線石 海洋女神 女士手鍊",
+        "content": "<p>希臘神話中的海洋女神安菲特里忒，以其優雅與神秘征服了波塞頓的心。藍線石在光影間流轉，散發出如同海洋女神般高貴優雅的光芒。</p><h5><strong>$3,420 NTD</strong></h5>",
+        "button_1_text": "立即購買",
+        "button_1_link": "shopify://products/womens-amphitrite-beaded-dumortierite-bracelet",
+        "button_1_style": "solid",
+        "button_2_text": "",
+        "button_2_link": "",
+        "button_2_style": "solid"
+      }
+    },
+    "aa0bac21-33b2-425e-90da-0e67b39fc1c3": {
+      "type": "multiple-media-with-text",
+      "blocks": {
+        "image_89ABtb": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/womens-ribbon-star-ocean-blue-heart-dumortierite-bracelet-1.jpg",
+            "rotation": 0
+          }
+        },
+        "f8768928-b20b-43d3-a3ad-c9ead8dd6095": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/womens-ribbon-poseidon-charm-bracelet-with-dumortierite-bracelets-awnl-taiwan-1.jpg",
+            "rotation": 0
+          }
+        }
+      },
+      "block_order": [
+        "image_89ABtb",
+        "f8768928-b20b-43d3-a3ad-c9ead8dd6095"
+      ],
+      "custom_css": [],
+      "settings": {
+        "color_scheme": "scheme-2",
+        "reveal_on_scroll": true,
+        "separate_section_with_border": false,
+        "media_position_desktop": "before_text",
+        "media_position_mobile": "before_text",
+        "media_layout": "separated",
+        "media_alignment": "center",
+        "media_alignment_offset": 0,
+        "media_mobile_alignment_offset": 0,
+        "text_alignment": "center",
+        "subheading": "",
+        "title": "藍線石 女士絲帶手鍊",
+        "content": "<p>以深邃的藍線石為主角，搭配精緻的純銀鑲嵌與絲絨質感的寶藍絲絨。每一款設計都像是擷取了夜空中最璀璨的星辰，與深海最純淨的色彩。切面藍線石在光影中流轉，彷彿夜空中的閃爍星辰與平靜海面的月光交織，展現獨特的優雅魅力。</p><h5><strong>$5,160 NTD 起</strong></h5>",
+        "button_1_text": "星海藍心",
+        "button_1_link": "shopify://products/womens-ribbon-star-ocean-blue-heart-dumortierite-bracelet",
+        "button_1_style": "solid",
+        "button_2_text": "海洋之心",
+        "button_2_link": "shopify://products/womens-ribbon-poseidon-charm-bracelet-with-dumortierite",
+        "button_2_style": "solid"
+      }
+    },
+    "cba6228f-f815-4e84-986d-acc4d5bc9884": {
+      "type": "collection-list",
+      "blocks": {
+        "template--16846448361710__cba6228f-f815-4e84-986d-acc4d5bc9884-collection-1": {
+          "type": "collection",
+          "settings": {
+            "color_scheme": "scheme-4",
+            "collection": "{{ collection.metafields.my_fields.sub_collection_a.value }}",
+            "image": "{{ block.settings.collection.metafields.my_fields.collection_banner_mb.value }}",
+            "expand_collection": false,
+            "content_position": "place-self-end-center text-center",
+            "subheading": "",
+            "title": "",
+            "button_text": "{{ block.settings.collection.title }}",
+            "button_link": "",
+            "button_style": "link",
+            "overlay_color": "#000000",
+            "overlay_opacity": 15
+          }
+        },
+        "template--16846448361710__cba6228f-f815-4e84-986d-acc4d5bc9884-collection-2": {
+          "type": "collection",
+          "settings": {
+            "color_scheme": "scheme-4",
+            "collection": "{{ collection.metafields.my_fields.sub_collection_b.value }}",
+            "image": "{{ block.settings.collection.metafields.my_fields.collection_banner_mb.value }}",
+            "expand_collection": false,
+            "content_position": "place-self-end-center text-center",
+            "subheading": "",
+            "title": "",
+            "button_text": "{{ block.settings.collection.title }}",
+            "button_link": "",
+            "button_style": "link",
+            "overlay_color": "#000000",
+            "overlay_opacity": 15
+          }
+        },
+        "template--16846448361710__cba6228f-f815-4e84-986d-acc4d5bc9884-collection-3": {
+          "type": "collection",
+          "settings": {
+            "color_scheme": "scheme-4",
+            "collection": "{{ collection.metafields.my_fields.sub_colleciton_c.value }}",
+            "image": "{{ block.settings.collection.metafields.my_fields.collection_banner_mb.value }}",
+            "expand_collection": false,
+            "content_position": "place-self-end-center text-center",
+            "subheading": "",
+            "title": "",
+            "button_text": "{{ block.settings.collection.title }}",
+            "button_link": "",
+            "button_style": "link",
+            "overlay_color": "#000000",
+            "overlay_opacity": 15
+          }
+        },
+        "collection_UYxkmk": {
+          "type": "collection",
+          "settings": {
+            "color_scheme": "scheme-4",
+            "collection": "{{ collection.metafields.my_fields.sub_collection_d.value }}",
+            "image": "{{ block.settings.collection.metafields.my_fields.collection_banner_mb.value }}",
+            "expand_collection": false,
+            "content_position": "place-self-end-center text-center",
+            "subheading": "",
+            "title": "",
+            "button_text": "{{ block.settings.collection.title }}",
+            "button_link": "",
+            "button_style": "link",
+            "overlay_color": "#000000",
+            "overlay_opacity": 15
+          }
+        }
+      },
+      "block_order": [
+        "template--16846448361710__cba6228f-f815-4e84-986d-acc4d5bc9884-collection-1",
+        "template--16846448361710__cba6228f-f815-4e84-986d-acc4d5bc9884-collection-2",
+        "template--16846448361710__cba6228f-f815-4e84-986d-acc4d5bc9884-collection-3",
+        "collection_UYxkmk"
+      ],
+      "custom_css": [
+        ".collection-card img {width: 100%; height: auto; aspect-ratio: 1 /1; object-fit: cover; object-position: center;}",
+        ".collection-card div.prose {font-weight: 400; margin-bottom: 20px;}"
+      ],
+      "settings": {
+        "color_scheme": "scheme-2",
+        "separate_section_with_border": false,
+        "image_size": "auto",
+        "show_text_outside": false,
+        "space_items": false,
+        "stack_collections": false,
+        "collections_per_row_mobile": "1",
+        "collections_per_row_desktop": 4,
+        "subheading": "",
+        "title": "More Inspirations",
+        "content": "<p>探索更多系列靈感</p>"
+      }
+    }
+  },
+  "order": [
+    "collection-banner",
+    "main",
+    "1d43740f-5ced-4f09-95d2-793ed84267ad",
+    "cd64a43e-af3c-448f-b1c0-02c61ae03daf",
+    "multiple_media_with_text_YqzGVY",
+    "slideshow_bpLjyp",
+    "multiple_media_with_text_fDQNzb",
+    "8db0a32d-17f3-49ad-b012-ab1eb480ce60",
+    "image_with_text_3djYgL",
+    "c11c2bdb-6fd4-44fc-8523-21bf4a17a802",
+    "aa0bac21-33b2-425e-90da-0e67b39fc1c3",
+    "cba6228f-f815-4e84-986d-acc4d5bc9884"
+  ]
+}

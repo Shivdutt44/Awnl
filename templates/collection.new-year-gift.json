@@ -1,0 +1,466 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "collection-banner": {
+      "type": "collection-banner",
+      "custom_css": [],
+      "settings": {
+        "color_scheme": "scheme-3",
+        "image": "shopify://shop_images/new-year-gift-list-landing-page-banner-2025_1.jpg",
+        "mobile_image": "shopify://shop_images/new-year-gift-list-landing-page-banner-2025_2.jpg",
+        "image_size": "auto",
+        "allow_transparent_header": false,
+        "reveal": true,
+        "enable_parallax": false,
+        "show_image": true,
+        "show_collection_title": false,
+        "show_collection_description": false,
+        "show_breadcrumb": true,
+        "content_width": "xs",
+        "overlay_color": "#000000",
+        "overlay_opacity": 0
+      }
+    },
+    "rich_text_WejAxC": {
+      "type": "rich-text",
+      "blocks": {
+        "subheading_N9pxU7": {
+          "type": "subheading",
+          "settings": {
+            "text": "NEW YEAR'S GIFT"
+          }
+        },
+        "heading_dANF4e": {
+          "type": "heading",
+          "settings": {
+            "text": "溫潤寶石 傳遞心意",
+            "heading_tag": "h1"
+          }
+        },
+        "richtext_rdTik4": {
+          "type": "richtext",
+          "settings": {
+            "content": "<p>溫潤寶石與巧思設計相遇，一抹晶光凝結新年祝願。</p><p>AWNL為您精選，以優雅姿態，為摯愛寫下璀璨祝福。</p>"
+          }
+        }
+      },
+      "block_order": [
+        "subheading_N9pxU7",
+        "heading_dANF4e",
+        "richtext_rdTik4"
+      ],
+      "settings": {
+        "color_scheme": "scheme-1b02ad27-67f6-4363-902b-7afc4c7eb905",
+        "separate_section_with_border": false,
+        "content_width": "lg",
+        "text_position": "center",
+        "remove_vertical_spacing": false
+      }
+    },
+    "image_with_text_gYTbWL": {
+      "type": "image-with-text",
+      "blocks": {
+        "heading_JDNA4t": {
+          "type": "heading",
+          "settings": {
+            "text": "金韻華章",
+            "heading_tag": "h2"
+          }
+        },
+        "richtext_GVeKY7": {
+          "type": "richtext",
+          "settings": {
+            "content": "<p>璀璨光芒流轉間，凝聚能量，開啟豐盈新年</p>"
+          }
+        }
+      },
+      "block_order": [
+        "heading_JDNA4t",
+        "richtext_GVeKY7"
+      ],
+      "settings": {
+        "color_scheme": "scheme-a71c01db-66d7-4f18-ba25-3cc475e3987c",
+        "separate_section_with_border": false,
+        "image": "shopify://shop_images/tiger-eye-pc.jpg",
+        "reveal_on_scroll": true,
+        "image_position": "start",
+        "content_width": "sm",
+        "remove_vertical_spacing": true
+      }
+    },
+    "main": {
+      "type": "main-collection",
+      "disabled": true,
+      "settings": {
+        "color_scheme": "scheme-2",
+        "hide_product_information": false,
+        "products_per_page": 24,
+        "products_per_row_mobile": "2",
+        "products_size_desktop": "medium",
+        "show_grid_mode_selector": true,
+        "horizontal_spacing_factor": 1.5,
+        "vertical_spacing_factor": 1.5,
+        "filter_layout": "drawer",
+        "quick_links_menu": "link-list-2",
+        "show_sort_by": true,
+        "show_filters": true,
+        "show_results_count": true,
+        "show_filter_group_name": false,
+        "show_filter_values_count": true,
+        "open_filters_by_default": false
+      }
+    },
+    "featured_collections_gBVQVw": {
+      "type": "featured-collections",
+      "blocks": {
+        "collection_76gzPe": {
+          "type": "collection",
+          "settings": {
+            "collection": "tiger-eye-jewelry",
+            "products_count": 4,
+            "title": "",
+            "link_url": "",
+            "link_text": "查看全部"
+          }
+        },
+        "collection_nK3Tr4": {
+          "type": "collection",
+          "settings": {
+            "collection": "red-tiger-eye-jewelry",
+            "products_count": 4,
+            "title": "",
+            "link_url": "",
+            "link_text": "查看全部"
+          }
+        },
+        "collection_f8VmLV": {
+          "type": "collection",
+          "settings": {
+            "collection": "golden-obsidian-items",
+            "products_count": 4,
+            "title": "",
+            "link_url": "",
+            "link_text": "查看全部"
+          }
+        }
+      },
+      "block_order": [
+        "collection_76gzPe",
+        "collection_nK3Tr4",
+        "collection_f8VmLV"
+      ],
+      "custom_css": [],
+      "settings": {
+        "color_scheme": "scheme-1b02ad27-67f6-4363-902b-7afc4c7eb905",
+        "separate_section_with_border": false,
+        "hide_product_information": false,
+        "stack_products": true,
+        "products_per_row_mobile": "2",
+        "products_per_row_desktop": 4,
+        "horizontal_spacing_factor": 2,
+        "vertical_spacing_factor": 0.2,
+        "subheading": ""
+      }
+    },
+    "image_with_text_7KVxjH": {
+      "type": "image-with-text",
+      "blocks": {
+        "heading_3ixB8K": {
+          "type": "heading",
+          "settings": {
+            "text": "靜謐雅境",
+            "heading_tag": "h2"
+          }
+        },
+        "richtext_yVhDyw": {
+          "type": "richtext",
+          "settings": {
+            "content": "<p>溫潤通透，守護內心沉靜安穩，祈願順遂安康</p>"
+          }
+        }
+      },
+      "block_order": [
+        "heading_3ixB8K",
+        "richtext_yVhDyw"
+      ],
+      "settings": {
+        "color_scheme": "scheme-a71c01db-66d7-4f18-ba25-3cc475e3987c",
+        "separate_section_with_border": false,
+        "image": "shopify://shop_images/dumortierite-pc.jpg",
+        "reveal_on_scroll": true,
+        "image_position": "start",
+        "content_width": "sm",
+        "remove_vertical_spacing": true
+      }
+    },
+    "featured_collections_G3EqxL": {
+      "type": "featured-collections",
+      "blocks": {
+        "collection_BUeBaP": {
+          "type": "collection",
+          "settings": {
+            "collection": "sodalite-jewelry",
+            "products_count": 4,
+            "title": "",
+            "link_url": "",
+            "link_text": "查看全部"
+          }
+        },
+        "collection_e8TLUf": {
+          "type": "collection",
+          "settings": {
+            "collection": "dumortierite-jewelry",
+            "products_count": 4,
+            "title": "",
+            "link_url": "",
+            "link_text": "查看全部"
+          }
+        },
+        "collection_DNjzYp": {
+          "type": "collection",
+          "settings": {
+            "collection": "hawk-eye-jewelry",
+            "products_count": 4,
+            "title": "",
+            "link_url": "",
+            "link_text": "查看全部"
+          }
+        },
+        "collection_MExj9m": {
+          "type": "collection",
+          "settings": {
+            "collection": "blue-kyanite",
+            "products_count": 4,
+            "title": "",
+            "link_url": "",
+            "link_text": ""
+          }
+        }
+      },
+      "block_order": [
+        "collection_BUeBaP",
+        "collection_e8TLUf",
+        "collection_DNjzYp",
+        "collection_MExj9m"
+      ],
+      "settings": {
+        "color_scheme": "scheme-1b02ad27-67f6-4363-902b-7afc4c7eb905",
+        "separate_section_with_border": false,
+        "hide_product_information": false,
+        "stack_products": true,
+        "products_per_row_mobile": "2",
+        "products_per_row_desktop": 4,
+        "horizontal_spacing_factor": 2,
+        "vertical_spacing_factor": 0.2,
+        "subheading": ""
+      }
+    },
+    "image_with_text_ARbDYY": {
+      "type": "image-with-text",
+      "blocks": {
+        "heading_JGMXdh": {
+          "type": "heading",
+          "settings": {
+            "text": "智悅菁華",
+            "heading_tag": "h2"
+          }
+        },
+        "richtext_jczPUq": {
+          "type": "richtext",
+          "settings": {
+            "content": "<p>凝智慧光芒，智慧與遠見交織，開創卓越新境</p>"
+          }
+        }
+      },
+      "block_order": [
+        "heading_JGMXdh",
+        "richtext_jczPUq"
+      ],
+      "settings": {
+        "color_scheme": "scheme-a71c01db-66d7-4f18-ba25-3cc475e3987c",
+        "separate_section_with_border": false,
+        "image": "shopify://shop_images/lapis-lazuli-pc.jpg",
+        "reveal_on_scroll": true,
+        "image_position": "start",
+        "content_width": "sm",
+        "remove_vertical_spacing": true
+      }
+    },
+    "featured_collections_mJA4Pz": {
+      "type": "featured-collections",
+      "blocks": {
+        "collection_diidMW": {
+          "type": "collection",
+          "settings": {
+            "collection": "lapis-lazuli-jewelry",
+            "products_count": 4,
+            "title": "",
+            "link_url": "",
+            "link_text": ""
+          }
+        },
+        "collection_bci4f7": {
+          "type": "collection",
+          "settings": {
+            "collection": "grey-hawk-eye",
+            "products_count": 4,
+            "title": "",
+            "link_url": "",
+            "link_text": "查看全部"
+          }
+        },
+        "collection_t6j4wY": {
+          "type": "collection",
+          "settings": {
+            "collection": "black-gold-super-seven",
+            "products_count": 4,
+            "title": "",
+            "link_url": "",
+            "link_text": ""
+          }
+        },
+        "collection_FVnniw": {
+          "type": "collection",
+          "settings": {
+            "collection": "amethyst-jewelry",
+            "products_count": 4,
+            "title": "",
+            "link_url": "",
+            "link_text": "查看全部"
+          }
+        }
+      },
+      "block_order": [
+        "collection_diidMW",
+        "collection_bci4f7",
+        "collection_t6j4wY",
+        "collection_FVnniw"
+      ],
+      "settings": {
+        "color_scheme": "scheme-1b02ad27-67f6-4363-902b-7afc4c7eb905",
+        "separate_section_with_border": false,
+        "hide_product_information": false,
+        "stack_products": true,
+        "products_per_row_mobile": "2",
+        "products_per_row_desktop": 4,
+        "horizontal_spacing_factor": 2,
+        "vertical_spacing_factor": 0.2,
+        "subheading": ""
+      }
+    },
+    "image_with_text_6QKDH9": {
+      "type": "image-with-text",
+      "blocks": {
+        "heading_QTeCgC": {
+          "type": "heading",
+          "settings": {
+            "text": "柔光璀璨",
+            "heading_tag": "h2"
+          }
+        },
+        "richtext_kBTBaA": {
+          "type": "richtext",
+          "settings": {
+            "content": "<p>如晨曦般溫柔，綻放優雅桃花光采</p>"
+          }
+        }
+      },
+      "block_order": [
+        "heading_QTeCgC",
+        "richtext_kBTBaA"
+      ],
+      "settings": {
+        "color_scheme": "scheme-a71c01db-66d7-4f18-ba25-3cc475e3987c",
+        "separate_section_with_border": false,
+        "image": "shopify://shop_images/Sakura_Rain_Rhodonite-1920X700.jpg",
+        "reveal_on_scroll": true,
+        "image_position": "start",
+        "content_width": "sm",
+        "remove_vertical_spacing": true
+      }
+    },
+    "featured_collections_hpr687": {
+      "type": "featured-collections",
+      "blocks": {
+        "collection_7TmnME": {
+          "type": "collection",
+          "settings": {
+            "collection": "rhodonite",
+            "products_count": 4,
+            "title": "",
+            "link_url": "",
+            "link_text": ""
+          }
+        },
+        "collection_CBzcRV": {
+          "type": "collection",
+          "settings": {
+            "collection": "rose-quartz",
+            "products_count": 4,
+            "title": "",
+            "link_url": "",
+            "link_text": ""
+          }
+        },
+        "collection_BBbtmc": {
+          "type": "collection",
+          "settings": {
+            "collection": "kunzite",
+            "products_count": 4,
+            "title": "",
+            "link_url": "",
+            "link_text": ""
+          }
+        },
+        "collection_3AaqFV": {
+          "type": "collection",
+          "settings": {
+            "collection": "sakura-rain-rhodonite",
+            "products_count": 4,
+            "title": "",
+            "link_url": "",
+            "link_text": ""
+          }
+        }
+      },
+      "block_order": [
+        "collection_7TmnME",
+        "collection_CBzcRV",
+        "collection_BBbtmc",
+        "collection_3AaqFV"
+      ],
+      "settings": {
+        "color_scheme": "scheme-1b02ad27-67f6-4363-902b-7afc4c7eb905",
+        "separate_section_with_border": false,
+        "hide_product_information": false,
+        "stack_products": true,
+        "products_per_row_mobile": "2",
+        "products_per_row_desktop": 4,
+        "horizontal_spacing_factor": 2,
+        "vertical_spacing_factor": 0.2,
+        "subheading": ""
+      }
+    }
+  },
+  "order": [
+    "collection-banner",
+    "rich_text_WejAxC",
+    "image_with_text_gYTbWL",
+    "main",
+    "featured_collections_gBVQVw",
+    "image_with_text_7KVxjH",
+    "featured_collections_G3EqxL",
+    "image_with_text_ARbDYY",
+    "featured_collections_mJA4Pz",
+    "image_with_text_6QKDH9",
+    "featured_collections_hpr687"
+  ]
+}

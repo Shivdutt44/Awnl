@@ -1,0 +1,340 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "main": {
+      "type": "main-list-collections",
+      "disabled": true,
+      "settings": {
+        "color_scheme": "",
+        "show_title": true,
+        "collections": [],
+        "collections_per_row_mobile": "1",
+        "collections_per_row_desktop": 3,
+        "image_size": "small",
+        "content_position": "place-self-end-start text-start",
+        "text_color": "#ffffff",
+        "overlay_color": "#000000",
+        "overlay_opacity": 30
+      }
+    },
+    "16d2838e-fa05-4115-ad7b-f8d80cdfe1a2": {
+      "type": "collection-list",
+      "blocks": {
+        "template--16027600060596__16d2838e-fa05-4115-ad7b-f8d80cdfe1a2-collection-1": {
+          "type": "collection",
+          "settings": {
+            "color_scheme": "scheme-2",
+            "collection": "classic-meteorite-fusion",
+            "expand_collection": false,
+            "content_position": "place-self-end-center text-center",
+            "subheading": "經典隕石系列帶您進入一段擁有45億年傳奇的歷史故事，以一百萬年前墜落在地球上珍貴的古老鐵隕石為材料，每一件隕石首飾都擁有來自宇宙的力量，象徵著永恆不朽的價值。",
+            "title": "經典隕石系列",
+            "button_text": "即刻探索",
+            "button_link": "shopify://collections/classic-meteorite-fusion",
+            "overlay_color": "#ffffff",
+            "overlay_opacity": 0
+          }
+        },
+        "template--16027600060596__16d2838e-fa05-4115-ad7b-f8d80cdfe1a2-collection-2": {
+          "type": "collection",
+          "settings": {
+            "color_scheme": "scheme-2",
+            "collection": "interstellar",
+            "expand_collection": false,
+            "content_position": "place-self-end-center text-center",
+            "subheading": "星際隕石系列深受星艦迷航記的啟發，將瑞典隕石切割至各種造型融入珠寶設計，仿佛進入了流星帶來的夢幻時空之旅，感受宇宙星際的能量。",
+            "title": "星際隕石系列",
+            "button_text": "即刻探索",
+            "button_link": "shopify://collections/interstellar",
+            "overlay_color": "#000000",
+            "overlay_opacity": 0
+          }
+        },
+        "f3f5bb82-e8c9-424e-95c3-ded35de3efe2": {
+          "type": "collection",
+          "settings": {
+            "color_scheme": "scheme-2",
+            "collection": "vagabond-collection",
+            "expand_collection": false,
+            "content_position": "place-self-end-center text-center",
+            "subheading": "浪行者系列，旨在喚醒內在力量，點燃自由冒險的心，探索個人覺醒的無限可能。融合極限運動、超跑和摩托車文化，展現無畏精神。感受浪行者力量，盡情釋放自由之光。 ",
+            "title": "浪行者系列",
+            "button_text": "即刻探索",
+            "button_link": "shopify://collections/vagabond-collection",
+            "overlay_color": "#000000",
+            "overlay_opacity": 0
+          }
+        },
+        "674a5ef6-15f9-4c7e-a0a3-7828e97bb677": {
+          "type": "collection",
+          "settings": {
+            "color_scheme": "scheme-2",
+            "collection": "icon-collection",
+            "expand_collection": false,
+            "content_position": "place-self-center text-center",
+            "subheading": "Icon啟示系列的設計靈感來自於天然寶石的神奇力量，每種寶石都有著獨特的屬性和能量，這些天然寶石被巧妙地融入到珠寶設計中，展現出無限的美感和深遠的意義。",
+            "title": "Icon啟示系列",
+            "button_text": "即刻探索",
+            "button_link": "",
+            "overlay_color": "#000000",
+            "overlay_opacity": 0
+          }
+        },
+        "86252356-af95-4c31-b954-3ebba5dc6530": {
+          "type": "collection",
+          "settings": {
+            "color_scheme": "scheme-2",
+            "collection": "ancient-protection",
+            "expand_collection": false,
+            "content_position": "place-self-end-center text-center",
+            "subheading": "AWNL 守護神系列將古老神秘的符號與珍貴的天然寶石相結合，凝聚了來自遠古埃及文明的強大保護能量，為佩戴者帶來全方位的保護。",
+            "title": "守護神系列",
+            "button_text": "即刻探索",
+            "button_link": "shopify://collections/ancient-protection",
+            "overlay_color": "#000000",
+            "overlay_opacity": 0
+          }
+        },
+        "template--16027600060596__16d2838e-fa05-4115-ad7b-f8d80cdfe1a2-collection-3": {
+          "type": "collection",
+          "settings": {
+            "color_scheme": "scheme-2",
+            "collection": "dark-sky-park",
+            "expand_collection": false,
+            "content_position": "place-self-end-center text-center",
+            "subheading": "暗夜公園系列的靈感來自浩瀚的宇宙，從夜空中帶來北歐式的浪漫。選用真正的星星－瑞典隕石的裝飾是這個經典女士隕石暗夜公園系列的點睛之筆。",
+            "title": "暗夜公園系列",
+            "button_text": "即刻探索",
+            "button_link": "shopify://collections/dark-sky-park",
+            "overlay_color": "#000000",
+            "overlay_opacity": 0
+          }
+        },
+        "89537c2e-2cf6-4c3d-b686-b5bf75215006": {
+          "type": "collection",
+          "settings": {
+            "color_scheme": "scheme-2",
+            "collection": "space-odysssey",
+            "expand_collection": false,
+            "content_position": "place-self-center text-center",
+            "subheading": "Space Odyssey系列將宇宙深處的神祕能量注入每一款設計中，每個星球都蘊含無限的能量和驚喜。每一款首飾都獨具藝術性和設計感，體現對宇宙的無盡熱愛和敬畏之情。",
+            "title": "Space Odyssey系列",
+            "button_text": "即刻探索",
+            "button_link": "",
+            "overlay_color": "#000000",
+            "overlay_opacity": 0
+          }
+        },
+        "4438a0f2-c7e0-42c4-a344-ea14deacf4b8": {
+          "type": "collection",
+          "settings": {
+            "color_scheme": "scheme-2",
+            "collection": "viking-collection",
+            "expand_collection": false,
+            "content_position": "place-self-center text-center",
+            "subheading": "維京系列以維京人傳奇般的冒險和探索精神為靈感，結合北歐盧恩符文和巴厘島銀製工藝的異域風情。融合象征保護和祝福的盧恩盧文，彷彿歡呼著維京人的英勇和勝利的凱旋歸來。",
+            "title": "維京系列",
+            "button_text": "即刻探索",
+            "button_link": "",
+            "overlay_color": "#000000",
+            "overlay_opacity": 0
+          }
+        },
+        "fc1f33b5-1900-4399-b373-46bf2c4be0b9": {
+          "type": "collection",
+          "settings": {
+            "color_scheme": "scheme-2",
+            "collection": "link-chain-collection",
+            "expand_collection": false,
+            "content_position": "place-self-center text-center",
+            "subheading": "Link系列是AWNL入門級百搭鏈條的代表系列，擁有多種設計風格，這些鏈條可以單獨佩戴，也可以搭配您現有的吊墜。不論您的裝束風格如何，都能找到一款適合您的鏈條。",
+            "title": "Link系列",
+            "button_text": "即刻探索",
+            "button_link": "",
+            "overlay_color": "#000000",
+            "overlay_opacity": 0
+          }
+        },
+        "5e33e893-9a31-4f6a-92d2-4dff2d9bd7c8": {
+          "type": "collection",
+          "settings": {
+            "color_scheme": "scheme-2",
+            "collection": "vajrayana-collection",
+            "expand_collection": false,
+            "content_position": "place-self-center text-center",
+            "subheading": "密宗系列的設計理念是將天然寶石和宗教神聖的法器融為一體，尋東方密宗Vajrayana的神秘力量，結合古老的智慧療癒能量，為佩戴者帶來庇佑和守護。",
+            "title": "密宗系列",
+            "button_text": "即刻探索",
+            "button_link": "",
+            "overlay_color": "#000000",
+            "overlay_opacity": 0
+          }
+        },
+        "c9782f76-ddfe-45e1-bf46-8d05e381d64a": {
+          "type": "collection",
+          "settings": {
+            "color_scheme": "scheme-2",
+            "collection": "discover-collection",
+            "expand_collection": false,
+            "content_position": "place-self-center text-center",
+            "subheading": "發現者系列是一個充滿著星際探索和發現新世界的系列。充滿著奇妙和探索的精神，每一個設計都是一次探索的旅程，讓您可以在自己的風格中發現新的可能性和驚喜。",
+            "title": "發現者系列",
+            "button_text": "即刻探索",
+            "button_link": "",
+            "overlay_color": "#000000",
+            "overlay_opacity": 0
+          }
+        },
+        "2bdb7357-e3e1-4dc0-8828-63e4429d188d": {
+          "type": "collection",
+          "settings": {
+            "color_scheme": "scheme-2",
+            "collection": "oracle-collection",
+            "expand_collection": false,
+            "content_position": "place-self-center text-center",
+            "subheading": "星域系列的靈感來自北歐和古希臘神話。透過佩戴這些珠寶，人們能夠將神話的神秘和能量融入自己的生活，將神話的神秘和能量融入自己的生活，賦予自己更多勇氣、力量和智慧。",
+            "title": "星域系列",
+            "button_text": "即刻探索",
+            "button_link": "",
+            "overlay_color": "#000000",
+            "overlay_opacity": 0
+          }
+        },
+        "6aaf4645-0449-4761-ab7a-10410b4514bd": {
+          "type": "collection",
+          "settings": {
+            "color_scheme": "scheme-2",
+            "collection": "tree-of-life-collection",
+            "expand_collection": false,
+            "content_position": "place-self-center text-center",
+            "subheading": "這個系列的靈感來自北歐神話中的生命樹，象徵著生命的力量和生機，永恆與無窮。搭配瑞典M隕石，賦予神秘而強大的力量，讓生命之花盛開綻放，迎接無盡的可能性與光芒。",
+            "title": "生命樹系列",
+            "button_text": "即刻探索",
+            "button_link": "",
+            "overlay_color": "#000000",
+            "overlay_opacity": 0
+          }
+        },
+        "91b0cf20-125d-47ae-8ec0-0eea4c153ebc": {
+          "type": "collection",
+          "settings": {
+            "color_scheme": "scheme-2",
+            "collection": "scandinavian-garden-dreaming-within-blossoms",
+            "expand_collection": false,
+            "content_position": "place-self-center text-center",
+            "subheading": "斯堪地那維亞花園系列是為現代女性而設計的系列，每一款設計均以不同花朵的象徵意義為靈感，這些美麗的花朵形象被巧妙地轉化為華麗的首飾設計，展現出女性的魅力和自信。",
+            "title": "斯堪地那維亞花園系列",
+            "button_text": "即刻探索",
+            "button_link": "",
+            "overlay_color": "#000000",
+            "overlay_opacity": 0
+          }
+        },
+        "a63a9c84-5fea-4ab4-8baa-6c493e8e3f88": {
+          "type": "collection",
+          "settings": {
+            "color_scheme": "scheme-2",
+            "collection": "lucky-collection",
+            "expand_collection": false,
+            "content_position": "place-self-end-center text-center",
+            "subheading": "Lucky系列融合了瑞典古老傳說中象徵智慧的貓頭鷹、幸運的四葉草、守護平安的馬蹄、保佑願望成真的星星等美好寓意的象征，為您帶來無盡的幸運祝福，成為生活中的幸運符號。",
+            "title": "Lucky系列",
+            "button_text": "即刻探索",
+            "button_link": "",
+            "overlay_color": "#000000",
+            "overlay_opacity": 0
+          }
+        },
+        "ec7e75ed-0295-4179-ad86-61c38758c91b": {
+          "type": "collection",
+          "settings": {
+            "color_scheme": "scheme-2",
+            "collection": "lily-of-the-valley-collection",
+            "expand_collection": false,
+            "content_position": "place-self-end-center text-center",
+            "subheading": "鈴蘭系列以瑞典的國花-鈴蘭花為靈感，它的花語代表著幸福歸來，象徵著美好未來的期望與祝福。鈴蘭花巧妙地融入珠寶中，每一件珠寶都散發著幸福的氛圍帶來無盡的幸福與祝福。",
+            "title": "鈴蘭系列",
+            "button_text": "即刻探索",
+            "button_link": "",
+            "overlay_color": "#000000",
+            "overlay_opacity": 0
+          }
+        },
+        "9ad70a39-bac4-4b8f-8a14-41e126db2502": {
+          "type": "collection",
+          "settings": {
+            "color_scheme": "scheme-2",
+            "collection": "atlantis",
+            "expand_collection": false,
+            "content_position": "place-self-center text-center",
+            "subheading": "亞特蘭提斯系列是為追求真愛和浪漫的女性而設計的珠寶系列，彰顯著獨特性和尊貴感。每一件珠寶都是對古代文明的致敬，是展現浪漫和神秘風采的完美選擇。",
+            "title": "亞特蘭提斯系列",
+            "button_text": "即刻探索",
+            "button_link": "",
+            "overlay_color": "#000000",
+            "overlay_opacity": 0
+          }
+        },
+        "499010ec-c731-418b-843e-1fa9d7776fb3": {
+          "type": "collection",
+          "settings": {
+            "color_scheme": "scheme-2",
+            "collection": "polaris-collection",
+            "expand_collection": false,
+            "content_position": "place-self-center text-center",
+            "subheading": "北極星系列受宇宙中流星雨的啟發，美麗浪漫的星芒為天空繪製出絢爛多彩的軌跡，散發無比神秘和浪漫的氛圍。感受流星雨帶來的浪漫和祝福，為您的生活注入無限的光芒和魅力。",
+            "title": "北極星系列",
+            "button_text": "即刻探索",
+            "button_link": "",
+            "overlay_color": "#000000",
+            "overlay_opacity": 0
+          }
+        }
+      },
+      "block_order": [
+        "template--16027600060596__16d2838e-fa05-4115-ad7b-f8d80cdfe1a2-collection-1",
+        "template--16027600060596__16d2838e-fa05-4115-ad7b-f8d80cdfe1a2-collection-2",
+        "f3f5bb82-e8c9-424e-95c3-ded35de3efe2",
+        "674a5ef6-15f9-4c7e-a0a3-7828e97bb677",
+        "86252356-af95-4c31-b954-3ebba5dc6530",
+        "template--16027600060596__16d2838e-fa05-4115-ad7b-f8d80cdfe1a2-collection-3",
+        "89537c2e-2cf6-4c3d-b686-b5bf75215006",
+        "4438a0f2-c7e0-42c4-a344-ea14deacf4b8",
+        "fc1f33b5-1900-4399-b373-46bf2c4be0b9",
+        "5e33e893-9a31-4f6a-92d2-4dff2d9bd7c8",
+        "c9782f76-ddfe-45e1-bf46-8d05e381d64a",
+        "2bdb7357-e3e1-4dc0-8828-63e4429d188d",
+        "6aaf4645-0449-4761-ab7a-10410b4514bd",
+        "91b0cf20-125d-47ae-8ec0-0eea4c153ebc",
+        "a63a9c84-5fea-4ab4-8baa-6c493e8e3f88",
+        "ec7e75ed-0295-4179-ad86-61c38758c91b",
+        "9ad70a39-bac4-4b8f-8a14-41e126db2502",
+        "499010ec-c731-418b-843e-1fa9d7776fb3"
+      ],
+      "settings": {
+        "color_scheme": "scheme-2",
+        "separate_section_with_border": false,
+        "image_size": "auto",
+        "show_text_outside": true,
+        "space_items": true,
+        "stack_collections": true,
+        "collections_per_row_desktop": 3,
+        "subheading": "",
+        "title": "商品系列",
+        "content": ""
+      }
+    }
+  },
+  "order": [
+    "main",
+    "16d2838e-fa05-4115-ad7b-f8d80cdfe1a2"
+  ]
+}

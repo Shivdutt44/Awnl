@@ -1,0 +1,66 @@
+/*
+* ------------------------------------------------------------
+* IMPORTANT: The contents of this file are auto-generated.
+*
+* This file may be updated by the Shopify admin theme editor
+* or related systems. Please exercise caution as any changes
+* made to this file may be overwritten.
+* ------------------------------------------------------------
+*/
+{
+  "sections": {
+    "main": {
+      "type": "main-page",
+      "disabled": true,
+      "settings": {
+        "color_scheme": "",
+        "show_title": true,
+        "page_width": "xs"
+      }
+    },
+    "9e1bf2ef-34c1-4ac0-aace-3bc9d1e2e4a7": {
+      "type": "contact",
+      "settings": {
+        "color_scheme": "scheme-2",
+        "separate_section_with_border": false,
+        "subheading": "",
+        "title": "Message Us",
+        "content": "<p>如您有任何疑問、需要幫助或是寶貴意見，請填寫下方表格並傳送給我們。</p><p>若您在2工作日內未收到我們的郵件回覆，且在垃圾信箱中未找到我們傳送的郵件，請通過<a href=\"https://lin.ee/7e2zh8U\" title=\"AWNL TW LINE\">LINE@</a>和我們聯繫，感謝您的理解與配合。</p>"
+      }
+    },
+    "dbe35218-f5cb-4825-bf93-1a24fedc7ef7": {
+      "type": "rich-text",
+      "blocks": {
+        "template--16029850108084__dbe35218-f5cb-4825-bf93-1a24fedc7ef7-heading-1": {
+          "type": "heading",
+          "settings": {
+            "text": "其他聯絡方式",
+            "heading_tag": "h2"
+          }
+        },
+        "template--16029850108084__dbe35218-f5cb-4825-bf93-1a24fedc7ef7-richtext-1": {
+          "type": "richtext",
+          "settings": {
+            "content": "<h5>營業時間：平日週一至週五 09:30－18:00 </h5><ul><li><h3>線上聊天</h3></li></ul><ol><li>工作日可通過網站右下角inbox與在線客服進行即時聊天。</li><li>請加官方<a href=\"https://lin.ee/7e2zh8U\" target=\"_blank\" title=\"AWNL Taiwan LINE\"> LINE@ </a>私訊我們客服專員。</li></ol><ul><li><h3><strong>商業合作、採訪或媒體相關</strong></h3></li></ul><p>請傳送email至 ：<a href=\"mailto:contact@awnl.tw\" target=\"_blank\" title=\"AWNL瑞典輕珠寶\">contact@awnl.tw</a></p>"
+          }
+        }
+      },
+      "block_order": [
+        "template--16029850108084__dbe35218-f5cb-4825-bf93-1a24fedc7ef7-heading-1",
+        "template--16029850108084__dbe35218-f5cb-4825-bf93-1a24fedc7ef7-richtext-1"
+      ],
+      "settings": {
+        "color_scheme": "scheme-2",
+        "separate_section_with_border": false,
+        "content_width": "xs",
+        "text_position": "start",
+        "remove_vertical_spacing": false
+      }
+    }
+  },
+  "order": [
+    "main",
+    "9e1bf2ef-34c1-4ac0-aace-3bc9d1e2e4a7",
+    "dbe35218-f5cb-4825-bf93-1a24fedc7ef7"
+  ]
+}

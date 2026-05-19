@@ -1,0 +1,227 @@
+/*
+* ------------------------------------------------------------
+* IMPORTANT: The contents of this file are auto-generated.
+*
+* This file may be updated by the Shopify admin theme editor
+* or related systems. Please exercise caution as any changes
+* made to this file may be overwritten.
+* ------------------------------------------------------------
+*/
+{
+  "sections": {
+    "collection-banner": {
+      "type": "collection-banner",
+      "disabled": true,
+      "settings": {
+        "color_scheme": "scheme-3",
+        "image": "shopify://shop_images/summer-sale-mb.jpg",
+        "image_size": "auto",
+        "allow_transparent_header": false,
+        "reveal": true,
+        "enable_parallax": false,
+        "show_image": true,
+        "show_collection_title": false,
+        "show_collection_description": false,
+        "show_breadcrumb": true,
+        "content_width": "xs",
+        "overlay_color": "#000000",
+        "overlay_opacity": 0
+      }
+    },
+    "rich_text_xCawRH": {
+      "type": "rich-text",
+      "blocks": {
+        "heading_NRYRUe": {
+          "type": "heading",
+          "settings": {
+            "text": "今年的夏季季末優惠已經結束",
+            "heading_tag": "h1"
+          }
+        },
+        "richtext_8XWxCB": {
+          "type": "richtext",
+          "settings": {
+            "content": "<p>敬請期待下一次</p>"
+          }
+        },
+        "button_DyA6Rg": {
+          "type": "button",
+          "disabled": true,
+          "settings": {
+            "style": "solid",
+            "text": "回首頁",
+            "url": "/",
+            "background": "",
+            "text_color": ""
+          }
+        }
+      },
+      "block_order": [
+        "heading_NRYRUe",
+        "richtext_8XWxCB",
+        "button_DyA6Rg"
+      ],
+      "settings": {
+        "color_scheme": "scheme-2",
+        "separate_section_with_border": true,
+        "content_width": "sm",
+        "text_position": "center",
+        "remove_vertical_spacing": false
+      }
+    },
+    "featured_collections_yPGWhK": {
+      "type": "featured-collections",
+      "blocks": {
+        "collection_ULADki": {
+          "type": "collection",
+          "settings": {
+            "collection": "summer-end-sale",
+            "products_count": 50,
+            "title": "",
+            "link_url": "",
+            "link_text": ""
+          }
+        }
+      },
+      "block_order": [
+        "collection_ULADki"
+      ],
+      "disabled": true,
+      "custom_css": [
+        "h2.h2 {display: none;}"
+      ],
+      "settings": {
+        "color_scheme": "scheme-2",
+        "separate_section_with_border": false,
+        "hide_product_information": false,
+        "stack_products": true,
+        "products_per_row_mobile": "2",
+        "products_per_row_desktop": 5,
+        "horizontal_spacing_factor": 1.4,
+        "vertical_spacing_factor": 1.4,
+        "subheading": ""
+      }
+    },
+    "main": {
+      "type": "main-collection",
+      "disabled": true,
+      "settings": {
+        "color_scheme": "scheme-2",
+        "hide_product_information": false,
+        "products_per_page": 35,
+        "products_per_row_mobile": "2",
+        "products_size_desktop": "medium",
+        "show_grid_mode_selector": true,
+        "horizontal_spacing_factor": 1.5,
+        "vertical_spacing_factor": 1.5,
+        "filter_layout": "drawer",
+        "quick_links_menu": "",
+        "show_sort_by": true,
+        "show_filters": true,
+        "show_results_count": true,
+        "show_filter_group_name": false,
+        "show_filter_values_count": true,
+        "open_filters_by_default": false
+      }
+    },
+    "collection_list_KXzUfx": {
+      "type": "collection-list",
+      "blocks": {
+        "collection_EbMNcq": {
+          "type": "collection",
+          "settings": {
+            "color_scheme": "",
+            "collection": "{{ collection.metafields.my_fields.sub_collection_a.value }}",
+            "image": "{{ block.settings.collection.metafields.my_fields.collection_banner_mb.value }}",
+            "expand_collection": false,
+            "content_position": "place-self-end-center text-center",
+            "subheading": "",
+            "title": "",
+            "button_text": "{{ block.settings.collection.title }}",
+            "button_link": "",
+            "overlay_color": "#000000",
+            "overlay_opacity": 10
+          }
+        },
+        "collection_RQYBWJ": {
+          "type": "collection",
+          "settings": {
+            "color_scheme": "",
+            "collection": "{{ collection.metafields.my_fields.sub_collection_b.value }}",
+            "image": "{{ block.settings.collection.metafields.my_fields.collection_banner_mb.value }}",
+            "expand_collection": false,
+            "content_position": "place-self-end-center text-center",
+            "subheading": "",
+            "title": "",
+            "button_text": "{{ block.settings.collection.title }}",
+            "button_link": "",
+            "overlay_color": "#000000",
+            "overlay_opacity": 12
+          }
+        },
+        "collection_jbbHeL": {
+          "type": "collection",
+          "settings": {
+            "color_scheme": "scheme-4",
+            "collection": "{{ collection.metafields.my_fields.sub_colleciton_c.value }}",
+            "image": "{{ block.settings.collection.metafields.my_fields.collection_banner_mb.value }}",
+            "expand_collection": false,
+            "content_position": "place-self-end-center text-center",
+            "subheading": "",
+            "title": "",
+            "button_text": "{{ block.settings.collection.title }}",
+            "button_link": "",
+            "overlay_color": "#000000",
+            "overlay_opacity": 10
+          }
+        },
+        "collection_KKYUWz": {
+          "type": "collection",
+          "settings": {
+            "color_scheme": "scheme-4",
+            "collection": "{{ collection.metafields.my_fields.sub_collection_d.value }}",
+            "image": "{{ block.settings.collection.metafields.my_fields.collection_banner_mb.value }}",
+            "expand_collection": false,
+            "content_position": "place-self-end-center text-center",
+            "subheading": "",
+            "title": "",
+            "button_text": "{{ block.settings.collection.title }}",
+            "button_link": "",
+            "overlay_color": "#000000",
+            "overlay_opacity": 10
+          }
+        }
+      },
+      "block_order": [
+        "collection_EbMNcq",
+        "collection_RQYBWJ",
+        "collection_jbbHeL",
+        "collection_KKYUWz"
+      ],
+      "custom_css": [
+        ".button {background: transparent; border: none; color: white; text-decoration: none; position: relative; padding: 5px; display: inline-block; line-height: 1.6; border-bottom: 1px solid transparent; background-image: linear-gradient(to right, white, white); background-size: 100% 2px; background-repeat: no-repeat; background-position: 0% 100%; transition: background-size 0.8s ease-in-out;}",
+        ".button:hover {background-size: 0% 2px;}",
+        ".collection-card img {width: 100%; height: auto; aspect-ratio: 1 / 1; object-fit: cover; object-position: center;}"
+      ],
+      "settings": {
+        "color_scheme": "scheme-2",
+        "separate_section_with_border": false,
+        "image_size": "auto",
+        "show_text_outside": false,
+        "space_items": true,
+        "stack_collections": true,
+        "collections_per_row_desktop": 4,
+        "subheading": "",
+        "title": "More Inspirations",
+        "content": "<p>探索更多系列靈感</p>"
+      }
+    }
+  },
+  "order": [
+    "collection-banner",
+    "rich_text_xCawRH",
+    "featured_collections_yPGWhK",
+    "main",
+    "collection_list_KXzUfx"
+  ]
+}

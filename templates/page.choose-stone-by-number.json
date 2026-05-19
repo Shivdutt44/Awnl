@@ -1,0 +1,173 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "image_with_text_overlay_U4Xc8J": {
+      "type": "image-with-text-overlay",
+      "blocks": {
+        "heading_HqGnNq": {
+          "type": "heading",
+          "settings": {
+            "text": "能量晶石目錄",
+            "heading_tag": "h2"
+          }
+        },
+        "richtext_TAwJj6": {
+          "type": "richtext",
+          "settings": {
+            "content": "<p>為您介紹多款蘊藏自然力量與美麗的天然石。<br/>能量石自古以來就被認為能癒合身心並提升能量。每一顆石頭都有其獨特的特性與魅力。</p>"
+          }
+        },
+        "button_ftawfA": {
+          "type": "button",
+          "settings": {
+            "style": "outline",
+            "text": "晶石能量 靈感空間",
+            "url": "https://awnl.tw/blogs/the-journal/tagged/%E6%99%B6%E7%9F%B3%E8%83%BD%E9%87%8F",
+            "background": "",
+            "text_color": "rgba(0,0,0,0)"
+          }
+        }
+      },
+      "block_order": [
+        "heading_HqGnNq",
+        "richtext_TAwJj6",
+        "button_ftawfA"
+      ],
+      "settings": {
+        "color_scheme": "scheme-4",
+        "image_size": "xs",
+        "image": "shopify://shop_images/gemstone-jewelry-collection-banner-pc.jpg",
+        "allow_transparent_header": false,
+        "reveal_on_scroll": true,
+        "remove_vertical_spacing": true,
+        "content_width": "xs",
+        "mobile_text_position": "place-self-center text-center",
+        "desktop_text_position": "sm:place-self-end-center sm:text-center",
+        "overlay_color": "#000000",
+        "overlay_opacity": 39
+      }
+    },
+    "custom_liquid_KER9xT": {
+      "type": "custom-liquid",
+      "custom_css": [
+        "div.text-center {margin-top: -40px; margin-bottom: -40px;}"
+      ],
+      "settings": {
+        "color_scheme": "scheme-2",
+        "separate_section_with_border": false,
+        "remove_vertical_spacing": false,
+        "remove_horizontal_spacing": false,
+        "liquid": "<style>\n  .custom-menu {\n    display: flex;\n    flex-wrap: wrap;\n    justify-content: center;\n    padding: 0;\n    margin-left:auto;\n    margin-right:auto;\n    list-style: none;\n    max-width:800px;\n  }\n  .custom-menu li {\n    flex-basis: 25%;\n    margin-bottom: 5px;\n  }\n  .custom-menu a {\n    display: block;\n    text-align: center;\n    text-decoration: none;\n    color: #1C1C1C; \n    padding: 12px;\n    margin: 5px;\n    background-color: #e5e6eb;\n    border-radius: 5px;\n    transition: all 0.3s ease;\n    font-size: 16px;\n  }\n  .custom-menu a.link-5 {\n    font-weight: bold;\n    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);\n    background-color: \t#d2d4dc;\n  }\n  .custom-menu a:not(.link-5) {\n    color: #9A9A9A; \n  }\n  .custom-menu a:hover {\n    color: #1C1C1C;\n    background-color: \t#d2d4dc;\n    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);\n    font-weight:bold;\n  }\n  @media (max-width: 768px) {\n    .custom-menu li {\n      flex-basis: 50%;\n    }\n    .custom-menu a { \n      padding: 10px;\n      margin: 2px; \n      border-radius: 5px;\n      font-size: 12px;\n    }\n  }\n   h1{\nmargin-bottom:30px;\nfont-size:26px;}\n@media (max-width: 768px){ h1{\nmargin-bottom:18px;\nfont-size:20px;}}\n\n</style>\n<h2>NUMEROLOGY</h2>\n<h1>依生命靈數搜尋</h1>\n<ul class=\"custom-menu\">\n  <li><a href=\"https://www.awnl.tw/pages/choose-stone-by-name\" class=\"link-1\">依名稱搜尋\n</a></li>\n  <li><a href=\"https://www.awnl.tw/pages/choose-stone-by-birth\" class=\"link-2\">依誕生石搜尋</a></li>\n  <li><a href=\"https://www.awnl.tw/pages/choose-stone-by-zodiac\" class=\"link-3\">依星座搜尋</a></li>\n  <li><a href=\"https://www.awnl.tw/pages/choose-stone-by-wish\" class=\"link-4\">依願望搜尋</a></li>\n  <li><a href=\"https://www.awnl.tw/pages/choose-stone-by-number\" class=\"link-5\">依生命靈數搜尋</a></li>\n  <li><a href=\"https://www.awnl.tw/pages/choose-stone-by-elements\" class=\"link-6\">依五行搜尋</a></li>\n  <li><a href=\"https://www.awnl.tw/pages/choose-stone-by-chakra\" class=\"link-7\">依脈輪搜尋</a></li>\n  <li><a href=\"https://www.awnl.tw/pages/choose-stone-by-color\" class=\"link-8\">依顏色搜尋\n</a></li>\n</ul>",
+        "text_alignment": "center"
+      }
+    },
+    "rich_text_RR9B8y": {
+      "type": "rich-text",
+      "blocks": {
+        "richtext_E4nMi9": {
+          "type": "richtext",
+          "settings": {
+            "content": "<p>占星術不僅包括星座，數字占卜學（占數術）也是一個重要的領域。占數術中的「生命靈數（Life Path Number）」代表著一個人的本質性格和人生傾向。生命靈數揭示了您的才華和內在特質，並與相應的寶石能量和顏色搭配使用，有助於提升您的氣場和運勢。</p>"
+          }
+        }
+      },
+      "block_order": [
+        "richtext_E4nMi9"
+      ],
+      "settings": {
+        "color_scheme": "scheme-2",
+        "separate_section_with_border": false,
+        "content_width": "xs",
+        "text_position": "center",
+        "remove_vertical_spacing": true
+      }
+    },
+    "rich_text_zbMkyh": {
+      "type": "rich-text",
+      "blocks": {
+        "richtext_HTKAL3": {
+          "type": "richtext",
+          "settings": {
+            "content": "<p></p><h4><strong>★生命靈數的計算方法★</strong></h4><p>①首先，將出生年月日寫成西元格式，並將每年的、每月的、每日的數字分開。<br/>例如：1992年7月28日出生 ⇒1992/07/28<br/><br/>②分別將年、月、日的數字相加，直到每個部分的總和成為一位數為止。<br/>*如果結果是兩位數，則繼續加總直到變為一位數。</p><p>範例：<br/>年：１＋９＋９＋２ ⇒ ２１ ⇒ ２＋１ ⇒ ３<br/>月：０＋７ ⇒ ７<br/>日：２＋８ ⇒ １０ ⇒ １＋０ ⇒ １<br/><br/>③接著，將年、月、日的總和再次相加，直到得出一位數為止。<br/>*11和22是特殊數字，如果出現11或22，計算便停止，這兩個數字會被保留為最終的生命<strong>靈</strong>數。<br/><br/>範例：<br/>３＋７＋１ ⇒ １１<br/>生命<strong>靈</strong>數為「１１」</p>"
+          }
+        }
+      },
+      "block_order": [
+        "richtext_HTKAL3"
+      ],
+      "settings": {
+        "color_scheme": "scheme-2",
+        "separate_section_with_border": false,
+        "content_width": "xs",
+        "text_position": "center",
+        "remove_vertical_spacing": true
+      }
+    },
+    "custom_liquid_fHcyFF": {
+      "type": "custom-liquid",
+      "custom_css": [
+        "@media (min-width: 789px) {div.text-center {max-width: 1100px; margin-left: auto; margin-right: auto; }}"
+      ],
+      "settings": {
+        "color_scheme": "scheme-2",
+        "separate_section_with_border": false,
+        "remove_vertical_spacing": false,
+        "remove_horizontal_spacing": false,
+        "liquid": "<style>\n  /* Container for the tabs */\n  .tab-container {\n    max-width: 1200px;\n    margin: 0 auto;\n    display: flex;\n    flex-wrap: wrap;\n    justify-content: center;\n   color:#b1995f;\n    border-bottom: 2px solid \t#b1995f;\n    text-align: center;\n  }\n  /* Individual tabs */\n  .tab {\n    font-size: 14px;\n    padding: 5px 20px;\n    cursor: pointer;\n    transition: font-weight 0.3s;\n    border-bottom: 2px solid #fff;}\n\n  .tab:hover,\n  .tab.active {\n    font-weight: bold;\n    border-bottom: 2px solid \t#9d8854;\n   color:#76663f;\n  }\n\n  /* Content wrapper for each tab */\n  .tab-content-wrapper {\n    width: 1200px;\n    margin: 0; auto;\n    overflow: hidden; \n  }\n\n  /* Content for each tab */\n  .tab-content {\n    display: none;\n    width: 100%; /* Ensure the tab content does not exceed the wrapper width */\n  }\n\n  .tab-content.active {\n    display: block;\n  }\n\n  .tab-content h2 {\n    font-size: 18px;\n    text-align: center;\n    margin: 50px;\n  }\n#description {\n    color: #404040;\n  margin-top:-30px;\nmax-width:600px;\nmargin-left:auto;\nmargin-right:auto;}\n\n  .wrap-column {\n    display: flex;\n    flex-wrap: wrap;\n    gap: 10px;\n    justify-content: flex-start;\n  }\n\n  .wrap-column .column {\n    flex: 0 0 calc(20% - 15px); /* 5 columns in a row for desktop */\n    text-align: center;\n  }\n\n  .wrap-column .column img {\n    width: 100%;\n    border-radius: 10px;\n  }\n\n  .wrap-column .column h4 {\n    font-size: 14px;\n    font-weight: bold;\n  }\n\n  .wrap-column .column p {\n    font-size: 12px;\n  }\n  /* Media query for mobile devices */\n  @media (max-width: 768px) {\n    .tab-content-wrapper {\n      width: 100%;\n      padding: 0 10px; /* Add padding to prevent content touching the edges */\n    }\n    .tab {\n      padding: 5px 14px;\n    }\n    .tab-container{ \n    border: none;\n\n                   justify-content:center;}\n    .wrap-column .column {\n      flex: 0 0 calc(50% - 10px); /* 2 columns in a row for mobile */\n    }\n  }\n</style>\n\n<div class=\"tab-container\">\n  <div class=\"tab active\" data-tab=\"tab1\">1</div>\n  <div class=\"tab\" data-tab=\"tab2\">2</div>\n  <div class=\"tab\" data-tab=\"tab3\">3</div>\n  <div class=\"tab\" data-tab=\"tab4\">4</div>\n  <div class=\"tab\" data-tab=\"tab5\">5</div>\n  <div class=\"tab\" data-tab=\"tab6\">6</div>\n  <div class=\"tab\" data-tab=\"tab7\">7</div>\n  <div class=\"tab\" data-tab=\"tab8\">8</div>\n  <div class=\"tab\" data-tab=\"tab9\">9</div>\n  <div class=\"tab\" data-tab=\"tab10\">11</div>\n  <div class=\"tab\" data-tab=\"tab11\">12</div>\n</div>\n\n<div id=\"tab1\" class=\"tab-content active\">\n  <h2>1.開創者</h2>\n<p id=\"description\">總是充滿活力，堅定自己的信念，勇於面對變革與挑戰，是天生的領袖型人才。</p>\n  <div class=\"wrap-column\">\n    <div class=\"column\">\n      <a href=\"https://awnl.tw/collections/silver-obsidian-jewelry\" class=\"column-link\">\n        <img src=\"https://cdn.shopify.com/s/files/1/0586/4026/9492/files/Brazilian_Silver_Obsidian.jpg?v=1706779065\" alt=\"銀曜石\">\n        <h4>銀曜石</h4>\n        <p>Silver Obsidian | 清晰之石</p>\n      </a>\n    </div>\n    <div class=\"column\">\n      <a href=\"https://awnl.tw/collections/golden-obsidian-items\" class=\"column-link\">\n        <img src=\"https://cdn.shopify.com/s/files/1/0586/4026/9492/files/Brazilian_Obsidian.jpg?v=1706779065\" alt=\"金曜石\">\n        <h4>金曜石</h4>\n        <p>Golden Obsidian | 神秘的招財石</p>\n      </a>\n    </div>\n    <div class=\"column\">\n      <a href=\"https://awnl.tw/collections/hypersthene\" class=\"column-link\">\n        <img src=\"https://cdn.shopify.com/s/files/1/0586/4026/9492/files/Hypersthene.jpg?v=1710212235\" alt=\"金運石\">\n        <h4>金運石</h4>\n        <p>Hypersthene | 最強招財石</p>\n      </a>\n    </div>\n<div class=\"column\">\n    <a href=\"https://awnl.tw/collections/black-onyx-items\" class=\"column-link\">\n        <img src=\"https://cdn.shopify.com/s/files/1/0586/4026/9492/files/Brazilian_Black_Onyx.jpg?v=1706856555\" alt=\"黑瑪瑙\">\n        <h4>黑瑪瑙</h4>\n        <p>Onyx | 黑玉髓</p>\n    </a>\n</div>\n    <div class=\"column\">\n      <a href=\"https://awnl.tw/collections/red-agate\" class=\"column-link\">\n        <img src=\"https://cdn.shopify.com/s/files/1/0586/4026/9492/files/Brazilian_Red_Agate.jpg?v=1710142731\" alt=\"紅瑪瑙\">\n        <h4>紅瑪瑙</h4>\n        <p>Red Agate | 力量之錨</p>\n      </a>\n    </div>\n    <div class=\"column\">\n      <a href=\"https://awnl.tw/collections/red-tiger-eye-jewelry\" class=\"column-link\">\n        <img src=\"https://cdn.shopify.com/s/files/1/0586/4026/9492/files/South_African_Red_Tiger_s_Eye.jpg?v=1706855862\" alt=\"紅虎眼石\">\n        <h4>紅虎眼石</h4>\n        <p>Red Tiger Eye | 活力之石</p>\n      </a>\n    </div>\n<div class=\"column\">\n    <a href=\"https://awnl.tw/collections/rose-quartz\" class=\"column-link\">\n        <img src=\"https://cdn.shopify.com/s/files/1/0586/4026/9492/files/Madagascar_Rose_Quartz.jpg?v=1710136997\" alt=\"粉晶\">\n        <h4>粉晶</h4>\n        <p>Rose Quartz | 無條件的愛、愛情護身符</p>\n    </a>\n</div>\n    <div class=\"column\">\n      <a href=\"https://awnl.tw/collections/sunstone\" class=\"column-link\">\n        <img src=\"https://cdn.shopify.com/s/files/1/0586/4026/9492/files/Norwegian_Sunstone.jpg?v=1710145041\" alt=\"太陽石（日光石）\">\n        <h4>太陽石（日光石）</h4>\n        <p>Sunstone | 太陽神之石</p>\n      </a>\n    </div>\n  </div>\n</div>\n\n\n<div id=\"tab2\" class=\"tab-content\">\n  <h2>2.協調者</h2>\n<p id=\"description\">注重細節，擁有優秀的分析能力，擅長溝通，並重視團隊合作的外交型人才。</p>\n  <div class=\"wrap-column\">\n<div class=\"column\">\n    <a href=\"https://awnl.tw/collections/orange-agate\" class=\"column-link\">\n        <img src=\"https://cdn.shopify.com/s/files/1/0586/4026/9492/files/Brazilian_Orange_Garnet.jpg?v=1710220118\" alt=\"橙紅瑪瑙\">\n        <h4>橙紅瑪瑙</h4>\n        <p>Orange Agate | 創意灯塔</p>\n    </a>\n</div>\n    <div class=\"column\">\n      <a href=\"https://awnl.tw/collections/orange-snowflake-phantom-quartz\" class=\"column-link\">\n        <img src=\"https://cdn.shopify.com/s/files/1/0586/4026/9492/files/Orange_Snowflake_Phantom_Quartz.jpg?v=1710211714\" alt=\"橙雪花幽靈\">\n        <h4>橙雪花幽靈</h4>\n        <p>Orange Snowflake Phantom Quartz | 人生的燈塔</p>\n      </a>\n    </div>\n<div class=\"column\">\n    <a href=\"https://awnl.tw/collections/brecciated-jasper\" class=\"column-link\">\n        <img src=\"https://cdn.shopify.com/s/files/1/0586/4026/9492/files/Brecciated_Jasper.jpg?v=1728981986\" alt=\"紅花瑪瑙\">\n        <h4>紅花瑪瑙</h4>\n        <p>Brecciated Jasper | 地氣穩定器</p>\n    </a>\n</div>\n  </div>\n</div>\n\n<div id=\"tab3\" class=\"tab-content\">\n  <h2>3.創意者</h2>\n<p id=\"description\">擁有豐富的想像力，喜歡與他人在一起，並享受被關注的感覺。善於進行積極的溝通，是日常生活中的氣氛製造者。</p>\n  <div class=\"wrap-column\">\n    <div class=\"column\">\n      <a href=\"https://awnl.tw/collections/citrine\" class=\"column-link\">\n        <img src=\"https://cdn.shopify.com/s/files/1/0586/4026/9492/files/Brazilian_Citrine.jpg?v=1710142325\" alt=\"黃水晶\">\n        <h4>黃水晶</h4>\n        <p>Citrine | 財富水晶</p>\n      </a>\n    </div>\n<div class=\"column\">\n    <a href=\"https://awnl.tw/collections/tiger-eye-jewelry\" class=\"column-link\">\n        <img src=\"https://cdn.shopify.com/s/files/1/0586/4026/9492/files/South_African_Tiger_s_Eye.jpg?v=1706855862\" alt=\"虎眼石\">\n        <h4>虎眼石</h4>\n        <p>Tiger Eye | 勇氣之石</p>\n    </a>\n</div>\n  </div>\n</div>\n\n\n<div id=\"tab4\" class=\"tab-content\">\n  <h2>4.務實者</h2>\n<p id=\"description\">注重安全、謹慎守規、擅長規避風險，適合穩定專業職位。</p>\n  <div class=\"wrap-column\">\n    <div class=\"column\">\n      <a href=\"https://awnl.tw/collections/bloodstone-jasper-jewelry\" class=\"column-link\">\n        <img src=\"https://cdn.shopify.com/s/files/1/0586/4026/9492/files/Nepalese_Bloodstone.jpg?v=1710207821\" alt=\"血石碧玉\">\n        <h4>血石碧玉</h4>\n        <p>Bloodstone | 戰士之石</p>\n      </a>\n    </div>\n    <div class=\"column\">\n      <a href=\"https://awnl.tw/collections/diopside\" class=\"column-link\">\n        <img src=\"https://cdn.shopify.com/s/files/1/0586/4026/9492/files/Diopside.jpg?v=1710211601\" alt=\"透輝石\">\n        <h4>透輝石</h4>\n        <p>Diopside | 成長加速器</p>\n      </a>\n    </div>\n<div class=\"column\">\n    <a href=\"https://awnl.tw/collections/green-phantom-quartz\" class=\"column-link\">\n        <img src=\"https://cdn.shopify.com/s/files/1/0586/4026/9492/files/Green_Phantom_Quartz.jpg?v=1710212920\" alt=\"綠幽靈\">\n        <h4>綠幽靈</h4>\n        <p>Green Phantom Quartz | 事業水晶</p>\n    </a>\n</div>\n    <div class=\"column\">\n      <a href=\"https://awnl.tw/collections/green-zebra-jasper\" class=\"column-link\">\n        <img src=\"https://cdn.shopify.com/s/files/1/0586/4026/9492/files/South_African_Grey_Hawk_Eye.jpg?v=1710133953\" alt=\"斑紋碧玉\">\n        <h4>斑紋碧玉</h4>\n        <p>Green Zebra Jasper | 自然療癒石</p>\n      </a> </div>\n<div class=\"column\">\n    <a href=\"https://awnl.tw/collections/peridot\" class=\"column-link\">\n        <img src=\"https://cdn.shopify.com/s/files/1/0586/4026/9492/files/Peridot.jpg?v=1710211430\" alt=\"橄欖石\">\n        <h4>橄欖石</h4>\n        <p>Peridot | 好運護身符</p>\n    </a>\n</div>\n<div class=\"column\">\n    <a href=\"https://awnl.tw/collections/fuchsite\" class=\"column-link\">\n        <img src=\"https://cdn.shopify.com/s/files/1/0586/4026/9492/files/Fuchsite.jpg?v=1737191919\" alt=\"祖母晶\">\n        <h4>祖母晶</h4>\n        <p>Fuchsite | 綠色天使石</p>\n    </a>\n</div>\n  </div>\n</div>\n\n\n<div id=\"tab5\" class=\"tab-content\">\n  <h2>5.自由者</h2>\n<p id=\"description\">追求創新、熱愛自由，會巧妙掌控生活而不是選擇一條固定的道路。</p>\n  <div class=\"wrap-column\">\n<div class=\"column\">\n    <a href=\"https://awnl.tw/collections/aquamarine-jewelry\" class=\"column-link\">\n        <img src=\"https://cdn.shopify.com/s/files/1/0586/4026/9492/files/Brazilian_Aquamarine.jpg?v=1710141793\" alt=\"海藍寶石\">\n        <h4>海藍寶石</h4>\n        <p>Aquamarine | 美人魚的寶藏</p>\n    </a>\n</div>\n    <div class=\"column\">\n    <a href=\"https://awnl.tw/collections/blue-kyanite\" class=\"column-link\">\n        <img src=\"https://cdn.shopify.com/s/files/1/0586/4026/9492/files/Brazilian_Kyanite.jpg?v=1710144099\" alt=\"藍晶石\">\n        <h4>藍晶石</h4>\n        <p>Blue Kyanite （Disthene） | 協調水晶</p>\n    </a>\n</div>\n    <div class=\"column\">\n      <a href=\"https://awnl.tw/collections/blue-lace-agate\" class=\"column-link\">\n        <img src=\"https://cdn.shopify.com/s/files/1/0586/4026/9492/files/Brazilian_Blue_Lace_Agate.jpg?v=1710138147\" alt=\"藍紋瑪瑙\">\n        <h4>藍紋瑪瑙</h4>\n        <p>Blue Lace Agate | 外交官之石</p>\n      </a>\n    </div>\n  <div class=\"column\">\n    <a href=\"https://awnl.tw/collections/tanzanite\" class=\"column-link\">\n        <img src=\"https://cdn.shopify.com/s/files/1/0586/4026/9492/files/Blue_Tanzanite.jpg?v=1710984905\" alt=\"坦桑石\">\n        <h4>坦桑石</h4>\n        <p>Tanzanite | 內心探索的工具</p>\n    </a>\n</div>\n    <div class=\"column\">\n      <a href=\"https://awnl.tw/collections/topaz\" class=\"column-link\">\n        <img src=\"https://cdn.shopify.com/s/files/1/0586/4026/9492/files/Brazilian_Topaz.jpg?v=1710147190\" alt=\"托帕石\">\n        <h4>托帕石</h4>\n        <p>Topaz | 能量交響樂</p>\n      </a>\n    </div>\n<div class=\"column\">\n    <a href=\"https://awnl.tw/collections/sapphire\" class=\"column-link\">\n        <img src=\"https://cdn.shopify.com/s/files/1/0586/4026/9492/files/Sri_Lankan_Sapphire.jpg?v=1706859035\" alt=\"藍寶石\">\n        <h4>藍寶石</h4>\n        <p>Sapphire | 智慧寶石</p>\n    </a>\n</div>\n  </div>\n</div>\n\n\n<div id=\"tab6\" class=\"tab-content\">\n  <h2>6.顧問</h2>\n<p id=\"description\">重視與他人共鳴，擁有深厚的共感力，透過幫助他人來尋找自我價值的人。</p>\n  <div class=\"wrap-column\">\n<div class=\"column\">\n      <a href=\"https://awnl.tw/collections/pietersite\" class=\"column-link\">\n        <img src=\"https://cdn.shopify.com/s/files/1/0586/4026/9492/files/Namibian_Pietersite.jpg?v=1710208290\" alt=\"彼得石\">\n        <h4>彼得石</h4>\n        <p>Pietersite | 無敵的意志力</p>\n      </a>\n    </div>\n    <div class=\"column\">\n      <a href=\"https://awnl.tw/collections/dumortierite-jewelry\" class=\"column-link\">\n        <img src=\"https://cdn.shopify.com/s/files/1/0586/4026/9492/files/Madagascar_Dumortierite.jpg?v=1706857491\" alt=\"藍線石\">\n        <h4>藍線石</h4>\n        <p>Dumortierite | 鎮定、智慧之石</p>\n      </a>\n    </div>\n    <div class=\"column\">\n    <a href=\"https://awnl.tw/collections/hawk-eye-jewelry\" class=\"column-link\">\n        <img src=\"https://cdn.shopify.com/s/files/1/0586/4026/9492/files/South_African_Hawk_s_Eye.jpg?v=1706856057\" alt=\"鷹眼石\">\n        <h4>鷹眼石</h4>\n        <p>Hawk Eye (Blue Tiger Eye) | 遠見之石</p>\n    </a>\n</div>\n    <div class=\"column\">\n      <a href=\"https://awnl.tw/collections/lapis-lazuli-jewelry\" class=\"column-link\">\n        <img src=\"https://cdn.shopify.com/s/files/1/0586/4026/9492/files/Afghan_Lapis_Lazuli.jpg?v=1700638080\" alt=\"青金石\">\n        <h4>青金石</h4>\n        <p>Lapis Lazuli | 天堂之石</p>\n      </a>\n    </div>\n<div class=\"column\">\n    <a href=\"https://awnl.tw/collections/sodalite-jewelry\" class=\"column-link\">\n        <img src=\"https://cdn.shopify.com/s/files/1/0586/4026/9492/files/Brazilian_Sodalite.jpg?v=1706860961\" alt=\"藍紋石\">\n        <h4>藍紋石</h4>\n        <p>Sodalite | 療癒水晶</p>\n    </a>\n</div>\n    <div class=\"column\">\n    <a href=\"https://awnl.tw/collections/mahogany-obsidian-jewelry\" class=\"column-link\">\n        <img src=\"https://cdn.shopify.com/s/files/1/0586/4026/9492/files/mahogany_obsidian.jpg?v=1735010818\" alt=\"紅曜石\">\n        <h4>紅曜石</h4>\n        <p>Mahogany Obsidian | 愛與力量之石</p>\n    </a>\n</div>\n<div class=\"column\">\n    <a href=\"https://awnl.tw/collections/brecciated-jasper\" class=\"column-link\">\n        <img src=\"https://cdn.shopify.com/s/files/1/0586/4026/9492/files/Brecciated_Jasper.jpg?v=1728981986\" alt=\"紅花瑪瑙\">\n        <h4>紅花瑪瑙</h4>\n        <p>Brecciated Jasper | 地氣穩定器</p>\n    </a>\n</div>\n  </div>\n</div>\n\n\n<div id=\"tab7\" class=\"tab-content\">\n  <h2>7.求知者</h2>\n<p id=\"description\">具備邏輯思維，善於挖掘背後動機，擁有高標準和直覺，能洞察問題的本質的人。</p>\n  <div class=\"wrap-column\">\n    <div class=\"column\">\n      <a href=\"https://awnl.tw/collections/amethyst-jewelry\" class=\"column-link\">\n        <img src=\"https://cdn.shopify.com/s/files/1/0586/4026/9492/files/Brazilian_Amethyst.jpg?v=1710145341\" alt=\"紫水晶\">\n        <h4>紫水晶</h4>\n        <p>Amethyst | 靈性之石</p>\n      </a>\n    </div>\n<div class=\"column\">\n    <a href=\"https://awnl.tw/collections/moonstone\" class=\"column-link\">\n        <img src=\"https://cdn.shopify.com/s/files/1/0586/4026/9492/files/Sri_Lankan_Blue_Moonstone.jpg?v=1710145738\" alt=\"藍月光石\">\n        <h4>藍月光石</h4>\n        <p>Blue Moonstone | 女性能量之石</p>\n    </a>\n</div>\n    <div class=\"column\">\n      <a href=\"https://awnl.tw/collections/charoite-jewelry\" class=\"column-link\">\n        <img src=\"https://cdn.shopify.com/s/files/1/0586/4026/9492/files/Siberian_Charoite.jpg?v=1710210699\" alt=\"紫龍晶\">\n        <h4>紫龍晶</h4>\n        <p>Charoite | 智者之石</p>\n      </a>\n    </div>\n<div class=\"column\">\n    <a href=\"https://awnl.tw/collections/purple-phantom-quartz-jewelry\" class=\"column-link\">\n        <img src=\"https://cdn.shopify.com/s/files/1/0586/4026/9492/files/Brazilian_Purple_Phantom_Quartz.jpg?v=1706861476\" alt=\"紫幽靈\">\n        <h4>紫幽靈</h4>\n        <p>Purple Phantom Quartz | 直覺之石</p>\n    </a>\n</div>\n  </div>\n</div>\n\n\n<div id=\"tab8\" class=\"tab-content\">\n  <h2>8.賺錢家</h2>\n<p id=\"description\">精通商業，追求權力與成功，重視效率與執行力的人。</p>\n  <div class=\"wrap-column\">\n<div class=\"column\">\n    <a href=\"https://awnl.tw/collections/bronzite-jewelry\" class=\"column-link\">\n        <img src=\"https://cdn.shopify.com/s/files/1/0586/4026/9492/files/Brazilian_Bronzite.jpg?v=1706858054\" alt=\"古銅輝石\">\n        <h4>古銅輝石</h4>\n        <p>Bronzite | 正能量之石</p>\n    </a>\n</div>\n    <div class=\"column\">\n      <a href=\"https://awnl.tw/collections/fossil-coral-jewelry\" class=\"column-link\">\n        <img src=\"https://cdn.shopify.com/s/files/1/0586/4026/9492/files/Canadian_Fossil_Coral.jpg?v=1706858232\" alt=\"珊瑚化石\">\n        <h4>珊瑚化石</h4>\n        <p>Fossil Coral/Agatized Coral | 古老的護身符</p>\n      </a>\n    </div>\n<div class=\"column\">\n    <a href=\"https://awnl.tw/collections/picture-jasper-jewelry\" class=\"column-link\">\n        <img src=\"https://cdn.shopify.com/s/files/1/0586/4026/9492/files/South_African_Picture_Jasper.jpg?v=1706857957\" alt=\"圖畫石\">\n        <h4>圖畫石</h4>\n        <p>Picture Jasper | 大自然創造力的載體</p>\n    </a>\n</div>\n  </div>\n</div>\n\n<div id=\"tab9\" class=\"tab-content\">\n  <h2>9.照顧者</h2>\n<p id=\"description\">夢想豐富，追求精神成長，熱愛和平，並樂於傳遞喜悅的人。</p>\n  <div class=\"wrap-column\">\n<div class=\"column\">\n      <a href=\"https://awnl.tw/collections/clear-crystal-jewelry\" class=\"column-link\">\n        <img src=\"https://cdn.shopify.com/s/files/1/0586/4026/9492/files/Brazilian_Clear_Quartz.jpg?v=1710136320\" alt=\"白水晶\">\n        <h4>白水晶</h4>\n        <p>Clear Quartz | 治癒大師</p>\n      </a>\n    </div>\n<div class=\"column\">\n    <a href=\"https://awnl.tw/collections/moissanite\" class=\"column-link\">\n        <img src=\"https://cdn.shopify.com/s/files/1/0586/4026/9492/files/Moissanite.jpg?v=1710211140\" alt=\"莫桑石\">\n        <h4>莫桑石</h4>\n        <p>Moissanite | 堅定的選擇、永恆的承諾</p>\n    </a>\n</div>\n<div class=\"column\">\n    <a href=\"https://awnl.tw/collections/mother-of-pearl-nacre\" class=\"column-link\">\n        <img src=\"https://cdn.shopify.com/s/files/1/0586/4026/9492/files/Blue_Tanzanite.jpg?v=1710984905\" alt=\"珍珠母貝\">\n        <h4>珍珠母貝</h4>\n        <p>Mother of Pearl/Nacre | 溫柔的盾牌</p>\n    </a>\n</div>\n    <div class=\"column\">\n      <a href=\"https://awnl.tw/collections/pearl\" class=\"column-link\">\n        <img src=\"https://cdn.shopify.com/s/files/1/0586/4026/9492/files/Australian_Pearl.jpg?v=1710143317\" alt=\"珍珠\">\n        <h4>珍珠</h4>\n        <p>Pearl | 水中的寶石</p>\n      </a>\n    </div>\n  </div>\n</div>\n\n\n<div id=\"tab10\" class=\"tab-content\">\n  <h2>11.啟發者</h2>\n<p id=\"description\">以自己的方式表達靈感，透過與他人的交流，展現天生的「11」數字能量。當找到發揮內在才能的地方時，能擔任教師、療癒師或藝術家的角色，為他人帶來啟發與指引。</p>\n  <div class=\"wrap-column\">\n <div class=\"column\">\n      <a href=\"https://awnl.tw/collections/black-rutilated-quartz\" class=\"column-link\">\n        <img src=\"https://cdn.shopify.com/s/files/1/0586/4026/9492/files/Brazilian_Black_Rutilated_Quartz.jpg?v=1710146801\" alt=\"髮晶\">\n        <h4>髮晶</h4>\n        <p>Rutilated Quartz | 強大元素的組合</p>\n      </a>\n    </div>\n    <div class=\"column\">\n      <a href=\"https://awnl.tw/collections/nuummite\" class=\"column-link\">\n        <img src=\"https://cdn.shopify.com/s/files/1/0586/4026/9492/files/Nuummite_From_Greenland.jpg?v=1706857730\" alt=\"努烏邁特滾石\">\n        <h4>努烏邁特滾石</h4>\n        <p>Nuummite | 古老神秘的魔法石</p>\n      </a></div>\n  <div class=\"column\">\n    <a href=\"https://awnl.tw/collections/opal-jewelry\" class=\"column-link\">\n        <img src=\"https://cdn.shopify.com/s/files/1/0586/4026/9492/files/Australian_Opalite.jpg?v=1710142483\" alt=\"澳寶\">\n        <h4>澳寶</h4>\n        <p>Opal | 釋放之石</p>\n    </a>\n</div>\n    <div class=\"column\">\n      <a href=\"https://awnl.tw/collections/labradorite-spectrolite\" class=\"column-link\">\n        <img src=\"https://cdn.shopify.com/s/files/1/0586/4026/9492/files/Finland_Labradorite.jpg?v=1706860825\" alt=\"光譜石\">\n        <h4>光譜石</h4>\n<p>Spectrolite/Labradorite | 轉變之石</p>\n      </a>\n    </div>\n  </div>\n</div>\n\n\n<div id=\"tab11\" class=\"tab-content\">\n  <h2>12.願景者</h2>\n<p id=\"description\">朝著大目標努力，透過不斷的貢獻和積累成果，展現天生的「22」數字能量。從宏觀角度看待世界，並與他人建立合作關係，擔任領袖、導師或商業人士的角色。</p>\n<div class=\"wrap-column\">\n<div class=\"column\">\n    <a href=\"https://awnl.tw/collections/black-gold-super-seven\" class=\"column-link\">\n        <img src=\"https://cdn.shopify.com/s/files/1/0586/4026/9492/files/Black_Gold_Super_Seven.jpg?v=1710212671\" alt=\"黑金超七\">\n        <h4>黑金超七</h4>\n        <p>Black Gold Super Seven | 開運招財石</p>\n    </a>\n</div>\n    <div class=\"column\">\n      <a href=\"https://awnl.tw/collections/pink-tourmaline\" class=\"column-link\">\n        <img src=\"https://cdn.shopify.com/s/files/1/0586/4026/9492/files/Pink_Tourmaline.jpg?v=1710212061\" alt=\"粉紅碧璽\">\n        <h4>粉紅碧璽</h4>\n        <p>Pink Tourmaline | 心靈的OK繃</p>\n      </a>\n    </div>\n    <div class=\"column\">\n      <a href=\"https://awnl.tw/collections/rhodonite\" class=\"column-link\">\n        <img src=\"https://cdn.shopify.com/s/files/1/0586/4026/9492/files/Australian_Rhodonite.jpg?v=1710142995\" alt=\"薔薇石\">\n        <h4>薔薇石</h4>\n        <p>Rhodonite | 慈悲之石</p>\n      </a>\n    </div>\n  </div>\n</div>\n\n\n<script>\n  document.addEventListener('DOMContentLoaded', function() {\n    const tabs = document.querySelectorAll('.tab');\n    const contents = document.querySelectorAll('.tab-content');\n\n    tabs.forEach(tab => {\n      tab.addEventListener('click', () => {\n        const target = tab.getAttribute('data-tab');\n\n        tabs.forEach(t => t.classList.remove('active'));\n        tab.classList.add('active');\n\n        contents.forEach(content => {\n          if (content.id === target) {\n            content.classList.add('active');\n          } else {\n            content.classList.remove('active');\n          }\n        });\n      });\n    });\n  });\n</script>",
+        "text_alignment": "center"
+      }
+    },
+    "main": {
+      "type": "main-page",
+      "disabled": true,
+      "custom_css": [
+        "h1 {font-size: 32px;}",
+        "p {margin-bottom: 40px; font-size: 15px; line-height: 2;}",
+        "@media (max-width: 680px) {h1 {font-size: 28px; line-height: 1.2; } p {margin-bottom: 35px; font-size: 14px; line-height: 1.7; }}"
+      ],
+      "settings": {
+        "color_scheme": "scheme-2",
+        "show_title": false,
+        "page_width": "xs"
+      }
+    },
+    "blog_posts_TQQtjr": {
+      "type": "blog-posts",
+      "custom_css": [
+        ".blog-post-card img {width: 100%; height: auto; aspect-ratio: 1.6; object-fit: cover; object-position: center; border-radius: 10px;}"
+      ],
+      "settings": {
+        "color_scheme": "scheme-2",
+        "separate_section_with_border": false,
+        "blog": "the-journal",
+        "posts_count": 6,
+        "stack_on_mobile": false,
+        "show_category": true,
+        "show_excerpt": false,
+        "show_read_more": true,
+        "subheading": "",
+        "title": "AWNL部落格",
+        "content": "<p>提供穿搭靈感、晶石能量解析、珠寶推薦，以及品牌合作等多元內容。</p>",
+        "button_link": "shopify://blogs/the-journal",
+        "button_text": "查看更多"
+      }
+    }
+  },
+  "order": [
+    "image_with_text_overlay_U4Xc8J",
+    "custom_liquid_KER9xT",
+    "rich_text_RR9B8y",
+    "rich_text_zbMkyh",
+    "custom_liquid_fHcyFF",
+    "main",
+    "blog_posts_TQQtjr"
+  ]
+}

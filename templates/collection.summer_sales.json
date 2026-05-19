@@ -1,0 +1,211 @@
+/*
+* ------------------------------------------------------------
+* IMPORTANT: The contents of this file are auto-generated.
+*
+* This file may be updated by the Shopify admin theme editor
+* or related systems. Please exercise caution as any changes
+* made to this file may be overwritten.
+* ------------------------------------------------------------
+*/
+{
+  "sections": {
+    "collection-banner": {
+      "type": "collection-banner",
+      "settings": {
+        "color_scheme": "scheme-3",
+        "image": "shopify://shop_images/summer-sale-mb.jpg",
+        "image_size": "auto",
+        "allow_transparent_header": false,
+        "reveal": true,
+        "enable_parallax": false,
+        "show_image": true,
+        "show_collection_title": false,
+        "show_collection_description": false,
+        "show_breadcrumb": true,
+        "content_width": "xs",
+        "overlay_color": "#000000",
+        "overlay_opacity": 0
+      }
+    },
+    "rich_text_xCawRH": {
+      "type": "rich-text",
+      "blocks": {
+        "heading_NRYRUe": {
+          "type": "heading",
+          "settings": {
+            "text": "2024年7月夏季折扣活動已結束",
+            "heading_tag": "h1"
+          }
+        },
+        "richtext_8XWxCB": {
+          "type": "richtext",
+          "settings": {
+            "content": "<p>敬請期待下一次折扣活動！</p>"
+          }
+        },
+        "button_DyA6Rg": {
+          "type": "button",
+          "settings": {
+            "style": "solid",
+            "text": "回首頁",
+            "url": "/",
+            "background": "",
+            "text_color": ""
+          }
+        }
+      },
+      "block_order": [
+        "heading_NRYRUe",
+        "richtext_8XWxCB",
+        "button_DyA6Rg"
+      ],
+      "settings": {
+        "color_scheme": "",
+        "separate_section_with_border": true,
+        "content_width": "sm",
+        "text_position": "center",
+        "remove_vertical_spacing": false
+      }
+    },
+    "main": {
+      "type": "main-collection",
+      "settings": {
+        "color_scheme": "scheme-2",
+        "hide_product_information": false,
+        "products_per_page": 35,
+        "products_per_row_mobile": "2",
+        "products_size_desktop": "medium",
+        "show_grid_mode_selector": true,
+        "horizontal_spacing_factor": 1.5,
+        "vertical_spacing_factor": 1.5,
+        "filter_layout": "drawer",
+        "quick_links_menu": "",
+        "show_sort_by": true,
+        "show_filters": true,
+        "show_results_count": true,
+        "show_filter_group_name": false,
+        "show_filter_values_count": true,
+        "open_filters_by_default": false
+      }
+    },
+    "c13bd51f-2bec-497a-b75e-b6b463f04c2d": {
+      "type": "rich-text",
+      "blocks": {
+        "template--16029654319284__c13bd51f-2bec-497a-b75e-b6b463f04c2d-subheading-1": {
+          "type": "subheading",
+          "settings": {
+            "text": ""
+          }
+        },
+        "template--16029654319284__c13bd51f-2bec-497a-b75e-b6b463f04c2d-heading-1": {
+          "type": "heading",
+          "settings": {
+            "text": "<a title=\"*促銷活動商品的退換貨和退款須知*\">*促銷活動商品的退換貨和退款須知*</a>",
+            "heading_tag": "h3"
+          }
+        },
+        "template--16029654319284__c13bd51f-2bec-497a-b75e-b6b463f04c2d-richtext-1": {
+          "type": "richtext",
+          "settings": {
+            "content": "<p>我們僅接受與商品的質量問題或手鍊尺寸交換相關的退貨和退款申請。其他原因的退貨或退款，很抱歉，我們無法受理退換貨。感謝您的理解。</p>"
+          }
+        }
+      },
+      "block_order": [
+        "template--16029654319284__c13bd51f-2bec-497a-b75e-b6b463f04c2d-subheading-1",
+        "template--16029654319284__c13bd51f-2bec-497a-b75e-b6b463f04c2d-heading-1",
+        "template--16029654319284__c13bd51f-2bec-497a-b75e-b6b463f04c2d-richtext-1"
+      ],
+      "disabled": true,
+      "settings": {
+        "color_scheme": "",
+        "separate_section_with_border": true,
+        "content_width": "sm",
+        "text_position": "center",
+        "remove_vertical_spacing": false
+      }
+    },
+    "collection_list_KXzUfx": {
+      "type": "collection-list",
+      "blocks": {
+        "collection_EbMNcq": {
+          "type": "collection",
+          "settings": {
+            "color_scheme": "",
+            "collection": "{{ collection.metafields.my_fields.sub_collection_a.value }}",
+            "image": "{{ block.settings.collection.metafields.my_fields.collection_banner_mb.value }}",
+            "expand_collection": false,
+            "content_position": "place-self-end-center text-center",
+            "subheading": "",
+            "title": "",
+            "button_text": "{{ block.settings.collection.title }}",
+            "button_link": "",
+            "overlay_color": "#000000",
+            "overlay_opacity": 10
+          }
+        },
+        "collection_RQYBWJ": {
+          "type": "collection",
+          "settings": {
+            "color_scheme": "",
+            "collection": "{{ collection.metafields.my_fields.sub_collection_b.value }}",
+            "image": "{{ block.settings.collection.metafields.my_fields.collection_banner_mb.value }}",
+            "expand_collection": false,
+            "content_position": "place-self-end-center text-center",
+            "subheading": "",
+            "title": "",
+            "button_text": "{{ block.settings.collection.title }}",
+            "button_link": "",
+            "overlay_color": "#000000",
+            "overlay_opacity": 12
+          }
+        },
+        "collection_jbbHeL": {
+          "type": "collection",
+          "settings": {
+            "color_scheme": "scheme-4",
+            "collection": "{{ collection.metafields.my_fields.sub_colleciton_c.value }}",
+            "image": "{{ block.settings.collection.metafields.my_fields.collection_banner_mb.value }}",
+            "expand_collection": false,
+            "content_position": "place-self-end-center text-center",
+            "subheading": "",
+            "title": "",
+            "button_text": "{{ block.settings.collection.title }}",
+            "button_link": "",
+            "overlay_color": "#000000",
+            "overlay_opacity": 10
+          }
+        }
+      },
+      "block_order": [
+        "collection_EbMNcq",
+        "collection_RQYBWJ",
+        "collection_jbbHeL"
+      ],
+      "custom_css": [
+        ".button {background: transparent; border: none; color: white; text-decoration: none; position: relative; padding: 5px; display: inline-block; line-height: 1.6; border-bottom: 1px solid transparent; background-image: linear-gradient(to right, white, white); background-size: 100% 2px; background-repeat: no-repeat; background-position: 0% 100%; transition: background-size 0.8s ease-in-out;}",
+        ".button:hover {background-size: 0% 2px;}",
+        ".collection-card img {width: 100%; height: auto; aspect-ratio: 1 / 1; object-fit: cover; object-position: center;}"
+      ],
+      "settings": {
+        "color_scheme": "scheme-2",
+        "separate_section_with_border": false,
+        "image_size": "auto",
+        "show_text_outside": false,
+        "space_items": true,
+        "stack_collections": true,
+        "collections_per_row_desktop": 3,
+        "subheading": "",
+        "title": "More Inspirations",
+        "content": "<p>探索更多系列靈感</p>"
+      }
+    }
+  },
+  "order": [
+    "collection-banner",
+    "rich_text_xCawRH",
+    "main",
+    "c13bd51f-2bec-497a-b75e-b6b463f04c2d",
+    "collection_list_KXzUfx"
+  ]
+}

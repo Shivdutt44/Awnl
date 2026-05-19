@@ -1,0 +1,386 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "rich_text_PRkR9D": {
+      "type": "rich-text",
+      "blocks": {
+        "heading_eGAxa6": {
+          "type": "heading",
+          "settings": {
+            "text": "AWNL客製化珠寶",
+            "heading_tag": "h1"
+          }
+        },
+        "richtext_mVQdjB": {
+          "type": "richtext",
+          "settings": {
+            "content": "<p>歡迎預約AWNL客製珠寶服務</p><p>請填寫以下表單，告訴我們您期待的設計概念。專人將盡快與您討論預算及製作細節</p><p>方案確認後會創建相應的客製加工費用進行付款</p>"
+          }
+        },
+        "image_EN7NKf": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/personalized-jewelry.jpg",
+            "width_mode": "full_width",
+            "max_width": 600,
+            "mobile_max_width": 400
+          }
+        }
+      },
+      "block_order": [
+        "heading_eGAxa6",
+        "richtext_mVQdjB",
+        "image_EN7NKf"
+      ],
+      "settings": {
+        "color_scheme": "scheme-1b02ad27-67f6-4363-902b-7afc4c7eb905",
+        "separate_section_with_border": true,
+        "content_width": "sm",
+        "text_position": "center",
+        "remove_vertical_spacing": false
+      }
+    },
+    "174054002946aea2cb": {
+      "type": "apps",
+      "blocks": {
+        "formful_app_block_form_9Y4xXC": {
+          "type": "shopify://apps/formful/blocks/app-block-form/be9de36b-78a1-4ce9-8de3-f1044fb2ee2e",
+          "settings": {
+            "form_id": "form_VeJuw2bIac",
+            "max_width": 75,
+            "column_gap": 2,
+            "row_gap": 1,
+            "padding_top": 36,
+            "padding_bottom": 36,
+            "color_scheme": ""
+          }
+        }
+      },
+      "block_order": [
+        "formful_app_block_form_9Y4xXC"
+      ],
+      "custom_css": [
+        "div.container {text-align: center;}",
+        ".formful__wrapper .formful__fields .formful__label {font-weight: bold;}"
+      ],
+      "settings": {
+        "color_scheme": "scheme-1b02ad27-67f6-4363-902b-7afc4c7eb905",
+        "separate_section_with_border": false,
+        "remove_vertical_spacing": false,
+        "remove_horizontal_spacing": false
+      }
+    },
+    "main": {
+      "type": "main-product",
+      "blocks": {
+        "dbd0ac34-1fbd-4e82-a225-37beacaf1d3e": {
+          "type": "title",
+          "settings": {
+            "heading_tag": "h3"
+          }
+        },
+        "56213e8d-d248-49fe-ab76-052ea3c61b5c": {
+          "type": "price",
+          "settings": {
+            "show_taxes_notice": false
+          }
+        },
+        "58241bc6-d849-451e-bac6-5f03206020ff": {
+          "type": "variant_picker",
+          "settings": {
+            "hide_sold_out_variants": true,
+            "selector_style": "dropdown",
+            "swatch_selector_style": "swatch",
+            "variant_image_options": "",
+            "size_chart_page": "{{ product.metafields.my_fields.size_guide.value }}"
+          }
+        },
+        "quantity_selector": {
+          "type": "quantity_selector",
+          "settings": {}
+        },
+        "feature_with_icon_9FDRk3": {
+          "type": "feature_with_icon",
+          "settings": {
+            "text": "<a href=\"/pages/membership-guide\" title=\"AWNL會員積分計畫說明\"><strong>註冊會員購物賺取積分，兌換現金折扣好禮！</strong></a>",
+            "link": "",
+            "icon": "none",
+            "custom_icon": "shopify://shop_images/member-point2.png",
+            "icon_width": 20,
+            "background": "#ffffff",
+            "text_color": "#6b6b6b",
+            "border_color": ""
+          }
+        },
+        "buy_buttons": {
+          "type": "buy_buttons",
+          "settings": {
+            "show_payment_button": false,
+            "show_gift_card_recipient": true,
+            "atc_button_background": "",
+            "atc_button_text_color": "",
+            "payment_button_background": "",
+            "payment_button_text_color": ""
+          }
+        },
+        "wishlist_hero_custom_product_button_6jqUUr": {
+          "type": "shopify://apps/wishlist-hero/blocks/custom-product-button/a9a5079b-59e8-47cb-b659-ecf1c60b9b72",
+          "settings": {
+            "displayButtonMode": "~",
+            "contentAlignment": "center",
+            "buttonAlignment": "center",
+            "buttonFullwidth": true,
+            "removeBoxShadowAndBorder": false,
+            "horizontalPadding": 20,
+            "iconTopOffset": 0,
+            "addedCssClassNames": "",
+            "addedContainerStyles": ""
+          }
+        },
+        "share_buttons": {
+          "type": "share_buttons",
+          "settings": {}
+        },
+        "description": {
+          "type": "description",
+          "settings": {
+            "collapse_content": false,
+            "show_below_gallery": false
+          }
+        },
+        "modal_zeeVgK": {
+          "type": "modal",
+          "settings": {
+            "button_title": "{{ product.metafields.my_fields.gemstone_crystal_data.value.gemstone_name.value }} {{ product.metafields.my_fields.gemstone_crystal_data.value.crystal_name.value }}",
+            "button_style": "outline",
+            "stretch_button": true,
+            "button_background": "",
+            "button_text_color": "",
+            "modal_title": "{{ product.metafields.my_fields.gemstone_crystal_data.value.gemstone_name.value }} | {{ product.metafields.my_fields.gemstone_crystal_data.value.alias.value }}",
+            "modal_content": "<p>{{ product.metafields.my_fields.gemstone_crystal_data.value.crystal_name.value }}-{{ product.metafields.my_fields.gemstone_crystal_data.value.gemstone_name.value }}</p>{{ product.metafields.my_fields.gemstone_crystal_data.value.gemstone_description | metafield_tag }}{{ product.metafields.my_fields.gemstone_crystal_data.value.applicable_people | metafield_tag }}{{ product.metafields.my_fields.gemstone_crystal_data.value.collection_link | metafield_tag }}"
+          }
+        },
+        "modal_rKEN6T": {
+          "type": "modal",
+          "settings": {
+            "button_title": "{{ product.metafields.my_fields.gemstone_crystal_data_2.value.gemstone_name.value }} {{ product.metafields.my_fields.gemstone_crystal_data_2.value.crystal_name.value }}",
+            "button_style": "outline",
+            "stretch_button": true,
+            "button_background": "",
+            "button_text_color": "",
+            "modal_title": "{{ product.metafields.my_fields.gemstone_crystal_data_2.value.gemstone_name.value }} | {{ product.metafields.my_fields.gemstone_crystal_data_2.value.alias.value }}",
+            "modal_content": "<p>{{ product.metafields.my_fields.gemstone_crystal_data_2.value.crystal_name.value }}-{{ product.metafields.my_fields.gemstone_crystal_data_2.value.gemstone_name.value }}</p>{{ product.metafields.my_fields.gemstone_crystal_data_2.value.gemstone_description | metafield_tag }}{{ product.metafields.my_fields.gemstone_crystal_data_2.value.applicable_people | metafield_tag }}{{ product.metafields.my_fields.gemstone_crystal_data_2.value.collection_link | metafield_tag }}"
+          }
+        },
+        "product_variations_PQ6yVx": {
+          "type": "product_variations",
+          "settings": {
+            "option_name": "相似款式及顏色",
+            "option_value_metafield": "",
+            "products": "{{ product.metafields.my_fields.product_color_style_variation.value }}",
+            "selector_style": "variant_image"
+          }
+        },
+        "accordion_HLQrdJ": {
+          "type": "accordion",
+          "settings": {
+            "show_below_gallery": false,
+            "icon": "none",
+            "title": "北歐盧恩符文",
+            "content": "<p>{{ product.metafields.my_fields.runes | metafield_tag }}</p>",
+            "liquid": "",
+            "page": ""
+          }
+        },
+        "accordion_xyaHPT": {
+          "type": "accordion",
+          "settings": {
+            "show_below_gallery": true,
+            "icon": "none",
+            "title": "購前須知",
+            "content": "",
+            "liquid": "",
+            "page": "information-before-purchase"
+          }
+        },
+        "57e77d1f-b417-446c-a560-bab9db1dfde9": {
+          "type": "accordion",
+          "settings": {
+            "show_below_gallery": true,
+            "icon": "none",
+            "title": "運送 & 退換",
+            "content": "",
+            "liquid": "",
+            "page": "shipping-exchange-return-policy-on-product-page"
+          }
+        },
+        "offers_gLD8Wr": {
+          "type": "offers",
+          "settings": {
+            "stack_offers": false,
+            "offer_1_title": "",
+            "offer_1_content": "{{ product.metafields.my_fields.bracelet_wearing_tips | metafield_tag }}",
+            "offer_2_title": "",
+            "offer_2_content": "",
+            "offer_3_title": "",
+            "offer_3_content": "",
+            "background": "",
+            "text_color": "",
+            "border_color": ""
+          }
+        }
+      },
+      "block_order": [
+        "dbd0ac34-1fbd-4e82-a225-37beacaf1d3e",
+        "56213e8d-d248-49fe-ab76-052ea3c61b5c",
+        "58241bc6-d849-451e-bac6-5f03206020ff",
+        "quantity_selector",
+        "feature_with_icon_9FDRk3",
+        "buy_buttons",
+        "wishlist_hero_custom_product_button_6jqUUr",
+        "share_buttons",
+        "description",
+        "modal_zeeVgK",
+        "modal_rKEN6T",
+        "product_variations_PQ6yVx",
+        "accordion_HLQrdJ",
+        "accordion_xyaHPT",
+        "57e77d1f-b417-446c-a560-bab9db1dfde9",
+        "offers_gLD8Wr"
+      ],
+      "custom_css": [
+        "span {font-weight: 500;}",
+        "h5,strong {font-weight: 500;}",
+        ".po-dropdown-thumbnail-option span {font-size: 12px;}",
+        ".po-dropdown-selected-option {border-radius: 0;}",
+        ".po-select-dropdown-thumbnail {margin-left: -5px;}",
+        "div.section-spacing--tight {max-width: 1100px; margin-left: auto; margin-right: auto;}"
+      ],
+      "settings": {
+        "color_scheme": "scheme-2",
+        "container_size": "lg",
+        "product_info_size": 50,
+        "show_sticky_add_to_cart": true,
+        "center_basic_info": true,
+        "desktop_media_layout": "carousel_dots",
+        "desktop_media_grid_gap": 30,
+        "mobile_controls": "dots",
+        "enable_media_autoplay": true,
+        "enable_video_looping": true,
+        "enable_image_zoom": true,
+        "max_image_zoom_level": 3
+      }
+    },
+    "172907407311208910": {
+      "type": "apps",
+      "blocks": {
+        "judge_me_reviews_review_widget_eHwhGg": {
+          "type": "shopify://apps/judge-me-reviews/blocks/review_widget/61ccd3b1-a9f2-4160-9fe9-4fec8413e5d8",
+          "settings": {}
+        }
+      },
+      "block_order": [
+        "judge_me_reviews_review_widget_eHwhGg"
+      ],
+      "disabled": true,
+      "custom_css": [
+        "@media (min-width: 1300px) {.container {max-width: 1350px; margin-left: auto; margin-right: auto; }}"
+      ],
+      "settings": {
+        "color_scheme": "scheme-2",
+        "separate_section_with_border": false,
+        "remove_vertical_spacing": false,
+        "remove_horizontal_spacing": false
+      }
+    },
+    "d8f3acfa-1acc-47cc-9a9e-4cdc2cd92d25": {
+      "type": "featured-collections",
+      "blocks": {
+        "template--16116534935732__d8f3acfa-1acc-47cc-9a9e-4cdc2cd92d25-collection-1": {
+          "type": "collection",
+          "settings": {
+            "collection": "{{ product.metafields.my_fields.related_collection_1.value }}",
+            "products_count": 6,
+            "title": "{{ block.settings.collection.title }}",
+            "link_url": "",
+            "link_text": "瀏覽全部"
+          }
+        },
+        "3fdef42e-d7b4-48b5-8f5e-8a00e2613aea": {
+          "type": "collection",
+          "settings": {
+            "collection": "{{ product.metafields.my_fields.related_collection_2.value }}",
+            "products_count": 6,
+            "title": "{{ block.settings.collection.title }}",
+            "link_url": "",
+            "link_text": "瀏覽全部"
+          }
+        },
+        "17cf1913-39d7-4b93-a3a7-a165b7508094": {
+          "type": "collection",
+          "settings": {
+            "collection": "{{ product.metafields.my_fields.related_colleciton_3.value }}",
+            "products_count": 6,
+            "title": "{{ block.settings.collection.title }}",
+            "link_url": "",
+            "link_text": "瀏覽全部"
+          }
+        }
+      },
+      "block_order": [
+        "template--16116534935732__d8f3acfa-1acc-47cc-9a9e-4cdc2cd92d25-collection-1",
+        "3fdef42e-d7b4-48b5-8f5e-8a00e2613aea",
+        "17cf1913-39d7-4b93-a3a7-a165b7508094"
+      ],
+      "disabled": true,
+      "custom_css": [
+        "button {font-size: 15px;}"
+      ],
+      "settings": {
+        "color_scheme": "scheme-2",
+        "separate_section_with_border": true,
+        "hide_product_information": false,
+        "stack_products": false,
+        "products_per_row_mobile": "2",
+        "products_per_row_desktop": 4,
+        "horizontal_spacing_factor": 1,
+        "vertical_spacing_factor": 0.5,
+        "subheading": "相關系列 | 更多靈感"
+      }
+    },
+    "recently_viewed_products_UVNtyz": {
+      "type": "recently-viewed-products",
+      "disabled": true,
+      "settings": {
+        "separate_section_with_border": true,
+        "color_scheme": "scheme-2",
+        "hide_product_information": false,
+        "stack_products": false,
+        "products_count": 8,
+        "products_per_row_mobile": "2",
+        "products_per_row_desktop": 4,
+        "horizontal_spacing_factor": 1,
+        "vertical_spacing_factor": 0.2,
+        "subheading": "",
+        "title": "歷史瀏覽商品",
+        "content": ""
+      }
+    }
+  },
+  "order": [
+    "rich_text_PRkR9D",
+    "174054002946aea2cb",
+    "main",
+    "172907407311208910",
+    "d8f3acfa-1acc-47cc-9a9e-4cdc2cd92d25",
+    "recently_viewed_products_UVNtyz"
+  ]
+}

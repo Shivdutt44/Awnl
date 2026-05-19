@@ -1,0 +1,823 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "slideshow_ccxMG9": {
+      "type": "slideshow",
+      "blocks": {
+        "image_8xHLVw": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/2025-spring-sale-homepage_-bracelet-gemstone-banner-pc.jpg",
+            "mobile_image": "shopify://shop_images/2025-spring-sale-homepage_-bracelet-gemstone-banner-mb.jpg",
+            "subheading": "天際之光 璀璨春晨",
+            "title": "SPRING HORIZEN",
+            "mobile_text_position": "place-self-end-center text-center",
+            "desktop_text_position": "sm:place-self-center-end sm:text-end",
+            "content_max_width": 780,
+            "button_1_text": "新品上市",
+            "button_1_link": "shopify://collections/new-arrival",
+            "button_1_style": "solid",
+            "button_1_background": "#ffffff",
+            "button_1_text_color": "#1c1c1c",
+            "button_2_text": "",
+            "button_2_link": "",
+            "button_2_style": "outline",
+            "button_2_background": "#ffffff",
+            "button_2_text_color": "#000000",
+            "background": "",
+            "background_opacity": 50,
+            "text_color": "#ffffff",
+            "border_color": "",
+            "gradient_overlay": ""
+          }
+        }
+      },
+      "block_order": [
+        "image_8xHLVw"
+      ],
+      "settings": {
+        "allow_transparent_header": false,
+        "show_next_section_button": false,
+        "media_size": "auto",
+        "show_initial_transition": false,
+        "autoplay": true,
+        "autoplay_pause_on_video": true,
+        "cycle_speed": 5,
+        "background": "#000000",
+        "controls_color": "#ffffff"
+      }
+    },
+    "multi_column_WhdEfn": {
+      "type": "multi-column",
+      "blocks": {
+        "image_with_text_J46JN8": {
+          "type": "image_with_text",
+          "settings": {
+            "image": "shopify://shop_images/2025-valentine-day-homepage-men-necklaces.jpg",
+            "title": "Necklace",
+            "heading_tag": "h3",
+            "content": "<p>男士項鍊</p>",
+            "link_url": "shopify://collections/mens-necklace",
+            "link_text": ""
+          }
+        },
+        "image_with_text_dWDVkY": {
+          "type": "image_with_text",
+          "settings": {
+            "image": "shopify://shop_images/2025-valentine-day-homepage-men-bracelet.jpg",
+            "title": "Bracelet",
+            "heading_tag": "h3",
+            "content": "<p>男士手鍊</p>",
+            "link_url": "shopify://collections/mens-bracelet",
+            "link_text": ""
+          }
+        },
+        "image_with_text_CdMfTB": {
+          "type": "image_with_text",
+          "settings": {
+            "image": "shopify://shop_images/2025-valentine-day-homepage-men-necklace.jpg",
+            "title": "Chain",
+            "heading_tag": "h3",
+            "content": "<p>男士鏈條</p>",
+            "link_url": "shopify://collections/sterling-silver-chain-necklace",
+            "link_text": ""
+          }
+        }
+      },
+      "block_order": [
+        "image_with_text_J46JN8",
+        "image_with_text_dWDVkY",
+        "image_with_text_CdMfTB"
+      ],
+      "custom_css": [
+        "@media (min-width: 769px) {.section-stack {max-width: 1800px; margin-left: auto; margin-right: auto; }}",
+        "div.prose {margin-top: -20px;}",
+        "div.prose.text-center p,a.link {margin-top: 3px;}",
+        "@media (max-width: 769px) {img {aspect-ratio: 1/1.2; object-fit: cover; }}",
+        "@media (min-width: 770px) {img {aspect-ratio: 1.2/1; object-fit: cover; }}",
+        ".multi-column {grid-column-gap: 1px;}",
+        ".scroll-area {grid-auto-columns: 75vw;}"
+      ],
+      "settings": {
+        "color_scheme": "scheme-1b02ad27-67f6-4363-902b-7afc4c7eb905",
+        "separate_section_with_border": false,
+        "columns_per_row": 3,
+        "stack_on_mobile": false,
+        "overlap_image": false,
+        "content_alignment": "center",
+        "text_alignment": "center",
+        "spacing": "sm",
+        "subheading": "質感男士系列",
+        "title": "MEN'S SIGNATURE COLLECTION",
+        "content": ""
+      }
+    },
+    "multi_column_athKaq": {
+      "type": "multi-column",
+      "blocks": {
+        "image_with_text_zUL8PB": {
+          "type": "image_with_text",
+          "settings": {
+            "image": "shopify://shop_images/2025-valentine-day-homepage-meteorite-jewlelry-col.jpg",
+            "title": "瑞典隕石珠寶",
+            "heading_tag": "h3",
+            "content": "<p>刻畫銀河的天然紋理 星際旅者的印記</p>",
+            "link_url": "shopify://collections/swedish-meteorite-jewellery",
+            "link_text": "SHOP NOW"
+          }
+        },
+        "image_with_text_YRJe84": {
+          "type": "image_with_text",
+          "settings": {
+            "image": "shopify://shop_images/2025-valentine-day-homepage-gemstone-necklaces-collction.jpg",
+            "title": "天然晶石珠寶",
+            "heading_tag": "h3",
+            "content": "<p>大地孕育的珍藏  時光雕琢的傑作</p>",
+            "link_url": "shopify://collections/natural-gemstone-jewelry",
+            "link_text": "SHOP NOW"
+          }
+        }
+      },
+      "block_order": [
+        "image_with_text_zUL8PB",
+        "image_with_text_YRJe84"
+      ],
+      "custom_css": [
+        "@media (min-width: 769px) {.section-stack {max-width: 1800px; margin-left: auto; margin-right: auto; }}",
+        "div.prose {margin-top: -20px;}",
+        "div.prose.text-center p,a.link {margin-top: 3px;}",
+        "@media (max-width: 769px) {img {aspect-ratio: 1/0.9; object-fit: cover; }}",
+        ".multi-column {grid-column-gap: 2px;}"
+      ],
+      "settings": {
+        "color_scheme": "scheme-1b02ad27-67f6-4363-902b-7afc4c7eb905",
+        "separate_section_with_border": false,
+        "columns_per_row": 2,
+        "stack_on_mobile": true,
+        "overlap_image": false,
+        "content_alignment": "center",
+        "text_alignment": "center",
+        "spacing": "lg",
+        "subheading": "隕石・天然石珠寶",
+        "title": "HIGHLIGHTED MATERIALS",
+        "content": ""
+      }
+    },
+    "rich_text_LkdVLx": {
+      "type": "rich-text",
+      "blocks": {
+        "heading_LTLxGj": {
+          "type": "heading",
+          "settings": {
+            "text": "HER COLLECTION",
+            "heading_tag": "h2"
+          }
+        }
+      },
+      "block_order": [
+        "heading_LTLxGj"
+      ],
+      "custom_css": [
+        "div.prose.text-center {margin-bottom: 20px;}"
+      ],
+      "settings": {
+        "color_scheme": "scheme-1b02ad27-67f6-4363-902b-7afc4c7eb905",
+        "separate_section_with_border": false,
+        "content_width": "sm",
+        "text_position": "center",
+        "remove_vertical_spacing": true
+      }
+    },
+    "slideshow_YncR7P": {
+      "type": "slideshow",
+      "blocks": {
+        "image_iUM8tX": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/2025-valentine-day-homepage-women-collection-pc_27d046f8-a458-4d3c-8299-b5b120720423.jpg",
+            "mobile_image": "shopify://shop_images/2025-valentine-day-homepage-women-collections-bann.jpg",
+            "subheading": "摯愛專區",
+            "title": "優雅女士精選",
+            "mobile_text_position": "place-self-center text-center",
+            "desktop_text_position": "sm:place-self-center-end sm:text-end",
+            "content_max_width": 780,
+            "button_1_text": "瀏覽系列",
+            "button_1_link": "shopify://collections/women-jewelry",
+            "button_1_style": "link",
+            "button_1_background": "#ffffff",
+            "button_1_text_color": "#1c1c1c",
+            "button_2_text": "GIFT IDEA",
+            "button_2_link": "shopify://pages/best-selected-gift-ideas",
+            "button_2_style": "link",
+            "button_2_background": "#ffffff",
+            "button_2_text_color": "#1c1c1c",
+            "background": "#3e5977",
+            "background_opacity": 0,
+            "text_color": "#ffffff",
+            "border_color": "rgba(0,0,0,0)",
+            "gradient_overlay": ""
+          }
+        }
+      },
+      "block_order": [
+        "image_iUM8tX"
+      ],
+      "custom_css": [
+        "div.prose {margin-bottom: 30px;}"
+      ],
+      "settings": {
+        "allow_transparent_header": false,
+        "show_next_section_button": false,
+        "media_size": "auto",
+        "show_initial_transition": false,
+        "autoplay": true,
+        "autoplay_pause_on_video": true,
+        "cycle_speed": 5,
+        "background": "#000000",
+        "controls_color": "#ffffff"
+      }
+    },
+    "multi_column_FahMr6": {
+      "type": "multi-column",
+      "blocks": {
+        "image_with_text_kgkbbG": {
+          "type": "image_with_text",
+          "settings": {
+            "image": "shopify://shop_images/2025-valentine-day-homepage-category-necklaces_8fda8230-3912-4c0a-b1ef-e0d8d93d5987.jpg",
+            "title": "Necklace",
+            "heading_tag": "h4",
+            "content": "<p>所有項鍊</p>",
+            "link_url": "shopify://collections/necklace",
+            "link_text": ""
+          }
+        },
+        "image_with_text_HWDxPM": {
+          "type": "image_with_text",
+          "settings": {
+            "image": "shopify://shop_images/2025-valentine-day-homepage-category-bracelets_9f6852ac-9931-4b38-8a40-969a8ca67ed8.jpg",
+            "title": "Bracelet",
+            "heading_tag": "h4",
+            "content": "<p>所有手鍊</p>",
+            "link_url": "shopify://collections/all-bracelets",
+            "link_text": ""
+          }
+        },
+        "image_with_text_nCCcpr": {
+          "type": "image_with_text",
+          "settings": {
+            "image": "shopify://shop_images/2025-valentine-day-homepage-category-chains_c1957baf-a97a-4c0c-80a7-760578a582ff.jpg",
+            "title": "Chain",
+            "heading_tag": "h4",
+            "content": "<p>所有鏈條</p>",
+            "link_url": "shopify://collections/link-chain-collection",
+            "link_text": ""
+          }
+        },
+        "image_with_text_VQbaFp": {
+          "type": "image_with_text",
+          "settings": {
+            "image": "shopify://shop_images/2025-valentine-day-homepage-category-rings_d4407eef-eba5-4eeb-b02b-7ea401788e4f.jpg",
+            "title": "Ring",
+            "heading_tag": "h4",
+            "content": "<p>所有戒指</p>",
+            "link_url": "shopify://collections/ring",
+            "link_text": ""
+          }
+        }
+      },
+      "block_order": [
+        "image_with_text_kgkbbG",
+        "image_with_text_HWDxPM",
+        "image_with_text_nCCcpr",
+        "image_with_text_VQbaFp"
+      ],
+      "custom_css": [
+        "div.prose {margin-top: -20px;}",
+        "div.prose.text-center p,a.link {margin-top: 3px;}",
+        "@media (max-width: 769px) {img {aspect-ratio: 1/1.05; object-fit: cover; }}",
+        "@media (min-width: 770px) {img {aspect-ratio: 1/1; object-fit: cover; }}",
+        ".multi-column {grid-column-gap: 1px;}",
+        ".scroll-area {grid-auto-columns: 75vw;}"
+      ],
+      "settings": {
+        "color_scheme": "scheme-1b02ad27-67f6-4363-902b-7afc4c7eb905",
+        "separate_section_with_border": false,
+        "columns_per_row": 4,
+        "stack_on_mobile": false,
+        "overlap_image": false,
+        "content_alignment": "center",
+        "text_alignment": "center",
+        "spacing": "xs",
+        "subheading": "分類選購",
+        "title": "CATEGORY",
+        "content": ""
+      }
+    },
+    "slideshow_AfpDH6": {
+      "type": "slideshow",
+      "blocks": {
+        "image_EhiCaC": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/2025-spring-rune-gemstone-homepage-banner-pc.jpg",
+            "mobile_image": "shopify://shop_images/2025-spring-rune-gemstone-homepage-banner-mb.jpg",
+            "subheading": "符文传说",
+            "title": "RUNIC MYSTERIES",
+            "mobile_text_position": "place-self-center text-center",
+            "desktop_text_position": "sm:place-self-center-start sm:text-start",
+            "content_max_width": 780,
+            "button_1_text": "探索盧恩符文之旅",
+            "button_1_link": "shopify://pages/curated-energy-jewelry",
+            "button_1_style": "solid",
+            "button_1_background": "#ffffff",
+            "button_1_text_color": "#1c1c1c",
+            "button_2_text": "",
+            "button_2_link": "",
+            "button_2_style": "outline",
+            "button_2_background": "#ffffff",
+            "button_2_text_color": "#000000",
+            "background": "rgba(0,0,0,0)",
+            "background_opacity": 22,
+            "text_color": "#ffffff",
+            "border_color": "rgba(0,0,0,0)",
+            "gradient_overlay": "linear-gradient(0deg, rgba(255, 255, 255, 0) 40%, rgba(0, 0, 0, 0.12) 47%, rgba(255, 255, 255, 0) 65%)"
+          }
+        }
+      },
+      "block_order": [
+        "image_EhiCaC"
+      ],
+      "settings": {
+        "allow_transparent_header": false,
+        "show_next_section_button": false,
+        "media_size": "auto",
+        "show_initial_transition": false,
+        "autoplay": true,
+        "autoplay_pause_on_video": true,
+        "cycle_speed": 5,
+        "background": "#000000",
+        "controls_color": "#ffffff"
+      }
+    },
+    "rich_text_NNdLV4": {
+      "type": "rich-text",
+      "blocks": {
+        "richtext_dUDEbi": {
+          "type": "richtext",
+          "settings": {
+            "content": "<p>精選商品推薦</p>"
+          }
+        },
+        "heading_UY6gjz": {
+          "type": "heading",
+          "settings": {
+            "text": "FEATURED FINDS",
+            "heading_tag": "h2"
+          }
+        }
+      },
+      "block_order": [
+        "richtext_dUDEbi",
+        "heading_UY6gjz"
+      ],
+      "settings": {
+        "color_scheme": "scheme-1b02ad27-67f6-4363-902b-7afc4c7eb905",
+        "separate_section_with_border": false,
+        "content_width": "xs",
+        "text_position": "center",
+        "remove_vertical_spacing": false
+      }
+    },
+    "featured_collections_F84U34": {
+      "type": "featured-collections",
+      "blocks": {
+        "collection_YyMXfJ": {
+          "type": "collection",
+          "settings": {
+            "collection": "best-sellers-necklaces",
+            "products_count": 14,
+            "title": "",
+            "link_url": "",
+            "link_text": "查看更多"
+          }
+        },
+        "collection_rpt3Ny": {
+          "type": "collection",
+          "settings": {
+            "collection": "best-sellers-bracelets",
+            "products_count": 14,
+            "title": "",
+            "link_url": "",
+            "link_text": "查看更多"
+          }
+        },
+        "collection_UViJFG": {
+          "type": "collection",
+          "settings": {
+            "collection": "link-chain-collection",
+            "products_count": 14,
+            "title": "",
+            "link_url": "",
+            "link_text": "查看更多"
+          }
+        },
+        "collection_JWqQqd": {
+          "type": "collection",
+          "settings": {
+            "collection": "new-arrival",
+            "products_count": 14,
+            "title": "",
+            "link_url": "",
+            "link_text": "查看更多"
+          }
+        }
+      },
+      "block_order": [
+        "collection_YyMXfJ",
+        "collection_rpt3Ny",
+        "collection_UViJFG",
+        "collection_JWqQqd"
+      ],
+      "custom_css": [
+        "div.container {margin-top: -50px;}",
+        "@media (min-width: 769px) {.section-stack {max-width: 1750px; margin-left: auto; margin-right: auto; }}"
+      ],
+      "settings": {
+        "color_scheme": "scheme-1b02ad27-67f6-4363-902b-7afc4c7eb905",
+        "separate_section_with_border": false,
+        "hide_product_information": false,
+        "stack_products": false,
+        "products_per_row_mobile": "2",
+        "products_per_row_desktop": 5,
+        "horizontal_spacing_factor": 1.2,
+        "vertical_spacing_factor": 1.2,
+        "subheading": ""
+      }
+    },
+    "multi_column_EidzRK": {
+      "type": "multi-column",
+      "blocks": {
+        "image_with_text_DgWmEd": {
+          "type": "image_with_text",
+          "settings": {
+            "image": "shopify://shop_images/2025-black-friday-cyber-monday-homepage-about-bran.jpg",
+            "title": "OUR STORY",
+            "heading_tag": "h3",
+            "content": "<p>探索AWNL品牌理念，了解我們的核心價值與獨特風格。</p>",
+            "link_url": "https://awnl.tw/pages/awnl-story",
+            "link_text": "Learn More"
+          }
+        },
+        "image_with_text_K879mz": {
+          "type": "image_with_text",
+          "settings": {
+            "image": "shopify://shop_images/2024-black-friday-cyber-monday-homepage-first-purchase.jpg",
+            "title": "首次購物指引",
+            "heading_tag": "h3",
+            "content": "<p>從註冊會員、下單到售後服務，為您一次匯整所有安心資訊。</p>",
+            "link_url": "shopify://pages/shopping-guide",
+            "link_text": "Learn More"
+          }
+        }
+      },
+      "block_order": [
+        "image_with_text_DgWmEd",
+        "image_with_text_K879mz"
+      ],
+      "custom_css": [
+        "@media (min-width: 769px) {.section-stack {max-width: 1800px; margin-left: auto; margin-right: auto; }}",
+        "div.prose {margin-top: -20px;}",
+        "div.prose.text-start p,a.link {margin-top: 3px;}",
+        "@media (max-width: 769px) {img {aspect-ratio: 1/0.9; object-fit: cover; }}",
+        ".multi-column {grid-column-gap: 2px;}"
+      ],
+      "settings": {
+        "color_scheme": "scheme-1b02ad27-67f6-4363-902b-7afc4c7eb905",
+        "separate_section_with_border": false,
+        "columns_per_row": 2,
+        "stack_on_mobile": true,
+        "overlap_image": false,
+        "content_alignment": "center",
+        "text_alignment": "start",
+        "spacing": "lg",
+        "subheading": "",
+        "title": "",
+        "content": ""
+      }
+    },
+    "multi_column_zgtGVh": {
+      "type": "multi-column",
+      "blocks": {
+        "image_with_text_mcgn4J": {
+          "type": "image_with_text",
+          "settings": {
+            "image": "shopify://shop_images/2025-spring-explore-section-1.jpg",
+            "title": "能量水晶指南",
+            "heading_tag": "h4",
+            "content": "<p>聆聽內心的呼喚  <br/>尋找專屬於你的守護石 </p>",
+            "link_url": "https://awnl.tw/pages/choose-crystal-energy",
+            "link_text": "挑選水晶"
+          }
+        },
+        "image_with_text_VWFnCh": {
+          "type": "image_with_text",
+          "settings": {
+            "image": "shopify://shop_images/2025-spring-explore-section-8.jpg",
+            "title": "AWNL穿搭集",
+            "heading_tag": "h4",
+            "content": "<p>精選藝人 & 網紅<br/>優雅演繹時尚造型</p>",
+            "link_url": "https://awnl.tw/pages/community",
+            "link_text": "查看相冊"
+          }
+        },
+        "image_with_text_agrFdt": {
+          "type": "image_with_text",
+          "settings": {
+            "image": "shopify://shop_images/meteorite-rock.jpg",
+            "title": "瑞典M隕石",
+            "heading_tag": "h4",
+            "content": "<p>北極光下的星際遺珍  <br/>凝結銀河的永恆印記</p>",
+            "link_url": "shopify://pages/swedish-meteorite",
+            "link_text": "Muonionalusta Meteorite"
+          }
+        },
+        "image_with_text_9binPg": {
+          "type": "image_with_text",
+          "settings": {
+            "image": "shopify://shop_images/2025-spring-explore-section-3.jpg",
+            "title": "永續承諾",
+            "heading_tag": "h4",
+            "content": "<p>與自然共生  <br/>為下一個百年守護  </p>",
+            "link_url": "shopify://pages/sustainability",
+            "link_text": "Sustainability"
+          }
+        },
+        "image_with_text_KpkzWX": {
+          "type": "image_with_text",
+          "settings": {
+            "image": "shopify://shop_images/couples-hoop-earrings-men-women2.jpg",
+            "title": "情侶對飾",
+            "heading_tag": "h4",
+            "content": "<p>星河爲證 時光爲盟</p><p>執手相看 一生一瞬</p>",
+            "link_url": "shopify://collections/gifts-for-couples",
+            "link_text": "For Couple"
+          }
+        },
+        "image_with_text_LtTL9U": {
+          "type": "image_with_text",
+          "settings": {
+            "image": "shopify://shop_images/2024-black-friday-cyber-monday-homepage-choose-stone.jpg",
+            "title": "能量淨化｜居家美學",
+            "heading_tag": "h4",
+            "content": "<p>晶石充能 生活美境<br/>消磁石 & Crystal Objects</p>",
+            "link_url": "shopify://collections/crystal-natural-stone-healing-charging-items",
+            "link_text": "Objects"
+          }
+        },
+        "image_with_text_rbGkYe": {
+          "type": "image_with_text",
+          "settings": {
+            "image": "shopify://shop_images/2024-awnl-unbox-video-cover-gift-packaging_1.jpg",
+            "title": "為愛選禮",
+            "heading_tag": "h4",
+            "content": "<p>禮物靈感推薦</p><p>品味之選</p>",
+            "link_url": "shopify://pages/best-selected-gift-ideas",
+            "link_text": "Gift Ideas"
+          }
+        },
+        "image_with_text_NnC4UX": {
+          "type": "image_with_text",
+          "settings": {
+            "image": "shopify://shop_images/importance_to_purify_and_charge_crystal_and_gemstone.jpg",
+            "title": "部落格",
+            "heading_tag": "h4",
+            "content": "<p>集結時尚與晶石能量<br/>生活美学靈感空間</p>",
+            "link_url": "https://awnl.tw/blogs/the-journal",
+            "link_text": "The Journal"
+          }
+        }
+      },
+      "block_order": [
+        "image_with_text_mcgn4J",
+        "image_with_text_VWFnCh",
+        "image_with_text_agrFdt",
+        "image_with_text_9binPg",
+        "image_with_text_KpkzWX",
+        "image_with_text_LtTL9U",
+        "image_with_text_rbGkYe",
+        "image_with_text_NnC4UX"
+      ],
+      "custom_css": [
+        "@media (min-width: 769px) {.section-stack {max-width: 1800px; margin-left: auto; margin-right: auto; }}",
+        "div.prose {margin-top: -20px;}",
+        "div.prose.text-start p,a.link {margin-top: 3px;}",
+        ".multi-column {grid-column-gap: 1px;}",
+        "img {aspect-ratio: 1.5/1; object-fit: cover;}",
+        ".scroll-area {grid-auto-columns: 75vw;}"
+      ],
+      "settings": {
+        "color_scheme": "scheme-1b02ad27-67f6-4363-902b-7afc4c7eb905",
+        "separate_section_with_border": false,
+        "columns_per_row": 4,
+        "stack_on_mobile": false,
+        "overlap_image": false,
+        "content_alignment": "center",
+        "text_alignment": "start",
+        "spacing": "xs",
+        "subheading": "探索空間",
+        "title": "EXPLORE",
+        "content": ""
+      }
+    },
+    "multi_column_mQhDTG": {
+      "type": "multi-column",
+      "blocks": {
+        "image_with_text_KbUXd3": {
+          "type": "image_with_text",
+          "settings": {
+            "image": "shopify://shop_images/awnlmoments_11.jpg",
+            "title": "",
+            "heading_tag": "h6",
+            "content": "",
+            "link_url": "shopify://products/mens-double-wrap-beaded-bracelet-of-lucky-charms-with-nuummite",
+            "link_text": ""
+          }
+        },
+        "image_with_text_7zcMi4": {
+          "type": "image_with_text",
+          "settings": {
+            "image": "shopify://shop_images/awnlmoments-nov_1.jpg",
+            "title": "",
+            "heading_tag": "h6",
+            "content": "",
+            "link_url": "shopify://products/mens-beaded-bracelet-with-golden-obsidian-swedish-meteorite-and-ring-of-saturn",
+            "link_text": ""
+          }
+        },
+        "image_with_text_JMfydD": {
+          "type": "image_with_text",
+          "settings": {
+            "image": "shopify://shop_images/chi-hu-shou-lian-danielkaay_2.jpg",
+            "title": "",
+            "heading_tag": "h6",
+            "content": "",
+            "link_url": "https://awnl.tw/products/mens-beaded-bracelet-with-black-onyx-and-red-tiger-eye",
+            "link_text": ""
+          }
+        },
+        "image_with_text_FPMHDq": {
+          "type": "image_with_text",
+          "settings": {
+            "image": "shopify://shop_images/awnlmoments-nov_2.jpg",
+            "title": "",
+            "heading_tag": "h6",
+            "content": "",
+            "link_url": "https://awnl.tw/products/men-dragons-blood-jasper-beaded-bracelet-with-swedish-meteorite",
+            "link_text": ""
+          }
+        },
+        "image_with_text_EcYqLf": {
+          "type": "image_with_text",
+          "settings": {
+            "image": "shopify://shop_images/awnlmoments-nov_6.jpg",
+            "title": "",
+            "heading_tag": "h6",
+            "content": "",
+            "link_url": "https://awnl.tw/products/mens-silver-obsidian-necklace-of-future-eye",
+            "link_text": ""
+          }
+        },
+        "image_with_text_wTQUre": {
+          "type": "image_with_text",
+          "settings": {
+            "image": "shopify://shop_images/awnlmoments_6.jpg",
+            "title": "",
+            "heading_tag": "h6",
+            "content": "",
+            "link_url": "shopify://products/arrowhead-necklace-with-meteorite",
+            "link_text": ""
+          }
+        },
+        "image_with_text_VJWdJm": {
+          "type": "image_with_text",
+          "settings": {
+            "image": "shopify://shop_images/awnlmoments-nov_4.jpg",
+            "title": "",
+            "heading_tag": "h6",
+            "content": "",
+            "link_url": "https://awnl.tw/products/multicolored-tiger-eye-double-wrap-bracelet",
+            "link_text": ""
+          }
+        },
+        "image_with_text_gfPzDg": {
+          "type": "image_with_text",
+          "settings": {
+            "image": "shopify://shop_images/awnlmoments-nov_3.jpg",
+            "title": "",
+            "heading_tag": "h6",
+            "content": "",
+            "link_url": "https://awnl.tw/products/sterling-silver-chain-necklace-with-sapphire",
+            "link_text": ""
+          }
+        },
+        "image_with_text_efibpa": {
+          "type": "image_with_text",
+          "settings": {
+            "image": "shopify://shop_images/awnlmoments_4.jpg",
+            "title": "",
+            "heading_tag": "h6",
+            "content": "",
+            "link_url": "shopify://products/green-phantom-quartz-bracelet",
+            "link_text": ""
+          }
+        },
+        "image_with_text_B8aPiF": {
+          "type": "image_with_text",
+          "settings": {
+            "image": "shopify://shop_images/awnlmoments_5.jpg",
+            "title": "",
+            "heading_tag": "h6",
+            "content": "",
+            "link_url": "shopify://products/men-necklace-silver-obsidian-time-capsule",
+            "link_text": ""
+          }
+        }
+      },
+      "block_order": [
+        "image_with_text_KbUXd3",
+        "image_with_text_7zcMi4",
+        "image_with_text_JMfydD",
+        "image_with_text_FPMHDq",
+        "image_with_text_EcYqLf",
+        "image_with_text_wTQUre",
+        "image_with_text_VJWdJm",
+        "image_with_text_gfPzDg",
+        "image_with_text_efibpa",
+        "image_with_text_B8aPiF"
+      ],
+      "custom_css": [
+        "@media (min-width: 769px) {.section-stack {max-width: 1800px; margin-left: auto; margin-right: auto; }}",
+        ".multi-column {grid-column-gap: 1px; row-gap: 1px;}",
+        ".scroll-area {grid-auto-columns: 75vw;}",
+        "@media (max-width: 769px) {img {aspect-ratio: 1/1.2; object-fit: cover; }}"
+      ],
+      "settings": {
+        "color_scheme": "scheme-1b02ad27-67f6-4363-902b-7afc4c7eb905",
+        "separate_section_with_border": false,
+        "columns_per_row": 5,
+        "stack_on_mobile": false,
+        "overlap_image": false,
+        "content_alignment": "center",
+        "text_alignment": "center",
+        "spacing": "xs",
+        "subheading": "",
+        "title": "#AWNLMOMENTS",
+        "content": "<p>探索AWNL愛好者如何演繹個人風格。這裡收錄真實穿搭故事，展現配件搭配的無限可能。</p>"
+      }
+    },
+    "1709184618aa5584a8": {
+      "type": "apps",
+      "blocks": {
+        "judge_me_reviews_featured_carousel_mpcHdW": {
+          "type": "shopify://apps/judge-me-reviews/blocks/featured_carousel/61ccd3b1-a9f2-4160-9fe9-4fec8413e5d8",
+          "settings": {
+            "maxwidth": 1600
+          }
+        }
+      },
+      "block_order": [
+        "judge_me_reviews_featured_carousel_mpcHdW"
+      ],
+      "custom_css": [],
+      "settings": {
+        "color_scheme": "scheme-2",
+        "separate_section_with_border": false,
+        "remove_vertical_spacing": false,
+        "remove_horizontal_spacing": false
+      }
+    }
+  },
+  "order": [
+    "slideshow_ccxMG9",
+    "multi_column_WhdEfn",
+    "multi_column_athKaq",
+    "rich_text_LkdVLx",
+    "slideshow_YncR7P",
+    "multi_column_FahMr6",
+    "slideshow_AfpDH6",
+    "rich_text_NNdLV4",
+    "featured_collections_F84U34",
+    "multi_column_EidzRK",
+    "multi_column_zgtGVh",
+    "multi_column_mQhDTG",
+    "1709184618aa5584a8"
+  ]
+}

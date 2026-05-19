@@ -1,0 +1,222 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "custom_liquid_KER9xT": {
+      "type": "custom-liquid",
+      "settings": {
+        "color_scheme": "scheme-2",
+        "separate_section_with_border": false,
+        "remove_vertical_spacing": false,
+        "remove_horizontal_spacing": false,
+        "liquid": "<style>\n  .custom-menu {\n    display: flex;\n    flex-wrap: wrap;\n    justify-content: center;\n    padding: 0;\n    margin-left:auto;\nmargin-right:auto;\n    list-style: none;\n    max-width:1000px;\n  }\n  .custom-menu li {\n    flex-basis: 20%;\n    margin-bottom: 5px;\n  }\n  .custom-menu a {\n    display: block;\n    text-align: center;\n    text-decoration: none;\n    color: #1C1C1C; \n    padding: 16px;\n    margin: 5px;\n    background-color: #e5e6eb;\n    border-radius: 5px;\n    transition: all 0.3s ease;\n    font-size: 18px;\n  }\n  .custom-menu a.link-8 {\n    font-weight: bold;\n    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);\n    background-color: #d2d4dc;\n  }\n  .custom-menu a:not(.link-8) {\n    color: #9A9A9A; \n  }\n  .custom-menu a:hover {\n    color: #1C1C1C;\n    background-color: #d2d4dc;\n    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);\n    font-weight:bold;\n  }\n  @media (max-width: 768px) {\n    .custom-menu li {\n      flex-basis: 50%;\n    }\n    .custom-menu a { \n      padding: 10px;\n      margin: 2px; \n      border-radius: 5px;\n      font-size: 12px;\n    }\n  }\n   h2{\nmargin-bottom:30px;\nfont-size:26px;}\n@media (max-width: 768px){ h2{\nmargin-bottom:18px;\nfont-size:20px;}}\n\n</style>\n<h2>商品材質說明</h2>\n<ul class=\"custom-menu\">\n  <li><a href=\"https://awnl.tw/pages/shopping-guide\" class=\"link-1\">首次購物指南\n</a></li>\n  <li><a href=\"https://awnl.tw/pages/shipping-policy\" class=\"link-2\">運費與配送</a></li>\n  <li><a href=\"https://awnl.tw/pages/order-and-payment\" class=\"link-3\">訂購與付款</a></li>\n  <li><a href=\"https://awnl.tw/pages/warranty-repair-service\n\n\" class=\"link-4\">商品保固與維修</a></li>\n  <li><a href=\"https://awnl.tw/pages/gift-packaging\" class=\"link-5\">包裝與禮品服務</a></li>\n  <li><a href=\"https://awnl.tw/pages/jewelry-care-and-clean\" class=\"link-6\">珠寶保養方法</a></li>\n  <li><a href=\"https://awnl.tw/pages/return-and-refund\" class=\"link-7\">退換貨與退款</a></li>\n  <li><a href=\"https://awnl.tw/pages/about-material\" class=\"link-8\">商品材質說明\n</a></li>\n<li><a href=\"https://awnljewelstaiwan.myshopify.com/pages/membership-guide\" class=\"link-9\">會員計畫</a></li>\n  <li><a href=\"https://awnl.tw/pages/choose-crystal-energy\" class=\"link-10\">天然石挑選指南</a></li>\n</ul>",
+        "text_alignment": "center"
+      }
+    },
+    "main": {
+      "type": "main-page",
+      "disabled": true,
+      "custom_css": [
+        "h1 {font-size: 32px;}",
+        "p {margin-bottom: 40px; font-size: 15px; line-height: 2;}",
+        "@media (max-width: 680px) {h1 {font-size: 28px; line-height: 1.2; } p {margin-bottom: 35px; font-size: 14px; line-height: 1.7; }}"
+      ],
+      "settings": {
+        "color_scheme": "scheme-2",
+        "show_title": false,
+        "page_width": "xs"
+      }
+    },
+    "rich_text_m6jKh9": {
+      "type": "rich-text",
+      "blocks": {
+        "subheading_UkwqAL": {
+          "type": "subheading",
+          "settings": {
+            "text": "商品材質介紹"
+          }
+        },
+        "heading_YahzMM": {
+          "type": "heading",
+          "settings": {
+            "text": "MATERIALS",
+            "heading_tag": "h1"
+          }
+        }
+      },
+      "block_order": [
+        "subheading_UkwqAL",
+        "heading_YahzMM"
+      ],
+      "settings": {
+        "color_scheme": "scheme-2",
+        "separate_section_with_border": false,
+        "content_width": "md",
+        "text_position": "center",
+        "remove_vertical_spacing": false
+      }
+    },
+    "multiple_media_with_text_3Uz3Di": {
+      "type": "multiple-media-with-text",
+      "blocks": {
+        "image_BMejkA": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/material-page-meteorite-material.jpg",
+            "rotation": 0
+          }
+        }
+      },
+      "block_order": [
+        "image_BMejkA"
+      ],
+      "custom_css": [
+        "img {}",
+        "@media (min-width: 769px) {div {max-width: 1000px; margin-left: auto; margin-right: auto; }}",
+        "@media (max-width: 769px) {p {font-size: 14px !important; } p.h3 {font-size: 20px !important; }}",
+        "img {border-radius: 5px;}",
+        "p {font-size: 15px; color: #565656;}",
+        "p.h3 {font-size: 22px; color: #1c1c1c;}",
+        "p.h6 {color: #1c1c1c;}"
+      ],
+      "settings": {
+        "color_scheme": "scheme-2",
+        "reveal_on_scroll": true,
+        "separate_section_with_border": false,
+        "media_position_desktop": "before_text",
+        "media_position_mobile": "before_text",
+        "media_layout": "separated",
+        "media_alignment": "center",
+        "media_alignment_offset": 0,
+        "media_mobile_alignment_offset": 0,
+        "text_alignment": "center",
+        "subheading": "宇宙的禮物",
+        "title": "MUONIONALUSTA隕石",
+        "content": "<p>數億年前，M隕石從宇宙誕生後墜落至現今瑞典北部，這種隕石極為稀有。它獨特的金屬質地與美麗的蝕刻圖案賦予了其獨特的風貌。M隕石幾乎不具放射性，安全佩戴無虞。經過鍍銠處理，不僅能防止隕石變色，還對金屬過敏者友好。AWNL以精湛的技術處理隕石，將古老的宇宙能量與現代設計完美融合，呈現出獨特的珠寶作品。</p>",
+        "button_1_text": "關於M隕石",
+        "button_1_link": "shopify://pages/swedish-meteorite",
+        "button_1_style": "solid",
+        "button_2_text": "",
+        "button_2_link": "",
+        "button_2_style": "solid"
+      }
+    },
+    "multiple_media_with_text_46bRdp": {
+      "type": "multiple-media-with-text",
+      "blocks": {
+        "image_MYeyci": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/material-page-gemstone-material.jpg",
+            "rotation": 0
+          }
+        }
+      },
+      "block_order": [
+        "image_MYeyci"
+      ],
+      "custom_css": [
+        "img {}",
+        "@media (min-width: 769px) {div {max-width: 1000px; margin-left: auto; margin-right: auto; }}",
+        "@media (max-width: 769px) {p {font-size: 14px !important; } p.h3 {font-size: 20px !important; }}",
+        "img {border-radius: 5px;}",
+        "p {font-size: 15px; color: #565656;}",
+        "p.h3 {font-size: 22px; color: #1c1c1c;}",
+        "p.h6 {color: #1c1c1c;}"
+      ],
+      "settings": {
+        "color_scheme": "scheme-2",
+        "reveal_on_scroll": true,
+        "separate_section_with_border": false,
+        "media_position_desktop": "before_text",
+        "media_position_mobile": "before_text",
+        "media_layout": "separated",
+        "media_alignment": "center",
+        "media_alignment_offset": 0,
+        "media_mobile_alignment_offset": 0,
+        "text_alignment": "center",
+        "subheading": "天然寶石的魔力",
+        "title": "GEMSTONES",
+        "content": "<p>AWNL重視天然寶石的自然力量，並運用獨特的切割技術，充分展現每一顆寶石的色彩與光芒。經過精挑細選與手工打磨的寶石，不僅提升您的氣質，還賦予您內在的平靜與力量。這些寶石將成為您日常生活中的支持，增添無限魅力。</p>",
+        "button_1_text": "天然石特性說明",
+        "button_1_link": "shopify://pages/natural-crystal-stone-special-notice",
+        "button_1_style": "solid",
+        "button_2_text": "所有天然石珠寶系列",
+        "button_2_link": "shopify://collections/natural-gemstone-jewelry",
+        "button_2_style": "solid"
+      }
+    },
+    "multiple_media_with_text_X7HXpe": {
+      "type": "multiple-media-with-text",
+      "blocks": {
+        "image_YtXCRi": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/material-page-silver.jpg",
+            "rotation": 0
+          }
+        }
+      },
+      "block_order": [
+        "image_YtXCRi"
+      ],
+      "custom_css": [
+        "img {}",
+        "@media (min-width: 769px) {div {max-width: 1000px; margin-left: auto; margin-right: auto; }}",
+        "@media (max-width: 769px) {p {font-size: 14px !important; } p.h3 {font-size: 20px !important; }}",
+        "img {border-radius: 5px;}",
+        "p {font-size: 15px; color: #565656;}",
+        "p.h3 {font-size: 22px; color: #1c1c1c;}",
+        "p.h6 {color: #1c1c1c;}"
+      ],
+      "settings": {
+        "color_scheme": "scheme-2",
+        "reveal_on_scroll": true,
+        "separate_section_with_border": false,
+        "media_position_desktop": "before_text",
+        "media_position_mobile": "before_text",
+        "media_layout": "separated",
+        "media_alignment": "center",
+        "media_alignment_offset": 0,
+        "media_mobile_alignment_offset": 0,
+        "text_alignment": "center",
+        "subheading": "環保925純銀與18K鍍金",
+        "title": "SILVER & PLATING",
+        "content": "<p>追求永續美感的AWNL，在所有珠寶中使用可回收的925純銀與18K金。這不僅賦予珠寶華麗的外觀，還體現了我們對環境保護的重視。18K鍍金金屬擁有更閃耀的光澤和優異的耐久性，讓珠寶更易於維護。這種銀與金的結合，象徵著跨越時代的愛與美。</p>",
+        "button_1_text": "Sustainability",
+        "button_1_link": "shopify://pages/sustainable-policy",
+        "button_1_style": "solid",
+        "button_2_text": "",
+        "button_2_link": "",
+        "button_2_style": "solid"
+      }
+    },
+    "custom_liquid_8drWKY": {
+      "type": "custom-liquid",
+      "settings": {
+        "color_scheme": "scheme-2",
+        "separate_section_with_border": false,
+        "remove_vertical_spacing": false,
+        "remove_horizontal_spacing": false,
+        "liquid": "<style>\n  .custom-menu {\n    display: flex;\n    flex-wrap: wrap;\n    justify-content: center;\n    padding: 0;\n    margin-left:auto;\nmargin-right:auto;\n    list-style: none;\n    max-width:1000px;\n  }\n  .custom-menu li {\n    flex-basis: 20%;\n    margin-bottom: 5px;\n  }\n  .custom-menu a {\n    display: block;\n    text-align: center;\n    text-decoration: none;\n    color: #1C1C1C; \n    padding: 16px;\n    margin: 5px;\n    background-color: #e5e6eb;\n    border-radius: 5px;\n    transition: all 0.3s ease;\n    font-size: 18px;\n  }\n  .custom-menu a.link-8 {\n    font-weight: bold;\n    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);\n    background-color: #d2d4dc;\n  }\n  .custom-menu a:not(.link-8) {\n    color: #9A9A9A; \n  }\n  .custom-menu a:hover {\n    color: #1C1C1C;\n    background-color: #d2d4dc;\n    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);\n    font-weight:bold;\n  }\n  @media (max-width: 768px) {\n    .custom-menu li {\n      flex-basis: 50%;\n    }\n    .custom-menu a { \n      padding: 10px;\n      margin: 2px; \n      border-radius: 5px;\n      font-size: 12px;\n    }\n  }\n   h2{\nmargin-bottom:30px;\nfont-size:26px;}\n@media (max-width: 768px){ h2{\nmargin-bottom:18px;\nfont-size:20px;}}\n\n</style>\n<ul class=\"custom-menu\">\n  <li><a href=\"https://awnl.tw/pages/shopping-guide\" class=\"link-1\">首次購物指南\n</a></li>\n  <li><a href=\"https://awnl.tw/pages/shipping-policy\" class=\"link-2\">運費與配送</a></li>\n  <li><a href=\"https://awnl.tw/pages/order-and-payment\" class=\"link-3\">訂購與付款</a></li>\n  <li><a href=\"https://awnl.tw/pages/warranty-repair-service\n\n\" class=\"link-4\">商品保固與維修</a></li>\n  <li><a href=\"https://awnl.tw/pages/gift-packaging\" class=\"link-5\">包裝與禮品服務</a></li>\n  <li><a href=\"https://awnl.tw/pages/jewelry-care-and-clean\" class=\"link-6\">珠寶保養方法</a></li>\n  <li><a href=\"https://awnl.tw/pages/return-and-refund\" class=\"link-7\">退換貨與退款</a></li>\n  <li><a href=\"https://awnl.tw/pages/about-material\" class=\"link-8\">商品材質說明\n</a></li>\n<li><a href=\"https://awnljewelstaiwan.myshopify.com/pages/membership-guide\" class=\"link-9\">會員計畫</a></li>\n  <li><a href=\"https://awnl.tw/pages/choose-crystal-energy\" class=\"link-10\">天然石挑選指南</a></li>\n</ul>",
+        "text_alignment": "center"
+      }
+    }
+  },
+  "order": [
+    "custom_liquid_KER9xT",
+    "main",
+    "rich_text_m6jKh9",
+    "multiple_media_with_text_3Uz3Di",
+    "multiple_media_with_text_46bRdp",
+    "multiple_media_with_text_X7HXpe",
+    "custom_liquid_8drWKY"
+  ]
+}

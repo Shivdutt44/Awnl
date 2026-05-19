@@ -1,0 +1,271 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "main": {
+      "type": "main-page",
+      "disabled": true,
+      "settings": {
+        "color_scheme": "",
+        "show_title": true,
+        "page_width": "xs"
+      }
+    },
+    "d2d199c0-f6d8-49a5-91ea-f1aa93776ae9": {
+      "type": "rich-text",
+      "blocks": {
+        "template--16029731586228__d2d199c0-f6d8-49a5-91ea-f1aa93776ae9-heading-1": {
+          "type": "heading",
+          "settings": {
+            "text": "Celebrity Favorites",
+            "heading_tag": "h1"
+          }
+        },
+        "template--16029731586228__d2d199c0-f6d8-49a5-91ea-f1aa93776ae9-richtext-1": {
+          "type": "richtext",
+          "settings": {
+            "content": "<p>探索明星×AWNL同款風格推薦</p>"
+          }
+        }
+      },
+      "block_order": [
+        "template--16029731586228__d2d199c0-f6d8-49a5-91ea-f1aa93776ae9-heading-1",
+        "template--16029731586228__d2d199c0-f6d8-49a5-91ea-f1aa93776ae9-richtext-1"
+      ],
+      "settings": {
+        "color_scheme": "scheme-2",
+        "separate_section_with_border": false,
+        "content_width": "sm",
+        "text_position": "center",
+        "remove_vertical_spacing": false
+      }
+    },
+    "media_grid_gLabei": {
+      "type": "media-grid",
+      "blocks": {
+        "image_66BFRG": {
+          "type": "image",
+          "repeater": "{{ page.metafields.my_fields.celebrities_list.value }}",
+          "settings": {
+            "color_scheme": "",
+            "image": "{{ block.repeater.link_cover.value }}",
+            "column_count": "4",
+            "row_count": 2,
+            "title": "{{ block.repeater.celebrity_name.value }}",
+            "heading_tag": "h4",
+            "content": "<p>{{ block.repeater.product_name.value }}</p>",
+            "link_text": "打開相冊",
+            "link_url": "{{ block.repeater.system.url }}",
+            "link_style": "link",
+            "text_position": "place-self-end-center text-center",
+            "overlay_color": "#000000",
+            "overlay_opacity": 10
+          }
+        }
+      },
+      "block_order": [
+        "image_66BFRG"
+      ],
+      "custom_css": [
+        ".media-grid {grid-column-gap: 1px; grid-row-gap: 1px;}"
+      ],
+      "settings": {
+        "color_scheme": "scheme-2",
+        "separate_section_with_border": false,
+        "desktop_row_height": 220,
+        "mobile_row_height": 200,
+        "section_width": "lg",
+        "spacing": "none",
+        "subheading": "",
+        "title": "",
+        "content": ""
+      }
+    },
+    "media_grid_g4mA7F": {
+      "type": "media-grid",
+      "blocks": {
+        "image_fPBeXC": {
+          "type": "image",
+          "repeater": "{{ page.metafields.my_fields.influencer_tw_hk.value }}",
+          "settings": {
+            "color_scheme": "",
+            "image": "{{ block.repeater.cover_image.value }}",
+            "column_count": "3",
+            "row_count": 2,
+            "title": "{{ block.repeater.influencer_name.value }}",
+            "heading_tag": "h4",
+            "content": "<p>{{ block.repeater.product_name_1.value }}</p>",
+            "link_text": "打開相冊",
+            "link_url": "{{ block.repeater.system.url }}",
+            "link_style": "link",
+            "text_position": "place-self-end-center text-center",
+            "overlay_color": "#000000",
+            "overlay_opacity": 10
+          }
+        }
+      },
+      "block_order": [
+        "image_fPBeXC"
+      ],
+      "custom_css": [
+        ".media-grid {grid-column-gap: 1px; grid-row-gap: 1px;}"
+      ],
+      "settings": {
+        "color_scheme": "scheme-2",
+        "separate_section_with_border": false,
+        "desktop_row_height": 150,
+        "mobile_row_height": 200,
+        "section_width": "lg",
+        "spacing": "none",
+        "subheading": "Spotlight on Style",
+        "title": "Hong Kong & Taiwan's Top Picks in AWNL",
+        "content": ""
+      }
+    },
+    "rich_text_Bj4GnY": {
+      "type": "rich-text",
+      "blocks": {
+        "button_A9K3L8": {
+          "type": "button",
+          "settings": {
+            "style": "solid",
+            "text": "查看全部",
+            "url": "shopify://pages/influencer-community",
+            "background": "",
+            "text_color": ""
+          }
+        }
+      },
+      "block_order": [
+        "button_A9K3L8"
+      ],
+      "settings": {
+        "color_scheme": "scheme-2",
+        "separate_section_with_border": false,
+        "content_width": "sm",
+        "text_position": "center",
+        "remove_vertical_spacing": false
+      }
+    },
+    "media_grid_YxBkMz": {
+      "type": "media-grid",
+      "blocks": {
+        "image_zCKWpi": {
+          "type": "image",
+          "repeater": "{{ page.metafields.my_fields.influencer_internatianl.value }}",
+          "settings": {
+            "color_scheme": "",
+            "image": "{{ block.repeater.cover_image.value }}",
+            "column_count": "3",
+            "row_count": 2,
+            "title": "{{ block.repeater.influencer_name.value }}",
+            "heading_tag": "h4",
+            "content": "<p>{{ block.repeater.product_name_1.value }}</p>",
+            "link_text": "打開相冊",
+            "link_url": "{{ block.repeater.system.url }}",
+            "link_style": "link",
+            "text_position": "place-self-end-center text-center",
+            "overlay_color": "#000000",
+            "overlay_opacity": 10
+          }
+        }
+      },
+      "block_order": [
+        "image_zCKWpi"
+      ],
+      "custom_css": [
+        ".media-grid {grid-column-gap: 1px; grid-row-gap: 1px;}"
+      ],
+      "settings": {
+        "color_scheme": "scheme-2",
+        "separate_section_with_border": false,
+        "desktop_row_height": 150,
+        "mobile_row_height": 200,
+        "section_width": "lg",
+        "spacing": "none",
+        "subheading": "See Our Global Influencers",
+        "title": "Around the World with AWNL",
+        "content": ""
+      }
+    },
+    "rich_text_hfDDdD": {
+      "type": "rich-text",
+      "blocks": {
+        "button_Qxky3C": {
+          "type": "button",
+          "settings": {
+            "style": "solid",
+            "text": "查看全部",
+            "url": "shopify://pages/influencer-community",
+            "background": "",
+            "text_color": ""
+          }
+        }
+      },
+      "block_order": [
+        "button_Qxky3C"
+      ],
+      "settings": {
+        "color_scheme": "scheme-2",
+        "separate_section_with_border": false,
+        "content_width": "sm",
+        "text_position": "center",
+        "remove_vertical_spacing": false
+      }
+    },
+    "image_with_text_block_da7cwe": {
+      "type": "image-with-text-block",
+      "blocks": {
+        "subheading_Vc7GRd": {
+          "type": "subheading",
+          "settings": {
+            "text": "<strong>AWNL亞洲</strong>"
+          }
+        },
+        "richtext_8cYqYD": {
+          "type": "richtext",
+          "settings": {
+            "content": "<p>瞭解品牌最新動態、活動資訊、地區限定折扣優惠.請追蹤AWNL亞洲地區官方Instagram帳戶。</p>"
+          }
+        },
+        "link_EFcHVz": {
+          "type": "link",
+          "settings": {
+            "text": "追蹤品牌Instagram",
+            "url": "https://www.instagram.com/awnlzh_official/"
+          }
+        }
+      },
+      "block_order": [
+        "subheading_Vc7GRd",
+        "richtext_8cYqYD",
+        "link_EFcHVz"
+      ],
+      "settings": {
+        "color_scheme": "",
+        "image_size": "auto",
+        "image": "shopify://shop_images/14_line_1920-600.jpg",
+        "content_width": "sm",
+        "enable_parallax": false,
+        "remove_vertical_spacing": true
+      }
+    }
+  },
+  "order": [
+    "main",
+    "d2d199c0-f6d8-49a5-91ea-f1aa93776ae9",
+    "media_grid_gLabei",
+    "media_grid_g4mA7F",
+    "rich_text_Bj4GnY",
+    "media_grid_YxBkMz",
+    "rich_text_hfDDdD",
+    "image_with_text_block_da7cwe"
+  ]
+}

@@ -1,0 +1,346 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "collection-banner": {
+      "type": "collection-banner",
+      "disabled": true,
+      "custom_css": [],
+      "settings": {
+        "color_scheme": "scheme-2",
+        "image": "{{ collection.metafields.my_fields.collection_banner_pc.value }}",
+        "mobile_image": "{{ collection.metafields.my_fields.collection_banner_mb.value }}",
+        "image_size": "auto",
+        "allow_transparent_header": false,
+        "reveal": true,
+        "enable_parallax": false,
+        "show_image": false,
+        "show_collection_title": true,
+        "show_collection_description": true,
+        "show_breadcrumb": true,
+        "content_width": "xs",
+        "overlay_color": "#000000",
+        "overlay_opacity": 0
+      }
+    },
+    "image_with_text_overlay_GUdprP": {
+      "type": "image-with-text-overlay",
+      "settings": {
+        "color_scheme": "",
+        "image_size": "auto",
+        "image": "shopify://shop_images/crystal-chips-collection-3000-1000.jpg",
+        "mobile_image": "shopify://shop_images/crystal-chips-collection-1125-1400.jpg",
+        "allow_transparent_header": false,
+        "reveal_on_scroll": true,
+        "remove_vertical_spacing": true,
+        "content_width": "md",
+        "mobile_text_position": "place-self-center text-center",
+        "desktop_text_position": "sm:place-self-center sm:text-center",
+        "overlay_color": "#000000",
+        "overlay_opacity": 0
+      }
+    },
+    "rich_text_rPQHFz": {
+      "type": "rich-text",
+      "blocks": {
+        "subheading_ykgq9h": {
+          "type": "subheading",
+          "settings": {
+            "text": "能量石專區"
+          }
+        },
+        "heading_8abCxj": {
+          "type": "heading",
+          "settings": {
+            "text": "淨化充能消磁石",
+            "heading_tag": "h1"
+          }
+        },
+        "richtext_b9TPFV": {
+          "type": "richtext",
+          "settings": {
+            "content": "<p>水晶作為具有靈性的寶石，會在開採、運送、切割及打磨過程中吸收各種雜亂的能量。為了讓水晶回歸純淨狀態，我們提供專業的淨化充能消磁石，幫助消除水晶內殘留的能量記憶，讓它與主人的磁場相契合。透過這樣的淨化和充能，水晶能更好地結合自然和宇宙能量，發揮其最大的能量效用。</p>"
+          }
+        }
+      },
+      "block_order": [
+        "subheading_ykgq9h",
+        "heading_8abCxj",
+        "richtext_b9TPFV"
+      ],
+      "settings": {
+        "color_scheme": "scheme-1b02ad27-67f6-4363-902b-7afc4c7eb905",
+        "separate_section_with_border": false,
+        "content_width": "sm",
+        "text_position": "center",
+        "remove_vertical_spacing": false
+      }
+    },
+    "rich_text_Hwm34d": {
+      "type": "rich-text",
+      "blocks": {
+        "heading_VqzPW9": {
+          "type": "heading",
+          "settings": {
+            "text": "水晶淨化與充能指南",
+            "heading_tag": "h2"
+          }
+        }
+      },
+      "block_order": [
+        "heading_VqzPW9"
+      ],
+      "settings": {
+        "color_scheme": "scheme-1b02ad27-67f6-4363-902b-7afc4c7eb905",
+        "separate_section_with_border": false,
+        "content_width": "sm",
+        "text_position": "center",
+        "remove_vertical_spacing": false
+      }
+    },
+    "image_with_text_b4PXGN": {
+      "type": "image-with-text",
+      "blocks": {
+        "subheading_HYdeJq": {
+          "type": "subheading",
+          "settings": {
+            "text": "Cleansing"
+          }
+        },
+        "heading_3gRmzW": {
+          "type": "heading",
+          "settings": {
+            "text": "新石淨化",
+            "heading_tag": "h2"
+          }
+        },
+        "richtext_nRr4dB": {
+          "type": "richtext",
+          "settings": {
+            "content": "<p>適用於新購的水晶與礦石，能有效去除礦石在開採及加工過程中吸收的雜能量，清除水晶中殘留的各種能量記憶，讓水晶與擁有者產生共鳴，並與自然能量結合，形成更強大更純粹的磁場。</p>"
+          }
+        }
+      },
+      "block_order": [
+        "subheading_HYdeJq",
+        "heading_3gRmzW",
+        "richtext_nRr4dB"
+      ],
+      "custom_css": [
+        "@media (min-width: 700px) {image-with-text {margin-left: 50px; margin-right: 50px; }}"
+      ],
+      "settings": {
+        "color_scheme": "scheme-1b02ad27-67f6-4363-902b-7afc4c7eb905",
+        "separate_section_with_border": false,
+        "image": "shopify://shop_images/crystal-healing-clean.jpg",
+        "reveal_on_scroll": true,
+        "image_position": "start",
+        "content_width": "sm",
+        "remove_vertical_spacing": true
+      }
+    },
+    "image_with_text_6UqxYH": {
+      "type": "image-with-text",
+      "blocks": {
+        "subheading_cGwX7C": {
+          "type": "subheading",
+          "settings": {
+            "text": "Purifying"
+          }
+        },
+        "heading_W73awY": {
+          "type": "heading",
+          "settings": {
+            "text": "負能量清除",
+            "heading_tag": "h2"
+          }
+        },
+        "richtext_AnQgrU": {
+          "type": "richtext",
+          "settings": {
+            "content": "<p>長時間佩戴的水晶會累積外界的負能量，使用消磁石能消除這些負面影響，讓水晶恢復最佳狀態，持續為你提供正面能量。</p>"
+          }
+        }
+      },
+      "block_order": [
+        "subheading_cGwX7C",
+        "heading_W73awY",
+        "richtext_AnQgrU"
+      ],
+      "custom_css": [
+        "@media (min-width: 700px) {image-with-text {margin-left: 50px; margin-right: 50px; }}"
+      ],
+      "settings": {
+        "color_scheme": "scheme-1b02ad27-67f6-4363-902b-7afc4c7eb905",
+        "separate_section_with_border": false,
+        "image": "shopify://shop_images/The_Importance_of_Crystal_Cleansing_and_Charging.jpg",
+        "reveal_on_scroll": true,
+        "image_position": "end",
+        "content_width": "sm",
+        "remove_vertical_spacing": false
+      }
+    },
+    "image_with_text_TcG8pQ": {
+      "type": "image-with-text",
+      "blocks": {
+        "subheading_yE9zGd": {
+          "type": "subheading",
+          "settings": {
+            "text": "Charging"
+          }
+        },
+        "heading_FnFEWb": {
+          "type": "heading",
+          "settings": {
+            "text": "能量補充",
+            "heading_tag": "h2"
+          }
+        },
+        "richtext_b9A9gk": {
+          "type": "richtext",
+          "settings": {
+            "content": "<p>定期對晶石進行充能，爲維持水晶的最佳狀態並放大水晶特性，讓水晶重新充滿正能量，幫助水晶持續吸收宇宙能量，保持能量的充沛和活力。</p>"
+          }
+        },
+        "button_ftxQx4": {
+          "type": "button",
+          "settings": {
+            "style": "solid",
+            "text": "如何淨化充能詳解",
+            "url": "shopify://blogs/the-journal/gemstone-purify-charge",
+            "background": "",
+            "text_color": ""
+          }
+        }
+      },
+      "block_order": [
+        "subheading_yE9zGd",
+        "heading_FnFEWb",
+        "richtext_b9A9gk",
+        "button_ftxQx4"
+      ],
+      "custom_css": [
+        "@media (min-width: 700px) {image-with-text {margin-left: 50px; margin-right: 50px; }}"
+      ],
+      "settings": {
+        "color_scheme": "scheme-1b02ad27-67f6-4363-902b-7afc4c7eb905",
+        "separate_section_with_border": false,
+        "image": "shopify://shop_images/crystal-healing-charge_b1a744ae-b817-43c5-a682-d6b621aa08fa.jpg",
+        "reveal_on_scroll": true,
+        "image_position": "start",
+        "content_width": "sm",
+        "remove_vertical_spacing": false
+      }
+    },
+    "multiple_media_video_control_KgBizr": {
+      "type": "multiple-media-video-control",
+      "blocks": {
+        "video_fNbqjt": {
+          "type": "video",
+          "settings": {
+            "video": "shopify://files/videos/how to purify cleanse and charge the gemstone jewelry.mp4",
+            "rotation": 0
+          }
+        }
+      },
+      "block_order": [
+        "video_fNbqjt"
+      ],
+      "custom_css": [
+        "@media (min-width: 1300px) {multiple-media-with-text {margin-left: -100px; margin-right: -270px; }}",
+        "multiple-media-with-text {text-align: center;}"
+      ],
+      "settings": {
+        "color_scheme": "scheme-1b02ad27-67f6-4363-902b-7afc4c7eb905",
+        "reveal_on_scroll": true,
+        "separate_section_with_border": false,
+        "media_position_desktop": "after_text",
+        "media_position_mobile": "after_text",
+        "media_layout": "overlap",
+        "media_alignment": "center",
+        "media_alignment_offset": 0,
+        "media_mobile_alignment_offset": 0,
+        "text_alignment": "center",
+        "subheading": "使用水晶消磁石",
+        "title": "淨化和充能飾品",
+        "content": "<p>使用消磁石進行飾品淨化充能的步驟，以及注意事項。</p>",
+        "button_1_text": "",
+        "button_1_link": "",
+        "button_1_style": "solid",
+        "button_2_text": "",
+        "button_2_link": "",
+        "button_2_style": "solid"
+      }
+    },
+    "featured_collections_wAMdMG": {
+      "type": "featured-collections",
+      "blocks": {
+        "collection_im4RRH": {
+          "type": "collection",
+          "settings": {
+            "collection": "crystal-natural-stone-healing-charging-items",
+            "products_count": 8,
+            "title": "",
+            "link_url": "",
+            "link_text": ""
+          }
+        }
+      },
+      "block_order": [
+        "collection_im4RRH"
+      ],
+      "settings": {
+        "color_scheme": "scheme-2",
+        "separate_section_with_border": false,
+        "hide_product_information": false,
+        "stack_products": true,
+        "products_per_row_mobile": "2",
+        "products_per_row_desktop": 4,
+        "horizontal_spacing_factor": 0.6,
+        "vertical_spacing_factor": 0.6,
+        "subheading": "購買淨化消磁石"
+      }
+    },
+    "main": {
+      "type": "main-collection",
+      "disabled": true,
+      "settings": {
+        "color_scheme": "scheme-2",
+        "hide_product_information": false,
+        "products_per_page": 12,
+        "products_per_row_mobile": "2",
+        "products_size_desktop": "medium",
+        "show_grid_mode_selector": true,
+        "horizontal_spacing_factor": 1.5,
+        "vertical_spacing_factor": 1,
+        "filter_layout": "drawer",
+        "quick_links_menu": "",
+        "show_sort_by": true,
+        "show_filters": true,
+        "show_results_count": true,
+        "show_filter_group_name": false,
+        "show_filter_values_count": true,
+        "open_filters_by_default": false
+      }
+    }
+  },
+  "order": [
+    "collection-banner",
+    "image_with_text_overlay_GUdprP",
+    "rich_text_rPQHFz",
+    "rich_text_Hwm34d",
+    "image_with_text_b4PXGN",
+    "image_with_text_6UqxYH",
+    "image_with_text_TcG8pQ",
+    "multiple_media_video_control_KgBizr",
+    "featured_collections_wAMdMG",
+    "main"
+  ]
+}

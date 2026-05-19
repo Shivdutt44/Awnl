@@ -1,0 +1,155 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "collection-banner": {
+      "type": "collection-banner",
+      "custom_css": [],
+      "settings": {
+        "color_scheme": "scheme-3",
+        "image": "shopify://shop_images/2024-black-friday-cyber-monday-homepage-pc-hero-banner.jpg",
+        "mobile_image": "shopify://shop_images/2024-black-friday-cyber-monday-homepage-square-banner.jpg",
+        "image_size": "auto",
+        "allow_transparent_header": false,
+        "reveal": true,
+        "enable_parallax": false,
+        "show_image": true,
+        "show_collection_title": true,
+        "show_collection_description": true,
+        "show_breadcrumb": true,
+        "content_width": "xs",
+        "overlay_color": "#000000",
+        "overlay_opacity": 30
+      }
+    },
+    "main": {
+      "type": "main-collection",
+      "settings": {
+        "color_scheme": "scheme-2",
+        "hide_product_information": false,
+        "products_per_page": 24,
+        "products_per_row_mobile": "2",
+        "products_size_desktop": "medium",
+        "show_grid_mode_selector": true,
+        "horizontal_spacing_factor": 1.5,
+        "vertical_spacing_factor": 1.5,
+        "filter_layout": "drawer",
+        "quick_links_menu": "link-list-2",
+        "show_sort_by": true,
+        "show_filters": true,
+        "show_results_count": true,
+        "show_filter_group_name": false,
+        "show_filter_values_count": true,
+        "open_filters_by_default": false
+      }
+    },
+    "collection_list_pNUcEX": {
+      "type": "collection-list",
+      "blocks": {
+        "collection_YY4Um4": {
+          "type": "collection",
+          "settings": {
+            "color_scheme": "scheme-ba8aa8db-3943-4e4a-aee2-842dc8998e74",
+            "collection": "bfcm-30-and-40-off-collection",
+            "image": "shopify://shop_images/2024-black-friday-landingpage-discount-1.jpg",
+            "expand_collection": false,
+            "content_position": "place-self-center text-center",
+            "subheading": "",
+            "title": "",
+            "button_text": "",
+            "button_link": "",
+            "button_style": "solid",
+            "overlay_color": "#000000",
+            "overlay_opacity": 0
+          }
+        },
+        "collection_rDcpkm": {
+          "type": "collection",
+          "settings": {
+            "color_scheme": "scheme-ba8aa8db-3943-4e4a-aee2-842dc8998e74",
+            "collection": "bfcm-20-off-collection",
+            "image": "shopify://shop_images/2024-black-friday-landingpage-discount-2.jpg",
+            "expand_collection": false,
+            "content_position": "place-self-center text-center",
+            "subheading": "",
+            "title": "",
+            "button_text": "",
+            "button_link": "",
+            "button_style": "solid",
+            "overlay_color": "#000000",
+            "overlay_opacity": 0
+          }
+        },
+        "collection_xDXHrd": {
+          "type": "collection",
+          "settings": {
+            "color_scheme": "scheme-ba8aa8db-3943-4e4a-aee2-842dc8998e74",
+            "collection": "bfcm-15-off-collection",
+            "image": "shopify://shop_images/2024-black-friday-landingpage-discount-3.jpg",
+            "expand_collection": false,
+            "content_position": "place-self-center text-center",
+            "subheading": "",
+            "title": "",
+            "button_text": "",
+            "button_link": "",
+            "button_style": "solid",
+            "overlay_color": "#000000",
+            "overlay_opacity": 0
+          }
+        },
+        "collection_GiXHrh": {
+          "type": "collection",
+          "settings": {
+            "color_scheme": "scheme-ba8aa8db-3943-4e4a-aee2-842dc8998e74",
+            "collection": "bfcm-10-and-15-off-collection",
+            "image": "shopify://shop_images/2024-black-friday-landingpage-discount-4.jpg",
+            "expand_collection": false,
+            "content_position": "place-self-center text-center",
+            "subheading": "",
+            "title": "",
+            "button_text": "",
+            "button_link": "",
+            "button_style": "solid",
+            "overlay_color": "#000000",
+            "overlay_opacity": 0
+          }
+        }
+      },
+      "block_order": [
+        "collection_YY4Um4",
+        "collection_rDcpkm",
+        "collection_xDXHrd",
+        "collection_GiXHrh"
+      ],
+      "custom_css": [
+        "@media (min-width: 769px) {.section-stack {max-width: 1500px; margin-left: auto; margin-right: auto; }}",
+        "img {border-radius: 5px;}"
+      ],
+      "settings": {
+        "color_scheme": "scheme-e17965e9-5192-4b7e-9ab2-dc98bb6f3d0e",
+        "separate_section_with_border": false,
+        "image_size": "auto",
+        "show_text_outside": false,
+        "space_items": true,
+        "stack_collections": true,
+        "collections_per_row_mobile": "2",
+        "collections_per_row_desktop": 4,
+        "subheading": "",
+        "title": "",
+        "content": ""
+      }
+    }
+  },
+  "order": [
+    "collection-banner",
+    "main",
+    "collection_list_pNUcEX"
+  ]
+}

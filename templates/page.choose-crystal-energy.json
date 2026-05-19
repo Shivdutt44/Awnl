@@ -1,0 +1,99 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "main": {
+      "type": "main-page",
+      "disabled": true,
+      "custom_css": [],
+      "settings": {
+        "color_scheme": "scheme-2",
+        "show_title": false,
+        "page_width": "xs"
+      }
+    },
+    "rich_text_TPUGYA": {
+      "type": "rich-text",
+      "blocks": {
+        "subheading_UrN6qV": {
+          "type": "subheading",
+          "settings": {
+            "text": ""
+          }
+        },
+        "heading_Mzr7Jz": {
+          "type": "heading",
+          "settings": {
+            "text": "能量晶石選購指引",
+            "heading_tag": "h1"
+          }
+        },
+        "richtext_rdk73J": {
+          "type": "richtext",
+          "settings": {
+            "content": "<p>面對眾多晶石，如何挑選最適合的呢？從它們各自獨特的特性著手，探索與您內在產生共鳴的那一款。我們精選了多款熱門晶石，希望每位愛好者都能發現真正能代表自己心靈的石頭。</p>"
+          }
+        }
+      },
+      "block_order": [
+        "subheading_UrN6qV",
+        "heading_Mzr7Jz",
+        "richtext_rdk73J"
+      ],
+      "settings": {
+        "color_scheme": "scheme-2",
+        "separate_section_with_border": false,
+        "content_width": "xs",
+        "text_position": "center",
+        "remove_vertical_spacing": false
+      }
+    },
+    "rich_text_6xNacw": {
+      "type": "rich-text",
+      "blocks": {
+        "liquid_8mHCJU": {
+          "type": "liquid",
+          "settings": {
+            "liquid": "<style>\n .crystal-image {\n    width: 70px;\n    height: auto;\n  }\n.accordion-button:hover{\n  box-shadow: 2px 2px 2px 0 rgba(150, 150, 150, 0.5);\n}\n\n.accordion-button {\n  background-color: #fff;\n  color: #1c1c1c;\n  cursor: pointer;\n  padding: 13px;\n  width: 100%;\n  text-align: center;\n  border: 1px solid #ccc;\n  outline: none;\n  transition: 0.4s;\n  font-size:15px;\n  display: flex;\n  justify-content: space-between;  \n  align-items: center;\n}\n\n.accordion-icon {\n  height: 13px;\n  width: 16px;\n}\n.accordion-content {\n  padding: 0 18px;\n   display: none; \n  overflow: hidden;\n  background-color:#fff;\n  text-align:left;\n  line-height:1.8;\n  font-size:14px;\n}\n\n.accordion-content a {\n    font-size:13px;\n}\n</style>\n\n<div class=\"accordion\">\n  {% assign titles = \"<p><strong>財富：招財納福，富貴綿延</strong></p>\n|<p><strong>職場：步步高升，貴人扶助</strong></p>|<p><strong>健康：身心靈合一，護佑健康 </strong></p>|<p><strong> 淨化：排除負能，靜心安神</strong></p>|<p><strong> 情緣：桃花盛開，愛情長久</strong></p>|<p><strong>自信：光芒四射，自信滿滿</strong></p>|<p><strong> 靈感：打開思維，創意無限</strong></p>|<p><strong>情緒：舒緩情緒，平和心境</strong></p>\" | split: \"|\" %}\n{% assign contents = \"\n<a href='https://awnl.tw/collections/hypersthene'>\n<img class='crystal-image' src='https://cdn.shopify.com/s/files/1/0586/4026/9492/files/Hypersthene.jpg?v=1710212235' alt='金運石'>金運石</a> \n\n<a href='https://awnl.tw/collections/tiger-eye-jewelry'><img class='crystal-image' src='https://cdn.shopify.com/s/files/1/0586/4026/9492/files/South_African_Tiger_s_Eye.jpg?v=1706855862' alt='黃色虎眼石'>黃色虎眼石</a>\n\n<a href='https://awnl.tw/collections/red-tiger-eye-jewelry'><img class='crystal-image' src='https://cdn.shopify.com/s/files/1/0586/4026/9492/files/South_African_Red_Tiger_s_Eye.jpg?v=1706855862' alt='紅色虎眼石'>紅色虎眼石</a>\n\n<a href='https://awnl.tw/collections/lapis-lazuli-jewelry'><img class='crystal-image' src='https://cdn.shopify.com/s/files/1/0586/4026/9492/files/Afghan_Lapis_Lazuli.jpg?v=1700638080' alt='青金石'>青金石</a>\n\n<a href='https://awnl.tw/collections/green-phantom-quartz'><img class='crystal-image' src='https://cdn.shopify.com/s/files/1/0586/4026/9492/files/Green_Phantom_Quartz.jpg?v=1710212920' alt='綠色幽靈'>綠色幽靈石</a>\n\n<a href='https://awnl.tw/collections/black-rutilated-quartz'><img class='crystal-image' src='https://cdn.shopify.com/s/files/1/0586/4026/9492/files/Brazilian_Black_Rutilated_Quartz.jpg?v=1710146801' alt='黑發晶'>黑發晶</a>\n\n<a href='https://awnl.tw/collections/black-gold-super-seven'><img class='crystal-image' src='https://cdn.shopify.com/s/files/1/0586/4026/9492/files/Black_Gold_Super_Seven.jpg?v=1710212671' alt='超級七水晶'>超級七水晶</a>\n\n<a href='https://awnl.tw/collections/sunstone'><img class='crystal-image' src='https://cdn.shopify.com/s/files/1/0586/4026/9492/files/Norwegian_Sunstone.jpg?v=1710145041' alt='太陽石'>太陽石</a>\n\n<p>在追求財富與成就的道路上，適當的水晶能為您帶來能量提升，吸引財運與正面機會。不僅助您增強對財富的吸引力，還能幫助保持心態積極，迎接更多的豐收與成功，同時象徵著內心的平和與充實。</p>\n|\n<a href='https://awnl.tw/collections/sapphire'><img class='crystal-image' src='https://cdn.shopify.com/s/files/1/0586/4026/9492/files/Sri_Lankan_Sapphire.jpg?v=1706859035' alt='藍寶石'>藍寶石</a>\n\n<a href='https://awnl.tw/collections/hawk-eye-jewelry'><img class='crystal-image' src='https://cdn.shopify.com/s/files/1/0586/4026/9492/files/South_African_Hawk_s_Eye.jpg?v=1706856057' alt='鷹眼石'>鷹眼石</a>\n\n<a href='https://awnl.tw/collections/grey-hawk-eye'><img class='crystal-image' src='https://cdn.shopify.com/s/files/1/0586/4026/9492/files/South_African_Grey_Hawk_Eye-2.jpg?v=1706856057' alt='灰色鷹眼石'>灰色鷹眼石</a>\n\n<a href='https://awnl.tw/collections/amethyst-jewelry'><img class='crystal-image' src='https://cdn.shopify.com/s/files/1/0586/4026/9492/files/Brazilian_Amethyst.jpg?v=1710145341' alt='紫水晶'>紫水晶</a>\n\n<a href='https://awnl.tw/collections/purple-phantom-quartz-jewelry'><img class='crystal-image' src='https://cdn.shopify.com/s/files/1/0586/4026/9492/files/Brazilian_Purple_Phantom_Quartz.jpg?v=1706861476' alt='紫色幽靈石'>紫色幽靈石</a>\n\n              \n<a href='https://awnl.tw/collections/red-agate'><img class='crystal-image' src='https://cdn.shopify.com/s/files/1/0586/4026/9492/files/Brazilian_Red_Agate.jpg?v=1710142731' alt='紅瑪瑙'>紅瑪瑙</a>\n\n<a href='https://awnl.tw/collections/orange-snowflake-phantom-quartz'><img class='crystal-image' src='https://cdn.shopify.com/s/files/1/0586/4026/9492/files/Orange_Snowflake_Phantom_Quartz.jpg?v=1710211714' alt='橙雪花幽靈'>橙雪花幽靈石</a>\n\n\n<p>職場上的挑戰與機遇並存，特定的水晶能幫助您提升專注力，促進人際關係，並吸引貴人的助力。這些水晶猶如職場上的指引，協助您在競爭激烈的環境中脫穎而出，保持沉著冷靜，邁向事業高峰。</p>\n|\n<a href='https://awnl.tw/collections/bloodstone-jasper-jewelry'><img class='crystal-image' src='https://cdn.shopify.com/s/files/1/0586/4026/9492/files/Nepalese_Bloodstone.jpg?v=1710207821' alt='血石'>血石</a>\n\n<a href='https://awnl.tw/collections/lapis-lazuli-jewelry'><img class='crystal-image' src='https://cdn.shopify.com/s/files/1/0586/4026/9492/files/Afghan_Lapis_Lazuli.jpg?v=1700638080' alt='青金石'>青金石</a>\n\n<a href='https://awnl.tw/collections/red-tiger-eye-jewelry'><img class='crystal-image' src='https://cdn.shopify.com/s/files/1/0586/4026/9492/files/South_African_Red_Tiger_s_Eye.jpg?v=1706855862' alt='紅色虎眼石'>紅色虎眼石</a>\n\n<a href='https://awnl.tw/collections/red-agate'><img class='crystal-image' src='https://cdn.shopify.com/s/files/1/0586/4026/9492/files/Brazilian_Red_Agate.jpg?v=1710142731' alt='紅瑪瑙'>紅瑪瑙</a>\n\n<a href='https://awnl.tw/collections/clear-crystal-jewelry'><img class='crystal-image' src='https://cdn.shopify.com/s/files/1/0586/4026/9492/files/Brazilian_Clear_Quartz.jpg?v=1710136320' alt='白水晶'>白水晶</a>\n\n<a href='https://awnl.tw/collections/bronzite-jewelry'><img class='crystal-image' src='https://cdn.shopify.com/s/files/1/0586/4026/9492/files/Brazilian_Bronzite.jpg?v=1706858054' alt='古銅輝石'>古銅輝石</a>\n\n<a href='https://awnl.tw/collections/dragon-blood-jasper-jewelry'><img class='crystal-image' src='https://cdn.shopify.com/s/files/1/0586/4026/9492/files/South_African_Dragon_s_Blood_Jasper.jpg?v=1706857402' alt='龍血石'>龍血碧玉</a>\n\n<p>健康不僅是身體的強健，還包括心靈與情感的和諧。某些水晶能為您提供保護，抵禦負面能量，並協助達成身心靈的平衡。這些水晶如守護者般守護著您的健康，使您持續擁有穩定的活力與清明的心境。</p>\n|\n<a href='https://awnl.tw/collections/black-onyx-items'><img class='crystal-image' src='https://cdn.shopify.com/s/files/1/0586/4026/9492/files/Brazilian_Black_Onyx.jpg?v=1706856555' alt='黑瑪瑙'>黑瑪瑙</a>\n\n<a href='https://awnl.tw/collections/silver-obsidian-jewelry'><img class='crystal-image' src='https://cdn.shopify.com/s/files/1/0586/4026/9492/files/Brazilian_Silver_Obsidian.jpg?v=1706779065' alt='銀曜石'>銀曜石</a>\n\n<a href='https://awnl.tw/collections/golden-obsidian-items'><img class='crystal-image' src='https://cdn.shopify.com/s/files/1/0586/4026/9492/files/Brazilian_Obsidian.jpg?v=1706779065' alt='金曜石'>金曜石</a>\n\n<a href='https://awnl.tw/products/mens-crossguard-charm-beaded-bracelet-with-obsidian-and-runes'><img class='crystal-image' src='https://cdn.shopify.com/s/files/1/0586/4026/9492/files/Brazilian_Obsidian-2.jpg?v=1706779064' alt='黑曜石'>黑曜石</a>\n\n<a href='https://awnl.tw/collections/nuummite'><img class='crystal-image' src='https://cdn.shopify.com/s/files/1/0586/4026/9492/files/Nuummite_From_Greenland.jpg?v=1706857730' alt='努烏邁特滾石'>努烏邁特滾石</a>\n\n<a href='https://awnl.tw/collections/clear-crystal-jewelry'><img class='crystal-image' src='https://cdn.shopify.com/s/files/1/0586/4026/9492/files/Brazilian_Clear_Quartz.jpg?v=1710136320' alt='白水晶'>白水晶</a>\n\n<a href='https://awnl.tw/collections/tremolite'><img class='crystal-image' src='https://cdn.shopify.com/s/files/1/0586/4026/9492/files/Canadian_Tremolite.jpg?v=1706858654' alt='黑閃石'>黑閃石</a>\n\n<a href='https://awnl.tw/collections/brecciated-jasper'><img class='crystal-image' src='https://cdn.shopify.com/s/files/1/0586/4026/9492/files/Brecciated_Jasper_430x.jpg?v=1728981986' alt='紅花瑪瑙'>紅花瑪瑙</a>\n\n<p>在忙碌的生活中，保持心靈的平靜與空間的純淨尤為重要。特定的水晶擁有強大的淨化效果，能有效清除負面能量，帶來內在的寧靜與環境的清新，幫助您建立安全的心靈屏障，安心面對生活中的挑戰。</p>\n|\n<a href='https://awnl.tw/collections/dumortierite-jewelry'><img class='crystal-image' src='https://cdn.shopify.com/s/files/1/0586/4026/9492/files/Madagascar_Dumortierite.jpg?v=1706857491' alt='藍線石'>藍線石</a>\n\n<a href='https://awnl.tw/collections/strawberry-quartz-jewelry'><img class='crystal-image' src='https://cdn.shopify.com/s/files/1/0586/4026/9492/files/Madagascar_Strawberry_Quartz.jpg?v=1710136922' alt='草莓晶'>草莓晶</a>\n\n<a href='https://awnl.tw/collections/rose-quartz'><img class='crystal-image' src='https://cdn.shopify.com/s/files/1/0586/4026/9492/files/Madagascar_Rose_Quartz.jpg?v=1710136997' alt='粉水晶'>粉水晶</a>\n\n<a href='https://awnl.tw/collections/rhodonite'><img class='crystal-image' src='https://cdn.shopify.com/s/files/1/0586/4026/9492/files/Australian_Rhodonite.jpg?v=1710142995' alt='薔薇石'>薔薇石</a>\n\n<a href='https://awnl.tw/collections/auralite-23-jewelry'><img class='crystal-image' src='https://cdn.shopify.com/s/files/1/0586/4026/9492/files/Canadian_Auralite_-23.jpg?v=1706857599' alt='極光水晶23'>極光水晶23</a>\n\n<a href='https://awnl.tw/collections/moonstone'><img class='crystal-image' src='https://cdn.shopify.com/s/files/1/0586/4026/9492/files/Sri_Lankan_Blue_Moonstone.jpg?v=1710145738' alt='藍色月光石'>藍色月光石</a>\n\n<a href='https://awnl.tw/collections/sakura-rain-rhodonite'><img class='crystal-image' src='https://cdn.shopify.com/s/files/1/0586/4026/9492/files/Australian_Sakura_Rain_Rhodonite_430x.jpg?v=1728981985' alt='櫻花雨薔薇石'>櫻花雨薔薇石</a>\n\n<p>愛情是生活的美好部分，能帶來心靈的滿足與幸福。特定的水晶可幫助打開心輪，促進愛情能量的流動，無論是深化現有關係還是吸引新的戀情，都能讓愛情之路更加順遂，營造和諧且長久的感情。</p>\n|\n<a href='https://awnl.tw/collections/charoite-jewelry'><img class='crystal-image' src='https://cdn.shopify.com/s/files/1/0586/4026/9492/files/Siberian_Charoite.jpg?v=1710210699' alt='紫龍晶'>紫龍晶</a>\n\n<a href='https://awnl.tw/collections/green-zebra-jasper'><img class='crystal-image' src='https://cdn.shopify.com/s/files/1/0586/4026/9492/files/South_African_Grey_Hawk_Eye.jpg?v=1710133953' alt='斑紋碧玉'>斑紋碧玉</a>\n\n<a href='https://awnl.tw/collections/morganite'><img class='crystal-image' src='https://cdn.shopify.com/s/files/1/0586/4026/9492/files/Brazilian_Morganite.jpg?v=1710140738' alt='摩根石'>摩根石</a>\n\n<a href='https://awnl.tw/collections/orange-agate'><img class='crystal-image' src='https://cdn.shopify.com/s/files/1/0586/4026/9492/files/Brazilian_Orange_Garnet.jpg?v=1710220118' alt='橙紅瑪瑙'>橙紅瑪瑙</a>\n\n<a href='https://awnl.tw/collections/sapphire'><img class='crystal-image' src='https://cdn.shopify.com/s/files/1/0586/4026/9492/files/Sri_Lankan_Sapphire.jpg?v=1706859035' alt='藍寶石'>藍寶石</a>\n\n<a href='https://awnl.tw/collections/picasso-jasper'><img class='crystal-image' src='https://cdn.shopify.com/s/files/1/0586/4026/9492/files/Brazilian_Picasso_Jasper.jpg?v=1706858395' alt='畢加索石'>畢加索石</a>\n\n<p>自信是實現自我價值的關鍵要素，特定的水晶能增強您的內在力量與自信，使個人氣場更加穩固。這些水晶助您在各種場合中展現自我魅力，保持積極心態，增強自我認同，邁向自我實現的道路。</p>\n|\n<a href='https://awnl.tw/collections/auralite-23-jewelry'><img class='crystal-image' src='https://cdn.shopify.com/s/files/1/0586/4026/9492/files/Canadian_Auralite_-23.jpg?v=1706857599' alt='極光水晶23'>極光水晶23</a>\n\n<a href='https://awnl.tw/collections/opal-jewelry'><img class='crystal-image' src='https://cdn.shopify.com/s/files/1/0586/4026/9492/files/Australian_Opalite.jpg?v=1710142483' alt='蛋白石'>蛋白石</a>\n\n<a href='https://awnl.tw/collections/labradorite-spectrolite'><img class='crystal-image' src='https://cdn.shopify.com/s/files/1/0586/4026/9492/files/Finland_Labradorite.jpg?v=1706860825' alt='芬蘭光譜石'>芬蘭光譜石</a>\n\n<a href='https://awnl.tw/collections/sodalite-jewelry'><img class='crystal-image' src='https://cdn.shopify.com/s/files/1/0586/4026/9492/files/Brazilian_Sodalite.jpg?v=1706860961' alt='藍紋石'>藍紋石</a>\n\n<a href='https://awnl.tw/collections/amethyst-jewelry'><img class='crystal-image' src='https://cdn.shopify.com/s/files/1/0586/4026/9492/files/Brazilian_Amethyst.jpg?v=1710145341' alt='紫水晶'>紫水晶</a>\n\n<a href='https://awnl.tw/collections/blue-kyanite'><img class='crystal-image' src='https://cdn.shopify.com/s/files/1/0586/4026/9492/files/Brazilian_Kyanite.jpg?v=1710144099' alt='藍晶石'>藍晶石</a>\n\n<a href='https://awnl.tw/collections/brecciated-jasper'><img class='crystal-image' src='https://cdn.shopify.com/s/files/1/0586/4026/9492/files/Brecciated_Jasper_430x.jpg?v=1728981986' alt='紅花瑪瑙'>紅花瑪瑙</a>\n\n<p>無論是在創作或解決問題的過程中，靈感與創意都是不可或缺的力量。特定的水晶能幫助您打開思維，激發創意火花，讓思維保持靈活與敏捷，持續帶來新點子，助您在創作的領域大放異彩。</p>\n|\n<a href='https://awnl.tw/collections/pearl'><img class='crystal-image' src='https://cdn.shopify.com/s/files/1/0586/4026/9492/files/Australian_Pearl.jpg?v=1710143317' alt='珍珠'>珍珠</a>\n\n<a href='https://awnl.tw/collections/blue-aventurine-jewelry'><img class='crystal-image' src='https://cdn.shopify.com/s/files/1/0586/4026/9492/files/Brazilian_Blue_Aventurine.jpg?v=1706857843' alt='藍東陵'>藍東陵</a>\n\n<a href='https://awnl.tw/collections/blue-lace-agate'><img class='crystal-image' src='https://cdn.shopify.com/s/files/1/0586/4026/9492/files/Brazilian_Blue_Lace_Agate.jpg?v=1710138147' alt='藍紋瑪瑙'>藍紋瑪瑙</a>\n\n<a href='https://awnl.tw/collections/dumortierite-jewelry'><img class='crystal-image' src='https://cdn.shopify.com/s/files/1/0586/4026/9492/files/Madagascar_Dumortierite.jpg?v=1706857491' alt='藍線石'>藍線石</a>\n\n<a href='https://awnl.tw/collections/fossil-coral-jewelry'><img class='crystal-image' src='https://cdn.shopify.com/s/files/1/0586/4026/9492/files/Canadian_Fossil_Coral.jpg?v=1706858232' alt='珊瑚化石'>珊瑚化石</a>\n\n<a href='https://awnl.tw/collections/kunzite'><img class='crystal-image' src='https://cdn.shopify.com/s/files/1/0586/4026/9492/files/Madagascar_Kunzite.jpg?v=1710207154' alt='紫鋰輝'>紫鋰輝</a>\n\n<a href='https://awnl.tw/collections/sakura-rain-rhodonite'><img class='crystal-image' src='https://cdn.shopify.com/s/files/1/0586/4026/9492/files/Australian_Sakura_Rain_Rhodonite_430x.jpg?v=1728981985' alt='櫻花雨薔薇石'>櫻花雨薔薇石</a>\n  \n<p>現代生活中情緒的起伏難免，特定的水晶具有強大的安撫作用，能幫助您調節情緒，舒緩內心的壓力與焦慮。它們能讓您在面對挑戰時保持心靈的平靜，讓情緒穩定，日常生活更加和諧愉快。</p>\" | split: \"|\" %}\n{% for i in (0..titles.size) %}\n\n    {% if titles[i] %}\n      <div class=\"accordion-item\">\n        <button class=\"accordion-button\" onclick=\"toggleAccordion(this)\">\n          {{ titles[i] }}\n          <img src=\"https://cdn.shopify.com/s/files/1/0539/2443/0007/files/drop-down-arrow-icon-vector-21679641.png?v=1709890973\" alt=\"Expand\" class=\"accordion-icon\">\n        </button>\n        <div class=\"accordion-content\" style=\"display: none;\">\n          <div>{{ contents[i] | newline_to_p }}</div>\n        </div>\n      </div>\n    {% endif %}\n  {% endfor %}\n</div>\n\n<script>\nfunction toggleAccordion(element) {\n  var content = element.nextElementSibling;\n  var icon = element.querySelector('.accordion-icon');\n  if (content.style.display === \"block\") {\n    content.style.display = \"none\";\n    icon.src = \"https://cdn.shopify.com/s/files/1/0539/2443/0007/files/drop-down-arrow-icon-vector-21679641.png?v=1709890973\"; // Path to your plus icon\n  } else {\n    content.style.display = \"block\";\n    icon.src = \"https://cdn.shopify.com/s/files/1/0539/2443/0007/files/drop-down-arrow-icon-vector-21679641_-up.png?v=1709891255\"; // Path to your minus icon\n  }\n}\n</script>"
+          }
+        },
+        "button_MjWRQQ": {
+          "type": "button",
+          "settings": {
+            "style": "solid",
+            "text": "選購所有晶石珠寶",
+            "url": "https://awnl.tw/collections/natural-gemstone-jewelry",
+            "background": "",
+            "text_color": ""
+          }
+        }
+      },
+      "block_order": [
+        "liquid_8mHCJU",
+        "button_MjWRQQ"
+      ],
+      "custom_css": [
+        "div {border: none !important;}"
+      ],
+      "settings": {
+        "color_scheme": "scheme-2",
+        "separate_section_with_border": false,
+        "content_width": "sm",
+        "text_position": "center",
+        "remove_vertical_spacing": false
+      }
+    }
+  },
+  "order": [
+    "main",
+    "rich_text_TPUGYA",
+    "rich_text_6xNacw"
+  ]
+}

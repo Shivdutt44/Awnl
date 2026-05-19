@@ -1,0 +1,1165 @@
+{{ "create-bracelet-2.css" | asset_url | stylesheet_tag }}
+<style>
+  .product-wrapper .product-beautify #parker .dropper{
+    background-image:url('{{ product.metafields.bracelets.beads_placeholder_image.value | image_url }}')
+  }
+</style>
+<div class="twocol-wrapper">
+        <div class="product-wrapper">
+            <div class="product-cont">
+                <h2>{{ product.title }}</h2>
+              
+<form action="/cart/add.js" method="POST">
+  <div class="product-summery">
+    <p class="size">Size: <b></b></p>
+    <p class="string-color">Color: <b></b></p>
+    <p class="lock-style">Lock Style: <b></b></p>
+    <p class="gender">Gender: <b></b></p>
+    <p class="price">Base Price: <b><span>{{ product.price | money_with_currency }}</span></b></p>
+  </div>
+
+  <!-- Hidden input for the selected product's variant ID -->
+  <input type="hidden" name="id" value="{{ product.variants.first.id }}">
+  <input id="custom_photo" type="hidden" name="properties[Image]" style="display:none;" aria-label="input 85">
+  <!-- Quantity Input -->
+  <input type="hidden" name="quantity" value="1" class="quantity">
+
+  <!-- Line Item Properties (custom data) -->
+  <input type="hidden" name="properties[Bracelet Size]" value="">
+  <input type="hidden" name="properties[String Color]" value="">
+  <input type="hidden" name="properties[Lock Style]" value="">
+  <input type="hidden" name="properties[Gender]" value="">
+  <!-- <input type="hidden" name="properties[Base Price]" value="${{ product.price | divided_by: 100 }}"> -->
+
+  <!-- Product Bundle Section -->
+  <div class="stone-costing">
+    <!-- Optional: Add dynamic stones with JavaScript as properties -->
+  </div>
+
+  <!-- Total Fare for the Bundle -->
+  <div class="total-fare">
+    <span class="price-count">{{ product.price | money_with_currency }}</span>
+  </div>
+
+    <div class="product-summery">
+    <p class="size">Gift Wrapping: 
+     <span class="radio-form">
+         <label>Free
+         <input type="radio" name="properties[Gift Wrapping]" value="free" checked>
+         </label>
+         {% comment %} <label>Option 1
+         <input type="radio" name="properties[Gift Wrapping]" value="$12">
+         </label>
+         <label>Option 2
+         <input type="radio" name="properties[Gift Wrapping]" value="$15">
+         </label> {% endcomment %}
+     </span>
+    </p>
+    
+      {% if product.metafields.custom.engraving != blank %}
+  {% assign engraving_files = product.metafields.custom.engraving.value %}
+
+  {% if engraving_files != blank %}
+    <div class="engraving-options">
+      {% for file in engraving_files %}
+        {% assign file_name = file.src | split: '/' | last %}
+        <label class="engraving-card">
+          <input 
+            type="radio" 
+            name="properties[Engraving]" 
+            value="{{ file_name | split:"." | first }}" 
+            {% if forloop.first %}checked{% endif %}
+          >
+          <div class="engraving-preview">
+            <img src="{{ file.src | img_url: '200x200' }}" alt="{{ file_name | split:"." | first }}">
+          </div>
+          {% comment %} <span class="engraving-name">{{ file_name }}</span> {% endcomment %}
+        </label>
+      {% endfor %}
+    </div>
+  {% endif %}
+{% endif %}
+
+
+    <p class="size">Text: 
+     <span class="radio-form">
+         <input type="text" name="properties[Text]" placeholder="輸入刻印文字" id="engraving-text">
+          <small id="engraving-instruction" style="display:block; color:#555;">
+            選擇字體，輸入專屬文字，專屬印記將鐫刻於您所選的刻印配件上。
+          </small>
+     </span>
+    </p>
+<small class="error-message" style="color:red; display:none;"></small>
+    </div>
+  
+   
+  <!-- Add to Cart Button -->
+  <div class="product-action">
+    <input type="number" class="Bquantity quantity" name="quantity" value="1" size="2">
+    <input class="add-cart" type="submit" value="Add to Cart">
+  </div>
+    <p id="bead-warning" style="color:red; display:none;text-align: right;margin-top: 8px;">請為每個可見位置選擇寶石。</p>
+
+</form>
+
+ <div class="accordion">
+  {% if section.settings.policy!= blank %}
+  <div class="accordion-item">
+    <div class="accordion-header">
+      <span class="symbol">+</span>
+      <span class="title">Policies</span>
+    </div>
+    <div class="accordion-content">
+      <p>{{ section.settings.policy  }}</p>
+    </div>
+  </div>
+{% endif %}
+  {% if section.settings.time-estimate!= blank %}
+
+  <div class="accordion-item">
+    <div class="accordion-header">
+      <span class="symbol">+</span>
+      <span class="title">Time estimate & Shipping</span>
+    </div>
+    <div class="accordion-content">
+      <p>{{ section.settings.time-estimate }}</p>
+    </div>
+  </div>
+ {% endif %} 
+</div> 
+
+
+              
+              
+
+                
+            </div>
+            <div class="product-beautify style-1">
+                <div id="parker" class="size-m">
+                    {% comment %}
+                      lock image                  
+                    {% endcomment %} 
+                    {% assign string_image = product.metafields.bracelets.strings.value | first %}
+                    <img id="emBrace" src="{{ string_image | image_url }}" role="presentation" data-ac-alt-type="image" height="" width="">
+                    {% comment %}
+                      lock image                  
+                    {% endcomment %} 
+                    {% assign lock_image = product.metafields.bracelets.locks.value | first %}
+                    <img id="lockEr" src="{{ lock_image | image_url }}" role="presentation" data-ac-alt-type="image" height="" width="">
+                    <div id="instruction">
+                    <button id="close-instruction">✕</button>
+                    <p><b>打造專屬飾品：</b> 點選寶石並於選單中指定材質，確認後即顯示於設計頁面。其他設計元素請直接於選單中選取</p>
+                    </div>
+                    <div class="dropper" id="drop24"></div>
+                    <div class="dropper" id="drop23"></div>
+                    <div class="dropper" id="drop22"></div>
+                    <div class="dropper" id="drop21"></div>
+                    <div class="dropper" id="drop20"></div>
+                    <div class="dropper" id="drop19"></div>
+                    <div class="dropper" id="drop18"></div>
+                    <div class="dropper" id="drop17"></div>
+                    <div class="dropper" id="drop16"></div>
+                    <div class="dropper" id="drop15"></div>
+                    <div class="dropper" id="drop14"></div>
+                    <div class="dropper" id="drop13"></div>
+                    <div class="dropper" id="drop12"></div>
+                    <div class="dropper" id="drop11"></div>
+                    <div class="dropper" id="drop10"></div>
+                    <div class="dropper" id="drop9"></div>
+                    <div class="dropper" id="drop8"></div>
+                    <div class="dropper" id="drop7"></div>
+                    <div class="dropper" id="drop6"></div>
+                    <div class="dropper" id="drop5"></div>
+                    <div class="dropper" id="drop4"></div>
+                    <div class="dropper" id="drop3"></div>
+                    <div class="dropper" id="drop2"></div>
+                    <div class="dropper" id="drop1"></div>
+                </div>
+            </div>
+        </div>
+        
+        <div class="assets-wrapper">
+            <div class="button-set">
+                <button class="assets-btn" id="gender">Gender</button>
+                <button class="assets-btn" id="bracelet-size">BRACELET SIZE</button>
+                <button class="assets-btn" id="beads">BEADS</button>
+                <button class="assets-btn" id="string-color">STRING COLOR</button>
+                <button class="assets-btn" id="lock-style">LOCK STYLE</button>
+            </div>
+            <div class="assets-sidebar" id="gender-sidebar">
+                <div class="sidebar-cont">
+                    <div class="sidebar-grid">
+                        <div class="gender-card active">
+                            <h5>Male</h5>
+                        </div>
+                        <div class="gender-card">
+                            <h5>Female</h5>
+                        </div>
+                    </div>
+                </div>
+                <div class="sidebar-actions">
+                    <span class="close-btn cross">⨯</span>
+                    <span class="close-btn check">✓</span>
+                </div>
+            </div>
+            <div class="assets-sidebar" id="bracelet-size-sidebar">
+                <div class="sidebar-cont">
+                    <div class="sidebar-grid">
+                        <div class="size-card">
+                            <h5>XXS</h5>
+                            <p class="hide">Extra Extra Small (10cm)</p>
+                            <div>Extra Extra Small (13cm)</div>
+                        </div>
+                        <div class="size-card">
+                            <h5>XS</h5>
+                            <p class="hide">Extra Small (11cm)</p>
+                            <div>Extra Small (14cm)</div>
+                        </div>
+                        <div class="size-card">
+                            <h5>S</h5>
+                            <p class="hide">Small (12cm)</p>
+                            <div>Small (15cm)</div>
+                        </div>
+                        <div class="size-card active">
+                            <h5>M</h5>
+                            <p class="hide">Medium (13cm)</p>
+                            <div>Medium (16cm)</div>
+                        </div>
+                        <div class="size-card">
+                            <h5>L</h5>
+                            <p class="hide">Large (14cm)</p>
+                            <div>Large (17cm)</div>
+                        </div>
+                        <div class="size-card">
+                            <h5>XL</h5>
+                            <p class="hide">Extra Large (15cm)</p>
+                            <div>Extra Large (18cm)</div>
+                        </div>
+                        <div class="size-card">
+                            <h5>XXL</h5>
+                            <p class="hide">Double Extra Large (16cm)</p>
+                            <div>Double Extra Large (19cm)</div>
+                        </div>
+                        <div class="size-card">
+                            <h5>XXXL</h5>
+                            <p class="hide">Triple Extra Large (17cm)</p>
+                            <div>Triple Extra Large (20cm)</div>
+                        </div>
+                        <div class="size-card">
+                            <h5>4XL</h5>
+                            <p class="hide">Four Extra Large (18cm)</p>
+                            <div>Four Extra Large (21cm)</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="sidebar-actions">
+                    <span class="close-btn cross">⨯</span>
+                    <span class="close-btn check">✓</span>
+                </div>
+            </div>
+            <div class="assets-sidebar" id="beads-sidebar">
+                <p class="sidebar-header">Precious Stone Beads:</p>
+                <div class="sidebar-cont">
+                    <div class="sidebar-grid">
+                        {% for p in product.metafields.bracelets.beads.value %}
+                          <div class="stone-card">
+                              <img src="{{ p.featured_image | image_url }}" alt="featured image" height="" width="">
+                              <div class="stone-cont">
+                          <h6>{{ p.title }}</h6>
+                          <input type="hidden" data-bride-id="{{ p.variants.first.id }}">
+                          <p data-bead-price="{{ p.price | money_without_currency }}" data-currency="{{ cart.currency.iso_code }}"> {{ p.price | money_with_currency }}</p>
+                              </div>
+                          </div>
+                        {% endfor %}
+                    </div>
+                </div>
+                <div class="sidebar-actions">
+                    <span class="close-btn cross">⨯</span>
+                    <span class="close-btn check">✓</span>
+                </div>
+            </div>
+            <div class="assets-sidebar" id="string-color-sidebar">
+                <div class="sidebar-cont">
+                    <div class="sidebar-grid">
+                        {% for string_image in product.metafields.bracelets.strings.value %}
+                          <div class="stringcolor-card {% if forloop.first %} active {% endif %}" data-src="{{ string_image | image_url }}">
+                              {% assign image = string_image | image_url | split:'files' | last %}
+                              {% assign image = image | split:'?' | first | replace:'/','' %}
+                              {% assign image = image | split:'-' | first %}
+                              <img src="{{ string_image | image_url }}" alt="{{ image }}" height="" width="">
+                              <h6>{{ image }}</h6>
+                          </div>
+                        {% endfor %}
+                    </div>
+                </div>
+                <div class="sidebar-actions">
+                    <span class="close-btn cross">⨯</span>
+                    <span class="close-btn check">✓</span>
+                </div>
+            </div>
+            <div class="assets-sidebar" id="lock-style-sidebar">
+                <div class="sidebar-cont">
+                    <div class="sidebar-grid">
+                       {% for lock_image in product.metafields.bracelets.locks.value %}
+                            {% assign lock_image_url = lock_image | image_url %}
+                            {% assign odd_image_url = lock_image_url | replace: '.png', '-odd.png' %}
+
+                          <div class="lockstyle-card {% if forloop.first %} active {% endif %}" data-src="{{ lock_image_url }}" data-odd-src="{{ odd_image_url }}">
+                              {% assign image = lock_image | image_url | split:'files' | last %}
+                              {% assign image = image | split:'?' | first | replace:'/','' %}
+                              {% assign image = image | split:'-' | first %}
+                              <img src="{{ lock_image | image_url }}" alt="{{ image }}" height="" width="">
+                              <h6>{{ image }}</h6>
+                          </div>
+                         {% endfor %}
+
+
+
+
+                    </div>
+                </div>
+                <div class="sidebar-actions">
+                    <span class="close-btn cross">⨯</span>
+                    <span class="close-btn check">✓</span>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+   <!-- Loading Overlay -->
+<div id="loadingOverlay">
+  <div class="loadingContent">
+    <div class="loader">
+      <img src="https://awnl.tw/cdn/shop/files/homepage-logo-400-120.png" alt="Logo" class="logo" height="" width="">
+      <div class="ring"></div>
+    </div>
+    <p>Processing<span class="dots"></span></p>
+  </div>
+</div>
+
+<style>
+  /* Full-screen overlay */
+  #loadingOverlay {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.6);
+    z-index: 9999;
+    justify-content: center;
+    align-items: center;
+  }
+
+  /* Center text and loader */
+  .loadingContent {
+    text-align: center;
+    color: white;
+    font-size: 20px;
+    font-family: Arial, sans-serif;
+  }
+
+  /* Loader container */
+  .loader {
+    position: relative;
+    width: 120px;
+    height: 120px;
+    margin: 0 auto 15px;
+  }
+
+  /* Static logo */
+  .loader .logo {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 100px;
+    z-index: 2;
+  }
+
+  /* Rotating ring */
+  .loader .ring {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 100px;
+    height: 100px;
+    border: 5px solid transparent;
+    border-top: 5px solid #ffffff;
+    border-radius: 50%;
+    transform: translate(-50%, -50%);
+    animation: spin 1.5s linear infinite;
+  }
+
+  /* Rotation animation */
+  @keyframes spin {
+    from { transform: translate(-50%, -50%) rotate(0deg); }
+    to { transform: translate(-50%, -50%) rotate(360deg); }
+  }
+
+  /* Animated dots for text */
+  .dots::after {
+    content: '';
+    animation: dots 1.5s infinite steps(3, end);
+  }
+
+  @keyframes dots {
+    0% { content: ''; }
+    33% { content: '.'; }
+    66% { content: '..'; }
+    100% { content: '...'; }
+  }
+
+
+  .product-wrapper .product-beautify #parker .dropper {
+    border-radius: 50%;
+    background-color: transparent;
+  }
+  .product-wrapper .product-beautify.style-1 #parker.size-xxs #drop6, .product-wrapper .product-beautify.style-1 #parker.size-xxs #drop10 {
+    display:none;
+  }
+{% comment %} style xxs  {% endcomment %}
+ .product-wrapper .product-beautify #parker #drop7{
+    display:none;
+}
+.product-wrapper .product-beautify.style-1 #parker.size-xxs #drop9 {
+ display:none;
+}
+ .product-wrapper .product-beautify.style-1 #parker.size-xxs #drop8 {
+ display:none;
+}
+
+ .product-wrapper .product-beautify.style-1 #parker.size-xxs #drop1 {
+    top: 6%;
+    left: 31%;
+}
+.product-wrapper .product-beautify.style-1 #parker.size-xxs #drop2 {
+    top: 15%;
+    left: 13.5%;
+}
+.product-wrapper .product-beautify.style-1 #parker.size-xxs #drop3 {
+    top: 31%;
+    left: 3.5%;
+}
+.product-wrapper .product-beautify.style-1 #parker.size-xxs #drop4 {
+    left: 2%;
+    bottom: 38%;
+}
+.product-wrapper .product-beautify.style-1 #parker.size-xxs #drop5 {
+    bottom: 21%;
+    left: 10%;
+}
+.product-wrapper .product-beautify.style-1 #parker.size-xxs #drop6 {
+    bottom: 18%;
+    left: 10%;
+}
+.product-wrapper .product-beautify.style-1 #parker.size-xxs #drop1 {
+    top: 5%;
+    left: 30%;
+}
+.product-wrapper .product-beautify.style-1 #parker.size-xxs #drop15 {
+    top: 3.5%;
+    right: 37.5%;
+}
+.product-wrapper .product-beautify.style-1 #parker.size-xxs #drop14 {
+    top: 10.5%;
+    right: 19.5%;
+}
+.product-wrapper .product-beautify.style-1 #parker.size-xxs #drop13 {
+    top: 23.5%;
+    right: 6.5%;
+}
+.product-wrapper .product-beautify.style-1 #parker.size-xxs #drop12 {
+    right: 2%;
+    top: 42.5%;
+}
+.product-wrapper .product-beautify.style-1 #parker.size-xxs #drop11 {
+    bottom: 27%;
+    right: 6%;
+    top: auto;
+}
+.product-wrapper .product-beautify.style-1 #parker.size-xxs #drop10 {
+    bottom: 26%;
+    right: 6.5%;
+}
+{% comment %} style xs  {% endcomment %}
+ 
+.product-wrapper .product-beautify.style-1 #parker.size-xs #drop8, .product-wrapper .product-beautify.style-1 #parker.size-xs #drop7, .product-wrapper .product-beautify.style-1 #parker.size-xs #drop6,.product-wrapper .product-beautify.style-1 #parker.size-xs #drop11 {
+  display:none;
+}
+.product-wrapper .product-beautify.style-1 #parker.size-xs #drop9 {
+display:none;
+}
+.product-wrapper .product-beautify.style-1 #parker.size-xs #drop10 {
+ display:none;
+}
+
+.product-wrapper .product-beautify.style-1 #parker.size-xs #drop1 {
+    top: 5%;
+    left: 30.5%;
+}
+.product-wrapper .product-beautify.style-1 #parker.size-xs #drop2 {
+    top: 15%;
+    left: 14%;
+}
+.product-wrapper .product-beautify.style-1 #parker.size-xs #drop3 {
+    top: 30%;
+    left: 4.5%;
+}
+.product-wrapper .product-beautify.style-1 #parker.size-xs #drop4 {
+    left: 2.5%;
+    bottom: 39.5%;
+}
+.product-wrapper .product-beautify.style-1 #parker.size-xs #drop5 {
+    bottom: 23%;
+    left: 9%;
+}
+.product-wrapper .product-beautify.style-1 #parker.size-xs #drop6 {
+    bottom: 30%;
+    left: 3.5%;
+}
+.product-wrapper .product-beautify.style-1 #parker.size-xs #drop7 {
+    bottom: 18%;
+    left: 11%;
+}
+.product-wrapper .product-beautify.style-1 #parker.size-xs #drop11 {
+    bottom: 23%;
+    right: 6.7%;
+    top: auto;
+}
+.product-wrapper .product-beautify.style-1 #parker.size-xs #drop12 {
+    right: 6%;
+    top: auto;
+    bottom: 27.7%;
+}
+.product-wrapper .product-beautify.style-1 #parker.size-xs #drop13 {
+    top: auto;
+    right: 2%;
+    bottom: 44.5%;
+}
+.product-wrapper .product-beautify.style-1 #parker.size-xs #drop14 {
+    top: 25%;
+    right: 6.5%;
+}
+.product-wrapper .product-beautify.style-1 #parker.size-xs #drop15 {
+    top: 11%;
+    right: 19.5%;
+}
+.product-wrapper .product-beautify.style-1 #parker.size-xs #drop16 {
+    top: 4%;
+    right: 36.5%;
+}
+.product-wrapper .product-beautify.style-1 #parker.size-xs #drop1 {
+    top: 5%;
+    left: 30.5%;
+}
+{% comment %} style s  {% endcomment %}
+ .product-wrapper .product-beautify.style-1 #parker.size-s #drop7,.product-wrapper .product-beautify.style-1 #parker.size-s #drop6,.product-wrapper .product-beautify.style-1 #parker.size-s #drop11 {
+  display:none;
+ } 
+ .product-wrapper .product-beautify.style-1 #parker.size-s #drop10 {
+   display:none;
+}
+ .product-wrapper .product-beautify.style-1 #parker.size-s #drop8 {
+  display:none;
+}
+.product-wrapper .product-beautify.style-1 #parker.size-s #drop9 {
+ display:none;
+}
+.product-wrapper .product-beautify.style-1 #parker.size-s #drop9 {
+display:none;
+}
+.product-wrapper .product-beautify.style-1 #parker.size-s #drop1 {
+    top: 7%;
+    left: 26%;
+}
+.product-wrapper .product-beautify.style-1 #parker.size-s #drop2 {
+    top: 18%;
+    left: 11.5%;
+}
+.product-wrapper .product-beautify.style-1 #parker.size-s #drop3 {
+    top: 33%;
+    left: 3%;
+}
+.product-wrapper .product-beautify.style-1 #parker.size-s #drop4 {
+    left: 3%;
+    bottom: 37%;
+}
+.product-wrapper .product-beautify.style-1 #parker.size-s #drop5 {
+    bottom: 21%;
+    left: 10%;
+}
+.product-wrapper .product-beautify.style-1 #parker.size-s #drop6 {
+    bottom: 26.5%;
+    left: 5.5%;
+}
+.product-wrapper .product-beautify.style-1 #parker.size-s #drop7 {
+    bottom: 17%;
+    left: 12%;
+}
+.product-wrapper .product-beautify.style-1 #parker.size-s #drop17 {
+    top: 3%;
+    right: 43.5%;
+}
+.product-wrapper .product-beautify.style-1 #parker.size-s #drop16 {
+    top: 8.5%;
+    right: 25.5%;
+}
+.product-wrapper .product-beautify.style-1 #parker.size-s #drop15 {
+    top: 16.5%;
+    right: 15%;
+}
+.product-wrapper .product-beautify.style-1 #parker.size-s #drop16 {
+    top: 6.5%;
+    right: 25.5%;
+}
+.product-wrapper .product-beautify.style-1 #parker.size-s #drop15 {
+    top: 16.5%;
+    right: 12%;
+}
+.product-wrapper .product-beautify.style-1 #parker.size-s #drop14 {
+    right: 4.5%;
+    top: 31%;
+}
+.product-wrapper .product-beautify.style-1 #parker.size-s #drop13 {
+    top: auto;
+    right: 2%;
+    bottom: 40%;
+}
+.product-wrapper .product-beautify.style-1 #parker.size-s #drop12 {
+    right: 7%;
+    top: auto;
+    bottom: 24.5%;
+}
+.product-wrapper .product-beautify.style-1 #parker.size-s #drop11 {
+    bottom: 25.5%;
+    right: 5.7%;
+    top: auto;
+}
+{% comment %} style M  {% endcomment %}
+ .product-wrapper .product-beautify.style-1 #parker.size-m #drop8, .product-wrapper .product-beautify.style-1 #parker.size-m #drop7,.product-wrapper .product-beautify.style-1 #parker.size-m #drop12 {
+display : none;
+}
+ .product-wrapper .product-beautify.style-1 #parker.size-m #drop9 {
+ display:none;
+}
+.product-wrapper .product-beautify.style-1 #parker.size-m #drop10 {
+  display:none;
+}
+.product-wrapper .product-beautify.style-1 #parker.size-m #drop11 {
+  display:none;
+}
+
+.product-wrapper .product-beautify.style-1 #parker.size-m #drop1 {
+    top: 4%;
+    left: 35.5%;
+}
+.product-wrapper .product-beautify.style-1 #parker.size-m #drop2 {
+    top: 10%;
+    left: 20%;
+}
+.product-wrapper .product-beautify.style-1 #parker.size-m #drop3 {
+    top: 22%;
+    left: 8.5%;
+}
+.product-wrapper .product-beautify.style-1 #parker.size-m #drop4 {
+    left: 2.5%;
+    bottom: 50.5%;
+}
+.product-wrapper .product-beautify.style-1 #parker.size-m #drop5 {
+    bottom: 33%;
+    left: 4%;
+}
+.product-wrapper .product-beautify.style-1 #parker.size-m #drop6 {
+    bottom: 20%;
+    left: 11.5%;
+}
+.product-wrapper .product-beautify.style-1 #parker.size-m #drop7 {
+    bottom: 26%;
+    left: 4%;
+}
+.product-wrapper .product-beautify.style-1 #parker.size-m #drop8 {
+    bottom: 16%;
+    left: 11.5%;
+}
+.product-wrapper .product-beautify.style-1 #parker.size-m #drop18 {
+    top: 4%;
+    right: 35.5%;
+}
+.product-wrapper .product-beautify.style-1 #parker.size-m #drop17 {
+    top: 10%;
+    right: 20.5%;
+}
+.product-wrapper .product-beautify.style-1 #parker.size-m #drop16 {
+    top: 20%;
+    right: 9.5%;
+}
+.product-wrapper .product-beautify.style-1 #parker.size-m #drop15 {
+    top: 33%;
+    right: 3.5%;
+}
+.product-wrapper .product-beautify.style-1 #parker.size-m #drop14 {
+    top: 48%;
+    right: 2.5%;
+}
+.product-wrapper .product-beautify.style-1 #parker.size-m #drop13 {
+    top: auto;
+    right: 7%;
+    bottom: 25.5%;
+}
+.product-wrapper .product-beautify.style-1 #parker.size-m #drop12 {
+    right: 7%;
+    top: auto;
+    bottom: 23.7%;
+}
+{% comment %} style L  {% endcomment %}
+ .product-wrapper .product-beautify.style-1 #parker.size-l #drop9, .product-wrapper .product-beautify.style-1 #parker.size-l #drop8, .product-wrapper .product-beautify.style-1 #parker.size-l #drop7, .product-wrapper .product-beautify.style-1 #parker.size-l #drop12 {
+ display:none;
+}
+.product-wrapper .product-beautify.style-1 #parker.size-l #drop10 {
+ display:none;
+}
+.product-wrapper .product-beautify.style-1 #parker.size-l #drop11 {
+ display:none;
+}
+.product-wrapper .product-beautify.style-1 #parker.size-l #drop1 {
+    top: 6.5%;
+    left: 27%;
+}
+.product-wrapper .product-beautify.style-1 #parker.size-l #drop2 {
+    top: 15.5%;
+    left: 14%;
+}
+.product-wrapper .product-beautify.style-1 #parker.size-l #drop3 {
+    top: 27%;
+    left: 5.5%;
+}
+.product-wrapper .product-beautify.style-1 #parker.size-l #drop4 {
+    left: 2%;
+    bottom: 46%;
+}
+.product-wrapper .product-beautify.style-1 #parker.size-l #drop5 {
+    bottom: 32%;
+    left: 4%;
+}
+.product-wrapper .product-beautify.style-1 #parker.size-l #drop6 {
+    bottom: 20%;
+    left: 11%;
+}
+.product-wrapper .product-beautify.style-1 #parker.size-l #drop7 {
+    bottom: 25.5%;
+    left: 5%;
+}
+.product-wrapper .product-beautify.style-1 #parker.size-l #drop8 {
+    bottom: 17%;
+    left: 11.5%;
+}
+.product-wrapper .product-beautify.style-1 #parker.size-l #drop19 {
+    top: 3.5%;
+    right: 46%;
+}
+.product-wrapper .product-beautify.style-1 #parker.size-l #drop18 {
+    top: 5%;
+    right: 31%;
+}
+.product-wrapper .product-beautify.style-1 #parker.size-l #drop17 {
+    top: 12%;
+    right: 18%;
+}
+.product-wrapper .product-beautify.style-1 #parker.size-l #drop16 {
+    top: 22.5%;
+    right: 8.5%;
+}
+.product-wrapper .product-beautify.style-1 #parker.size-l #drop15 {
+    top: 35%;
+    right: 2.5%;
+}
+.product-wrapper .product-beautify.style-1 #parker.size-l #drop14 {
+    top: 49.5%;
+    right: 2.5%;
+}
+.product-wrapper .product-beautify.style-1 #parker.size-l #drop13 {
+    top: auto;
+    right: 7.5%;
+    bottom: 24.5%;
+}
+.product-wrapper .product-beautify.style-1 #parker.size-l #drop12 {
+    right: 8%;
+    top: auto;
+    bottom: 22%;
+}
+{% comment %} style xl  {% endcomment %}
+ .product-wrapper .product-beautify.style-1 #parker.size-xl #drop9,.product-wrapper .product-beautify.style-1 #parker.size-xl #drop12,.product-wrapper .product-beautify.style-1 #parker.size-xl #drop8,.product-wrapper .product-beautify.style-1 #parker.size-xl #drop7 {
+ display:none;
+}
+.product-wrapper .product-beautify.style-1 #parker.size-xl #drop10 {
+ display:none;
+}
+.product-wrapper .product-beautify.style-1 #parker.size-xl #drop11 {
+display:none;
+}
+.product-wrapper .product-beautify.style-1 #parker.size-xl #drop20 {
+    top: 7.5%;
+    left: 28%;
+}
+.product-wrapper .product-beautify.style-1 #parker.size-xl #drop1 {
+    top: 14%;
+    left: 17.5%;
+}
+.product-wrapper .product-beautify.style-1 #parker.size-xl #drop2 {
+    top: 23%;
+    left: 9%;
+}
+.product-wrapper .product-beautify.style-1 #parker.size-xl #drop3 {
+    top: 34%;
+    left: 4%;
+}
+.product-wrapper .product-beautify.style-1 #parker.size-xl #drop4 {
+    left: 2.5%;
+    bottom: 43.5%;
+}
+.product-wrapper .product-beautify.style-1 #parker.size-xl #drop5 {
+    bottom: 32%;
+    left: 5%;
+}
+.product-wrapper .product-beautify.style-1 #parker.size-xl #drop6 {
+    bottom: 22%;
+    left: 11.5%;
+}
+.product-wrapper .product-beautify.style-1 #parker.size-xl #drop7 {
+    bottom: 31%;
+    left: 5%;
+}
+.product-wrapper .product-beautify.style-1 #parker.size-xl #drop8 {
+    bottom: 21%;
+    left: 11.5%;
+}
+.product-wrapper .product-beautify.style-1 #parker.size-xl #drop19 {
+    top: 4%;
+    right: 48.5%;
+}
+.product-wrapper .product-beautify.style-1 #parker.size-xl #drop18 {
+    top: 5.5%;
+    right: 35%;
+}
+.product-wrapper .product-beautify.style-1 #parker.size-xl #drop17 {
+    top: 11%;
+    right: 22%;
+}
+.product-wrapper .product-beautify.style-1 #parker.size-xl #drop16 {
+    top: 19.5%;
+    right: 11.5%;
+}
+.product-wrapper .product-beautify.style-1 #parker.size-xl #drop15 {
+    top: 31.5%;
+    right: 5%;
+}
+.product-wrapper .product-beautify.style-1 #parker.size-xl #drop14 {
+    top: 45%;
+    right: 3.5%;
+}
+.product-wrapper .product-beautify.style-1 #parker.size-xl #drop13 {
+    top: auto;
+    right: 7%;
+    bottom: 28.5%;
+}
+.product-wrapper .product-beautify.style-1 #parker.size-xl #drop12 {
+    right: 7%;
+    top: auto;
+    bottom: 26.7%;
+}
+{% comment %} style xxl  {% endcomment %}
+ .product-wrapper .product-beautify.style-1 #parker.size-xxl #drop9,.product-wrapper .product-beautify.style-1 #parker.size-xxl #drop8,.product-wrapper .product-beautify.style-1 #parker.size-xxl #drop7,.product-wrapper .product-beautify.style-1 #parker.size-xxl #drop12 {
+   display:none;
+}
+.product-wrapper .product-beautify.style-1 #parker.size-xxl #drop10 {
+   display:none;
+}
+.product-wrapper .product-beautify.style-1 #parker.size-xxl #drop11 {
+   display:none;
+}
+.product-wrapper .product-beautify.style-1 #parker.size-xxl #drop20 {
+    top: 9%;
+    left: 26%;
+}
+.product-wrapper .product-beautify.style-1 #parker.size-xxl #drop1 {
+    top: 15.5%;
+    left: 16.5%;
+}
+.product-wrapper .product-beautify.style-1 #parker.size-xxl #drop2 {
+    top: 25%;
+    left: 9%;
+}
+.product-wrapper .product-beautify.style-1 #parker.size-xxl #drop3 {
+    top: 36%;
+    left: 5%;
+}
+.product-wrapper .product-beautify.style-1 #parker.size-xxl #drop4 {
+    left: 3%;
+    bottom: 43%;
+}
+.product-wrapper .product-beautify.style-1 #parker.size-xxl #drop5 {
+    bottom: 32%;
+    left: 5.5%;
+}
+.product-wrapper .product-beautify.style-1 #parker.size-xxl #drop6 {
+    bottom: 21.6%;
+    left: 11.5%;
+}
+.product-wrapper .product-beautify.style-1 #parker.size-xxl #drop7 {
+    bottom: 30.5%;
+    left: 6%;
+}
+.product-wrapper .product-beautify.style-1 #parker.size-xxl #drop8 {
+    bottom: 21%;
+    left: 11.5%;
+}
+.product-wrapper .product-beautify.style-1 #parker.size-xxl #drop21 {
+    top: 4.5%;
+    right: 52%;
+}
+.product-wrapper .product-beautify.style-1 #parker.size-xxl #drop19 {
+    top: 5%;
+    right: 38.5%;
+}
+.product-wrapper .product-beautify.style-1 #parker.size-xxl #drop18 {
+    top: 10%;
+    right: 25%;
+}
+.product-wrapper .product-beautify.style-1 #parker.size-xxl #drop17 {
+    top: 17.5%;
+    right: 14%;
+}
+.product-wrapper .product-beautify.style-1 #parker.size-xxl #drop16 {
+    top: 28.5%;
+    right: 6.5%;
+}
+.product-wrapper .product-beautify.style-1 #parker.size-xxl #drop15 {
+    top: 39.5%;
+    right: 4%;
+}
+.product-wrapper .product-beautify.style-1 #parker.size-xxl #drop14 {
+    top: 51%;
+    right: 4.5%;
+}
+.product-wrapper .product-beautify.style-1 #parker.size-xxl #drop13 {
+    top: auto;
+    right: 9%;
+    bottom: 27%;
+}
+.product-wrapper .product-beautify.style-1 #parker.size-xxl #drop12 {
+    right: 7%;
+    top: auto;
+    bottom: 27.7%;
+}
+{% comment %} style xxxl  {% endcomment %}
+ .product-wrapper .product-beautify.style-1 #parker.size-xxxl #drop9,.product-wrapper .product-beautify.style-1 #parker.size-xxxl #drop8,.product-wrapper .product-beautify.style-1 #parker.size-xxxl #drop7,.product-wrapper .product-beautify.style-1 #parker.size-xxxl #drop12 {
+   display:none;
+}
+.product-wrapper .product-beautify.style-1 #parker.size-xxxl #drop10 {
+  display:none;
+}
+.product-wrapper .product-beautify.style-1 #parker.size-xxxl #drop11 {
+ display:none;
+}
+.product-wrapper .product-beautify.style-1 #parker.size-xxxl #drop22 {
+    top: 6.5%;
+    left: 31.5%;
+}
+.product-wrapper .product-beautify.style-1 #parker.size-xxxl #drop20 {
+    top: 11.5%;
+    left: 21.5%;
+}
+.product-wrapper .product-beautify.style-1 #parker.size-xxxl #drop1 {
+    top: 20%;
+    left: 12.5%;
+}
+.product-wrapper .product-beautify.style-1 #parker.size-xxxl #drop2 {
+    top: 29%;
+    left: 6%;
+}
+.product-wrapper .product-beautify.style-1 #parker.size-xxxl #drop3 {
+    top: 40%;
+    left: 3.5%;
+}
+.product-wrapper .product-beautify.style-1 #parker.size-xxxl #drop4 {
+    left: 3.5%;
+    bottom: 38.5%;
+}
+.product-wrapper .product-beautify.style-1 #parker.size-xxxl #drop5 {
+    bottom: 28%;
+    left: 8%;
+}
+.product-wrapper .product-beautify.style-1 #parker.size-xxxl #drop6 {
+    bottom: 19%;
+    left: 14.5%;
+}
+.product-wrapper .product-beautify.style-1 #parker.size-xxxl #drop7 {
+    bottom: 26%;
+    left: 8%;
+}
+.product-wrapper .product-beautify.style-1 #parker.size-xxxl #drop8 {
+    bottom: 17.5%;
+    left: 13.5%;
+}
+.product-wrapper .product-beautify.style-1 #parker.size-xxxl #drop21 {
+    top: 4.5%;
+    right: 47.5%;
+}
+.product-wrapper .product-beautify.style-1 #parker.size-xxxl #drop19 {
+    top: 5%;
+    right: 35.5%;
+}
+.product-wrapper .product-beautify.style-1 #parker.size-xxxl #drop18 {
+    top: 10%;
+    right: 24%;
+}
+.product-wrapper .product-beautify.style-1 #parker.size-xxxl #drop17 {
+    top: 18%;
+    right: 14%;
+}
+.product-wrapper .product-beautify.style-1 #parker.size-xxxl #drop16 {
+    top: 28.5%;
+    right: 6.5%;
+}
+.product-wrapper .product-beautify.style-1 #parker.size-xxxl #drop15 {
+    top: 41.5%;
+    right: 3.5%;
+}
+.product-wrapper .product-beautify.style-1 #parker.size-xxxl #drop14 {
+    top: 53%;
+    right: 4.5%;
+}
+.product-wrapper .product-beautify.style-1 #parker.size-xxxl #drop13 {
+    top: auto;
+    right: 8%;
+    bottom: 26%;
+}
+.product-wrapper .product-beautify.style-1 #parker.size-xxxl #drop12 {
+    right: 8.5%;
+    top: auto;
+    bottom: 25.5%;
+}
+{% comment %} style 4xl  {% endcomment %}
+ .product-wrapper .product-beautify.style-1 #parker.size-4xl #drop10, .product-wrapper .product-beautify.style-1 #parker.size-4xl #drop9,.product-wrapper .product-beautify.style-1 #parker.size-4xl #drop8,.product-wrapper .product-beautify.style-1 #parker.size-4xl #drop13 {
+  display:none;
+}
+.product-wrapper .product-beautify.style-1 #parker.size-4xl #drop11 {
+ display:none;
+}
+.product-wrapper .product-beautify.style-1 #parker.size-4xl #drop12 {
+   display:none;
+}
+.product-wrapper .product-beautify.style-1 #parker.size-4xl #drop22 {
+    top: 6%;
+    left: 35.5%;
+}
+.product-wrapper .product-beautify.style-1 #parker.size-4xl #drop20 {
+    top: 10.5%;
+    left: 24.5%;
+}
+.product-wrapper .product-beautify.style-1 #parker.size-4xl #drop1 {
+    top: 18%;
+    left: 14.5%;
+}
+.product-wrapper .product-beautify.style-1 #parker.size-4xl #drop2 {
+    top: 27.5%;
+    left: 8%;
+}
+.product-wrapper .product-beautify.style-1 #parker.size-4xl #drop3 {
+    top: 61.5%;
+    left: 6.5%;
+}
+.product-wrapper .product-beautify.style-1 #parker.size-4xl #drop4 {
+    left: 3.5%;
+    bottom: 39%;
+}
+.product-wrapper .product-beautify.style-1 #parker.size-4xl #drop5 {
+    bottom: 50%;
+    left: 4%;
+}
+.product-wrapper .product-beautify.style-1 #parker.size-4xl #drop6 {
+    bottom: 19%;
+    left: 14%;
+}
+.product-wrapper .product-beautify.style-1 #parker.size-4xl #drop7 {
+    bottom: 32%;
+    left: 4.5%;
+}
+.product-wrapper .product-beautify.style-1 #parker.size-4xl #drop8 {
+    bottom: 24.5%;
+    left: 8%;
+}
+.product-wrapper .product-beautify.style-1 #parker.size-4xl #drop9 {
+    bottom: 17%;
+    left: 13.5%;
+}
+.product-wrapper .product-beautify.style-1 #parker.size-4xl #drop23 {
+    top: 5%;
+    right: 42.5%;
+}
+.product-wrapper .product-beautify.style-1 #parker.size-4xl #drop21 {
+    top: 7.5%;
+    right: 30.5%;
+}
+.product-wrapper .product-beautify.style-1 #parker.size-4xl #drop19 {
+    top: 12.5%;
+    right: 19.5%;
+}
+.product-wrapper .product-beautify.style-1 #parker.size-4xl #drop18 {
+    top: 22%;
+    right: 11.5%;
+}
+.product-wrapper .product-beautify.style-1 #parker.size-4xl #drop17 {
+    top: 32.5%;
+    right: 5.5%;
+}
+.product-wrapper .product-beautify.style-1 #parker.size-4xl #drop16 {
+    top: 43.5%;
+    right: 4%;
+}
+.product-wrapper .product-beautify.style-1 #parker.size-4xl #drop15 {
+    top: 54.5%;
+    right: 4.5%;
+}
+.product-wrapper .product-beautify.style-1 #parker.size-4xl #drop14 {
+    top: 64%;
+    right: 8.5%;
+}
+.product-wrapper .product-beautify.style-1 #parker.size-4xl #drop13 {
+    top: auto;
+    right: 9.5%;
+    bottom: 23.5%;
+}
+
+</style>
+
+
+  <!-- Java Scripts -->
+ <script src="{{ "create-bracelet-2.js" | asset_url }}" defer></script> 
+
+{% schema %}
+  {
+    "name": "Create Bracelet 06",
+    "tag":"section",
+    "class": "create-bracelet",
+    "settings": [
+      {
+        "type": "header",
+        "content": "Accordion Content"
+      },
+      {
+      "type": "richtext",
+      "id": "policy",
+      "label": "Policy"
+    },
+     {
+      "type": "richtext",
+      "id": "time-estimate",
+      "label": "Time Estimate"
+    }
+    ]
+  }
+{% endschema %}

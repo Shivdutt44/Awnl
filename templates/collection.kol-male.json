@@ -1,0 +1,646 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "rich_text_EKHari": {
+      "type": "rich-text",
+      "blocks": {
+        "heading_M6wiBT": {
+          "type": "heading",
+          "settings": {
+            "text": "本季男士精選推薦",
+            "heading_tag": "h1"
+          }
+        },
+        "subheading_zGxM8J": {
+          "type": "subheading",
+          "settings": {
+            "text": "歡迎瀏覽AWNL明星藝人同款和熱門款式"
+          }
+        }
+      },
+      "block_order": [
+        "heading_M6wiBT",
+        "subheading_zGxM8J"
+      ],
+      "settings": {
+        "color_scheme": "scheme-2",
+        "separate_section_with_border": false,
+        "content_width": "sm",
+        "text_position": "center",
+        "remove_vertical_spacing": false
+      }
+    },
+    "collection-banner": {
+      "type": "collection-banner",
+      "disabled": true,
+      "settings": {
+        "color_scheme": "scheme-2",
+        "image_size": "auto",
+        "allow_transparent_header": false,
+        "reveal": true,
+        "enable_parallax": false,
+        "show_image": false,
+        "show_collection_title": true,
+        "show_collection_description": true,
+        "show_breadcrumb": true,
+        "content_width": "xs",
+        "overlay_color": "#000000",
+        "overlay_opacity": 11
+      }
+    },
+    "image_with_text_JQeaAw": {
+      "type": "image-with-text",
+      "blocks": {
+        "liquid_kYYA4U": {
+          "type": "liquid",
+          "settings": {
+            "liquid": "<style>\n    @media (max-width: 768px) {\n        .responsive-image {\n            width: 100%;\n            height: auto;\n        }\n    }\n</style>\n\n<img class=\"responsive-image\" src=\"https://cdn.shopify.com/s/files/1/0586/4026/9492/files/mens-topaz-hamsa-hand-charm-necklace-1.jpg?v=1734512062\" style=\"max-width: 300px; display: block; margin-left: auto; margin-right: auto; \">"
+          }
+        },
+        "heading_WJCYmB": {
+          "type": "heading",
+          "settings": {
+            "text": "托帕石 法蒂瑪之手 項鍊",
+            "heading_tag": "h3"
+          }
+        },
+        "richtext_Qy7JUC": {
+          "type": "richtext",
+          "settings": {
+            "content": "<p>Hamsa也有佛手之稱，是西亞以及北非地區常見的一種吉祥物，被認為能保平安、佑健康。</p>"
+          }
+        },
+        "button_VYQaL3": {
+          "type": "button",
+          "settings": {
+            "style": "solid",
+            "text": "立即探索",
+            "url": "shopify://products/mens-topaz-hamsa-hand-charm-necklace",
+            "background": "",
+            "text_color": ""
+          }
+        }
+      },
+      "block_order": [
+        "liquid_kYYA4U",
+        "heading_WJCYmB",
+        "richtext_Qy7JUC",
+        "button_VYQaL3"
+      ],
+      "custom_css": [
+        "@media (min-width: 769px) {image-with-text {max-width: 1500px; margin-left: auto; margin-right: auto; }}",
+        ".sm\\:text-start {text-align: center;}"
+      ],
+      "settings": {
+        "color_scheme": "scheme-2",
+        "separate_section_with_border": false,
+        "image": "shopify://shop_images/kol-male_1.jpg",
+        "reveal_on_scroll": true,
+        "image_position": "end",
+        "content_width": "sm",
+        "remove_vertical_spacing": true
+      }
+    },
+    "image_with_text_VPtzfF": {
+      "type": "image-with-text",
+      "blocks": {
+        "liquid_aJcUjg": {
+          "type": "liquid",
+          "settings": {
+            "liquid": "<style>\n    @media (max-width: 768px) {\n        .responsive-image {\n            width: 100%;\n            height: auto;\n        }\n    }\n</style>\n\n<img class=\"responsive-image\" src=\"https://cdn.shopify.com/s/files/1/0586/4026/9492/files/mens-beaded-bracelet-with-hamsa-hand-charm-and-hawk-eye-bracelets-awnl-taiwan-1.jpg?v=1716952266\"max-width: 300px; display: block; margin-left: auto; margin-right: auto; \">"
+          }
+        },
+        "heading_t8JnVB": {
+          "type": "heading",
+          "settings": {
+            "text": "鷹眼石 法蒂瑪之手 男士手鍊",
+            "heading_tag": "h3"
+          }
+        },
+        "richtext_DfUzqQ": {
+          "type": "richtext",
+          "settings": {
+            "content": "<p>鷹眼石的堅韌與法蒂瑪之手的柔和相得益彰，賦予佩戴者靜謐力量。</p>"
+          }
+        },
+        "button_gBGzYk": {
+          "type": "button",
+          "settings": {
+            "style": "solid",
+            "text": "立即探索",
+            "url": "shopify://products/mens-beaded-bracelet-with-hamsa-hand-charm-and-hawk-eye",
+            "background": "",
+            "text_color": ""
+          }
+        }
+      },
+      "block_order": [
+        "liquid_aJcUjg",
+        "heading_t8JnVB",
+        "richtext_DfUzqQ",
+        "button_gBGzYk"
+      ],
+      "custom_css": [
+        "@media (min-width: 769px) {image-with-text {max-width: 1500px; margin-left: auto; margin-right: auto; }}",
+        ".sm\\:text-start {text-align: center;}"
+      ],
+      "settings": {
+        "color_scheme": "scheme-2",
+        "separate_section_with_border": false,
+        "image": "shopify://shop_images/kol-male_3_a9cdf3c3-098d-4908-ba11-1a3eac6557c6.jpg",
+        "reveal_on_scroll": true,
+        "image_position": "start",
+        "content_width": "sm",
+        "remove_vertical_spacing": true
+      }
+    },
+    "main": {
+      "type": "main-collection",
+      "disabled": true,
+      "settings": {
+        "color_scheme": "scheme-2",
+        "hide_product_information": true,
+        "products_per_page": 32,
+        "products_per_row_mobile": "2",
+        "products_size_desktop": "medium",
+        "show_grid_mode_selector": true,
+        "horizontal_spacing_factor": 1,
+        "vertical_spacing_factor": 1,
+        "filter_layout": "drawer",
+        "quick_links_menu": "",
+        "show_sort_by": true,
+        "show_filters": true,
+        "show_results_count": true,
+        "show_filter_group_name": false,
+        "show_filter_values_count": true,
+        "open_filters_by_default": false
+      }
+    },
+    "image_with_text_dniFak": {
+      "type": "image-with-text",
+      "blocks": {
+        "liquid_zK4KUV": {
+          "type": "liquid",
+          "settings": {
+            "liquid": "<style>\n    @media (max-width: 768px) {\n        .responsive-image {\n            width: 100%;\n            height: auto;\n        }\n    }\n</style>\n\n<img class=\"responsive-image\" src=\"https://cdn.shopify.com/s/files/1/0586/4026/9492/files/bloodstone-om-sankrit-necklace_1.jpg?v=1727407110\"max-width: 300px; display: block; margin-left: auto; margin-right: auto; \">"
+          }
+        },
+        "heading_waATd4": {
+          "type": "heading",
+          "settings": {
+            "text": "血石碧玉 om字梵文 男士項鍊",
+            "heading_tag": "h3"
+          }
+        },
+        "richtext_EkrJGQ": {
+          "type": "richtext",
+          "settings": {
+            "content": "<p>古老的梵文符號「唵」，象徵著萬物歸一與心靈守護，充滿力量的符號與現代設計結合，每個細節都蘊含著設計師真摯的祝福。</p>"
+          }
+        },
+        "button_bkpnqw": {
+          "type": "button",
+          "settings": {
+            "style": "solid",
+            "text": "立即探索",
+            "url": "shopify://products/bloodstone-om-sankrit-necklace",
+            "background": "",
+            "text_color": ""
+          }
+        }
+      },
+      "block_order": [
+        "liquid_zK4KUV",
+        "heading_waATd4",
+        "richtext_EkrJGQ",
+        "button_bkpnqw"
+      ],
+      "custom_css": [
+        "@media (min-width: 769px) {image-with-text {max-width: 1500px; margin-left: auto; margin-right: auto; }}",
+        ".sm\\:text-start {text-align: center;}"
+      ],
+      "settings": {
+        "color_scheme": "scheme-2",
+        "separate_section_with_border": false,
+        "image": "shopify://shop_images/1_d5c8d24f-36f0-4c2d-b6f5-33efb391b666.jpg",
+        "reveal_on_scroll": true,
+        "image_position": "end",
+        "content_width": "sm",
+        "remove_vertical_spacing": true
+      }
+    },
+    "image_with_text_CHXVkB": {
+      "type": "image-with-text",
+      "blocks": {
+        "liquid_YTePzN": {
+          "type": "liquid",
+          "settings": {
+            "liquid": "<style>\n    @media (max-width: 768px) {\n        .responsive-image {\n            width: 100%;\n            height: auto;\n        }\n    }\n</style>\n\n<img class=\"responsive-image\" src=\"https://cdn.shopify.com/s/files/1/0586/4026/9492/files/mens-beaded-macrame-bracelet-with-multi-colored-gemstones-bracelets-awnl-taiwan-1.jpg?v=1727231726\" style=\"max-width: 300px; display: block; margin-left: auto; margin-right: auto; \">"
+          }
+        },
+        "heading_Hpr93A": {
+          "type": "heading",
+          "settings": {
+            "text": "多寶珠 編織抽繩 男士手鍊",
+            "heading_tag": "h3"
+          }
+        },
+        "richtext_MxKrpw": {
+          "type": "richtext",
+          "settings": {
+            "content": "<p>色彩繽紛的水晶串珠，帶來好運的同時提升整體穿搭的時尚感。成為您的力量符號，引領您走向更美好的人生旅程。</p>"
+          }
+        },
+        "button_8NbWyG": {
+          "type": "button",
+          "settings": {
+            "style": "solid",
+            "text": "立即探索",
+            "url": "shopify://products/beaded-drawstring-bracelet-with-mixed-beads",
+            "background": "",
+            "text_color": ""
+          }
+        }
+      },
+      "block_order": [
+        "liquid_YTePzN",
+        "heading_Hpr93A",
+        "richtext_MxKrpw",
+        "button_8NbWyG"
+      ],
+      "custom_css": [
+        "@media (min-width: 769px) {image-with-text {max-width: 1500px; margin-left: auto; margin-right: auto; }}",
+        ".sm\\:text-start {text-align: center;}"
+      ],
+      "settings": {
+        "color_scheme": "scheme-2",
+        "separate_section_with_border": false,
+        "image": "shopify://shop_images/2_a48a937d-8b37-4966-8f25-ba2987005fc6.jpg",
+        "reveal_on_scroll": true,
+        "image_position": "start",
+        "content_width": "sm",
+        "remove_vertical_spacing": true
+      }
+    },
+    "image_with_text_W49N74": {
+      "type": "image-with-text",
+      "blocks": {
+        "liquid_KYnbxH": {
+          "type": "liquid",
+          "settings": {
+            "liquid": "<style>\n    @media (max-width: 768px) {\n        .responsive-image {\n            width: 100%;\n            height: auto;\n        }\n    }\n</style>\n\n<img class=\"responsive-image\" src=\"https://cdn.shopify.com/s/files/1/0586/4026/9492/files/dumortierite_awnl_logo_necklace_1.jpg?v=1727061428\" style=\"max-width: 300px; display: block; margin-left: auto; margin-right: auto; \">"
+          }
+        },
+        "heading_KiNR7t": {
+          "type": "heading",
+          "settings": {
+            "text": "藍線石 外星人LOGO 項鍊",
+            "heading_tag": "h3"
+          }
+        },
+        "richtext_tFhKPX": {
+          "type": "richtext",
+          "settings": {
+            "content": "<p>以品牌logo為設計元素，馬達加斯加藍線石嵌入立體幾何結構中，搭配上身會令造型更顯前衛別緻。</p>"
+          }
+        },
+        "button_4AUQyd": {
+          "type": "button",
+          "settings": {
+            "style": "solid",
+            "text": "立即探索",
+            "url": "shopify://products/dumortierite-logo-men-necklace",
+            "background": "",
+            "text_color": ""
+          }
+        }
+      },
+      "block_order": [
+        "liquid_KYnbxH",
+        "heading_KiNR7t",
+        "richtext_tFhKPX",
+        "button_4AUQyd"
+      ],
+      "custom_css": [
+        "@media (min-width: 769px) {image-with-text {max-width: 1500px; margin-left: auto; margin-right: auto; }}",
+        ".sm\\:text-start {text-align: center;}"
+      ],
+      "settings": {
+        "color_scheme": "scheme-2",
+        "separate_section_with_border": false,
+        "image": "shopify://shop_images/3_d66f3b20-5c1e-48b8-af96-bb64ecc3da21.jpg",
+        "reveal_on_scroll": true,
+        "image_position": "end",
+        "content_width": "sm",
+        "remove_vertical_spacing": true
+      }
+    },
+    "image_with_text_Wxzpbc": {
+      "type": "image-with-text",
+      "blocks": {
+        "liquid_YikzUE": {
+          "type": "liquid",
+          "settings": {
+            "liquid": "<style>\n    @media (max-width: 768px) {\n        .responsive-image {\n            width: 100%;\n            height: auto;\n        }\n    }\n</style>\n\n<img class=\"responsive-image\" src=\"https://cdn.shopify.com/s/files/1/0586/4026/9492/files/mens-beaded-bracelet-with-spectrolite-and-beacon-charm-bracelets-awnl-taiwan-1.jpg?v=1693389489\" style=\"max-width: 300px; display: block; margin-left: auto; margin-right: auto; \">"
+          }
+        },
+        "heading_Kc8Azc": {
+          "type": "heading",
+          "settings": {
+            "text": "光譜石 星際燈塔 男士手鍊",
+            "heading_tag": "h3"
+          }
+        },
+        "richtext_8WtQ4k": {
+          "type": "richtext",
+          "settings": {
+            "content": "<p>芬蘭光譜石屬於「轉化之石」，能助人發現自己的獨特性，不僅精緻百搭，亦能作為鎮靜心神的護身符。</p>"
+          }
+        },
+        "button_kyJLRB": {
+          "type": "button",
+          "settings": {
+            "style": "solid",
+            "text": "點擊詳情",
+            "url": "shopify://products/mens-beaded-bracelet-with-spectrolite-labradorite-and-beacon-charm",
+            "background": "",
+            "text_color": ""
+          }
+        }
+      },
+      "block_order": [
+        "liquid_YikzUE",
+        "heading_Kc8Azc",
+        "richtext_8WtQ4k",
+        "button_kyJLRB"
+      ],
+      "disabled": true,
+      "custom_css": [
+        "@media (min-width: 769px) {image-with-text {max-width: 1500px; margin-left: auto; margin-right: auto; }}",
+        ".sm\\:text-start {text-align: center;}"
+      ],
+      "settings": {
+        "color_scheme": "scheme-2",
+        "separate_section_with_border": false,
+        "image": "shopify://shop_images/kol-male_7.jpg",
+        "reveal_on_scroll": true,
+        "image_position": "start",
+        "content_width": "sm",
+        "remove_vertical_spacing": true
+      }
+    },
+    "image_with_text_PihAxc": {
+      "type": "image-with-text",
+      "blocks": {
+        "liquid_4LJNcV": {
+          "type": "liquid",
+          "settings": {
+            "liquid": "<style>\n    @media (max-width: 768px) {\n        .responsive-image {\n            width: 100%;\n            height: auto;\n        }\n    }\n</style>\n\n<img class=\"responsive-image\" src=\"https://cdn.shopify.com/s/files/1/0586/4026/9492/files/dumortierite_cross_necklace_1.jpg?v=1733189495\" style=\"max-width: 300px; display: block; margin-left: auto; margin-right: auto; \">"
+          }
+        },
+        "heading_mymWnB": {
+          "type": "heading",
+          "settings": {
+            "text": "藍線石 海影十字 項鍊",
+            "heading_tag": "h3"
+          }
+        },
+        "richtext_Cw336T": {
+          "type": "richtext",
+          "settings": {
+            "content": "<p>「海影」寓意著海洋的影像與神秘感，馬達加斯加藍線石的獨特紋理與色澤，則象徵著平靜與智慧，藍色的線條流動如同心靈的指引，帶來內心的安寧與深思。</p>"
+          }
+        },
+        "button_QwX8GM": {
+          "type": "button",
+          "settings": {
+            "style": "solid",
+            "text": "立即探索",
+            "url": "shopify://products/dumortierite_seagleam_cross_necklace",
+            "background": "",
+            "text_color": ""
+          }
+        }
+      },
+      "block_order": [
+        "liquid_4LJNcV",
+        "heading_mymWnB",
+        "richtext_Cw336T",
+        "button_QwX8GM"
+      ],
+      "custom_css": [
+        "@media (min-width: 769px) {image-with-text {max-width: 1500px; margin-left: auto; margin-right: auto; }}",
+        ".sm\\:text-start {text-align: center;}"
+      ],
+      "settings": {
+        "color_scheme": "scheme-2",
+        "separate_section_with_border": false,
+        "image": "shopify://shop_images/6_fe111a1b-ccaa-403c-95f4-e435e05521e7.jpg",
+        "reveal_on_scroll": true,
+        "image_position": "start",
+        "content_width": "sm",
+        "remove_vertical_spacing": true
+      }
+    },
+    "featured_collections_h9Pqbq": {
+      "type": "featured-collections",
+      "blocks": {
+        "collection_Tq6mtq": {
+          "type": "collection",
+          "settings": {
+            "collection": "kol-male-jewelry",
+            "products_count": 50,
+            "title": "",
+            "link_url": "",
+            "link_text": ""
+          }
+        }
+      },
+      "block_order": [
+        "collection_Tq6mtq"
+      ],
+      "custom_css": [
+        "h2.h2 {display: none;}",
+        "p.h6.text-center {font-size: 25px;}",
+        "@media (min-width: 769px) {.section-stack {max-width: 1500px; margin-left: auto; margin-right: auto; }}",
+        ".price-list {display: none;}",
+        ".badge-list {display: none;}"
+      ],
+      "settings": {
+        "color_scheme": "scheme-2",
+        "separate_section_with_border": false,
+        "hide_product_information": false,
+        "stack_products": true,
+        "products_per_row_mobile": "2",
+        "products_per_row_desktop": 5,
+        "horizontal_spacing_factor": 1.4,
+        "vertical_spacing_factor": 1.4,
+        "subheading": "更多精選款式"
+      }
+    },
+    "media_grid_3mGGt8": {
+      "type": "media-grid",
+      "blocks": {
+        "image_9BjxMz": {
+          "type": "image",
+          "settings": {
+            "color_scheme": "",
+            "image": "shopify://shop_images/1_d67dd254-171e-4ff8-a09d-6af4a0a56ef5.png",
+            "column_count": "4",
+            "row_count": 1,
+            "title": "專屬女士",
+            "heading_tag": "h3",
+            "content": "",
+            "link_text": "立即探索",
+            "link_url": "shopify://collections/kol-female-jewelry",
+            "link_style": "solid",
+            "text_position": "place-self-end-center text-center",
+            "overlay_color": "#000000",
+            "overlay_opacity": 26
+          }
+        },
+        "image_nfTd9N": {
+          "type": "image",
+          "settings": {
+            "color_scheme": "",
+            "image": "shopify://shop_images/3_ef87fe28-abab-4aec-837a-2ebc2dd1c60a.png",
+            "column_count": "4",
+            "row_count": 1,
+            "title": "中性風格",
+            "heading_tag": "h3",
+            "content": "",
+            "link_text": "立即探索",
+            "link_url": "shopify://collections/kol-unisex-jewelry",
+            "link_style": "solid",
+            "text_position": "place-self-end-center text-center",
+            "overlay_color": "#000000",
+            "overlay_opacity": 26
+          }
+        },
+        "image_Tk6a63": {
+          "type": "image",
+          "settings": {
+            "color_scheme": "",
+            "image": "shopify://shop_images/2_ae341cff-9a2e-4511-9e92-da95e251564c.png",
+            "column_count": "4",
+            "row_count": 1,
+            "title": "專屬男士",
+            "heading_tag": "h3",
+            "content": "",
+            "link_text": "立即探索",
+            "link_url": "shopify://collections/kol-male-jewelry",
+            "link_style": "solid",
+            "text_position": "place-self-end-center text-center",
+            "overlay_color": "#000000",
+            "overlay_opacity": 26
+          }
+        }
+      },
+      "block_order": [
+        "image_9BjxMz",
+        "image_nfTd9N",
+        "image_Tk6a63"
+      ],
+      "custom_css": [
+        "@media (min-width: 769px) {.section-stack {max-width: 1500px; margin-left: auto; margin-right: auto; }}"
+      ],
+      "settings": {
+        "color_scheme": "scheme-2",
+        "separate_section_with_border": false,
+        "desktop_row_height": 290,
+        "mobile_row_height": 180,
+        "section_width": "full",
+        "spacing": "xs",
+        "subheading": "",
+        "title": "",
+        "content": ""
+      }
+    },
+    "faq_kVTxF7": {
+      "type": "faq",
+      "blocks": {
+        "question_C8tKip": {
+          "type": "question",
+          "settings": {
+            "question": "禮物包裝是什麼樣的？",
+            "answer": "<p>您收到的禮物包裝將按照我們的標準禮品包裝，詳情請參照「<a href=\"https://awnl.tw/pages/gift-packaging\" target=\"_blank\" title=\"https://awnl.tw/pages/gift-packaging\">禮品包裝</a>」頁面。</p>"
+          }
+        },
+        "question_GKDLhH": {
+          "type": "question",
+          "settings": {
+            "question": "項鍊的配鏈是什麼材質？能否更換？",
+            "answer": "<p>男士項鍊禮物默認配備鋼鏈。如您希望更換為純銀鏈條，您可以另行購買，詳情請查看「<a href=\"https://awnl.tw/collections/sterling-silver-chain-necklace\" target=\"_blank\" title=\"https://awnl.tw/collections/sterling-silver-chain-necklace\">所有銀鏈</a>」</p>"
+          }
+        },
+        "question_mUjPwt": {
+          "type": "question",
+          "settings": {
+            "question": "可以選擇本頁面以外的商品嗎？",
+            "answer": "<p>如果您想選擇本頁面以外的商品，請聯繫我們的工作人員，了解禮品券額度和獲取方式。</p>"
+          }
+        },
+        "question_je4nzd": {
+          "type": "question",
+          "settings": {
+            "question": "運送政策是什麼？",
+            "answer": "<p>請參閱「<a href=\"https://awnl.tw/pages/shipping-policy\" target=\"_blank\" title=\"https://awnl.tw/pages/shipping-policy\">運費與配送</a>」頁面了解詳情。</p>"
+          }
+        },
+        "question_FXyCXW": {
+          "type": "question",
+          "settings": {
+            "question": "所有商品都有現貨嗎？",
+            "answer": "<p>請注意，預購商品和現貨商品的配送時間有所不同，具體信息請查看「<a href=\"https://awnl.tw/pages/shipping-policy\" target=\"_blank\" title=\"https://awnl.tw/pages/shipping-policy\">現貨與預購商品說明</a>」。</p>"
+          }
+        },
+        "question_rhWXJH": {
+          "type": "question",
+          "settings": {
+            "question": "禮物有售後服務嗎？",
+            "answer": "<p>所有禮物均享有品牌提供的保固和售後服務，詳細政策請參見「<a href=\"https://awnl.tw/pages/shopping-guide\" target=\"_blank\" title=\"https://awnl.tw/pages/shopping-guide\">首次購物指南</a>」。</p>"
+          }
+        }
+      },
+      "block_order": [
+        "question_C8tKip",
+        "question_GKDLhH",
+        "question_mUjPwt",
+        "question_je4nzd",
+        "question_FXyCXW",
+        "question_rhWXJH"
+      ],
+      "settings": {
+        "color_scheme": "scheme-2",
+        "separate_section_with_border": false,
+        "show_categories": false,
+        "subheading": "",
+        "title": "關於禮物互惠的常見問題",
+        "content": ""
+      }
+    }
+  },
+  "order": [
+    "rich_text_EKHari",
+    "collection-banner",
+    "image_with_text_JQeaAw",
+    "image_with_text_VPtzfF",
+    "main",
+    "image_with_text_dniFak",
+    "image_with_text_CHXVkB",
+    "image_with_text_W49N74",
+    "image_with_text_Wxzpbc",
+    "image_with_text_PihAxc",
+    "featured_collections_h9Pqbq",
+    "media_grid_3mGGt8",
+    "faq_kVTxF7"
+  ]
+}

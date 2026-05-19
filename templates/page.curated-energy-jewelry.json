@@ -1,0 +1,636 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "main": {
+      "type": "main-page",
+      "disabled": true,
+      "custom_css": [
+        "a {color: #3c99ba;}",
+        "h1 {font-size: 38px; font-weight: 700;}",
+        "p,li,span,br,div {font-size: 16px; line-height: 1.8;}",
+        "blockquote {font-weight: 600;}",
+        "@media (max-width: 680px) {h1 {font-size: 28px; line-height: 1.3; } p, li, span, br, div {font-size: 14px; line-height: 1.7; }}"
+      ],
+      "settings": {
+        "color_scheme": "scheme-2",
+        "show_title": true,
+        "page_width": "xs"
+      }
+    },
+    "rich_text_xDaTDM": {
+      "type": "rich-text",
+      "blocks": {
+        "subheading_Hd8dMK": {
+          "type": "subheading",
+          "settings": {
+            "text": "AWNL現代護身符"
+          }
+        },
+        "heading_imwGaV": {
+          "type": "heading",
+          "settings": {
+            "text": "盧恩符文之力｜春季覺醒系列",
+            "heading_tag": "h1"
+          }
+        },
+        "richtext_G8DHbd": {
+          "type": "richtext",
+          "settings": {
+            "content": "<p>在古老的北歐傳說中，盧恩符文不僅是文字，更是蘊含宇宙能量的神秘符號。</p><p>這個春季，我們從25個盧恩符文中精選出四大類別，每一類都代表一種獨特的力量，並將其融入珠寶設計，為您帶來充滿靈性與美感的臻品。</p>"
+          }
+        },
+        "image_zqUwmE": {
+          "type": "image",
+          "disabled": true,
+          "settings": {
+            "image": "shopify://shop_images/5_8544d701-d405-4f22-a107-54e24fabecb1.jpg",
+            "width_mode": "custom",
+            "max_width": 600,
+            "mobile_max_width": 400
+          }
+        }
+      },
+      "block_order": [
+        "subheading_Hd8dMK",
+        "heading_imwGaV",
+        "richtext_G8DHbd",
+        "image_zqUwmE"
+      ],
+      "settings": {
+        "color_scheme": "scheme-2",
+        "separate_section_with_border": false,
+        "content_width": "xs",
+        "text_position": "center",
+        "remove_vertical_spacing": false
+      }
+    },
+    "multi_column_JWYcfC": {
+      "type": "multi-column",
+      "blocks": {
+        "image_with_text_ryLA3G": {
+          "type": "image_with_text",
+          "settings": {
+            "image": "shopify://shop_images/FEHU_icon_7877b1e1-031e-42dd-941b-75c28ef4204f.png",
+            "title": "<strong>財富之符｜費胡符文 Fehu (ᚠ)</strong>",
+            "heading_tag": "h4",
+            "content": "<p>象徵著古代北歐人最重要的財富來源－牲畜，也警告了保護好個人財富和隱私信息的重要性。 </p><ul><li>適合場景：開創事業、尋求財務突破或期待重要機會時</li></ul>",
+            "link_url": "shopify://pages/runes",
+            "link_text": ""
+          }
+        },
+        "image_with_text_EpRwew": {
+          "type": "image_with_text",
+          "settings": {
+            "image": "shopify://shop_images/URUZ__icon_ca38ed89-a93f-4245-9c09-53c39985d473.png",
+            "title": "<strong>力量之符｜烏魯茲符文 Uruz (ᚢ)</strong>",
+            "heading_tag": "h4",
+            "content": "<p>以 Aurochs （原牛）為代表，是一種現已滅絕的牛。烏魯茲是萬物形成的母體。</p><ul><li>適合場景：身體虛弱、面臨挑戰或需要額外能量支持時</li></ul>",
+            "link_url": "shopify://pages/runes",
+            "link_text": ""
+          }
+        },
+        "image_with_text_XEgbaf": {
+          "type": "image_with_text",
+          "settings": {
+            "image": "shopify://shop_images/ANSUZ_icon_71b140ca-8beb-4a38-9801-0daf449787e4.png",
+            "title": "<strong>溝通之符｜安蘇茲符文 Ansuz (ᚨ)</strong>",
+            "heading_tag": "h4",
+            "content": "<p>與諸神之父奧丁和洛基有著緊密連結，它將眾神給的信息和信號作為禮物。</p><ul><li>適合場景：重要會議、演講或需要改善人際關係時</li></ul>",
+            "link_url": "shopify://pages/runes",
+            "link_text": ""
+          }
+        }
+      },
+      "block_order": [
+        "image_with_text_ryLA3G",
+        "image_with_text_EpRwew",
+        "image_with_text_XEgbaf"
+      ],
+      "custom_css": [
+        ".multi-column img {width: 100%; height: auto; aspect-ratio: 1 / 1; object-fit: cover; object-position: center;}"
+      ],
+      "settings": {
+        "color_scheme": "scheme-1b02ad27-67f6-4363-902b-7afc4c7eb905",
+        "separate_section_with_border": false,
+        "columns_per_row": 5,
+        "stack_on_mobile": false,
+        "overlap_image": false,
+        "content_alignment": "center",
+        "text_alignment": "start",
+        "spacing": "xs",
+        "subheading": "",
+        "title": "<strong>生命之力｜Fehu, Uruz, Ansuz</strong>",
+        "content": "<p><strong>符文能量</strong>：豐饒、成長、新生</p><p><strong>設計靈感</strong>：象徵春季萬物復甦，賦予佩戴者活力與希望。</p>"
+      }
+    },
+    "multi_column_F8K34Q": {
+      "type": "multi-column",
+      "blocks": {
+        "image_with_text_a4RGMA": {
+          "type": "image_with_text",
+          "settings": {
+            "image": "shopify://shop_images/dumortierite_celtic_rune_necklace_1.jpg",
+            "title": "",
+            "heading_tag": "h3",
+            "content": "",
+            "link_url": "shopify://products/dumortierite-celtic-rune-necklace",
+            "link_text": ""
+          }
+        },
+        "image_with_text_4aYF3J": {
+          "type": "image_with_text",
+          "settings": {
+            "image": "shopify://shop_images/mens-meteorite-hawk-eye-and-rune-charms-bracelets-interlocking1.jpg",
+            "title": "",
+            "heading_tag": "h3",
+            "content": "",
+            "link_url": "shopify://products/mens-beaded-bracelet-blue-tiger-eye-swedish-meteorite-engraved-rune-charms",
+            "link_text": ""
+          }
+        },
+        "image_with_text_mN47Ue": {
+          "type": "image_with_text",
+          "settings": {
+            "image": "shopify://shop_images/mens-crossguard-charm-beaded-bracelet-with-bronzite-and-runes-bracelets-awnl-taiwan-2.jpg",
+            "title": "",
+            "heading_tag": "h3",
+            "content": "",
+            "link_url": "shopify://products/mens-crossguard-charm-beaded-bracelet-with-bronzite-and-runes",
+            "link_text": ""
+          }
+        }
+      },
+      "block_order": [
+        "image_with_text_a4RGMA",
+        "image_with_text_4aYF3J",
+        "image_with_text_mN47Ue"
+      ],
+      "settings": {
+        "color_scheme": "scheme-1b02ad27-67f6-4363-902b-7afc4c7eb905",
+        "separate_section_with_border": false,
+        "columns_per_row": 3,
+        "stack_on_mobile": false,
+        "overlap_image": false,
+        "content_alignment": "center",
+        "text_alignment": "center",
+        "spacing": "md",
+        "subheading": "",
+        "title": "覺醒珠寶",
+        "content": ""
+      }
+    },
+    "multi_column_jWbfiH": {
+      "type": "multi-column",
+      "blocks": {
+        "image_with_text_EHEccb": {
+          "type": "image_with_text",
+          "settings": {
+            "image": "shopify://shop_images/THURISAZ-PURISAZ_icon_f2f4478a-a64c-4a4b-8579-555ef68fac39.png",
+            "title": "<strong>雷神之符｜蘇黎薩茲符文 Thurisaz/Purisaz (ᚦ)</strong>",
+            "heading_tag": "h4",
+            "content": "<p>與北歐諸神索爾的戰錘姆喬尼爾和巨人相關的符文，是宣洩的象徵，有助於釋放負面情緒。</p><ul><li>適合場景：改變現狀、突破心理障礙或開始新生活時</li></ul>",
+            "link_url": "shopify://pages/runes",
+            "link_text": ""
+          }
+        },
+        "image_with_text_TjRKfC": {
+          "type": "image_with_text",
+          "settings": {
+            "image": "shopify://shop_images/ALGIZ_icon_58c82567-0283-4bf7-b6fa-3756636ab872.png",
+            "title": "<strong>庇護之符｜阿爾基茲符文 Algiz (ᛉ)</strong>",
+            "heading_tag": "h4",
+            "content": "<p>像是一面神聖的盾牌，是一個強大的守護力量，同時也是對潛在危險的警示。</p><ul><li>適合場景：特別保護，或面臨重大挑戰時</li></ul>",
+            "link_url": "shopify://pages/runes",
+            "link_text": ""
+          }
+        },
+        "image_with_text_xDJRDm": {
+          "type": "image_with_text",
+          "settings": {
+            "image": "shopify://shop_images/SOWILO_SOL_icon_fe71f0e9-a112-4069-8546-79403ee80fca.png",
+            "title": "<strong>勝利之符｜索維洛符文 Sowilo/Sol (ᛋ)</strong>",
+            "heading_tag": "h4",
+            "content": "<p>象徵著光明與太陽的力量，如同冬日裡溫暖的陽光，能驅散內心的迷霧與疑慮。</p><ul><li>適合場景：感到迷惘或需要方向指引時</li></ul>",
+            "link_url": "shopify://pages/runes",
+            "link_text": ""
+          }
+        }
+      },
+      "block_order": [
+        "image_with_text_EHEccb",
+        "image_with_text_TjRKfC",
+        "image_with_text_xDJRDm"
+      ],
+      "settings": {
+        "color_scheme": "scheme-1b02ad27-67f6-4363-902b-7afc4c7eb905",
+        "separate_section_with_border": false,
+        "columns_per_row": 5,
+        "stack_on_mobile": false,
+        "overlap_image": false,
+        "content_alignment": "center",
+        "text_alignment": "start",
+        "spacing": "xs",
+        "subheading": "",
+        "title": "<strong>守護之力｜Thurisaz, Algiz, Sowilo</strong>",
+        "content": "<p><strong>符文能量</strong>：保護、指引、光明</p><p><strong>設計靈感</strong>：如春日陽光驅散寒冬，為您帶來安全感與方向感。</p>"
+      }
+    },
+    "multi_column_Yqxkj7": {
+      "type": "multi-column",
+      "blocks": {
+        "image_with_text_itUjhq": {
+          "type": "image_with_text",
+          "settings": {
+            "image": "shopify://shop_images/brecciated-jasper-rune-man-necklace-stainless-chain_1_363dbecc-203c-4339-aa8a-aa5ddb08cba6.jpg",
+            "title": "",
+            "heading_tag": "h3",
+            "content": "",
+            "link_url": "shopify://products/men-sterling-silver-rune-pendant-necklace-brecciated-jasper",
+            "link_text": ""
+          }
+        },
+        "image_with_text_n4QcE3": {
+          "type": "image_with_text",
+          "settings": {
+            "image": "shopify://shop_images/1_35b92322-bf91-4fb9-85e4-225cc75ae22c.jpg",
+            "title": "",
+            "heading_tag": "h3",
+            "content": "",
+            "link_url": "shopify://products/mens-beaded-bracelet-with-engraved-runes-and-tiger-eye",
+            "link_text": ""
+          }
+        },
+        "image_with_text_64qaAW": {
+          "type": "image_with_text",
+          "settings": {
+            "image": "shopify://shop_images/mens-nuummite-beaded-bracelet-with-wealth-runes-charm-bracelets-awnl-taiwan-1.jpg",
+            "title": "",
+            "heading_tag": "h3",
+            "content": "",
+            "link_url": "shopify://products/mens-nuummite-beaded-bracelet-with-runes-wealth",
+            "link_text": ""
+          }
+        }
+      },
+      "block_order": [
+        "image_with_text_itUjhq",
+        "image_with_text_n4QcE3",
+        "image_with_text_64qaAW"
+      ],
+      "settings": {
+        "color_scheme": "scheme-1b02ad27-67f6-4363-902b-7afc4c7eb905",
+        "separate_section_with_border": false,
+        "columns_per_row": 3,
+        "stack_on_mobile": false,
+        "overlap_image": false,
+        "content_alignment": "center",
+        "text_alignment": "center",
+        "spacing": "md",
+        "subheading": "",
+        "title": "覺醒珠寶",
+        "content": ""
+      }
+    },
+    "multi_column_hNXQfm": {
+      "type": "multi-column",
+      "blocks": {
+        "image_with_text_gP3Jwk": {
+          "type": "image_with_text",
+          "settings": {
+            "image": "shopify://shop_images/WUNJO_icon_6f1cba81-af7b-4546-9ff1-69d62fd51f99.png",
+            "title": "<strong>喜悅之符｜溫究符文 Wunjo (ᚹ)</strong>",
+            "heading_tag": "h4",
+            "content": "<p>象徵著經過一段時間的鬥爭和變革後取得的豐碩成果。鼓勵活在當下、誠實和對自己有信心。</p><ul><li>適合場景：追求幸福、需要心情轉換或尋求內在平衡時</li></ul>",
+            "link_url": "shopify://pages/runes",
+            "link_text": ""
+          }
+        },
+        "image_with_text_eK4YQ6": {
+          "type": "image_with_text",
+          "settings": {
+            "image": "shopify://shop_images/EHWAZ_icon_48b2b15e-362e-42b7-901d-98531261cd95.png",
+            "title": "<strong>夥伴之符｜埃瓦茲符文 Ehwaz (ᛖ)</strong>",
+            "heading_tag": "h4",
+            "content": "<p>象徵著兩匹馬或是騎士與坐騎的關係，代表著多方力量的完美結合才能創造前進的動力。</p><ul><li>適合場景：建立夥伴關係或進行團隊合作時</li></ul>",
+            "link_url": "shopify://pages/runes",
+            "link_text": ""
+          }
+        },
+        "image_with_text_6hER3R": {
+          "type": "image_with_text",
+          "settings": {
+            "image": "shopify://shop_images/BERKANAN-BERKANO_icon_b951214d-5e14-4541-a614-7897dafe3cf0.png",
+            "title": "<strong>新生之符｜貝爾卡諾符文 Berkanan/Berkano (ᛒ)</strong>",
+            "heading_tag": "h4",
+            "content": "<p>是樺木女神的符文，掌管人生重要的轉折點：出生、成年、婚姻與死亡，是代表生命的符文。</p><ul><li>適合場景：面臨人生重大轉折或需要改變時</li></ul>",
+            "link_url": "shopify://pages/runes",
+            "link_text": ""
+          }
+        }
+      },
+      "block_order": [
+        "image_with_text_gP3Jwk",
+        "image_with_text_eK4YQ6",
+        "image_with_text_6hER3R"
+      ],
+      "settings": {
+        "color_scheme": "scheme-1b02ad27-67f6-4363-902b-7afc4c7eb905",
+        "separate_section_with_border": false,
+        "columns_per_row": 5,
+        "stack_on_mobile": false,
+        "overlap_image": false,
+        "content_alignment": "center",
+        "text_alignment": "start",
+        "spacing": "xs",
+        "subheading": "",
+        "title": "<strong>愛情之力｜Wunjo, Ehwaz, Berkanan</strong>",
+        "content": "<p><strong>符文能量</strong>：和諧、連結、滋養</p><p><strong>設計靈感</strong>：如春日綻放的花朵，象徵愛與情感的豐盛。</p>"
+      }
+    },
+    "multi_column_747r9d": {
+      "type": "multi-column",
+      "blocks": {
+        "image_with_text_86dgxJ": {
+          "type": "image_with_text",
+          "settings": {
+            "image": "shopify://shop_images/mens-nuummite-beaded-bracelet-with-healing-runes-charm-bracelets-awnl-taiwan-1.jpg",
+            "title": "",
+            "heading_tag": "h3",
+            "content": "",
+            "link_url": "shopify://products/nuummite-beaded-bracelet-with-runes",
+            "link_text": ""
+          }
+        },
+        "image_with_text_imx8bL": {
+          "type": "image_with_text",
+          "settings": {
+            "image": "shopify://shop_images/dumortierite_celtic_rune_necklace_1.jpg",
+            "title": "",
+            "heading_tag": "h3",
+            "content": "",
+            "link_url": "shopify://products/dumortierite-celtic-rune-necklace",
+            "link_text": ""
+          }
+        },
+        "image_with_text_igBhzb": {
+          "type": "image_with_text",
+          "settings": {
+            "image": "shopify://shop_images/mens-meteorite-hawk-eye-and-rune-charms-bracelets-interlocking1.jpg",
+            "title": "",
+            "heading_tag": "h3",
+            "content": "",
+            "link_url": "shopify://products/mens-beaded-bracelet-blue-tiger-eye-swedish-meteorite-engraved-rune-charms",
+            "link_text": ""
+          }
+        }
+      },
+      "block_order": [
+        "image_with_text_86dgxJ",
+        "image_with_text_imx8bL",
+        "image_with_text_igBhzb"
+      ],
+      "settings": {
+        "color_scheme": "scheme-1b02ad27-67f6-4363-902b-7afc4c7eb905",
+        "separate_section_with_border": false,
+        "columns_per_row": 3,
+        "stack_on_mobile": false,
+        "overlap_image": false,
+        "content_alignment": "center",
+        "text_alignment": "center",
+        "spacing": "md",
+        "subheading": "",
+        "title": "覺醒珠寶",
+        "content": ""
+      }
+    },
+    "multi_column_7QgHkX": {
+      "type": "multi-column",
+      "blocks": {
+        "image_with_text_mHyYja": {
+          "type": "image_with_text",
+          "settings": {
+            "image": "shopify://shop_images/TIWAZ_TYR_icon_4aceb2ff-208e-41e9-9121-3fe8500c822f.png",
+            "title": "<strong>戰士之符｜提瓦茲符文 Tiwaz/Tyr (ᛏ)</strong>",
+            "heading_tag": "h4",
+            "content": "<p>與北歐神話中的提爾神有關，為了拯救眾神而犧牲自己的手掌，象徵勝利、正義和平衡。</p><ul><li>適合場景：需要勇氣與決斷力時</li></ul>",
+            "link_url": "shopify://pages/runes",
+            "link_text": ""
+          }
+        },
+        "image_with_text_qXmDqC": {
+          "type": "image_with_text",
+          "settings": {
+            "image": "shopify://shop_images/HAGALAZ_icon_42048a69-878e-4190-841b-2cc4c95216a0.png",
+            "title": "<strong>轉變之符｜哈加拉茲符文 Hagalaz (ᚺ)</strong>",
+            "heading_tag": "h4",
+            "content": "<p>象徵冰雹。面對延遲或進展停滯時，與其急於衝破風暴，不如善用這段時間靜心思考。</p><ul><li>適合場景：面對困境或需要調整計畫時</li></ul>",
+            "link_url": "shopify://pages/runes",
+            "link_text": ""
+          }
+        },
+        "image_with_text_phVR9e": {
+          "type": "image_with_text",
+          "settings": {
+            "image": "shopify://shop_images/NAUDHUZ-NAUTHIS_icon_b0dd53d0-b076-4d8c-854b-b86c2b799f1a.png",
+            "title": "<strong>需求之符｜納烏迪茲符文 Naudhiz/Nauthis (ᚾ)</strong>",
+            "heading_tag": "h4",
+            "content": "<p>就像在黑暗中摸索的人最終一定會找到光明，真正的成長往往來自於面對和克服困境的過程。</p><ul><li>適合場景：面對挑戰或需要突破困境時</li></ul>",
+            "link_url": "shopify://pages/runes",
+            "link_text": ""
+          }
+        }
+      },
+      "block_order": [
+        "image_with_text_mHyYja",
+        "image_with_text_qXmDqC",
+        "image_with_text_phVR9e"
+      ],
+      "settings": {
+        "color_scheme": "scheme-1b02ad27-67f6-4363-902b-7afc4c7eb905",
+        "separate_section_with_border": false,
+        "columns_per_row": 5,
+        "stack_on_mobile": false,
+        "overlap_image": false,
+        "content_alignment": "center",
+        "text_alignment": "start",
+        "spacing": "xs",
+        "subheading": "",
+        "title": "<strong>勇氣之力｜Tiwaz, Hagalaz, Naudhiz</strong>",
+        "content": "<p><strong>符文能量</strong>：堅毅、突破、重生</p><p><strong>設計靈感</strong>：激發內在力量，助您勇敢面對挑戰。</p>"
+      }
+    },
+    "multi_column_Hqa8nW": {
+      "type": "multi-column",
+      "blocks": {
+        "image_with_text_cgy6FA": {
+          "type": "image_with_text",
+          "settings": {
+            "image": "shopify://shop_images/grey-hawk-eye-tiwaz-rune-pendant-necklace-necklaces-10.jpg",
+            "title": "",
+            "heading_tag": "h3",
+            "content": "",
+            "link_url": "shopify://products/grey-hawk-eye-tiwaz-rune-pendant-necklace",
+            "link_text": ""
+          }
+        },
+        "image_with_text_nfgi49": {
+          "type": "image_with_text",
+          "settings": {
+            "image": "shopify://shop_images/hawk-eye-tiwaz-rune-pendant-necklace-necklaces_stain1.jpg",
+            "title": "",
+            "heading_tag": "h3",
+            "content": "",
+            "link_url": "shopify://products/hawk-eye-tiwaz-rune-moving-ball-pendant-necklace",
+            "link_text": ""
+          }
+        },
+        "image_with_text_KkzyJR": {
+          "type": "image_with_text",
+          "settings": {
+            "image": "shopify://shop_images/hypersthene-rune-engraved-bracelet-1.jpg",
+            "title": "",
+            "heading_tag": "h3",
+            "content": "",
+            "link_url": "shopify://products/hypersthene-rune-engraved-bracelet",
+            "link_text": ""
+          }
+        }
+      },
+      "block_order": [
+        "image_with_text_cgy6FA",
+        "image_with_text_nfgi49",
+        "image_with_text_KkzyJR"
+      ],
+      "settings": {
+        "color_scheme": "scheme-1b02ad27-67f6-4363-902b-7afc4c7eb905",
+        "separate_section_with_border": false,
+        "columns_per_row": 3,
+        "stack_on_mobile": false,
+        "overlap_image": false,
+        "content_alignment": "center",
+        "text_alignment": "center",
+        "spacing": "md",
+        "subheading": "",
+        "title": "覺醒珠寶",
+        "content": ""
+      }
+    },
+    "collection_list_KiQG7j": {
+      "type": "collection-list",
+      "blocks": {
+        "collection_g6bcBW": {
+          "type": "collection",
+          "settings": {
+            "color_scheme": "scheme-4",
+            "collection": "runes",
+            "expand_collection": false,
+            "content_position": "place-self-center-start text-start",
+            "subheading": "NORDIC RUNES",
+            "title": "",
+            "button_text": "",
+            "button_link": "",
+            "button_style": "solid",
+            "overlay_color": "#000000",
+            "overlay_opacity": 0
+          }
+        }
+      },
+      "block_order": [
+        "collection_g6bcBW"
+      ],
+      "settings": {
+        "color_scheme": "scheme-1b02ad27-67f6-4363-902b-7afc4c7eb905",
+        "separate_section_with_border": false,
+        "image_size": "auto",
+        "show_text_outside": false,
+        "space_items": false,
+        "stack_collections": true,
+        "collections_per_row_mobile": "1",
+        "collections_per_row_desktop": 1,
+        "subheading": "",
+        "title": "盧恩符文系列珠寶",
+        "content": ""
+      }
+    },
+    "rich_text_r3DaHr": {
+      "type": "rich-text",
+      "blocks": {
+        "subheading_w4zyTq": {
+          "type": "subheading",
+          "settings": {
+            "text": "探索北歐盧恩符文的神秘世界"
+          }
+        },
+        "heading_UWjrKf": {
+          "type": "heading",
+          "settings": {
+            "text": "<strong>北歐盧恩符文的故事和意義解讀</strong>",
+            "heading_tag": "h3"
+          }
+        },
+        "richtext_VXpkKX": {
+          "type": "richtext",
+          "settings": {
+            "content": "<p>深入了解盧恩符文的起源、神話傳說與考古發現，提供25個符文的完整解讀指南。</p><p>從古老智慧到現代應用，讓您全面掌握這套神秘符號系統的奧秘。</p>"
+          }
+        },
+        "button_Ep4Ut7": {
+          "type": "button",
+          "settings": {
+            "style": "solid",
+            "text": "盧恩符文",
+            "url": "shopify://pages/runes",
+            "background": "",
+            "text_color": ""
+          }
+        },
+        "button_Y4Lxky": {
+          "type": "button",
+          "settings": {
+            "style": "solid",
+            "text": "返回首頁",
+            "url": "/",
+            "background": "",
+            "text_color": ""
+          }
+        }
+      },
+      "block_order": [
+        "subheading_w4zyTq",
+        "heading_UWjrKf",
+        "richtext_VXpkKX",
+        "button_Ep4Ut7",
+        "button_Y4Lxky"
+      ],
+      "settings": {
+        "color_scheme": "scheme-2",
+        "separate_section_with_border": false,
+        "content_width": "xs",
+        "text_position": "center",
+        "remove_vertical_spacing": false
+      }
+    }
+  },
+  "order": [
+    "main",
+    "rich_text_xDaTDM",
+    "multi_column_JWYcfC",
+    "multi_column_F8K34Q",
+    "multi_column_jWbfiH",
+    "multi_column_Yqxkj7",
+    "multi_column_hNXQfm",
+    "multi_column_747r9d",
+    "multi_column_7QgHkX",
+    "multi_column_Hqa8nW",
+    "collection_list_KiQG7j",
+    "rich_text_r3DaHr"
+  ]
+}

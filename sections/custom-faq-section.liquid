@@ -1,0 +1,1014 @@
+{% comment %}
+  FAQ Section - 北歐極簡風格 (改進版)
+  使用數字索引代替Block ID,更易於管理
+{% endcomment %}
+
+{% assign section_id = section.id | replace: '_', '' | downcase %}
+
+{% style %}
+  .faq-section-{{ section_id }} {
+    width: 100%;
+    padding: clamp(40px, 8vw, 80px) 20px;
+    background: {{ section.settings.background_color }};
+  }
+
+  .faq-container-{{ section_id }} {
+    max-width: {{ section.settings.max_width }}px;
+    margin: 0 auto;
+    text-align: {{ section.settings.text_alignment }};
+  }
+
+  .faq-header-{{ section_id }} {
+    margin-bottom: clamp(32px, 6vw, 56px);
+    text-align: center;
+  }
+
+  .faq-title-{{ section_id }} {
+    font-size: {{ section.settings.title_size }}px;
+    margin: 0 0 16px;
+    font-weight: 400;
+    letter-spacing: -0.02em;
+    line-height: 1.2;
+    color: {{ section.settings.heading_color }};
+  }
+
+  .faq-subtitle-{{ section_id }} {
+    font-size: {{ section.settings.subtitle_size }}px;
+    margin: 0 0 12px;
+    font-weight: 300;
+    color: {{ section.settings.text_color }};
+    opacity: 0.85;
+  }
+
+  .faq-description-{{ section_id }} {
+    font-size: {{ section.settings.description_size }}px;
+    color: {{ section.settings.text_color }};
+    opacity: 0.65;
+    margin: 0;
+    font-weight: 300;
+    line-height: 1.6;
+  }
+
+  .faq-search-wrapper-{{ section_id }} {
+    margin-bottom: clamp(32px, 5vw, 48px);
+  }
+
+  .faq-search-box-{{ section_id }} {
+    position: relative;
+    max-width: 640px;
+    margin: 0 auto;
+  }
+
+  .faq-search-input-{{ section_id }} {
+    width: 100%;
+    padding: 16px 48px 16px 20px;
+    border: 1px solid rgba(0, 0, 0, 0.08);
+    border-radius: 8px;
+    font-size: 15px;
+    font-weight: 300;
+    background: #fff;
+    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+    color: {{ section.settings.text_color }};
+  }
+
+  .faq-search-input-{{ section_id }}:focus {
+    outline: none;
+    border-color: rgba(0, 0, 0, 0.2);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+  }
+
+  .faq-search-input-{{ section_id }}::placeholder {
+    color: {{ section.settings.text_color }};
+    opacity: 0.4;
+  }
+
+  .faq-search-icon-{{ section_id }} {
+    position: absolute;
+    right: 18px;
+    top: 50%;
+    transform: translateY(-50%);
+    pointer-events: none;
+    color: {{ section.settings.text_color }};
+    opacity: 0.4;
+  }
+
+  .faq-content-{{ section_id }} {
+    display: flex;
+    gap: clamp(24px, 4vw, 48px);
+    align-items: flex-start;
+  }
+
+  .faq-content-{{ section_id }}.faq-layout-stacked {
+    flex-direction: column;
+  }
+
+  .faq-sidebar-{{ section_id }} {
+    flex-shrink: 0;
+    width: 280px;
+  }
+
+  .faq-content-{{ section_id }}.faq-layout-stacked .faq-sidebar-{{ section_id }} {
+    width: 100%;
+  }
+
+  .faq-category-nav-{{ section_id }} {
+    display: flex;
+    flex-direction: column;
+    gap: 0;
+  }
+
+  .faq-content-{{ section_id }}.faq-layout-stacked .faq-category-nav-{{ section_id }} {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 0;
+  }
+
+  .faq-category-button-{{ section_id }} {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    padding: 12px 0;
+    background: transparent;
+    border: none;
+    border-bottom: 2px solid transparent;
+    cursor: pointer;
+    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+    text-align: left;
+    width: 100%;
+    font-weight: 300;
+    color: {{ section.settings.text_color }};
+    opacity: 0.6;
+  }
+
+  .faq-category-button-{{ section_id }}:hover {
+    opacity: 1;
+    border-bottom-color: rgba(0, 0, 0, 0.1);
+  }
+
+  .faq-category-button-{{ section_id }}.active {
+    opacity: 1;
+    border-bottom-color: {{ section.settings.accent_color }};
+    font-weight: 400;
+  }
+
+  .faq-content-{{ section_id }}.faq-layout-stacked .faq-category-button-{{ section_id }} {
+    width: auto;
+    padding: 10px 20px;
+    margin: 0 8px;
+  }
+
+  /* 手機端下拉選框 */
+  .faq-category-select-{{ section_id }} {
+    display: none;
+    width: 100%;
+    padding: 14px 16px;
+    border: 1px solid rgba(0, 0, 0, 0.08);
+    border-radius: 8px;
+    font-size: 15px;
+    font-weight: 300;
+    background: #fff;
+    color: {{ section.settings.text_color }};
+    cursor: pointer;
+    appearance: none;
+    background-image: url("data:image/svg+xml,%3Csvg width='12' height='8' viewBox='0 0 12 8' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M1 1.5L6 6.5L11 1.5' stroke='%23333' stroke-width='1.5' stroke-linecap='round'/%3E%3C/svg%3E");
+    background-repeat: no-repeat;
+    background-position: right 16px center;
+    padding-right: 40px;
+  }
+
+  .faq-category-icon-{{ section_id }} {
+    width: 24px;
+    height: 24px;
+    flex-shrink: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .faq-category-icon-{{ section_id }} img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+  }
+
+  .faq-category-name-{{ section_id }} {
+    font-size: 15px;
+    font-weight: 400;
+  }
+
+  .faq-main-{{ section_id }} {
+    flex: 1;
+    min-width: 0;
+  }
+
+  .faq-category-section-{{ section_id }} {
+    display: none;
+    margin-bottom: 48px;
+  }
+
+  .faq-category-section-{{ section_id }}.active {
+    display: block;
+    animation: fadeInUp 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+  }
+
+  @keyframes fadeInUp {
+    from {
+      opacity: 0;
+      transform: translateY(20px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+
+  .faq-category-title-{{ section_id }} {
+    font-size: clamp(22px, 3.5vw, 28px);
+    margin: 0 0 32px;
+    font-weight: 400;
+    letter-spacing: -0.01em;
+    color: {{ section.settings.heading_color }};
+  }
+
+  .faq-questions-{{ section_id }} {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+  }
+
+  .faq-question-item-{{ section_id }} {
+    border: 1px solid rgba(0, 0, 0, 0.06);
+    border-radius: 12px;
+    overflow: hidden;
+    background: #fff;
+    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  }
+
+  .faq-question-item-{{ section_id }}:hover {
+    border-color: rgba(0, 0, 0, 0.1);
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.04);
+  }
+
+  .faq-question-header-{{ section_id }} {
+    width: 100%;
+    padding: 20px 24px;
+    background: transparent;
+    border: none;
+    cursor: pointer;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    text-align: left;
+    transition: all 0.3s ease;
+  }
+
+  .faq-question-text-{{ section_id }} {
+    font-size: clamp(15px, 2.2vw, 17px);
+    font-weight: 400;
+    flex: 1;
+    padding-right: 16px;
+    color: {{ section.settings.text_color }};
+  }
+
+  .faq-question-icon-{{ section_id }} {
+    width: 24px;
+    height: 24px;
+    flex-shrink: 0;
+    transition: transform 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+    color: {{ section.settings.text_color }};
+    opacity: 0.5;
+  }
+
+  .faq-question-item-{{ section_id }}.active .faq-question-icon-{{ section_id }} {
+    transform: rotate(180deg);
+    opacity: 1;
+  }
+
+  .faq-answer-{{ section_id }} {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+  }
+
+  .faq-answer-content-{{ section_id }} {
+    padding: 0 24px 24px;
+  }
+
+  .faq-answer-text-{{ section_id }} {
+    font-size: clamp(14px, 2vw, 16px);
+    line-height: 1.7;
+    margin-bottom: 20px;
+    font-weight: 300;
+    color: {{ section.settings.text_color }};
+    opacity: 0.85;
+  }
+
+  .faq-answer-text-{{ section_id }} p {
+    margin: 0 0 12px;
+  }
+
+  .faq-answer-text-{{ section_id }} p:last-child {
+    margin-bottom: 0;
+  }
+
+  .faq-answer-image-{{ section_id }} {
+    margin-bottom: 20px;
+  }
+
+  .faq-answer-image-{{ section_id }} img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+  }
+
+  .faq-answer-link-{{ section_id }} {
+    display: inline-block;
+    margin-bottom: 20px;
+    color: {{ section.settings.accent_color }};
+    text-decoration: none;
+    font-size: 15px;
+    font-weight: 400;
+    border-bottom: 1px solid currentColor;
+    transition: opacity 0.3s ease;
+  }
+
+  .faq-answer-link-{{ section_id }}:hover {
+    opacity: 0.7;
+  }
+
+  .faq-answer-button-{{ section_id }} {
+    display: inline-block;
+    padding: 12px 28px;
+    background: {{ section.settings.accent_color }};
+    color: #ffffff;
+    border: none;
+    border-radius: 6px;
+    text-decoration: none;
+    cursor: pointer;
+    font-size: 15px;
+    font-weight: 400;
+    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  }
+
+  .faq-answer-button-{{ section_id }}:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+  }
+
+  .faq-no-results-{{ section_id }} {
+    text-align: center;
+    padding: 60px 20px;
+    color: {{ section.settings.text_color }};
+    opacity: 0.5;
+    font-size: 16px;
+    font-weight: 300;
+  }
+
+  @media screen and (max-width: 768px) {
+    .faq-content-{{ section_id }} {
+      flex-direction: column;
+    }
+
+    .faq-sidebar-{{ section_id }} {
+      width: 100%;
+    }
+
+    /* 手機端顯示下拉選框 */
+    .faq-category-select-{{ section_id }} {
+      display: block;
+      margin-bottom: 24px;
+    }
+
+    /* 手機端隱藏category按鈕 */
+    .faq-category-nav-{{ section_id }} {
+      display: none;
+    }
+
+    .faq-question-header-{{ section_id }} {
+      padding: 18px 20px;
+    }
+
+    .faq-answer-content-{{ section_id }} {
+      padding: 0 20px 20px;
+    }
+  }
+
+  @media screen and (max-width: 480px) {
+    .faq-category-button-{{ section_id }} {
+      min-width: 100%;
+    }
+  }
+{% endstyle %}
+
+<div class="faq-section-{{ section_id }}" {{ section.shopify_attributes }}>
+  <div class="faq-container-{{ section_id }}">
+    {% if section.settings.title != blank or section.settings.subtitle != blank or section.settings.description != blank %}
+      <div class="faq-header-{{ section_id }}">
+        {% if section.settings.title != blank %}
+          <h2 class="faq-title-{{ section_id }}">{{ section.settings.title }}</h2>
+        {% endif %}
+        {% if section.settings.subtitle != blank %}
+          <div class="faq-subtitle-{{ section_id }}">{{ section.settings.subtitle }}</div>
+        {% endif %}
+        {% if section.settings.description != blank %}
+          <div class="faq-description-{{ section_id }}">{{ section.settings.description }}</div>
+        {% endif %}
+      </div>
+    {% endif %}
+
+    {% if section.settings.show_search %}
+      <div class="faq-search-wrapper-{{ section_id }}">
+        <div class="faq-search-box-{{ section_id }}">
+          <input
+            type="text"
+            class="faq-search-input-{{ section_id }}"
+            placeholder="{{ section.settings.search_placeholder }}"
+            aria-label="搜索常見問題"
+          >
+          <span class="faq-search-icon-{{ section_id }}">
+            <svg width="20" height="20" viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round">
+              <circle cx="8" cy="8" r="6"></circle>
+              <path d="M12.5 12.5L17 17"></path>
+            </svg>
+          </span>
+        </div>
+      </div>
+    {% endif %}
+
+    {% comment %} 收集所有分類並給予索引 {% endcomment %}
+    {% assign categories = section.blocks | where: "type", "category" %}
+    {% assign questions = section.blocks | where: "type", "question" %}
+
+    <div class="faq-content-{{ section_id }} faq-layout-{{ section.settings.layout }}">
+      {% if section.settings.layout == 'sidebar' and categories.size > 0 %}
+        <div class="faq-sidebar-{{ section_id }}">
+          <!-- 手機端下拉選框 -->
+          <select class="faq-category-select-{{ section_id }}" aria-label="選擇分類">
+            {% for category in categories %}
+              {% assign cat_index = forloop.index %}
+              <option value="{{ cat_index }}" {% if cat_index == 1 %}selected{% endif %}>
+                {{ category.settings.name }}
+              </option>
+            {% endfor %}
+          </select>
+
+          <!-- PC端按鈕導航 -->
+          <div class="faq-category-nav-{{ section_id }}">
+            {% for category in categories %}
+              {% assign cat_index = forloop.index %}
+              <button
+                class="faq-category-button-{{ section_id }}"
+                data-category-index="{{ cat_index }}"
+                type="button"
+              >
+                {% if category.settings.icon != blank %}
+                  <div class="faq-category-icon-{{ section_id }}">
+                    <img src="{{ category.settings.icon | image_url: width: 48 }}" alt="{{ category.settings.name }}" loading="lazy">
+                  </div>
+                {% endif %}
+                <span class="faq-category-name-{{ section_id }}">{{ category.settings.name }}</span>
+              </button>
+            {% endfor %}
+          </div>
+        </div>
+      {% endif %}
+
+      <div class="faq-main-{{ section_id }}">
+        {% if section.settings.layout == 'stacked' and categories.size > 0 %}
+          <!-- 手機端下拉選框 -->
+          <select class="faq-category-select-{{ section_id }}" aria-label="選擇分類" style="margin-bottom: 24px;">
+            {% for category in categories %}
+              {% assign cat_index = forloop.index %}
+              <option value="{{ cat_index }}" {% if cat_index == 1 %}selected{% endif %}>
+                {{ category.settings.name }}
+              </option>
+            {% endfor %}
+          </select>
+
+          <!-- PC端按鈕導航 -->
+          <div class="faq-category-nav-{{ section_id }}" style="margin-bottom: 40px;">
+            {% for category in categories %}
+              {% assign cat_index = forloop.index %}
+              <button
+                class="faq-category-button-{{ section_id }}"
+                data-category-index="{{ cat_index }}"
+                type="button"
+              >
+                {% if category.settings.icon != blank %}
+                  <div class="faq-category-icon-{{ section_id }}">
+                    <img src="{{ category.settings.icon | image_url: width: 48 }}" alt="{{ category.settings.name }}" loading="lazy">
+                  </div>
+                {% endif %}
+                <span class="faq-category-name-{{ section_id }}">{{ category.settings.name }}</span>
+              </button>
+            {% endfor %}
+          </div>
+        {% endif %}
+
+        {% for category in categories %}
+          {% assign cat_index = forloop.index %}
+          <div class="faq-category-section-{{ section_id }}" data-category-index="{{ cat_index }}">
+            <h3 class="faq-category-title-{{ section_id }}">{{ category.settings.name }}</h3>
+            <div class="faq-questions-{{ section_id }}">
+              {% for question in questions %}
+                {% assign question_cat_index = question.settings.category_index | plus: 0 %}
+                {% if question_cat_index == cat_index %}
+                  <div class="faq-question-item-{{ section_id }}" 
+                       data-question-text="{{ question.settings.question | escape }}"
+                       data-answer-text="{{ question.settings.answer | strip_html | escape }}">
+                    <button class="faq-question-header-{{ section_id }}" type="button" aria-expanded="false">
+                      <span class="faq-question-text-{{ section_id }}">{{ question.settings.question }}</span>
+                      <svg class="faq-question-icon-{{ section_id }}" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round">
+                        <path d="M6 9L12 15L18 9"></path>
+                      </svg>
+                    </button>
+                    <div class="faq-answer-{{ section_id }}">
+                      <div class="faq-answer-content-{{ section_id }}">
+                        {% if question.settings.answer != blank %}
+                          <div class="faq-answer-text-{{ section_id }}">{{ question.settings.answer }}</div>
+                        {% endif %}
+                        {% if question.settings.image != blank %}
+                          <div class="faq-answer-image-{{ section_id }}">
+                            <img src="{{ question.settings.image | image_url: width: 800 }}" alt="{{ question.settings.question }}" loading="lazy">
+                          </div>
+                        {% endif %}
+                        {% if question.settings.link != blank and question.settings.link_text != blank %}
+                          <a href="{{ question.settings.link }}" class="faq-answer-link-{{ section_id }}">{{ question.settings.link_text }}</a>
+                        {% endif %}
+                        {% if question.settings.button_url != blank and question.settings.button_text != blank %}
+                          <a href="{{ question.settings.button_url }}" class="faq-answer-button-{{ section_id }}">{{ question.settings.button_text }}</a>
+                        {% endif %}
+                      </div>
+                    </div>
+                  </div>
+                {% endif %}
+              {% endfor %}
+            </div>
+          </div>
+        {% endfor %}
+
+        <div class="faq-no-results-{{ section_id }}" style="display: none;">
+          未找到匹配的問題
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<script>
+  (function() {
+    const sectionId = '{{ section_id }}';
+    const section = document.querySelector('.faq-section-' + sectionId);
+    
+    if (!section) return;
+
+    const categoryButtons = section.querySelectorAll('.faq-category-button-' + sectionId);
+    const categorySelects = section.querySelectorAll('.faq-category-select-' + sectionId);
+    const categorySections = section.querySelectorAll('.faq-category-section-' + sectionId);
+    const questionItems = section.querySelectorAll('.faq-question-item-' + sectionId);
+    const searchInput = section.querySelector('.faq-search-input-' + sectionId);
+    const noResults = section.querySelector('.faq-no-results-' + sectionId);
+
+    // Initialize categories
+    function initCategories() {
+      if (categoryButtons.length > 0 && categorySections.length > 0) {
+        categoryButtons[0].classList.add('active');
+        categorySections[0].classList.add('active');
+      }
+
+      // 按鈕點擊事件
+      categoryButtons.forEach(button => {
+        button.addEventListener('click', function(e) {
+          e.preventDefault();
+          const categoryIndex = this.getAttribute('data-category-index');
+          switchCategory(categoryIndex);
+        });
+      });
+
+      // 下拉選框change事件
+      categorySelects.forEach(select => {
+        select.addEventListener('change', function(e) {
+          const categoryIndex = this.value;
+          switchCategory(categoryIndex);
+          
+          // 同步其他下拉選框
+          categorySelects.forEach(otherSelect => {
+            if (otherSelect !== this) {
+              otherSelect.value = categoryIndex;
+            }
+          });
+        });
+      });
+    }
+
+    // 切換分類
+    function switchCategory(categoryIndex) {
+      // 更新按鈕狀態
+      categoryButtons.forEach(btn => {
+        if (btn.getAttribute('data-category-index') === categoryIndex) {
+          btn.classList.add('active');
+        } else {
+          btn.classList.remove('active');
+        }
+      });
+      
+      // 更新下拉選框狀態
+      categorySelects.forEach(select => {
+        select.value = categoryIndex;
+      });
+      
+      // 切換分類section
+      categorySections.forEach(categorySection => {
+        const sectionIndex = categorySection.getAttribute('data-category-index');
+        if (sectionIndex === categoryIndex) {
+          categorySection.classList.add('active');
+        } else {
+          categorySection.classList.remove('active');
+        }
+      });
+
+      // 清除搜索
+      if (searchInput && searchInput.value) {
+        searchInput.value = '';
+        resetSearch();
+      }
+    }
+
+    // Initialize questions
+    function initQuestions() {
+      questionItems.forEach(item => {
+        const header = item.querySelector('.faq-question-header-' + sectionId);
+        const answer = item.querySelector('.faq-answer-' + sectionId);
+        
+        if (!header || !answer) return;
+
+        header.addEventListener('click', function(e) {
+          e.preventDefault();
+          const isActive = item.classList.contains('active');
+          
+          if (isActive) {
+            item.classList.remove('active');
+            answer.style.maxHeight = '0';
+            this.setAttribute('aria-expanded', 'false');
+          } else {
+            item.classList.add('active');
+            answer.style.maxHeight = answer.scrollHeight + 'px';
+            this.setAttribute('aria-expanded', 'true');
+          }
+        });
+      });
+    }
+
+    // Initialize search
+    function initSearch() {
+      if (!searchInput) return;
+
+      searchInput.addEventListener('input', function(e) {
+        const searchTerm = this.value.toLowerCase().trim();
+        
+        if (searchTerm === '') {
+          resetSearch();
+          return;
+        }
+
+        performSearch(searchTerm);
+      });
+    }
+
+    // Perform search - 同時搜索問題和答案
+    function performSearch(searchTerm) {
+      let hasResults = false;
+
+      categorySections.forEach(categorySection => {
+        const questions = categorySection.querySelectorAll('.faq-question-item-' + sectionId);
+        let categoryHasResults = false;
+
+        questions.forEach(question => {
+          const questionText = question.getAttribute('data-question-text').toLowerCase();
+          const answerText = question.getAttribute('data-answer-text').toLowerCase();
+          
+          // 搜索問題或答案
+          if (questionText.includes(searchTerm) || answerText.includes(searchTerm)) {
+            question.style.display = 'block';
+            categoryHasResults = true;
+            hasResults = true;
+          } else {
+            question.style.display = 'none';
+          }
+        });
+
+        // Show category if it has matching results
+        if (categoryHasResults) {
+          categorySection.classList.add('active');
+        } else {
+          categorySection.classList.remove('active');
+        }
+      });
+
+      // Remove active from all category buttons during search
+      categoryButtons.forEach(btn => btn.classList.remove('active'));
+
+      // Show/hide no results message
+      if (hasResults) {
+        if (noResults) noResults.style.display = 'none';
+      } else {
+        if (noResults) noResults.style.display = 'block';
+        categorySections.forEach(section => section.classList.remove('active'));
+      }
+    }
+
+    // Reset search
+    function resetSearch() {
+      // Show all questions
+      questionItems.forEach(question => {
+        question.style.display = 'block';
+      });
+
+      // Hide all category sections
+      categorySections.forEach(section => section.classList.remove('active'));
+      
+      // Activate first category
+      if (categoryButtons.length > 0 && categorySections.length > 0) {
+        categoryButtons[0].classList.add('active');
+        categorySections[0].classList.add('active');
+      }
+      
+      // Reset select to first option
+      categorySelects.forEach(select => {
+        select.value = '1';
+      });
+
+      // Hide no results message
+      if (noResults) noResults.style.display = 'none';
+    }
+
+    // Initialize all
+    initCategories();
+    initQuestions();
+    initSearch();
+  })();
+</script>
+
+{% schema %}
+{
+  "name": "FAQ 常見問題",
+  "settings": [
+    {
+      "type": "header",
+      "content": "標題設置"
+    },
+    {
+      "type": "inline_richtext",
+      "id": "title",
+      "label": "標題",
+      "default": "常見問題"
+    },
+    {
+      "type": "range",
+      "id": "title_size",
+      "min": 20,
+      "max": 60,
+      "step": 2,
+      "unit": "px",
+      "label": "標題字號",
+      "default": 42
+    },
+    {
+      "type": "inline_richtext",
+      "id": "subtitle",
+      "label": "副標題"
+    },
+    {
+      "type": "range",
+      "id": "subtitle_size",
+      "min": 14,
+      "max": 32,
+      "step": 1,
+      "unit": "px",
+      "label": "副標題字號",
+      "default": 20
+    },
+    {
+      "type": "textarea",
+      "id": "description",
+      "label": "描述"
+    },
+    {
+      "type": "range",
+      "id": "description_size",
+      "min": 12,
+      "max": 24,
+      "step": 1,
+      "unit": "px",
+      "label": "描述字號",
+      "default": 16
+    },
+    {
+      "type": "header",
+      "content": "佈局設置"
+    },
+    {
+      "type": "select",
+      "id": "layout",
+      "label": "佈局模式",
+      "options": [
+        {
+          "value": "sidebar",
+          "label": "側邊欄模式"
+        },
+        {
+          "value": "stacked",
+          "label": "堆疊模式"
+        }
+      ],
+      "default": "sidebar"
+    },
+    {
+      "type": "range",
+      "id": "max_width",
+      "min": 600,
+      "max": 1400,
+      "step": 50,
+      "unit": "px",
+      "label": "最大寬度",
+      "default": 1200
+    },
+    {
+      "type": "select",
+      "id": "text_alignment",
+      "label": "文字對齊",
+      "options": [
+        {
+          "value": "left",
+          "label": "左對齊"
+        },
+        {
+          "value": "center",
+          "label": "居中對齊"
+        },
+        {
+          "value": "right",
+          "label": "右對齊"
+        }
+      ],
+      "default": "left"
+    },
+    {
+      "type": "header",
+      "content": "顏色設置"
+    },
+    {
+      "type": "color",
+      "id": "background_color",
+      "label": "背景顏色",
+      "default": "#ffffff"
+    },
+    {
+      "type": "color",
+      "id": "heading_color",
+      "label": "標題顏色",
+      "default": "#1a1a1a"
+    },
+    {
+      "type": "color",
+      "id": "text_color",
+      "label": "文字顏色",
+      "default": "#333333"
+    },
+    {
+      "type": "color",
+      "id": "accent_color",
+      "label": "強調色",
+      "default": "#1a1a1a"
+    },
+    {
+      "type": "header",
+      "content": "搜索設置"
+    },
+    {
+      "type": "checkbox",
+      "id": "show_search",
+      "label": "顯示搜索框",
+      "default": true
+    },
+    {
+      "type": "text",
+      "id": "search_placeholder",
+      "label": "搜索框佔位符",
+      "default": "搜索問題..."
+    }
+  ],
+  "blocks": [
+    {
+      "type": "category",
+      "name": "分類",
+      "limit": 20,
+      "settings": [
+        {
+          "type": "text",
+          "id": "name",
+          "label": "分類名稱",
+          "default": "一般問題"
+        },
+        {
+          "type": "image_picker",
+          "id": "icon",
+          "label": "分類圖標"
+        },
+        {
+          "type": "paragraph",
+          "content": "💡 此分類的順序編號為該分類在列表中的位置(從1開始)。添加問題時,請使用此編號。"
+        }
+      ]
+    },
+    {
+      "type": "question",
+      "name": "問題",
+      "settings": [
+        {
+          "type": "range",
+          "id": "category_index",
+          "label": "所屬分類編號",
+          "info": "選擇該問題所屬的分類編號(第1個分類=1, 第2個=2, 依此類推)",
+          "min": 1,
+          "max": 20,
+          "step": 1,
+          "default": 1
+        },
+        {
+          "type": "text",
+          "id": "question",
+          "label": "問題",
+          "placeholder": "輸入問題..."
+        },
+        {
+          "type": "richtext",
+          "id": "answer",
+          "label": "答案"
+        },
+        {
+          "type": "image_picker",
+          "id": "image",
+          "label": "圖片 (選填)"
+        },
+        {
+          "type": "url",
+          "id": "link",
+          "label": "鏈接 (選填)"
+        },
+        {
+          "type": "text",
+          "id": "link_text",
+          "label": "鏈接文字"
+        },
+        {
+          "type": "url",
+          "id": "button_url",
+          "label": "按鈕鏈接 (選填)"
+        },
+        {
+          "type": "text",
+          "id": "button_text",
+          "label": "按鈕文字"
+        }
+      ]
+    }
+  ],
+  "presets": [
+    {
+      "name": "FAQ 常見問題",
+      "blocks": [
+        {
+          "type": "category",
+          "settings": {
+            "name": "一般問題"
+          }
+        },
+        {
+          "type": "category",
+          "settings": {
+            "name": "運送相關"
+          }
+        },
+        {
+          "type": "question",
+          "settings": {
+            "category_index": 1,
+            "question": "你們提供哪些付款方式?",
+            "answer": "<p>我們接受信用卡、PayPal和銀行轉賬。</p>"
+          }
+        },
+        {
+          "type": "question",
+          "settings": {
+            "category_index": 2,
+            "question": "運送需要多長時間?",
+            "answer": "<p>標準運送通常需要3-5個工作天。</p>"
+          }
+        }
+      ]
+    }
+  ]
+}
+{% endschema %}

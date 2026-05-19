@@ -1,0 +1,234 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "custom_liquid_qQPMjE": {
+      "type": "custom-liquid",
+      "settings": {
+        "color_scheme": "scheme-2",
+        "separate_section_with_border": false,
+        "remove_vertical_spacing": false,
+        "remove_horizontal_spacing": false,
+        "liquid": "<style>\n  .custom-menu {\n    display: flex;\n    flex-wrap: wrap;\n    justify-content: center;\n    padding: 0;\n    margin-left:auto;\nmargin-right:auto;\n    list-style: none;\n    max-width:900px;\n  }\n  .custom-menu li {\n    flex-basis: 20%;\n    margin-bottom: 5px;\n  }\n  .custom-menu a {\n    display: block;\n    text-align: center;\n    text-decoration: none;\n    color: #1C1C1C; \n    padding: 16px;\n    margin: 5px;\n    background-color: #e5e6eb;\n    border-radius: 5px;\n    transition: all 0.3s ease;\n    font-size: 18px;\n  }\n  .custom-menu a.link-6 {\n    font-weight: bold;\n    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);\n    background-color: #d2d4dc;\n  }\n  .custom-menu a:not(.link-6) {\n    color: #9A9A9A; \n  }\n  .custom-menu a:hover {\n    color: #1C1C1C;\n    background-color: #d2d4dc;\n    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);\n    font-weight:bold;\n  }\n  @media (max-width: 768px) {\n    .custom-menu li {\n      flex-basis: 50%;\n    }\n    .custom-menu a { \n      padding: 10px;\n      margin: 2px; \n      border-radius: 5px;\n      font-size: 12px;\n    }\n  }\n   h2{\nmargin-bottom:30px;\nfont-size:26px;}\n@media (max-width: 768px){ h2{\nmargin-bottom:18px;\nfont-size:20px;}}\n\n</style>\n<h2>珠寶保養方法</h2>\n<ul class=\"custom-menu\">\n  <li><a href=\"https://awnl.tw/pages/shopping-guide\" class=\"link-1\">首次購物指南\n</a></li>\n  <li><a href=\"https://awnl.tw/pages/shipping-policy\" class=\"link-2\">運費與配送</a></li>\n  <li><a href=\"https://awnl.tw/pages/order-and-payment\" class=\"link-3\">訂購與付款</a></li>\n  <li><a href=\"https://awnl.tw/pages/warranty-repair-service\n\n\" class=\"link-4\">商品保固與維修</a></li>\n  <li><a href=\"https://awnl.tw/pages/gift-packaging\" class=\"link-5\">包裝與禮品服務</a></li>\n  <li><a href=\"https://awnl.tw/pages/jewelry-care-and-clean\" class=\"link-6\">珠寶保養方法</a></li>\n  <li><a href=\"https://awnl.tw/pages/return-and-refund\" class=\"link-7\">退換貨與退款</a></li>\n  <li><a href=\"https://awnl.tw/pages/about-material\" class=\"link-8\">商品材質說明\n</a></li>\n<li><a href=\"https://awnljewelstaiwan.myshopify.com/pages/membership-guide\" class=\"link-9\">會員計畫</a></li>\n  <li><a href=\"https://awnl.tw/pages/choose-crystal-energy\" class=\"link-10\">天然石挑選指南</a></li>\n</ul>",
+        "text_alignment": "center"
+      }
+    },
+    "main": {
+      "type": "main-page",
+      "disabled": true,
+      "custom_css": [],
+      "settings": {
+        "color_scheme": "",
+        "show_title": true,
+        "page_width": "xs"
+      }
+    },
+    "rich_text_GBpFh4": {
+      "type": "rich-text",
+      "blocks": {
+        "heading_mnJhrV": {
+          "type": "heading",
+          "settings": {
+            "text": "飾品保養",
+            "heading_tag": "h1"
+          }
+        },
+        "richtext_HiEYya": {
+          "type": "richtext",
+          "settings": {
+            "content": "<h4><strong>感謝您選擇 AWNL 瑞典珠寶</strong></h4>"
+          }
+        }
+      },
+      "block_order": [
+        "heading_mnJhrV",
+        "richtext_HiEYya"
+      ],
+      "settings": {
+        "color_scheme": "scheme-2",
+        "separate_section_with_border": false,
+        "content_width": "xs",
+        "text_position": "center",
+        "remove_vertical_spacing": false
+      }
+    },
+    "2ffa80cc-8d19-4874-b746-28c19d922c1a": {
+      "type": "rich-text",
+      "blocks": {
+        "ec35793b-db72-4558-9e5f-f3183d0271c6": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/blog-meteorite-jewellery-daily-wear-and-care_e2e275ca-5723-4df5-a523-8c6d13a1234f.webp",
+            "width_mode": "custom",
+            "max_width": 1000,
+            "mobile_max_width": 400
+          }
+        },
+        "template--16288873349300__2ffa80cc-8d19-4874-b746-28c19d922c1a-richtext-1": {
+          "type": "richtext",
+          "settings": {
+            "content": "<p>正確的珠寶養護方法對保持珠寶首飾的外觀和價值至關重要。我們列出了一些關於養護珠寶的小技巧，可幫助您在日常生活中保持珠寶的最好狀態。</p>"
+          }
+        },
+        "6c056ca3-0820-4173-af4c-45c8b2066239": {
+          "type": "richtext",
+          "settings": {
+            "content": "<ul><li>珠寶首飾應遠離接觸腐蝕性化學用品，例如香水、保養品、髮膠以及各種清潔劑。 </li><li>如果您的首飾不慎沾到水或被打濕，請立即用乾淨的軟布擦乾。 </li><li>在洗澡、游泳、淋浴、泡溫泉或參加體育活動時請避免佩戴珠寶首飾。 </li><li>避免長期將首飾暴露在潮濕以及極端天氣下、避免高溫陽光直射，以及放置在低溫環境中。</li></ul>"
+          }
+        },
+        "a356eda4-2b36-40d7-9067-326344d52d6b": {
+          "type": "heading",
+          "settings": {
+            "text": "純銀首飾",
+            "heading_tag": "h2"
+          }
+        },
+        "465c1dbb-232f-4980-9abd-1b3ead737fe9": {
+          "type": "heading",
+          "settings": {
+            "text": "<strong>為什麼純銀飾品會氧化？</strong>",
+            "heading_tag": "h3"
+          }
+        },
+        "faa65328-e6db-4a2e-a368-5e537551f598": {
+          "type": "richtext",
+          "settings": {
+            "content": "<p>AWNL銀首飾都採用國際標準S925純銀製成。隨著時間的流逝以及佩戴習慣，純銀首飾暴露在空氣和潮濕環境下會產生氧化現象。根據不同的環境、佩戴習慣和金屬特性，氧化程度會有所差異。</p>"
+          }
+        },
+        "20347eab-141a-4f01-8dc8-4a7dea4aa7f9": {
+          "type": "video",
+          "settings": {
+            "video": "shopify://files/videos/why silver jewelry tarnished.mp4"
+          }
+        },
+        "dc8c36f7-601a-471b-91c2-27721d3d00be": {
+          "type": "heading",
+          "settings": {
+            "text": "<strong>去除銀飾氧化的三種方法</strong>",
+            "heading_tag": "h3"
+          }
+        },
+        "f87fe9f7-1e4a-4d75-a396-a0e0497baecd": {
+          "type": "video",
+          "settings": {
+            "video": "shopify://files/videos/jewelry care for sterling silver.mp4"
+          }
+        },
+        "7c83b152-81db-476b-b2bc-8d9fe0c815da": {
+          "type": "richtext",
+          "settings": {
+            "content": "<p>純銀飾接觸人體汗水、香水、保養品等產品皆有可能加速金屬氧化效應或電鍍脫落，使表面失去原本的光亮，產生變色等情形，因此建議洗澡、運動、泡溫泉時將首飾摘下放入珠寶收納袋。</p><p>長時間不佩戴時，請將首飾收納在乾燥陰涼處，避免與空氣及水氣持續接觸而氧化。</p>"
+          }
+        },
+        "7363e64b-b961-4f9a-bf6c-d2ab88a36c9a": {
+          "type": "heading",
+          "settings": {
+            "text": "隕石首飾",
+            "heading_tag": "h2"
+          }
+        },
+        "4d0aa49a-5c27-41a4-af84-3a0bfda39d1a": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/blog-muonionalusta-meteorite-pattern.jpg",
+            "width_mode": "custom",
+            "max_width": 1000,
+            "mobile_max_width": 400
+          }
+        },
+        "6feef472-7d6c-4df8-ab0f-eb8a5cf69c83": {
+          "type": "richtext",
+          "settings": {
+            "content": "<ul><li>保養隕石首飾至關重要的就是讓隕石遠離高溫和潮濕。 </li><li>如果您暫時不佩戴隕石珠寶，請仔細清潔並保持乾燥並將其存放在密封袋中。 </li><li>您可以使用拋光布來保持隕石的光澤。 </li></ul>"
+          }
+        },
+        "61d4e706-6efa-4908-96f4-177b54870247": {
+          "type": "video",
+          "settings": {
+            "video": "shopify://files/videos/meteorite jewelry care.mp4"
+          }
+        },
+        "7b6f933e-b3f1-4a12-98a3-714c5047c880": {
+          "type": "heading",
+          "settings": {
+            "text": "天然水晶首飾",
+            "heading_tag": "h2"
+          }
+        },
+        "2edc7efd-ede6-4cba-b104-264e7cafc273": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/blog--how-to-take-care-of-black-onyx-jewellery.webp",
+            "width_mode": "custom",
+            "max_width": 1000,
+            "mobile_max_width": 400
+          }
+        },
+        "f40f210b-9338-4c0e-a9d7-b1c4ce9dee63": {
+          "type": "richtext",
+          "settings": {
+            "content": "<p>天然水晶首飾的保養其實很簡單，只需定期以清水清洗並立即擦拭乾淨即可。也可以使用包裝附贈的拭銀布進行擦拭。</p><p>天然水晶的淨化充能方法請參考：【<a href=\"https://awnl.tw/blogs/the-journal/gemstone-purify-charge\" target=\"_blank\" title=\"【小技巧】水晶的淨化充能方法\">水晶的淨化充能方法</a>】</p><p>如果您對珠寶的養護有任何疑問，請隨時與我們聯繫，我們將很樂意為您提供幫助。</p><p>感謝您選擇AWNL！</p>"
+          }
+        }
+      },
+      "block_order": [
+        "ec35793b-db72-4558-9e5f-f3183d0271c6",
+        "template--16288873349300__2ffa80cc-8d19-4874-b746-28c19d922c1a-richtext-1",
+        "6c056ca3-0820-4173-af4c-45c8b2066239",
+        "a356eda4-2b36-40d7-9067-326344d52d6b",
+        "465c1dbb-232f-4980-9abd-1b3ead737fe9",
+        "faa65328-e6db-4a2e-a368-5e537551f598",
+        "20347eab-141a-4f01-8dc8-4a7dea4aa7f9",
+        "dc8c36f7-601a-471b-91c2-27721d3d00be",
+        "f87fe9f7-1e4a-4d75-a396-a0e0497baecd",
+        "7c83b152-81db-476b-b2bc-8d9fe0c815da",
+        "7363e64b-b961-4f9a-bf6c-d2ab88a36c9a",
+        "4d0aa49a-5c27-41a4-af84-3a0bfda39d1a",
+        "6feef472-7d6c-4df8-ab0f-eb8a5cf69c83",
+        "61d4e706-6efa-4908-96f4-177b54870247",
+        "7b6f933e-b3f1-4a12-98a3-714c5047c880",
+        "2edc7efd-ede6-4cba-b104-264e7cafc273",
+        "f40f210b-9338-4c0e-a9d7-b1c4ce9dee63"
+      ],
+      "custom_css": [
+        "p.h1 {font-size: 32px;}",
+        "p,li {font-size: 16px; line-height: 1.8;}",
+        "strong,p.h2 {font-size: 24px;}",
+        "@media (max-width: 680px) {p, li {font-size: 14px; line-height: 1.7; } strong, p.h2 {font-size: 20px; }}"
+      ],
+      "settings": {
+        "color_scheme": "scheme-2",
+        "separate_section_with_border": false,
+        "content_width": "xs",
+        "text_position": "start",
+        "remove_vertical_spacing": false
+      }
+    },
+    "custom_liquid_qmFUqp": {
+      "type": "custom-liquid",
+      "settings": {
+        "color_scheme": "scheme-2",
+        "separate_section_with_border": false,
+        "remove_vertical_spacing": false,
+        "remove_horizontal_spacing": false,
+        "liquid": "<style>\n  .custom-menu {\n    display: flex;\n    flex-wrap: wrap;\n    justify-content: center;\n    padding: 0;\n    margin-left:auto;\nmargin-right:auto;\n    list-style: none;\n    max-width:900px;\n  }\n  .custom-menu li {\n    flex-basis: 20%;\n    margin-bottom: 5px;\n  }\n  .custom-menu a {\n    display: block;\n    text-align: center;\n    text-decoration: none;\n    color: #1C1C1C; \n    padding: 16px;\n    margin: 5px;\n    background-color: #e5e6eb;\n    border-radius: 5px;\n    transition: all 0.3s ease;\n    font-size: 18px;\n  }\n  .custom-menu a.link-6 {\n    font-weight: bold;\n    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);\n    background-color: #d2d4dc;\n  }\n  .custom-menu a:not(.link-6) {\n    color: #9A9A9A; \n  }\n  .custom-menu a:hover {\n    color: #1C1C1C;\n    background-color: #d2d4dc;\n    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);\n    font-weight:bold;\n  }\n  @media (max-width: 768px) {\n    .custom-menu li {\n      flex-basis: 50%;\n    }\n    .custom-menu a { \n      padding: 10px;\n      margin: 2px; \n      border-radius: 5px;\n      font-size: 12px;\n    }\n  }\n   h2{\nmargin-bottom:30px;\nfont-size:26px;}\n@media (max-width: 768px){ h2{\nmargin-bottom:18px;\nfont-size:20px;}}\n\n</style>\n<ul class=\"custom-menu\">\n  <li><a href=\"https://awnl.tw/pages/shopping-guide\" class=\"link-1\">首次購物指南\n</a></li>\n  <li><a href=\"https://awnl.tw/pages/shipping-policy\" class=\"link-2\">運費與配送</a></li>\n  <li><a href=\"https://awnl.tw/pages/order-and-payment\" class=\"link-3\">訂購與付款</a></li>\n  <li><a href=\"https://awnl.tw/pages/warranty-repair-service\n\n\" class=\"link-4\">商品保固與維修</a></li>\n  <li><a href=\"https://awnl.tw/pages/gift-packaging\" class=\"link-5\">包裝與禮品服務</a></li>\n  <li><a href=\"https://awnl.tw/pages/jewelry-care-and-clean\" class=\"link-6\">珠寶保養方法</a></li>\n  <li><a href=\"https://awnl.tw/pages/return-and-refund\" class=\"link-7\">退換貨與退款</a></li>\n  <li><a href=\"https://awnl.tw/pages/about-material\" class=\"link-8\">商品材質說明\n</a></li>\n<li><a href=\"https://awnljewelstaiwan.myshopify.com/pages/membership-guide\" class=\"link-9\">會員計畫</a></li>\n  <li><a href=\"https://awnl.tw/pages/choose-crystal-energy\" class=\"link-10\">天然石挑選指南</a></li>\n</ul>",
+        "text_alignment": "center"
+      }
+    }
+  },
+  "order": [
+    "custom_liquid_qQPMjE",
+    "main",
+    "rich_text_GBpFh4",
+    "2ffa80cc-8d19-4874-b746-28c19d922c1a",
+    "custom_liquid_qmFUqp"
+  ]
+}

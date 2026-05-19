@@ -1,0 +1,228 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "656379cf-31db-4f35-b46c-a25f48c49626": {
+      "type": "rich-text",
+      "settings": {
+        "color_scheme": "scheme-2",
+        "separate_section_with_border": true,
+        "content_width": "sm",
+        "text_position": "center",
+        "remove_vertical_spacing": false
+      }
+    },
+    "image_with_text_overlay_hjQGTG": {
+      "type": "image-with-text-overlay",
+      "settings": {
+        "color_scheme": "scheme-2",
+        "image_size": "auto",
+        "image": "shopify://shop_images/3.8-pc3000X1000.jpg",
+        "mobile_image": "shopify://shop_images/3.8-mb1125x1400.jpg",
+        "allow_transparent_header": false,
+        "reveal_on_scroll": true,
+        "remove_vertical_spacing": true,
+        "content_width": "md",
+        "mobile_text_position": "place-self-center text-center",
+        "desktop_text_position": "sm:place-self-center sm:text-center",
+        "overlay_color": "#000000",
+        "overlay_opacity": 0
+      }
+    },
+    "collection-banner": {
+      "type": "collection-banner",
+      "custom_css": [],
+      "settings": {
+        "color_scheme": "",
+        "image": "{{ collection.metafields.my_fields.collection_banner_pc.value }}",
+        "mobile_image": "{{ collection.metafields.my_fields.collection_banner_mb.value }}",
+        "image_size": "auto",
+        "allow_transparent_header": false,
+        "reveal": true,
+        "enable_parallax": false,
+        "show_image": false,
+        "show_collection_title": true,
+        "show_collection_description": true,
+        "show_breadcrumb": true,
+        "content_width": "xs",
+        "overlay_color": "#000000",
+        "overlay_opacity": 0
+      }
+    },
+    "scrolling_content_jXanGd": {
+      "type": "scrolling-content",
+      "blocks": {
+        "text_L76HgG": {
+          "type": "text",
+          "settings": {
+            "text": "🎀 本精選集合商品 每滿 3800NTD 減 380NTD，最高可減 1140NTD ! 🎀"
+          }
+        }
+      },
+      "block_order": [
+        "text_L76HgG"
+      ],
+      "settings": {
+        "separate_section_with_border": false,
+        "scrolling_speed": 0.2,
+        "scroll_direction": "left",
+        "text_font": "heading",
+        "text_font_size_mobile": 16,
+        "text_font_size_desktop": 18,
+        "section_vertical_spacing_mobile": 20,
+        "section_vertical_spacing_desktop": 20,
+        "item_horizontal_spacing_mobile": 80,
+        "item_horizontal_spacing_desktop": 120,
+        "background": "",
+        "text_color": ""
+      }
+    },
+    "recently-viewed-products": {
+      "type": "recently-viewed-products",
+      "disabled": true,
+      "settings": {
+        "separate_section_with_border": true,
+        "color_scheme": "scheme-2",
+        "hide_product_information": false,
+        "stack_products": false,
+        "products_count": 9,
+        "products_per_row_mobile": "2",
+        "products_per_row_desktop": 4,
+        "horizontal_spacing_factor": 1,
+        "vertical_spacing_factor": 1,
+        "subheading": "",
+        "title": "歷史瀏覽商品",
+        "content": ""
+      }
+    },
+    "main": {
+      "type": "main-collection",
+      "settings": {
+        "color_scheme": "scheme-2",
+        "hide_product_information": false,
+        "products_per_page": 12,
+        "products_per_row_mobile": "2",
+        "products_size_desktop": "medium",
+        "show_grid_mode_selector": true,
+        "horizontal_spacing_factor": 1.5,
+        "vertical_spacing_factor": 1,
+        "filter_layout": "sidebar",
+        "quick_links_menu": "",
+        "show_sort_by": true,
+        "show_filters": false,
+        "show_results_count": true,
+        "show_filter_group_name": false,
+        "show_filter_values_count": true,
+        "open_filters_by_default": false
+      }
+    },
+    "a9b23a11-5fb6-4f48-8572-db578375598a": {
+      "type": "collection-list",
+      "blocks": {
+        "template--16043850956980__a9b23a11-5fb6-4f48-8572-db578375598a-collection-1": {
+          "type": "collection",
+          "settings": {
+            "color_scheme": "scheme-4",
+            "collection": "{{ collection.metafields.my_fields.sub_collection_a.value }}",
+            "image": "{{ block.settings.collection.metafields.my_fields.collection_banner_mb.value }}",
+            "expand_collection": false,
+            "content_position": "place-self-end-center text-center",
+            "subheading": "",
+            "title": "",
+            "button_text": "{{ block.settings.collection.title }}",
+            "button_link": "",
+            "overlay_color": "#000000",
+            "overlay_opacity": 0
+          }
+        },
+        "template--16043850956980__a9b23a11-5fb6-4f48-8572-db578375598a-collection-2": {
+          "type": "collection",
+          "settings": {
+            "color_scheme": "scheme-4",
+            "collection": "{{ collection.metafields.my_fields.sub_collection_b.value }}",
+            "image": "{{ block.settings.collection.metafields.my_fields.collection_banner_mb.value }}",
+            "expand_collection": false,
+            "content_position": "place-self-end-center text-center",
+            "subheading": "",
+            "title": "",
+            "button_text": "{{ block.settings.collection.title }}",
+            "button_link": "",
+            "overlay_color": "#000000",
+            "overlay_opacity": 0
+          }
+        },
+        "template--16043850956980__a9b23a11-5fb6-4f48-8572-db578375598a-collection-3": {
+          "type": "collection",
+          "settings": {
+            "color_scheme": "scheme-4",
+            "collection": "{{ collection.metafields.my_fields.sub_colleciton_c.value }}",
+            "image": "{{ block.settings.collection.metafields.my_fields.collection_banner_mb.value }}",
+            "expand_collection": false,
+            "content_position": "place-self-end-center text-center",
+            "subheading": "",
+            "title": "",
+            "button_text": "{{ block.settings.collection.title }}",
+            "button_link": "",
+            "overlay_color": "#000000",
+            "overlay_opacity": 0
+          }
+        }
+      },
+      "block_order": [
+        "template--16043850956980__a9b23a11-5fb6-4f48-8572-db578375598a-collection-1",
+        "template--16043850956980__a9b23a11-5fb6-4f48-8572-db578375598a-collection-2",
+        "template--16043850956980__a9b23a11-5fb6-4f48-8572-db578375598a-collection-3"
+      ],
+      "custom_css": [
+        ".button {background: transparent; border: none; color: white; text-decoration: none; position: relative; padding: 5px; display: inline-block; line-height: 1.6; border-bottom: 1px solid transparent; background-image: linear-gradient(to right, white, white); background-size: 100% 2px; background-repeat: no-repeat; background-position: 0% 100%; transition: background-size 0.8s ease-in-out;}",
+        ".button:hover {background-size: 0% 2px;}",
+        ".collection-card img {width: 100%; height: auto; aspect-ratio: 1 / 1; object-fit: cover; object-position: center;}"
+      ],
+      "settings": {
+        "color_scheme": "scheme-2",
+        "separate_section_with_border": true,
+        "image_size": "auto",
+        "show_text_outside": false,
+        "space_items": true,
+        "stack_collections": false,
+        "collections_per_row_desktop": 3,
+        "subheading": "",
+        "title": "More Inspirations",
+        "content": "<p>探索更多系列靈感</p>"
+      }
+    },
+    "multi_column_LPLWWd": {
+      "type": "multi-column",
+      "settings": {
+        "color_scheme": "scheme-2",
+        "separate_section_with_border": true,
+        "columns_per_row": 3,
+        "stack_on_mobile": false,
+        "overlap_image": false,
+        "content_alignment": "start",
+        "text_alignment": "start",
+        "spacing": "md",
+        "subheading": "About",
+        "title": "Multi-column",
+        "content": ""
+      }
+    }
+  },
+  "order": [
+    "656379cf-31db-4f35-b46c-a25f48c49626",
+    "image_with_text_overlay_hjQGTG",
+    "collection-banner",
+    "scrolling_content_jXanGd",
+    "recently-viewed-products",
+    "main",
+    "a9b23a11-5fb6-4f48-8572-db578375598a",
+    "multi_column_LPLWWd"
+  ]
+}

@@ -1,0 +1,375 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "rich_text_EKHari": {
+      "type": "rich-text",
+      "blocks": {
+        "heading_M6wiBT": {
+          "type": "heading",
+          "settings": {
+            "text": "本季中性款精選推薦",
+            "heading_tag": "h1"
+          }
+        },
+        "subheading_zGxM8J": {
+          "type": "subheading",
+          "settings": {
+            "text": "歡迎瀏覽AWNL明星藝人同款和熱門款式"
+          }
+        }
+      },
+      "block_order": [
+        "heading_M6wiBT",
+        "subheading_zGxM8J"
+      ],
+      "settings": {
+        "color_scheme": "scheme-2",
+        "separate_section_with_border": false,
+        "content_width": "sm",
+        "text_position": "center",
+        "remove_vertical_spacing": false
+      }
+    },
+    "collection-banner": {
+      "type": "collection-banner",
+      "disabled": true,
+      "settings": {
+        "color_scheme": "scheme-2",
+        "image_size": "auto",
+        "allow_transparent_header": false,
+        "reveal": true,
+        "enable_parallax": false,
+        "show_image": false,
+        "show_collection_title": true,
+        "show_collection_description": true,
+        "show_breadcrumb": true,
+        "content_width": "xs",
+        "overlay_color": "#000000",
+        "overlay_opacity": 11
+      }
+    },
+    "main": {
+      "type": "main-collection",
+      "disabled": true,
+      "settings": {
+        "color_scheme": "scheme-2",
+        "hide_product_information": true,
+        "products_per_page": 32,
+        "products_per_row_mobile": "2",
+        "products_size_desktop": "medium",
+        "show_grid_mode_selector": true,
+        "horizontal_spacing_factor": 1,
+        "vertical_spacing_factor": 1,
+        "filter_layout": "drawer",
+        "quick_links_menu": "",
+        "show_sort_by": true,
+        "show_filters": true,
+        "show_results_count": true,
+        "show_filter_group_name": false,
+        "show_filter_values_count": true,
+        "open_filters_by_default": false
+      }
+    },
+    "image_with_text_YXLLPL": {
+      "type": "image-with-text",
+      "blocks": {
+        "liquid_M7aXE9": {
+          "type": "liquid",
+          "settings": {
+            "liquid": "<style>\n    @media (max-width: 768px) {\n        .responsive-image {\n            width: 100%;\n            height: auto;\n        }\n    }\n</style>\n\n<img class=\"responsive-image\" src=\"https://cdn.shopify.com/s/files/1/0586/4026/9492/files/mens-beaded-macrame-bracelet-with-multi-colored-gemstones-bracelets-awnl-taiwan-1.jpg?v=1727231726\" style=\"max-width: 300px; display: block; margin-left: auto; margin-right: auto; \">"
+          }
+        },
+        "heading_EmMwe4": {
+          "type": "heading",
+          "settings": {
+            "text": "多寶珠 編織抽繩 男士手鍊",
+            "heading_tag": "h3"
+          }
+        },
+        "richtext_k7wXPa": {
+          "type": "richtext",
+          "settings": {
+            "content": "<p>多種天然水晶寶石混搭，不僅色彩豐富，更有多種療癒能量。</p>"
+          }
+        },
+        "button_VxUt7c": {
+          "type": "button",
+          "settings": {
+            "style": "solid",
+            "text": "點擊詳情",
+            "url": "shopify://products/beaded-drawstring-bracelet-with-mixed-beads",
+            "background": "",
+            "text_color": ""
+          }
+        }
+      },
+      "block_order": [
+        "liquid_M7aXE9",
+        "heading_EmMwe4",
+        "richtext_k7wXPa",
+        "button_VxUt7c"
+      ],
+      "custom_css": [
+        "@media (min-width: 769px) {image-with-text {max-width: 1500px; margin-left: auto; margin-right: auto; }}",
+        ".sm\\:text-start {text-align: center;}"
+      ],
+      "settings": {
+        "color_scheme": "scheme-2",
+        "separate_section_with_border": false,
+        "image": "shopify://shop_images/kol-unisex.jpg",
+        "reveal_on_scroll": true,
+        "image_position": "start",
+        "content_width": "sm",
+        "remove_vertical_spacing": true
+      }
+    },
+    "image_with_text_VPtzfF": {
+      "type": "image-with-text",
+      "blocks": {
+        "liquid_aJcUjg": {
+          "type": "liquid",
+          "settings": {
+            "liquid": "<style>\n    @media (max-width: 768px) {\n        .responsive-image {\n            width: 100%;\n            height: auto;\n        }\n    }\n</style>\n\n<img class=\"responsive-image\" src=\"https://cdn.shopify.com/s/files/1/0586/4026/9492/files/mens-beaded-macrame-bracelet-with-tri-color-gemstones-bracelets-awnl-taiwan-1.jpg?v=1693389626\" style=\"max-width: 300px; display: block; margin-left: auto; margin-right: auto; \">"
+          }
+        },
+        "heading_t8JnVB": {
+          "type": "heading",
+          "settings": {
+            "text": "曜石暗彩 男士手鍊",
+            "heading_tag": "h3"
+          }
+        },
+        "richtext_DfUzqQ": {
+          "type": "richtext",
+          "settings": {
+            "content": "<p>曜石暗彩多寶珠，沉穩暗調配色，輕鬆配襯各種秋冬造型。</p>"
+          }
+        },
+        "button_yanN7w": {
+          "type": "button",
+          "settings": {
+            "style": "solid",
+            "text": "點擊詳情",
+            "url": "shopify://products/mens-beaded-macrame-bracelet-tri-color-gemstones",
+            "background": "",
+            "text_color": ""
+          }
+        }
+      },
+      "block_order": [
+        "liquid_aJcUjg",
+        "heading_t8JnVB",
+        "richtext_DfUzqQ",
+        "button_yanN7w"
+      ],
+      "custom_css": [
+        "@media (min-width: 769px) {image-with-text {max-width: 1500px; margin-left: auto; margin-right: auto; }}",
+        ".sm\\:text-start {text-align: center;}"
+      ],
+      "settings": {
+        "color_scheme": "scheme-2",
+        "separate_section_with_border": false,
+        "image": "shopify://shop_images/kol-unisex_2.jpg",
+        "reveal_on_scroll": true,
+        "image_position": "end",
+        "content_width": "sm",
+        "remove_vertical_spacing": true
+      }
+    },
+    "featured_collections_h9Pqbq": {
+      "type": "featured-collections",
+      "blocks": {
+        "collection_fJJy6F": {
+          "type": "collection",
+          "settings": {
+            "collection": "kol-unisex-jewelry",
+            "products_count": 50,
+            "title": "",
+            "link_url": "",
+            "link_text": ""
+          }
+        }
+      },
+      "block_order": [
+        "collection_fJJy6F"
+      ],
+      "custom_css": [
+        "h2.h2 {display: none;}",
+        "p.h6.text-center {font-size: 25px;}",
+        "@media (min-width: 769px) {.section-stack {max-width: 1500px; margin-left: auto; margin-right: auto; }}",
+        ".price-list {display: none;}",
+        ".badge-list {display: none;}"
+      ],
+      "settings": {
+        "color_scheme": "scheme-2",
+        "separate_section_with_border": false,
+        "hide_product_information": false,
+        "stack_products": true,
+        "products_per_row_mobile": "2",
+        "products_per_row_desktop": 5,
+        "horizontal_spacing_factor": 1.4,
+        "vertical_spacing_factor": 1.4,
+        "subheading": "更多中性珠寶精選"
+      }
+    },
+    "media_grid_3mGGt8": {
+      "type": "media-grid",
+      "blocks": {
+        "image_Tk6a63": {
+          "type": "image",
+          "settings": {
+            "color_scheme": "",
+            "image": "shopify://shop_images/2_ae341cff-9a2e-4511-9e92-da95e251564c.png",
+            "column_count": "4",
+            "row_count": 1,
+            "title": "專屬男士",
+            "heading_tag": "h3",
+            "content": "",
+            "link_text": "點擊查看",
+            "link_url": "shopify://collections/kol-male-jewelry",
+            "link_style": "solid",
+            "text_position": "place-self-end-center text-center",
+            "overlay_color": "#000000",
+            "overlay_opacity": 26
+          }
+        },
+        "image_nfTd9N": {
+          "type": "image",
+          "settings": {
+            "color_scheme": "",
+            "image": "shopify://shop_images/3_ef87fe28-abab-4aec-837a-2ebc2dd1c60a.png",
+            "column_count": "4",
+            "row_count": 1,
+            "title": "中性風格",
+            "heading_tag": "h3",
+            "content": "",
+            "link_text": "點擊查看",
+            "link_url": "shopify://collections/kol-unisex-jewelry",
+            "link_style": "solid",
+            "text_position": "place-self-end-center text-center",
+            "overlay_color": "#000000",
+            "overlay_opacity": 26
+          }
+        },
+        "image_9BjxMz": {
+          "type": "image",
+          "settings": {
+            "color_scheme": "",
+            "image": "shopify://shop_images/1_d67dd254-171e-4ff8-a09d-6af4a0a56ef5.png",
+            "column_count": "4",
+            "row_count": 1,
+            "title": "專屬女士",
+            "heading_tag": "h3",
+            "content": "",
+            "link_text": "點擊查看",
+            "link_url": "shopify://collections/kol-female-jewelry",
+            "link_style": "solid",
+            "text_position": "place-self-end-center text-center",
+            "overlay_color": "#000000",
+            "overlay_opacity": 26
+          }
+        }
+      },
+      "block_order": [
+        "image_Tk6a63",
+        "image_nfTd9N",
+        "image_9BjxMz"
+      ],
+      "custom_css": [
+        "@media (min-width: 769px) {.section-stack {max-width: 1500px; margin-left: auto; margin-right: auto; }}"
+      ],
+      "settings": {
+        "color_scheme": "scheme-2",
+        "separate_section_with_border": false,
+        "desktop_row_height": 290,
+        "mobile_row_height": 180,
+        "section_width": "full",
+        "spacing": "xs",
+        "subheading": "",
+        "title": "",
+        "content": ""
+      }
+    },
+    "faq_kVTxF7": {
+      "type": "faq",
+      "blocks": {
+        "question_C8tKip": {
+          "type": "question",
+          "settings": {
+            "question": "禮物包裝是什麼樣的？",
+            "answer": "<p>您收到的禮物包裝將按照我們的標準禮品包裝，詳情請參照「<a href=\"https://awnl.tw/pages/gift-packaging\" target=\"_blank\" title=\"https://awnl.tw/pages/gift-packaging\">禮品包裝</a>」頁面。</p>"
+          }
+        },
+        "question_GKDLhH": {
+          "type": "question",
+          "settings": {
+            "question": "項鍊的配鏈是什麼材質？能否更換？",
+            "answer": "<p>男士項鍊禮物默認配備鋼鏈。如您希望更換為純銀鏈條，您可以另行購買，詳情請查看「<a href=\"https://awnl.tw/collections/sterling-silver-chain-necklace\" target=\"_blank\" title=\"https://awnl.tw/collections/sterling-silver-chain-necklace\">所有銀鏈</a>」</p>"
+          }
+        },
+        "question_mUjPwt": {
+          "type": "question",
+          "settings": {
+            "question": "可以選擇本頁面以外的商品嗎？",
+            "answer": "<p>如果您想選擇本頁面以外的商品，請聯繫我們的工作人員，了解禮品券額度和獲取方式。</p>"
+          }
+        },
+        "question_je4nzd": {
+          "type": "question",
+          "settings": {
+            "question": "運送政策是什麼？",
+            "answer": "<p>請參閱「<a href=\"https://awnl.tw/pages/shipping-policy\" target=\"_blank\" title=\"https://awnl.tw/pages/shipping-policy\">運費與配送</a>」頁面了解詳情。</p>"
+          }
+        },
+        "question_FXyCXW": {
+          "type": "question",
+          "settings": {
+            "question": "所有商品都有現貨嗎？",
+            "answer": "<p>請注意，預購商品和現貨商品的配送時間有所不同，具體信息請查看「<a href=\"https://awnl.tw/pages/shipping-policy\" target=\"_blank\" title=\"https://awnl.tw/pages/shipping-policy\">現貨與預購商品說明</a>」。</p>"
+          }
+        },
+        "question_rhWXJH": {
+          "type": "question",
+          "settings": {
+            "question": "禮物有售後服務嗎？",
+            "answer": "<p>所有禮物均享有品牌提供的保固和售後服務，詳細政策請參見「<a href=\"https://awnl.tw/pages/shopping-guide\" target=\"_blank\" title=\"https://awnl.tw/pages/shopping-guide\">首次購物指南</a>」。</p>"
+          }
+        }
+      },
+      "block_order": [
+        "question_C8tKip",
+        "question_GKDLhH",
+        "question_mUjPwt",
+        "question_je4nzd",
+        "question_FXyCXW",
+        "question_rhWXJH"
+      ],
+      "settings": {
+        "color_scheme": "scheme-2",
+        "separate_section_with_border": false,
+        "show_categories": false,
+        "subheading": "",
+        "title": "關於互惠合作的常見問題",
+        "content": ""
+      }
+    }
+  },
+  "order": [
+    "rich_text_EKHari",
+    "collection-banner",
+    "main",
+    "image_with_text_YXLLPL",
+    "image_with_text_VPtzfF",
+    "featured_collections_h9Pqbq",
+    "media_grid_3mGGt8",
+    "faq_kVTxF7"
+  ]
+}

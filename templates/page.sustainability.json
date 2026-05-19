@@ -1,0 +1,460 @@
+/*
+* ------------------------------------------------------------
+* IMPORTANT: The contents of this file are auto-generated.
+*
+* This file may be updated by the Shopify admin theme editor
+* or related systems. Please exercise caution as any changes
+* made to this file may be overwritten.
+* ------------------------------------------------------------
+*/
+{
+  "sections": {
+    "main": {
+      "type": "main-page",
+      "disabled": true,
+      "settings": {
+        "color_scheme": "",
+        "show_title": true,
+        "page_width": "xs"
+      }
+    },
+    "bf8a1a8a-82ce-44a5-86a8-d3c82d305750": {
+      "type": "slideshow",
+      "blocks": {
+        "template--16048920625332__bf8a1a8a-82ce-44a5-86a8-d3c82d305750-image-1": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/sustainability-banner-1920_700.jpg",
+            "subheading": "",
+            "title": "Sustainability",
+            "mobile_text_position": "place-self-center text-center",
+            "desktop_text_position": "sm:place-self-center sm:text-center",
+            "content_max_width": 780,
+            "button_1_text": "",
+            "button_1_link": "",
+            "button_1_style": "solid",
+            "button_1_background": "#ffffff",
+            "button_1_text_color": "#000000",
+            "button_2_text": "",
+            "button_2_link": "",
+            "button_2_style": "outline",
+            "button_2_background": "#ffffff",
+            "button_2_text_color": "#000000",
+            "background": "",
+            "background_opacity": 50,
+            "text_color": "#ffffff",
+            "border_color": "",
+            "gradient_overlay": ""
+          }
+        }
+      },
+      "block_order": [
+        "template--16048920625332__bf8a1a8a-82ce-44a5-86a8-d3c82d305750-image-1"
+      ],
+      "settings": {
+        "allow_transparent_header": true,
+        "show_next_section_button": false,
+        "media_size": "lg",
+        "show_initial_transition": false,
+        "autoplay": true,
+        "autoplay_pause_on_video": true,
+        "cycle_speed": 5,
+        "background": "#000000",
+        "controls_color": "#ffffff"
+      }
+    },
+    "rich_text_zXx9Ti": {
+      "type": "rich-text",
+      "blocks": {
+        "image_C7rpTh": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/sustainability-logo-2500-900.jpg",
+            "width_mode": "custom",
+            "max_width": 800,
+            "mobile_max_width": 400
+          }
+        }
+      },
+      "block_order": [
+        "image_C7rpTh"
+      ],
+      "settings": {
+        "color_scheme": "scheme-2",
+        "separate_section_with_border": false,
+        "content_width": "lg",
+        "text_position": "center",
+        "remove_vertical_spacing": true
+      }
+    },
+    "60ec7691-e0c4-42ce-bc94-b5daf906afd5": {
+      "type": "image-with-text",
+      "blocks": {
+        "template--16048920625332__60ec7691-e0c4-42ce-bc94-b5daf906afd5-subheading-1": {
+          "type": "subheading",
+          "settings": {
+            "text": "OUR DNA"
+          }
+        },
+        "template--16048920625332__60ec7691-e0c4-42ce-bc94-b5daf906afd5-heading-1": {
+          "type": "heading",
+          "settings": {
+            "text": "傳遞正向能量",
+            "heading_tag": "h2"
+          }
+        },
+        "template--16048920625332__60ec7691-e0c4-42ce-bc94-b5daf906afd5-richtext-1": {
+          "type": "richtext",
+          "settings": {
+            "content": "<p>AWNL 是一個以現代護身符為靈感的珠寶品牌，專注於使用天然寶石和隕石等素材，創造出充滿正面能量的作品。環保是我們的核心價值，我們相信珠寶不僅僅是美麗的裝飾，它應該是一種能夠激發靈感和觸動心靈的藝術表現。因此，我們將環保與可持續性融入每件作品，並期望藉此傳遞環境保護的重要性。</p><p>在設計與製作中，我們始終重視自然資源的保護，選用天然素材，優先考量可持續開發與減少碳足跡。我們希望這樣的努力，能為地球環境帶來積極影響，讓珠寶的價值超越其本身。我們的目標是創造一個既能滿足當代需求，也為未來世代考量的永續品牌。</p>"
+          }
+        }
+      },
+      "block_order": [
+        "template--16048920625332__60ec7691-e0c4-42ce-bc94-b5daf906afd5-subheading-1",
+        "template--16048920625332__60ec7691-e0c4-42ce-bc94-b5daf906afd5-heading-1",
+        "template--16048920625332__60ec7691-e0c4-42ce-bc94-b5daf906afd5-richtext-1"
+      ],
+      "settings": {
+        "color_scheme": "scheme-2",
+        "separate_section_with_border": false,
+        "image": "shopify://shop_images/Spreading_Positive.jpg",
+        "reveal_on_scroll": true,
+        "image_position": "end",
+        "content_width": "sm",
+        "remove_vertical_spacing": true
+      }
+    },
+    "789c8592-2fa8-48cf-a9d5-cae97d2e5941": {
+      "type": "image-with-text",
+      "blocks": {
+        "template--16048920625332__789c8592-2fa8-48cf-a9d5-cae97d2e5941-subheading-1": {
+          "type": "subheading",
+          "settings": {
+            "text": "打造道德珠寶"
+          }
+        },
+        "template--16048920625332__789c8592-2fa8-48cf-a9d5-cae97d2e5941-heading-1": {
+          "type": "heading",
+          "settings": {
+            "text": "可持續與道德承諾",
+            "heading_tag": "h2"
+          }
+        },
+        "template--16048920625332__789c8592-2fa8-48cf-a9d5-cae97d2e5941-richtext-1": {
+          "type": "richtext",
+          "settings": {
+            "content": "<p>我們視道德珠寶為品牌核心。珠寶不僅應該具備美感，更需要在生產過程中尊重人權、保護環境，並堅守正確的價值觀。我們堅信，只有在不違背道德原則、避免對環境造成負面影響的前提下，珠寶的美才是真正有意義的。因此，我們採取多種措施，確保每一件作品都體現我們對可持續發展和道德實踐的承諾。</p>"
+          }
+        }
+      },
+      "block_order": [
+        "template--16048920625332__789c8592-2fa8-48cf-a9d5-cae97d2e5941-subheading-1",
+        "template--16048920625332__789c8592-2fa8-48cf-a9d5-cae97d2e5941-heading-1",
+        "template--16048920625332__789c8592-2fa8-48cf-a9d5-cae97d2e5941-richtext-1"
+      ],
+      "settings": {
+        "color_scheme": "scheme-2",
+        "separate_section_with_border": false,
+        "image": "shopify://shop_images/Our_Commitment_to_Responsible_Sourcing.jpg",
+        "reveal_on_scroll": true,
+        "image_position": "start",
+        "content_width": "sm",
+        "remove_vertical_spacing": true
+      }
+    },
+    "38b32ad3-57c7-4af4-af08-3c38600f0af1": {
+      "type": "multi-column",
+      "blocks": {
+        "template--16048920625332__38b32ad3-57c7-4af4-af08-3c38600f0af1-image_with_text-1": {
+          "type": "image_with_text",
+          "settings": {
+            "image": "shopify://shop_images/Transparent_Material_Sourcing_Supply_Chain.jpg",
+            "title": "公開透明的原材料供應鏈",
+            "heading_tag": "h5",
+            "content": "<p>AWNL 精選來自全球各地的頂級天然寶石與水晶，我們篩選合格的供應商，並公開原材料的來源與產地，確保每個製作環節都符合安全與環保標準。我們避免與非法開採或剝削行為有任何關聯，致力於負責任的材料採購。</p>",
+            "link_url": "",
+            "link_text": ""
+          }
+        },
+        "template--16048920625332__38b32ad3-57c7-4af4-af08-3c38600f0af1-image_with_text-2": {
+          "type": "image_with_text",
+          "settings": {
+            "image": "shopify://shop_images/Support_for_Small_Businesses_and_Communities.jpg",
+            "title": "扶持小型企業與社區回饋",
+            "heading_tag": "h5",
+            "content": "<p>我們積極支持南非、巴西等國家的小型企業，作為寶石的供應商。同時，我們尊重當地文化，回饋社區，確保參與採集的工人擁有平等的就業機會與保障，讓他們在公平的環境中工作。</p>",
+            "link_url": "",
+            "link_text": ""
+          }
+        },
+        "template--16048920625332__38b32ad3-57c7-4af4-af08-3c38600f0af1-image_with_text-3": {
+          "type": "image_with_text",
+          "settings": {
+            "image": "shopify://shop_images/Rejection_of_Conflicts_of_Interest.jpg",
+            "title": "避免利益衝突",
+            "heading_tag": "h5",
+            "content": "<p>我們拒絕來自可能存在利益衝突的寶石來源，堅持嚴格的原材料採購政策。透過嚴密篩選，我們僅與遵循道德標準的供應商合作，維持透明、負責的商業運作。</p>",
+            "link_url": "",
+            "link_text": ""
+          }
+        },
+        "85d9b13d-ea51-44e6-9b8c-8071d065539c": {
+          "type": "image_with_text",
+          "settings": {
+            "image": "shopify://shop_images/Safe_and_Secure_Working_Environment.jpg",
+            "title": "安全有保障的工作環境",
+            "heading_tag": "h5",
+            "content": "<p>我們致力於為每一位參與生產的工作夥伴提供安全、舒適的工作環境。每件珠寶都是在手工工坊內製作，我們嚴格執行安全保護措施，確保他們不會面臨任何潛在風險。我們承諾，為所有工作人員提供穩定、安全的工作條件。</p>",
+            "link_url": "",
+            "link_text": ""
+          }
+        }
+      },
+      "block_order": [
+        "template--16048920625332__38b32ad3-57c7-4af4-af08-3c38600f0af1-image_with_text-1",
+        "template--16048920625332__38b32ad3-57c7-4af4-af08-3c38600f0af1-image_with_text-2",
+        "template--16048920625332__38b32ad3-57c7-4af4-af08-3c38600f0af1-image_with_text-3",
+        "85d9b13d-ea51-44e6-9b8c-8071d065539c"
+      ],
+      "settings": {
+        "color_scheme": "scheme-2",
+        "separate_section_with_border": false,
+        "columns_per_row": 4,
+        "stack_on_mobile": false,
+        "overlap_image": false,
+        "content_alignment": "center",
+        "text_alignment": "start",
+        "spacing": "sm",
+        "subheading": "",
+        "title": "",
+        "content": ""
+      }
+    },
+    "5d0f2965-f16b-444a-b597-a1c8ab7d8e7f": {
+      "type": "rich-text",
+      "blocks": {
+        "42d824cd-86e1-4cc1-8d9d-70d622e15663": {
+          "type": "heading",
+          "settings": {
+            "text": "SUSTAINABLE JEWELRY",
+            "heading_tag": "h2"
+          }
+        },
+        "template--16048920625332__5d0f2965-f16b-444a-b597-a1c8ab7d8e7f-richtext-1": {
+          "type": "richtext",
+          "settings": {
+            "content": "<p>我們的珠寶以環境友好和可持續發展為核心理念。從材料的選擇到包裝的設計，我們將這些價值深深融入每一個細節。我們相信，通過這樣的努力，不僅能呈現出更精美的珠寶，也能與您一起守護地球的未來。</p>"
+          }
+        }
+      },
+      "block_order": [
+        "42d824cd-86e1-4cc1-8d9d-70d622e15663",
+        "template--16048920625332__5d0f2965-f16b-444a-b597-a1c8ab7d8e7f-richtext-1"
+      ],
+      "settings": {
+        "color_scheme": "scheme-2",
+        "separate_section_with_border": false,
+        "content_width": "xs",
+        "text_position": "center",
+        "remove_vertical_spacing": false
+      }
+    },
+    "9f11e4bc-6ffa-4933-85cc-686244cb259b": {
+      "type": "multi-column",
+      "blocks": {
+        "template--16048920625332__9f11e4bc-6ffa-4933-85cc-686244cb259b-image_with_text-1": {
+          "type": "image_with_text",
+          "settings": {
+            "image": "shopify://shop_images/Recyclable_Metal_Materials.jpg",
+            "title": "可回收金屬材料",
+            "heading_tag": "h3",
+            "content": "<p>我們使用可回收的金屬，這不僅能減少土壤侵蝕、環境退化等問題，還有助於減緩環境變化帶來的污染。我們選用從多種可持續途徑回收的金銀，將其融入設計中，不僅降低了對環境的負擔，也保留了材料原有的自然能量。與供應鏈、生產團隊和全球小型企業的長期合作，讓我們能夠貫徹環保與道德採礦的承諾。</p>",
+            "link_url": "",
+            "link_text": ""
+          }
+        },
+        "template--16048920625332__9f11e4bc-6ffa-4933-85cc-686244cb259b-image_with_text-2": {
+          "type": "image_with_text",
+          "settings": {
+            "image": "shopify://shop_images/2024-sustainability-page-recycle-packing.jpg",
+            "title": "環保紙質包裝",
+            "heading_tag": "h3",
+            "content": "<p>我們致力於減少碳足跡，為更可持續的未來做出貢獻。AWNL 的包裝採用可回收材料精心設計，兼具美觀與實用性，最大限度減少對環境的影響。每一件珠寶的製作與包裝均使用可持續材料，這不僅體現了我們對環保的承諾，也讓顧客能與我們一起支持地球的未來。</p>",
+            "link_url": "",
+            "link_text": ""
+          }
+        }
+      },
+      "block_order": [
+        "template--16048920625332__9f11e4bc-6ffa-4933-85cc-686244cb259b-image_with_text-1",
+        "template--16048920625332__9f11e4bc-6ffa-4933-85cc-686244cb259b-image_with_text-2"
+      ],
+      "settings": {
+        "color_scheme": "scheme-2",
+        "separate_section_with_border": false,
+        "columns_per_row": 2,
+        "stack_on_mobile": false,
+        "overlap_image": false,
+        "content_alignment": "start",
+        "text_alignment": "start",
+        "spacing": "sm",
+        "subheading": "",
+        "title": "",
+        "content": ""
+      }
+    },
+    "bd6f09d5-5b4d-47a6-a2a0-06e0c06c88a8": {
+      "type": "rich-text",
+      "blocks": {
+        "subheading_C7yqYP": {
+          "type": "subheading",
+          "settings": {
+            "text": "MAKING A DIFFERENCE TOGETHER"
+          }
+        },
+        "heading_UehFpG": {
+          "type": "heading",
+          "settings": {
+            "text": "Our Partnership with Earth Dayfor a Greener Future",
+            "heading_tag": "h2"
+          }
+        },
+        "template--16048920625332__bd6f09d5-5b4d-47a6-a2a0-06e0c06c88a8-richtext-1": {
+          "type": "richtext",
+          "settings": {
+            "content": "<p>AWNL 始終將環保視為我們的使命，並從未停止履行這一責任。自 2021 年起，我們正式成為 EARTHDAY.ORG 的一員，致力於幫助地球母親變得更加綠色、更加可持續。</p><p>EARTHDAY.ORG 是一個自 1970 年成立以來動員超過十億人參與環保行動的國際組織，為保護地球帶來了深遠的影響。作為其支持者，AWNL 積極響應，參與 The Canopy Project，專注於對抗森林砍伐，減緩氣候危機。我們深信，這樣的環保行動將為地球上的更多生物創造重要的棲息地，減少對自然環境的破壞。</p>"
+          }
+        }
+      },
+      "block_order": [
+        "subheading_C7yqYP",
+        "heading_UehFpG",
+        "template--16048920625332__bd6f09d5-5b4d-47a6-a2a0-06e0c06c88a8-richtext-1"
+      ],
+      "settings": {
+        "color_scheme": "scheme-2",
+        "separate_section_with_border": false,
+        "content_width": "md",
+        "text_position": "center",
+        "remove_vertical_spacing": false
+      }
+    },
+    "6cbcfa5a-1d55-4882-a8a2-fe2e574711c0": {
+      "type": "multi-column",
+      "blocks": {
+        "template--16048920625332__6cbcfa5a-1d55-4882-a8a2-fe2e574711c0-image_with_text-2": {
+          "type": "image_with_text",
+          "settings": {
+            "image": "shopify://shop_images/ally-of-the-earth-awnl-canopy-project.png",
+            "title": "",
+            "heading_tag": "h3",
+            "content": "",
+            "link_url": "",
+            "link_text": ""
+          }
+        },
+        "template--16048920625332__6cbcfa5a-1d55-4882-a8a2-fe2e574711c0-image_with_text-1": {
+          "type": "image_with_text",
+          "settings": {
+            "image": "shopify://shop_images/CanopyProject_Certificate_AWNL_2023.jpg",
+            "title": "",
+            "heading_tag": "h3",
+            "content": "",
+            "link_url": "",
+            "link_text": ""
+          }
+        }
+      },
+      "block_order": [
+        "template--16048920625332__6cbcfa5a-1d55-4882-a8a2-fe2e574711c0-image_with_text-2",
+        "template--16048920625332__6cbcfa5a-1d55-4882-a8a2-fe2e574711c0-image_with_text-1"
+      ],
+      "settings": {
+        "color_scheme": "scheme-2",
+        "separate_section_with_border": false,
+        "columns_per_row": 2,
+        "stack_on_mobile": true,
+        "overlap_image": false,
+        "content_alignment": "center",
+        "text_alignment": "center",
+        "spacing": "xs",
+        "subheading": "",
+        "title": "",
+        "content": ""
+      }
+    },
+    "0c2e2817-5c27-43b3-a611-b424a57ef796": {
+      "type": "rich-text",
+      "blocks": {
+        "template--16048920625332__0c2e2817-5c27-43b3-a611-b424a57ef796-richtext-1": {
+          "type": "richtext",
+          "settings": {
+            "content": "<p>秉持著對環境保護的信念，AWNL加入EARTHDAY.ORG國際地球環保組織，承諾每賣出一件珠寶，都會為地球做出貢獻，每位顧客都將成為保護地球環境的一份子。</p><p>從珠寶製作過程的第一步，到送達至您手上的每個環節，我們都在其中創造具有更多環保價值的改變。</p><p>加入我們，共同攜手在可持續發展的道路上留下足跡。創造一個更美好的明天。</p>"
+          }
+        }
+      },
+      "block_order": [
+        "template--16048920625332__0c2e2817-5c27-43b3-a611-b424a57ef796-richtext-1"
+      ],
+      "settings": {
+        "color_scheme": "scheme-2",
+        "separate_section_with_border": false,
+        "content_width": "md",
+        "text_position": "center",
+        "remove_vertical_spacing": false
+      }
+    },
+    "f3766140-1b43-47c7-8599-a32902dd3606": {
+      "type": "media-grid",
+      "blocks": {
+        "template--16048920625332__f3766140-1b43-47c7-8599-a32902dd3606-image-1": {
+          "type": "image",
+          "settings": {
+            "color_scheme": "",
+            "image": "shopify://shop_images/sustainability-footer-1920_700.jpg",
+            "column_count": "12",
+            "row_count": 1,
+            "title": "",
+            "heading_tag": "h4",
+            "content": "",
+            "link_text": "",
+            "link_url": "",
+            "link_style": "link",
+            "text_position": "place-self-center text-center",
+            "overlay_color": "#000000",
+            "overlay_opacity": 0
+          }
+        }
+      },
+      "block_order": [
+        "template--16048920625332__f3766140-1b43-47c7-8599-a32902dd3606-image-1"
+      ],
+      "settings": {
+        "color_scheme": "scheme-2",
+        "separate_section_with_border": false,
+        "desktop_row_height": 400,
+        "mobile_row_height": 180,
+        "section_width": "lg",
+        "spacing": "md",
+        "subheading": "",
+        "title": "",
+        "content": ""
+      }
+    }
+  },
+  "order": [
+    "main",
+    "bf8a1a8a-82ce-44a5-86a8-d3c82d305750",
+    "rich_text_zXx9Ti",
+    "60ec7691-e0c4-42ce-bc94-b5daf906afd5",
+    "789c8592-2fa8-48cf-a9d5-cae97d2e5941",
+    "38b32ad3-57c7-4af4-af08-3c38600f0af1",
+    "5d0f2965-f16b-444a-b597-a1c8ab7d8e7f",
+    "9f11e4bc-6ffa-4933-85cc-686244cb259b",
+    "bd6f09d5-5b4d-47a6-a2a0-06e0c06c88a8",
+    "6cbcfa5a-1d55-4882-a8a2-fe2e574711c0",
+    "0c2e2817-5c27-43b3-a611-b424a57ef796",
+    "f3766140-1b43-47c7-8599-a32902dd3606"
+  ]
+}

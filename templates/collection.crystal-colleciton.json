@@ -1,0 +1,238 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "collection-banner": {
+      "type": "collection-banner",
+      "disabled": true,
+      "custom_css": [],
+      "settings": {
+        "color_scheme": "",
+        "image": "{{ collection.metafields.my_fields.collection_banner_pc.value }}",
+        "mobile_image": "{{ collection.metafields.my_fields.collection_banner_mb.value }}",
+        "image_size": "auto",
+        "allow_transparent_header": false,
+        "reveal": true,
+        "enable_parallax": false,
+        "show_image": true,
+        "show_collection_title": true,
+        "show_collection_description": true,
+        "show_breadcrumb": true,
+        "content_width": "xs",
+        "overlay_color": "#000000",
+        "overlay_opacity": 25
+      }
+    },
+    "image_with_text_overlay_fUTbzk": {
+      "type": "image-with-text-overlay",
+      "blocks": {
+        "heading_Vnn7hj": {
+          "type": "heading",
+          "settings": {
+            "text": "{{ collection.title }}",
+            "heading_tag": "h1"
+          }
+        },
+        "richtext_Nn6wJC": {
+          "type": "richtext",
+          "settings": {
+            "content": "<p>{{ collection.metafields.my_fields.crystal_data.value.alias.value }}｜{{ collection.metafields.my_fields.crystal_data.value.crystal_name.value }}</p>{{ collection.metafields.my_fields.crystal_data.value.gemstone_description | metafield_tag }}"
+          }
+        }
+      },
+      "block_order": [
+        "heading_Vnn7hj",
+        "richtext_Nn6wJC"
+      ],
+      "settings": {
+        "color_scheme": "",
+        "image_size": "sm",
+        "image": "{{ collection.metafields.my_fields.collection_banner_pc.value }}",
+        "mobile_image": "{{ collection.metafields.my_fields.collection_banner_mb.value }}",
+        "allow_transparent_header": false,
+        "reveal_on_scroll": true,
+        "remove_vertical_spacing": true,
+        "content_width": "xs",
+        "mobile_text_position": "place-self-center text-center",
+        "desktop_text_position": "sm:place-self-center sm:text-center",
+        "overlay_color": "#000000",
+        "overlay_opacity": 19
+      }
+    },
+    "67f6e5ed-6df7-4f0a-9e33-2636a9ba0c96": {
+      "type": "multiple-media-with-text",
+      "blocks": {
+        "template--16223552503988__67f6e5ed-6df7-4f0a-9e33-2636a9ba0c96-image-1": {
+          "type": "image",
+          "source": "{{ collection.metafields.my_fields.crystal_data.value }}",
+          "settings": {
+            "image": "{{ collection.metafields.my_fields.crystal_data.value.crystal_image.value }}",
+            "rotation": 0
+          }
+        }
+      },
+      "block_order": [
+        "template--16223552503988__67f6e5ed-6df7-4f0a-9e33-2636a9ba0c96-image-1"
+      ],
+      "custom_css": [
+        "@media (min-width: 1000px) {{--multiple-media-with-text-grid: \"media-wrapper content-wrapper\" / 35% 55%; }}",
+        "@media (min-width: 460px) {.multiple-media-with-text__media-wrapper {max-width: 400px; margin: 0 auto; display: flex; align-items: center; justify-content: center; overflow: hidden; } .multiple-media-with-text__media-wrapper img {width: 100%; height: auto; object-fit: cover; }}",
+        "li {color: #565656; line-height: 1.5;}",
+        "p {line-height: 1.5;}",
+        ".multiple-media-with-text {margin-top: -40px; margin-bottom: -40px;}"
+      ],
+      "settings": {
+        "color_scheme": "scheme-2",
+        "reveal_on_scroll": true,
+        "separate_section_with_border": false,
+        "media_position_desktop": "before_text",
+        "media_position_mobile": "before_text",
+        "media_layout": "overlap",
+        "media_alignment": "center",
+        "media_alignment_offset": 0,
+        "media_mobile_alignment_offset": 0,
+        "text_alignment": "center",
+        "subheading": "",
+        "title": "",
+        "content": "<p>{{ collection.metafields.my_fields.crystal_data.value.gemstone_name.value }}</p>{{ collection.metafields.my_fields.crystal_data.value.star_sign | metafield_tag }}{{ collection.metafields.my_fields.crystal_data.value.chakra_subtle_body | metafield_tag }}<p><strong>關鍵字</strong>：{{ collection.metafields.my_fields.crystal_data.value.spiritual_keywords.value }}</p><h6>心靈療癒：</h6>{{ collection.metafields.my_fields.crystal_data.value.spiritual_power | metafield_tag }}<h6>使用方法：</h6>{{ collection.metafields.my_fields.crystal_data.value.method | metafield_tag }}<p><a href=\"https://awnl.tw/pages/choose-crystal-energy\" title=\"https://awnl.tw/pages/choose-crystal-energy\">能量晶石選擇指引<br/><br/></a></p>",
+        "button_1_text": "",
+        "button_1_link": "{{ collection.metafields.my_fields.crystal_data.value.blog_link.value }}",
+        "button_1_style": "link",
+        "button_2_text": "",
+        "button_2_link": "",
+        "button_2_style": "solid"
+      }
+    },
+    "main": {
+      "type": "main-collection",
+      "settings": {
+        "color_scheme": "scheme-2",
+        "hide_product_information": false,
+        "products_per_page": 18,
+        "products_per_row_mobile": "2",
+        "products_size_desktop": "medium",
+        "show_grid_mode_selector": true,
+        "horizontal_spacing_factor": 1.5,
+        "vertical_spacing_factor": 1.5,
+        "filter_layout": "drawer",
+        "quick_links_menu": "link-list-2",
+        "show_sort_by": true,
+        "show_filters": true,
+        "show_results_count": true,
+        "show_filter_group_name": false,
+        "show_filter_values_count": true,
+        "open_filters_by_default": false
+      }
+    },
+    "a9b23a11-5fb6-4f48-8572-db578375598a": {
+      "type": "collection-list",
+      "blocks": {
+        "template--16043850956980__a9b23a11-5fb6-4f48-8572-db578375598a-collection-1": {
+          "type": "collection",
+          "settings": {
+            "color_scheme": "",
+            "collection": "{{ collection.metafields.my_fields.sub_collection_a.value }}",
+            "image": "{{ block.settings.collection.metafields.my_fields.collection_banner_mb.value }}",
+            "expand_collection": false,
+            "content_position": "place-self-end-center text-center",
+            "subheading": "",
+            "title": "",
+            "button_text": "{{ block.settings.collection.title }}",
+            "button_link": "",
+            "button_style": "link",
+            "overlay_color": "#000000",
+            "overlay_opacity": 10
+          }
+        },
+        "template--16043850956980__a9b23a11-5fb6-4f48-8572-db578375598a-collection-2": {
+          "type": "collection",
+          "settings": {
+            "color_scheme": "",
+            "collection": "{{ collection.metafields.my_fields.sub_collection_b.value }}",
+            "image": "{{ block.settings.collection.metafields.my_fields.collection_banner_mb.value }}",
+            "expand_collection": false,
+            "content_position": "place-self-end-center text-center",
+            "subheading": "",
+            "title": "",
+            "button_text": "{{ block.settings.collection.title }}",
+            "button_link": "",
+            "button_style": "link",
+            "overlay_color": "#000000",
+            "overlay_opacity": 10
+          }
+        },
+        "template--16043850956980__a9b23a11-5fb6-4f48-8572-db578375598a-collection-3": {
+          "type": "collection",
+          "settings": {
+            "color_scheme": "",
+            "collection": "{{ collection.metafields.my_fields.sub_colleciton_c.value }}",
+            "image": "{{ block.settings.collection.metafields.my_fields.collection_banner_mb.value }}",
+            "expand_collection": false,
+            "content_position": "place-self-end-center text-center",
+            "subheading": "",
+            "title": "",
+            "button_text": "{{ block.settings.collection.title }}",
+            "button_link": "",
+            "button_style": "link",
+            "overlay_color": "#000000",
+            "overlay_opacity": 10
+          }
+        },
+        "collection_w8XjPb": {
+          "type": "collection",
+          "settings": {
+            "color_scheme": "",
+            "collection": "{{ collection.metafields.my_fields.sub_collection_d.value }}",
+            "image": "{{ block.settings.collection.metafields.my_fields.collection_banner_mb.value }}",
+            "expand_collection": false,
+            "content_position": "place-self-end-center text-center",
+            "subheading": "",
+            "title": "",
+            "button_text": "{{ block.settings.collection.title }}",
+            "button_link": "",
+            "button_style": "link",
+            "overlay_color": "#000000",
+            "overlay_opacity": 10
+          }
+        }
+      },
+      "block_order": [
+        "template--16043850956980__a9b23a11-5fb6-4f48-8572-db578375598a-collection-1",
+        "template--16043850956980__a9b23a11-5fb6-4f48-8572-db578375598a-collection-2",
+        "template--16043850956980__a9b23a11-5fb6-4f48-8572-db578375598a-collection-3",
+        "collection_w8XjPb"
+      ],
+      "custom_css": [
+        ".collection-card img {width: 100%; height: auto; aspect-ratio: 1 /1.1; object-fit: cover; object-position: center;}",
+        ".collection-card div.prose {font-weight: 400; margin-bottom: 20px;}"
+      ],
+      "settings": {
+        "color_scheme": "scheme-2",
+        "separate_section_with_border": false,
+        "image_size": "auto",
+        "show_text_outside": false,
+        "space_items": false,
+        "stack_collections": false,
+        "collections_per_row_mobile": "1",
+        "collections_per_row_desktop": 4,
+        "subheading": "",
+        "title": "More Inspirations",
+        "content": "<p>探索更多系列靈感</p>"
+      }
+    }
+  },
+  "order": [
+    "collection-banner",
+    "image_with_text_overlay_fUTbzk",
+    "67f6e5ed-6df7-4f0a-9e33-2636a9ba0c96",
+    "main",
+    "a9b23a11-5fb6-4f48-8572-db578375598a"
+  ]
+}

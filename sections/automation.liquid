@@ -1,0 +1,5028 @@
+<style>
+
+div#wishlisthero-product-page-button-container,
+.Bquantity {
+  display: none !important;
+}
+
+.twocol-wrapper {
+  padding: 20px;
+  display: flex;
+  gap: 20px;
+}
+
+.stone-card.is-disabled {
+  opacity: 0.4;
+  filter: grayscale(100%);
+  pointer-events: none;
+}
+
+.stone-card.is-disabled img {
+  cursor: not-allowed;
+}
+
+.bead-stock {
+  font-size: 8px;
+  margin-top: 0px;
+}
+
+
+
+.engraving-options {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  margin-top: 5px;
+}
+
+.engraving-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border: 2px solid #ccc;
+  border-radius: 10px;
+  padding: 12px 3px;
+  cursor: pointer;
+  transition: border-color 0.3s, box-shadow 0.3s;
+  width: calc(33.333% - 13.33px);
+  /* 3 per row */
+  box-sizing: border-box;
+  text-align: center;
+  position: relative;
+}
+
+.engraving-card input[type="radio"] {
+  display: none;
+  /* hide default radio */
+}
+
+.engraving-card .engraving-preview img {
+  width: 100px;
+  height: auto;
+  object-fit: contain;
+  margin-bottom: 8px;
+}
+
+.engraving-card .engraving-name {
+  font-size: 14px;
+  font-weight: 500;
+}
+
+#Engraving_text_field {
+  display: none;
+}
+
+/* Modern browsers: highlight card border */
+.engraving-card:has(input[type="radio"]:checked) {
+  border-color: #007bff;
+  box-shadow: 0 0 10px rgba(0, 123, 255, 0.4);
+}
+
+/* Modern browsers: highlight card border */
+.engraving-card:has(input[type="radio"]:checked) {
+  border-color: #007bff;
+  box-shadow: 0 0 10px rgba(0, 123, 255, 0.4);
+}
+
+
+
+div#instruction {
+     position: absolute;
+    top: 33%;
+    text-align: center;
+    margin: 0 auto;
+    border-radius: 6px;
+    width: 60%;
+    left: 19%;
+    z-index: 1;
+}
+
+div#instruction p {
+  width: 90%;
+  margin: 0 auto;
+  background: #ddd;
+  padding: 14px 7px;
+  border-radius: 15px;
+  font-size: .8em;
+}
+
+#close-instruction {
+  position: absolute;
+  top: -12px;
+  right: -0px;
+  background: #999;
+  color: #fff;
+  border: none;
+  border-radius: 50%;
+  width: 24px;
+  height: 24px;
+  cursor: pointer;
+  font-size: 16px;
+  line-height: 15px;
+}
+
+.product-wrapper {
+  flex-basis: 100%;
+  display: flex;
+}
+
+.assets-wrapper {
+  flex-basis: 30%;
+  padding: 16px;
+  background-color: #fff;
+  border: 1px solid #e1e1e1;
+  border-radius: 8px;
+  box-shadow: 0 2px 10px #0000000d;
+}
+
+.product-wrapper .product-cont {
+  flex-basis: 40%;
+  height: 100%;
+  overflow-y: auto;
+}
+
+.product-wrapper .product-beautify {
+  flex-basis: 70%;
+  padding-top:4rem;
+  height: 100%;
+}
+
+.product-wrapper .product-cont h2 {
+  margin: 0;
+  color: #494d51;
+  text-transform: uppercase;
+  line-height: 1.4;
+  font-weight: 400;
+  font-size: 24px;
+  text-align: left;
+}
+
+.product-wrapper .product-cont .product-summery {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  padding: 10px;
+}
+
+.product-wrapper .product-cont .product-summery p {
+  margin: 0;
+  color: #494d51;
+  font-size: 12px;
+  text-align: left;
+}
+
+.product-wrapper .product-cont .stone-costing {
+  padding: 4px;
+}
+
+.product-wrapper .product-cont .stone-costing .stone-group {
+  display: flex;
+  margin-bottom: 4px;
+  border-bottom: 1px solid #bcbcbc;
+}
+
+.product-wrapper .product-cont .stone-costing .stone-group:last-child {
+  margin-bottom: 0;
+  border-bottom: none;
+}
+
+.product-wrapper .product-cont .stone-costing .stone-group div {
+  font-size: 12px;
+  color: #494d51;
+  overflow: hidden;
+  white-space: nowrap;
+  min-width: 40px;
+}
+
+.product-wrapper .product-cont .stone-costing .stone-group div:nth-child(3) {
+  text-align: right;
+}
+
+.dropper.selected {
+    border-radius: 50%;
+    border: 1px solid #dddddd;
+}
+
+.product-wrapper .product-cont .product-action {
+  display: flex;
+  gap: 5px;
+}
+
+.product-wrapper .product-cont .product-action .quantity {
+  min-width: 40px;
+  min-height: 40px;
+  text-align: center;
+  margin: 0;
+  padding: 0;
+  border: none;
+  background: #000;
+  color: #fff;
+  font: 14px;
+}
+
+.product-wrapper .product-cont .product-action .add-cart {
+  padding: 0;
+  min-height: 40px;
+  width: 100%;
+  border: none;
+  background: #000;
+  color: #fff;
+  letter-spacing: 0.09em;
+  text-transform: uppercase;
+  font-size: 12px;
+  text-align: center;
+  line-height: normal;
+  cursor: pointer;
+}
+
+.product-wrapper .product-cont .product-action .quantity:focus {
+  outline: none;
+  box-shadow: none;
+}
+
+.assets-wrapper .button-set {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.assets-wrapper .button-set .assets-btn {
+  display: block;
+  margin: 0;
+  width: 100%;
+  height: auto;
+  border: 1px solid #e8e8e8;
+  background-color: #fff;
+  padding: 14px 15px;
+  text-align: center;
+  cursor: pointer;
+  transition: all 0.25s ease-in-out;
+  color: #111;
+  text-transform: uppercase;
+  font-weight: 700;
+  font-size: 13px;
+  letter-spacing: 0.5px;
+  border-radius: 4px;
+  position: relative;
+  overflow: hidden;
+}
+
+.assets-wrapper .button-set .assets-btn::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 0;
+  height: 2px;
+  background: #000;
+  transition: width 0.3s ease;
+}
+
+.assets-wrapper .button-set .assets-btn:hover::after,
+.assets-wrapper .button-set .assets-btn.active-btn::after {
+  width: 100%;
+}
+
+.assets-wrapper .button-set .assets-btn:focus {
+  outline: none;
+  box-shadow: none;
+}
+
+.assets-wrapper .button-set .assets-btn:hover {
+  background-color: #111;
+  color: #fff;
+  border-color: #111;
+}
+
+.assets-wrapper .assets-sidebar {
+  position: fixed;
+  display: none;
+  z-index: 99999;
+  left: 0;
+  top: 0;
+  height: 100%;
+  width: 100%;
+  max-width: 28%;
+  background-color: #fff;
+  box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.1);
+  opacity: 0;
+  transform: translateX(10px);
+  pointer-events: none;
+  /* transition: opacity 0.4s ease, transform 0.4s ease; */
+  overflow-y: auto;
+}
+
+.assets-wrapper .assets-sidebar.active {
+  opacity: 1;
+  display: block;
+  transform: translateX(0);
+  pointer-events: auto;
+}
+
+.assets-wrapper .assets-sidebar .sidebar-actions {
+  position: absolute;
+  width: 100%;
+  left: 0;
+  bottom: 0;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 5px;
+  height: 90px;
+  padding: 22px;
+}
+
+.assets-wrapper .assets-sidebar .sidebar-actions .close-btn {
+  background-color: #000;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 30px;
+  cursor: pointer;
+  color: #fff;
+  transition: all 0.3s ease-in-out;
+}
+
+.assets-wrapper .assets-sidebar .sidebar-actions .close-btn.cross:hover {
+  color: red;
+}
+
+.assets-wrapper .assets-sidebar .sidebar-actions .close-btn.check:hover {
+  color: green;
+}
+
+.assets-wrapper .assets-sidebar .sidebar-cont {
+  padding: 20px;
+  height: calc(100% - 90px);
+  overflow-y: auto;
+}
+
+.assets-wrapper .assets-sidebar .sidebar-cont .sidebar-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 10px;
+}
+
+.assets-wrapper .assets-sidebar .sidebar-header {
+  text-align: center;
+  text-transform: uppercase;
+  font-size: 16px;
+  font-weight: bold;
+  margin: 0;
+  padding: 10px 15px;
+  background-color: #dddddd;
+  color: #000;
+}
+
+.assets-wrapper .assets-sidebar .sidebar-cont .sidebar-grid .size-card,
+.assets-wrapper .assets-sidebar .sidebar-cont .sidebar-grid .gender-card,
+.assets-wrapper .assets-sidebar .sidebar-cont .sidebar-grid .lockstyle-card,
+.assets-wrapper .assets-sidebar .sidebar-cont .sidebar-grid .stringcolor-card {
+  padding: 10px 8px;
+  border: 1px solid #e0e0e0;
+  border-radius: 6px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  cursor: pointer;
+  transition: all 0.2s ease-in-out;
+  background: #fff;
+}
+
+.assets-wrapper .assets-sidebar .sidebar-cont .sidebar-grid .gender-card:hover,
+.assets-wrapper .assets-sidebar .sidebar-cont .sidebar-grid .size-card:hover,
+.assets-wrapper .assets-sidebar .sidebar-cont .sidebar-grid .lockstyle-card:hover,
+.assets-wrapper .assets-sidebar .sidebar-cont .sidebar-grid .stringcolor-card:hover {
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.12);
+  border-color: #999;
+  transform: translateY(-1px);
+}
+
+.size-card.measure {
+  display: flex;
+  justify-content: center;
+  color: black;
+  background: #f5f5f5;
+}
+
+.assets-wrapper .assets-sidebar .sidebar-cont .sidebar-grid .size-card h5,
+.assets-wrapper .assets-sidebar .sidebar-cont .sidebar-grid .gender-card h5 {
+  margin: 0;
+  font-size: 10px;
+  font-weight: bold;
+  color: black;
+  text-transform: uppercase;
+  line-height: normal;
+}
+
+.assets-wrapper .assets-sidebar .sidebar-cont .sidebar-grid .size-card p {
+  color: #7f7f7f;
+  font-size: 12px;
+  margin: 0;
+}
+
+.assets-wrapper .assets-sidebar .sidebar-cont .sidebar-grid .gender-card.active,
+.assets-wrapper .assets-sidebar .sidebar-cont .sidebar-grid .size-card.active,
+.assets-wrapper .assets-sidebar .sidebar-cont .sidebar-grid .lockstyle-card.active,
+.assets-wrapper .assets-sidebar .sidebar-cont .sidebar-grid .stringcolor-card.active {
+  border-color: #000;
+  background: #000;
+  box-shadow: 0 4px 14px rgba(0,0,0,0.25);
+}
+
+.assets-wrapper .assets-sidebar .sidebar-cont .sidebar-grid .gender-card.active h5,
+.assets-wrapper .assets-sidebar .sidebar-cont .sidebar-grid .size-card.active h5,
+.assets-wrapper .assets-sidebar .sidebar-cont .sidebar-grid .size-card.active p,
+.assets-wrapper .assets-sidebar .sidebar-cont .sidebar-grid .size-card.active div {
+  color: #fff !important;
+}
+
+.assets-wrapper .assets-sidebar .sidebar-cont .sidebar-grid .stone-card {
+  background-color: #fafafa;
+  padding: 10px 8px;
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  justify-content: center;
+  text-align: center;
+  cursor: pointer;
+  transition: all 0.2s ease-in-out;
+  border: 1.5px solid #ebebeb;
+  border-radius: 8px;
+  position: relative;
+}
+
+.assets-wrapper .assets-sidebar .sidebar-cont .sidebar-grid .stone-card:hover {
+  border-color: #111;
+  background: #fff;
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.1);
+  transform: translateY(-2px);
+}
+
+.assets-wrapper .assets-sidebar .sidebar-cont .sidebar-grid .stone-card img,
+.assets-wrapper .assets-sidebar .sidebar-cont .sidebar-grid .lockstyle-card img,
+.assets-wrapper .assets-sidebar .sidebar-cont .sidebar-grid .stringcolor-card img {
+  width: 3.7vw;
+  margin: 0 auto;
+  max-width: 10000%;
+  display: block;
+  transition: transform 0.2s ease;
+}
+
+.assets-wrapper .assets-sidebar .sidebar-cont .sidebar-grid .stone-card:hover img {
+  transform: scale(1.1);
+}
+
+.assets-wrapper .assets-sidebar .sidebar-cont .sidebar-grid .stone-card h6,
+.assets-wrapper .assets-sidebar .sidebar-cont .sidebar-grid .lockstyle-card h6,
+.assets-wrapper .assets-sidebar .sidebar-cont .sidebar-grid .stringcolor-card h6 {
+  margin: 0;
+  font-size: 11px;
+  font-weight: 600;
+  text-transform: uppercase;
+  display: -webkit-box;
+  -webkit-line-clamp: 1;
+  line-clamp: 1;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  letter-spacing: 0.3px;
+  color: #333;
+}
+
+.assets-wrapper .assets-sidebar .sidebar-cont .sidebar-grid .stone-card p {
+  font-size: 9px;
+  margin: 0;
+  color: #777;
+}
+
+.bead-stock {
+  font-size: 9px !important;
+  color: #4caf50 !important;
+  font-weight: 600;
+  margin-top: 2px !important;
+}
+
+.stone-card.is-disabled .bead-stock {
+  color: #e53935 !important;
+}
+
+.assets-wrapper .assets-sidebar .sidebar-cont .sidebar-grid .lockstyle-card.active h6,
+.assets-wrapper .assets-sidebar .sidebar-cont .sidebar-grid .stringcolor-card.active h6 {
+  color: #fff;
+}
+
+.product-wrapper .product-beautify #parker {
+  width: 100%;
+  aspect-ratio: 1 / 1;
+  margin: 0 auto;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Circular Path Guide - Matching Reference Image */
+.product-wrapper .product-beautify #parker::before {
+  content: '';
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 78%;
+  height: 78%;
+  border-radius: 50%;
+  transform: translate(-50%, -50%);
+  pointer-events: none;
+  z-index: 0;
+}
+
+.product-wrapper .product-beautify #parker #lockEr {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 100%;
+  transform: translate(-50%, -50%);
+  z-index: 5;
+  pointer-events: none;
+}
+
+.product-wrapper .product-beautify #parker #emBrace {
+  z-index: 5;
+  pointer-events: none;
+  width: 100%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  display: block;
+}
+
+.product-wrapper .product-beautify #parker .dropper {
+  width: 12%; 
+  height: 12%;
+  position: absolute;
+  background-size: contain !important;
+  background-repeat: no-repeat;
+  background-position: center;
+  opacity: 0.3;
+  z-index: 6;
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.product-wrapper .product-beautify #parker .dropper.selected {
+  opacity: 1;
+  filter: drop-shadow(0 0 8px var(--premium-gold));
+}
+
+.product-wrapper .product-beautify #parker .dropper .selected-stone img {
+  width: 100%;
+  height: auto;
+  filter: drop-shadow(2px 4px 6px rgba(0,0,0,0.15));
+}
+
+/* Style 1 --------------------------------------------------------------- */
+
+/* Size - XXS */
+
+.product-wrapper .product-beautify.style-1 #parker.size-xxs #drop16,
+.product-wrapper .product-beautify.style-1 #parker.size-xxs #drop17,
+.product-wrapper .product-beautify.style-1 #parker.size-xxs #drop18,
+.product-wrapper .product-beautify.style-1 #parker.size-xxs #drop19,
+.product-wrapper .product-beautify.style-1 #parker.size-xxs #drop20,
+.product-wrapper .product-beautify.style-1 #parker.size-xxs #drop21,
+.product-wrapper .product-beautify.style-1 #parker.size-xxs #drop22,
+.product-wrapper .product-beautify.style-1 #parker.size-xxs #drop23,
+.product-wrapper .product-beautify.style-1 #parker.size-xxs #drop24 {
+  display: none;
+}
+
+.product-wrapper .product-beautify.style-1 #parker.size-xxs #drop1 {
+  top: 10%;
+  left: 23%;
+}
+
+.product-wrapper .product-beautify.style-1 #parker.size-xxs #drop2 {
+  top: 20%;
+  left: 11%;
+}
+
+.product-wrapper .product-beautify.style-1 #parker.size-xxs #drop3 {
+  top: 34%;
+  left: 4.5%;
+}
+
+/* Dynamic positioning will be applied via JavaScript */
+
+.product-wrapper .product-beautify.style-1 #parker.size-xxs #drop10 {
+  bottom: 22%;
+  right: 11.5%;
+}
+
+.product-wrapper .product-beautify.style-1 #parker.size-xxs #drop11 {
+  bottom: 35%;
+  right: 7%;
+  top: auto;
+}
+
+.product-wrapper .product-beautify.style-1 #parker.size-xxs #drop12 {
+  right: 7%;
+  top: 36.5%;
+}
+
+.product-wrapper .product-beautify.style-1 #parker.size-xxs #drop13 {
+  top: 23.5%;
+  right: 12.5%;
+}
+
+/* All size-specific bead positions removed in favor of dynamic JS layout */
+
+/* ===== RESPONSIVE MEDIA QUERIES ===== */
+
+@media (max-width: 1024px) {
+
+  /* ---- Overall Layout ---- */
+  .twocol-wrapper {
+    padding: 0;
+    flex-direction: column;
+    height: auto;
+    gap: 0;
+  }
+
+  .product-wrapper {
+    flex-basis: 100%;
+    order: 2;
+    flex-direction: column;
+    padding-bottom: 80px; /* Space for sticky bottom bar */
+  }
+
+  .product-wrapper .product-beautify,
+  .product-wrapper .product-cont {
+    flex-basis: 100%;
+  }
+
+  .product-wrapper .product-beautify {
+    order: 1;
+  }
+
+  .product-wrapper .product-cont {
+    order: 2;
+    text-align: left;
+    width: 100%;
+    max-width: 100%;
+    padding: 16px;
+  }
+
+  /* ---- Assets Wrapper (holds the bottom bar) ---- */
+  .assets-wrapper {
+    flex-basis: 100%;
+    order: 1;
+    padding: 0;
+    background: transparent;
+    border: none;
+    box-shadow: none;
+  }
+
+  /* ---- Sticky Bottom Navigation Bar ---- */
+  .assets-wrapper .button-set {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    gap: 6px;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    z-index: 10000;
+    padding: 8px 10px 10px;
+    background: #fff;
+    overflow-x: auto;
+    overflow-y: hidden;
+    -webkit-overflow-scrolling: touch;
+    scrollbar-width: none;
+    box-shadow: 0 -2px 20px rgba(0,0,0,0.12);
+    border-top: 1px solid #e8e8e8;
+    align-items: center;
+    /* Safe area for notched phones */
+    padding-bottom: max(10px, env(safe-area-inset-bottom));
+  }
+
+  .assets-wrapper .button-set::-webkit-scrollbar {
+    display: none;
+  }
+
+  .assets-wrapper .button-set .assets-btn {
+    flex: 1 1 0;
+    min-width: 70px;
+    padding: 8px 6px !important;
+    white-space: nowrap;
+    font-size: 10px !important;
+    font-weight: 700;
+    letter-spacing: 0.3px;
+    border-radius: 10px !important;
+    background: #f4f4f4 !important;
+    color: #111 !important;
+    border: 1.5px solid #e0e0e0 !important;
+    text-align: center;
+    transition: all 0.2s ease !important;
+  }
+
+  .assets-wrapper .button-set .assets-btn:active {
+    background: #111 !important;
+    color: #fff !important;
+    border-color: #111 !important;
+    transform: scale(0.96);
+  }
+
+  .assets-wrapper .button-set .assets-btn::after {
+    display: none;
+  }
+
+  {% comment %} /* ---- Bottom-Sheet Overlay Backdrop ---- */
+  .assets-wrapper .assets-sidebar::after {
+    content: '';
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0,0,0,0.45);
+    z-index: -1;
+    opacity: 0;
+    pointer-events: none;
+    transition: opacity 0.3s ease;
+  } {% endcomment %}
+
+  .assets-wrapper .assets-sidebar.active::after {
+    opacity: 1;
+    pointer-events: auto;
+  }
+
+  @media (max-width: 1024px) {
+    .assets-wrapper .button-set {
+        display: flex !important;
+        pointer-events: auto !important;
+        z-index: 10001 !important;
+    }
+}
+
+  /* ---- Bottom-Sheet Drawer ---- */
+  .assets-wrapper .assets-sidebar {
+    position: fixed !important;
+    max-width: 100% !important;
+    width: 100% !important;
+    height: 48vh !important;
+    max-height: 90vh !important;
+    top: auto !important;
+    bottom: -100% !important;
+    left: 0 !important;
+    right: 0;
+    background: #fff;
+    border-radius: 20px 20px 0 0;
+    box-shadow: 0 -8px 50px rgba(0,0,0,0.22);
+    opacity: 0;
+    display: flex !important;
+    flex-direction: column;
+    z-index: 999999;
+    transition: bottom 0.4s cubic-bezier(0.16, 1, 0.3, 1), opacity 0.3s ease;
+    pointer-events: none;
+    transform: none !important;
+    overflow: hidden;
+  }
+
+  .assets-wrapper .assets-sidebar.active {
+    bottom: 0 !important;
+    opacity: 1;
+    pointer-events: auto;
+    transform: none !important;
+    top: auto !important;
+  }
+
+  /* ---- Drag Handle ---- */
+  .assets-wrapper .assets-sidebar::before {
+    content: '';
+    display: block;
+    width: 44px;
+    height: 5px;
+    background: #d0d0d0;
+    border-radius: 3px;
+    margin: 14px auto 6px;
+    flex-shrink: 0;
+  }
+
+  /* ---- Sidebar Header ---- */
+  .assets-wrapper .assets-sidebar .sidebar-header {
+    display: block !important;
+    font-size: 14px;
+    font-weight: 700;
+    text-align: center;
+    letter-spacing: 1.5px;
+    padding: 4px 20px 14px;
+    border-bottom: 1px solid #f0f0f0;
+    flex-shrink: 0;
+    text-transform: uppercase;
+    color: #111;
+    background: white;
+    margin: 0;
+  }
+
+  /* ---- Scrollable Content Area ---- */
+  .assets-wrapper .assets-sidebar .sidebar-cont {
+    flex: 1;
+    background:white;
+    overflow-y: auto !important;
+    overflow-x: hidden;
+    padding: 16px 14px !important;
+    min-height: auto !important;
+    display: block;
+    -webkit-overflow-scrolling: touch;
+    height: auto !important;
+  }
+
+  #lockEr {
+  display: none !important;
+}
+
+  /* ---- Option Grid: 2 columns for clarity ---- */
+  .assets-wrapper .assets-sidebar .sidebar-cont .sidebar-grid,
+  .assets-sidebar .sidebar-cont .sidebar-grid {
+    display: grid !important;
+    grid-template-columns: repeat(2, 1fr) !important;
+    grid-auto-flow: unset !important;
+    gap: 12px !important;
+    position: relative !important;
+  }
+
+  /* ---- Size / Gender / Lock / String Cards ---- */
+  .assets-wrapper .assets-sidebar .sidebar-cont .sidebar-grid .size-card,
+  .assets-wrapper .assets-sidebar .sidebar-cont .sidebar-grid .gender-card,
+  .assets-wrapper .assets-sidebar .sidebar-cont .sidebar-grid .lockstyle-card,
+  .assets-wrapper .assets-sidebar .sidebar-cont .sidebar-grid .stringcolor-card {
+    min-width: 0;
+    padding: 14px 10px;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+    border: 1.5px solid #e0e0e0;
+    background: #fff;
+  }
+
+  .assets-wrapper .assets-sidebar .sidebar-cont .sidebar-grid .size-card.active,
+  .assets-wrapper .assets-sidebar .sidebar-cont .sidebar-grid .lockstyle-card.active,
+  .assets-wrapper .assets-sidebar .sidebar-cont .sidebar-grid .stringcolor-card.active {
+    border-color: #111 !important;
+    background: #111 !important;
+  }
+
+  /* ---- Size Card Text ---- */
+  .assets-wrapper .assets-sidebar .sidebar-cont .sidebar-grid .size-card h5 {
+    font-size: 14px !important;
+    margin-bottom: 4px;
+  }
+
+  .assets-wrapper .assets-sidebar .sidebar-cont .sidebar-grid .size-card div {
+    font-size: 10px !important;
+    color: #888;
+    line-height: 1.3;
+  }
+
+  .assets-wrapper .assets-sidebar .sidebar-cont .sidebar-grid .size-card.active div {
+    color: #ccc !important;
+  }
+
+  /* ---- Bead / Stone Cards: 3-column for beads ---- */
+  .assets-wrapper #beads-sidebar .sidebar-cont .sidebar-grid,
+  .assets-wrapper #ebeads-sidebar .sidebar-cont .sidebar-grid {
+    grid-template-columns: repeat(3, 1fr) !important;
+    gap: 10px !important;
+  }
+
+  .assets-wrapper .assets-sidebar .sidebar-cont .sidebar-grid .stone-card {
+    min-width: 0;
+    padding: 10px 8px;
+    border-radius: 10px;
+  }
+
+  /* ---- Images inside sidebar cards ---- */
+  .assets-wrapper .assets-sidebar .sidebar-cont .sidebar-grid .stone-card img {
+    width: 100%;
+    max-width: 56px;
+    margin: 0 auto 4px;
+  }
+
+  .assets-wrapper .assets-sidebar .sidebar-cont .sidebar-grid .lockstyle-card img,
+  .assets-wrapper .assets-sidebar .sidebar-cont .sidebar-grid .stringcolor-card img {
+    width: 100%;
+    max-width: 60px;
+    margin: 0 auto 6px;
+  }
+
+  /* ---- Text in cards ---- */
+  .assets-wrapper .assets-sidebar .sidebar-cont .sidebar-grid .stone-card h6 {
+    font-size: 11px !important;
+    margin-bottom: 2px;
+  }
+
+  .assets-wrapper .assets-sidebar .sidebar-cont .sidebar-grid .lockstyle-card h6,
+  .assets-wrapper .assets-sidebar .sidebar-cont .sidebar-grid .stringcolor-card h6 {
+    font-size: 11px !important;
+  }
+
+  .assets-wrapper .assets-sidebar .sidebar-cont .sidebar-grid .stone-card p {
+    font-size: 9px !important;
+    color: #888;
+  }
+
+  .assets-wrapper .assets-sidebar .sidebar-cont .sidebar-grid .gender-card h5 {
+    font-size: 13px !important;
+    padding: 0 !important;
+  }
+
+  /* ---- Bead Stock Label ---- */
+  .bead-stock {
+    font-size: 9px !important;
+    font-weight: 600;
+  }
+
+  /* ---- Size Guide Card (measure) ---- */
+  .size-card.measure {
+    grid-column: 1 / -1; /* full width */
+    border: 1.5px dashed #ccc;
+    background: #fafafa;
+    padding: 12px;
+  }
+
+  .size-card.measure h5 {
+    font-size: 12px !important;
+    color: #555 !important;
+    text-decoration: underline;
+  }
+
+  /* ---- Bottom Action Row (Cancel / Confirm) ---- */
+  .assets-wrapper .assets-sidebar .sidebar-actions {
+    position: relative !important;
+    width: 100% !important;
+    left: auto !important;
+    right: auto !important;
+    bottom: auto !important;
+    height: auto !important;
+    padding: 12px 16px max(14px, env(safe-area-inset-bottom)) !important;
+    grid-template-columns: 1fr 2fr !important;
+    gap: 10px;
+    background: #fff;
+    border-top: 1px solid #f0f0f0;
+    flex-shrink: 0;
+  }
+ 
+  .assets-wrapper .assets-sidebar .sidebar-actions .close-btn {
+    border-radius: 10px !important;
+    font-size: 20px;
+    height: 50px;
+    transition: all 0.2s ease;
+  }
+
+  .assets-wrapper .assets-sidebar .sidebar-actions .close-btn.cross {
+    background-color: #f4f4f4 !important;
+    color: #555 !important;
+    font-size: 18px;
+  }
+
+  .assets-wrapper .assets-sidebar .sidebar-actions .close-btn.cross:hover {
+    background-color: #ffe0e0 !important;
+    color: #e53935 !important;
+  }
+
+  .assets-wrapper .assets-sidebar .sidebar-actions .close-btn.check {
+    display: flex;
+    background-color: #111 !important;
+    color: #fff !important;
+    font-size: 20px;
+    font-weight: bold;
+  }
+
+  .assets-sidebar center {
+    display: none;
+  }
+
+  /* ---- Product Summary on Mobile ---- */
+  .product-wrapper .product-cont .product-summery p {
+    font-size: 12px;
+  }
+
+  .product-wrapper .product-cont .stone-costing {
+    margin: 0;
+    text-align: left;
+  }
+
+  .product-wrapper .product-cont h2 {
+    font-size: 1.2rem;
+    text-align: left;
+  }
+
+}
+
+/* ---- Tablet landscape ---- */
+@media (max-width: 991px) {
+  .product-wrapper .product-beautify #parker {
+    max-width: 95vw;
+  }
+
+  .size-card div {
+    font-size: 9px;
+  }
+}
+
+/* ---- Phone ---- */
+@media (max-width: 767px) {
+  .product-wrapper .product-beautify #parker .dropper {
+    width: 12vw;
+    height: 12vw;
+    background-size: 12vw 12vw !important;
+  }
+
+  .product-wrapper .product-beautify.style-1 #parker.size-xl .dropper {
+    width: 10vw;
+    height: 10vw;
+    background-size: 10vw 10vw !important;
+  }
+
+  .product-wrapper .product-beautify.style-1 #parker.size-xxl .dropper {
+    width: 10vw;
+    height: 10vw;
+    background-size: 10vw 10vw !important;
+  }
+
+  .product-wrapper .product-beautify.style-1 #parker.size-xxxl .dropper {
+    width: 10vw;
+    height: 10vw;
+    background-size: 10vw 10vw !important;
+  }
+
+  .product-wrapper .product-beautify.style-1 #parker.size-4xl .dropper {
+    width: 10.2vw;
+    height: 10.2vw;
+    background-size: 10.2vw 10.2vw !important;
+  }
+
+  .assets-wrapper .assets-sidebar .sidebar-cont .sidebar-grid .size-card p {
+    font-size: 8px;
+  }
+}
+
+/* ---- Small phone ---- */
+@media (max-width: 480px) {
+  /* Bead cards: 3 columns on small screens */
+  .assets-wrapper #beads-sidebar .sidebar-cont .sidebar-grid,
+  .assets-wrapper #ebeads-sidebar .sidebar-cont .sidebar-grid {
+    grid-template-columns: repeat(3, 1fr) !important;
+  }
+
+  /* Size cards: 2 per row is still fine */
+  .assets-wrapper #bracelet-size-sidebar .sidebar-cont .sidebar-grid {
+    grid-template-columns: repeat(2, 1fr) !important;
+  }
+
+  .assets-wrapper .button-set .assets-btn {
+    font-size: 9px !important;
+    min-width: 60px;
+  }
+}
+
+
+
+
+
+/* Selected dropper highlight ring - removed per user request */
+.product-wrapper .product-beautify #parker .dropper.selected {
+  opacity: 1 !important;
+  outline: none;
+}
+
+/* Selected stone container — must NOT overflow to avoid bead overlap */
+.product-wrapper .product-beautify #parker .dropper .selected-stone {
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  border-radius: 50%;
+}
+
+/* Bead image — fills the dropper exactly, 3D look via shadows/filters only */
+.product-wrapper .product-beautify #parker .dropper .selected-stone img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+  border-radius: 50%;
+  filter:
+    drop-shadow(-2px -3px 4px rgba(255,255,255,0.25))
+    drop-shadow(2px 4px 8px rgba(0,0,0,0.55))
+    contrast(1.1)
+    brightness(1.05);
+  transition: filter 0.25s ease;
+}
+
+/* Subtle hover: deepen the shadow for a "pressed" effect */
+.product-wrapper .product-beautify #parker .dropper:hover .selected-stone img {
+  filter:
+    drop-shadow(-2px -3px 4px rgba(255,255,255,0.3))
+    drop-shadow(3px 6px 12px rgba(0,0,0,0.65))
+    contrast(1.15)
+    brightness(1.08);
+}
+
+.product-wrapper .product-beautify #parker .dropper:has(.selected-stone) {
+  background-image: none !important;
+  opacity: 1;
+}
+
+/* Main Product Container */
+.product-cont {
+  margin: 0 auto;
+  padding: 20px;
+  border: 1px solid #efefef;
+  border-radius: 10px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.05);
+  background: #fff;
+}
+
+.product-cont h2 {
+  font-size: 1.4rem;
+  color: #111;
+  margin-bottom: 1.2rem;
+  padding-bottom: 0.8rem;
+  border-bottom: 1px solid #f0f0f0;
+  letter-spacing: 0.5px;
+  font-weight: 500;
+}
+
+/* Product Summary Section */
+.product-summery {
+  background: #fafafa;
+  padding: 12px 14px;
+  border-radius: 8px;
+  margin-bottom: 12px;
+  border: 1px solid #f2f2f2;
+}
+
+.product-summery p {
+  margin: 0;
+  display: flex;
+  justify-content: space-between;
+  padding: 6px 0;
+  border-bottom: 1px dashed #ebebeb;
+  align-items: center;
+  color: #555;
+  font-size: 12px;
+  gap: 10px;
+}
+
+.product-summery p:last-child {
+  border-bottom: none;
+  padding-bottom: 0;
+}
+
+.product-summery b {
+  font-weight: 600;
+  color: #111;
+}
+
+/* Price Display */
+.price span,
+.price-count {
+  color: #111;
+  font-weight: 700;
+  font-size: 1.1em;
+}
+
+/* Product Actions */
+.product-action {
+  display: flex;
+  gap: 10px;
+  margin-top: 16px;
+}
+
+.quantity {
+  width: 70px;
+  padding: 0.75rem;
+  border: 1px solid #ddd;
+  border-radius: 6px;
+  text-align: center;
+  font-size: 1rem;
+  background: #fafafa;
+}
+
+.add-cart {
+  flex: 1;
+  background: #111;
+  color: white;
+  border: none;
+  padding: 0.75rem;
+  border-radius: 6px;
+  font-size: 13px;
+  font-weight: 700;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  cursor: pointer;
+  transition: all 0.25s ease;
+}
+
+.add-cart:hover:not(:disabled) {
+  background: #333;
+  transform: translateY(-1px);
+  box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+}
+
+.add-cart:disabled {
+  opacity: 0.45;
+  cursor: not-allowed;
+}
+
+/* Wishlist Button */
+.wishlisthero-product-page-button-container {
+  margin-top: 1rem;
+}
+
+.wishlisthero-product-page-button-container button {
+  width: 100%;
+  background: #f8f8f8 !important;
+  border: 1px solid #ddd !important;
+  color: #333 !important;
+  padding: 0.8rem !important;
+  border-radius: 4px !important;
+  font-size: 1rem !important;
+  transition: all 0.2s ease !important;
+}
+
+.wishlisthero-product-page-button-container button:hover {
+  background: #f0f0f0 !important;
+  border-color: #ccc !important;
+}
+
+.wishlisthero-product-page-button-container svg {
+  color: #d32f2f !important;
+}
+
+/* Responsive Adjustments */
+@media (max-width: 480px) {
+  .product-cont {
+    padding: 1rem;
+  }
+
+  .product-action {
+    flex-direction: column;
+  }
+
+  .quantity {
+    width: 100%;
+  }
+}
+
+/* Stone Costing Section */
+.stone-costing {
+  margin: 0.5rem 0;
+  border-radius: 6px;
+  overflow: hidden;
+}
+
+.stone-group {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.5rem 1rem;
+  background: #fff;
+  border-bottom: 1px solid #f0f0f0;
+  transition: background 0.2s ease;
+}
+
+.stone-group:last-child {
+  border-bottom: none;
+}
+
+.stone-group:hover {
+  background: #f9f9f9;
+}
+
+.stone-title {
+  font-weight: 500;
+  color: #333;
+}
+
+.stone-price {
+  font-weight: 600;
+  color: #d32f2f;
+}
+
+/* Responsive adjustments */
+@media (max-width: 480px) {
+  .stone-group {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 0.5rem;
+    padding: 0.8rem 1rem;
+  }
+
+  .stone-price {
+    align-self: flex-end;
+    font-size: 0.9rem;
+  }
+}
+
+.radio-form {
+  display: flex;
+  gap: 8px;
+  margin: 2px 0;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  width: 80%;
+}
+
+.radio-form label {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  padding: 5px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: all .2s ease;
+  white-space: nowrap
+}
+
+img[src=""],
+img:not([src]),
+img[src="#"] {
+  display: none !important;
+}
+
+.radio-form label:hover {
+  border-color: #888;
+  background: #f8f8f8
+}
+
+.radio-form input[type=radio] {
+  margin: 0;
+  width: 14px;
+  height: 14px;
+  accent-color: #000
+}
+
+@media(max-width:480px) {
+  .radio-form {
+    gap: 6px
+  }
+
+  .radio-form label {
+    padding: 4px 8px;
+    font-size: 10px
+  }
+
+  .radio-form input[type=radio] {
+    width: 12px;
+    height: 12px
+  }
+}
+
+input#engraving-text {
+  border: 1px solid #ddd;
+  border-radius: 2px;
+  width: 100%;
+  padding: 2px;
+}
+
+/* accordion css */
+
+.accordion {
+  max-width: 100%;
+  margin: 15px auto;
+  border-top: 1px solid #000;
+}
+
+.accordion-item {
+  border-bottom: 1px solid #000;
+}
+
+.accordion-header {
+  display: flex;
+  align-items: center;
+  padding: 12px 12px;
+  cursor: pointer;
+  justify-content: space-between;
+}
+
+.accordion-header .symbol {
+  margin-right: 20px;
+  font-weight: bold;
+  transition: transform 0.2s ease;
+}
+
+.accordion-header .title {
+  flex: 1;
+}
+
+.accordion-content {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.3s ease;
+  padding: 0 20px;
+}
+
+.accordion-content p {
+  margin: 0px 0px 10px 0px;
+  color: #333;
+}
+
+.accordion-item.active .accordion-content {
+  max-height: 200px;
+  /* Adjust as needed */
+}
+
+.accordion-item.active .symbol {
+  transform: rotate(45deg);
+  /* Turns + into × (like open) */
+}
+
+
+/* media query */
+
+  .product-wrapper .product-beautify #parker .dropper{
+    {% if product.metafields.bracelets.beads_placeholder_image.value %}
+      background-image:url('{{ product.metafields.bracelets.beads_placeholder_image.value | image_url }}')
+    {% endif %}
+  }
+
+/* ========================================= */
+/* UPDATED: DYNAMIC BRACELET SIZING LOGIC   */
+/* ========================================= */
+
+/* 1. Define Bead Size (Fixed on Desktop, Responsive on Mobile) */
+:root {
+  /* Default for mobile/tablet */
+  --bead-size: 11vw; 
+}
+
+/* Desktop: Beads stay fixed size (45px), Container grows */
+@media (min-width: 768px) {
+  :root {
+    --bead-size: 45px;
+  }
+
+  /* Main Container: Remove strict max-width to allow growth */
+  .product-wrapper .product-beautify #parker {
+    max-width: 100% !important; 
+    /* Smooth transition for resizing the bracelet circle */
+    transition: width 0.4s cubic-bezier(0.25, 1, 0.5, 1), height 0.4s cubic-bezier(0.25, 1, 0.5, 1);
+  }
+
+  /* Bead (Dropper) Sizing - Use the variable, NOT percentage */
+  .product-wrapper .product-beautify #parker .dropper {
+    width: var(--bead-size) !important;
+    height: var(--bead-size) !important;
+  }
+
+  /* 
+     Size Map (Width/Height):
+     Calculated to ensure beads don't overlap. 
+     Formula: Circumference = (BeadCount * (BeadSize + Gap))
+  */
+
+  /* XXS: 16 Beads */
+  .product-wrapper .product-beautify.style-1 #parker.size-xxs {
+    width: 300px !important;
+    height: 300px !important;
+  }
+
+  /* XS: 17 Beads */
+  .product-wrapper .product-beautify.style-1 #parker.size-xs {
+    width: 320px !important;
+    height: 320px !important;
+  }
+
+  /* S: 18 Beads */
+  .product-wrapper .product-beautify.style-1 #parker.size-s {
+    width: 340px !important;
+    height: 340px !important;
+  }
+
+  /* M: 20 Beads */
+  .product-wrapper .product-beautify.style-1 #parker.size-m {
+    width: 380px !important;
+    height: 380px !important;
+  }
+
+  /* L: 21 Beads */
+  .product-wrapper .product-beautify.style-1 #parker.size-l {
+    width: 410px !important;
+    height: 410px !important;
+  }
+
+  /* XL: 22 Beads */
+  .product-wrapper .product-beautify.style-1 #parker.size-xl {
+    width: 440px !important;
+    height: 440px !important;
+  }
+
+  /* XXL: 23 Beads */
+  .product-wrapper .product-beautify.style-1 #parker.size-xxl {
+    width: 470px !important;
+    height: 470px !important;
+  }
+
+  /* XXXL: 24 Beads */
+  .product-wrapper .product-beautify.style-1 #parker.size-xxxl {
+    width: 500px !important;
+    height: 500px !important;
+  }
+
+  /* 4XL: 24 Beads */
+  .product-wrapper .product-beautify.style-1 #parker.size-4xl {
+    width: 510px !important;
+    height: 510px !important;
+  }
+}
+
+/* Mobile: Container fits screen, Beads use variable from root */
+@media (max-width: 767px) {
+  .product-wrapper .product-beautify #parker .dropper {
+    width: var(--bead-size) !important;
+    height: var(--bead-size) !important;
+    background-size: var(--bead-size) var(--bead-size) !important;
+  }
+  
+  /* Ensure container doesn't overflow on small screens, but allows sizing */
+  .product-wrapper .product-beautify #parker {
+    width: 90vw !important;
+    height: 90vw !important;
+    max-width: 90vw !important;
+  }
+}
+
+/* ========================================= */
+/* END UPDATED CSS                          */
+/* ========================================= */
+
+    @media(min-width:1000px){
+    .size-xxs, .size-xs, .size-s {
+    max-width:37vw !important;
+   }
+   .size-m, .size-l, .size-xl {
+    max-width:39vw !important;
+   }
+   .size-xxl, .size-xxxl, .size-4xl {
+    max-width:41vw !important;
+   }
+  }
+
+
+  /* Dynamic Container Widths based on Schema */
+@media (min-width: 768px) {
+  .product-wrapper .product-beautify.style-1 #parker.size-xxs {
+    width: {{ section.settings.width_xxs | default: 300 }}px !important;
+    height: {{ section.settings.width_xxs | default: 300 }}px !important;
+  }
+
+  .product-wrapper .product-beautify.style-1 #parker.size-xs {
+    width: {{ section.settings.width_xs | default: 320 }}px !important;
+    height: {{ section.settings.width_xs | default: 320 }}px !important;
+  }
+
+  .product-wrapper .product-beautify.style-1 #parker.size-s {
+    width: {{ section.settings.width_s | default: 340 }}px !important;
+    height: {{ section.settings.width_s | default: 340 }}px !important;
+  }
+
+  .product-wrapper .product-beautify.style-1 #parker.size-m {
+    width: {{ section.settings.width_m | default: 380 }}px !important;
+    height: {{ section.settings.width_m | default: 380 }}px !important;
+  }
+
+  .product-wrapper .product-beautify.style-1 #parker.size-l {
+    width: {{ section.settings.width_l | default: 410 }}px !important;
+    height: {{ section.settings.width_l | default: 410 }}px !important;
+  }
+
+  .product-wrapper .product-beautify.style-1 #parker.size-xl {
+    width: {{ section.settings.width_xl | default: 440 }}px !important;
+    height: {{ section.settings.width_xl | default: 440 }}px !important;
+  }
+
+  .product-wrapper .product-beautify.style-1 #parker.size-xxl {
+    width: {{ section.settings.width_xxl | default: 470 }}px !important;
+    height: {{ section.settings.width_xxl | default: 470 }}px !important;
+  }
+
+  .product-wrapper .product-beautify.style-1 #parker.size-xxxl {
+    width: {{ section.settings.width_xxxl | default: 500 }}px !important;
+    height: {{ section.settings.width_xxxl | default: 500 }}px !important;
+  }
+
+  .product-wrapper .product-beautify.style-1 #parker.size-4xl {
+    width: {{ section.settings.width_4xl | default: 510 }}px !important;
+    height: {{ section.settings.width_4xl | default: 510 }}px !important;
+  }
+}
+/* Static image elements */
+.static-bead-image {
+  position: absolute;
+  z-index: 7;
+  pointer-events: none;
+  transform-origin: center center;
+  object-fit: contain;
+}
+
+.static-bead-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+ p.hide { 
+ display:none;
+}
+
+/* ========================================= */
+/* ADD: MOBILE BEAD SIZE CONTROL             */
+/* ========================================= */
+
+/* Mobile bead size control - add this section after the existing CSS */
+:root {
+  /* Default mobile bead size - can be overridden by schema */
+  --mobile-bead-size: 11vw;
+}
+
+/* Override for small phones */
+@media (max-width: 767px) {
+  .product-wrapper .product-beautify #parker .dropper {
+    width: var(--mobile-bead-size) !important;
+    height: var(--mobile-bead-size) !important;
+    background-size: var(--mobile-bead-size) var(--mobile-bead-size) !important;
+  }
+  
+  /* Ensure container doesn't overflow on small screens */
+  .product-wrapper .product-beautify #parker {
+    width: 90vw !important;
+    height: 90vw !important;
+    max-width: 90vw !important;
+  }
+}
+
+/* Extra small phones (below 480px) */
+@media (max-width: 480px) {
+  .product-wrapper .product-beautify #parker .dropper {
+    width: var(--mobile-bead-size) !important;
+    height: var(--mobile-bead-size) !important;
+  }
+}
+</style>
+<div class="twocol-wrapper">
+        <div class="product-wrapper">
+            <div class="product-cont">
+                <h2>{{ product.title }}</h2>
+              
+<form action="/cart/add.js" method="POST">
+  <div class="product-summery">
+    <p class="size">{{ section.settings.label_size }} <b></b></p>
+    <p class="string-color">{{ section.settings.label_color }} <b></b></p>
+    <p class="lock-style">{{ section.settings.label_lock_style }} <b></b></p>
+    {% comment %} <p class="gender">Gender: <b></b></p> {% endcomment %}
+    <p class="priced">{{ section.settings.label_base_price }} <b>{{ product.price | money_with_currency }}</b></p>
+  </div>
+
+  <!-- Hidden input for the selected product's variant ID -->
+  <input type="hidden" name="id" value="{{ product.variants.first.id }}">
+  <input id="custom_photo" type="hidden" name="properties[Image]" style="display:none;" aria-label="input 85">
+  <!-- Quantity Input -->
+  <input type="hidden" name="quantity" value="1" class="quantity">
+
+  <!-- Line Item Properties (custom data) -->
+  <input type="hidden" name="properties[Bracelet Size]" value="">
+  <input type="hidden" name="properties[String Color]" value="">
+  <input type="hidden" name="properties[Lock Style]" value="">
+  {% comment %} <input type="hidden" name="properties[Gender]" value=""> {% endcomment %}
+  <!-- <input type="hidden" name="properties[Base Price]" value="${{ product.price | divided_by: 100 }}"> -->
+
+  <!-- Product Bundle Section -->
+  <div class="stone-costing">
+    <!-- Optional: Add dynamic stones with JavaScript as properties -->
+  </div>
+
+  <div class="product-summery">
+     <p class="total-fare">
+        {{ section.settings.label_total_price }}
+        <span class="price-count">{{ product.price | money_with_currency }}</span>
+    </p>
+  </div>
+  <!-- Total Fare for the Bundle -->
+
+
+    <div class="product-summery">
+    <p class="size">{{ section.settings.label_gift_wrapping }} 
+     <span class="radio-form">
+         <label>{{ section.settings.label_gift_free }}
+         <input type="radio" name="properties[Gift Wrapping]" value="free" checked>
+         </label>
+         {% comment %} <label>Option 1
+         <input type="radio" name="properties[Gift Wrapping]" value="$12">
+         </label>
+         <label>Option 2
+         <input type="radio" name="properties[Gift Wrapping]" value="$15">
+         </label> {% endcomment %}
+     </span>
+    </p>
+    
+  
+     {% if product.metafields.custom.engraving != blank %}
+  {% assign engraving_files = product.metafields.custom.engraving.value %}
+
+  {% if engraving_files != blank %}
+    <p class="size">{{ section.settings.label_engraving_title }}</p>
+    <div class="engraving-options">
+      {% for file in engraving_files %}
+        {% assign file_name = file.src | split: '/' | last %}
+        <label class="engraving-card">
+          <input 
+            type="radio" 
+            name="properties[Engraving]" 
+            value="{{ file_name | split:"." | first }}" 
+          >
+          <div class="engraving-preview">
+            <img src="{{ file.src | img_url: '200x200' }}" alt="{{ file_name | split:"." | first }}">
+          </div>
+          {% comment %} <span class="engraving-name">{{ file_name }}</span> {% endcomment %}
+        </label>
+      {% endfor %}
+    </div>
+  {% endif %}
+{% endif %}
+
+    <p class="size" id="Engraving_text_field">{{ section.settings.label_text_input }} 
+     <span class="radio-form">
+         <input type="text" name="properties[Text]" placeholder="{{ section.settings.placeholder_text }}" id="engraving-text">
+          <small id="engraving-instruction" style="display:block; color:#555;">
+            {{ section.settings.text_engraving_instruction }}
+          </small>
+     </span>
+    </p>
+        <small class="error-message" style="color:red; display:none;"></small>
+    </div>
+  
+  <!-- Add to Cart Button -->
+  <div class="product-action">
+    <input type="number" class="Bquantity quantity" name="quantity" value="1" size="2">
+    <input class="add-cart" type="submit" value="{{ section.settings.btn_add_to_cart }}">
+  </div>
+    <p id="bead-warning" style="color:red; display:none;text-align: right;margin-top: 8px;">{{ section.settings.error_beads_missing }}</p>
+
+</form>
+
+ <div class="accordion">
+  {% if section.settings.policy_content != blank %}
+  <div class="accordion-item">
+    <div class="accordion-header">
+      <span class="symbol">+</span>
+      <span class="title">{{ section.settings.policy_title }}</span>
+    </div>
+    <div class="accordion-content">
+      <p>{{ section.settings.policy_content  }}</p>
+    </div>
+  </div>
+{% endif %}
+  {% if section.settings.shipping_content != blank %}
+
+  <div class="accordion-item">
+    <div class="accordion-header">
+      <span class="symbol">+</span>
+      <span class="title">{{ section.settings.shipping_title }}</span>
+    </div>
+    <div class="accordion-content">
+      <p>{{ section.settings.shipping_content }}</p>
+    </div>
+  </div>
+ {% endif %} 
+
+
+</div> 
+
+
+                   
+            </div>
+            <div class="product-beautify style-1">
+                <div id="parker" class="size-m">
+    {% comment %} String/background image {% endcomment %} 
+    {% assign string_image = product.metafields.bracelets.strings.value | first %}
+    <img id="emBrace" src="{% if string_image %}{{ string_image | image_url }}{% endif %}" role="presentation" data-ac-alt-type="image" height="" width="">
+    
+    {% comment %} Lock image {% endcomment %} 
+    {% comment %} {% assign lock_image = product.metafields.bracelets.locks.value | first %} {% endcomment %}
+    {% comment %} <img id="lockEr" src="{% if lock_image %}{{ lock_image | image_url }}{% endif %}" role="presentation" data-ac-alt-type="image" height="" width=""> {% endcomment %}
+    
+    {% comment %} Instruction overlay {% endcomment %}
+    <div id="instruction">
+        <button id="close-instruction">✕</button>
+        <p><b>{{ section.settings.instruction_title }}：</b> {{ section.settings.instruction_text }}</p>
+    </div>
+    
+    {% comment %} Container for static images (will be populated by JavaScript) {% endcomment %}
+    <div id="static-images-container"></div>
+    
+    {% comment %} Bead droppers - numbered from 1 to 24 {% endcomment %}
+    <div class="dropper" id="drop1"></div>
+    <div class="dropper" id="drop2"></div>
+    <div class="dropper" id="drop3"></div>
+    <div class="dropper" id="drop4"></div>
+    <div class="dropper" id="drop5"></div>
+    <div class="dropper" id="drop6"></div>
+    <div class="dropper" id="drop7"></div>
+    <div class="dropper" id="drop8"></div>
+    <div class="dropper" id="drop9"></div>
+    <div class="dropper" id="drop10"></div>
+    <div class="dropper" id="drop11"></div>
+    <div class="dropper" id="drop12"></div>
+    <div class="dropper" id="drop13"></div>
+    <div class="dropper" id="drop14"></div>
+    <div class="dropper" id="drop15"></div>
+    <div class="dropper" id="drop16"></div>
+    <div class="dropper" id="drop17"></div>
+    <div class="dropper" id="drop18"></div>
+    <div class="dropper" id="drop19"></div>
+    <div class="dropper" id="drop20"></div>
+    <div class="dropper" id="drop21"></div>
+    <div class="dropper" id="drop22"></div>
+    <div class="dropper" id="drop23"></div>
+    <div class="dropper" id="drop24"></div>
+</div>
+            </div>
+        </div>
+        
+        <div class="assets-wrapper">
+            <div class="button-set">
+                {% comment %} <button class="assets-btn" id="gender">Gender</button> {% endcomment %}
+                <button class="assets-btn" id="bracelet-size">{{ section.settings.btn_size }}</button>
+                <button class="assets-btn" id="beads">{{ section.settings.btn_beads }}</button>
+                <button class="assets-btn" id="ebeads">{{ section.settings.btn_engraving_beads }}</button>
+                <button class="assets-btn" id="string-color">{{ section.settings.btn_string_color }}</button>
+                <button class="assets-btn" id="lock-style">{{ section.settings.btn_lock_style }}</button>
+            </div>
+            {% comment %} <div class="assets-sidebar" id="gender-sidebar">
+                <div class="sidebar-cont">
+                    <div class="sidebar-grid">
+                        <div class="gender-card active">
+                            <h5>Male</h5>
+                        </div>
+                        <div class="gender-card">
+                            <h5>Female</h5>
+                        </div>
+                    </div>
+                </div>
+                <div class="sidebar-actions">
+                    <span class="close-btn cross">⨯</span>
+                    <span class="close-btn check">✓</span>
+                </div>
+            </div> {% endcomment %}
+            <div class="assets-sidebar" id="bracelet-size-sidebar">
+                <p class="sidebar-header">{{ section.settings.sidebar_size_title }}</p>
+                <div class="sidebar-cont">
+                    <div class="sidebar-grid">
+                        
+                        <div class="size-card measure">
+                            <a href="{{ section.settings.measure_link }}"><h5>{{ section.settings.measure_link_text }}</h5></a>
+                        </div>
+
+                        <div class="size-card">
+                            <h5>XXS</h5>
+                            <p class="hide">Extra Extra Small (12cm)</p>
+                            <div>Extra Extra Small (13cm)</div>
+                        </div>
+                        <div class="size-card">
+                            <h5>XS</h5>
+                            <p class="hide">Extra Small (13cm)</p>
+                            <div>Extra Small (14cm)</div>
+                        </div>
+                        <div class="size-card">
+                            <h5>S</h5>
+                            <p class="hide">Small (14cm)</p>
+                            <div>Small (15cm)</div>
+                        </div>
+                        <div class="size-card active">
+                            <h5>M</h5>
+                            <p class="hide">Medium (15cm)</p>
+                            <div>Medium (16cm)</div>
+                        </div>
+                        <div class="size-card">
+                            <h5>L</h5>
+                            <p class="hide">Large (16cm)</p>
+                            <div>Large (17cm)</div>
+                        </div>
+                        <div class="size-card">
+                            <h5>XL</h5>
+                            <p class="hide">Extra Large (17cm)</p>
+                            <div>Extra Large (18cm)</div>
+                        </div>
+                        <div class="size-card">
+                            <h5>XXL</h5>
+                            <p class="hide">Double Extra Large (18cm)</p>
+                            <div>Double Extra Large (19cm)</div>
+                        </div>
+                        <div class="size-card">
+                            <h5>XXXL</h5>
+                            <p class="hide">Triple Extra Large (19cm)</p>
+                            <div>Triple Extra Large (20cm)</div>
+                        </div>
+                        <div class="size-card">
+                            <h5>4XL</h5>
+                            <p class="hide">Four Extra Large (20cm)</p>
+                            <div>Four Extra Large (21cm)</div>
+                        </div>
+                    </div>
+                </div>
+                {% comment %} <div class="sidebar-actions">
+                    <span class="close-btn cross">⨯</span>
+                    <span class="close-btn check">✓</span>
+                </div> {% endcomment %}
+            </div>
+            <div class="assets-sidebar" id="beads-sidebar">
+                <p class="sidebar-header">{{ section.settings.sidebar_beads_title }}</p>    
+                <div class="sidebar-cont">
+                    <div class="sidebar-grid">
+     
+                        {% for p in product.metafields.bracelets.beads.value %}
+  {% assign variant = p.variants.first %}
+  {% assign in_stock = variant.available %}
+
+  {% if p.available %}
+    <div
+      class="stone-card {% unless in_stock %}is-disabled{% endunless %}"
+      data-variant-id="{{ variant.id }}"
+      data-inventory="{{ variant.inventory_quantity }}"
+      {% unless in_stock %}aria-disabled="true"{% endunless %}
+    >
+      <img src="{{ p.featured_image | image_url }}" alt="{{ p.title }}">
+
+      <div class="stone-cont">
+        <h6>{{ p.title }}</h6>
+
+        <input type="hidden" data-bride-id="{{ variant.id }}">
+
+        <p>{{ p.description }}</p>
+
+        <div class="bead-stock">
+          {% if in_stock %}
+            {{ section.settings.label_in_stock }} {{ variant.inventory_quantity }}
+          {% else %}
+            {{ section.settings.label_out_of_stock }}
+          {% endif %}
+        </div>
+
+        <p style="display:none;"
+           data-bead-price="{{ p.price | money_without_currency }}"
+           data-currency="{{ cart.currency.iso_code }}">
+        </p>
+      </div>
+    </div>
+  {% endif %}
+{% endfor %}
+
+
+
+                    </div>
+                </div>
+                <div class="sidebar-actions">
+                    <span class="close-btn cross">⨯</span>
+                    <span class="close-btn check">✓</span>
+                </div>
+            </div>
+
+              <div class="assets-sidebar" id="ebeads-sidebar">
+                <p class="sidebar-header">{{ section.settings.sidebar_engraving_title }}</p>
+                <div class="sidebar-cont">
+                    <div class="sidebar-grid">
+                        {% for p in product.metafields.engraving.beads.value %}                          
+  {% assign variant = p.variants.first %}
+  {% assign in_stock = variant.available %}
+
+  {% if p.available %}
+    <div
+      class="stone-card {% unless in_stock %}is-disabled{% endunless %}"
+      data-variant-id="{{ variant.id }}"
+      data-inventory="{{ variant.inventory_quantity }}"
+      {% unless in_stock %}aria-disabled="true"{% endunless %}
+    >
+      <img src="{{ p.featured_image | image_url }}" alt="{{ p.title }}">
+
+      <div class="stone-cont">
+        <h6>{{ p.title }}</h6>
+
+        <input type="hidden" data-bride-id="{{ variant.id }}">
+
+        <p>{{ p.description }}</p>
+
+        <div class="bead-stock">
+          {% if in_stock %}
+            {{ section.settings.label_in_stock }} {{ variant.inventory_quantity }}
+          {% else %}
+            {{ section.settings.label_out_of_stock }}
+          {% endif %}
+        </div>
+
+        <p style="display:none;"
+           data-bead-price="{{ p.price | money_without_currency }}"
+           data-currency="{{ cart.currency.iso_code }}">
+        </p>
+      </div>
+    </div>
+  {% endif %}
+                        {% endfor %}
+                    </div>
+                </div>
+                <div class="sidebar-actions">
+                    <span class="close-btn cross">⨯</span>
+                    <span class="close-btn check">✓</span>
+                </div>
+            </div>
+
+
+            <div class="assets-sidebar" id="string-color-sidebar">
+                <p class="sidebar-header">{{ section.settings.sidebar_string_title }}</p>
+                <div class="sidebar-cont">
+                    <div class="sidebar-grid">
+                        {% for string_image in product.metafields.bracelets.strings.value %}
+                          <div class="stringcolor-card {% if forloop.first %} active {% endif %}" data-src="{{ string_image | image_url }}">
+                              {% assign image = string_image | image_url | split:'files' | last %}
+                              {% assign image = image | split:'?' | first | replace:'/','' %}
+                              {% assign image = image | split:'-' | first %}
+                              <img src="{{ string_image | image_url }}" alt="{{ image }}" height="" width="">
+                              <h6>{{ image }}</h6>
+                          </div>
+                        {% endfor %}
+                    </div>
+                </div>
+                <div class="sidebar-actions">
+                    <span class="close-btn cross">⨯</span>
+                    <span class="close-btn check">✓</span>
+                </div>
+            </div>
+            <div class="assets-sidebar" id="lock-style-sidebar">
+  <p class="sidebar-header">{{ section.settings.sidebar_lock_title }}</p>
+  <div class="sidebar-cont">
+    <div class="sidebar-grid">
+      {% assign lock_styles = product.metafields.custom.lock_styles.value %}
+      {% if lock_styles != blank %}
+        {% for style in lock_styles %}
+          <div class="lockstyle-card" 
+               data-type="{{ style.type }}"
+               data-img1="{{ style.image_1 }}"
+               data-img2="{{ style.image_2 }}"
+               data-title="{{ style.title }}">
+            <img src="{{ style.image_1 }}" alt="{{ style.title }}">
+            <h6>{{ style.title }}</h6>
+          </div>
+        {% endfor %}
+      {% else %}
+       
+      {% endif %}
+    </div>
+  </div>
+  <div class="sidebar-actions">
+    <span class="close-btn cross">⨯</span>
+    <span class="close-btn check">✓</span>
+  </div>
+</div>
+        </div>
+    </div>
+
+
+  <!-- Java Scripts -->
+ <script>
+
+  // Updated JavaScript with separate fixed parts for even and odd sizes
+const isDesignMode = window.Shopify && window.Shopify.designMode;
+
+// ============================================
+// CONFIGURATION FROM SCHEMA SETTINGS
+// ============================================
+
+// Bead counts per size (from schema)
+const sizeBeadCounts = {
+    'xxs': {{ section.settings.bead_count_xxs | default: 12 }},
+    'xs': {{ section.settings.bead_count_xs | default: 13 }},
+    's': {{ section.settings.bead_count_s | default: 14 }},
+    'm': {{ section.settings.bead_count_m | default: 15 }},
+    'l': {{ section.settings.bead_count_l | default: 16 }},
+    'xl': {{ section.settings.bead_count_xl | default: 17 }},
+    'xxl': {{ section.settings.bead_count_xxl | default: 18 }},
+    'xxxl': {{ section.settings.bead_count_xxxl | default: 19 }},
+    '4xl': {{ section.settings.bead_count_4xl | default: 20 }}
+};
+
+// Fixed Design Parts (Common for ALL sizes)
+const fixedParts = [
+  {% if section.settings.fixed_part_1_enabled %}
+    {
+      angle: {{ section.settings.fixed_part_1_angle | default: 0 }},
+      width: {{ section.settings.fixed_part_1_width | default: 30 }},
+      enabled: true
+    },
+  {% endif %}
+  {% if section.settings.fixed_part_2_enabled %}
+    {
+      angle: {{ section.settings.fixed_part_2_angle | default: 120 }},
+      width: {{ section.settings.fixed_part_2_width | default: 30 }},
+      enabled: true
+    },
+  {% endif %}
+  {% if section.settings.fixed_part_3_enabled %}
+    {
+      angle: {{ section.settings.fixed_part_3_angle | default: 240 }},
+      width: {{ section.settings.fixed_part_3_width | default: 30 }},
+      enabled: true
+    },
+  {% endif %}
+];
+
+
+function redistributeGaps(originalAngles, targetIndices, extraSpacings) {
+  const n = originalAngles.length;
+  if (n === 0) return originalAngles;
+
+  // Calculate original gaps
+  let gaps = [];
+  for (let i = 0; i < n; i++) {
+    const next = (i + 1) % n;
+    let gap = originalAngles[next] - originalAngles[i];
+    if (gap < 0) gap += 360;
+    gaps.push(gap);
+  }
+
+  // Apply extra spacing to target gaps
+  let totalExtra = 0;
+  for (let idx = 0; idx < targetIndices.length; idx++) {
+    const i = targetIndices[idx];
+    const extra = extraSpacings[idx];
+    gaps[i] += extra;
+    totalExtra += extra;
+  }
+
+  // Sum of all gaps must be 360°
+  const currentSum = gaps.reduce((a, b) => a + b, 0);
+  const adjust = (360 - currentSum) / (n - targetIndices.length); // distribute evenly among non‑target gaps
+
+  // Adjust non‑target gaps proportionally (or evenly – evenly is simpler)
+  const nonTargetIndices = [];
+  for (let i = 0; i < n; i++) {
+    if (!targetIndices.includes(i)) nonTargetIndices.push(i);
+  }
+  if (nonTargetIndices.length > 0) {
+    for (const i of nonTargetIndices) {
+      gaps[i] += adjust;
+      // Ensure no gap becomes negative (safety)
+      if (gaps[i] < 0) gaps[i] = 0;
+    }
+  }
+
+  // Rebuild angles from gaps, starting from the first bead's original angle
+  let newAngles = [originalAngles[0]];
+  for (let i = 0; i < n - 1; i++) {
+    let nextAngle = newAngles[i] + gaps[i];
+    if (nextAngle >= 360) nextAngle -= 360;
+    newAngles.push(nextAngle);
+  }
+
+  // Ensure the last gap closes exactly to 360°
+  newAngles.sort((a, b) => a - b);
+  return newAngles;
+}
+
+
+// ============================================
+// STATIC IMAGE CONFIGURATION (PER‑SIZE POSITIONS)
+// ============================================
+
+// Helper: build per‑size position mapping from Liquid
+const image1PositionBySize = {
+  xxs: {{ section.settings.static_image_1_position_xxs | default: section.settings.static_image_1_position | default: 6 }},
+  xs: {{ section.settings.static_image_1_position_xs | default: section.settings.static_image_1_position | default: 6 }},
+  s: {{ section.settings.static_image_1_position_s | default: section.settings.static_image_1_position | default: 6 }},
+  m: {{ section.settings.static_image_1_position_m | default: section.settings.static_image_1_position | default: 6 }},
+  l: {{ section.settings.static_image_1_position_l | default: section.settings.static_image_1_position | default: 6 }},
+  xl: {{ section.settings.static_image_1_position_xl | default: section.settings.static_image_1_position | default: 6 }},
+  xxl: {{ section.settings.static_image_1_position_xxl | default: section.settings.static_image_1_position | default: 6 }},
+  xxxl: {{ section.settings.static_image_1_position_xxxl | default: section.settings.static_image_1_position | default: 6 }},
+  '4xl': {{ section.settings.static_image_1_position_4xl | default: section.settings.static_image_1_position | default: 6 }}
+};
+
+const image2PositionBySize = {
+  xxs: {{ section.settings.static_image_2_position_xxs | default: section.settings.static_image_2_position | default: 12 }},
+  xs: {{ section.settings.static_image_2_position_xs | default: section.settings.static_image_2_position | default: 12 }},
+  s: {{ section.settings.static_image_2_position_s | default: section.settings.static_image_2_position | default: 12 }},
+  m: {{ section.settings.static_image_2_position_m | default: section.settings.static_image_2_position | default: 12 }},
+  l: {{ section.settings.static_image_2_position_l | default: section.settings.static_image_2_position | default: 12 }},
+  xl: {{ section.settings.static_image_2_position_xl | default: section.settings.static_image_2_position | default: 12 }},
+  xxl: {{ section.settings.static_image_2_position_xxl | default: section.settings.static_image_2_position | default: 12 }},
+  xxxl: {{ section.settings.static_image_2_position_xxxl | default: section.settings.static_image_2_position | default: 12 }},
+  '4xl': {{ section.settings.static_image_2_position_4xl | default: section.settings.static_image_2_position | default: 12 }}
+};
+
+// Base static images (without position – will be filled per size later)
+const staticImagesBase = [
+  {% if section.settings.static_image_1_enabled and section.settings.static_image_1 %}
+    {
+      src: "{{ section.settings.static_image_1 | image_url }}",
+      extraSpacing: {{ section.settings.static_image_1_extra_spacing | default: 0 }},
+      offset: {{ section.settings.static_image_1_offset | default: 0 }},
+      rotation: {{ section.settings.static_image_1_rotation | default: 0 }},
+      width: {{ section.settings.static_image_1_width | default: 40 }},
+      height: {{ section.settings.static_image_1_height | default: 40 }},
+      enabled: true,
+      type: 'position-based',
+      isImage1: true
+    },
+  {% endif %}
+  {% if section.settings.static_image_2_enabled and section.settings.static_image_2 %}
+    {
+      src: "{{ section.settings.static_image_2 | image_url }}",
+      extraSpacing: {{ section.settings.static_image_2_extra_spacing | default: 0 }},
+      offset: {{ section.settings.static_image_2_offset | default: 0 }},
+      rotation: {{ section.settings.static_image_2_rotation | default: 0 }},
+      width: {{ section.settings.static_image_2_width | default: 40 }},
+      height: {{ section.settings.static_image_2_height | default: 40 }},
+      enabled: true,
+      type: 'position-based',
+      isImage2: true
+    },
+  {% endif %}
+  {% if section.settings.static_image_3_enabled and section.settings.static_image_3 %}
+    {
+      src: "{{ section.settings.static_image_3 | image_url }}",
+      offset: {{ section.settings.static_image_3_offset | default: 0 }},
+      extraSpacing: {{ section.settings.static_image_3_extra_spacing | default: 0 }},
+      rotation: {{ section.settings.static_image_3_rotation | default: 0 }},
+      width: {{ section.settings.static_image_3_width | default: 50 }},
+      height: {{ section.settings.static_image_3_height | default: 50 }},
+      enabled: true,
+      type: 'dynamic-top'
+    },
+  {% endif %}
+  {% if section.settings.static_image_4_enabled and section.settings.static_image_4 %}
+    {
+      src: "{{ section.settings.static_image_4 | image_url }}",
+      offset: {{ section.settings.static_image_4_offset | default: 0 }},
+      extraSpacing: {{ section.settings.static_image_4_extra_spacing | default: 0 }},
+      rotation: {{ section.settings.static_image_4_rotation | default: 0 }},
+      width: {{ section.settings.static_image_4_width | default: 50 }},
+      height: {{ section.settings.static_image_4_height | default: 50 }},
+      enabled: true,
+      type: 'dynamic-bottom'
+    },
+  {% endif %}
+];
+
+// Global variable to hold the current static images (will be updated on size change)
+let staticImages = [];
+
+// Function to rebuild staticImages array based on current size
+function updateStaticImagesForCurrentSize(currentSize) {
+  staticImages = staticImagesBase.map(img => {
+    if (img.type === 'position-based') {
+      let position;
+      if (img.isImage1) {
+        position = image1PositionBySize[currentSize] || image1PositionBySize.m;
+      } else if (img.isImage2) {
+        position = image2PositionBySize[currentSize] || image2PositionBySize.m;
+      } else {
+        position = 6; // fallback
+      }
+      return { ...img, position: position };
+    }
+    return { ...img };
+  });
+}
+
+// Initial call with default size 'm'
+updateStaticImagesForCurrentSize('m');
+
+
+function applyExtraGaps() {
+  const parker = document.getElementById('parker');
+  const droppers = Array.from(parker.querySelectorAll('.dropper:not([style*="display: none"])'));
+  const beadCount = droppers.length;
+  if (beadCount === 0) return;
+
+  const centerX = beadSettings.centerX;
+  const centerY = beadSettings.centerY;
+  const radius = beadSettings.radius;
+
+  // Get current angles
+  let beadAngles = [];
+  droppers.forEach(dropper => {
+    const left = parseFloat(dropper.style.left);
+    const top = parseFloat(dropper.style.top);
+    let angle = Math.atan2(top - centerY, left - centerX) * 180 / Math.PI;
+    angle = (angle + 360) % 360;
+    beadAngles.push(angle);
+  });
+  beadAngles.sort((a, b) => a - b);
+
+  // Identify target gaps from static images
+  const targetIndices = [];
+  const extraSpacings = [];
+  staticImages.forEach(image => {
+    if (image.enabled && image.type === 'position-based' && image.extraSpacing > 0) {
+      const pos = image.position - 1; // bead index before the gap
+      if (pos < beadCount) {
+        targetIndices.push(pos % beadCount); // gap between pos and (pos+1)%beadCount
+        extraSpacings.push(image.extraSpacing);
+      }
+    }
+  });
+
+  if (targetIndices.length === 0) return;
+
+  // Redistribute angles
+  const newAngles = redistributeGaps(beadAngles, targetIndices, extraSpacings);
+
+  // Reposition droppers
+  const sortedIndices = newAngles.map((_, idx) => idx).sort((a, b) => newAngles[a] - newAngles[b]);
+  for (let i = 0; i < beadCount; i++) {
+    const dropper = droppers[sortedIndices[i]];
+    const angleRad = newAngles[sortedIndices[i]] * Math.PI / 180;
+    const x = centerX + radius * Math.cos(angleRad);
+    const y = centerY + radius * Math.sin(angleRad);
+    dropper.style.left = `${x}%`;
+    dropper.style.top = `${y}%`;
+  }
+}
+
+
+// Helper function to find the best gap near a target angle
+function findBestGapNearAngle(beadAngles, targetAngle, searchRange = 60) {
+  // Sort bead angles
+  const sortedAngles = [...beadAngles].sort((a, b) => a - b);
+  
+  // Define search range around target angle (in degrees)
+  const minAngle = (targetAngle - searchRange + 360) % 360;
+  const maxAngle = (targetAngle + searchRange) % 360;
+  
+  let bestGap = 0;
+  let bestMidAngle = targetAngle;
+  
+  // Check gaps between consecutive beads
+  for (let i = 0; i < sortedAngles.length; i++) {
+    const currentAngle = sortedAngles[i];
+    const nextAngle = sortedAngles[(i + 1) % sortedAngles.length];
+    
+    let gapStart = currentAngle;
+    let gapEnd = nextAngle;
+    let gapSize;
+    
+    if (i === sortedAngles.length - 1) {
+      // Last gap wraps around
+      gapSize = (360 - currentAngle) + nextAngle;
+      gapEnd = nextAngle + 360;
+    } else {
+      gapSize = nextAngle - currentAngle;
+    }
+    
+    // Check if this gap overlaps with our search range
+    let overlaps = false;
+    let overlapStart, overlapEnd;
+    
+    // Handle wrap-around in search range
+    if (minAngle > maxAngle) {
+      // Search range wraps around 360°
+      if ((gapStart <= maxAngle && gapEnd >= 0) || 
+          (gapStart >= minAngle && gapEnd <= 360)) {
+        overlaps = true;
+        
+        if (gapStart >= minAngle || gapEnd <= maxAngle) {
+          // Gap is in the wrapped portion
+          overlapStart = Math.max(gapStart, minAngle);
+          overlapEnd = Math.min(gapEnd, maxAngle + 360);
+        } else {
+          overlapStart = Math.max(gapStart, 0);
+          overlapEnd = Math.min(gapEnd, maxAngle);
+        }
+      }
+    } else {
+      // Normal search range
+      if (gapEnd > minAngle && gapStart < maxAngle) {
+        overlaps = true;
+        overlapStart = Math.max(gapStart, minAngle);
+        overlapEnd = Math.min(gapEnd, maxAngle);
+      }
+    }
+    
+    if (overlaps) {
+      const overlapSize = overlapEnd - overlapStart;
+      
+      // If this overlap is larger than our current best, use it
+      if (overlapSize > bestGap) {
+        bestGap = overlapSize;
+        // Place in the middle of the overlap
+        bestMidAngle = (overlapStart + overlapEnd) / 2;
+        
+        // Normalize if needed
+        if (bestMidAngle > 360) bestMidAngle -= 360;
+      }
+    }
+  }
+  
+  return bestMidAngle; // Return in degrees
+}
+
+
+function findClosestGapAngle(beadAngles, targetAngle) {
+  if (beadAngles.length < 2) return targetAngle; // fallback
+
+  // Sort angles for gap calculation
+  const sorted = [...beadAngles].sort((a, b) => a - b);
+  let bestMid = targetAngle;
+  let bestDistance = Infinity;
+
+  // Iterate over each gap
+  for (let i = 0; i < sorted.length; i++) {
+    const start = sorted[i];
+    const end = sorted[(i + 1) % sorted.length];
+    let gapSize, mid;
+
+    if (i === sorted.length - 1) {
+      // Wrap-around gap
+      gapSize = (360 - start) + end;
+      mid = (start + end + 360) / 2;
+      if (mid >= 360) mid -= 360;
+    } else {
+      gapSize = end - start;
+      mid = (start + end) / 2;
+    }
+
+    // Distance from target to this gap's midpoint (circular)
+    let dist = Math.abs(mid - targetAngle);
+    dist = Math.min(dist, 360 - dist);
+
+    if (dist < bestDistance) {
+      bestDistance = dist;
+      bestMid = mid;
+    }
+  }
+
+  return bestMid;
+}
+
+// Helper function to find the best position between beads in a specific zone
+function findBestZonePosition(zone, beadAngles, centerX, centerY, radius) {
+  // Define zone angle ranges
+  const zones = {
+    'top': { min: 45, max: 135 }, // Top zone (45° to 135°)
+    'bottom': { min: 225, max: 315 }, // Bottom zone (225° to 315°)
+    'left': { min: 135, max: 225 }, // Left zone (optional)
+    'right': { min: 315, max: 45 } // Right zone (wraps around)
+  };
+  
+  const zoneRange = zones[zone];
+  if (!zoneRange) return null;
+  
+  // Handle wrap-around for right zone
+  let zoneAngles = [];
+  if (zone === 'right') {
+    // Right zone wraps around: 315° to 360° and 0° to 45°
+    for (let angle = 315; angle < 360; angle += 5) zoneAngles.push(angle);
+    for (let angle = 0; angle <= 45; angle += 5) zoneAngles.push(angle);
+  } else {
+    // Normal zones
+    for (let angle = zoneRange.min; angle <= zoneRange.max; angle += 5) {
+      zoneAngles.push(angle);
+    }
+  }
+  
+  // Find beads in or near this zone
+  const beadsInZone = beadAngles.filter(angle => {
+    if (zone === 'right') {
+      return (angle >= 315 || angle <= 45);
+    } else {
+      return angle >= zoneRange.min && angle <= zoneRange.max;
+    }
+  }).sort((a, b) => a - b);
+  
+  if (beadsInZone.length < 2) {
+    // Not enough beads in zone, find the largest gap that intersects with the zone
+    return findLargestGapIntersectingZone(beadAngles, zone);
+  }
+  
+  // Find the largest gap between consecutive beads in this zone
+  let largestGap = 0;
+  let bestMidAngle = null;
+  
+  for (let i = 0; i < beadsInZone.length; i++) {
+    const currentAngle = beadsInZone[i];
+    const nextAngle = beadsInZone[(i + 1) % beadsInZone.length];
+    
+    let gap;
+    if (i === beadsInZone.length - 1 && zone === 'right') {
+      // Handle wrap-around for right zone
+      gap = (currentAngle + 360) - nextAngle;
+    } else {
+      gap = nextAngle - currentAngle;
+    }
+    
+    // Only consider positive gaps
+    if (gap > 0 && gap > largestGap) {
+      largestGap = gap;
+      // Place image in the middle of the gap
+      if (i === beadsInZone.length - 1 && zone === 'right') {
+        bestMidAngle = (currentAngle + nextAngle + 360) / 2;
+        if (bestMidAngle >= 360) bestMidAngle -= 360;
+      } else {
+        bestMidAngle = (currentAngle + nextAngle) / 2;
+      }
+    }
+  }
+  
+  return bestMidAngle;
+}
+
+// Helper function to find largest gap that intersects with a zone
+function findLargestGapIntersectingZone(beadAngles, zone) {
+  const zones = {
+    'top': { min: 45, max: 135 },
+    'bottom': { min: 225, max: 315 },
+    'left': { min: 135, max: 225 },
+    'right': { min: 315, max: 45 }
+  };
+  
+  const zoneRange = zones[zone];
+  let largestGap = 0;
+  let bestMidAngle = zoneRange.min + (zoneRange.max - zoneRange.min) / 2;
+  
+  // Sort all bead angles
+  const sortedAngles = [...beadAngles].sort((a, b) => a - b);
+  
+  // Check gaps between consecutive beads
+  for (let i = 0; i < sortedAngles.length; i++) {
+    const currentAngle = sortedAngles[i];
+    const nextAngle = sortedAngles[(i + 1) % sortedAngles.length];
+    
+    let gapStart = currentAngle;
+    let gapEnd = nextAngle;
+    let gapSize;
+    
+    if (i === sortedAngles.length - 1) {
+      // Last gap wraps around
+      gapSize = (360 - currentAngle) + nextAngle;
+      gapEnd = nextAngle + 360;
+    } else {
+      gapSize = nextAngle - currentAngle;
+    }
+    
+    // Check if this gap intersects with the zone
+    let intersection = false;
+    let intersectionMid = null;
+    
+    if (zone === 'right') {
+      // Check if gap intersects with right zone (wraps around)
+      const zoneAngles = [...Array(46).keys()].map(x => x); // 0-45
+      const zoneAngles2 = [...Array(46).keys()].map(x => x + 315); // 315-360
+      
+      if (gapStart <= 45 && gapEnd >= 0) {
+        intersection = true;
+        // Find midpoint within the intersection
+        const intersectStart = Math.max(gapStart, 315);
+        const intersectEnd = Math.min(gapEnd, 45 + 360);
+        intersectionMid = (intersectStart + intersectEnd) / 2;
+        if (intersectionMid >= 360) intersectionMid -= 360;
+      }
+    } else {
+      // Normal zone
+      if (gapEnd > zoneRange.min && gapStart < zoneRange.max) {
+        intersection = true;
+        // Find midpoint within the intersection
+        const intersectStart = Math.max(gapStart, zoneRange.min);
+        const intersectEnd = Math.min(gapEnd, zoneRange.max);
+        intersectionMid = (intersectStart + intersectEnd) / 2;
+      }
+    }
+    
+    if (intersection && gapSize > largestGap) {
+      largestGap = gapSize;
+      if (intersectionMid !== null) {
+        bestMidAngle = intersectionMid;
+      }
+    }
+  }
+  
+  return bestMidAngle;
+}
+
+
+// Updated placeStaticImages function with SAME rotation for ALL images
+function placeStaticImages() {
+  const parker = document.getElementById('parker');
+  const container = document.getElementById('static-images-container');
+  if (!parker || !container) return;
+
+  // Clear existing static images
+  container.innerHTML = '';
+
+  // Get current bead positions
+  const beadPositions = getBeadPositions();
+  if (beadPositions.length === 0) return;
+
+  const centerX = beadSettings.centerX;
+  const centerY = beadSettings.centerY;
+  const baseRadius = beadSettings.radius;
+
+  // Get all bead angles for dynamic placement
+  const beadAngles = getBeadAngles();
+
+  // Place each enabled static image based on its type
+  staticImages.forEach((image, index) => {
+    if (!image.enabled) return;
+    
+    let angleDegrees;
+    let positionFound = false;
+
+    // IMAGES 1 & 2: Position-based logic (between specific bead indices)
+    if (image.type === 'position-based') {
+      const beadIndex = image.position - 1;
+      
+      const bead1 = beadPositions.find(b => b.index === beadIndex);
+      let bead2;
+      
+      if (beadIndex === beadPositions.length - 1) {
+        bead2 = beadPositions[0];
+      } else {
+        bead2 = beadPositions.find(b => b.index === beadIndex + 1);
+      }
+
+      if (bead1 && bead2) {
+        // Calculate angle between beads (returns radians)
+        const angleRad = calculateAngleBetweenBeads(bead1, bead2, centerX, centerY);
+        angleDegrees = angleRad * 180 / Math.PI;
+        positionFound = true;
+      }
+    } 
+  // IMAGE 3: Find the gap closest to top (90°)
+else if (image.type === 'dynamic-top') {
+  angleDegrees = findClosestGapAngle(beadAngles, 90);
+  positionFound = true;
+}
+// IMAGE 4: Find the gap closest to bottom (270°)
+else if (image.type === 'dynamic-bottom') {
+  angleDegrees = findClosestGapAngle(beadAngles, 270);
+  positionFound = true;
+}
+
+    if (!positionFound) {
+      console.warn(`Could not find position for static image ${index + 1}`);
+      return;
+    }
+
+    // Convert angle to radians for positioning
+    const angleRad = angleDegrees * Math.PI / 180;
+
+    // Calculate distance from center with offset
+    const distance = baseRadius + image.offset;
+    
+    // Calculate position
+    const x = centerX + distance * Math.cos(angleRad);
+    const y = centerY + distance * Math.sin(angleRad);
+
+    // ===== SAME DYNAMIC ROTATION FOR ALL IMAGES =====
+    // Calculate rotation that makes the image point outward from center
+    // This ensures all images are oriented consistently around the circle
+    
+    // Base rotation: angle + 90° makes the image point outward from center
+    // (0° = right, 90° = up, so adding 90° makes it point outward)
+    let totalRotation = angleDegrees + 90 + image.rotation;
+    
+    // Normalize rotation to keep it between 0-360
+    totalRotation = ((totalRotation % 360) + 360) % 360;
+
+    // Create image element
+    const imgWrapper = document.createElement('div');
+    imgWrapper.className = 'static-bead-image';
+    imgWrapper.id = `static-image-${index + 1}`;
+    
+    const img = document.createElement('img');
+    img.src = image.src;
+    img.alt = `Static Image ${index + 1}`;
+    img.loading = 'lazy';
+    
+    // Apply styles
+    imgWrapper.style.cssText = `
+      position: absolute;
+      left: ${x}%;
+      top: ${y}%;
+      transform: translate(-50%, -50%) rotate(${totalRotation}deg);
+      width: ${image.width}px;
+      height: ${image.height}px;
+      z-index: 8;
+      pointer-events: none;
+    `;
+    
+    img.style.cssText = `
+      width: 100%;
+      height: 100%;
+      object-fit: contain;
+      display: block;
+    `;
+    
+    imgWrapper.appendChild(img);
+    container.appendChild(imgWrapper);
+  });
+}
+
+
+
+// Alternative: Tangential rotation (follows the circle curve)
+// Uncomment this version if you want images to follow the circle's curve instead
+
+/*
+function placeStaticImagesTangential() {
+  const parker = document.getElementById('parker');
+  const container = document.getElementById('static-images-container');
+  if (!parker || !container) return;
+
+  container.innerHTML = '';
+
+  const beadPositions = getBeadPositions();
+  if (beadPositions.length === 0) return;
+
+  const centerX = beadSettings.centerX;
+  const centerY = beadSettings.centerY;
+  const baseRadius = beadSettings.radius;
+  const beadAngles = getBeadAngles();
+
+  staticImages.forEach((image, index) => {
+    if (!image.enabled) return;
+    
+    let angle;
+    let positionFound = false;
+
+    if (image.type === 'position-based') {
+      const beadIndex = image.position - 1;
+      const bead1 = beadPositions.find(b => b.index === beadIndex);
+      let bead2;
+      
+      if (beadIndex === beadPositions.length - 1) {
+        bead2 = beadPositions[0];
+      } else {
+        bead2 = beadPositions.find(b => b.index === beadIndex + 1);
+      }
+
+      if (bead1 && bead2) {
+        angle = calculateAngleBetweenBeads(bead1, bead2, centerX, centerY);
+        positionFound = true;
+      }
+    } else if (image.type === 'zone-based') {
+      angle = findBestZonePosition(image.zone, beadAngles, centerX, centerY, baseRadius);
+      if (angle !== null) {
+        positionFound = true;
+        angle = angle * Math.PI / 180;
+      }
+    }
+
+    if (!positionFound) return;
+
+    const distance = baseRadius + image.offset;
+    const x = centerX + distance * Math.cos(angle);
+    const y = centerY + distance * Math.sin(angle);
+
+    // For tangential rotation, we want the image to follow the circle
+    // This means the bottom of the image should point toward the center
+    // or the image should be aligned with the circle's curve
+    const tangentialRotation = (angle * 180 / Math.PI) - 90; // Adjust to follow curve
+    
+    // For heart/lock shapes, you might want them to always face upright
+    // Uncomment this for upright orientation:
+    // const uprightRotation = image.rotation;
+    
+    const totalRotation = tangentialRotation + image.rotation;
+
+    const imgWrapper = document.createElement('div');
+    imgWrapper.className = 'static-bead-image';
+    imgWrapper.id = `static-image-${index + 1}`;
+    
+    const img = document.createElement('img');
+    img.src = image.src;
+    img.alt = `Static Image ${index + 1}`;
+    
+    imgWrapper.style.cssText = `
+      position: absolute;
+      left: ${x}%;
+      top: ${y}%;
+      transform: translate(-50%, -50%) rotate(${totalRotation}deg);
+      width: ${image.width}px;
+      height: ${image.height}px;
+      z-index: 8;
+      pointer-events: none;
+    `;
+    
+    img.style.cssText = `
+      width: 100%;
+      height: 100%;
+      object-fit: contain;
+    `;
+    
+    imgWrapper.appendChild(img);
+    container.appendChild(imgWrapper);
+  });
+}
+*/
+
+// Add CSS to ensure smooth transitions when size changes
+const style = document.createElement('style');
+style.textContent = `
+  .static-bead-image {
+    transition: all 0.3s ease-out;
+  }
+  
+  .static-bead-image img {
+    transition: transform 0.3s ease;
+  }
+`;
+document.head.appendChild(style);
+
+
+
+
+// Add this helper function to check if an angle is too close to a bead
+function isAngleTooCloseToBeads(angle, beadAngles, minAngleDistance = 15) {
+  const normalizedAngle = ((angle % 360) + 360) % 360;
+  
+  for (const beadAngle of beadAngles) {
+    let distance = Math.abs(normalizedAngle - beadAngle);
+    distance = Math.min(distance, 360 - distance); // Handle wrap-around
+    
+    if (distance < minAngleDistance) {
+      return true; // Too close to a bead
+    }
+  }
+  return false;
+}
+
+
+
+
+// Global bead settings
+const beadSettings = {
+  size: {{ section.settings.bead_size | default: 45 }},
+  radius: {{ section.settings.bead_radius | default: 41 }},
+  centerX: {{ section.settings.center_x | default: 50 }},
+  centerY: {{ section.settings.center_y | default: 50 }}
+};
+
+// Equal spacing adjustment
+const equalSpacing = {{ section.settings.equal_spacing | default: 0 }};
+
+// Size-specific gap adjustments
+const sizeGaps = {
+  'xxs': {{ section.settings.gap_xxs | default: 0 }},
+  'xs': {{ section.settings.gap_xs | default: 0 }},
+  's': {{ section.settings.gap_s | default: 0 }},
+  'm': {{ section.settings.gap_m | default: 0 }},
+  'l': {{ section.settings.gap_l | default: 0 }},
+  'xl': {{ section.settings.gap_xl | default: 0 }},
+  'xxl': {{ section.settings.gap_xxl | default: 0 }},
+  'xxxl': {{ section.settings.gap_xxxl | default: 0 }},
+  '4xl': {{ section.settings.gap_4xl | default: 0 }}
+};
+
+// Quadrant-specific gap adjustments
+const quadrantGaps = {
+  'top': {{ section.settings.gap_top | default: 0 }},
+  'right': {{ section.settings.gap_right | default: 0 }},
+  'bottom': {{ section.settings.gap_bottom | default: 0 }},
+  'left': {{ section.settings.gap_left | default: 0 }}
+};
+
+// ============================================
+// HELPER FUNCTIONS
+// ============================================
+
+function getQuadrant(angleDegrees) {
+    // Normalize angle to 0-360
+    angleDegrees = ((angleDegrees % 360) + 360) % 360;
+    
+    if (angleDegrees >= 315 || angleDegrees < 45) return 'right';
+    if (angleDegrees >= 45 && angleDegrees < 135) return 'top';
+    if (angleDegrees >= 135 && angleDegrees < 225) return 'left';
+    return 'bottom';
+}
+
+function getQuadrantAdjustment(angleDegrees, sizeCode) {
+    const quadrant = getQuadrant(angleDegrees);
+    const sizeGap = sizeGaps[sizeCode] || 0;
+    const quadrantGap = quadrantGaps[quadrant] || 0;
+    
+    // Convert total gap from degrees to radians
+    return (sizeGap + quadrantGap) * Math.PI / 180;
+}
+
+function isAngleInFixedPart(angle, fixedParts) {
+    // Normalize angle to 0-360
+    angle = ((angle % 360) + 360) % 360;
+    
+    for (const part of fixedParts) {
+        if (!part.enabled) continue;
+        
+        // Calculate start and end angles based on center angle and width
+        let start = (part.angle - part.width/2 + 360) % 360;
+        let end = (part.angle + part.width/2) % 360;
+        
+        // Handle wrap-around (if end < start, it crosses 0°)
+        if (end < start) {
+            if (angle >= start || angle <= end) {
+                return true;
+            }
+        } else {
+            if (angle >= start && angle <= end) {
+                return true;
+            }
+        }
+    }
+    return false;
+}
+
+function getAvailableAngles(fixedParts, step = 1) {
+    const availableAngles = [];
+    
+    for (let angle = 0; angle < 360; angle += step) {
+        if (!isAngleInFixedPart(angle, fixedParts)) {
+            availableAngles.push(angle);
+        }
+    }
+    
+    return availableAngles;
+}
+
+// ============================================
+// STATIC IMAGE PLACEMENT (Between Beads)
+// ============================================
+
+// Helper function to get bead positions
+function getBeadPositions() {
+  const parker = document.getElementById('parker');
+  const droppers = Array.from(parker.querySelectorAll('.dropper'));
+  const positions = [];
+  
+  droppers.forEach((dropper, index) => {
+    if (dropper.style.display !== 'none') {
+      const left = parseFloat(dropper.style.left);
+      const top = parseFloat(dropper.style.top);
+      positions.push({ left, top, index });
+    }
+  });
+  
+  return positions;
+}
+
+// Helper function to calculate angle between two beads (returns radians)
+function calculateAngleBetweenBeads(bead1, bead2, centerX, centerY) {
+  // Calculate angles from center to each bead
+  const angle1 = Math.atan2(bead1.top - centerY, bead1.left - centerX);
+  const angle2 = Math.atan2(bead2.top - centerY, bead2.left - centerX);
+  
+  // Calculate the average angle (for position between beads)
+  let avgAngle = (angle1 + angle2) / 2;
+  
+  // Handle wrap-around for angles crossing 180/-180 boundary
+  if (Math.abs(angle1 - angle2) > Math.PI) {
+    avgAngle += Math.PI;
+  }
+  
+  return avgAngle;
+}
+
+// Helper function to get all bead angles
+function getBeadAngles() {
+  const parker = document.getElementById('parker');
+  const droppers = Array.from(parker.querySelectorAll('.dropper:not([style*="display: none"])'));
+  const centerX = beadSettings.centerX;
+  const centerY = beadSettings.centerY;
+  const beadAngles = [];
+  
+  droppers.forEach(dropper => {
+    const left = parseFloat(dropper.style.left);
+    const top = parseFloat(dropper.style.top);
+    
+    if (!isNaN(left) && !isNaN(top)) {
+      let angle = Math.atan2(top - centerY, left - centerX) * 180 / Math.PI;
+      angle = ((angle + 360) % 360); // Normalize to 0-360
+      beadAngles.push(angle);
+    }
+  });
+  
+  return beadAngles;
+}
+
+function refreshCircularLayout() {
+  const parker = document.getElementById('parker');
+  if (!parker) return;
+
+  const activeSizeCard = document.querySelector('.size-card.active');
+  if (!activeSizeCard) return;
+  const sizeCode = activeSizeCard.querySelector('h5').textContent.trim().toLowerCase();
+  const beadCount = sizeBeadCounts[sizeCode] || 15;
+
+  // Update static images for the new size
+  updateStaticImagesForCurrentSize(sizeCode);
+
+  const availableAngles = getAvailableAngles(fixedParts);
+  if (fixedParts.length === 0 || availableAngles.length === 0) {
+    placeBeadsSimpleCircular(parker, beadCount, sizeCode);
+  } else {
+    placeBeadsInAvailableAngles(parker, beadCount, sizeCode, availableAngles);
+  }
+
+  // Apply extra gaps AFTER initial placement
+  applyExtraGaps();
+
+  // Place static images after beads are positioned
+  setTimeout(() => {
+    placeStaticImages();
+  }, 50);
+}
+
+// Add this to ensure static images update when size changes
+document.addEventListener('sizeChanged', function() {
+  setTimeout(placeStaticImages, 150);
+});
+
+// Also update on window resize
+let resizeTimeout;
+window.addEventListener('resize', function() {
+  clearTimeout(resizeTimeout);
+  resizeTimeout = setTimeout(() => {
+    if (document.getElementById('parker')) {
+      placeStaticImages();
+    }
+  }, 250);
+});
+
+
+// ============================================
+// CORE BEAD POSITIONING LOGIC
+// ============================================
+
+function placeBeadsSimpleCircular(parker, beadCount, sizeCode) {
+    const allDroppers = Array.from(parker.querySelectorAll('.dropper'));
+    const centerX = beadSettings.centerX;
+    const centerY = beadSettings.centerY;
+    const radius = beadSettings.radius;
+
+    allDroppers.forEach((dropper, index) => {
+        if (index < beadCount) {
+            dropper.style.display = 'flex';
+            
+            // Calculate angle (starting from top) with equal spacing adjustment
+            const baseAngle = ((index / beadCount) * 2 * Math.PI) - (Math.PI / 2);
+            const equalSpacingRad = (equalSpacing * Math.PI) / 180;
+            let angle = baseAngle + (index * equalSpacingRad);
+            
+            // Apply quadrant adjustments
+            const angleDegrees = angle * 180 / Math.PI;
+            angle += getQuadrantAdjustment(angleDegrees, sizeCode);
+            
+            const x = centerX + radius * Math.cos(angle);
+            const y = centerY + radius * Math.sin(angle);
+            
+            dropper.style.left = `${x}%`;
+            dropper.style.top = `${y}%`;
+            dropper.style.transform = 'translate(-50%, -50%)';
+            
+            // Apply bead size
+            dropper.style.width = beadSettings.size + 'px';
+            dropper.style.height = beadSettings.size + 'px';
+            
+            // Store index for reference
+            dropper.dataset.beadIndex = index;
+        } else {
+            dropper.style.display = 'none';
+            delete dropper.dataset.beadIndex;
+        }
+    });
+}
+
+function placeBeadsInAvailableAngles(parker, beadCount, sizeCode, availableAngles) {
+    const allDroppers = Array.from(parker.querySelectorAll('.dropper'));
+    const centerX = beadSettings.centerX;
+    const centerY = beadSettings.centerY;
+    const radius = beadSettings.radius;
+    
+    // Calculate step between angles based on available angles
+    const totalAvailableAngles = availableAngles.length;
+    const angleStep = totalAvailableAngles / beadCount;
+    
+    for (let i = 0; i < beadCount; i++) {
+        const dropper = allDroppers[i];
+        if (!dropper) break;
+        
+        dropper.style.display = 'flex';
+        
+        // Get angle from available angles (distribute evenly)
+        const angleIndex = Math.floor(i * angleStep) % totalAvailableAngles;
+        let angleDegrees = availableAngles[angleIndex];
+        
+        // Apply equal spacing adjustment
+        const equalSpacingRad = (equalSpacing * Math.PI) / 180;
+        angleDegrees += (i * equalSpacing);
+        
+        // Convert to radians
+        let angle = angleDegrees * Math.PI / 180;
+        
+        // Apply quadrant adjustments
+        angle += getQuadrantAdjustment(angleDegrees, sizeCode);
+        
+        const x = centerX + radius * Math.cos(angle);
+        const y = centerY + radius * Math.sin(angle);
+        
+        dropper.style.left = `${x}%`;
+        dropper.style.top = `${y}%`;
+        dropper.style.transform = 'translate(-50%, -50%)';
+        
+        // Apply bead size
+        dropper.style.width = beadSettings.size + 'px';
+        dropper.style.height = beadSettings.size + 'px';
+        
+        // Store index for reference
+        dropper.dataset.beadIndex = i;
+    }
+    
+    // Hide any remaining droppers
+    for (let i = beadCount; i < allDroppers.length; i++) {
+        allDroppers[i].style.display = 'none';
+        delete allDroppers[i].dataset.beadIndex;
+    }
+}
+
+
+// ============================================
+// QUANTITY INPUT VALIDATION
+// ============================================
+
+const quantityInput = document.querySelector('.Bquantity');
+if (quantityInput) {
+  quantityInput.addEventListener('input', function() {
+    if (this.value < 1 || this.value === '') {
+      this.value = 1;
+    }
+  });
+}
+
+// ============================================
+// ENGRAVING OPTIONS HANDLING
+// ============================================
+
+document.addEventListener('DOMContentLoaded', function() {
+  const engravingOptions = document.querySelectorAll('input[name="properties[Engraving]"]');
+  const engravingTextField = document.getElementById('Engraving_text_field');
+
+  // Start hidden
+  if (engravingTextField) {
+    engravingTextField.style.display = 'none';
+  }
+
+  engravingOptions.forEach(option => {
+    option.addEventListener('change', function() {
+      if (document.querySelector('input[name="properties[Engraving]"]:checked')) {
+        engravingTextField.style.display = 'block'; 
+      } else {
+        engravingTextField.style.display = 'none'; 
+      }
+    });
+  });
+});
+
+// ============================================
+// SIDEBAR FUNCTIONALITY
+// ============================================
+
+const buttons = document.querySelectorAll('.assets-btn');
+const sidebars = document.querySelectorAll('.assets-sidebar');
+const productSummery = document.querySelector(".product-summery");
+let activeSidebar = null;
+
+buttons.forEach(button => {
+  button.addEventListener('click', (e) => {
+    e.stopPropagation();
+    const sidebarId = button.id + '-sidebar';
+    const sidebar = document.getElementById(sidebarId);
+
+    if (activeSidebar === sidebar) {
+      sidebar.classList.remove('active');
+      activeSidebar = null;
+    } else {
+      sidebars.forEach(sb => sb.classList.remove('active'));
+      sidebar.classList.add('active');
+      activeSidebar = sidebar;
+    }
+  });
+});
+
+document.querySelectorAll('.close-btn').forEach(btn => {
+  btn.addEventListener('click', (e) => {
+    e.stopPropagation();
+    const sidebar = btn.closest('.assets-sidebar');
+    sidebar.classList.remove('active');
+    activeSidebar = null;
+  });
+});
+
+// ============================================
+// FORM RESET FUNCTION
+// ============================================
+
+function resetProductForm() {
+    // Reset form inputs to initial state
+    const form = document.querySelector('form[action="/cart/add.js"]');
+    if (form) form.reset();
+    
+    // Reset stone-costing section
+    const stoneCosting = document.querySelector('.stone-costing');
+    if (stoneCosting) stoneCosting.innerHTML = '';
+    
+    // Reset total fare to base price
+    const priceCount = document.querySelector('.price-count');
+    if (priceCount) priceCount.textContent = '{{ product.price | money_with_currency }}';
+    
+    // Reset engraving text input
+    const engravingText = document.getElementById('engraving-text');
+    if (engravingText) {
+        engravingText.value = '';
+        engravingText.style.border = '';
+    }
+    
+    // Reset engraving options
+    const engravingOptions = document.querySelectorAll('.engraving-options input[type="radio"]');
+    if (engravingOptions.length > 0) {
+        engravingOptions[0].checked = true;
+    }
+    
+    // Reset gift wrapping to default
+    const giftWrapping = document.querySelector('input[name="properties[Gift Wrapping]"][value="free"]');
+    if (giftWrapping) giftWrapping.checked = true;
+    
+    // Clear selected stones object
+    selectedStones = {};
+    
+    // Reset droppers
+    const droppers = document.querySelectorAll('.product-wrapper .product-beautify #parker .dropper');
+    droppers.forEach(dropper => {
+        dropper.classList.remove('selected');
+        const selectedStone = dropper.querySelector('.selected-stone');
+        if (selectedStone) selectedStone.remove();
+    });
+    
+    // Reset validation states
+    const beadWarning = document.getElementById('bead-warning');
+    if (beadWarning) beadWarning.style.display = 'none';
+    
+    const addToCartBtn = document.querySelector('.add-cart');
+    if (addToCartBtn) {
+        addToCartBtn.disabled = true;
+        addToCartBtn.style.opacity = '0.5';
+    }
+    
+    // Reset error messages
+    const errorMessage = document.querySelector('.error-message');
+    if (errorMessage) errorMessage.style.display = 'none';
+}
+
+// ============================================
+// LOCK IMAGE UPDATE BASED ON SIZE
+// ============================================
+
+function updateLockImageBasedOnSize() {
+    const activeSizeCard = document.querySelector('.size-card.active');
+    if (!activeSizeCard) return;
+
+    const sizeText = activeSizeCard.querySelector('p')?.textContent || '';
+    const sizeNumberMatch = sizeText.match(/\d+(\.\d+)?/);
+    const sizeNumber = sizeNumberMatch ? parseFloat(sizeNumberMatch[0]) : null;
+    
+    const activeLock = document.querySelector('.lockstyle-card.active');
+
+    if (!activeLock || sizeNumber === null ) return;
+
+    let newSrc;
+    if (sizeNumber < 21) {
+        if (sizeNumber % 2 !== 0) {
+            newSrc = activeLock.dataset.oddSrc; 
+        } else {
+            newSrc = activeLock.dataset.src; 
+        }
+    } else if (sizeNumber >= 21) {
+        newSrc = activeLock.dataset.src;
+    } else {
+        newSrc = activeLock.dataset.oddSrc;
+    }
+
+}
+
+// ============================================
+// BRACELET SIZE SELECTION
+// ============================================
+
+const sizeCards = document.querySelectorAll('.size-card');
+const parkerEl = document.getElementById('parker');
+
+function getCurrentSizeClass(element) {
+    return Array.from(element.classList).find(cls => cls.startsWith('size-'));
+}
+
+sizeCards.forEach(card => {
+    card.addEventListener('click', () => {
+      
+        resetProductForm();
+        sizeCards.forEach(c => c.classList.remove('active'));
+        card.classList.add('active');
+
+        const selectedSizeClass = card.querySelector('h5').textContent.trim().toLowerCase();
+        const selectedSizeName = card.querySelector('div').textContent.trim();
+        
+        const sizeDisplay = productSummery.querySelector("p.size b");
+        if (sizeDisplay) sizeDisplay.textContent = selectedSizeName;
+        
+        const sizeInput = document.querySelector('input[name="properties[Bracelet Size]"]');
+        if (sizeInput) sizeInput.value = selectedSizeName;
+
+        const currentSizeClass = getCurrentSizeClass(parkerEl);
+        if (currentSizeClass) {
+            parkerEl.classList.remove(currentSizeClass);
+        }
+        parkerEl.classList.add(`size-${selectedSizeClass}`);
+
+        updateLockImageBasedOnSize();
+        refreshCircularLayout();  // this also updates static images for the new size
+        
+  
+             // CLOSE THE WRIST SIZE SIDEBAR AFTER SELECTION
+        const sizeSidebar = document.getElementById('bracelet-size-sidebar');
+        if (sizeSidebar) {
+            sizeSidebar.classList.remove('active');
+        }
+        
+                // Force bottom button bar to stay visible on mobile
+        const buttonSet = document.querySelector('.assets-wrapper .button-set');
+        if (buttonSet) {
+            buttonSet.style.display = 'flex';
+            buttonSet.style.pointerEvents = 'auto';
+        }
+
+        // Also update activeSidebar variable if it exists globally
+        if (typeof activeSidebar !== 'undefined' && activeSidebar === sizeSidebar) {
+            activeSidebar = null;
+        }
+    });
+});
+
+
+// Auto-select first size card WITHOUT opening sidebar
+setTimeout(() => {
+    // Find the first size card that should be active (the one with 'active' class in HTML)
+    const defaultSizeCard = document.querySelector('.size-card.active');
+    if (defaultSizeCard) {
+        // Get size info from the card
+        const selectedSizeClass = defaultSizeCard.querySelector('h5').textContent.trim().toLowerCase();
+        const selectedSizeName = defaultSizeCard.querySelector('div').textContent.trim();
+        
+        // Update size display in summary
+        const sizeDisplay = document.querySelector(".product-summery p.size b");
+        if (sizeDisplay) sizeDisplay.textContent = selectedSizeName;
+        
+        // Update hidden form input
+        const sizeInput = document.querySelector('input[name="properties[Bracelet Size]"]');
+        if (sizeInput) sizeInput.value = selectedSizeName;
+        
+        // Update container class
+        const parkerEl = document.getElementById('parker');
+        const currentSizeClass = Array.from(parkerEl.classList).find(cls => cls.startsWith('size-'));
+        if (currentSizeClass) {
+            parkerEl.classList.remove(currentSizeClass);
+        }
+        parkerEl.classList.add(`size-${selectedSizeClass}`);
+        
+        // Update lock image based on size
+        updateLockImageBasedOnSize();
+        
+        // Refresh bead layout WITHOUT opening sidebar (and update static images)
+        refreshCircularLayout();
+        
+        console.log(`Auto-selected size: ${selectedSizeName}`);
+    } else {
+        // Fallback: if no card has 'active' class, select the M size
+        const sizeCards = document.querySelectorAll('.size-card');
+        if (sizeCards.length > 0) {
+            // Find M size card or use first card
+            const mSizeCard = Array.from(sizeCards).find(card => 
+                card.querySelector('h5')?.textContent.trim() === 'M'
+            ) || sizeCards[0];
+            
+            // Mark it as active (without triggering click)
+            sizeCards.forEach(c => c.classList.remove('active'));
+            mSizeCard.classList.add('active');
+            
+            // Get size info
+            const selectedSizeClass = mSizeCard.querySelector('h5').textContent.trim().toLowerCase();
+            const selectedSizeName = mSizeCard.querySelector('div').textContent.trim();
+            
+            // Update display and form
+            const sizeDisplay = document.querySelector(".product-summery p.size b");
+            if (sizeDisplay) sizeDisplay.textContent = selectedSizeName;
+            
+            const sizeInput = document.querySelector('input[name="properties[Bracelet Size]"]');
+            if (sizeInput) sizeInput.value = selectedSizeName;
+            
+            // Update container class
+            const parkerEl = document.getElementById('parker');
+            const currentSizeClass = Array.from(parkerEl.classList).find(cls => cls.startsWith('size-'));
+            if (currentSizeClass) {
+                parkerEl.classList.remove(currentSizeClass);
+            }
+            parkerEl.classList.add(`size-${selectedSizeClass}`);
+            
+            // Update lock image based on size
+            updateLockImageBasedOnSize();
+            
+            // Refresh bead layout
+            refreshCircularLayout();
+        }
+    }
+}, 100);
+
+
+// ============================================
+// STRING COLOR SELECTION
+// ============================================
+
+const StringColorCards = document.querySelectorAll('.stringcolor-card');
+StringColorCards.forEach(card => {
+    card.addEventListener('click', () => {
+        StringColorCards.forEach(c => c.classList.remove('active'));
+        card.classList.add('active');
+        document.querySelector("img#emBrace").src = card.dataset.src;
+        let selectedStringColor = card.querySelector('h6').textContent.trim();
+        const colorDisplay = productSummery.querySelector("p.string-color b");
+        if (colorDisplay) colorDisplay.textContent = selectedStringColor;
+        
+        const colorInput = document.querySelector('input[name="properties[String Color]"]');
+        if (colorInput) colorInput.value = selectedStringColor;
+    });
+});
+
+// ============================================
+// LOCK STYLE SELECTION
+// ============================================
+
+// ---------- LOCK STYLE SELECTION (using static images) ----------
+const lockstyleCards = document.querySelectorAll('.lockstyle-card');
+
+function applyLockStyle(lockStyleCard) {
+  if (!lockStyleCard) return;
+  
+  const type = lockStyleCard.dataset.type;   // "position" or "fixed"
+  const img1Url = lockStyleCard.dataset.img1;
+  const img2Url = lockStyleCard.dataset.img2;
+  const title = lockStyleCard.dataset.title;
+  
+  // Update the global staticImages array
+  if (type === 'position') {
+    // Update Image 1 and Image 2 (position-based)
+    const img1 = staticImages.find(img => img.isImage1 === true);
+    const img2 = staticImages.find(img => img.isImage2 === true);
+    if (img1) img1.src = img1Url;
+    if (img2) img2.src = img2Url;
+  } else if (type === 'fixed') {
+    // Update Image 3 and Image 4 (fixed top/bottom)
+    const img3 = staticImages.find(img => img.type === 'dynamic-top');
+    const img4 = staticImages.find(img => img.type === 'dynamic-bottom');
+    if (img3) img3.src = img1Url;
+    if (img4) img4.src = img2Url;
+  }
+  
+  // Re-render static images
+  placeStaticImages();
+  
+  // Update hidden form input and summary display
+  const lockInput = document.querySelector('input[name="properties[Lock Style]"]');
+  if (lockInput) lockInput.value = title;
+  
+  const lockDisplay = document.querySelector(".product-summery p.lock-style b");
+  if (lockDisplay) lockDisplay.textContent = title;
+}
+
+lockstyleCards.forEach(card => {
+  card.addEventListener('click', () => {
+    lockstyleCards.forEach(c => c.classList.remove('active'));
+    card.classList.add('active');
+    applyLockStyle(card);
+  });
+});
+
+
+// Apply the first lock style on page load (or the one marked 'active')
+setTimeout(() => {
+  const activeLock = document.querySelector('.lockstyle-card.active');
+  if (activeLock) {
+    applyLockStyle(activeLock);
+  } else {
+    const firstLock = document.querySelector('.lockstyle-card');
+    if (firstLock) {
+      firstLock.classList.add('active');
+      applyLockStyle(firstLock);
+    }
+  }
+}, 500); // Slight delay to ensure staticImages is ready
+
+// ============================================
+// BEAD STOCK MANAGEMENT
+// ============================================
+
+
+let selectedStones = {};
+
+function updateBeadStockUI(card, remaining) {
+  const stockLabel = card.querySelector(".bead-stock");
+  if (!stockLabel) return;
+
+  if (remaining > 0) {
+    stockLabel.textContent = `In stock: ${remaining}`;
+    card.classList.remove("is-disabled");
+    card.removeAttribute("aria-disabled");
+  } else {
+    stockLabel.textContent = "Insufficient stock";
+    card.classList.add("is-disabled");
+    card.setAttribute("aria-disabled", "true");
+  }
+}
+
+function updateStoneCosting() {
+  const stoneCostingContainer = document.querySelector(".stone-costing");
+  stoneCostingContainer.innerHTML = "";
+
+  let totalPrice = {{ product.price | divided_by: 100.0 }}; // Base product price
+
+  for (let variantId in selectedStones) {
+    const stone = selectedStones[variantId];
+
+    const stoneGroup = document.createElement("div");
+    stoneGroup.classList.add("stone-group");
+
+    const titleDiv = document.createElement("div");
+    titleDiv.classList.add("stone-title");
+    titleDiv.textContent = `${stone.title} x ${stone.quantity}`;
+
+    const priceDiv = document.createElement("div");
+    priceDiv.classList.add("stone-price");
+
+    const totalStonePrice = (stone.price * stone.quantity).toFixed(2);
+    priceDiv.textContent = `NTD $${totalStonePrice}`;
+
+    priceDiv.setAttribute("product-id", stone.stoneId);
+    priceDiv.setAttribute("product-quantity", stone.quantity);
+    priceDiv.setAttribute("product-title", stone.title);
+    priceDiv.setAttribute("beads", "true");
+
+    stoneGroup.appendChild(titleDiv);
+    stoneGroup.appendChild(priceDiv);
+    stoneCostingContainer.appendChild(stoneGroup);
+
+    totalPrice += stone.price * stone.quantity;
+  }
+
+  document.querySelector(".price-count").textContent =
+    `NTD $${totalPrice.toFixed(2)}`;
+}
+
+// ============================================
+// STONE CARD CLICK HANDLING
+// ============================================
+
+const stoneCards = document.querySelectorAll(".stone-card");
+
+stoneCards.forEach(card => {
+  card.addEventListener("click", () => {
+
+    // Guard 1: Disabled stone
+    if (card.classList.contains("is-disabled")) {
+      alert("Insufficient stock for this bead.");
+      return;
+    }
+
+    const variantId = card.dataset.variantId;
+    const inventory = parseInt(card.dataset.inventory, 10);
+
+    const currentQty = selectedStones[variantId]?.quantity || 0;
+    const remaining = inventory - currentQty;
+
+    // Guard 2: Inventory exhausted
+    if (remaining <= 0) {
+      updateBeadStockUI(card, 0);
+      alert("Insufficient stock for this bead.");
+      return;
+    }
+
+    const selectedPositions = document.querySelectorAll(
+      ".product-wrapper .product-beautify #parker .dropper.selected"
+    );
+
+    selectedPositions.forEach(pos => {
+
+      // ===============================
+      // REMOVE EXISTING BEAD (RESTORE INVENTORY IMMEDIATELY)
+      // ===============================
+      const existingStone = pos.querySelector(".selected-stone");
+
+      if (existingStone) {
+        const oldVariantId = existingStone.dataset.variantId;
+
+        if (selectedStones[oldVariantId]) {
+          selectedStones[oldVariantId].quantity -= 1;
+
+          if (selectedStones[oldVariantId].quantity <= 0) {
+            delete selectedStones[oldVariantId];
+          }
+
+          const oldCard = document.querySelector(
+            `.stone-card[data-variant-id="${oldVariantId}"]`
+          );
+
+          if (oldCard) {
+            const oldInventory = parseInt(oldCard.dataset.inventory, 10);
+            const usedQty = selectedStones[oldVariantId]?.quantity || 0;
+
+            updateBeadStockUI(oldCard, oldInventory - usedQty);
+          }
+
+          updateStoneCosting();
+        }
+
+        existingStone.remove();
+      }
+
+      // ===============================
+      // ADD NEW BEAD
+      // ===============================
+      const imgSrc = card.querySelector("img").src;
+      const stoneTitle = card.querySelector("h6").textContent.trim();
+
+      const priceElement = card.querySelector("[data-bead-price]");
+      const stonePrice = parseFloat(priceElement.dataset.beadPrice);
+
+      const stoneId = card.querySelector("input[data-bride-id]").dataset.brideId;
+
+      if (selectedStones[variantId]) {
+        selectedStones[variantId].quantity += 1;
+      } else {
+        selectedStones[variantId] = {
+          title: stoneTitle,
+          price: stonePrice,
+          quantity: 1,
+          image: imgSrc,
+          stoneId: stoneId,
+          inventory: inventory
+        };
+      }
+
+      const updatedRemaining = inventory - selectedStones[variantId].quantity;
+
+      updateBeadStockUI(card, updatedRemaining);
+      updateStoneCosting();
+
+      // ===============================
+      // ADD BEAD TO DROPPER
+      // ===============================
+      const div = document.createElement("div");
+      div.classList.add("selected-stone");
+      div.dataset.variantId = variantId;
+
+      const img = document.createElement("img");
+      img.src = imgSrc;
+
+      div.appendChild(img);
+      pos.appendChild(div);
+      pos.classList.remove("selected");
+    });
+  });
+});
+
+// ============================================
+// DROPPER CLICK HANDLING
+// ============================================
+
+const droppers = document.querySelectorAll('.product-wrapper .product-beautify #parker .dropper');
+droppers.forEach(dropper => {
+    dropper.addEventListener('click', () => {
+        dropper.classList.toggle('selected');
+    });
+});
+
+// ============================================
+// INITIAL AUTOMATIC SELECTIONS
+// ============================================
+
+{% comment %} document.addEventListener("DOMContentLoaded", () => {
+  setTimeout(() => {
+    const genderCards = document.querySelectorAll('.gender-card');
+    if (genderCards.length > 0 && !isDesignMode) genderCards[0].click();
+    
+    const sizeCards = document.querySelectorAll('.size-card');
+    if (sizeCards.length > 1 && !isDesignMode) {
+        sizeCards[1].click();
+    }
+    
+    const stringCards = document.querySelectorAll('.stringcolor-card');
+    if (stringCards.length > 0 && !isDesignMode) stringCards[0].click();
+    
+    const lockCards = document.querySelectorAll('.lockstyle-card');
+    if (lockCards.length > 0 && !isDesignMode) lockCards[0].click();
+  }, isDesignMode ? 1500 : 100);
+}); {% endcomment %}
+
+// ============================================
+// LOADER FUNCTIONS
+// ============================================
+
+function showLoader() {
+    {% comment %} document.getElementById('loadingOverlay').style.display = 'flex'; {% endcomment %}
+}
+
+function hideLoader() {
+    {% comment %} document.getElementById('loadingOverlay').style.display = 'none'; {% endcomment %}
+}
+
+// ============================================
+// CART SUBMISSION
+// ============================================
+
+document.addEventListener('DOMContentLoaded', function() {
+  const form = document.querySelector('form[action="/cart/add.js"]');
+  if (!form) return;
+
+  // Preload html2canvas to prevent race conditions
+  const html2canvasPromise = loadHtml2Canvas();
+
+  form.addEventListener('submit', async function(e) {
+    e.preventDefault();
+    showLoader();
+    document.querySelector("div#instruction").style.display = "none";
+    
+    const submitBtn = form.querySelector('[type="submit"]');
+    const originalBtnText = submitBtn.value;
+    submitBtn.value = 'Processing...';
+    submitBtn.disabled = true;
+
+    try {
+      const imageData = await captureCustomDesign();
+      const { mainProductData, beadItems } = prepareCartData(form, imageData);
+      await processCartSubmission(mainProductData, beadItems);
+      hideLoader();
+      window.location.href = '/cart';
+    } catch (error) {
+      console.error('Cart Submission Error:', error);
+      alert('Could not complete your request. Please try again.');
+    } finally {
+      submitBtn.value = originalBtnText;
+      submitBtn.disabled = false;
+    }
+  });
+
+  async function captureCustomDesign() {
+    try {
+      await html2canvasPromise;
+      const element = document.getElementById('parker');
+      if (!element) return null;
+
+      let canvas = await html2canvas(element, {
+        scale: 0.8,
+        quality: 0.6,
+        logging: false,
+        useCORS: true,
+        backgroundColor: '#ffffff'
+      });
+
+      let imageUrl = canvas.toDataURL('image/jpeg', 0.6);
+      
+      if (imageUrl.length > 60000) {
+        console.warn('Image too large, retrying with lower quality');
+        canvas = await html2canvas(element, {
+          scale: 0.6,
+          quality: 0.4,
+          logging: false,
+          useCORS: true
+        });
+        imageUrl = canvas.toDataURL('image/jpeg', 0.4);
+      }
+
+      return imageUrl.length < 60000 ? imageUrl : null;
+    } catch (error) {
+      console.error('Design Capture Failed:', error);
+      return null;
+    }
+  }
+
+  function prepareCartData(form, imageData) {
+    const formData = new FormData(form);
+    const bundleId = 'bundle_' + Date.now();
+
+    const mainProductData = {
+      id: formData.get('id'),
+      quantity: formData.get('quantity') || 1,
+      properties: {
+        'Bundle Id': bundleId,
+        'Bracelet Size': formData.get('properties[Bracelet Size]'),
+        'String Color': formData.get('properties[String Color]'),
+        'Lock Style': formData.get('properties[Lock Style]'),
+        'Gender': formData.get('properties[Gender]'),
+        'Base Price': formData.get('properties[Base Price]'),
+        'Gift Wrapping': formData.get('properties[Gift Wrapping]'),
+        'Engraving': formData.get('properties[Engraving]'),
+        'Text': formData.get('properties[Text]'),
+        'Bead Items': Array.from(document.querySelectorAll('.stone-price[beads="true"]'))
+        .map(el => {
+          const title = el.getAttribute('product-title') || el.textContent.trim();
+          const qty = el.getAttribute('product-quantity') || 1;
+          return title ? `${title} x ${qty}` : null;
+        })
+        .filter(item => item)
+        .join(', ')   
+      }
+    };
+
+    if (imageData) {
+      mainProductData.properties['Final Image'] = imageData;
+    }
+
+    const beadItems = [];
+    document.querySelectorAll('.stone-price[beads="true"]').forEach(el => {
+      const id = el.getAttribute('product-id');
+      const quantity = el.getAttribute('product-quantity') || 1;
+
+      if (id) {
+        beadItems.push({ 
+          id, 
+          quantity
+        });    
+      }
+    });
+    
+    return { mainProductData, beadItems };
+  }
+
+  async function processCartSubmission(mainProduct, beadItems) {
+    const mainResponse = await fetch('/cart/add.js', {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/json' },
+      body: JSON.stringify(mainProduct)
+    });
+    
+    const mainResult = await mainResponse.json();
+    if (mainResult.error) throw new Error(mainResult.description);
+    
+    for (const [index, item] of beadItems.entries()) {
+      try {
+        const beadResponse = await fetch('/cart/add.js', {
+          method: 'POST',
+          headers: { 'Content-Type': 'application/json' },
+          body: JSON.stringify(item)
+        });
+          
+        const beadResult = await beadResponse.json();
+        if (beadResult.error) console.warn(`Bead ${index + 1} error:`, beadResult.description);
+        
+        if (index < beadItems.length - 1) {
+          await new Promise(resolve => setTimeout(resolve, 300));
+        }
+      } catch (error) {
+        console.error(`Bead ${index + 1} failed:`, error);
+      }
+    }
+  }
+
+  function loadHtml2Canvas() {
+    if (typeof html2canvas === 'function') {
+      return Promise.resolve();
+    }
+    
+    return new Promise((resolve, reject) => {
+      const script = document.createElement('script');
+      script.src = 'https://html2canvas.hertzen.com/dist/html2canvas.min.js';
+      script.onload = resolve;
+      script.onerror = () => reject(new Error('html2canvas failed to load'));
+      document.head.appendChild(script);
+    });
+  }
+});
+
+// ============================================
+// ENGRAVING TEXT VALIDATION
+// ============================================
+
+document.addEventListener('DOMContentLoaded', function () {
+  const engravingInput = document.getElementById('engraving-text');
+  const errorMessage = document.querySelector('.error-message');
+
+  if (engravingInput && errorMessage) {
+    engravingInput.addEventListener('input', () => {
+      let text = engravingInput.value;
+
+      const chineseCharCount = (text.match(/[\u4e00-\u9fff]/g) || []).length;
+      const latinCharCount = (text.match(/[a-zA-Z]/g) || []).length;
+      const spaceCount = (text.match(/ /g) || []).length;
+
+      let isChinese = chineseCharCount > 0;
+      let isLatin = latinCharCount > 0;
+
+      if (isChinese && !isLatin) {
+        if (chineseCharCount > 13 || spaceCount > 12) {
+          engravingInput.value = text.substring(0, engravingInput.value.length - 1);
+          errorMessage.textContent = '最多可輸入 13 個中文字和 12 個空格。';
+          errorMessage.style.display = 'block';
+          return;
+        }
+      } else {
+        if (latinCharCount > 15 || spaceCount > 4) {
+          engravingInput.value = text.substring(0, engravingInput.value.length - 1);
+          errorMessage.textContent = '最多可輸入 15 個英文字母和 4 個空格。';
+          errorMessage.style.display = 'block';
+          return;
+        }
+      }
+
+      if (text.trim().length === 0) {
+        errorMessage.textContent = '請輸入刻印文字。';
+        errorMessage.style.display = 'block';
+      } else {
+        errorMessage.style.display = 'none';
+      }
+    });
+  }
+});
+
+// ============================================
+// ACCORDION FUNCTIONALITY
+// ============================================
+
+document.querySelectorAll('.accordion-header').forEach(header => {
+  header.addEventListener('click', () => {
+    const accordionItem = header.parentElement;
+
+    document.querySelectorAll('.accordion-item').forEach(item => {
+      if (item !== accordionItem) {
+        item.classList.remove('active');
+      }
+    });
+
+    accordionItem.classList.toggle('active');
+  });
+});
+
+// ============================================
+// ADD TO CART VALIDATION
+// ============================================
+
+document.addEventListener('DOMContentLoaded', function () {
+  const parkerEl = document.getElementById('parker');
+  const addToCartBtn = document.querySelector('input.add-cart');
+
+  function isVisible(el) {
+    return !!(el.offsetParent !== null && getComputedStyle(el).display !== 'none');
+  }
+
+  function validateDroppers() {
+    const droppers = parkerEl.querySelectorAll('.dropper');
+    let allValid = true;
+
+    droppers.forEach(drop => {
+      if (isVisible(drop) && !drop.querySelector('.selected-stone')) {
+        allValid = false;
+      }
+    });
+
+    const warning = document.getElementById('bead-warning');
+    if (warning) {
+      warning.style.display = allValid ? 'none' : 'block';
+    }
+
+    if (addToCartBtn) {
+      addToCartBtn.disabled = !allValid;
+      addToCartBtn.style.opacity = allValid ? '1' : '0.5';
+    }
+  }
+
+  const observer = new MutationObserver(() => {
+    validateDroppers();
+  });
+
+  if (parkerEl) {
+    observer.observe(parkerEl, {
+      attributes: true,
+      subtree: true,
+      childList: true,
+      attributeFilter: ['class', 'style']
+    });
+
+    parkerEl.addEventListener('click', (e) => {
+      if (e.target.closest('.dropper')) {
+        setTimeout(validateDroppers, 50);
+      }
+    });
+
+    validateDroppers();
+  }
+});
+
+// ============================================
+// INSTRUCTION CLOSE BUTTON
+// ============================================
+
+document.addEventListener('DOMContentLoaded', function () {
+  const closeBtn = document.getElementById('close-instruction');
+  const instructionBox = document.getElementById('instruction');
+
+  if (closeBtn && instructionBox) {
+    closeBtn.addEventListener('click', function () {
+      instructionBox.style.display = 'none';
+    });
+  }
+});
+
+// ============================================
+// OPEN FIRST SIDEBAR ON PAGE LOAD
+// ============================================
+
+setTimeout(() => {
+  if (buttons && buttons.length > 0 && !isDesignMode) {
+    const firstButton = buttons[0];
+    const firstSidebar = document.getElementById(firstButton.id + '-sidebar');
+    if (firstSidebar) {
+      firstSidebar.classList.add('active');
+      activeSidebar = firstSidebar;
+    }
+  }
+}, 1000); 
+
+
+</script>
+
+
+{% schema %}
+  {
+    "name": "Automation 1",
+    "tag":"section",
+    "class": "create-bracelet",
+    "disabled_on": {
+    "groups": ["header", "custom.overlay"]
+  },
+    "settings": [
+      {
+        "type": "header",
+        "content": "Product Summary Labels"
+      },
+      {
+        "type": "text",
+        "id": "label_size",
+        "label": "Size Label",
+        "default": "Size:"
+      },
+      {
+        "type": "text",
+        "id": "label_color",
+        "label": "Color Label",
+        "default": "Color:"
+      },
+      {
+        "type": "text",
+        "id": "label_lock_style",
+        "label": "Lock Style Label",
+        "default": "Lock Style:"
+      },
+      {
+        "type": "text",
+        "id": "label_base_price",
+        "label": "Base Price Label",
+        "default": "Base Price:"
+      },
+      {
+        "type": "text",
+        "id": "label_total_price",
+        "label": "Total Price Label",
+        "default": "Total Price:"
+      },
+      {
+        "type": "header",
+        "content": "Main Action Buttons"
+      },
+      {
+        "type": "text",
+        "id": "btn_size",
+        "label": "Size Button Text",
+        "default": "WRIST SIZE"
+      },
+      {
+        "type": "text",
+        "id": "btn_beads",
+        "label": "Beads Button Text",
+        "default": "BEADS"
+      },
+      {
+        "type": "text",
+        "id": "btn_engraving_beads",
+        "label": "Engraving Beads Button Text",
+        "default": "ENGRAVING BEADS"
+      },
+      {
+        "type": "text",
+        "id": "btn_string_color",
+        "label": "String Color Button Text",
+        "default": "STRING COLOR"
+      },
+      {
+        "type": "text",
+        "id": "btn_lock_style",
+        "label": "Lock Style Button Text",
+        "default": "LOCK STYLE"
+      },
+      {
+        "type": "text",
+        "id": "btn_add_to_cart",
+        "label": "Add to Cart Button Text",
+        "default": "Add to Cart"
+      },
+      {
+        "type": "text",
+        "id": "loading_text",
+        "label": "Loading Text",
+        "default": "Processing"
+      },
+      {
+        "type": "header",
+        "content": "Sidebar Headings"
+      },
+      {
+        "type": "text",
+        "id": "sidebar_size_title",
+        "label": "Size Sidebar Title",
+        "default": "Select Wrist Size:"
+      },
+      {
+        "type": "text",
+        "id": "sidebar_beads_title",
+        "label": "Beads Sidebar Title",
+        "default": "Select Beads:"
+      },
+      {
+        "type": "text",
+        "id": "sidebar_engraving_title",
+        "label": "Engraving Sidebar Title",
+        "default": "Select Engraving Beads:"
+      },
+      {
+        "type": "text",
+        "id": "sidebar_string_title",
+        "label": "String Color Sidebar Title",
+        "default": "Select String Color:"
+      },
+      {
+        "type": "text",
+        "id": "sidebar_lock_title",
+        "label": "Lock Style Sidebar Title",
+        "default": "Select Lock Style:"
+      },
+      {
+        "type": "header",
+        "content": "Gift & Engraving"
+      },
+      {
+        "type": "text",
+        "id": "label_gift_wrapping",
+        "label": "Gift Wrapping Label",
+        "default": "Gift Wrapping:"
+      },
+      {
+        "type": "text",
+        "id": "label_gift_free",
+        "label": "Free Option Label",
+        "default": "Free"
+      },
+      {
+        "type": "text",
+        "id": "label_engraving_title",
+        "label": "Engraving Section Title",
+        "default": "Engraving Text"
+      },
+      {
+        "type": "text",
+        "id": "label_text_input",
+        "label": "Text Input Label",
+        "default": "Text:"
+      },
+      {
+        "type": "text",
+        "id": "placeholder_text",
+        "label": "Text Input Placeholder",
+        "default": "輸入刻印文字"
+      },
+      {
+        "type": "textarea",
+        "id": "text_engraving_instruction",
+        "label": "Engraving Instruction",
+        "default": "選擇字體，輸入專屬文字，專屬印記將鐫刻於您所選的刻印配件上。"
+      },
+      {
+        "type": "text",
+        "id": "error_beads_missing",
+        "label": "Missing Bead Error Message",
+        "default": "請為每個可見位置選擇寶石。"
+      },
+      {
+        "type": "text",
+        "id": "label_in_stock",
+        "label": "In Stock Label",
+        "default": "In stock:"
+      },
+      {
+        "type": "text",
+        "id": "label_out_of_stock",
+        "label": "Out of Stock Label",
+        "default": "Out of stock"
+      },
+      {
+        "type": "header",
+        "content": "Instructions Overlay"
+      },
+      {
+        "type": "text",
+        "id": "instruction_title",
+        "label": "Instruction Title",
+        "default": "打造專屬飾品"
+      },
+      {
+        "type": "textarea",
+        "id": "instruction_text",
+        "label": "Instruction Text",
+        "default": "點選寶石並於選單中指定材質，確認後即顯示於設計頁面。其他設計元素請直接於選單中選取"
+      },
+      {
+        "type": "header",
+        "content": "Size Guide Link"
+      },
+      {
+        "type": "url",
+        "id": "measure_link",
+        "label": "Size Guide Link"
+      },
+      {
+        "type": "text",
+        "id": "measure_link_text",
+        "label": "Size Guide Link Text",
+        "default": "How to measure wrist size ?"
+      },
+      {
+        "type": "header",
+        "content": "Accordion Content"
+      },
+      {
+        "type": "text",
+        "id": "policy_title",
+        "label": "Policy Accordion Title",
+        "default": "Policies"
+      },
+      {
+        "type": "richtext",
+        "id": "policy_content",
+        "label": "Policy Content"
+      },
+      {
+        "type": "text",
+        "id": "shipping_title",
+        "label": "Shipping Accordion Title",
+        "default": "Time estimate & Shipping"
+      },
+      {
+        "type": "richtext",
+        "id": "shipping_content",
+        "label": "Shipping Content"
+      },
+      {
+        "type": "header",
+        "content": "Bead Configuration"
+      },
+      {
+        "type": "number",
+        "id": "bead_size",
+        "label": "Bead Size (px)",
+        "default": 45,
+        "info": "Size of each bead in pixels"
+      },
+      {
+        "type": "number",
+        "id": "bead_radius",
+        "label": "Bead Circle Radius (%)",
+        "default": 41,
+        "info": "Distance from center to beads (percentage of container)"
+      },
+      {
+        "type": "number",
+        "id": "center_x",
+        "label": "Center X Position (%)",
+        "default": 50
+      },
+      {
+        "type": "number",
+        "id": "center_y",
+        "label": "Center Y Position (%)",
+        "default": 50
+      },
+      {
+        "type": "header",
+        "content": "Bead Count per Size"
+      },
+      {
+        "type": "number",
+        "id": "bead_count_xxs",
+        "label": "XXS Bead Count",
+        "default": 12
+      },
+      {
+        "type": "number",
+        "id": "bead_count_xs",
+        "label": "XS Bead Count",
+        "default": 13
+      },
+      {
+        "type": "number",
+        "id": "bead_count_s",
+        "label": "S Bead Count",
+        "default": 14
+      },
+      {
+        "type": "number",
+        "id": "bead_count_m",
+        "label": "M Bead Count",
+        "default": 15
+      },
+      {
+        "type": "number",
+        "id": "bead_count_l",
+        "label": "L Bead Count",
+        "default": 16
+      },
+      {
+        "type": "number",
+        "id": "bead_count_xl",
+        "label": "XL Bead Count",
+        "default": 17
+      },
+      {
+        "type": "number",
+        "id": "bead_count_xxl",
+        "label": "XXL Bead Count",
+        "default": 18
+      },
+      {
+        "type": "number",
+        "id": "bead_count_xxxl",
+        "label": "XXXL Bead Count",
+        "default": 19
+      },
+      {
+        "type": "number",
+        "id": "bead_count_4xl",
+        "label": "4XL Bead Count",
+        "default": 20
+      },
+      {
+        "type": "header",
+        "content": "Container Width per Size"
+      },
+      {
+        "type": "number",
+        "id": "width_xxs",
+        "label": "XXS Container Width (px)",
+        "default": 300
+      },
+      {
+        "type": "number",
+        "id": "width_xs",
+        "label": "XS Container Width (px)",
+        "default": 320
+      },
+      {
+        "type": "number",
+        "id": "width_s",
+        "label": "S Container Width (px)",
+        "default": 340
+      },
+      {
+        "type": "number",
+        "id": "width_m",
+        "label": "M Container Width (px)",
+        "default": 380
+      },
+      {
+        "type": "number",
+        "id": "width_l",
+        "label": "L Container Width (px)",
+        "default": 410
+      },
+      {
+        "type": "number",
+        "id": "width_xl",
+        "label": "XL Container Width (px)",
+        "default": 440
+      },
+      {
+        "type": "number",
+        "id": "width_xxl",
+        "label": "XXL Container Width (px)",
+        "default": 470
+      },
+      {
+        "type": "number",
+        "id": "width_xxxl",
+        "label": "XXXL Container Width (px)",
+        "default": 500
+      },
+      {
+        "type": "number",
+        "id": "width_4xl",
+        "label": "4XL Container Width (px)",
+        "default": 510
+      },
+      {
+        "type": "header",
+        "content": "Gap Adjustments per Size"
+      },
+      {
+        "type": "number",
+        "id": "gap_xxs",
+        "label": "XXS Gap Adjustment (degrees)",
+        "default": 0,
+        "info": "Additional gap for this size"
+      },
+      {
+        "type": "number",
+        "id": "gap_xs",
+        "label": "XS Gap Adjustment (degrees)",
+        "default": 0
+      },
+      {
+        "type": "number",
+        "id": "gap_s",
+        "label": "S Gap Adjustment (degrees)",
+        "default": 0
+      },
+      {
+        "type": "number",
+        "id": "gap_m",
+        "label": "M Gap Adjustment (degrees)",
+        "default": 0
+      },
+      {
+        "type": "number",
+        "id": "gap_l",
+        "label": "L Gap Adjustment (degrees)",
+        "default": 0
+      },
+      {
+        "type": "number",
+        "id": "gap_xl",
+        "label": "XL Gap Adjustment (degrees)",
+        "default": 0
+      },
+      {
+        "type": "number",
+        "id": "gap_xxl",
+        "label": "XXL Gap Adjustment (degrees)",
+        "default": 0
+      },
+      {
+        "type": "number",
+        "id": "gap_xxxl",
+        "label": "XXXL Gap Adjustment (degrees)",
+        "default": 0
+      },
+      {
+        "type": "number",
+        "id": "gap_4xl",
+        "label": "4XL Gap Adjustment (degrees)",
+        "default": 0
+      },
+      {
+        "type": "header",
+        "content": "Quadrant-Specific Gap Adjustments"
+      },
+      {
+        "type": "number",
+        "id": "gap_top",
+        "label": "Top Quadrant Gap (degrees)",
+        "default": 0,
+        "info": "Additional gap for beads at top"
+      },
+      {
+        "type": "number",
+        "id": "gap_right",
+        "label": "Right Quadrant Gap (degrees)",
+        "default": 0
+      },
+      {
+        "type": "number",
+        "id": "gap_bottom",
+        "label": "Bottom Quadrant Gap (degrees)",
+        "default": 0
+      },
+      {
+        "type": "number",
+        "id": "gap_left",
+        "label": "Left Quadrant Gap (degrees)",
+        "default": 0
+      },
+
+          {
+  "type": "header",
+  "content": "Fixed Parts (All Sizes)"
+},
+{
+  "type": "paragraph",
+  "content": "These settings apply to ALL sizes regardless of bead count"
+},
+{
+  "type": "checkbox",
+  "id": "fixed_part_1_enabled",
+  "label": "Enable Fixed Part 1",
+  "default": false
+},
+{
+  "type": "range",
+  "id": "fixed_part_1_angle",
+  "label": "Part 1 Center Angle (degrees)",
+  "min": 0,
+  "max": 360,
+  "step": 5,
+  "default": 0,
+  "info": "0° = top, 90° = right, 180° = bottom, 270° = left"
+},
+{
+  "type": "range",
+  "id": "fixed_part_1_width",
+  "label": "Part 1 Reserved Width (degrees)",
+  "min": 0,
+  "max": 180,
+  "step": 3,
+  "default": 30,
+  "info": "How many degrees this part occupies"
+},
+{
+  "type": "checkbox",
+  "id": "fixed_part_2_enabled",
+  "label": "Enable Fixed Part 2",
+  "default": false
+},
+{
+  "type": "range",
+  "id": "fixed_part_2_angle",
+  "label": "Part 2 Center Angle (degrees)",
+  "min": 0,
+  "max": 360,
+  "step": 4,
+  "default": 120
+},
+{
+  "type": "range",
+  "id": "fixed_part_2_width",
+  "label": "Part 2 Reserved Width (degrees)",
+  "min": 0,
+  "max": 180,
+  "step": 2,
+  "default": 30
+},
+{
+  "type": "checkbox",
+  "id": "fixed_part_3_enabled",
+  "label": "Enable Fixed Part 3",
+  "default": false
+},
+{
+  "type": "range",
+  "id": "fixed_part_3_angle",
+  "label": "Part 3 Center Angle (degrees)",
+  "min": 0,
+  "max": 360,
+  "step": 4,
+  "default": 240
+},
+{
+  "type": "range",
+  "id": "fixed_part_3_width",
+  "label": "Part 3 Reserved Width (degrees)",
+  "min": 0,
+  "max": 180,
+  "step": 2,
+  "default": 30
+},
+{
+  "type": "header",
+  "content": "Static Bead Pair Images"
+},
+{
+  "type": "paragraph",
+  "content": "Images 1-2: Position-based (between specific bead indices). Images 3-4: Fixed at exact top and bottom of circle"
+},
+{
+  "type": "checkbox",
+  "id": "static_image_1_enabled",
+  "label": "Enable Static Image 1 (Position-based)",
+  "default": false
+},
+{
+  "type": "image_picker",
+  "id": "static_image_1",
+  "label": "Static Image 1"
+},
+{
+  "type": "range",
+  "id": "static_image_1_position",
+  "label": "Global Fallback Position (bead index)",
+  "min": 1,
+  "max": 24,
+  "step": 1,
+  "default": 6,
+  "info": "Used if per‑size value is not set"
+},
+{
+  "type": "range",
+  "id": "static_image_1_position_xxs",
+  "label": "Image 1 Position (XXS)",
+  "min": 1,
+  "max": 24,
+  "step": 1,
+  "default": 6
+},
+{
+  "type": "range",
+  "id": "static_image_1_position_xs",
+  "label": "Image 1 Position (XS)",
+  "min": 1,
+  "max": 24,
+  "step": 1,
+  "default": 6
+},
+{
+  "type": "range",
+  "id": "static_image_1_position_s",
+  "label": "Image 1 Position (S)",
+  "min": 1,
+  "max": 24,
+  "step": 1,
+  "default": 6
+},
+{
+  "type": "range",
+  "id": "static_image_1_position_m",
+  "label": "Image 1 Position (M)",
+  "min": 1,
+  "max": 24,
+  "step": 1,
+  "default": 6
+},
+{
+  "type": "range",
+  "id": "static_image_1_position_l",
+  "label": "Image 1 Position (L)",
+  "min": 1,
+  "max": 24,
+  "step": 1,
+  "default": 6
+},
+{
+  "type": "range",
+  "id": "static_image_1_position_xl",
+  "label": "Image 1 Position (XL)",
+  "min": 1,
+  "max": 24,
+  "step": 1,
+  "default": 6
+},
+{
+  "type": "range",
+  "id": "static_image_1_position_xxl",
+  "label": "Image 1 Position (XXL)",
+  "min": 1,
+  "max": 24,
+  "step": 1,
+  "default": 6
+},
+{
+  "type": "range",
+  "id": "static_image_1_position_xxxl",
+  "label": "Image 1 Position (XXXL)",
+  "min": 1,
+  "max": 24,
+  "step": 1,
+  "default": 6
+},
+{
+  "type": "range",
+  "id": "static_image_1_position_4xl",
+  "label": "Image 1 Position (4XL)",
+  "min": 1,
+  "max": 24,
+  "step": 1,
+  "default": 6
+},
+{
+  "type": "range",
+  "id": "static_image_1_offset",
+  "label": "Image 1 Offset from Center (%)",
+  "min": -50,
+  "max": 50,
+  "step": 1,
+  "default": 0
+},
+{
+  "type": "range",
+  "id": "static_image_1_rotation",
+  "label": "Image 1 Rotation (degrees)",
+  "min": -180,
+  "max": 180,
+  "step": 5,
+  "default": 0
+},
+{
+  "type": "number",
+  "id": "static_image_1_width",
+  "label": "Image 1 Width (px)",
+  "default": 40
+},
+{
+  "type": "number",
+  "id": "static_image_1_height",
+  "label": "Image 1 Height (px)",
+  "default": 40
+},
+{
+  "type": "checkbox",
+  "id": "static_image_2_enabled",
+  "label": "Enable Static Image 2 (Position-based)",
+  "default": false
+},
+{
+  "type": "image_picker",
+  "id": "static_image_2",
+  "label": "Static Image 2"
+},
+{
+  "type": "range",
+  "id": "static_image_2_position",
+  "label": "Global Fallback Position (bead index)",
+  "min": 1,
+  "max": 24,
+  "step": 1,
+  "default": 12
+},
+{
+  "type": "range",
+  "id": "static_image_2_position_xxs",
+  "label": "Image 2 Position (XXS)",
+  "min": 1,
+  "max": 24,
+  "step": 1,
+  "default": 12
+},
+{
+  "type": "range",
+  "id": "static_image_2_position_xs",
+  "label": "Image 2 Position (XS)",
+  "min": 1,
+  "max": 24,
+  "step": 1,
+  "default": 12
+},
+{
+  "type": "range",
+  "id": "static_image_2_position_s",
+  "label": "Image 2 Position (S)",
+  "min": 1,
+  "max": 24,
+  "step": 1,
+  "default": 12
+},
+{
+  "type": "range",
+  "id": "static_image_2_position_m",
+  "label": "Image 2 Position (M)",
+  "min": 1,
+  "max": 24,
+  "step": 1,
+  "default": 12
+},
+{
+  "type": "range",
+  "id": "static_image_2_position_l",
+  "label": "Image 2 Position (L)",
+  "min": 1,
+  "max": 24,
+  "step": 1,
+  "default": 12
+},
+{
+  "type": "range",
+  "id": "static_image_2_position_xl",
+  "label": "Image 2 Position (XL)",
+  "min": 1,
+  "max": 24,
+  "step": 1,
+  "default": 12
+},
+{
+  "type": "range",
+  "id": "static_image_2_position_xxl",
+  "label": "Image 2 Position (XXL)",
+  "min": 1,
+  "max": 24,
+  "step": 1,
+  "default": 12
+},
+{
+  "type": "range",
+  "id": "static_image_2_position_xxxl",
+  "label": "Image 2 Position (XXXL)",
+  "min": 1,
+  "max": 24,
+  "step": 1,
+  "default": 12
+},
+{
+  "type": "range",
+  "id": "static_image_2_position_4xl",
+  "label": "Image 2 Position (4XL)",
+  "min": 1,
+  "max": 24,
+  "step": 1,
+  "default": 12
+},
+{
+  "type": "range",
+  "id": "static_image_2_offset",
+  "label": "Image 2 Offset from Center (%)",
+  "min": -50,
+  "max": 50,
+  "step": 1,
+  "default": 0
+},
+{
+  "type": "range",
+  "id": "static_image_2_rotation",
+  "label": "Image 2 Rotation (degrees)",
+  "min": -180,
+  "max": 180,
+  "step": 5,
+  "default": 0
+},
+{
+  "type": "number",
+  "id": "static_image_2_width",
+  "label": "Image 2 Width (px)",
+  "default": 40
+},
+{
+  "type": "number",
+  "id": "static_image_2_height",
+  "label": "Image 2 Height (px)",
+  "default": 40
+},
+{
+  "type": "header",
+  "content": "Fixed Top/Bottom (Exact Positions)"
+},
+{
+  "type": "checkbox",
+  "id": "static_image_3_enabled",
+  "label": "Enable Static Image 3 (Fixed - TOP of Circle)",
+  "default": false
+},
+{
+  "type": "image_picker",
+  "id": "static_image_3",
+  "label": "Static Image 3 (TOP)"
+},
+{
+  "type": "range",
+  "id": "static_image_3_offset",
+  "label": "Image 3 Offset from Center (%)",
+  "min": -50,
+  "max": 50,
+  "step": 1,
+  "default": 0
+},
+{
+  "type": "range",
+  "id": "static_image_3_rotation",
+  "label": "Image 3 Rotation (degrees)",
+  "min": -180,
+  "max": 180,
+  "step": 5,
+  "default": 0,
+  "info": "0° = upright at top"
+},
+{
+  "type": "number",
+  "id": "static_image_3_width",
+  "label": "Image 3 Width (px)",
+  "default": 50
+},
+{
+  "type": "number",
+  "id": "static_image_3_height",
+  "label": "Image 3 Height (px)",
+  "default": 50
+},
+{
+  "type": "checkbox",
+  "id": "static_image_4_enabled",
+  "label": "Enable Static Image 4 (Fixed - BOTTOM of Circle)",
+  "default": false
+},
+{
+  "type": "image_picker",
+  "id": "static_image_4",
+  "label": "Static Image 4 (BOTTOM)"
+},
+{
+  "type": "range",
+  "id": "static_image_4_offset",
+  "label": "Image 4 Offset from Center (%)",
+  "min": -50,
+  "max": 50,
+  "step": 1,
+  "default": 0
+},
+{
+  "type": "range",
+  "id": "static_image_4_rotation",
+  "label": "Image 4 Rotation (degrees)",
+  "min": -180,
+  "max": 180,
+  "step": 5,
+  "default": 180,
+  "info": "180° = upright at bottom"
+},
+{
+  "type": "number",
+  "id": "static_image_4_width",
+  "label": "Image 4 Width (px)",
+  "default": 50
+},
+{
+  "type": "number",
+  "id": "static_image_4_height",
+  "label": "Image 4 Height (px)",
+  "default": 50
+},
+{
+  "type": "range",
+  "id": "static_image_1_extra_spacing",
+  "label": "Image 1 Extra Spacing (degrees)",
+  "min": 0,
+  "max": 60,
+  "step": 1,
+  "default": 0,
+  "info": "Extra angular gap between the two beads that flank this image"
+},
+{
+  "type": "range",
+  "id": "static_image_2_extra_spacing",
+  "label": "Image 2 Extra Spacing (degrees)",
+  "min": 0,
+  "max": 60,
+  "step": 1,
+  "default": 0
+},
+{
+  "type": "header",
+  "content": "Equal Spacing Control"
+},
+{
+  "type": "paragraph",
+  "content": "Control equal spacing between beads for perfect alignment"
+},
+{
+  "type": "range",
+  "id": "equal_spacing",
+  "label": "Equal Spacing Adjustment (degrees)",
+  "min": -20,
+  "max": 20,
+  "step": 0.5,
+  "default": 0,
+  "info": "Fine-tune equal spacing between all beads (+ = more space, - = less space)"
+}
+    ],
+      "presets": [
+    {
+      "name": "Automation 1"
+    }
+  ]
+  }
+{% endschema %}

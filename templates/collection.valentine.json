@@ -1,0 +1,381 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "image_with_text_qAQghF": {
+      "type": "image-with-text",
+      "blocks": {
+        "subheading_LJJEnf": {
+          "type": "subheading",
+          "settings": {
+            "text": "光年雋戀 • 愛之箋緣"
+          }
+        },
+        "heading_Mg7E8N": {
+          "type": "heading",
+          "settings": {
+            "text": "Valentine Gift Guide",
+            "heading_tag": "h1"
+          }
+        },
+        "heading_PHekba": {
+          "type": "heading",
+          "settings": {
+            "text": "活動已結束",
+            "heading_tag": "h1"
+          }
+        },
+        "richtext_C4CqLE": {
+          "type": "richtext",
+          "settings": {
+            "content": "<p>九折禮遇，為摯愛挑選最動人的時光</p><p>附贈精緻禮盒包裝｜<a href=\"/pages/gift-packaging\" title=\"禮品包裝\">查看細節</a></p>"
+          }
+        },
+        "button_GBPCeG": {
+          "type": "button",
+          "settings": {
+            "style": "solid",
+            "text": "繼續購物",
+            "url": "/",
+            "background": "",
+            "text_color": ""
+          }
+        }
+      },
+      "block_order": [
+        "subheading_LJJEnf",
+        "heading_Mg7E8N",
+        "heading_PHekba",
+        "richtext_C4CqLE",
+        "button_GBPCeG"
+      ],
+      "settings": {
+        "color_scheme": "scheme-0f9c1c1c-1203-4ab3-b91e-6f96a41ceb2d",
+        "separate_section_with_border": true,
+        "image": "shopify://shop_images/2025-valentine-couple-day-landing-collection.jpg",
+        "reveal_on_scroll": true,
+        "image_position": "start",
+        "content_width": "sm",
+        "remove_vertical_spacing": true
+      }
+    },
+    "collection-banner": {
+      "type": "collection-banner",
+      "disabled": true,
+      "custom_css": [],
+      "settings": {
+        "color_scheme": "",
+        "image": "{{ collection.metafields.my_fields.collection_banner_pc.value }}",
+        "mobile_image": "{{ collection.metafields.my_fields.collection_banner_mb.value }}",
+        "image_size": "auto",
+        "allow_transparent_header": false,
+        "reveal": true,
+        "enable_parallax": false,
+        "show_image": true,
+        "show_collection_title": true,
+        "show_collection_description": true,
+        "show_breadcrumb": true,
+        "content_width": "xs",
+        "overlay_color": "#000000",
+        "overlay_opacity": 21
+      }
+    },
+    "scrolling_content_3b4KAC": {
+      "type": "scrolling-content",
+      "blocks": {
+        "text_iwRTzn": {
+          "type": "text",
+          "settings": {
+            "text": "<strong>♥ 為摯愛珍藏此刻：結帳輸入【25VLTGIFT】精選禮物系列 九折禮遇  ♥</strong>"
+          }
+        }
+      },
+      "block_order": [
+        "text_iwRTzn"
+      ],
+      "disabled": true,
+      "settings": {
+        "separate_section_with_border": false,
+        "scrolling_speed": 0.2,
+        "scroll_direction": "left",
+        "pause_on_hover": true,
+        "text_font": "heading",
+        "text_font_size_mobile": 14,
+        "text_font_size_desktop": 14,
+        "section_vertical_spacing_mobile": 20,
+        "section_vertical_spacing_desktop": 20,
+        "item_horizontal_spacing_mobile": 80,
+        "item_horizontal_spacing_desktop": 120,
+        "background": "#395674",
+        "text_color": "#efefef"
+      }
+    },
+    "multi_column_brfbxd": {
+      "type": "multi-column",
+      "blocks": {
+        "image_with_text_Yi6Gbx": {
+          "type": "image_with_text",
+          "settings": {
+            "image": "shopify://shop_images/citrine-raw-rough-crystal-points-irregular.jpg",
+            "title": "",
+            "heading_tag": "h3",
+            "content": "<p>黃水晶 晶牙</p>",
+            "link_url": "",
+            "link_text": ""
+          }
+        },
+        "image_with_text_Fy6KkR": {
+          "type": "image_with_text",
+          "settings": {
+            "image": "shopify://shop_images/crystal-healing-2.jpg",
+            "title": "",
+            "heading_tag": "h3",
+            "content": "<p>紫雲母 消磁石</p>",
+            "link_url": "",
+            "link_text": ""
+          }
+        },
+        "image_with_text_cD6kjW": {
+          "type": "image_with_text",
+          "settings": {
+            "image": "shopify://shop_images/rose_quartz_crystal_chips.jpg",
+            "title": "",
+            "heading_tag": "h3",
+            "content": "<p>粉晶 消磁石</p>",
+            "link_url": "",
+            "link_text": ""
+          }
+        },
+        "image_with_text_4bAkJJ": {
+          "type": "image_with_text",
+          "settings": {
+            "image": "shopify://shop_images/amethyst-raw-rough-crystal-points-irregular.jpg",
+            "title": "",
+            "heading_tag": "h3",
+            "content": "<p>紫水晶 晶牙</p>",
+            "link_url": "",
+            "link_text": ""
+          }
+        },
+        "image_with_text_T773yd": {
+          "type": "image_with_text",
+          "settings": {
+            "image": "shopify://shop_images/moonstone_crystal_chips.jpg",
+            "title": "",
+            "heading_tag": "h3",
+            "content": "<p>月光石 消磁石</p>",
+            "link_url": "",
+            "link_text": ""
+          }
+        }
+      },
+      "block_order": [
+        "image_with_text_Yi6Gbx",
+        "image_with_text_Fy6KkR",
+        "image_with_text_cD6kjW",
+        "image_with_text_4bAkJJ",
+        "image_with_text_T773yd"
+      ],
+      "disabled": true,
+      "custom_css": [],
+      "settings": {
+        "color_scheme": "scheme-1b02ad27-67f6-4363-902b-7afc4c7eb905",
+        "separate_section_with_border": true,
+        "columns_per_row": 5,
+        "stack_on_mobile": false,
+        "overlap_image": false,
+        "content_alignment": "center",
+        "text_alignment": "center",
+        "spacing": "xs",
+        "subheading": "",
+        "title": "2025蛇年開運水晶贈禮",
+        "content": "<h5>單筆訂單滿 $8,000 </h5><h5>即贈年運能量天然水晶消磁石1件（約50g）</h5><h6>特選四色水晶，映照蛇年四季能量，守護整年順遂</h6><p>* 以下贈品將隨機搭配出貨，由配送中心專人配置，無需加入購物車</p><p>* 數量有限，送完為止，且恕不接受退換</p>"
+      }
+    },
+    "featured_collections_mjAznX": {
+      "type": "featured-collections",
+      "blocks": {
+        "collection_qzpDhK": {
+          "type": "collection",
+          "settings": {
+            "collection": "valentines-day-gift-ideas",
+            "products_count": 50,
+            "title": "",
+            "link_url": "",
+            "link_text": ""
+          }
+        }
+      },
+      "block_order": [
+        "collection_qzpDhK"
+      ],
+      "disabled": true,
+      "settings": {
+        "color_scheme": "scheme-1b02ad27-67f6-4363-902b-7afc4c7eb905",
+        "separate_section_with_border": true,
+        "hide_product_information": false,
+        "stack_products": true,
+        "products_per_row_mobile": "2",
+        "products_per_row_desktop": 5,
+        "horizontal_spacing_factor": 1.5,
+        "vertical_spacing_factor": 1.5,
+        "subheading": ""
+      }
+    },
+    "main": {
+      "type": "main-collection",
+      "disabled": true,
+      "settings": {
+        "color_scheme": "scheme-2",
+        "hide_product_information": false,
+        "products_per_page": 12,
+        "products_per_row_mobile": "2",
+        "products_size_desktop": "medium",
+        "show_grid_mode_selector": false,
+        "horizontal_spacing_factor": 1,
+        "vertical_spacing_factor": 1,
+        "filter_layout": "sidebar",
+        "quick_links_menu": "",
+        "show_sort_by": true,
+        "show_filters": false,
+        "show_results_count": false,
+        "show_filter_group_name": false,
+        "show_filter_values_count": true,
+        "open_filters_by_default": false
+      }
+    },
+    "recently-viewed-products": {
+      "type": "recently-viewed-products",
+      "disabled": true,
+      "settings": {
+        "separate_section_with_border": true,
+        "color_scheme": "scheme-2",
+        "hide_product_information": false,
+        "stack_products": false,
+        "products_count": 9,
+        "products_per_row_mobile": "2",
+        "products_per_row_desktop": 4,
+        "horizontal_spacing_factor": 1,
+        "vertical_spacing_factor": 1,
+        "subheading": "",
+        "title": "歷史瀏覽商品",
+        "content": ""
+      }
+    },
+    "media_grid_e9jUnn": {
+      "type": "media-grid",
+      "blocks": {
+        "image_LqUbxW": {
+          "type": "image",
+          "settings": {
+            "color_scheme": "",
+            "image": "shopify://shop_images/2025-valentine-landing-for-her.jpg",
+            "column_count": "6",
+            "row_count": 2,
+            "title": "FOR HER",
+            "heading_tag": "h4",
+            "content": "",
+            "link_text": "",
+            "link_url": "shopify://collections/gifts-for-her",
+            "link_style": "link",
+            "text_position": "place-self-end text-end",
+            "overlay_color": "#395674",
+            "overlay_opacity": 15
+          }
+        },
+        "image_LEpmNt": {
+          "type": "image",
+          "settings": {
+            "color_scheme": "",
+            "image": "shopify://shop_images/2025-valentine-landing-for-him.jpg",
+            "column_count": "6",
+            "row_count": 2,
+            "title": "FOR HIM",
+            "heading_tag": "h4",
+            "content": "",
+            "link_text": "",
+            "link_url": "shopify://collections/gifts-for-him",
+            "link_style": "link",
+            "text_position": "place-self-end text-end",
+            "overlay_color": "#395674",
+            "overlay_opacity": 15
+          }
+        },
+        "image_Q6rHhJ": {
+          "type": "image",
+          "settings": {
+            "color_scheme": "",
+            "image": "shopify://shop_images/kol-female_2.jpg",
+            "column_count": "6",
+            "row_count": 2,
+            "title": "ALL WOMEN'S",
+            "heading_tag": "h4",
+            "content": "",
+            "link_text": "",
+            "link_url": "shopify://collections/women-jewelry",
+            "link_style": "link",
+            "text_position": "place-self-end text-end",
+            "overlay_color": "#395674",
+            "overlay_opacity": 15
+          }
+        },
+        "image_Agx3NR": {
+          "type": "image",
+          "settings": {
+            "color_scheme": "",
+            "image": "shopify://shop_images/dumortierite_cross_necklace_5.jpg",
+            "column_count": "6",
+            "row_count": 2,
+            "title": "ALL MEN'S",
+            "heading_tag": "h4",
+            "content": "",
+            "link_text": "",
+            "link_url": "shopify://collections/men-jewelry",
+            "link_style": "link",
+            "text_position": "place-self-end text-end",
+            "overlay_color": "#395674",
+            "overlay_opacity": 15
+          }
+        }
+      },
+      "block_order": [
+        "image_LqUbxW",
+        "image_LEpmNt",
+        "image_Q6rHhJ",
+        "image_Agx3NR"
+      ],
+      "disabled": true,
+      "custom_css": [
+        "media-grid {grid-column-gap: 2px; grid-row-gap: 2px;}"
+      ],
+      "settings": {
+        "color_scheme": "scheme-1b02ad27-67f6-4363-902b-7afc4c7eb905",
+        "separate_section_with_border": true,
+        "desktop_row_height": 350,
+        "mobile_row_height": 200,
+        "section_width": "full",
+        "spacing": "none",
+        "subheading": "",
+        "title": "尋找更多禮物靈感",
+        "content": ""
+      }
+    }
+  },
+  "order": [
+    "image_with_text_qAQghF",
+    "collection-banner",
+    "scrolling_content_3b4KAC",
+    "multi_column_brfbxd",
+    "featured_collections_mjAznX",
+    "main",
+    "recently-viewed-products",
+    "media_grid_e9jUnn"
+  ]
+}

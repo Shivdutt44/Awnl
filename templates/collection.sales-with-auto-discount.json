@@ -1,0 +1,220 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "collection-banner": {
+      "type": "collection-banner",
+      "custom_css": [],
+      "settings": {
+        "color_scheme": "scheme-2",
+        "image": "{{ collection.metafields.my_fields.collection_banner_pc.value }}",
+        "mobile_image": "{{ collection.metafields.my_fields.collection_banner_mb.value }}",
+        "image_size": "auto",
+        "allow_transparent_header": false,
+        "reveal": true,
+        "enable_parallax": false,
+        "show_image": true,
+        "show_collection_title": false,
+        "show_collection_description": false,
+        "show_breadcrumb": true,
+        "content_width": "xs",
+        "overlay_color": "#000000",
+        "overlay_opacity": 0
+      }
+    },
+    "multiple_media_with_text_RDLpwK": {
+      "type": "multiple-media-with-text",
+      "blocks": {
+        "image_NhjB79": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/aquamarine_ea230495-f2c1-4582-8c52-bd89dcc41378.jpg",
+            "rotation": 0
+          }
+        },
+        "image_NPgVan": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/7_dd926102-cba2-42bd-b568-68a7553bd4a0.jpg",
+            "rotation": 0
+          }
+        }
+      },
+      "block_order": [
+        "image_NhjB79",
+        "image_NPgVan"
+      ],
+      "settings": {
+        "color_scheme": "scheme-2",
+        "reveal_on_scroll": true,
+        "separate_section_with_border": false,
+        "media_position_desktop": "before_text",
+        "media_position_mobile": "before_text",
+        "media_layout": "overlap",
+        "media_alignment": "center",
+        "media_alignment_offset": 0,
+        "media_mobile_alignment_offset": 0,
+        "text_alignment": "center",
+        "subheading": "期待下次活動！",
+        "title": "活動已結束，感謝參與。",
+        "content": "<h4><strong>畢業季活動優惠</strong></h4><h5><strong>晶石能量骷髏頭的寓意</strong></h5><p>晶石能量骷髏頭象徵著力量、生命與智慧。這些晶石骷髏頭是用高品質的天然晶石精心雕刻而成，融合了大自然的能量與智慧，代表著新生與希望。送給畢業生這份禮物，不僅是對他們努力的肯定，更是對未來美好生活的祝願。傳遞力量與信心，鼓勵畢業生勇敢追求夢想，迎接人生的新篇章。</p><p>＊優惠自即日起至2024/06/20日止。僅限此活動商品頁。</p>",
+        "button_1_text": "",
+        "button_1_link": "",
+        "button_1_style": "link",
+        "button_2_text": "",
+        "button_2_link": "",
+        "button_2_style": "solid"
+      }
+    },
+    "main": {
+      "type": "main-collection",
+      "disabled": true,
+      "settings": {
+        "color_scheme": "scheme-2",
+        "hide_product_information": false,
+        "products_per_page": 20,
+        "products_per_row_mobile": "2",
+        "products_size_desktop": "medium",
+        "show_grid_mode_selector": true,
+        "horizontal_spacing_factor": 1.5,
+        "vertical_spacing_factor": 1,
+        "filter_layout": "drawer",
+        "quick_links_menu": "",
+        "show_sort_by": true,
+        "show_filters": true,
+        "show_results_count": true,
+        "show_filter_group_name": false,
+        "show_filter_values_count": true,
+        "open_filters_by_default": false
+      }
+    },
+    "a9b23a11-5fb6-4f48-8572-db578375598a": {
+      "type": "collection-list",
+      "blocks": {
+        "template--16043850956980__a9b23a11-5fb6-4f48-8572-db578375598a-collection-1": {
+          "type": "collection",
+          "settings": {
+            "color_scheme": "scheme-4",
+            "collection": "{{ collection.metafields.my_fields.sub_collection_a.value }}",
+            "image": "{{ block.settings.collection.metafields.my_fields.collection_banner_mb.value }}",
+            "expand_collection": false,
+            "content_position": "place-self-end-center text-center",
+            "subheading": "",
+            "title": "",
+            "button_text": "{{ block.settings.collection.title }}",
+            "button_link": "",
+            "button_style": "solid",
+            "overlay_color": "#000000",
+            "overlay_opacity": 0
+          }
+        },
+        "template--16043850956980__a9b23a11-5fb6-4f48-8572-db578375598a-collection-2": {
+          "type": "collection",
+          "settings": {
+            "color_scheme": "scheme-4",
+            "collection": "{{ collection.metafields.my_fields.sub_collection_b.value }}",
+            "image": "{{ block.settings.collection.metafields.my_fields.collection_banner_mb.value }}",
+            "expand_collection": false,
+            "content_position": "place-self-end-center text-center",
+            "subheading": "",
+            "title": "",
+            "button_text": "{{ block.settings.collection.title }}",
+            "button_link": "",
+            "button_style": "solid",
+            "overlay_color": "#000000",
+            "overlay_opacity": 0
+          }
+        },
+        "template--16043850956980__a9b23a11-5fb6-4f48-8572-db578375598a-collection-3": {
+          "type": "collection",
+          "settings": {
+            "color_scheme": "scheme-4",
+            "collection": "{{ collection.metafields.my_fields.sub_colleciton_c.value }}",
+            "image": "{{ block.settings.collection.metafields.my_fields.collection_banner_mb.value }}",
+            "expand_collection": false,
+            "content_position": "place-self-end-center text-center",
+            "subheading": "",
+            "title": "",
+            "button_text": "{{ block.settings.collection.title }}",
+            "button_link": "",
+            "button_style": "solid",
+            "overlay_color": "#000000",
+            "overlay_opacity": 0
+          }
+        }
+      },
+      "block_order": [
+        "template--16043850956980__a9b23a11-5fb6-4f48-8572-db578375598a-collection-1",
+        "template--16043850956980__a9b23a11-5fb6-4f48-8572-db578375598a-collection-2",
+        "template--16043850956980__a9b23a11-5fb6-4f48-8572-db578375598a-collection-3"
+      ],
+      "custom_css": [
+        ".button {background: transparent; border: none; color: white; text-decoration: none; position: relative; padding: 5px; display: inline-block; line-height: 1.6; border-bottom: 1px solid transparent; background-image: linear-gradient(to right, white, white); background-size: 100% 2px; background-repeat: no-repeat; background-position: 0% 100%; transition: background-size 0.8s ease-in-out;}",
+        ".button:hover {background-size: 0% 2px;}",
+        ".collection-card img {width: 100%; height: auto; aspect-ratio: 1 / 1; object-fit: cover; object-position: center;}"
+      ],
+      "settings": {
+        "color_scheme": "scheme-2",
+        "separate_section_with_border": true,
+        "image_size": "auto",
+        "show_text_outside": false,
+        "space_items": true,
+        "stack_collections": false,
+        "collections_per_row_mobile": "1",
+        "collections_per_row_desktop": 3,
+        "subheading": "",
+        "title": "More Inspirations",
+        "content": "<p>探索更多系列靈感</p>"
+      }
+    },
+    "recently-viewed-products": {
+      "type": "recently-viewed-products",
+      "disabled": true,
+      "settings": {
+        "separate_section_with_border": true,
+        "color_scheme": "scheme-2",
+        "hide_product_information": false,
+        "stack_products": false,
+        "products_count": 9,
+        "products_per_row_mobile": "2",
+        "products_per_row_desktop": 4,
+        "horizontal_spacing_factor": 1,
+        "vertical_spacing_factor": 1,
+        "subheading": "",
+        "title": "歷史瀏覽商品",
+        "content": ""
+      }
+    },
+    "multi_column_LPLWWd": {
+      "type": "multi-column",
+      "settings": {
+        "color_scheme": "scheme-2",
+        "separate_section_with_border": true,
+        "columns_per_row": 3,
+        "stack_on_mobile": false,
+        "overlap_image": false,
+        "content_alignment": "start",
+        "text_alignment": "start",
+        "spacing": "md",
+        "subheading": "About",
+        "title": "Multi-column",
+        "content": ""
+      }
+    }
+  },
+  "order": [
+    "collection-banner",
+    "multiple_media_with_text_RDLpwK",
+    "main",
+    "a9b23a11-5fb6-4f48-8572-db578375598a",
+    "recently-viewed-products",
+    "multi_column_LPLWWd"
+  ]
+}

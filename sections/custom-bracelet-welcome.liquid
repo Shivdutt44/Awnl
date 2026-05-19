@@ -1,0 +1,1314 @@
+{% comment %} Load CSS Stylesheet {% endcomment %}
+{% comment %} {{ 'component-bracelet-welcome.css' | asset_url | stylesheet_tag }} {% endcomment %}
+
+<style>
+/* Global Styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  {% comment %} font-family: 'Helvetica Neue', Arial, sans-serif; {% endcomment %}
+  line-height: 1.6;
+  color: #333;
+  background-color: #fff;
+}
+
+.container {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+/* Header */
+.header {
+  padding: 20px 0;
+  text-align: center;
+}
+
+.logo {
+  max-width: 150px;
+  height: auto;
+}
+
+/* Hero Section */
+.hero {
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('{{ section.settings.hero_bg_image | img_url: 'master' }}');
+  background-size: cover;
+  background-position: center;
+  height: 80vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  color: #fff;
+  padding: 0 20px;
+}
+
+.hero h1 {
+  font-size: 3.5rem;
+  font-weight: 700;
+  margin-bottom: 20px;
+  text-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+  color: white !important;
+}
+
+.hero p {
+  font-size: 1.2rem;
+  max-width: 600px;
+  margin-bottom: 30px;
+}
+
+.btn-primary {
+  display: inline-block;
+  padding: 15px 40px;
+  background-color: #000;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 50px;
+  font-weight: 600;
+  font-size: 1.1rem;
+  transition: all 0.3s ease;
+  border: 2px solid #000;
+}
+
+.btn-primary:hover {
+  background-color: #fff;
+  color: #000;
+}
+
+/* Process Section */
+.process {
+  padding: 80px 0;
+  background-color: #fff;
+}
+
+.section-title {
+  text-align: center;
+  font-size: 2.5rem;
+  font-weight: 700;
+  margin-bottom: 50px;
+  position: relative;
+}
+
+.section-title:after {
+  content: '';
+  position: absolute;
+  bottom: -15px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 80px;
+  height: 3px;
+  background-color: #000;
+}
+
+.process-steps {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.step {
+  flex: 1;
+  min-width: 250px;
+  margin: 0 15px 30px;
+  text-align: center;
+  padding: 30px 20px;
+  background-color: #f9f9f9;
+  border-radius: 10px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+  transition: transform 0.3s ease;
+}
+
+.step:hover {
+  transform: translateY(-10px);
+}
+
+.step-icon {
+  width: 70px;
+  height: 70px;
+  background-color: #000;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto 20px;
+  font-size: 1.8rem;
+  color: #fff;
+}
+
+.step h3 {
+  font-size: 1.3rem;
+  margin-bottom: 15px;
+  color: #000;
+}
+
+.step p {
+  color: #666;
+}
+
+/* Video with Text Section */
+.video-text-section {
+  padding: 80px 0;
+  background-color: #f9f9f9;
+}
+
+.video-container {
+  display: flex;
+  align-items: center;
+  gap: 50px;
+}
+
+.video-wrapper {
+  flex: 1;
+  position: relative;
+  padding-bottom: 56.25%; /* 16:9 aspect ratio */
+  height: 0;
+  overflow: hidden;
+  border-radius: 10px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+}
+
+.video-wrapper video {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.video-content {
+  flex: 1;
+}
+
+.video-content h2 {
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+  color: #000;
+}
+
+.video-content p {
+  font-size: 1.1rem;
+  margin-bottom: 30px;
+  color: #666;
+}
+
+/* Video Marquee Section */
+.video-marquee {
+  padding: 60px 0;
+  background-color: #fff;
+  overflow: hidden;
+}
+
+.video-marquee-container {
+  display: flex;
+  animation: marquee 30s linear infinite;
+}
+
+.video-marquee:hover .video-marquee-container {
+  animation-play-state: paused;
+}
+
+.video-item {
+  flex: 0 0 300px;
+  height: 200px;
+  margin: 0 15px;
+  border-radius: 10px;
+  overflow: hidden;
+  cursor: pointer;
+  position: relative;
+}
+
+.video-item img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.3s ease;
+}
+
+.video-item:hover img {
+  transform: scale(1.05);
+}
+
+.video-item .play-icon {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 60px;
+  height: 60px;
+  background-color: rgba(255, 255, 255, 0.8);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 24px;
+  color: #000;
+}
+
+@keyframes marquee {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+}
+
+/* Video Modal */
+.video-modal {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.9);
+  z-index: 2000;
+  justify-content: center;
+  align-items: center;
+}
+
+.video-modal-content {
+  position: relative;
+  width: 80%;
+  max-width: 800px;
+}
+
+.video-modal video {
+  width: 100%;
+  height: auto;
+}
+
+.video-modal-close {
+  position: absolute;
+  top: -40px;
+  right: 0;
+  font-size: 30px;
+  color: #fff;
+  cursor: pointer;
+}
+
+/* USP Marquee Section */
+.usp-marquee {
+  padding: 40px 0;
+  background-color: #000;
+  color: #fff;
+  overflow: hidden;
+}
+
+.usp-marquee-container {
+  display: flex;
+  animation: marquee 20s linear infinite;
+  white-space: nowrap;
+}
+
+.usp-marquee:hover .usp-marquee-container {
+  animation-play-state: paused;
+}
+
+.usp-item {
+  flex: 0 0 auto;
+  padding: 0 30px;
+  font-size: 1.2rem;
+  font-weight: 600;
+  display: flex;
+  align-items: center;
+}
+
+.usp-item:before {
+  content: '✓';
+  margin-right: 10px;
+  color: #fff;
+}
+
+/* Reviews Section */
+.reviews {
+  padding: 80px 0;
+  background-color: #f9f9f9;
+}
+
+.reviews-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 30px;
+}
+
+.review {
+  padding: 30px;
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+  transition: transform 0.3s ease;
+  position: relative;
+}
+
+.review:hover {
+  transform: translateY(-10px);
+}
+
+.review:before {
+  content: '"';
+  position: absolute;
+  top: 20px;
+  left: 20px;
+  font-size: 60px;
+  color: rgba(0, 0, 0, 0.1);
+  font-family: Georgia, serif;
+}
+
+.review-header {
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+  z-index: 1;
+  position: relative;
+}
+
+.review-avatar {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background-color: #000;
+  color: #fff;
+  margin-right: 15px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: bold;
+}
+
+.review-info h4 {
+  font-size: 1.1rem;
+  margin-bottom: 5px;
+}
+
+.review-rating {
+  color: #f39c12;
+  margin-bottom: 15px;
+}
+
+.review-text {
+  color: #666;
+  font-style: italic;
+  z-index: 1;
+  position: relative;
+}
+
+/* Gallery Section */
+.gallery {
+  padding: 80px 0;
+  background-color: #fff;
+}
+
+.gallery-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 20px;
+}
+
+.gallery-item {
+  position: relative;
+  overflow: hidden;
+  border-radius: 10px;
+  height: 300px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+}
+
+.gallery-item:hover {
+  transform: translateY(-10px);
+}
+
+.gallery-item img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.5s ease;
+}
+
+.gallery-item:hover img {
+  transform: scale(1.1);
+}
+
+.gallery-overlay {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: linear-gradient(to top, rgba(0,0,0,0.8), transparent);
+  color: white;
+  padding: 20px;
+  transform: translateY(100%);
+  transition: transform 0.3s ease;
+}
+
+.gallery-item:hover .gallery-overlay {
+  transform: translateY(0);
+}
+
+.gallery-overlay h3 {
+  font-size: 1.3rem;
+  margin-bottom: 5px;
+}
+
+/* CTA Section */
+.cta {
+  padding: 100px 0;
+  background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url('{{ section.settings.cta_bg_image | img_url: 'master' }}');
+  background-size: cover;
+  background-position: center;
+  color: #fff;
+  text-align: center;
+}
+
+.cta h2 {
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+}
+
+.cta p {
+  font-size: 1.2rem;
+  max-width: 600px;
+  margin: 0 auto 30px;
+}
+
+.btn-secondary {
+  display: inline-block;
+  padding: 15px 40px;
+  background-color: #fff;
+  color: #000;
+  text-decoration: none;
+  border-radius: 50px;
+  font-weight: 600;
+  font-size: 1.1rem;
+  transition: all 0.3s ease;
+  border: 2px solid #fff;
+}
+
+.btn-secondary:hover {
+  background-color: #000;
+  color: #fff;
+}
+
+/* Modal Styles */
+.modal {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.7);
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+  padding: 20px;
+  box-sizing: border-box;
+}
+
+.modal-content {
+  background: #fff;
+  padding: 30px;
+  width: 100%;
+  max-width: 800px;
+  max-height: 90vh;
+  overflow-y: auto;
+  border-radius: 10px;
+  position: relative;
+  box-sizing: border-box;
+}
+
+.close {
+  position: absolute;
+  top: 15px;
+  right: 20px;
+  font-size: 30px;
+  cursor: pointer;
+  z-index: 10;
+}
+
+.bracelet-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 20px;
+  margin-top: 20px;
+}
+
+.bracelet {
+  border: 2px solid #e8ddd0;
+  border-radius: 10px;
+  padding: 15px;
+  text-align: center;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.bracelet:hover {
+  border-color: #000;
+  transform: translateY(-5px);
+}
+
+.bracelet.selected {
+  border-color: #000;
+}
+
+.bracelet img {
+  max-width: 100%;
+  height: auto;
+  margin-bottom: 10px;
+}
+
+.bracelet h3 {
+  font-size: 1rem;
+  margin-bottom: 5px;
+}
+
+.btn-modal {
+  padding: 12px 30px;
+  margin-top: 20px;
+  background: #000;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+  transition: all 0.3s ease;
+}
+
+.btn-modal:hover {
+  background: #333;
+}
+
+.btn-modal:disabled {
+  background: #ccc;
+  cursor: not-allowed;
+}
+
+/* Responsive Design */
+@media (max-width: 992px) {
+  .video-container {
+    flex-direction: column;
+  }
+  
+  .video-wrapper {
+    width: 100%;
+  }
+}
+
+@media (max-width: 768px) {
+  .hero h1 {
+    font-size: 2.5rem;
+  }
+  
+  .hero p {
+    font-size: 1rem;
+  }
+  
+  .section-title {
+    font-size: 2rem;
+  }
+  
+  .process-steps {
+    flex-direction: column;
+  }
+  
+  .step {
+    margin: 0 0 30px;
+  }
+  
+  .cta h2 {
+    font-size: 2rem;
+  }
+  
+  .gallery-grid {
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  }
+  
+  .video-item {
+    flex: 0 0 250px;
+    height: 150px;
+  }
+}
+
+@media (max-width: 480px) {
+  .hero {
+    height: 60vh;
+  }
+  
+  .hero h1 {
+    font-size: 2rem;
+  }
+  
+  .section-title {
+    font-size: 1.8rem;
+  }
+  
+  .bracelet-container {
+    grid-template-columns: 1fr;
+  }
+  
+  .reviews-container {
+    grid-template-columns: 1fr;
+  }
+  
+  .usp-item {
+    font-size: 1rem;
+    padding: 0 15px;
+  }
+}
+</style>
+
+<!-- Header -->
+<header class="header">
+  <div class="container">
+    {% if section.settings.logo != blank %}
+      <img src="{{ section.settings.logo | img_url: 'master' }}" alt="Logo" class="logo">
+    {% endif %}
+  </div>
+</header>
+
+<!-- Hero Section -->
+<section class="hero">
+  <h1>{{ section.settings.hero_title }}</h1>
+  <p>{{ section.settings.hero_description }}</p>
+  <a href="#" id="createBraceletBtn" class="btn-primary">{{ section.settings.hero_button_text }}</a>
+</section>
+
+<!-- Process Section -->
+<section class="process">
+  <div class="container">
+    <h2 class="section-title">{{ section.settings.process_title }}</h2>
+    <div class="process-steps">
+      {% for block in section.blocks %}
+        {% if block.type == 'process_step' %}
+          <div class="step">
+            <div class="step-icon">{{ block.settings.step_number }}</div>
+            <h3>{{ block.settings.step_title }}</h3>
+            <p>{{ block.settings.step_description }}</p>
+          </div>
+        {% endif %}
+      {% endfor %}
+    </div>
+  </div>
+</section>
+
+<!-- Video with Text Section -->
+{% for block in section.blocks %}
+  {% if block.type == 'video_with_text' %}
+    <section class="video-text-section">
+      <div class="container">
+        <div class="video-container">
+          <div class="video-wrapper">
+            {% if block.settings.video != blank %}
+              <video autoplay muted loop playsinline>
+                <source src="{{ block.settings.video.sources[1].url }}" type="video/mp4">
+                Your browser does not support the video tag.
+              </video>
+            {% else %}
+              <img src="https://picsum.photos/seed/video/800/450.jpg" alt="Video placeholder">
+            {% endif %}
+          </div>
+          <div class="video-content">
+            <h2>{{ block.settings.title }}</h2>
+            <p>{{ block.settings.description }}</p>
+            <a href="#" id="createBraceletBtn3" class="btn-primary">{{ block.settings.button_text }}</a>
+          </div>
+        </div>
+      </div>
+    </section>
+  {% endif %}
+{% endfor %}
+
+<!-- Video Marquee Section -->
+<section class="video-marquee">
+  <div class="container">
+    <h2 class="section-title">{{ section.settings.video_marquee_title }}</h2>
+    <div class="video-marquee-container">
+      {% for block in section.blocks %}
+        {% if block.type == 'video' %}
+          <div class="video-item" data-video-url="{{ block.settings.video.sources[1].url }}">
+            <img src="{{ block.settings.video.preview_image | img_url: 'medium' }}" alt="{{ block.settings.video_title }}">
+            <div class="play-icon">▶</div>
+          </div>
+        {% endif %}
+      {% endfor %}
+      <!-- Duplicate for seamless loop -->
+      {% for block in section.blocks %}
+        {% if block.type == 'video' %}
+          <div class="video-item" data-video-url="{{ block.settings.video.sources[1].url }}">
+            <img src="{{ block.settings.video.preview_image | img_url: 'medium' }}" alt="{{ block.settings.video_title }}">
+            <div class="play-icon">▶</div>
+          </div>
+        {% endif %}
+      {% endfor %}
+    </div>
+  </div>
+</section>
+
+<!-- USP Marquee Section -->
+<section class="usp-marquee">
+  <div class="usp-marquee-container">
+    {% for block in section.blocks %}
+      {% if block.type == 'usp' %}
+        <div class="usp-item">{{ block.settings.usp_text }}</div>
+      {% endif %}
+    {% endfor %}
+    <!-- Duplicate for seamless loop -->
+    {% for block in section.blocks %}
+      {% if block.type == 'usp' %}
+        <div class="usp-item">{{ block.settings.usp_text }}</div>
+      {% endif %}
+    {% endfor %}
+  </div>
+</section>
+
+<!-- Reviews Section -->
+<section class="reviews">
+  <div class="container">
+    <h2 class="section-title">{{ section.settings.reviews_title }}</h2>
+    <div class="reviews-container">
+      {% for block in section.blocks %}
+        {% if block.type == 'review' %}
+          <div class="review">
+            <div class="review-header">
+              <div class="review-avatar">{{ block.settings.reviewer_name | slice: 0 | upcase }}</div>
+              <div class="review-info">
+                <h4>{{ block.settings.reviewer_name }}</h4>
+                <div class="review-rating">
+                  {% for i in (1..5) %}
+                    {% if i <= block.settings.rating %}
+                      ★
+                    {% else %}
+                      ☆
+                    {% endif %}
+                  {% endfor %}
+                </div>
+              </div>
+            </div>
+            <p class="review-text">"{{ block.settings.review_text }}"</p>
+          </div>
+        {% endif %}
+      {% endfor %}
+    </div>
+  </div>
+</section>
+
+<!-- Gallery Section -->
+<section class="gallery">
+  <div class="container">
+    <h2 class="section-title">{{ section.settings.gallery_title }}</h2>
+    <div class="gallery-grid">
+      {% for block in section.blocks %}
+        {% if block.type == 'gallery_item' %}
+          <div class="gallery-item">
+            <img src="{{ block.settings.gallery_image | img_url: 'medium' }}" alt="{{ block.settings.gallery_title }}">
+            <div class="gallery-overlay">
+              <h3>{{ block.settings.gallery_title }}</h3>
+              <p>{{ block.settings.gallery_description }}</p>
+            </div>
+          </div>
+        {% endif %}
+      {% endfor %}
+    </div>
+  </div>
+</section>
+
+<!-- CTA Section -->
+<section class="cta">
+  <div class="container">
+    <h2>{{ section.settings.cta_title }}</h2>
+    <p>{{ section.settings.cta_description }}</p>
+    <a href="#" id="createBraceletBtn2" class="btn-secondary">{{ section.settings.cta_button_text }}</a>
+  </div>
+</section>
+
+<!-- Modal for Bracelet Selection -->
+<div class="modal" id="braceletModal">
+  <div class="modal-content">
+    <span class="close" id="closeModal">&times;</span>
+    <h2>Choose Your Bracelet Style</h2>
+    <div class="bracelet-container">
+      {% for product in collections['custom-bracelets'].products limit: 6 %}
+        <div class="bracelet" data-handle="{{ product.handle }}">
+          <img src="{{ product.featured_image | img_url: 'medium' }}" alt="{{ product.title }}">
+          <h3>{{ product.title }}</h3>
+        </div>
+      {% endfor %}
+    </div>
+    <button class="btn-modal" id="continueBtn" disabled>Continue</button>
+  </div>
+</div>
+
+<!-- Video Modal -->
+<div class="video-modal" id="videoModal">
+  <div class="video-modal-content">
+    <span class="video-modal-close" id="closeVideoModal">&times;</span>
+    <video id="modalVideo" controls autoplay>
+      <source src="" type="video/mp4">
+      Your browser does not support the video tag.
+    </video>
+  </div>
+</div>
+
+<script>
+  document.addEventListener('DOMContentLoaded', function() {
+    // Modal functionality
+    const createBraceletBtn = document.getElementById('createBraceletBtn');
+    const createBraceletBtn2 = document.getElementById('createBraceletBtn2');
+    const createBraceletBtn3 = document.getElementById('createBraceletBtn3');
+    const braceletModal = document.getElementById('braceletModal');
+    const closeModal = document.getElementById('closeModal');
+    const continueBtn = document.getElementById('continueBtn');
+    const braceletOptions = document.querySelectorAll('.bracelet');
+    let selectedBracelet = null;
+
+    // Open modal when create button is clicked
+    createBraceletBtn.addEventListener('click', function(e) {
+      e.preventDefault();
+      braceletModal.style.display = 'flex';
+    });
+
+    createBraceletBtn2.addEventListener('click', function(e) {
+      e.preventDefault();
+      braceletModal.style.display = 'flex';
+    });
+
+    if (createBraceletBtn3) {
+      createBraceletBtn3.addEventListener('click', function(e) {
+        e.preventDefault();
+        braceletModal.style.display = 'flex';
+      });
+    }
+
+    // Close modal when X is clicked
+    closeModal.addEventListener('click', function() {
+      braceletModal.style.display = 'none';
+    });
+
+    // Close modal when clicking outside
+    window.addEventListener('click', function(event) {
+      if (event.target === braceletModal) {
+        braceletModal.style.display = 'none';
+      }
+    });
+
+    // Handle bracelet selection
+    braceletOptions.forEach(option => {
+      option.addEventListener('click', function() {
+        // Remove selected class from all options
+        braceletOptions.forEach(opt => opt.classList.remove('selected'));
+        
+        // Add selected class to clicked option
+        this.classList.add('selected');
+        
+        // Store selected bracelet
+        selectedBracelet = this.dataset.handle;
+        
+        // Enable continue button
+        continueBtn.disabled = false;
+      });
+    });
+
+    // Handle continue button click
+    continueBtn.addEventListener('click', function() {
+      if (selectedBracelet) {
+        // Redirect to product page with custom view
+        window.location.href = `/products/${selectedBracelet}?view=create-bracelet`;
+      }
+    });
+    
+    // Video modal functionality
+    const videoItems = document.querySelectorAll('.video-item');
+    const videoModal = document.getElementById('videoModal');
+    const modalVideo = document.getElementById('modalVideo');
+    const closeVideoModal = document.getElementById('closeVideoModal');
+    
+    videoItems.forEach(item => {
+      item.addEventListener('click', function() {
+        const videoUrl = this.dataset.videoUrl;
+        modalVideo.src = videoUrl;
+        videoModal.style.display = 'flex';
+      });
+    });
+    
+    closeVideoModal.addEventListener('click', function() {
+      videoModal.style.display = 'none';
+      modalVideo.pause();
+      modalVideo.src = '';
+    });
+    
+    window.addEventListener('click', function(event) {
+      if (event.target === videoModal) {
+        videoModal.style.display = 'none';
+        modalVideo.pause();
+        modalVideo.src = '';
+      }
+    });
+  });
+</script>
+
+{% schema %}
+{
+  "name": "Custom Bracelet Landing",
+  "settings": [
+    {
+      "type": "image_picker",
+      "id": "logo",
+      "label": "Logo"
+    },
+    {
+      "type": "image_picker",
+      "id": "hero_bg_image",
+      "label": "Hero Background Image"
+    },
+    {
+      "type": "text",
+      "id": "hero_title",
+      "label": "Hero Title",
+      "default": "Create Your AWNL Meteorite Bracelet"
+    },
+    {
+      "type": "textarea",
+      "id": "hero_description",
+      "label": "Hero Description",
+      "default": "Design a unique bracelet with authentic meteorite and cosmic elements that reflect your personal story"
+    },
+    {
+      "type": "text",
+      "id": "hero_button_text",
+      "label": "Hero Button Text",
+      "default": "CREATE BRACELET"
+    },
+    {
+      "type": "text",
+      "id": "process_title",
+      "label": "Process Section Title",
+      "default": "How It Works"
+    },
+    {
+      "type": "text",
+      "id": "video_marquee_title",
+      "label": "Video Marquee Title",
+      "default": "AWNL Craftsmanship"
+    },
+    {
+      "type": "text",
+      "id": "reviews_title",
+      "label": "Reviews Section Title",
+      "default": "Customer Reviews"
+    },
+    {
+      "type": "text",
+      "id": "gallery_title",
+      "label": "Gallery Section Title",
+      "default": "AWNL Gallery"
+    },
+    {
+      "type": "image_picker",
+      "id": "cta_bg_image",
+      "label": "CTA Background Image"
+    },
+    {
+      "type": "text",
+      "id": "cta_title",
+      "label": "CTA Title",
+      "default": "Ready to Create Your Cosmic Masterpiece?"
+    },
+    {
+      "type": "textarea",
+      "id": "cta_description",
+      "label": "CTA Description",
+      "default": "Start designing your custom AWNL bracelet today and connect with the cosmos"
+    },
+    {
+      "type": "text",
+      "id": "cta_button_text",
+      "label": "CTA Button Text",
+      "default": "Continue"
+    }
+  ],
+  "blocks": [
+    {
+      "type": "process_step",
+      "name": "Process Step",
+      "settings": [
+        {
+          "type": "text",
+          "id": "step_number",
+          "label": "Step Number",
+          "default": "1"
+        },
+        {
+          "type": "text",
+          "id": "step_title",
+          "label": "Step Title",
+          "default": "Choose Your Base"
+        },
+        {
+          "type": "textarea",
+          "id": "step_description",
+          "label": "Step Description",
+          "default": "Select from our collection of authentic meteorite bracelet bases"
+        }
+      ]
+    },
+    {
+      "type": "video_with_text",
+      "name": "Video with Text",
+      "settings": [
+        {
+          "type": "video",
+          "id": "video",
+          "label": "Video"
+        },
+        {
+          "type": "text",
+          "id": "title",
+          "label": "Title",
+          "default": "The Art of Meteorite Crafting"
+        },
+        {
+          "type": "richtext",
+          "id": "description",
+          "label": "Description",
+          "default": "<p>Discover the meticulous process behind crafting our authentic meteorite bracelets. Each piece is handcrafted in Sweden with genuine space materials, creating a unique connection between you and the cosmos.</p>"
+        },
+        {
+          "type": "text",
+          "id": "button_text",
+          "label": "Button Text",
+          "default": "Start Creating"
+        }
+      ]
+    },
+    {
+      "type": "video",
+      "name": "Video",
+      "settings": [
+        {
+          "type": "video",
+          "id": "video",
+          "label": "Shopify Video"
+        },
+        {
+          "type": "text",
+          "id": "video_title",
+          "label": "Video Title",
+          "default": "AWNL Meteorite Crafting"
+        }
+      ]
+    },
+    {
+      "type": "usp",
+      "name": "USP Point",
+      "settings": [
+        {
+          "type": "text",
+          "id": "usp_text",
+          "label": "USP Text",
+          "default": "Authentic Meteorite Elements"
+        }
+      ]
+    },
+    {
+      "type": "review",
+      "name": "Review",
+      "settings": [
+        {
+          "type": "text",
+          "id": "reviewer_name",
+          "label": "Reviewer Name",
+          "default": "Jane Doe"
+        },
+        {
+          "type": "range",
+          "id": "rating",
+          "min": 1,
+          "max": 5,
+          "step": 1,
+          "label": "Rating",
+          "default": 5
+        },
+        {
+          "type": "textarea",
+          "id": "review_text",
+          "label": "Review Text",
+          "default": "The AWNL meteorite bracelet I created is absolutely stunning. The quality and craftsmanship exceeded my expectations!"
+        }
+      ]
+    },
+    {
+      "type": "gallery_item",
+      "name": "Gallery Item",
+      "settings": [
+        {
+          "type": "image_picker",
+          "id": "gallery_image",
+          "label": "Gallery Image"
+        },
+        {
+          "type": "text",
+          "id": "gallery_title",
+          "label": "Gallery Title",
+          "default": "Cosmic Design"
+        },
+        {
+          "type": "textarea",
+          "id": "gallery_description",
+          "label": "Gallery Description",
+          "default": "Handcrafted with authentic meteorite elements"
+        }
+      ]
+    }
+  ],
+  "presets": [
+    {
+      "name": "AWNL Custom Bracelet Landing",
+      "blocks": [
+        {
+          "type": "process_step",
+          "settings": {
+            "step_number": "1",
+            "step_title": "Choose Your Base",
+            "step_description": "Select from our collection of authentic meteorite bracelet bases"
+          }
+        },
+        {
+          "type": "process_step",
+          "settings": {
+            "step_number": "2",
+            "step_title": "Add Cosmic Elements",
+            "step_description": "Choose from our selection of authentic meteorite and cosmic beads"
+          }
+        },
+        {
+          "type": "process_step",
+          "settings": {
+            "step_number": "3",
+            "step_title": "Personalize It",
+            "step_description": "Add engravings or special cosmic touches to make it uniquely yours"
+          }
+        },
+        {
+          "type": "process_step",
+          "settings": {
+            "step_number": "4",
+            "step_title": "Wear Your Story",
+            "step_description": "Connect with the cosmos through your personalized AWNL bracelet"
+          }
+        },
+        {
+          "type": "video_with_text",
+          "settings": {
+            "title": "The Art of Meteorite Crafting",
+            "description": "<p>Discover the meticulous process behind crafting our authentic meteorite bracelets. Each piece is handcrafted in Sweden with genuine space materials, creating a unique connection between you and the cosmos.</p>",
+            "button_text": "Start Creating"
+          }
+        },
+        {
+          "type": "video",
+          "settings": {
+            "video_title": "AWNL Meteorite Crafting Process"
+          }
+        },
+        {
+          "type": "video",
+          "settings": {
+            "video_title": "AWNL Cosmic Collection Showcase"
+          }
+        },
+        {
+          "type": "usp",
+          "settings": {
+            "usp_text": "Authentic Meteorite Elements"
+          }
+        },
+        {
+          "type": "usp",
+          "settings": {
+            "usp_text": "Handcrafted in Sweden"
+          }
+        },
+        {
+          "type": "usp",
+          "settings": {
+            "usp_text": "Lifetime Warranty"
+          }
+        },
+        {
+          "type": "usp",
+          "settings": {
+            "usp_text": "Free Worldwide Shipping"
+          }
+        },
+        {
+          "type": "review",
+          "settings": {
+            "reviewer_name": "Emma Johnson",
+            "rating": 5,
+            "review_text": "The AWNL meteorite bracelet I created is absolutely stunning. The quality and craftsmanship exceeded my expectations!"
+          }
+        },
+        {
+          "type": "review",
+          "settings": {
+            "reviewer_name": "Michael Chen",
+            "rating": 5,
+            "review_text": "I love my custom AWNL bracelet! The meteorite elements make it truly unique and special."
+          }
+        },
+        {
+          "type": "review",
+          "settings": {
+            "reviewer_name": "Sophia Rodriguez",
+            "rating": 5,
+            "review_text": "The customization process was so easy, and the final product is breathtaking. Highly recommend AWNL!"
+          }
+        },
+        {
+          "type": "review",
+          "settings": {
+            "reviewer_name": "David Wilson",
+            "rating": 5,
+            "review_text": "Wearing my AWNL meteorite bracelet makes me feel connected to the cosmos. It's not just jewelry, it's an experience."
+          }
+        },
+        {
+          "type": "gallery_item",
+          "settings": {
+            "gallery_title": "Meteorite Classic",
+            "gallery_description": "Timeless elegance with authentic meteorite elements"
+          }
+        },
+        {
+          "type": "gallery_item",
+          "settings": {
+            "gallery_title": "Cosmic Collection",
+            "gallery_description": "Bold designs that connect you with the universe"
+          }
+        },
+        {
+          "type": "gallery_item",
+          "settings": {
+            "gallery_title": "Lunar Minimalist",
+            "gallery_description": "Subtle cosmic elements for everyday wear"
+          }
+        },
+        {
+          "type": "gallery_item",
+          "settings": {
+            "gallery_title": "Stellar Luxury",
+            "gallery_description": "Premium materials for the discerning customer"
+          }
+        }
+      ]
+    }
+  ]
+}
+{% endschema %}

@@ -1,0 +1,156 @@
+<!doctype html>
+
+<html lang="{{ request.locale.iso_code }}" dir="{% render 'direction' %}">
+  <head>
+                
+{% include 'canonicals_app' %}
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, height=device-height, minimum-scale=1.0, maximum-scale=5.0">
+
+    <title>{% if page_title == blank %}{{ shop.name }}{% else %}{{ page_title }}{% if current_page != 1 %} &ndash; {{ 'general.page' | t: page: current_page }}{% endif %}{% endif %}</title>
+
+    {%- if page_description -%}
+      <meta name="description" content="{{ page_description | escape }}">
+    {%- endif -%}
+
+    <link rel="canonical" href="{{ canonical_url }}">
+
+    {%- if settings.favicon -%}
+      <link rel="shortcut icon" href="{{ settings.favicon | image_url: width: 96 }}">
+      <link rel="apple-touch-icon" href="{{ settings.favicon | image_url: width: 180 }}">
+    {%- endif -%}
+
+    {%- comment -%}Few prefetch to increase performance on commonly used third-parties{%- endcomment -%}
+    <link rel="preconnect" href="https://fonts.shopifycdn.com" crossorigin>
+
+    {%- unless settings.heading_font.system? -%}
+      <link rel="preload" href="{{ settings.heading_font | font_url }}" as="font" type="font/woff2" crossorigin>
+    {%- endunless -%}
+
+    {%- unless settings.text_font.system? -%}
+      <link rel="preload" href="{{ settings.text_font | font_url }}" as="font" type="font/woff2" crossorigin>
+    {%- endunless -%}
+
+    {%- render 'social-meta-tags' -%}
+    {%- render 'microdata-schema' -%}
+    {%- render 'css-variables' -%}
+    {%- render 'js-variables' -%}
+
+    {%- if request.page_type == 'gift_card' -%}
+      <script src="{{ 'vendor/qrcode.js' | shopify_asset_url }}" defer></script>
+    {%- endif -%}
+
+    <script>
+      if (!(HTMLScriptElement.supports && HTMLScriptElement.supports('importmap'))) {
+        const importMapPolyfill = document.createElement('script');
+        importMapPolyfill.async = true;
+        importMapPolyfill.src = "{{ 'es-module-shims.min.js' | asset_url }}";
+
+        document.head.appendChild(importMapPolyfill);
+      }
+    </script>
+
+    <script type="importmap">
+      {%- comment -%}On Safari 16.3 and lower, a polyfill is used to load importmap{%- endcomment -%}
+      {
+        "imports": {
+          "vendor": "{{ 'vendor.min.js' | asset_url }}",
+          "theme": "{{ 'theme.js' | asset_url }}",
+          "photoswipe": "{{ 'photoswipe.min.js' | asset_url }}"
+        }
+      }
+    </script>
+
+    <script type="module" src="{{ 'vendor.min.js' | asset_url }}"></script>
+    <script type="module" src="{{ 'theme.js' | asset_url }}"></script>
+
+    {{ content_for_header }}
+
+    {{- 'theme.css' | asset_url | stylesheet_tag: preload: true -}}
+
+<!-- LINE Tag Base Code -->
+<!-- Do Not Modify -->
+<script>
+(function(g,d,o){
+  g._ltq=g._ltq||[];g._lt=g._lt||function(){g._ltq.push(arguments)};
+  var h=location.protocol==='https:'?'https://d.line-scdn.net':'http://d.line-cdn.net';
+  var s=d.createElement('script');s.async=1;
+  s.src=o||h+'/n/line_tag/public/release/v1/lt.js';
+  var t=d.getElementsByTagName('script')[0];t.parentNode.insertBefore(s,t);
+    })(window, document);
+_lt('init', {
+  customerType: 'lap',
+  tagId: '80c15f86-a8e1-4509-9c09-b98a7bcf92c8'
+});
+_lt('send', 'pv', ['80c15f86-a8e1-4509-9c09-b98a7bcf92c8']);
+</script>
+<noscript>
+  <img height="1" width="1" style="display:none"
+       src="https://tr.line.me/tag.gif?c_t=lap&t_id=80c15f86-a8e1-4509-9c09-b98a7bcf92c8&e=pv&noscript=1" />
+</noscript>
+<!-- End LINE Tag Base Code -->
+
+
+<!-- Google Tag Manager -->
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer','GTM-5MKBH8T');</script>
+<!-- End Google Tag Manager -->
+
+
+<meta name="facebook-domain-verification" content="60d74wtm7hux0v616rnsx2wte4h08s" />
+<meta name="facebook-domain-verification" content="p0pzw2ti00d3nmtq8lurp0fwted8zp" />
+    {% include 'fontiobasic' %}
+    {% include 'fontiocustom' %}
+
+{% render 'gsf-conversion-pixels' %}
+
+  
+<script src="https://analytics.ahrefs.com/analytics.js" data-key="u1/8s4y6IauAnbMWBrx90Q" defer="true"></script>
+  
+  {% include 'pagefly-app-header' %}</head>
+
+  {% liquid
+    assign features_class = ''
+  
+    if settings.show_button_transition
+      assign features_class = features_class | append: 'features--button-transition '
+    endif
+  
+    if settings.show_image_zoom_on_hover
+      assign features_class = features_class | append: 'features--zoom-image '
+    endif
+  %}
+
+  <body class="{{ features_class }} color-scheme color-scheme--{{ settings.default_color_scheme.id }}">
+        <!-- Google Tag Manager (noscript) -->
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-5MKBH8T"
+height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+<!-- End Google Tag Manager (noscript) -->
+    {%- render 'shadow-dom-templates' -%}
+
+    <loading-bar class="loading-bar" aria-hidden="true"></loading-bar>
+    <a href="#main" allow-hash-change class="skip-to-content sr-only">{{ 'general.accessibility.skip_to_content' | t }}</a>
+
+    <span id="header-scroll-tracker" style="position: absolute; width: 1px; height: 1px; top: var(--header-scroll-tracker-offset, 10px); left: 0;">
+      {%- comment -%}
+        This allows our theme to track when the user has scrolled a given amount of pixels, without relying on a global scroll listener. This helps
+        to improve performance and reduce reflows.
+      {%- endcomment -%}
+    </span>
+
+    <main id="main" class="anchor">
+      {{ content_for_layout }}
+
+      {%- comment -%}
+      IMPLEMENTATION NOTE: For best semantics, having the footer group outside the main would be slightly better, but
+        moving it inside the main allows to have all the sections (including sections inside the footer group) to be
+        consecutive, and hence having a cleaner margin collapsing management.
+      {%- endcomment -%}
+
+    </main>
+  </body>
+</html>

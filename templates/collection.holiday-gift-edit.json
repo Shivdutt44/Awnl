@@ -1,0 +1,608 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "media_grid_DLUYxK": {
+      "type": "media-grid",
+      "blocks": {
+        "image_Bd7La8": {
+          "type": "image",
+          "settings": {
+            "color_scheme": "",
+            "image": "shopify://shop_images/2025-holiday-edit-landing-page_3.jpg",
+            "column_count": "6",
+            "row_count": 2,
+            "title": "",
+            "heading_tag": "h4",
+            "content": "",
+            "link_text": "",
+            "link_url": "",
+            "link_style": "link",
+            "text_position": "place-self-center text-center",
+            "overlay_color": "#000000",
+            "overlay_opacity": 0
+          }
+        },
+        "image_3rQHQR": {
+          "type": "image",
+          "settings": {
+            "color_scheme": "",
+            "image": "shopify://shop_images/2025-holiday-edit-landing-page_1.jpg",
+            "column_count": "6",
+            "row_count": 2,
+            "title": "",
+            "heading_tag": "h4",
+            "content": "",
+            "link_text": "",
+            "link_url": "",
+            "link_style": "link",
+            "text_position": "place-self-center text-center",
+            "overlay_color": "#000000",
+            "overlay_opacity": 0
+          }
+        }
+      },
+      "block_order": [
+        "image_Bd7La8",
+        "image_3rQHQR"
+      ],
+      "settings": {
+        "color_scheme": "",
+        "separate_section_with_border": false,
+        "desktop_row_height": 320,
+        "mobile_row_height": 180,
+        "section_width": "full",
+        "spacing": "none",
+        "subheading": "",
+        "title": "",
+        "content": ""
+      }
+    },
+    "collection-banner": {
+      "type": "collection-banner",
+      "disabled": true,
+      "custom_css": [],
+      "settings": {
+        "color_scheme": "scheme-3",
+        "image_size": "auto",
+        "allow_transparent_header": false,
+        "reveal": true,
+        "enable_parallax": false,
+        "show_image": true,
+        "show_collection_title": false,
+        "show_collection_description": false,
+        "show_breadcrumb": true,
+        "content_width": "xs",
+        "overlay_color": "#000000",
+        "overlay_opacity": 0
+      }
+    },
+    "rich_text_WejAxC": {
+      "type": "rich-text",
+      "blocks": {
+        "subheading_N9pxU7": {
+          "type": "subheading",
+          "settings": {
+            "text": "Where Time Belongs"
+          }
+        },
+        "heading_dANF4e": {
+          "type": "heading",
+          "settings": {
+            "text": "冬日珍藏 · 摯愛臻選",
+            "heading_tag": "h1"
+          }
+        },
+        "richtext_rdTik4": {
+          "type": "richtext",
+          "settings": {
+            "content": "<h3><strong>全館HOLIDAY GIFT精選商品 9折</strong></h3><p>精心策劃的每一件珠寶，都是獨特的生命印記；讓每個值得紀念的時刻，在這裡找到最完美的歸宿</p><h5>活動已結束</h5>"
+          }
+        },
+        "button_hzpWrc": {
+          "type": "button",
+          "settings": {
+            "style": "solid",
+            "text": "返回首頁",
+            "url": "/",
+            "background": "",
+            "text_color": ""
+          }
+        }
+      },
+      "block_order": [
+        "subheading_N9pxU7",
+        "heading_dANF4e",
+        "richtext_rdTik4",
+        "button_hzpWrc"
+      ],
+      "settings": {
+        "color_scheme": "scheme-b6ff34e7-93bc-4dc6-8d81-c55b1ed3fd08",
+        "separate_section_with_border": false,
+        "content_width": "lg",
+        "text_position": "start",
+        "remove_vertical_spacing": false
+      }
+    },
+    "rich_text_ihriU4": {
+      "type": "rich-text",
+      "blocks": {
+        "richtext_CgdrzX": {
+          "type": "richtext",
+          "settings": {
+            "content": "<h2><strong>SHOP AT EVERY BUDGET</strong></h2><p>為您用心篩選每個預算區間的完美之選，讓送禮成為一種優雅藝術</p>"
+          }
+        }
+      },
+      "block_order": [
+        "richtext_CgdrzX"
+      ],
+      "disabled": true,
+      "settings": {
+        "color_scheme": "scheme-1b02ad27-67f6-4363-902b-7afc4c7eb905",
+        "separate_section_with_border": false,
+        "content_width": "lg",
+        "text_position": "start",
+        "remove_vertical_spacing": false
+      }
+    },
+    "main": {
+      "type": "main-collection",
+      "disabled": true,
+      "settings": {
+        "color_scheme": "scheme-2",
+        "hide_product_information": false,
+        "products_per_page": 24,
+        "products_per_row_mobile": "2",
+        "products_size_desktop": "medium",
+        "show_grid_mode_selector": true,
+        "horizontal_spacing_factor": 1.5,
+        "vertical_spacing_factor": 1.5,
+        "filter_layout": "drawer",
+        "quick_links_menu": "link-list-2",
+        "show_sort_by": true,
+        "show_filters": true,
+        "show_results_count": true,
+        "show_filter_group_name": false,
+        "show_filter_values_count": true,
+        "open_filters_by_default": false
+      }
+    },
+    "featured_collections_gBVQVw": {
+      "type": "featured-collections",
+      "blocks": {
+        "collection_76gzPe": {
+          "type": "collection",
+          "settings": {
+            "collection": "under-5000",
+            "products_count": 6,
+            "title": "",
+            "link_url": "",
+            "link_text": ""
+          }
+        },
+        "collection_xXAk4K": {
+          "type": "collection",
+          "settings": {
+            "collection": "under-10000",
+            "products_count": 6,
+            "title": "",
+            "link_url": "",
+            "link_text": ""
+          }
+        },
+        "collection_9HiaAf": {
+          "type": "collection",
+          "settings": {
+            "collection": "above-10000",
+            "products_count": 6,
+            "title": "",
+            "link_url": "",
+            "link_text": ""
+          }
+        }
+      },
+      "block_order": [
+        "collection_76gzPe",
+        "collection_xXAk4K",
+        "collection_9HiaAf"
+      ],
+      "disabled": true,
+      "custom_css": [
+        "@media (min-width: 769px) {.section-stack {max-width: 1300px; margin-left: auto; margin-right: auto; }}"
+      ],
+      "settings": {
+        "color_scheme": "scheme-1b02ad27-67f6-4363-902b-7afc4c7eb905",
+        "separate_section_with_border": false,
+        "hide_product_information": false,
+        "stack_products": true,
+        "products_per_row_mobile": "2",
+        "products_per_row_desktop": 3,
+        "horizontal_spacing_factor": 2,
+        "vertical_spacing_factor": 0.2,
+        "subheading": ""
+      }
+    },
+    "rich_text_j4Mjqr": {
+      "type": "rich-text",
+      "blocks": {
+        "richtext_G97Rni": {
+          "type": "richtext",
+          "settings": {
+            "content": "<h2><strong>摯愛禮選</strong></h2><p>為她選擇的永恆之作，讓每個日常綻放光彩</p>"
+          }
+        }
+      },
+      "block_order": [
+        "richtext_G97Rni"
+      ],
+      "disabled": true,
+      "settings": {
+        "color_scheme": "scheme-b6ff34e7-93bc-4dc6-8d81-c55b1ed3fd08",
+        "separate_section_with_border": false,
+        "content_width": "lg",
+        "text_position": "start",
+        "remove_vertical_spacing": false
+      }
+    },
+    "shop_the_look_7kye98": {
+      "type": "shop-the-look",
+      "blocks": {
+        "look_bRbiKb": {
+          "type": "look",
+          "settings": {
+            "image": "shopify://shop_images/kol-female_8.jpg",
+            "hot_spots_background": "#ffffff",
+            "product_1": "awnl-silver-meteorite-bracelet-starry-night",
+            "product_1_horizontal_position": 35,
+            "product_1_vertical_position": 70,
+            "product_2": "",
+            "product_2_horizontal_position": 34,
+            "product_2_vertical_position": 65,
+            "product_3": "",
+            "product_3_horizontal_position": 66,
+            "product_3_vertical_position": 42,
+            "product_4": "",
+            "product_4_horizontal_position": 85,
+            "product_4_vertical_position": 85
+          }
+        },
+        "look_FiHXVH": {
+          "type": "look",
+          "settings": {
+            "image": "shopify://shop_images/kol-female_5.jpg",
+            "hot_spots_background": "#ffffff",
+            "product_1": "womens-sterling-silver-y-shaped-necklace-swedish-meteorite",
+            "product_1_horizontal_position": 41,
+            "product_1_vertical_position": 51,
+            "product_2": "",
+            "product_2_horizontal_position": 70,
+            "product_2_vertical_position": 30,
+            "product_3": "",
+            "product_3_horizontal_position": 60,
+            "product_3_vertical_position": 65,
+            "product_4": "",
+            "product_4_horizontal_position": 85,
+            "product_4_vertical_position": 85
+          }
+        }
+      },
+      "block_order": [
+        "look_bRbiKb",
+        "look_FiHXVH"
+      ],
+      "disabled": true,
+      "settings": {
+        "color_scheme": "scheme-1b02ad27-67f6-4363-902b-7afc4c7eb905",
+        "separate_section_with_border": false,
+        "subheading": "",
+        "title": "EDITOR'S PICKS: LUXE ESSENTIALS",
+        "content": "",
+        "popover_title": ""
+      }
+    },
+    "featured_collections_4GNKYw": {
+      "type": "featured-collections",
+      "blocks": {
+        "collection_6GPRgW": {
+          "type": "collection",
+          "settings": {
+            "collection": "gifts-for-her",
+            "products_count": 6,
+            "title": "晶石禮物",
+            "link_url": "",
+            "link_text": ""
+          }
+        },
+        "collection_4BFhCr": {
+          "type": "collection",
+          "settings": {
+            "collection": "starry-night",
+            "products_count": 6,
+            "title": "隕石禮物",
+            "link_url": "",
+            "link_text": ""
+          }
+        }
+      },
+      "block_order": [
+        "collection_6GPRgW",
+        "collection_4BFhCr"
+      ],
+      "disabled": true,
+      "custom_css": [
+        "@media (min-width: 769px) {.section-stack {max-width: 1300px; margin-left: auto; margin-right: auto; }}"
+      ],
+      "settings": {
+        "color_scheme": "scheme-1b02ad27-67f6-4363-902b-7afc4c7eb905",
+        "separate_section_with_border": false,
+        "hide_product_information": false,
+        "stack_products": true,
+        "products_per_row_mobile": "2",
+        "products_per_row_desktop": 3,
+        "horizontal_spacing_factor": 2,
+        "vertical_spacing_factor": 0.2,
+        "subheading": ""
+      }
+    },
+    "rich_text_XY6UJY": {
+      "type": "rich-text",
+      "blocks": {
+        "richtext_M4xYUJ": {
+          "type": "richtext",
+          "settings": {
+            "content": "<h2><strong>紳士品味</strong></h2><p>為他精選的品味之作，融合經典工藝與現代風尚</p>"
+          }
+        }
+      },
+      "block_order": [
+        "richtext_M4xYUJ"
+      ],
+      "disabled": true,
+      "settings": {
+        "color_scheme": "scheme-b6ff34e7-93bc-4dc6-8d81-c55b1ed3fd08",
+        "separate_section_with_border": false,
+        "content_width": "lg",
+        "text_position": "start",
+        "remove_vertical_spacing": false
+      }
+    },
+    "shop_the_look_xzEwbm": {
+      "type": "shop-the-look",
+      "blocks": {
+        "look_XTnnDF": {
+          "type": "look",
+          "settings": {
+            "image": "shopify://shop_images/1440a.jpg",
+            "hot_spots_background": "#ffffff",
+            "product_1": "mens-beaded-bracelet-with-black-onyx-and-red-tiger-eye",
+            "product_1_horizontal_position": 55,
+            "product_1_vertical_position": 51,
+            "product_2": "",
+            "product_2_horizontal_position": 25,
+            "product_2_vertical_position": 40,
+            "product_3": "",
+            "product_3_horizontal_position": 65,
+            "product_3_vertical_position": 60,
+            "product_4": "",
+            "product_4_horizontal_position": 85,
+            "product_4_vertical_position": 85
+          }
+        },
+        "look_FqNJnL": {
+          "type": "look",
+          "settings": {
+            "image": "shopify://shop_images/2025-holiday-edit-landing-page-gift-for-him_2.jpg",
+            "hot_spots_background": "#ffffff",
+            "product_1": "mens-beaded-macrame-bracelet-tri-color-gemstones",
+            "product_1_horizontal_position": 46,
+            "product_1_vertical_position": 35,
+            "product_2": "",
+            "product_2_horizontal_position": 34,
+            "product_2_vertical_position": 65,
+            "product_3": "",
+            "product_3_horizontal_position": 66,
+            "product_3_vertical_position": 42,
+            "product_4": "",
+            "product_4_horizontal_position": 85,
+            "product_4_vertical_position": 85
+          }
+        },
+        "look_BbTkVi": {
+          "type": "look",
+          "settings": {
+            "image": "shopify://shop_images/2025-holiday-edit-landing-page-gift-for-him.jpg",
+            "hot_spots_background": "#ffffff",
+            "product_1": "bronzite-hexagonal-pendant-necklace",
+            "product_1_horizontal_position": 35,
+            "product_1_vertical_position": 52,
+            "product_2": "",
+            "product_2_horizontal_position": 70,
+            "product_2_vertical_position": 30,
+            "product_3": "",
+            "product_3_horizontal_position": 60,
+            "product_3_vertical_position": 65,
+            "product_4": "",
+            "product_4_horizontal_position": 85,
+            "product_4_vertical_position": 85
+          }
+        }
+      },
+      "block_order": [
+        "look_XTnnDF",
+        "look_FqNJnL",
+        "look_BbTkVi"
+      ],
+      "disabled": true,
+      "custom_css": [],
+      "settings": {
+        "color_scheme": "scheme-1b02ad27-67f6-4363-902b-7afc4c7eb905",
+        "separate_section_with_border": false,
+        "subheading": "",
+        "title": "SIGNATURE SELECTIONS: REFINED CHOICES",
+        "content": "",
+        "popover_title": ""
+      }
+    },
+    "featured_collections_7JdMn4": {
+      "type": "featured-collections",
+      "blocks": {
+        "collection_6fKJQ8": {
+          "type": "collection",
+          "settings": {
+            "collection": "gifts-for-him",
+            "products_count": 6,
+            "title": "手鍊禮物",
+            "link_url": "",
+            "link_text": ""
+          }
+        },
+        "collection_yjQxxf": {
+          "type": "collection",
+          "settings": {
+            "collection": "best-sellers-necklaces",
+            "products_count": 6,
+            "title": "項鍊禮物",
+            "link_url": "",
+            "link_text": ""
+          }
+        }
+      },
+      "block_order": [
+        "collection_6fKJQ8",
+        "collection_yjQxxf"
+      ],
+      "disabled": true,
+      "custom_css": [
+        "@media (min-width: 769px) {.section-stack {max-width: 1300px; margin-left: auto; margin-right: auto; }}"
+      ],
+      "settings": {
+        "color_scheme": "scheme-1b02ad27-67f6-4363-902b-7afc4c7eb905",
+        "separate_section_with_border": false,
+        "hide_product_information": false,
+        "stack_products": true,
+        "products_per_row_mobile": "2",
+        "products_per_row_desktop": 3,
+        "horizontal_spacing_factor": 2,
+        "vertical_spacing_factor": 0.2,
+        "subheading": ""
+      }
+    },
+    "media_grid_gCWyYN": {
+      "type": "media-grid",
+      "blocks": {
+        "image_a87bmj": {
+          "type": "image",
+          "settings": {
+            "color_scheme": "",
+            "image": "shopify://shop_images/2025-holiday-edit-landing-page-2.jpg",
+            "column_count": "6",
+            "row_count": 2,
+            "title": "",
+            "heading_tag": "h4",
+            "content": "",
+            "link_text": "",
+            "link_url": "",
+            "link_style": "link",
+            "text_position": "place-self-center text-center",
+            "overlay_color": "#000000",
+            "overlay_opacity": 0
+          }
+        },
+        "image_kHKdPF": {
+          "type": "image",
+          "settings": {
+            "color_scheme": "scheme-1925ab0b-f8a2-40cc-9ba6-a17e98cf0d11",
+            "image": "shopify://shop_images/2025-holiday-edit-landing-page-4.jpg",
+            "column_count": "6",
+            "row_count": 2,
+            "title": "",
+            "heading_tag": "h4",
+            "content": "",
+            "link_text": "購買電子禮卡",
+            "link_url": "shopify://products/awnl-giftcard",
+            "link_style": "solid",
+            "text_position": "place-self-end-center text-center",
+            "overlay_color": "#000000",
+            "overlay_opacity": 0
+          }
+        }
+      },
+      "block_order": [
+        "image_a87bmj",
+        "image_kHKdPF"
+      ],
+      "disabled": true,
+      "custom_css": [
+        "div.prose--tight {margin-bottom: 50px;}"
+      ],
+      "settings": {
+        "color_scheme": "",
+        "separate_section_with_border": false,
+        "desktop_row_height": 330,
+        "mobile_row_height": 180,
+        "section_width": "full",
+        "spacing": "none",
+        "subheading": "",
+        "title": "",
+        "content": ""
+      }
+    },
+    "rich_text_3E8dk3": {
+      "type": "rich-text",
+      "blocks": {
+        "richtext_zAqkRa": {
+          "type": "richtext",
+          "settings": {
+            "content": "<h2><strong>2025開運福袋 · 新年幸運福輪抽選會</strong></h2><p>新年開運福袋，美好加倍，低至四折解鎖人氣飾品</p><p>轉出新年好禮！下單即可參與限量禮物抽選  </p>"
+          }
+        },
+        "button_h9mQEq": {
+          "type": "button",
+          "settings": {
+            "style": "solid",
+            "text": "立即參與",
+            "url": "shopify://collections/holiday",
+            "background": "#73282c",
+            "text_color": ""
+          }
+        }
+      },
+      "block_order": [
+        "richtext_zAqkRa",
+        "button_h9mQEq"
+      ],
+      "disabled": true,
+      "settings": {
+        "color_scheme": "scheme-b6ff34e7-93bc-4dc6-8d81-c55b1ed3fd08",
+        "separate_section_with_border": false,
+        "content_width": "lg",
+        "text_position": "start",
+        "remove_vertical_spacing": false
+      }
+    }
+  },
+  "order": [
+    "media_grid_DLUYxK",
+    "collection-banner",
+    "rich_text_WejAxC",
+    "rich_text_ihriU4",
+    "main",
+    "featured_collections_gBVQVw",
+    "rich_text_j4Mjqr",
+    "shop_the_look_7kye98",
+    "featured_collections_4GNKYw",
+    "rich_text_XY6UJY",
+    "shop_the_look_xzEwbm",
+    "featured_collections_7JdMn4",
+    "media_grid_gCWyYN",
+    "rich_text_3E8dk3"
+  ]
+}

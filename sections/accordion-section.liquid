@@ -1,0 +1,63 @@
+<!-- sections/section-accordion.liquid -->
+<div class="accordion">
+  {% for block in section.blocks %}
+    <div class="accordion-item">
+      <div class="accordion-header">
+        <span class="symbol">+</span>
+        <span class="title">{{ block.settings.title }}</span>
+      </div>
+      <div class="accordion-content">
+        <p>{{ block.settings.content }}</p>
+      </div>
+    </div>
+  {% endfor %}
+</div>
+
+{% schema %}
+{
+  "name": "Accordion Section",
+  "settings": [],
+  "blocks": [
+    {
+      "type": "accordion_item",
+      "name": "Accordion Item",
+      "settings": [
+        {
+          "type": "text",
+          "id": "title",
+          "label": "Title",
+          "default": "Accordion Title"
+        },
+        {
+          "type": "textarea",
+          "id": "content",
+          "label": "Content",
+          "default": "Accordion content goes here..."
+        }
+      ]
+    }
+  ],
+  "max_blocks": 10,
+  "presets": [
+    {
+      "name": "Default Accordion",
+      "blocks": [
+        {
+          "type": "accordion_item",
+          "settings": {
+            "title": "Policies",
+            "content": "Return and exchange policies go here..."
+          }
+        },
+        {
+          "type": "accordion_item",
+          "settings": {
+            "title": "Time estimate & Shipping",
+            "content": "Shipping and delivery information goes here..."
+          }
+        }
+      ]
+    }
+  ]
+}
+{% endschema %}

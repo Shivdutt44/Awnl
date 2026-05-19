@@ -1,0 +1,361 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "main": {
+      "type": "main-page",
+      "disabled": true,
+      "settings": {
+        "color_scheme": "",
+        "show_title": true,
+        "page_width": "xs"
+      }
+    },
+    "multiple_media_with_text_tB7RcU": {
+      "type": "multiple-media-with-text",
+      "blocks": {
+        "image_gFzMpg": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/2024-meteorite-material-introduction-page_2.jpg",
+            "rotation": 0
+          }
+        }
+      },
+      "block_order": [
+        "image_gFzMpg"
+      ],
+      "custom_css": [
+        "img {border-radius: 5px;}",
+        "@media (min-width: 1380px) {p {font-size: 14px; line-height: 1.7; } p.h3 {font-size: 25px; color: #8f9296; } .multiple-media-with-text {--multiple-media-with-text-gap: 5rem 12.5rem; } .prose {margin-right: -100px; margin-left: -100px; }}",
+        "@media (max-width: 1380px) {div {font-size: 13px; line-height: 1.6; } p.h3 {font-size: 21px; color: #8f9296; }}"
+      ],
+      "settings": {
+        "color_scheme": "scheme-1925ab0b-f8a2-40cc-9ba6-a17e98cf0d11",
+        "reveal_on_scroll": true,
+        "separate_section_with_border": true,
+        "media_position_desktop": "before_text",
+        "media_position_mobile": "before_text",
+        "media_layout": "overlap",
+        "media_alignment": "center",
+        "media_alignment_offset": 0,
+        "media_mobile_alignment_offset": 0,
+        "text_alignment": "center",
+        "subheading": "",
+        "title": "45億年的星隕傳奇",
+        "content": "<p>在瑞典北部的荒野深處，靜靜躺著一顆來自遙遠宇宙的隕石——Muonionalusta M隕石。</p><p>這位45億年前的星際旅者，帶著鐵與鎳的堅毅，內含無窮的神秘能量，在一百萬年前選擇了斯堪的納維亞作為歸宿。</p><p>AWNL結合現代美學與精湛工藝，將M隕石轉化為獨特的珠寶藝術品，讓它在珠寶舞台上綻放出無與倫比的神秘魅力。</p>",
+        "button_1_text": "",
+        "button_1_link": "",
+        "button_1_style": "solid",
+        "button_2_text": "",
+        "button_2_link": "",
+        "button_2_style": "solid"
+      }
+    },
+    "multiple_media_with_text_LfTdjV": {
+      "type": "multiple-media-with-text",
+      "blocks": {
+        "image_FLhA8B": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/2024-meteorite-material-introduction-page_10.jpg",
+            "rotation": 0
+          }
+        }
+      },
+      "block_order": [
+        "image_FLhA8B"
+      ],
+      "custom_css": [
+        "img {border-radius: 5px;}",
+        "@media (min-width: 1380px) {p {font-size: 14px; line-height: 1.7; } p.h3 {font-size: 25px; color: #8f9296; } .multiple-media-with-text {--multiple-media-with-text-gap: 5rem 12.5rem; } .prose {margin-right: -100px; margin-left: -100px; }}",
+        "@media (max-width: 1380px) {div {font-size: 13px; line-height: 1.6; } p.h3 {font-size: 21px; color: #8f9296; }}"
+      ],
+      "settings": {
+        "color_scheme": "scheme-1925ab0b-f8a2-40cc-9ba6-a17e98cf0d11",
+        "reveal_on_scroll": true,
+        "separate_section_with_border": false,
+        "media_position_desktop": "after_text",
+        "media_position_mobile": "before_text",
+        "media_layout": "overlap",
+        "media_alignment": "center",
+        "media_alignment_offset": 0,
+        "media_mobile_alignment_offset": 0,
+        "text_alignment": "center",
+        "subheading": "",
+        "title": "來自星空的珍貴禮物",
+        "content": "<p>M隕石，這顆來自外太空的稀世瑰寶，猶如宇宙的饋贈，也是大自然的奇蹟。</p><p>它經歷漫長的星際旅程，蘊含著廣袤宇宙的神秘能量，能夠與佩戴者的能量磁場相呼應，帶來來自宇宙的強大守護力量。</p>",
+        "button_1_text": "",
+        "button_1_link": "",
+        "button_1_style": "solid",
+        "button_2_text": "",
+        "button_2_link": "",
+        "button_2_style": "solid"
+      }
+    },
+    "multiple_media_with_text_m4n33n": {
+      "type": "multiple-media-with-text",
+      "blocks": {
+        "image_YNxtB4": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/2024-meteorite-material-introduction-page_4.jpg",
+            "rotation": 0
+          }
+        }
+      },
+      "block_order": [
+        "image_YNxtB4"
+      ],
+      "custom_css": [
+        "img {border-radius: 5px;}",
+        "@media (min-width: 1380px) {p {font-size: 14px; line-height: 1.7; } p.h3 {font-size: 25px; color: #8f9296; } .multiple-media-with-text {--multiple-media-with-text-gap: 5rem 12.5rem; } .prose {margin-right: -100px; margin-left: -100px; }}",
+        "@media (max-width: 1380px) {div {font-size: 13px; line-height: 1.6; } p.h3 {font-size: 21px; color: #8f9296; }}"
+      ],
+      "settings": {
+        "color_scheme": "scheme-1925ab0b-f8a2-40cc-9ba6-a17e98cf0d11",
+        "reveal_on_scroll": true,
+        "separate_section_with_border": false,
+        "media_position_desktop": "before_text",
+        "media_position_mobile": "before_text",
+        "media_layout": "overlap",
+        "media_alignment": "center",
+        "media_alignment_offset": 0,
+        "media_mobile_alignment_offset": 0,
+        "text_alignment": "center",
+        "subheading": "",
+        "title": "手握真正的流星",
+        "content": "<p>錯過一次，可能就等一辈子。</p><p>傳說中，\"手握流星，心願成真\"，M隕石承載著不可取代的美好寓意，被北歐人視為天降的“守護星”，象徵著幸福、力量與無盡的保護。</p>",
+        "button_1_text": "",
+        "button_1_link": "",
+        "button_1_style": "solid",
+        "button_2_text": "",
+        "button_2_link": "",
+        "button_2_style": "solid"
+      }
+    },
+    "multiple_media_with_text_4k3Jax": {
+      "type": "multiple-media-with-text",
+      "blocks": {
+        "image_E6qknL": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/2024-meteorite-material-introduction-page_5.jpg",
+            "rotation": 0
+          }
+        }
+      },
+      "block_order": [
+        "image_E6qknL"
+      ],
+      "custom_css": [
+        "img {border-radius: 5px;}",
+        "@media (min-width: 1380px) {p {font-size: 14px; line-height: 1.7; } p.h3 {font-size: 25px; color: #8f9296; } .multiple-media-with-text {--multiple-media-with-text-gap: 5rem 12.5rem; } .prose {margin-right: -100px; margin-left: -100px; }}",
+        "@media (max-width: 1380px) {div {font-size: 13px; line-height: 1.6; } p.h3 {font-size: 21px; color: #8f9296; }}"
+      ],
+      "settings": {
+        "color_scheme": "scheme-1925ab0b-f8a2-40cc-9ba6-a17e98cf0d11",
+        "reveal_on_scroll": true,
+        "separate_section_with_border": false,
+        "media_position_desktop": "after_text",
+        "media_position_mobile": "before_text",
+        "media_layout": "overlap",
+        "media_alignment": "center",
+        "media_alignment_offset": 0,
+        "media_mobile_alignment_offset": 0,
+        "text_alignment": "center",
+        "subheading": "",
+        "title": "見證人生的重要時刻",
+        "content": "<p>M隕石，作為億萬年宇宙的珍貴禮物，不僅見證了宇宙的誕生，也陪伴人類歷經無數文明的重要時刻。<br/><br/>我們將其精心打造成可穿戴的藝術品，每一塊隕石都蘊含著古老星辰的力量，象徵著卓越的成就與無限的未來可能，與您一同見證生命中每一個值得銘記的瞬間。</p>",
+        "button_1_text": "",
+        "button_1_link": "",
+        "button_1_style": "solid",
+        "button_2_text": "",
+        "button_2_link": "",
+        "button_2_style": "solid"
+      }
+    },
+    "multiple_media_with_text_JEqGRC": {
+      "type": "multiple-media-with-text",
+      "blocks": {
+        "image_aVJQwd": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/2024-meteorite-material-introduction-page_6.jpg",
+            "rotation": 0
+          }
+        }
+      },
+      "block_order": [
+        "image_aVJQwd"
+      ],
+      "custom_css": [
+        "img {border-radius: 5px;}",
+        "@media (min-width: 1380px) {p {font-size: 14px; line-height: 1.7; } p.h3 {font-size: 25px; color: #8f9296; } .multiple-media-with-text {--multiple-media-with-text-gap: 5rem 12.5rem; } .prose {margin-right: -100px; margin-left: -100px; }}",
+        "@media (max-width: 1380px) {div {font-size: 13px; line-height: 1.6; } p.h3 {font-size: 21px; color: #8f9296; }}"
+      ],
+      "settings": {
+        "color_scheme": "scheme-1925ab0b-f8a2-40cc-9ba6-a17e98cf0d11",
+        "reveal_on_scroll": true,
+        "separate_section_with_border": false,
+        "media_position_desktop": "before_text",
+        "media_position_mobile": "before_text",
+        "media_layout": "overlap",
+        "media_alignment": "center",
+        "media_alignment_offset": 0,
+        "media_mobile_alignment_offset": 0,
+        "text_alignment": "center",
+        "subheading": "",
+        "title": "魏德曼花紋：上帝的指紋",
+        "content": "<p>經過億萬年的星際旅行，隕石表面逐漸形成如同武士刀紋路般獨特的魏德曼花紋，彷彿宇宙留下的指紋，訴說著太陽系初生時期的滄桑故事。這些歷經滄海桑田的自然奇蹟無法被人工複製，是這顆星際遺珍最動人的印記，也因此成就了隕石珠寶的獨一無二。</p>",
+        "button_1_text": "",
+        "button_1_link": "",
+        "button_1_style": "solid",
+        "button_2_text": "",
+        "button_2_link": "",
+        "button_2_style": "solid"
+      }
+    },
+    "multiple_media_with_text_MnemdX": {
+      "type": "multiple-media-with-text",
+      "blocks": {
+        "image_qi6r89": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/2024-meteorite-material-introduction-page_8.jpg",
+            "rotation": 0
+          }
+        }
+      },
+      "block_order": [
+        "image_qi6r89"
+      ],
+      "custom_css": [
+        "img {border-radius: 5px;}",
+        "@media (min-width: 1380px) {p {font-size: 14px; line-height: 1.7; } p.h3 {font-size: 25px; color: #8f9296; } .multiple-media-with-text {--multiple-media-with-text-gap: 5rem 12.5rem; } .prose {margin-right: -100px; margin-left: -100px; }}",
+        "@media (max-width: 1380px) {div {font-size: 13px; line-height: 1.6; } p.h3 {font-size: 21px; color: #8f9296; }}"
+      ],
+      "settings": {
+        "color_scheme": "scheme-1925ab0b-f8a2-40cc-9ba6-a17e98cf0d11",
+        "reveal_on_scroll": true,
+        "separate_section_with_border": false,
+        "media_position_desktop": "after_text",
+        "media_position_mobile": "before_text",
+        "media_layout": "overlap",
+        "media_alignment": "center",
+        "media_alignment_offset": 0,
+        "media_mobile_alignment_offset": 0,
+        "text_alignment": "center",
+        "subheading": "",
+        "title": "致力追求完美",
+        "content": "<p>風格需要歷久彌新，工藝更需在細節中經得起推敲。<br/><br/>我們經過不懈的研究與努力，研發出專屬的類鑽石切割工藝，將堅硬而神秘的隕石雕琢成精緻的可穿戴藝術品，讓您在感受宇宙力量的同時，展現出獨到的品味與遠見。</p>",
+        "button_1_text": "",
+        "button_1_link": "",
+        "button_1_style": "solid",
+        "button_2_text": "",
+        "button_2_link": "",
+        "button_2_style": "solid"
+      }
+    },
+    "multiple_media_with_text_3bLA9k": {
+      "type": "multiple-media-with-text",
+      "blocks": {
+        "image_VGFePh": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/2024-meteorite-material-introduction-page_9.jpg",
+            "rotation": 0
+          }
+        }
+      },
+      "block_order": [
+        "image_VGFePh"
+      ],
+      "custom_css": [
+        "img {border-radius: 5px;}",
+        "@media (min-width: 1380px) {p {font-size: 14px; line-height: 1.7; } p.h3 {font-size: 25px; color: #8f9296; } .multiple-media-with-text {--multiple-media-with-text-gap: 5rem 12.5rem; } .prose {margin-right: -100px; margin-left: -100px; }}",
+        "@media (max-width: 1380px) {div {font-size: 13px; line-height: 1.6; } p.h3 {font-size: 21px; color: #8f9296; }}"
+      ],
+      "settings": {
+        "color_scheme": "scheme-1925ab0b-f8a2-40cc-9ba6-a17e98cf0d11",
+        "reveal_on_scroll": true,
+        "separate_section_with_border": false,
+        "media_position_desktop": "before_text",
+        "media_position_mobile": "before_text",
+        "media_layout": "overlap",
+        "media_alignment": "center",
+        "media_alignment_offset": 0,
+        "media_mobile_alignment_offset": 0,
+        "text_alignment": "center",
+        "subheading": "",
+        "title": "適合精緻珠寶的理想材質",
+        "content": "<p>作為沉積性隕石，M隕石經過嚴格檢測並科學驗證，輻射水平與日常用品相當，確保佩戴者能享有安心無憂的佩戴體驗。</p>",
+        "button_1_text": "",
+        "button_1_link": "",
+        "button_1_style": "solid",
+        "button_2_text": "",
+        "button_2_link": "",
+        "button_2_style": "solid"
+      }
+    },
+    "multiple_media_with_text_t8Ji8E": {
+      "type": "multiple-media-with-text",
+      "blocks": {
+        "image_3A8pkx": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/2024-meteorite-material-introduction-page_7.jpg",
+            "rotation": 0
+          }
+        }
+      },
+      "block_order": [
+        "image_3A8pkx"
+      ],
+      "custom_css": [
+        "img {border-radius: 5px;}",
+        "@media (min-width: 1380px) {p {font-size: 14px; line-height: 1.7; } p.h3 {font-size: 25px; color: #8f9296; } .multiple-media-with-text {--multiple-media-with-text-gap: 5rem 12.5rem; } .prose {margin-right: -100px; margin-left: -100px; }}",
+        "@media (max-width: 1380px) {div {font-size: 13px; line-height: 1.6; } p.h3 {font-size: 21px; color: #8f9296; }}"
+      ],
+      "settings": {
+        "color_scheme": "scheme-1925ab0b-f8a2-40cc-9ba6-a17e98cf0d11",
+        "reveal_on_scroll": true,
+        "separate_section_with_border": false,
+        "media_position_desktop": "after_text",
+        "media_position_mobile": "before_text",
+        "media_layout": "overlap",
+        "media_alignment": "center",
+        "media_alignment_offset": 0,
+        "media_mobile_alignment_offset": 0,
+        "text_alignment": "center",
+        "subheading": "",
+        "title": "追求心靈生活",
+        "content": "<p>我們精心挑選每一件珠寶與護身符，為您打造純淨的能量場。願這些蘊含深意的作品，啟發您實踐智慧的生活方式。相信大自然與宇宙的力量，讓這些精心打造的珍品，成為陪伴您人生旅程的最佳夥伴。</p>",
+        "button_1_text": "選購隕石珠寶",
+        "button_1_link": "shopify://collections/swedish-meteorite-jewellery",
+        "button_1_style": "solid",
+        "button_2_text": "",
+        "button_2_link": "",
+        "button_2_style": "solid"
+      }
+    }
+  },
+  "order": [
+    "main",
+    "multiple_media_with_text_tB7RcU",
+    "multiple_media_with_text_LfTdjV",
+    "multiple_media_with_text_m4n33n",
+    "multiple_media_with_text_4k3Jax",
+    "multiple_media_with_text_JEqGRC",
+    "multiple_media_with_text_MnemdX",
+    "multiple_media_with_text_3bLA9k",
+    "multiple_media_with_text_t8Ji8E"
+  ]
+}

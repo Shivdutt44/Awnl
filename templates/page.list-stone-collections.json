@@ -1,0 +1,688 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "image_with_text_overlay_f8b7b3": {
+      "type": "image-with-text-overlay",
+      "blocks": {
+        "heading_RADaCm": {
+          "type": "heading",
+          "settings": {
+            "text": "<strong>為初學者精選的天然石</strong>",
+            "heading_tag": "h1"
+          }
+        },
+        "richtext_wx9mWj": {
+          "type": "richtext",
+          "settings": {
+            "content": "<p>在繁多的天然石珠寶中，我們精心挑選了幾款最適合初學者的天然石，這些石材不僅易於搭配，且能確保您在日常佩戴中不易出錯。每一顆天然石都蘊含平衡且溫和的療癒能量，能有效幫助您應對生活中的各種需求。</p><p>無論是單獨佩戴，還是與其他天然石搭配使用，都能為您提供量身打造的能量體驗，讓您無憂享受每一天的美好時光。</p>"
+          }
+        }
+      },
+      "block_order": [
+        "heading_RADaCm",
+        "richtext_wx9mWj"
+      ],
+      "settings": {
+        "color_scheme": "",
+        "image_size": "sm",
+        "image": "shopify://shop_images/gemstone-jewelry-collection-banner-pc.jpg",
+        "allow_transparent_header": false,
+        "reveal_on_scroll": true,
+        "remove_vertical_spacing": true,
+        "content_width": "xs",
+        "mobile_text_position": "place-self-center text-center",
+        "desktop_text_position": "sm:place-self-center sm:text-center",
+        "overlay_color": "#000000",
+        "overlay_opacity": 41
+      }
+    },
+    "shop_the_look_eeiic9": {
+      "type": "shop-the-look",
+      "blocks": {
+        "look_HWYkEn": {
+          "type": "look",
+          "settings": {
+            "image": "shopify://shop_images/black-rutilated-quartz-mb.jpg",
+            "hot_spots_background": "#ffffff",
+            "product_1": "mens-fantasy-silver-chain-necklace-with-tourmaline-quartz",
+            "product_1_horizontal_position": 35,
+            "product_1_vertical_position": 35,
+            "product_2": "",
+            "product_2_horizontal_position": 34,
+            "product_2_vertical_position": 65,
+            "product_3": "",
+            "product_3_horizontal_position": 66,
+            "product_3_vertical_position": 42,
+            "product_4": "",
+            "product_4_horizontal_position": 85,
+            "product_4_vertical_position": 85
+          }
+        },
+        "look_hC9Pw4": {
+          "type": "look",
+          "settings": {
+            "image": "shopify://shop_images/mens-fantasy-silver-chain-necklace-with-black-rutilated-quartz-necklaces-awnl-taiwan-5.jpg",
+            "hot_spots_background": "#ffffff",
+            "product_1": "womens-fantasy-silver-chain-necklace-with-tourmaline-quartz",
+            "product_1_horizontal_position": 30,
+            "product_1_vertical_position": 35,
+            "product_2": "",
+            "product_2_horizontal_position": 70,
+            "product_2_vertical_position": 30,
+            "product_3": "",
+            "product_3_horizontal_position": 60,
+            "product_3_vertical_position": 65,
+            "product_4": "",
+            "product_4_horizontal_position": 85,
+            "product_4_vertical_position": 85
+          }
+        }
+      },
+      "block_order": [
+        "look_HWYkEn",
+        "look_hC9Pw4"
+      ],
+      "custom_css": [
+        "img {border-radius: 10px; aspect-ratio: 1/1;}",
+        ".shop-the-look__hot-spot-list {display: none;}"
+      ],
+      "settings": {
+        "color_scheme": "scheme-2",
+        "separate_section_with_border": false,
+        "subheading": "BLACK RUTILATED QUARTZ",
+        "title": "",
+        "content": "<h3>髮晶</h3><p>髮晶是一種具有強大能量轉化功能的寶石，能有效清除負面能量，並提供強大的保護與清晰度。特別適合在情感釋放或面對不穩定狀況時使用，能幫助您提升對人生困難的洞察力，並促進個人的成長與恢復力。無論是作為項鍊或手環佩戴，髮晶都能帶來穩定感和清晰的思緒，特別適合希望擺脫負面情緒或處於不安定狀態的您。</p>",
+        "popover_title": "Shop the look"
+      }
+    },
+    "shop_the_look_U4AN8q": {
+      "type": "shop-the-look",
+      "blocks": {
+        "look_gaC8Fr": {
+          "type": "look",
+          "settings": {
+            "image": "shopify://shop_images/spectrolite-mb.jpg",
+            "hot_spots_background": "#ffffff",
+            "product_1": "men-sterling-silver-gemstone-necklace-tomahawk-labradorite",
+            "product_1_horizontal_position": 35,
+            "product_1_vertical_position": 35,
+            "product_2": "",
+            "product_2_horizontal_position": 34,
+            "product_2_vertical_position": 65,
+            "product_3": "",
+            "product_3_horizontal_position": 66,
+            "product_3_vertical_position": 42,
+            "product_4": "",
+            "product_4_horizontal_position": 85,
+            "product_4_vertical_position": 85
+          }
+        },
+        "look_GiU7bL": {
+          "type": "look",
+          "settings": {
+            "image": "shopify://shop_images/men_s-ring-of-hope-with-labradorite2.jpg",
+            "hot_spots_background": "#ffffff",
+            "product_1": "men-sterling-silver-ring-with-labradorite",
+            "product_1_horizontal_position": 30,
+            "product_1_vertical_position": 35,
+            "product_2": "",
+            "product_2_horizontal_position": 70,
+            "product_2_vertical_position": 30,
+            "product_3": "",
+            "product_3_horizontal_position": 60,
+            "product_3_vertical_position": 65,
+            "product_4": "",
+            "product_4_horizontal_position": 85,
+            "product_4_vertical_position": 85
+          }
+        },
+        "look_eQBexj": {
+          "type": "look",
+          "settings": {
+            "image": "shopify://shop_images/spectrolite-labradorite-bracelet-1.jpg",
+            "hot_spots_background": "#ffffff",
+            "product_1": "mens-beaded-bracelet-with-spectrolite-labradorite-and-beacon-charm",
+            "product_1_horizontal_position": 55,
+            "product_1_vertical_position": 30,
+            "product_2": "",
+            "product_2_horizontal_position": 25,
+            "product_2_vertical_position": 40,
+            "product_3": "",
+            "product_3_horizontal_position": 65,
+            "product_3_vertical_position": 60,
+            "product_4": "",
+            "product_4_horizontal_position": 85,
+            "product_4_vertical_position": 85
+          }
+        }
+      },
+      "block_order": [
+        "look_gaC8Fr",
+        "look_GiU7bL",
+        "look_eQBexj"
+      ],
+      "custom_css": [
+        "img {border-radius: 10px; aspect-ratio: 1/1;}",
+        ".shop-the-look__hot-spot-list {display: none;}"
+      ],
+      "settings": {
+        "color_scheme": "scheme-2",
+        "separate_section_with_border": false,
+        "subheading": "FINLAND SPECTROLITE",
+        "title": "",
+        "content": "<h3>光譜石</h3><p>光譜石象徵著神秘的洞察力與轉變，能有效提升直覺並提供靈性照明。特別適合希望戰勝內心恐懼、不安，或是尋求力量與耐心的個人。光譜石能夠強化直覺與靈性能力，並支持靈性覺醒，促使您探索更高層次的意識狀態。佩戴光譜石製作的項鍊或手環，不僅能促進個人的成長與內在變化，還能幫助您拓展人生的無限可能。對於那些渴望在日常生活中融入神秘力量的人來說，這款天然石無疑是最佳的選擇。</p>",
+        "popover_title": "Shop the look"
+      }
+    },
+    "shop_the_look_NyFyCt": {
+      "type": "shop-the-look",
+      "blocks": {
+        "look_PUid8U": {
+          "type": "look",
+          "settings": {
+            "image": "shopify://shop_images/nuummite-mb_8c5c1a41-51fc-40a1-8eb8-6aafddcb573f.jpg",
+            "hot_spots_background": "#ffffff",
+            "product_1": "nuummite-beaded-bracelet-with-dark-star",
+            "product_1_horizontal_position": 35,
+            "product_1_vertical_position": 35,
+            "product_2": "",
+            "product_2_horizontal_position": 34,
+            "product_2_vertical_position": 65,
+            "product_3": "",
+            "product_3_horizontal_position": 66,
+            "product_3_vertical_position": 42,
+            "product_4": "",
+            "product_4_horizontal_position": 85,
+            "product_4_vertical_position": 85
+          }
+        },
+        "look_kcHztP": {
+          "type": "look",
+          "settings": {
+            "image": "shopify://shop_images/men_s-nuummite-beaded-drawstring-bracele-healing_4.jpg",
+            "hot_spots_background": "#ffffff",
+            "product_1": "nuummite-beaded-bracelet-with-runes",
+            "product_1_horizontal_position": 30,
+            "product_1_vertical_position": 35,
+            "product_2": "",
+            "product_2_horizontal_position": 70,
+            "product_2_vertical_position": 30,
+            "product_3": "",
+            "product_3_horizontal_position": 60,
+            "product_3_vertical_position": 65,
+            "product_4": "",
+            "product_4_horizontal_position": 85,
+            "product_4_vertical_position": 85
+          }
+        },
+        "look_6QfLq4": {
+          "type": "look",
+          "settings": {
+            "image": "shopify://shop_images/nuummite-beaded-bracelet-with-runes-of-success-and-wealth_4.jpg",
+            "hot_spots_background": "#ffffff",
+            "product_1": "mens-nuummite-beaded-bracelet-with-runes-wealth",
+            "product_1_horizontal_position": 55,
+            "product_1_vertical_position": 30,
+            "product_2": "",
+            "product_2_horizontal_position": 25,
+            "product_2_vertical_position": 40,
+            "product_3": "",
+            "product_3_horizontal_position": 65,
+            "product_3_vertical_position": 60,
+            "product_4": "",
+            "product_4_horizontal_position": 85,
+            "product_4_vertical_position": 85
+          }
+        },
+        "look_8Udqj7": {
+          "type": "look",
+          "settings": {
+            "image": "shopify://shop_images/half-chain-nuummite-beaded-chain-bracelet-for-men_new6.jpg",
+            "hot_spots_background": "#ffffff",
+            "product_1": "mens-half-chain-bracelet-with-nuummite",
+            "product_1_horizontal_position": 55,
+            "product_1_vertical_position": 30,
+            "product_2": "",
+            "product_2_horizontal_position": 25,
+            "product_2_vertical_position": 40,
+            "product_3": "",
+            "product_3_horizontal_position": 65,
+            "product_3_vertical_position": 60,
+            "product_4": "",
+            "product_4_horizontal_position": 85,
+            "product_4_vertical_position": 85
+          }
+        }
+      },
+      "block_order": [
+        "look_PUid8U",
+        "look_kcHztP",
+        "look_6QfLq4",
+        "look_8Udqj7"
+      ],
+      "custom_css": [
+        "img {border-radius: 10px; aspect-ratio: 1/1;}",
+        ".shop-the-look__hot-spot-list {display: none;}"
+      ],
+      "settings": {
+        "color_scheme": "scheme-2",
+        "separate_section_with_border": false,
+        "subheading": "NUUMMITE",
+        "title": "",
+        "content": "<h3>努烏邁特滾石</h3><p>努烏邁特滾石，又被稱為「魔法師之石」，象徵著深邃的智慧與強大的個人力量。特別適合希望提升直覺與靈性能力，但可能因缺乏自信或感到不穩定而感到困難的人。佩戴努烏邁特滾石製作的項鍊或手環，能有效地幫助您將注意力集中於當下，促進穩定性與接地感，進而達到內心的平靜與自信。這顆石頭能幫助您發掘內在潛力，激發並運用自身的力量，尤其適合那些在情緒起伏或自我懷疑中掙扎的人士。</p>",
+        "popover_title": "Shop the look"
+      }
+    },
+    "shop_the_look_DCMMC9": {
+      "type": "shop-the-look",
+      "blocks": {
+        "look_FWcc6n": {
+          "type": "look",
+          "settings": {
+            "image": "shopify://shop_images/onyx-mb1125x1400.jpg",
+            "hot_spots_background": "#ffffff",
+            "product_1": "vajra-sword-of-wisdom-pendant-necklace",
+            "product_1_horizontal_position": 35,
+            "product_1_vertical_position": 35,
+            "product_2": "",
+            "product_2_horizontal_position": 34,
+            "product_2_vertical_position": 65,
+            "product_3": "",
+            "product_3_horizontal_position": 66,
+            "product_3_vertical_position": 42,
+            "product_4": "",
+            "product_4_horizontal_position": 85,
+            "product_4_vertical_position": 85
+          }
+        },
+        "look_7WwXQ7": {
+          "type": "look",
+          "settings": {
+            "image": "shopify://shop_images/onyx-eye-of-horus-1.jpg",
+            "hot_spots_background": "#ffffff",
+            "product_1": "mens-flatbead-drawstring-bracelet-eye-of-horus-black-onyx-s925-pyramids-strong-protection",
+            "product_1_horizontal_position": 30,
+            "product_1_vertical_position": 35,
+            "product_2": "",
+            "product_2_horizontal_position": 70,
+            "product_2_vertical_position": 30,
+            "product_3": "",
+            "product_3_horizontal_position": 60,
+            "product_3_vertical_position": 65,
+            "product_4": "",
+            "product_4_horizontal_position": 85,
+            "product_4_vertical_position": 85
+          }
+        },
+        "look_w6a4fj": {
+          "type": "look",
+          "settings": {
+            "image": "shopify://shop_images/black-onyx-birthstone-july-cross-necklace-1.jpg",
+            "hot_spots_background": "#ffffff",
+            "product_1": "black-onyx-birthstone-july-cross-necklace",
+            "product_1_horizontal_position": 55,
+            "product_1_vertical_position": 30,
+            "product_2": "",
+            "product_2_horizontal_position": 25,
+            "product_2_vertical_position": 40,
+            "product_3": "",
+            "product_3_horizontal_position": 65,
+            "product_3_vertical_position": 60,
+            "product_4": "",
+            "product_4_horizontal_position": 85,
+            "product_4_vertical_position": 85
+          }
+        }
+      },
+      "block_order": [
+        "look_FWcc6n",
+        "look_7WwXQ7",
+        "look_w6a4fj"
+      ],
+      "custom_css": [
+        "img {border-radius: 10px; aspect-ratio: 1/1;}",
+        ".shop-the-look__hot-spot-list {display: none;}"
+      ],
+      "settings": {
+        "color_scheme": "scheme-2",
+        "separate_section_with_border": false,
+        "subheading": "ONYX",
+        "title": "",
+        "content": "<h3>黑瑪瑙</h3><p>黑瑪瑙，象徵著力量、勇氣與積極性，能有效提升活力與身體能量。特別適合自信心不足、容易受到負面情緒影響的人，幫助您恢復內在力量，增強心理韌性。佩戴黑瑪瑙製作的項鍊或手環，不僅能促進身心平衡，還能提升自我表達和自我意識，讓您在面對挑戰時更加堅定與果斷。此外，黑瑪瑙還能增強耐力和動力，支持您在身體活動中的表現，並激勵您持續追求更高的人生目標。對於希望激勵自己、增強內在動力的人來說，黑瑪瑙無疑是理想的選擇。</p>",
+        "popover_title": "Shop the look"
+      }
+    },
+    "shop_the_look_N9ccbP": {
+      "type": "shop-the-look",
+      "blocks": {
+        "look_xPFy6R": {
+          "type": "look",
+          "settings": {
+            "image": "shopify://shop_images/lapis-lazuli-mb.jpg",
+            "hot_spots_background": "#ffffff",
+            "product_1": "mens-pendant-necklace-with-lapis-lazuli",
+            "product_1_horizontal_position": 35,
+            "product_1_vertical_position": 35,
+            "product_2": "",
+            "product_2_horizontal_position": 34,
+            "product_2_vertical_position": 65,
+            "product_3": "",
+            "product_3_horizontal_position": 66,
+            "product_3_vertical_position": 42,
+            "product_4": "",
+            "product_4_horizontal_position": 85,
+            "product_4_vertical_position": 85
+          }
+        },
+        "look_dcpR8F": {
+          "type": "look",
+          "settings": {
+            "image": "shopify://shop_images/mens-sirius-cross-necklace-with-lapis-lazuli-necklaces-awnl-taiwan-8.jpg",
+            "hot_spots_background": "#ffffff",
+            "product_1": "mens-sirius-cross-necklace-with-lapis-lazuli",
+            "product_1_horizontal_position": 55,
+            "product_1_vertical_position": 30,
+            "product_2": "",
+            "product_2_horizontal_position": 25,
+            "product_2_vertical_position": 40,
+            "product_3": "",
+            "product_3_horizontal_position": 65,
+            "product_3_vertical_position": 60,
+            "product_4": "",
+            "product_4_horizontal_position": 85,
+            "product_4_vertical_position": 85
+          }
+        }
+      },
+      "block_order": [
+        "look_xPFy6R",
+        "look_dcpR8F"
+      ],
+      "custom_css": [
+        "img {border-radius: 10px; aspect-ratio: 1/1;}",
+        ".shop-the-look__hot-spot-list {display: none;}"
+      ],
+      "settings": {
+        "color_scheme": "scheme-2",
+        "separate_section_with_border": false,
+        "subheading": "LAPIS LAZULI",
+        "title": "",
+        "content": "<h3>青金石</h3><p>青金石，是一顆強大的療癒寶石，能有效消除不安並促進有效的溝通。特別適合希望戰勝失落或悲傷、並安慰自己靈魂的人。佩戴青金石製作的項鍊或手環，不僅有助於提升理解與寬恕，還能透過穩定的精神引導，緩解情感波動，幫助情緒回歸平衡，讓您在情感的療癒過程中找到平靜與力量。</p>",
+        "popover_title": "Shop the look"
+      }
+    },
+    "shop_the_look_3qCHQp": {
+      "type": "shop-the-look",
+      "blocks": {
+        "look_fQHdf6": {
+          "type": "look",
+          "settings": {
+            "image": "shopify://shop_images/obsidian-mb1125x1400.jpg",
+            "hot_spots_background": "#ffffff",
+            "product_1": "men-necklace-silver-obsidian-seraph-wing",
+            "product_1_horizontal_position": 35,
+            "product_1_vertical_position": 35,
+            "product_2": "",
+            "product_2_horizontal_position": 34,
+            "product_2_vertical_position": 65,
+            "product_3": "",
+            "product_3_horizontal_position": 66,
+            "product_3_vertical_position": 42,
+            "product_4": "",
+            "product_4_horizontal_position": 85,
+            "product_4_vertical_position": 85
+          }
+        },
+        "look_9XLyUj": {
+          "type": "look",
+          "settings": {
+            "image": "shopify://shop_images/obsidian-12mm-celtic-knot-bracelet-on-model_4.jpg",
+            "hot_spots_background": "#ffffff",
+            "product_1": "mens-crossguard-charm-beaded-bracelet-with-obsidian-and-runes",
+            "product_1_horizontal_position": 30,
+            "product_1_vertical_position": 35,
+            "product_2": "",
+            "product_2_horizontal_position": 70,
+            "product_2_vertical_position": 30,
+            "product_3": "",
+            "product_3_horizontal_position": 60,
+            "product_3_vertical_position": 65,
+            "product_4": "",
+            "product_4_horizontal_position": 85,
+            "product_4_vertical_position": 85
+          }
+        },
+        "look_bRaqrE": {
+          "type": "look",
+          "settings": {
+            "image": "shopify://shop_images/mens-beaded-bracelet-with-meteorite-and-golden-obsidian_4.jpg",
+            "hot_spots_background": "#ffffff",
+            "product_1": "mens-beaded-bracelet-with-meteorite-and-golden-obsidian",
+            "product_1_horizontal_position": 55,
+            "product_1_vertical_position": 30,
+            "product_2": "",
+            "product_2_horizontal_position": 25,
+            "product_2_vertical_position": 40,
+            "product_3": "",
+            "product_3_horizontal_position": 65,
+            "product_3_vertical_position": 60,
+            "product_4": "",
+            "product_4_horizontal_position": 85,
+            "product_4_vertical_position": 85
+          }
+        }
+      },
+      "block_order": [
+        "look_fQHdf6",
+        "look_9XLyUj",
+        "look_bRaqrE"
+      ],
+      "custom_css": [
+        "img {border-radius: 10px; aspect-ratio: 1/1;}",
+        ".shop-the-look__hot-spot-list {display: none;}"
+      ],
+      "settings": {
+        "color_scheme": "scheme-2",
+        "separate_section_with_border": false,
+        "subheading": "OBSIDIAN",
+        "title": "",
+        "content": "<h3>黑曜石</h3><p>黑曜石是一顆強大的天然石，能夠照亮內在的力量，驅散恐懼與疑慮的陰影，並激發創造力與創新。特別適合尋求自我發現與個人成長的人。佩戴黑曜石製作的項鍊或手環，不僅能幫助您發現並培養內在潛能，還能有效保護您免受負面能量的影響，提升靈性恢復力。對於正在探索自我成長，或希望加速靈性覺醒的人來說，黑曜石無疑是您理想的選擇。</p>",
+        "popover_title": "Shop the look"
+      }
+    },
+    "shop_the_look_LiA9bN": {
+      "type": "shop-the-look",
+      "blocks": {
+        "look_Cxa9bq": {
+          "type": "look",
+          "settings": {
+            "image": "shopify://shop_images/tiger-eye-mb.jpg",
+            "hot_spots_background": "#ffffff",
+            "product_1": "mens-beaded-bracelet-tiger-eye-and-black-onyx",
+            "product_1_horizontal_position": 30,
+            "product_1_vertical_position": 35,
+            "product_2": "",
+            "product_2_horizontal_position": 70,
+            "product_2_vertical_position": 30,
+            "product_3": "",
+            "product_3_horizontal_position": 60,
+            "product_3_vertical_position": 65,
+            "product_4": "",
+            "product_4_horizontal_position": 85,
+            "product_4_vertical_position": 85
+          }
+        },
+        "look_C8E3dX": {
+          "type": "look",
+          "settings": {
+            "image": "shopify://shop_images/hawk-eye-black-mb.jpg",
+            "hot_spots_background": "#ffffff",
+            "product_1": "mens-beaded-drawstring-bracelet-with-grey-hawk-eye",
+            "product_1_horizontal_position": 55,
+            "product_1_vertical_position": 30,
+            "product_2": "",
+            "product_2_horizontal_position": 25,
+            "product_2_vertical_position": 40,
+            "product_3": "",
+            "product_3_horizontal_position": 65,
+            "product_3_vertical_position": 60,
+            "product_4": "",
+            "product_4_horizontal_position": 85,
+            "product_4_vertical_position": 85
+          }
+        },
+        "look_bQ6j7r": {
+          "type": "look",
+          "settings": {
+            "image": "shopify://shop_images/red-tiger-eye-tooth-necklace-1.jpg",
+            "hot_spots_background": "#ffffff",
+            "product_1": "men-necklace-red-tiger-eye-tiger-tooth",
+            "product_1_horizontal_position": 55,
+            "product_1_vertical_position": 30,
+            "product_2": "",
+            "product_2_horizontal_position": 25,
+            "product_2_vertical_position": 40,
+            "product_3": "",
+            "product_3_horizontal_position": 65,
+            "product_3_vertical_position": 60,
+            "product_4": "",
+            "product_4_horizontal_position": 85,
+            "product_4_vertical_position": 85
+          }
+        },
+        "look_TUCbKm": {
+          "type": "look",
+          "settings": {
+            "image": "shopify://shop_images/Golden_Tiger_Eye.jpg",
+            "hot_spots_background": "#ffffff",
+            "product_1": "mens-flatbead-bracelet-with-golden-tiger-eye-and-knight-cross-charm",
+            "product_1_horizontal_position": 35,
+            "product_1_vertical_position": 35,
+            "product_2": "",
+            "product_2_horizontal_position": 34,
+            "product_2_vertical_position": 65,
+            "product_3": "",
+            "product_3_horizontal_position": 66,
+            "product_3_vertical_position": 42,
+            "product_4": "",
+            "product_4_horizontal_position": 85,
+            "product_4_vertical_position": 85
+          }
+        },
+        "look_DkUbhQ": {
+          "type": "look",
+          "settings": {
+            "image": "shopify://shop_images/South_African_Red_Tiger_s_Eye.jpg",
+            "hot_spots_background": "#ffffff",
+            "product_1": "men-necklace-red-tiger-eye-six-syllables-mantra",
+            "product_1_horizontal_position": 55,
+            "product_1_vertical_position": 30,
+            "product_2": "",
+            "product_2_horizontal_position": 25,
+            "product_2_vertical_position": 40,
+            "product_3": "",
+            "product_3_horizontal_position": 65,
+            "product_3_vertical_position": 60,
+            "product_4": "",
+            "product_4_horizontal_position": 85,
+            "product_4_vertical_position": 85
+          }
+        }
+      },
+      "block_order": [
+        "look_Cxa9bq",
+        "look_C8E3dX",
+        "look_bQ6j7r",
+        "look_TUCbKm",
+        "look_DkUbhQ"
+      ],
+      "custom_css": [
+        "img {border-radius: 10px; aspect-ratio: 1/1;}",
+        ".shop-the-look__hot-spot-list {display: none;}"
+      ],
+      "settings": {
+        "color_scheme": "scheme-2",
+        "separate_section_with_border": false,
+        "subheading": "MULTICOLORED TIGER EYE",
+        "title": "",
+        "content": "<h3>虎眼石</h3><p>虎眼石，象徵著成功的光輝，能有效提升直覺與遠見，並為佩戴者指引正確的道路。特別適合自信心不足、對人生挑戰感到困惑的人，幫助他們找到前進的方向與力量。佩戴虎眼石製作的項鍊或手環，有助於吸引繁榮、增強精神的清晰度與專注力，並促進身心的穩定與平衡。它能激發個人及職業上的動力，推動您在各方面邁向成功，同時提供靈性保護，幫助您遠離負面能量的干擾。</p>",
+        "popover_title": "Shop the look"
+      }
+    },
+    "main": {
+      "type": "main-page",
+      "disabled": true,
+      "settings": {
+        "color_scheme": "",
+        "show_title": true,
+        "page_width": "xs"
+      }
+    },
+    "image_with_text_overlay_tbj6ip": {
+      "type": "image-with-text-overlay",
+      "blocks": {
+        "heading_pcwRJC": {
+          "type": "heading",
+          "settings": {
+            "text": "能量晶石選擇指引",
+            "heading_tag": "h2"
+          }
+        },
+        "richtext_QPzait": {
+          "type": "richtext",
+          "settings": {
+            "content": "<p>我們的身體與周圍的能量時刻互動。某些天然石和能量石所蘊含的能量，能對特定磁場產生調和或改善的作用。選擇適合自己的天然石並長時間佩戴，可以調整身體的磁場平衡，讓積極、正向的能量在身心中回響。</p>"
+          }
+        },
+        "button_NCPQyX": {
+          "type": "button",
+          "settings": {
+            "style": "solid",
+            "text": "詳細天然石選擇指南",
+            "url": "shopify://pages/choose-crystal-energy",
+            "background": "",
+            "text_color": ""
+          }
+        }
+      },
+      "block_order": [
+        "heading_pcwRJC",
+        "richtext_QPzait",
+        "button_NCPQyX"
+      ],
+      "settings": {
+        "color_scheme": "",
+        "image_size": "sm",
+        "image": "shopify://shop_images/gemstone-jewelry-collection-banner-pc.jpg",
+        "allow_transparent_header": false,
+        "reveal_on_scroll": true,
+        "remove_vertical_spacing": true,
+        "content_width": "xs",
+        "mobile_text_position": "place-self-center text-center",
+        "desktop_text_position": "sm:place-self-center sm:text-center",
+        "overlay_color": "#000000",
+        "overlay_opacity": 41
+      }
+    }
+  },
+  "order": [
+    "image_with_text_overlay_f8b7b3",
+    "shop_the_look_eeiic9",
+    "shop_the_look_U4AN8q",
+    "shop_the_look_NyFyCt",
+    "shop_the_look_DCMMC9",
+    "shop_the_look_N9ccbP",
+    "shop_the_look_3qCHQp",
+    "shop_the_look_LiA9bN",
+    "main",
+    "image_with_text_overlay_tbj6ip"
+  ]
+}

@@ -1,0 +1,31 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "main": {
+      "type": "main-customers-login",
+      "blocks": {
+        "e878c45e-665e-48b4-a9e0-dcb2ab392a0d": {
+          "type": "fields",
+          "settings": {
+            "return_to": ""
+          }
+        }
+      },
+      "block_order": [
+        "e878c45e-665e-48b4-a9e0-dcb2ab392a0d"
+      ],
+      "settings": {}
+    }
+  },
+  "order": [
+    "main"
+  ]
+}

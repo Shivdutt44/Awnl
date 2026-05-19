@@ -1,0 +1,71 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "main": {
+      "type": "main-page",
+      "disabled": true,
+      "settings": {
+        "show_title": true,
+        "page_width": "xs"
+      }
+    },
+    "9a42800e-d5ba-4fd9-96c6-346a0feee360": {
+      "type": "rich-text",
+      "blocks": {
+        "template--16027600093364__9a42800e-d5ba-4fd9-96c6-346a0feee360-heading-1": {
+          "type": "heading",
+          "settings": {
+            "text": "聯絡我們",
+            "heading_tag": "h2"
+          }
+        },
+        "template--16027600093364__9a42800e-d5ba-4fd9-96c6-346a0feee360-richtext-1": {
+          "type": "richtext",
+          "settings": {
+            "content": "<p> 如果您有任何問題，請使用以下聯絡方式和我們聯繫。</p><p>客戶服務，購買諮詢，售後相關：</p><ol><li>請填寫下方表單後發送訊息給我們。</li><li>官方網站線上諮詢窗口。</li><li>LINE線上諮詢服務。 請加官方<a href=\"https://lin.ee/7e2zh8U\" target=\"_blank\" title=\"AWNL Taiwan LINE\"> LINE@ </a>我們。</li></ol><p><strong>商業合作、採訪或媒體相關：</strong></p><p>請傳送email至 ：<a href=\"mailto:inquiry@awnl.net\" target=\"_blank\">inquiry@awnl.net</a></p><p>客服服務時間：平日 09:30－18:00</p><p>（國定例假日暫停服務）</p><p> ＊若您在2工作日內未收到我們的email回覆，且在垃圾信箱中未找到，請通過線上客服或是<a href=\"https://lin.ee/7e2zh8U\" title=\"AWNL TW LINE\">LINE@</a>再次和我們聯繫，感謝您的理解與配合。＊</p><p> </p>"
+          }
+        },
+        "ce88983d-7161-4ff9-ac29-816205c6daa0": {
+          "type": "richtext",
+          "settings": {
+            "content": "<p><strong>Our Locations:</strong></p><p>Stockholm 13540 Tyreso Sweden<br/>Baldwin Park CA 91706 United States</p>"
+          }
+        }
+      },
+      "block_order": [
+        "template--16027600093364__9a42800e-d5ba-4fd9-96c6-346a0feee360-heading-1",
+        "template--16027600093364__9a42800e-d5ba-4fd9-96c6-346a0feee360-richtext-1",
+        "ce88983d-7161-4ff9-ac29-816205c6daa0"
+      ],
+      "custom_css": [],
+      "settings": {
+        "separate_section_with_border": false,
+        "content_width": "sm",
+        "text_position": "center",
+        "remove_vertical_spacing": false
+      }
+    },
+    "contact-form": {
+      "type": "contact",
+      "settings": {
+        "separate_section_with_border": false,
+        "subheading": "",
+        "title": "Send us a message",
+        "content": "<p>請填寫您需要諮詢的問題、疑問或意見，我們的客服專員將會盡快回覆您。</p>"
+      }
+    }
+  },
+  "order": [
+    "main",
+    "9a42800e-d5ba-4fd9-96c6-346a0feee360",
+    "contact-form"
+  ]
+}

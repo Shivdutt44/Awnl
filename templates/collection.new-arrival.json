@@ -1,0 +1,504 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "collection-banner": {
+      "type": "collection-banner",
+      "settings": {
+        "color_scheme": "scheme-1b02ad27-67f6-4363-902b-7afc4c7eb905",
+        "image": "shopify://shop_images/202411-website-homepage-picture.jpg",
+        "image_size": "auto",
+        "allow_transparent_header": false,
+        "reveal": true,
+        "enable_parallax": false,
+        "show_image": false,
+        "show_collection_title": true,
+        "show_collection_description": true,
+        "show_breadcrumb": true,
+        "content_width": "xs",
+        "overlay_color": "#000000",
+        "overlay_opacity": 11
+      }
+    },
+    "media_grid_E6bmbz": {
+      "type": "media-grid",
+      "blocks": {
+        "image_QYb6An": {
+          "type": "image",
+          "settings": {
+            "color_scheme": "scheme-4",
+            "image": "shopify://shop_images/ObsidianWarriorRuneBracelet5.jpg",
+            "column_count": "4",
+            "row_count": 2,
+            "title": "",
+            "heading_tag": "h4",
+            "content": "",
+            "link_text": "",
+            "link_url": "shopify://products/black-obsidian-warrior-rune-bracelet",
+            "link_style": "link",
+            "text_position": "place-self-end-center text-center",
+            "overlay_color": "#695e5e",
+            "overlay_opacity": 0
+          }
+        },
+        "image_KVyefj": {
+          "type": "image",
+          "settings": {
+            "color_scheme": "scheme-4",
+            "image": "shopify://shop_images/mahogany-obsidian-bracelet-augustos-new-arrival.jpg",
+            "column_count": "4",
+            "row_count": 2,
+            "title": "",
+            "heading_tag": "h4",
+            "content": "",
+            "link_text": "",
+            "link_url": "shopify://products/mahogany-obsidian-augustus-skyrim-bracelet",
+            "link_style": "link",
+            "text_position": "place-self-end-center text-center",
+            "overlay_color": "#695e5e",
+            "overlay_opacity": 0
+          }
+        },
+        "image_tCck6M": {
+          "type": "image",
+          "settings": {
+            "color_scheme": "scheme-4",
+            "image": "shopify://shop_images/fuchsite-augustus-skyrim-bracelet-model.jpg",
+            "column_count": "4",
+            "row_count": 2,
+            "title": "",
+            "heading_tag": "h4",
+            "content": "",
+            "link_text": "",
+            "link_url": "shopify://products/fuchsite-augustus-skyrim-bracelet",
+            "link_style": "link",
+            "text_position": "place-self-end-center text-center",
+            "overlay_color": "#695e5e",
+            "overlay_opacity": 0
+          }
+        },
+        "image_LtiTat": {
+          "type": "image",
+          "settings": {
+            "color_scheme": "scheme-2",
+            "image": "shopify://shop_images/mens-mini-sodalite-poseidon-trident-necklace-showcase-1.jpg",
+            "column_count": "4",
+            "row_count": 2,
+            "title": "",
+            "heading_tag": "h4",
+            "content": "",
+            "link_text": "",
+            "link_url": "shopify://products/mens-mini-sodalite-poseidon-trident-necklace",
+            "link_style": "link",
+            "text_position": "place-self-end-center text-center",
+            "overlay_color": "#695e5e",
+            "overlay_opacity": 0
+          }
+        },
+        "image_9b79Qq": {
+          "type": "image",
+          "settings": {
+            "color_scheme": "scheme-2",
+            "image": "shopify://shop_images/womens-poseidon-trident-sodalite-necklace-showcase-1.jpg",
+            "column_count": "4",
+            "row_count": 2,
+            "title": "",
+            "heading_tag": "h4",
+            "content": "",
+            "link_text": "",
+            "link_url": "shopify://products/womens-poseidon-trident-sodalite-necklace",
+            "link_style": "link",
+            "text_position": "place-self-end-center text-center",
+            "overlay_color": "#695e5e",
+            "overlay_opacity": 0
+          }
+        },
+        "image_iMjBkb": {
+          "type": "image",
+          "settings": {
+            "color_scheme": "scheme-2",
+            "image": "shopify://shop_images/4-necklace-banner-mb_1250_1600.jpg",
+            "column_count": "4",
+            "row_count": 2,
+            "title": "",
+            "heading_tag": "h4",
+            "content": "",
+            "link_text": "",
+            "link_url": "shopify://products/mens-topaz-hamsa-hand-charm-necklace",
+            "link_style": "link",
+            "text_position": "place-self-end-center text-center",
+            "overlay_color": "#695e5e",
+            "overlay_opacity": 0
+          }
+        },
+        "image_mQ4f4D": {
+          "type": "image",
+          "settings": {
+            "color_scheme": "scheme-2",
+            "image": "shopify://shop_images/2024-winter-new-arrival-kyanite-bracelet_1.jpg",
+            "column_count": "4",
+            "row_count": 2,
+            "title": "",
+            "heading_tag": "h4",
+            "content": "",
+            "link_text": "",
+            "link_url": "shopify://products/mens-ceylon-sapphire-silver-chain-bracelet",
+            "link_style": "link",
+            "text_position": "place-self-end-center text-center",
+            "overlay_color": "#695e5e",
+            "overlay_opacity": 0
+          }
+        },
+        "image_HKRTqN": {
+          "type": "image",
+          "settings": {
+            "color_scheme": "scheme-2",
+            "image": "shopify://shop_images/dumortierite_seagleam_cross_necklace-showcase-1.jpg",
+            "column_count": "4",
+            "row_count": 2,
+            "title": "",
+            "heading_tag": "h4",
+            "content": "",
+            "link_text": "",
+            "link_url": "shopify://products/dumortierite_seagleam_cross_necklace",
+            "link_style": "link",
+            "text_position": "place-self-end-center text-center",
+            "overlay_color": "#000000",
+            "overlay_opacity": 0
+          }
+        },
+        "image_AxHYbK": {
+          "type": "image",
+          "settings": {
+            "color_scheme": "scheme-2",
+            "image": "shopify://shop_images/2024-winter-new-arrival-kyanite-bracelet.jpg",
+            "column_count": "4",
+            "row_count": 2,
+            "title": "",
+            "heading_tag": "h4",
+            "content": "",
+            "link_text": "",
+            "link_url": "shopify://products/kyanite-single-wrap-half-bracelet",
+            "link_style": "link",
+            "text_position": "place-self-end-center text-center",
+            "overlay_color": "#000000",
+            "overlay_opacity": 0
+          }
+        },
+        "image_GcRrbP": {
+          "type": "image",
+          "settings": {
+            "color_scheme": "scheme-2",
+            "image": "shopify://shop_images/dumortierite_celtic_rune_necklace_6.jpg",
+            "column_count": "4",
+            "row_count": 2,
+            "title": "",
+            "heading_tag": "h4",
+            "content": "",
+            "link_text": "",
+            "link_url": "shopify://products/dumortierite-celtic-rune-necklace",
+            "link_style": "link",
+            "text_position": "place-self-end-center text-center",
+            "overlay_color": "#000000",
+            "overlay_opacity": 0
+          }
+        },
+        "image_yUfLxJ": {
+          "type": "image",
+          "settings": {
+            "color_scheme": "scheme-2",
+            "image": "shopify://shop_images/dumortierite_awnl_logo_necklace_10.jpg",
+            "column_count": "4",
+            "row_count": 2,
+            "title": "",
+            "heading_tag": "h4",
+            "content": "",
+            "link_text": "",
+            "link_url": "shopify://products/dumortierite-logo-men-necklace",
+            "link_style": "link",
+            "text_position": "place-self-end-center text-center",
+            "overlay_color": "#000000",
+            "overlay_opacity": 0
+          }
+        },
+        "image_xiGAVK": {
+          "type": "image",
+          "settings": {
+            "color_scheme": "scheme-2",
+            "image": "shopify://shop_images/2024-winter-new-arrival-kyanite-bracelet_3.jpg",
+            "column_count": "4",
+            "row_count": 2,
+            "title": "",
+            "heading_tag": "h4",
+            "content": "",
+            "link_text": "",
+            "link_url": "shopify://products/black-spinel-double-wrap-bracelet",
+            "link_style": "link",
+            "text_position": "place-self-end-center text-center",
+            "overlay_color": "#000000",
+            "overlay_opacity": 0
+          }
+        },
+        "image_mBEgKd": {
+          "type": "image",
+          "settings": {
+            "color_scheme": "scheme-2",
+            "image": "shopify://shop_images/golden_tiger_s_eye_slant-edge_cross_necklace_8.jpg",
+            "column_count": "4",
+            "row_count": 2,
+            "title": "",
+            "heading_tag": "h4",
+            "content": "",
+            "link_text": "",
+            "link_url": "shopify://products/golden-tiger-eye-edgecast-cross-necklace",
+            "link_style": "link",
+            "text_position": "place-self-end-center text-center",
+            "overlay_color": "#000000",
+            "overlay_opacity": 0
+          }
+        },
+        "image_GJQ8Cy": {
+          "type": "image",
+          "settings": {
+            "color_scheme": "scheme-2",
+            "image": "shopify://shop_images/silver-curb-chain-feather-clasp-silde_1_c11dc047-0c3b-4f18-95e8-a0b07a9d9c2a.jpg",
+            "column_count": "4",
+            "row_count": 2,
+            "title": "",
+            "heading_tag": "h4",
+            "content": "",
+            "link_text": "",
+            "link_url": "shopify://products/silver-cuban-link-chain-feather-clasp",
+            "link_style": "link",
+            "text_position": "place-self-end-center text-center",
+            "overlay_color": "#000000",
+            "overlay_opacity": 0
+          }
+        },
+        "image_yTDYDx": {
+          "type": "image",
+          "settings": {
+            "color_scheme": "scheme-2",
+            "image": "shopify://shop_images/Om_Sanskrit_Multicolor_Gemstone_Necklace_9.jpg",
+            "column_count": "4",
+            "row_count": 2,
+            "title": "",
+            "heading_tag": "h4",
+            "content": "",
+            "link_text": "",
+            "link_url": "shopify://products/bloodstone-om-sankrit-necklace",
+            "link_style": "link",
+            "text_position": "place-self-end-center text-center",
+            "overlay_color": "#000000",
+            "overlay_opacity": 0
+          }
+        },
+        "image_JGAxMm": {
+          "type": "image",
+          "settings": {
+            "color_scheme": "scheme-2",
+            "image": "shopify://shop_images/brecciated-jasper-rune-man-necklace-rope-chain_mail.jpg",
+            "column_count": "4",
+            "row_count": 2,
+            "title": "",
+            "heading_tag": "h4",
+            "content": "",
+            "link_text": "",
+            "link_url": "shopify://products/men-sterling-silver-rune-pendant-necklace-brecciated-jasper",
+            "link_style": "link",
+            "text_position": "place-self-end-center text-center",
+            "overlay_color": "#000000",
+            "overlay_opacity": 0
+          }
+        },
+        "image_qmtwNc": {
+          "type": "image",
+          "disabled": true,
+          "settings": {
+            "color_scheme": "scheme-2",
+            "image": "shopify://shop_images/womens-blue-moonstone-necklace-showcese-1.jpg",
+            "column_count": "4",
+            "row_count": 2,
+            "title": "",
+            "heading_tag": "h4",
+            "content": "",
+            "link_text": "",
+            "link_url": "shopify://products/womens-blue-moonstone-necklace",
+            "link_style": "link",
+            "text_position": "place-self-end-center text-center",
+            "overlay_color": "#000000",
+            "overlay_opacity": 0
+          }
+        }
+      },
+      "block_order": [
+        "image_QYb6An",
+        "image_KVyefj",
+        "image_tCck6M",
+        "image_LtiTat",
+        "image_9b79Qq",
+        "image_iMjBkb",
+        "image_mQ4f4D",
+        "image_HKRTqN",
+        "image_AxHYbK",
+        "image_GcRrbP",
+        "image_yUfLxJ",
+        "image_xiGAVK",
+        "image_mBEgKd",
+        "image_GJQ8Cy",
+        "image_yTDYDx",
+        "image_JGAxMm",
+        "image_qmtwNc"
+      ],
+      "custom_css": [
+        "media-grid {grid-column-gap: 10px; grid-row-gap: 10px;}",
+        "@media (max-width: 769px) {img {aspect-ratio: 1/1.2; object-fit: cover; }}",
+        "@media (min-width: 770px) {img {aspect-ratio: 1.2/1; object-fit: cover !important; }}"
+      ],
+      "settings": {
+        "color_scheme": "scheme-1b02ad27-67f6-4363-902b-7afc4c7eb905",
+        "separate_section_with_border": false,
+        "desktop_row_height": 270,
+        "mobile_row_height": 250,
+        "section_width": "lg",
+        "spacing": "none",
+        "subheading": "",
+        "title": "",
+        "content": ""
+      }
+    },
+    "main": {
+      "type": "main-collection",
+      "disabled": true,
+      "settings": {
+        "color_scheme": "scheme-2",
+        "hide_product_information": false,
+        "products_per_page": 8,
+        "products_per_row_mobile": "2",
+        "products_size_desktop": "medium",
+        "show_grid_mode_selector": true,
+        "horizontal_spacing_factor": 1,
+        "vertical_spacing_factor": 1,
+        "filter_layout": "drawer",
+        "quick_links_menu": "",
+        "show_sort_by": true,
+        "show_filters": true,
+        "show_results_count": true,
+        "show_filter_group_name": false,
+        "show_filter_values_count": true,
+        "open_filters_by_default": false
+      }
+    },
+    "2174781a-c247-4c9d-9ee6-117cec8ff399": {
+      "type": "collection-list",
+      "blocks": {
+        "template--16842645405934__2174781a-c247-4c9d-9ee6-117cec8ff399-collection-1": {
+          "type": "collection",
+          "settings": {
+            "color_scheme": "scheme-4",
+            "collection": "{{ collection.metafields.my_fields.sub_collection_a.value }}",
+            "image": "{{ block.settings.collection.metafields.my_fields.collection_banner_mb.value }}",
+            "expand_collection": false,
+            "content_position": "place-self-end-center text-center",
+            "subheading": "",
+            "title": "",
+            "button_text": "{{ block.settings.collection.title }}",
+            "button_link": "",
+            "button_style": "solid",
+            "overlay_color": "#000000",
+            "overlay_opacity": 14
+          }
+        },
+        "template--16842645405934__2174781a-c247-4c9d-9ee6-117cec8ff399-collection-2": {
+          "type": "collection",
+          "settings": {
+            "color_scheme": "scheme-4",
+            "collection": "{{ collection.metafields.my_fields.sub_collection_b.value }}",
+            "image": "{{ block.settings.collection.metafields.my_fields.collection_banner_mb.value }}",
+            "expand_collection": false,
+            "content_position": "place-self-end-center text-center",
+            "subheading": "",
+            "title": "",
+            "button_text": "{{ block.settings.collection.title }}",
+            "button_link": "",
+            "button_style": "solid",
+            "overlay_color": "#000000",
+            "overlay_opacity": 14
+          }
+        },
+        "93f1453e-b856-4977-9d89-be5a36b4b90c": {
+          "type": "collection",
+          "settings": {
+            "color_scheme": "scheme-4",
+            "collection": "{{ collection.metafields.my_fields.sub_colleciton_c.value }}",
+            "image": "{{ block.settings.collection.metafields.my_fields.collection_banner_mb.value }}",
+            "expand_collection": false,
+            "content_position": "place-self-end-center text-center",
+            "subheading": "",
+            "title": "",
+            "button_text": "{{ block.settings.collection.title }}",
+            "button_link": "",
+            "button_style": "solid",
+            "overlay_color": "#000000",
+            "overlay_opacity": 15
+          }
+        },
+        "collection_bPKkYY": {
+          "type": "collection",
+          "settings": {
+            "color_scheme": "scheme-4",
+            "collection": "{{ collection.metafields.my_fields.sub_collection_d.value }}",
+            "image": "{{ block.settings.collection.metafields.my_fields.collection_banner_mb.value }}",
+            "expand_collection": false,
+            "content_position": "place-self-end-center text-center",
+            "subheading": "",
+            "title": "",
+            "button_text": "{{ block.settings.collection.title }}",
+            "button_link": "",
+            "button_style": "solid",
+            "overlay_color": "#000000",
+            "overlay_opacity": 15
+          }
+        }
+      },
+      "block_order": [
+        "template--16842645405934__2174781a-c247-4c9d-9ee6-117cec8ff399-collection-1",
+        "template--16842645405934__2174781a-c247-4c9d-9ee6-117cec8ff399-collection-2",
+        "93f1453e-b856-4977-9d89-be5a36b4b90c",
+        "collection_bPKkYY"
+      ],
+      "disabled": true,
+      "custom_css": [
+        ".button {background: transparent; border: none; color: white; text-decoration: none; position: relative; padding: 5px; display: inline-block; line-height: 1.6; border-bottom: 1px solid transparent; background-image: linear-gradient(to right, white, white); background-size: 100% 2px; background-repeat: no-repeat; background-position: 0% 100%; transition: background-size 0.8s ease-in-out;}",
+        ".button:hover {background-size: 0% 2px;}",
+        ".collection-card img {width: 100%; height: auto; aspect-ratio: 1 / 1; object-fit: cover; object-position: center;}"
+      ],
+      "settings": {
+        "color_scheme": "scheme-2",
+        "separate_section_with_border": false,
+        "image_size": "auto",
+        "show_text_outside": false,
+        "space_items": true,
+        "stack_collections": false,
+        "collections_per_row_mobile": "1",
+        "collections_per_row_desktop": 4,
+        "subheading": "",
+        "title": "More Inspirations",
+        "content": "<p>探索更多系列靈感</p>"
+      }
+    }
+  },
+  "order": [
+    "collection-banner",
+    "media_grid_E6bmbz",
+    "main",
+    "2174781a-c247-4c9d-9ee6-117cec8ff399"
+  ]
+}

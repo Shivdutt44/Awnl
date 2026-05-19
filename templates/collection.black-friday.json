@@ -1,0 +1,336 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "collection-banner": {
+      "type": "collection-banner",
+      "custom_css": [],
+      "settings": {
+        "color_scheme": "scheme-3",
+        "image": "shopify://shop_images/2024-black-friday-cyber-monday-homepage-pc-hero-banner.jpg",
+        "mobile_image": "shopify://shop_images/2024-black-friday-cyber-monday-homepage-square-banner.jpg",
+        "image_size": "auto",
+        "allow_transparent_header": false,
+        "reveal": true,
+        "enable_parallax": false,
+        "show_image": true,
+        "show_collection_title": false,
+        "show_collection_description": false,
+        "show_breadcrumb": true,
+        "content_width": "xs",
+        "overlay_color": "#000000",
+        "overlay_opacity": 0
+      }
+    },
+    "rich_text_WejAxC": {
+      "type": "rich-text",
+      "blocks": {
+        "subheading_AdTGVb": {
+          "type": "subheading",
+          "disabled": true,
+          "settings": {
+            "text": "雙11黑五・探索宇宙至地心"
+          }
+        },
+        "heading_dANF4e": {
+          "type": "heading",
+          "disabled": true,
+          "settings": {
+            "text": "Natural Force 全館6折起",
+            "heading_tag": "h1"
+          }
+        },
+        "richtext_rdTik4": {
+          "type": "richtext",
+          "disabled": true,
+          "settings": {
+            "content": "<p>太空隕石 × 地心寶石  <br/>融合隕石與稀有地核寶石的極致工藝。<br/>雙11、黑五跨季禮遇，天然石全系列限時6折起。</p>"
+          }
+        },
+        "liquid_GfYnK3": {
+          "type": "liquid",
+          "disabled": true,
+          "settings": {
+            "liquid": "<div class=\"title\">雙11 & 黑五・探索宇宙至地心</div>\n    <div class=\"main-heading\">Natural Force <br><span class=\"discount\">MAX 40% OFF</span></div>\n\n    <div class=\"description\">\n        太空隕石 × 地心寶石<br>\n       融合隕石與稀有地核寶石的極致工藝。\n<br>\n        <p>雙11、黑五跨季禮遇<br>限定選品系列限時6折起。<br>\n        <br>\n    </div>\n\n   <style>\n \n        .title {\n            font-size: 16px;\n            margin-bottom: 10px;\n            font-weight: bold;\n        }\n        .main-heading {\n            font-size: 28px;\n            font-weight: bold;\nline-height:1.8;\n        }\n        .discount {\nfont-size: 25px;\n            background-color: #182D62;\n            color: #ffffff;\n            padding: 0px 20px 5px 20px;\nfont-weight:bold;\n            border-radius: 5px;\n        }\n        .description {\n            font-size: 15px;\n            line-height: 1.6;\n            color: #cccccc;\n            margin: 10px 0 30px;\nmargin-bottom:-20px;\n        }\n    </style>"
+          }
+        },
+        "heading_V4mdNc": {
+          "type": "heading",
+          "settings": {
+            "text": "2024年黑色星期五優惠活動已結束",
+            "heading_tag": "h1"
+          }
+        },
+        "richtext_mg8Qjy": {
+          "type": "richtext",
+          "settings": {
+            "content": "<p>感謝支持，期待2025年與您再相會</p>"
+          }
+        },
+        "button_FfKGVz": {
+          "type": "button",
+          "settings": {
+            "style": "solid",
+            "text": "查看新品",
+            "url": "shopify://collections/new-arrival",
+            "background": "",
+            "text_color": ""
+          }
+        },
+        "button_DFAEb7": {
+          "type": "button",
+          "settings": {
+            "style": "solid",
+            "text": "返回首頁",
+            "url": "/",
+            "background": "",
+            "text_color": ""
+          }
+        }
+      },
+      "block_order": [
+        "subheading_AdTGVb",
+        "heading_dANF4e",
+        "richtext_rdTik4",
+        "liquid_GfYnK3",
+        "heading_V4mdNc",
+        "richtext_mg8Qjy",
+        "button_FfKGVz",
+        "button_DFAEb7"
+      ],
+      "settings": {
+        "color_scheme": "scheme-d7ad5074-4e47-47d7-8b4d-805f0cd1f42a",
+        "separate_section_with_border": false,
+        "content_width": "sm",
+        "text_position": "center",
+        "remove_vertical_spacing": false
+      }
+    },
+    "collection_list_pNUcEX": {
+      "type": "collection-list",
+      "blocks": {
+        "collection_YY4Um4": {
+          "type": "collection",
+          "settings": {
+            "color_scheme": "scheme-ba8aa8db-3943-4e4a-aee2-842dc8998e74",
+            "collection": "bfcm-30-and-40-off-collection",
+            "image": "shopify://shop_images/2024-black-friday-landingpage-discount-1.jpg",
+            "expand_collection": false,
+            "content_position": "place-self-center text-center",
+            "subheading": "",
+            "title": "",
+            "button_text": "",
+            "button_link": "",
+            "button_style": "solid",
+            "overlay_color": "#000000",
+            "overlay_opacity": 0
+          }
+        },
+        "collection_rDcpkm": {
+          "type": "collection",
+          "settings": {
+            "color_scheme": "scheme-ba8aa8db-3943-4e4a-aee2-842dc8998e74",
+            "collection": "bfcm-20-off-collection",
+            "image": "shopify://shop_images/2024-black-friday-landingpage-discount-2.jpg",
+            "expand_collection": false,
+            "content_position": "place-self-center text-center",
+            "subheading": "",
+            "title": "",
+            "button_text": "",
+            "button_link": "",
+            "button_style": "solid",
+            "overlay_color": "#000000",
+            "overlay_opacity": 0
+          }
+        },
+        "collection_xDXHrd": {
+          "type": "collection",
+          "settings": {
+            "color_scheme": "scheme-ba8aa8db-3943-4e4a-aee2-842dc8998e74",
+            "collection": "bfcm-15-off-collection",
+            "image": "shopify://shop_images/2024-black-friday-landingpage-discount-3.jpg",
+            "expand_collection": false,
+            "content_position": "place-self-center text-center",
+            "subheading": "",
+            "title": "",
+            "button_text": "",
+            "button_link": "",
+            "button_style": "solid",
+            "overlay_color": "#000000",
+            "overlay_opacity": 0
+          }
+        },
+        "collection_GiXHrh": {
+          "type": "collection",
+          "settings": {
+            "color_scheme": "scheme-ba8aa8db-3943-4e4a-aee2-842dc8998e74",
+            "collection": "bfcm-10-and-15-off-collection",
+            "image": "shopify://shop_images/2024-black-friday-landingpage-discount-4.jpg",
+            "expand_collection": false,
+            "content_position": "place-self-center text-center",
+            "subheading": "",
+            "title": "",
+            "button_text": "",
+            "button_link": "",
+            "button_style": "solid",
+            "overlay_color": "#000000",
+            "overlay_opacity": 0
+          }
+        }
+      },
+      "block_order": [
+        "collection_YY4Um4",
+        "collection_rDcpkm",
+        "collection_xDXHrd",
+        "collection_GiXHrh"
+      ],
+      "disabled": true,
+      "custom_css": [
+        "@media (min-width: 769px) {.section-stack {max-width: 1500px; margin-left: auto; margin-right: auto; }}",
+        "img {border-radius: 5px;}"
+      ],
+      "settings": {
+        "color_scheme": "scheme-d7ad5074-4e47-47d7-8b4d-805f0cd1f42a",
+        "separate_section_with_border": false,
+        "image_size": "auto",
+        "show_text_outside": false,
+        "space_items": true,
+        "stack_collections": true,
+        "collections_per_row_mobile": "2",
+        "collections_per_row_desktop": 4,
+        "subheading": "",
+        "title": "",
+        "content": ""
+      }
+    },
+    "main": {
+      "type": "main-collection",
+      "disabled": true,
+      "settings": {
+        "color_scheme": "scheme-2",
+        "hide_product_information": false,
+        "products_per_page": 24,
+        "products_per_row_mobile": "2",
+        "products_size_desktop": "medium",
+        "show_grid_mode_selector": true,
+        "horizontal_spacing_factor": 1.5,
+        "vertical_spacing_factor": 1.5,
+        "filter_layout": "drawer",
+        "quick_links_menu": "link-list-2",
+        "show_sort_by": true,
+        "show_filters": true,
+        "show_results_count": true,
+        "show_filter_group_name": false,
+        "show_filter_values_count": true,
+        "open_filters_by_default": false
+      }
+    },
+    "countdown_f4dDaz": {
+      "type": "countdown",
+      "disabled": true,
+      "custom_css": [],
+      "settings": {
+        "color_scheme": "scheme-d7ad5074-4e47-47d7-8b4d-805f0cd1f42a",
+        "separate_section_with_border": false,
+        "image_size": "auto",
+        "subheading": "The Perfect Time to Shine",
+        "title": "THE COUNTDOWN IS LIVE",
+        "content": "",
+        "button_link": "",
+        "button_text": "",
+        "expiration_date": "2024-11-06 15:00",
+        "expiration_behavior": "leave",
+        "timer_position": "end",
+        "animate_number": true,
+        "flip_background": "#ffffff",
+        "flip_background_opacity": 100,
+        "flip_text_color": "#182d62",
+        "overlay_color": "#000000",
+        "overlay_opacity": 0
+      }
+    },
+    "featured_collections_WU8Gij": {
+      "type": "featured-collections",
+      "blocks": {
+        "collection_gbznDX": {
+          "type": "collection",
+          "settings": {
+            "collection": "bfcm-30-and-40-off-collection",
+            "products_count": 50,
+            "title": "",
+            "link_url": "",
+            "link_text": ""
+          }
+        },
+        "collection_ErpDYx": {
+          "type": "collection",
+          "settings": {
+            "collection": "bfcm-20-off-collection",
+            "products_count": 50,
+            "title": "",
+            "link_url": "",
+            "link_text": ""
+          }
+        },
+        "collection_rEajbr": {
+          "type": "collection",
+          "settings": {
+            "collection": "bfcm-15-off-collection",
+            "products_count": 50,
+            "title": "",
+            "link_url": "",
+            "link_text": ""
+          }
+        },
+        "collection_FbUFbL": {
+          "type": "collection",
+          "settings": {
+            "collection": "bfcm-10-and-15-off-collection",
+            "products_count": 50,
+            "title": "",
+            "link_url": "",
+            "link_text": ""
+          }
+        }
+      },
+      "block_order": [
+        "collection_gbznDX",
+        "collection_ErpDYx",
+        "collection_rEajbr",
+        "collection_FbUFbL"
+      ],
+      "disabled": true,
+      "custom_css": [
+        "@media (min-width: 769px) {.section-stack {max-width: 1500px; margin-left: auto; margin-right: auto; }}",
+        "p.h6.text-center {font-size: 22px;}",
+        "h2 {display: none;}"
+      ],
+      "settings": {
+        "color_scheme": "scheme-2",
+        "separate_section_with_border": false,
+        "hide_product_information": false,
+        "stack_products": true,
+        "products_per_row_mobile": "2",
+        "products_per_row_desktop": 5,
+        "horizontal_spacing_factor": 1,
+        "vertical_spacing_factor": 1,
+        "subheading": "全部優惠商品"
+      }
+    }
+  },
+  "order": [
+    "collection-banner",
+    "rich_text_WejAxC",
+    "collection_list_pNUcEX",
+    "main",
+    "countdown_f4dDaz",
+    "featured_collections_WU8Gij"
+  ]
+}

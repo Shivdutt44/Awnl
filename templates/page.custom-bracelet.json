@@ -1,0 +1,676 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "layout": "theme.none",
+  "sections": {
+    "17616424017393f2a3": {
+      "type": "_blocks",
+      "settings": {}
+    },
+    "main": {
+      "type": "custom-bracelet-welcome",
+      "blocks": {
+        "review_dfJLf8": {
+          "type": "review",
+          "settings": {
+            "reviewer_name": "Jane Doe",
+            "rating": 5,
+            "review_text": "The custom bracelet I created exceeded my expectations. The quality is outstanding and it's exactly what I envisioned!"
+          }
+        },
+        "review_mMp66b": {
+          "type": "review",
+          "settings": {
+            "reviewer_name": "Jane Doe",
+            "rating": 5,
+            "review_text": "The custom bracelet I created exceeded my expectations. The quality is outstanding and it's exactly what I envisioned!"
+          }
+        },
+        "review_EjYbnA": {
+          "type": "review",
+          "settings": {
+            "reviewer_name": "Jane Doe",
+            "rating": 5,
+            "review_text": "The custom bracelet I created exceeded my expectations. The quality is outstanding and it's exactly what I envisioned!"
+          }
+        },
+        "process_step_eU8xDi": {
+          "type": "process_step",
+          "settings": {
+            "step_number": "1",
+            "step_title": "Choose Your Base",
+            "step_description": "Select from our collection of authentic meteorite bracelet bases"
+          }
+        },
+        "process_step_TQ3DzV": {
+          "type": "process_step",
+          "settings": {
+            "step_number": "2",
+            "step_title": "Choose Your Base",
+            "step_description": "Select from our collection of authentic meteorite bracelet bases"
+          }
+        },
+        "process_step_VJxhTk": {
+          "type": "process_step",
+          "settings": {
+            "step_number": "3",
+            "step_title": "Choose Your Base",
+            "step_description": "Select from our collection of authentic meteorite bracelet bases"
+          }
+        },
+        "video_with_text_L8T49X": {
+          "type": "video_with_text",
+          "disabled": true,
+          "settings": {
+            "video": "shopify://files/videos/209-beads-links-green-phantom-half-chain-bracelet_x264.mp4",
+            "title": "The Art of Meteorite Crafting",
+            "description": "<p>Discover the meticulous process behind crafting our authentic meteorite bracelets. Each piece is handcrafted in Sweden with genuine space materials, creating a unique connection between you and the cosmos.</p>",
+            "button_text": "Start Creating"
+          }
+        },
+        "video_d8VF7z": {
+          "type": "video",
+          "disabled": true,
+          "settings": {
+            "video": "shopify://files/videos/209-beads-links-green-phantom-half-chain-bracelet_x264.mp4",
+            "video_title": "AWNL Meteorite Crafting"
+          }
+        },
+        "video_FLhTGW": {
+          "type": "video",
+          "disabled": true,
+          "settings": {
+            "video": "shopify://files/videos/dragon-blood-jasper-warrior-rune-bracelet-video.mp4",
+            "video_title": "AWNL Meteorite Crafting"
+          }
+        },
+        "video_hbjrfW": {
+          "type": "video",
+          "disabled": true,
+          "settings": {
+            "video": "shopify://files/videos/dragon-blood-jasper-warrior-rune-bracelet-video.mp4",
+            "video_title": "AWNL Meteorite Crafting"
+          }
+        },
+        "video_Nw84Yq": {
+          "type": "video",
+          "disabled": true,
+          "settings": {
+            "video": "shopify://files/videos/dragon-blood-jasper-warrior-rune-bracelet-video.mp4",
+            "video_title": "AWNL Meteorite Crafting"
+          }
+        },
+        "video_QMUbFb": {
+          "type": "video",
+          "disabled": true,
+          "settings": {
+            "video": "shopify://files/videos/dragon-blood-jasper-warrior-rune-bracelet-video.mp4",
+            "video_title": "AWNL Meteorite Crafting"
+          }
+        },
+        "usp_Q8jNMg": {
+          "type": "usp",
+          "disabled": true,
+          "settings": {
+            "usp_text": "Authentic Meteorite Elements"
+          }
+        },
+        "usp_3W7xdM": {
+          "type": "usp",
+          "disabled": true,
+          "settings": {
+            "usp_text": "Authentic Meteorite Elements"
+          }
+        },
+        "usp_keNGRT": {
+          "type": "usp",
+          "settings": {
+            "usp_text": "Authentic Meteorite Elements"
+          }
+        },
+        "usp_rLhpk4": {
+          "type": "usp",
+          "settings": {
+            "usp_text": "Authentic Meteorite Elements"
+          }
+        },
+        "usp_xRC8aY": {
+          "type": "usp",
+          "settings": {
+            "usp_text": "Authentic Meteorite Elements"
+          }
+        },
+        "gallery_item_eHwnrW": {
+          "type": "gallery_item",
+          "disabled": true,
+          "settings": {
+            "gallery_image": "shopify://shop_images/mens-double-wrap-beaded-bracelet-with-nuummite-beads-and-swedish-meteorite-3.jpg",
+            "gallery_title": "Cosmic Design",
+            "gallery_description": "Handcrafted with authentic meteorite elements"
+          }
+        },
+        "gallery_item_NtfeT4": {
+          "type": "gallery_item",
+          "disabled": true,
+          "settings": {
+            "gallery_image": "shopify://shop_images/mens-double-wrap-beaded-bracelet-with-nuummite-beads-and-swedish-meteorite-3.jpg",
+            "gallery_title": "Cosmic Design",
+            "gallery_description": "Handcrafted with authentic meteorite elements"
+          }
+        },
+        "gallery_item_bf79JK": {
+          "type": "gallery_item",
+          "disabled": true,
+          "settings": {
+            "gallery_image": "shopify://shop_images/mens-double-wrap-beaded-bracelet-with-nuummite-beads-and-swedish-meteorite-3.jpg",
+            "gallery_title": "Cosmic Design",
+            "gallery_description": "Handcrafted with authentic meteorite elements"
+          }
+        },
+        "gallery_item_iaiTr8": {
+          "type": "gallery_item",
+          "settings": {
+            "gallery_image": "shopify://shop_images/mens-double-wrap-beaded-bracelet-with-nuummite-beads-and-swedish-meteorite-3.jpg",
+            "gallery_title": "Cosmic Design",
+            "gallery_description": "Handcrafted with authentic meteorite elements"
+          }
+        },
+        "gallery_item_zH7EpM": {
+          "type": "gallery_item",
+          "settings": {
+            "gallery_image": "shopify://shop_images/mens-double-wrap-beaded-bracelet-with-nuummite-beads-and-swedish-meteorite-3.jpg",
+            "gallery_title": "Cosmic Design",
+            "gallery_description": "Handcrafted with authentic meteorite elements"
+          }
+        },
+        "gallery_item_L8ig8a": {
+          "type": "gallery_item",
+          "settings": {
+            "gallery_image": "shopify://shop_images/mens-double-wrap-beaded-bracelet-with-nuummite-beads-and-swedish-meteorite-3.jpg",
+            "gallery_title": "Cosmic Design",
+            "gallery_description": "Handcrafted with authentic meteorite elements"
+          }
+        }
+      },
+      "block_order": [
+        "review_dfJLf8",
+        "review_mMp66b",
+        "review_EjYbnA",
+        "process_step_eU8xDi",
+        "process_step_TQ3DzV",
+        "process_step_VJxhTk",
+        "video_with_text_L8T49X",
+        "video_d8VF7z",
+        "video_FLhTGW",
+        "video_hbjrfW",
+        "video_Nw84Yq",
+        "video_QMUbFb",
+        "usp_Q8jNMg",
+        "usp_3W7xdM",
+        "usp_keNGRT",
+        "usp_rLhpk4",
+        "usp_xRC8aY",
+        "gallery_item_eHwnrW",
+        "gallery_item_NtfeT4",
+        "gallery_item_bf79JK",
+        "gallery_item_iaiTr8",
+        "gallery_item_zH7EpM",
+        "gallery_item_L8ig8a"
+      ],
+      "settings": {
+        "logo": "shopify://shop_images/banner-logo-200-60.jpg",
+        "hero_bg_image": "shopify://shop_images/mens-double-wrap-beaded-bracelet-with-nuummite-bracelets-awnl-taiwan-2new.jpg",
+        "hero_title": "Create Your AWNL Meteorite Bracelet",
+        "hero_description": "Design a unique bracelet with authentic meteorite and cosmic elements that reflect your personal story",
+        "hero_button_text": "CREATE BRACELET",
+        "process_title": "How It Works",
+        "video_marquee_title": "AWNL Craftsmanship",
+        "reviews_title": "Customer Reviews",
+        "gallery_title": "AWNL Gallery",
+        "cta_bg_image": "shopify://shop_images/hawk-eye-single-wrap-half-bracelet-2.jpg",
+        "cta_title": "Ready to Create Your Cosmic Masterpiece?",
+        "cta_description": "Start designing your custom AWNL bracelet today and connect with the cosmos",
+        "cta_button_text": "Continue"
+      }
+    },
+    "custom_faq_section_WhD7E3": {
+      "type": "custom-faq-section",
+      "blocks": {
+        "category_GdRDcL": {
+          "type": "category",
+          "settings": {
+            "name": "客製化流程"
+          }
+        },
+        "question_PWyXhD": {
+          "type": "question",
+          "settings": {
+            "category_index": 1,
+            "question": "如何開始客製化我的手鍊?",
+            "answer": "<p>您有兩種方式開始設計專屬手鍊：</p><p><strong>從零開始創作 （Create Custom Bracelet）</strong><br/>選擇您喜歡的手鍊款式框架，依序選擇手圍尺寸、天然石材質、墜飾配件，完成您的獨特設計。</p><p><strong>從靈感範本出發 （Design Inspiration Gallery）</strong><br/>從我們精選的設計範本開始，在既有搭配基礎上進行調整與個人化設定。</p>",
+            "link": "",
+            "link_text": "",
+            "button_url": "",
+            "button_text": ""
+          }
+        },
+        "question_BUFrMw": {
+          "type": "question",
+          "settings": {
+            "category_index": 1,
+            "question": "客製化操作流程是什麼?",
+            "answer": "<ol><li><strong>選擇款式</strong>：點選您想客製化的手鍊款式</li><li><strong>確定尺寸</strong>：選擇適合您手圍的尺寸（XXS 13cm 至 4XL 21cm）</li><li><strong>設計細節</strong>：點擊串珠位置，從選單中選取天然石類型進行替換</li><li><strong>添加個人化選項</strong>：選購刻印墜飾、選擇禮盒包裝等服務</li><li><strong>確認下單</strong>：加入購物車並完成付款</li></ol>",
+            "link": "shopify://pages/size-chart",
+            "link_text": "尺寸選擇指南",
+            "button_url": "",
+            "button_text": ""
+          }
+        },
+        "question_RfWnmL": {
+          "type": "question",
+          "settings": {
+            "category_index": 1,
+            "question": "客製化預覽與實品會有差異嗎?",
+            "answer": "<p><strong>完全一致的部分：</strong></p><ul><li>串珠數量與實品完全相同（例如預覽顯示20顆，實品即為20顆）</li><li>左右分佈、隔珠與墜飾的對稱性保持一致</li><li>您選擇的天然石材質、墜飾類型與整體設計架構</li></ul><h3><strong>需要理解的技術限制：</strong></h3><p><strong>視覺呈現限制</strong></p><p>客製化界面為網頁環境，在顯示串珠排列時，可能因為程式渲染方式而出現珠子間距不均、方向固定，孔位不對齊、排列略顯鬆散的視覺效果。實品製作時，工藝師會依照實際尺寸精確穿線，確保每顆珠子緊密排列、間距均勻，呈現最佳佩戴效果。</p><p><strong>不同尺寸的顯示調整</strong></p><p>為了讓所有尺寸的手鍊都能在有限的螢幕空間內完整顯示，系統會根據您選擇的手圍尺寸自動調整預覽畫面中的珠子顯示大小。尺寸越大，珠子數量越多，畫面中的單顆珠子看起來會相對較小；尺寸較小時則相反。這純粹是視覺呈現的技術調整，實品珠子的實際尺寸始終維持一致。請以產品頁面標示的實際毫米數為準（例如8mm、10mm、12mm等）。</p><p>實品串珠大小請參考下方圖例。</p><p><strong>刻印內容預覽</strong></p><p>由於刻印製作需要專業雕刻工藝，客製化界面目前無法即時預覽刻印後的文字效果。您填寫的刻印內容會在製作時由工藝師完成，確保刻印清晰且符合您選擇的字體風格。</p><p><strong>天然石材的自然特性</strong></p><p>天然石是經過億萬年地質作用形成的礦物，每一顆都擁有獨特的內含物、紋理走向、色澤深淺與透明度。客製化界面使用的天然石圖樣是從實際庫存中挑選紋理分佈較為均勻的珠子拍攝製作，作為參考基準。</p><p>實品製作時，我們會從符合該材質標準的庫存中選取品質優良的珠子進行穿製。您收到的每顆珠子會呈現自然的差異性——這正是天然石珠寶的珍貴之處。舉例來說：</p><ul><li><strong>青金石</strong>可能有金色黃鐵礦斑點分佈不均</li><li><strong>虎眼石</strong>的貓眼光帶位置與寬度各異</li><li><strong>瑪瑙</strong>的紋理走向與色帶分佈不同</li></ul><p>這些都是天然石材的真實樣貌，而非品質瑕疵。如果您對特定材質的呈現效果有疑慮，或希望了解某種天然石的自然變化範圍，歡迎在下單前聯繫客服，我們會提供更多實品照片供您參考，協助您做出最適合的選擇。</p>",
+            "image": "shopify://shop_images/customization-actual-beads-size-ref.jpg",
+            "link": "",
+            "link_text": "6",
+            "button_url": "",
+            "button_text": ""
+          }
+        },
+        "category_fgX8bK": {
+          "type": "category",
+          "settings": {
+            "name": "刻印服務"
+          }
+        },
+        "question_NYULKt": {
+          "type": "question",
+          "settings": {
+            "category_index": 2,
+            "question": "如何添加個人刻印?",
+            "answer": "<p>我們提供專屬的刻印墜飾供您選擇。在客製化過程中：</p><ol><li>選擇放置1顆或多顆刻印墜飾在您想要的位置</li><li>選擇您喜歡的字體</li><li>輸入刻印內容</li></ol><p>如您有特殊字符、符號或特別要求，請在結帳時於備註欄說明，或直接聯繫客服為您處理。</p>",
+            "link": "",
+            "link_text": "",
+            "button_url": "",
+            "button_text": ""
+          }
+        },
+        "question_7YUDMq": {
+          "type": "question",
+          "settings": {
+            "category_index": 2,
+            "question": "刻印有字數限制嗎?",
+            "answer": "<p>為確保刻印品質與美觀，每個刻印墜飾建議字數為15字元以內（含英文、數字與標點符號）。如有超出需求，請先諮詢客服評估可行性。</p>",
+            "link": "",
+            "link_text": "",
+            "button_url": "",
+            "button_text": ""
+          }
+        },
+        "category_7E8yGY": {
+          "type": "category",
+          "settings": {
+            "name": "訂單付款、變更和取消"
+          }
+        },
+        "question_Y7yQQ4": {
+          "type": "question",
+          "settings": {
+            "category_index": 3,
+            "question": "可以使用哪些付款方式?",
+            "answer": "<p>我們接受信用卡、PayPal、Google Pay等線上支付方式。所有交易均採用SSL加密技術，確保您的付款資訊安全。部分信用卡公司可能會收取海外交易手續費。</p>",
+            "link": "",
+            "link_text": "",
+            "button_url": "",
+            "button_text": ""
+          }
+        },
+        "question_ytTTXX": {
+          "type": "question",
+          "settings": {
+            "category_index": 3,
+            "question": "可以使用折扣碼嗎?",
+            "answer": "<p>可以。客製化手鍊支援使用新客折扣碼、會員積分折扣等優惠，在結帳時於「禮品卡或折扣碼」欄位輸入並套用即可。</p><p>*特殊活動折扣或部分不適用</p>",
+            "link": "",
+            "link_text": "",
+            "button_url": "",
+            "button_text": ""
+          }
+        },
+        "question_XzNRny": {
+          "type": "question",
+          "settings": {
+            "category_index": 3,
+            "question": "如何取消或修改訂單?",
+            "answer": "<p>由於客製化商品需要立即排程製作，我們僅提供有限的修改窗口：</p><ul><li><strong>取消訂單</strong>：結帳後<strong>12小時</strong>內可申請取消</li><li><strong>修改內容</strong>：結帳後<strong>48小時</strong>內可聯繫更換尺碼或調整設計細節</li></ul><p>請透過線上客服或 email（<a href=\"mailto:contact@awnl.tw\" target=\"_blank\" title=\"mailto:contact@awnl.tw\">contact@awnl.tw</a>）聯繫我們。超過時限後訂單將進入製作流程，恕無法取消或修改。</p>",
+            "link": "",
+            "link_text": "",
+            "button_url": "",
+            "button_text": ""
+          }
+        },
+        "question_c4Extr": {
+          "type": "question",
+          "settings": {
+            "category_index": 3,
+            "question": "取消訂單後如何退款?",
+            "answer": "<p>成功取消訂單後，我們會在1至2個工作日內處理退款。依您的付款方式不同，銀行或支付平台需要1至4個工作日（或更長時間）將款項退回您的帳戶。</p>",
+            "link": "",
+            "link_text": "",
+            "button_url": "",
+            "button_text": ""
+          }
+        },
+        "category_MwGwUE": {
+          "type": "category",
+          "settings": {
+            "name": "製作與配送"
+          }
+        },
+        "question_ymgVmP": {
+          "type": "question",
+          "settings": {
+            "category_index": 4,
+            "question": "製作需要多久時間?",
+            "answer": "<p>訂單確認付款後，您的客製化手鍊需要<strong>5至10個工作日</strong>進行排程製作。由於商品在海外工作室製作完成，物流運送需額外<strong>3至7個工作日</strong>。</p><p>完整的處理時間約<strong>8至17個工作日</strong>（不含例假日及國定假日）。若遇倉庫休假、節假日或颱風等特殊情況，配送時間可能順延。</p>",
+            "link": "",
+            "link_text": "",
+            "button_url": "",
+            "button_text": ""
+          }
+        },
+        "question_xRjcgC": {
+          "type": "question",
+          "settings": {
+            "category_index": 4,
+            "question": "材料通知缺貨怎麼辦?",
+            "answer": "<p>由於特定品質的天然石有時會出現供應短缺，若您下單後遇到此情況，我們會主動聯繫您，與您溝通延期製作或更換其他材質的方案。感謝您的理解與配合。</p>",
+            "link": "",
+            "link_text": "",
+            "button_url": "",
+            "button_text": ""
+          }
+        },
+        "question_CFiWnJ": {
+          "type": "question",
+          "settings": {
+            "category_index": 4,
+            "question": "配送範圍與費用?",
+            "answer": "<ul><li><strong>台灣、香港、澳門</strong>：免運費</li><li><strong>配送時效</strong>：通常1至4天送達（從倉庫出貨起算）</li><li><strong>配送方式</strong>：順豐速運、新竹物流或黑貓宅急便</li></ul><p>如遇倉庫休假、節假日週末或颱風天等特殊情況，配送時間會相應順延。</p>",
+            "link": "",
+            "link_text": "",
+            "button_url": "",
+            "button_text": ""
+          }
+        },
+        "question_7tWMRb": {
+          "type": "question",
+          "settings": {
+            "category_index": 4,
+            "question": "如何追蹤我的訂單?",
+            "answer": "<p>訂單出貨後，您會收到包含包裹追蹤編號的電子郵件。請注意物流追蹤資訊可能需要24小時後才會更新。</p>",
+            "link": "",
+            "link_text": "",
+            "button_url": "",
+            "button_text": ""
+          }
+        },
+        "category_niFfCj": {
+          "type": "category",
+          "settings": {
+            "name": "退換貨政策"
+          }
+        },
+        "question_QmKJC9": {
+          "type": "question",
+          "settings": {
+            "category_index": 5,
+            "question": "客製化手鍊可以退換貨嗎?",
+            "answer": "<p>很抱歉，由於客製化商品是依照您的個人需求製作，<strong>不提供30日無理由退換貨及試戴服務</strong>。一旦下單製作，即無法退換。</p><p>我們建議您在客製化前：</p><ul><li>仔細確認尺寸選擇（可參考尺寸指南）</li><li>了解天然石材質的自然特性</li><li>若有疑問請先諮詢客服</li></ul>",
+            "link": "",
+            "link_text": "",
+            "button_url": "",
+            "button_text": ""
+          }
+        },
+        "question_MqzUg6": {
+          "type": "question",
+          "settings": {
+            "category_index": 5,
+            "question": "什麼情況下可以退換?",
+            "answer": "<p>僅在以下<strong>非人為因素的品質問題</strong>時，我們提供重新製作與配送服務：</p><ul><li>收到的商品與訂單內容不符</li><li>商品在運送過程中損壞、斷裂</li><li>製作出現嚴重品質瑕疵</li></ul><p><strong>請在收貨後12小時內</strong>聯繫我們，並提供商品狀況照片。確認為我們責任後，我們將提供免費上門取貨並重新製作配送的服務。</p>",
+            "link": "",
+            "link_text": "",
+            "button_url": "",
+            "button_text": ""
+          }
+        },
+        "category_4RHk8P": {
+          "type": "category",
+          "settings": {
+            "name": "維修與保固"
+          }
+        },
+        "question_3xrahy": {
+          "type": "question",
+          "settings": {
+            "category_index": 6,
+            "question": "客製化手鍊有保固期嗎?",
+            "answer": "<p>客製化商品<strong>不提供標準保固期</strong>，但我們承諾：</p><ul><li><strong>品質保證</strong>：若因物流或製作造成的品質問題，提供重新製作服務（<strong>需在收貨後12小時內反映</strong>）</li><li><strong>終身維修保養</strong>：提供終身保養維修服務，讓您的手鍊能長久陪伴</li></ul>",
+            "link": "",
+            "link_text": "",
+            "button_url": "",
+            "button_text": ""
+          }
+        },
+        "question_jBmbwp": {
+          "type": "question",
+          "settings": {
+            "category_index": 6,
+            "question": "如何申請維修服務?",
+            "answer": "<p>您可透過以下方式申請：</p><p><strong>方式一：填寫售後服務預約表單（推薦）</strong><br/>24小時皆可提交、系統自動分派、快速追蹤進度<br/>【點擊填寫售後服務預約表單】</p><p><strong>方式二：Email 或即時通訊聯繫</strong><br/>發送至 <a href=\"mailto:contact@awnl.tw\" target=\"_blank\" title=\"mailto:contact@awnl.tw\">contact@awnl.tw</a> 或透過 LINE@ 聯繫客服，請附上商品照片與說明。</p>",
+            "link": "",
+            "link_text": "",
+            "button_url": "",
+            "button_text": ""
+          }
+        },
+        "question_Daj8cm": {
+          "type": "question",
+          "settings": {
+            "category_index": 6,
+            "question": "維修服務包含哪些項目?",
+            "answer": "<p>我們提供的維修保養服務包括：</p><ul><li><strong>更換編織繩或彈力線</strong>：繩線因長期佩戴出現磨損、鬆弛時更換</li><li><strong>天然石珠子替換</strong>：珠子因碰撞破損或遺失時補配</li><li><strong>墜飾或金屬配件維修</strong>：墜飾鬆脫、金屬氧化或損壞修復</li><li><strong>重新電鍍或清潔保養</strong>：純銀配件氧化變色時重新電鍍處理</li><li><strong>手圍尺寸調整</strong>：若手鍊過緊或過鬆，可調整增減珠子以改變手圍大小</li></ul>",
+            "link": "",
+            "link_text": "",
+            "button_url": "",
+            "button_text": ""
+          }
+        },
+        "question_7Fidpx": {
+          "type": "question",
+          "settings": {
+            "category_index": 6,
+            "question": "維修需要付費嗎?",
+            "answer": "<p>維修服務需要支付一定費用，具體費用依實際狀況而定。我們會根據商品實際問題，提供合理的維修方案與報價，經您確認後進行處理。</p><p><strong>尺寸調整說明</strong>：<br/>若需調整手圍大小，涉及增減珠子或重新穿線，費用將根據調整幅度與所需材料計算。建議您在訂購時仔細確認尺寸，可參考我們提供的尺寸測量指南，或聯繫客服協助您選擇最適合的尺寸。</p>",
+            "link": "",
+            "link_text": "",
+            "button_url": "",
+            "button_text": ""
+          }
+        },
+        "category_FnMHf6": {
+          "type": "category",
+          "settings": {
+            "name": "禮盒包裝與賀卡"
+          }
+        },
+        "question_MwmCTJ": {
+          "type": "question",
+          "settings": {
+            "category_index": 7,
+            "question": "提供禮盒包裝嗎?",
+            "answer": "<p>是的，我們為所有客製化手鍊提供<strong>免費完整禮盒包裝</strong>，適合作為禮物贈送。包裝內容包含精美禮盒、品牌包裝袋與空白賀卡。</p>",
+            "link": "",
+            "link_text": "",
+            "button_url": "shopify://pages/gift-packaging",
+            "button_text": "查看禮品包裝"
+          }
+        },
+        "question_ir4VgQ": {
+          "type": "question",
+          "settings": {
+            "category_index": 7,
+            "question": "可以代寫賀卡嗎?",
+            "answer": "<p>可以。我們提供免費賀卡代寫服務。請在結帳時於購物車頁面的備註欄填寫您想要的祝福內容，我們會為您手寫在賀卡上。</p>",
+            "link": "",
+            "link_text": "",
+            "button_url": "",
+            "button_text": ""
+          }
+        },
+        "category_mrhzR8": {
+          "type": "category",
+          "settings": {
+            "name": "關於客服諮詢"
+          }
+        },
+        "question_kmgH9B": {
+          "type": "question",
+          "settings": {
+            "category_index": 8,
+            "question": "如何聯繫客服?",
+            "answer": "<p>您可以透過以下方式聯繫我們：</p><ul><li><strong>Email</strong>： <a href=\"mailto:contact@awnl.tw\" target=\"_blank\" title=\"mailto:contact@awnl.tw\">contact@awnl.tw</a></li><li><strong>線上即時客服（Inbox）</strong>： 網站右下角客服窗口</li><li><strong>LINE@</strong>： 搜尋 AWNL 官方帳號</li></ul><p>我們會儘快回覆您的訊息。若在非上班時間或客服忙碌時段聯繫，可能需要較長等待時間，建議使用 email 或表單以便我們完整處理您的需求。</p>",
+            "link": "",
+            "link_text": "",
+            "button_url": "",
+            "button_text": ""
+          }
+        },
+        "question_diJUrp": {
+          "type": "question",
+          "settings": {
+            "category_index": 8,
+            "question": "客製化前可以諮詢嗎?",
+            "answer": "<p>當然可以。如果您對材質選擇、尺寸建議、設計搭配或刻印內容有任何疑問，歡迎在下單前聯繫客服。我們很樂意為您提供專業建議，確保您創作出最滿意的作品。</p>",
+            "link": "",
+            "link_text": "",
+            "button_url": "",
+            "button_text": ""
+          }
+        },
+        "category_MHjWLR": {
+          "type": "category",
+          "settings": {
+            "name": "商品品質和價格"
+          }
+        },
+        "question_VqCNNm": {
+          "type": "question",
+          "settings": {
+            "category_index": 9,
+            "question": "關於價格調整",
+            "answer": "<p>AWNL保留因定價錯誤或系統問題調整商品價格的權利。如有價格變動，我們會在訂單確認前通知您。</p>",
+            "link": "",
+            "link_text": "",
+            "button_url": "",
+            "button_text": ""
+          }
+        },
+        "question_CFCRHV": {
+          "type": "question",
+          "settings": {
+            "category_index": 9,
+            "question": "關於天然石材質",
+            "answer": "<p>我們使用的天然石材皆為真實礦物，每顆皆有獨特的紋理、色澤與內含物。這些自然特徵並非瑕疵，而是天然石的珍貴之處。</p><p><strong>天然石的自然特性包括：</strong></p><p><strong>表面質地</strong><br/>天然石在形成過程中可能產生細微的凹痕、孔洞或觸感上的粗糙區域，這是礦物結晶結構的自然現象。例如青金石表面常見的細小坑點，或是綠松石因孔隙率較高而形成的自然凹陷，都屬於該礦物的典型特徵。</p><p><strong>內含物與雲霧紋</strong><br/>許多天然石內部會有礦物包裹體、生長紋或雲霧狀結構。這些內含物是礦物在數百萬年地質作用下形成的記錄，證明其天然身分。例如白水晶內的冰裂紋、紫水晶的色帶分佈，都是天然成因的證據。</p><p><strong>色澤變化</strong><br/>同一批次的天然石，每顆的顏色深淺、飽和度都可能不同。以拉長石為例，每顆展現的藍色、綠色、金色暈彩強度與角度皆不相同；黑曜石的虹眼效應位置也因生長條件而異。這種自然變化使每件作品都是獨一無二的。</p><p><strong>晶體結構差異</strong><br/>某些晶體如白水晶、紫水晶，因生長方向與速度不同，透明度與光澤度會有差異。部分區域可能較為通透，部分則呈現霧面質感，這都是天然晶體生長的正常現象。</p><p>如果您對某種天然石材質的自然變化範圍有疑問，或希望事先了解該材質的典型特徵，歡迎在下單前聯繫客服，我們可以提供更多實品參考照片，協助您充分理解並做出合適的選擇。</p>",
+            "link": "",
+            "link_text": "",
+            "button_url": "",
+            "button_text": ""
+          }
+        },
+        "question_EgWiWQ": {
+          "type": "question",
+          "settings": {
+            "category_index": 9,
+            "question": "客製化商品與在售現貨的差異",
+            "answer": "<p><strong>客製化手鍊</strong>：</p><ul><li>依個人需求量身訂製</li><li>製作週期較長（8至17工作日）</li><li>不適用30日退換貨政策</li><li>享有終身維修服務</li></ul><p><strong>現貨成品</strong>：</p><ul><li>即時購買可快速出貨（1至3工作日）</li><li>提供30日退貨保證與7日換貨服務</li><li>提供60至90天免費保固期</li><li>享有終身維修服務</li></ul>",
+            "link": "",
+            "link_text": "",
+            "button_url": "",
+            "button_text": ""
+          }
+        }
+      },
+      "block_order": [
+        "category_GdRDcL",
+        "question_PWyXhD",
+        "question_BUFrMw",
+        "question_RfWnmL",
+        "category_fgX8bK",
+        "question_NYULKt",
+        "question_7YUDMq",
+        "category_7E8yGY",
+        "question_Y7yQQ4",
+        "question_ytTTXX",
+        "question_XzNRny",
+        "question_c4Extr",
+        "category_MwGwUE",
+        "question_ymgVmP",
+        "question_xRjcgC",
+        "question_CFiWnJ",
+        "question_7tWMRb",
+        "category_niFfCj",
+        "question_QmKJC9",
+        "question_MqzUg6",
+        "category_4RHk8P",
+        "question_3xrahy",
+        "question_jBmbwp",
+        "question_Daj8cm",
+        "question_7Fidpx",
+        "category_FnMHf6",
+        "question_MwmCTJ",
+        "question_ir4VgQ",
+        "category_mrhzR8",
+        "question_kmgH9B",
+        "question_diJUrp",
+        "category_MHjWLR",
+        "question_VqCNNm",
+        "question_CFCRHV",
+        "question_EgWiWQ"
+      ],
+      "name": "FAQ 常見問題",
+      "settings": {
+        "title": "客製化手鍊服務說明",
+        "title_size": 32,
+        "subtitle": "",
+        "subtitle_size": 20,
+        "description": "",
+        "description_size": 16,
+        "layout": "sidebar",
+        "max_width": 1200,
+        "text_alignment": "left",
+        "background_color": "#ffffff",
+        "heading_color": "#1a1a1a",
+        "text_color": "#333333",
+        "accent_color": "#1a1a1a",
+        "show_search": true,
+        "search_placeholder": "搜尋問題或關鍵詞..."
+      }
+    }
+  },
+  "order": [
+    "17616424017393f2a3",
+    "main",
+    "custom_faq_section_WhD7E3"
+  ]
+}

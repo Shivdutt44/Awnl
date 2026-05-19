@@ -1,0 +1,81 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "rich_text_LtYFT8": {
+      "type": "rich-text",
+      "blocks": {
+        "heading_7HhGkC": {
+          "type": "heading",
+          "settings": {
+            "text": "迎旭生輝 • 新春換購",
+            "heading_tag": "h1"
+          }
+        },
+        "richtext_NHkc9R": {
+          "type": "richtext",
+          "settings": {
+            "content": "<p><strong>活動已結束，敬請期待下一次見面！</strong></p>"
+          }
+        }
+      },
+      "block_order": [
+        "heading_7HhGkC",
+        "richtext_NHkc9R"
+      ],
+      "settings": {
+        "color_scheme": "scheme-0f9c1c1c-1203-4ab3-b91e-6f96a41ceb2d",
+        "separate_section_with_border": false,
+        "content_width": "sm",
+        "text_position": "center",
+        "remove_vertical_spacing": false
+      }
+    },
+    "main": {
+      "type": "main-page",
+      "disabled": true,
+      "settings": {
+        "color_scheme": "",
+        "show_title": true,
+        "page_width": "xs"
+      }
+    },
+    "rich_text_GTjE4V": {
+      "type": "rich-text",
+      "blocks": {
+        "button_w64RT3": {
+          "type": "button",
+          "settings": {
+            "style": "solid",
+            "text": "返回首頁",
+            "url": "/",
+            "background": "",
+            "text_color": ""
+          }
+        }
+      },
+      "block_order": [
+        "button_w64RT3"
+      ],
+      "settings": {
+        "color_scheme": "scheme-1b02ad27-67f6-4363-902b-7afc4c7eb905",
+        "separate_section_with_border": false,
+        "content_width": "sm",
+        "text_position": "center",
+        "remove_vertical_spacing": false
+      }
+    }
+  },
+  "order": [
+    "rich_text_LtYFT8",
+    "main",
+    "rich_text_GTjE4V"
+  ]
+}

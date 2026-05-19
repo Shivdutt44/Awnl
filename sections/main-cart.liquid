@@ -1,0 +1,740 @@
+{%- assign color_scheme_hash = section.settings.color_scheme.settings.background_gradient | default: section.settings.color_scheme.settings.background | md5 -%}
+
+<div class="section-spacing section-spacing--tight color-scheme color-scheme--{{ section.settings.color_scheme.id }} color-scheme--bg-{{ color_scheme_hash }}">
+  {%- if cart.empty? -%}
+    <div class="container container--xs">
+      <div class="empty-state">
+        <div class="prose">
+          <h1 class="h4">{{ 'cart.general.title' | t }}</h1>
+          <p>{{ 'cart.general.empty' | t }}</p>
+
+          {%- assign button_content = 'cart.general.continue_shopping' | t -%}
+          {%- render 'button', content: button_content, href: settings.cart_empty_cart_link -%}
+        </div>
+      </div>
+    </div>
+  {%- else -%}
+    <div class="container container--sm">
+      <div class="section-stack">
+        <div class="section-header justify-self-center text-center">
+          <div class="v-stack gap-4">
+            <h1 class="h2">{{ 'cart.general.title' | t }}</h1>
+
+            {%- if settings.cart_show_free_shipping_bar -%}
+              {%- render 'free-shipping-bar' -%}
+            {%- endif -%}
+          </div>
+        </div>
+
+        <form action="{{ routes.cart_url }}" method="POST" class="cart-page">
+          <input type="hidden" name="attributes[products_mobile_grid_mode]" value="">
+          <input type="hidden" name="attributes[products_desktop_grid_mode]" value="">
+
+          <div class="v-stack gap-6">
+            {%- comment -%}
+            ----------------------------------------------------------------------------------------------------------------
+            ORDER SUMMARY
+            ----------------------------------------------------------------------------------------------------------------
+            {%- endcomment -%}
+            <table class="order-summary table--reduce-border">
+              <thead class="order-summary__header">
+                <tr>
+                  <th>{{ 'cart.order.product' | t }}</th>
+                  <th class="text-center">{{ 'cart.order.quantity' | t }}</th>
+                  <th class="text-end">{{ 'cart.order.total' | t }}</th>
+                </tr>
+              </thead>
+
+              <tbody class="order-summary__body">
+
+    <tbody class="order-summary__body">
+  {%- for line_item in cart.items -%}
+    {%- if line_item.properties['Bundle Id'] != blank -%}
+    {% comment %} this is for bundle bead products {% endcomment %} 
+    <tr class="line-item" data-line-item-key="{{ line_item.key }}">
+        {%- render 'line-item-bracelet', line_item: line_item, show_quantity_selector: true -%}
+    </tr>
+      
+    {%- else -%}
+        {% comment %} don't display the beads {% endcomment %} 
+    {% unless line_item.product.tags contains 'custom-beads' %}
+      <tr>
+          <td>
+            {%- render 'line-item', line_item: line_item, show_quantity_selector: true -%}  
+          </td>
+          
+          <td class="text-center">
+            <line-item-quantity class="v-stack justify-items-center gap-2">
+            {%- render 'quantity-selector', line_item: line_item, size: 'sm', add_updates: true -%}
+              <a href="{{ line_item.url_to_remove }}" class="link text-xs" aria-label="{{ 'cart.order.remove_with_title' | t: title: line_item.title | escape }}">
+                {{- 'cart.order.remove' | t -}}
+              </a>
+            </line-item-quantity>
+          </td>
+          
+          <td class="text-end">
+            {%- if settings.currency_code_enabled -%}
+              {{- line_item.final_line_price | money_with_currency -}}
+            {%- else -%}
+              {{- line_item.final_line_price | money -}}
+          {%- endif -%}
+          </td>
+    </tr>
+   {% endunless %}   
+    {%- endif -%}
+    
+  {%- endfor -%}
+</tbody>
+    
+              </tbody>
+            </table>
+
+            {%- comment -%}
+            ----------------------------------------------------------------------------------------------------------------
+            CART FOOTER
+            ----------------------------------------------------------------------------------------------------------------
+            {%- endcomment -%}
+            <div class="cart-footer">
+              {%- if section.settings.show_cart_note -%}
+                <cart-note class="cart-note">
+                  {%- assign order_note = 'cart.general.add_order_note' | t -%}
+                  {%- assign placeholder = 'cart.general.note_placeholder' | t -%}
+                  {%- render 'input', name: 'note', multiline: 3, label: order_note, value: cart.note, placeholder: placeholder, show_label_as_block: true -%}
+                </cart-note>
+              {%- endif -%}
+
+              <div class="cart-recap">
+                {%- comment -%}Give apps a special hook to add features on the recap (such as capturing delivery dates){%- endcomment -%}
+                {%- for block in section.blocks -%}
+                  {%- if block.type == '@app' -%}
+                    {%- render block -%}
+                  {%- endif -%}
+                {%- endfor -%}
+
+                {%- if section.settings.show_order_weight -%}
+                  <div class="h-stack justify-start gap-2">
+                    <span class="text-subdued">{{ 'cart.general.weight' | t }}:</span>
+                    <span class="text-subdued">{{ cart.total_weight | weight_with_unit }}</span>
+                  </div>
+                {%- endif -%}
+
+                {%- if cart.items_subtotal_price != cart.total_price -%}
+                  <div class="h-stack justify-start gap-2">
+                    <span class="text-subdued">{{ 'cart.general.subtotal' | t }}:</span>
+                    <span class="text-subdued">
+                      {%- if settings.currency_code_enabled -%}
+                        {{- cart.items_subtotal_price | money_with_currency -}}
+                      {%- else -%}
+                        {{- cart.items_subtotal_price | money -}}
+                      {%- endif -%}
+                    </span>
+                  </div>
+                {%- endif -%}
+
+                {% for discount_application in cart.cart_level_discount_applications %}
+                  <div class="h-stack justify-start gap-2">
+                    <span class="discount-badge text-xs">{%- render 'icon' with 'discount', width: 12 -%} {{- discount_application.title -}}</span>
+                    <span class="text-subdued">-{{ discount_application.total_allocated_amount | money }}</span>
+                  </div>
+                {% endfor %}
+
+                <div class="h-stack justify-start gap-2">
+                  <span class="text-lg">{{ 'cart.general.total' | t }}:</span>
+                  <span class="text-lg">{{- cart.total_price | money_with_currency -}}</span>
+                </div>
+
+                {%- if section.settings.show_shipping_text -%}
+                  {%- if cart.taxes_included and shop.shipping_policy.body != blank -%}
+                    <p class="text-subdued text-sm">{{ 'cart.general.taxes_included_and_shipping_policy_html' | t: link: shop.shipping_policy.url }}</p>
+                  {%- elsif cart.taxes_included -%}
+                    <p class="text-subdued text-sm">{{ 'cart.general.taxes_included_but_shipping_at_checkout' | t }}</p>
+                  {%- elsif shop.shipping_policy.body != blank -%}
+                    <p class="text-subdued text-sm">{{ 'cart.general.taxes_and_shipping_policy_at_checkout_html' | t: link: shop.shipping_policy.url }}</p>
+                  {%- else -%}
+                    <p class="text-subdued text-sm">{{ 'cart.general.taxes_and_shipping_at_checkout' | t }}</p>
+                  {%- endif -%}
+                {%- endif -%}
+
+                {%- if section.settings.show_accelerated_payment_buttons and additional_checkout_buttons -%}
+                  <div class="additional-checkout-buttons additional-checkout-buttons--vertical">
+                    {{- content_for_additional_checkout_buttons -}}
+                  </div>
+                {% endif %}
+
+                <noscript>
+                  {%- assign update_button = 'cart.general.update_cart' | t -%}
+                  {%- render 'button', type: 'submit', content: update_button, style: 'outline' -%}
+                </noscript>
+
+                {%- assign checkout_button = 'cart.general.checkout' | t -%}
+                {%- render 'button', type: 'submit', content: checkout_button, name: 'checkout' -%}
+              </div>
+            </div>
+          </div>
+
+          {%- comment -%}
+          ----------------------------------------------------------------------------------------------------------------
+          SHIPPING ESTIMATOR
+          ----------------------------------------------------------------------------------------------------------------
+          {%- endcomment -%}
+
+          {%- if section.settings.show_shipping_estimator and cart.requires_shipping -%}
+            {%- render 'shipping-estimator' -%}
+          {%- endif -%}
+        </form>
+      </div>
+    </div>
+  {%- endif -%}
+</div>
+
+{% schema %}
+{
+  "name": "t:sections.main_cart.name",
+  "class": "shopify-section--main-cart",
+  "tag": "section",
+  "settings": [
+    {
+      "type": "color_scheme",
+      "id": "color_scheme",
+      "label": "t:global.colors.scheme",
+      "default": "scheme-1"
+    },
+    {
+      "type": "checkbox",
+      "id": "show_cart_note",
+      "label": "t:sections.main_cart.show_cart_note",
+      "default": true
+    },
+    {
+      "type": "checkbox",
+      "id": "show_order_weight",
+      "label": "t:sections.main_cart.show_order_weight",
+      "default": false
+    },
+    {
+      "type": "checkbox",
+      "id": "show_shipping_text",
+      "label": "t:sections.main_cart.show_shipping_text",
+      "default": true
+    },
+    {
+      "type": "checkbox",
+      "id": "show_accelerated_buttons",
+      "label": "t:sections.main_cart.show_accelerated_buttons",
+      "info": "t:sections.main_cart.show_accelerated_buttons_info",
+      "default": false
+    },
+    {
+      "type": "checkbox",
+      "id": "show_shipping_estimator",
+      "label": "t:sections.main_cart.show_shipping_estimator",
+      "default": true
+    }
+  ],
+  "blocks": [
+    {
+      "type": "@app"
+    }
+  ]
+}
+{% endschema %}
+
+
+<script>
+document.querySelectorAll('.remove-link').forEach(link => {
+  link.addEventListener('click', function(e) {
+    e.preventDefault();
+
+    const row = this.closest('tr');
+    if (!row) return;
+
+    // Get the Main Bracelet Key (This is always deleted)
+    const mainKey = row.dataset.lineItemKey;
+    
+    // Prepare container for the data we are about to read
+    const beadsToRemoveMap = {}; 
+    const beadElements = row.querySelectorAll('.bead-name');
+
+    // 1. EXTRACT DATA using your requested logic
+    if (beadElements.length > 0) {
+      beadElements.forEach(bead => {
+        // Access the data attributes from the HTML
+        const variantId = bead.dataset.beadVariantId;
+        const qty = parseInt(bead.dataset.beadQty, 10); // Ensure it's a number
+        // const title = bead.textContent.trim(); // Not needed for calculation
+
+        // We store the quantity to remove. 
+        // If multiple beads have the same ID, we sum them up.
+        if (beadsToRemoveMap[variantId]) {
+            beadsToRemoveMap[variantId] += qty;
+        } else {
+            beadsToRemoveMap[variantId] = qty;
+        }
+      });
+    }
+
+    // UI Loading State
+    const originalContent = this.innerHTML;
+    this.innerHTML = 'Updating...';
+    this.style.opacity = '0.5';
+
+    // 2. FETCH CURRENT CART to get existing quantities
+    fetch(window.Shopify.routes.root + 'cart.js')
+      .then(response => response.json())
+      .then(cart => {
+        
+        const updates = {};
+
+        // A. Add the main bracelet to delete (set to 0)
+        if (mainKey) {
+          updates[mainKey] = 0;
+        }
+
+        // B. Loop through the ACTUAL items in the cart
+        cart.items.forEach(cartItem => {
+          
+          // Check if this cart item matches one of our beads
+          // We match by Variant ID
+          const qtyToRemove = beadsToRemoveMap[cartItem.variant_id];
+
+          if (qtyToRemove) {
+            const currentQty = cartItem.quantity;
+            
+            // Calculate: Existing - ToRemove
+            // Example: 20 - 5 = 15
+            const newQty = Math.max(0, currentQty - qtyToRemove);
+
+            // Update using the Line Item Key (safe way to update specific rows)
+            updates[cartItem.key] = newQty;
+
+            console.log(`Updating ${cartItem.title}: ${currentQty} - ${qtyToRemove} = ${newQty}`);
+          }
+        });
+
+        // 3. SEND UPDATE REQUEST
+        return fetch(window.Shopify.routes.root + 'cart/update.js', {
+          method: 'POST',
+          headers: { 'Content-Type': 'application/json' },
+          body: JSON.stringify({ updates: updates })
+        });
+      })
+      .then(response => {
+        if (response.ok) {
+          window.location.href = '/cart';
+        } else {
+          throw new Error('Update failed');
+        }
+      })
+      .catch(error => {
+        console.error('Error:', error);
+        alert('An error occurred while updating the cart.');
+        this.innerHTML = originalContent;
+        this.style.opacity = '1';
+      });
+  });
+});
+</script>
+<style>
+  /* Line Item Container */
+  .line-item {
+    display: flex;
+    gap: 15px;
+    border-bottom: 1px solid #eee;
+    transition: background-color 0.2s ease;
+  }
+  .line-item-cell {
+   border:none;
+  } 
+
+  .product-header {
+    margin-bottom: 5px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+  /* Product Image */
+  .line-item__media {
+    border-radius: 8px;
+    flex-shrink: 0;
+  }
+  
+  /* Product Info */
+  .line-item-info {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+    
+  .product-title {
+   text-align:center;
+    margin: 0 auto;
+    display: block;
+    font-weight: 500;
+  }
+
+  
+  .variant-title, .selling-plan {
+    font-size: 0.85rem;
+    color: #666;
+    margin: 0;
+  }
+  
+  /* Bracelet Properties - ULTRA COMPACT DESIGN */
+  .bracelet-properties {
+    margin-bottom: 10px;
+  }
+  
+  .property-tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 6px 10px;
+    align-items: center;
+  }
+  
+  .property-tag {
+    display: inline-flex;
+    align-items: center;
+    background-color: #f5f5f5;
+    border-radius: 4px;
+    padding: 3px 8px;
+    font-size: 0.75rem;
+    color: #444;
+    border: 1px solid #e0e0e0;
+    transition: all 0.2s ease;
+    max-width: 100%;
+  }
+  
+  .property-tag:hover {
+    background-color: #ebebeb;
+    border-color: #d0d0d0;
+  }
+  
+  .property-tag-text {
+    background-color: #f0f7ff;
+    border-color: #d1e3ff;
+  }
+  
+  .tag-key {
+    font-weight: 600;
+    color: #666;
+    margin-right: 4px;
+    white-space: nowrap;
+  }
+  
+  .tag-value {
+    color: #333;
+    font-weight: 500;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    max-width: 120px;
+  }
+  
+  .property-tag-text .tag-value {
+    max-width: 200px;
+  }
+  
+  /* Beads Container */
+  .beads-container {
+    background-color: #f9f9f9;
+    border-radius: 8px;
+    padding: 12px;
+    border: 1px solid #eee;
+    margin-bottom: 10px;
+  }
+  
+  .beads-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 10px;
+    padding-bottom: 6px;
+    border-bottom: 1px solid #eee;
+  }
+  
+  .beads-title {
+    font-size: 0.9rem;
+    font-weight: 600;
+    margin: 0;
+    color: #333;
+  }
+  
+  .beads-count {
+    background-color: #e0e0e0;
+    color: #555;
+    font-size: 0.75rem;
+    font-weight: 600;
+    padding: 2px 8px;
+    border-radius: 12px;
+  }
+  
+  .beads-list {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 10px;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  .bead-item {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding: 8px;
+    background-color: white;
+    border-radius: 6px;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.05);
+  }
+  
+  .bead-image-container {
+    flex-shrink: 0;
+    width: 40px;
+    height: 40px;
+    border-radius: 6px;
+    overflow: hidden;
+    background-color: #f0f0f0;
+  }
+  
+  .bead-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  
+  .bead-placeholder {
+    width: 100%;
+    height: 100%;
+    background-color: #e0e0e0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 0.8rem;
+    color: #999;
+  }
+  
+  .bead-details {
+    flex: 1;
+    min-width: 0;
+  }
+  
+  .bead-name {
+    font-size: 0.85rem;
+    font-weight: 500;
+    margin: 0 0 4px;
+    color: #333;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+  
+  .bead-meta {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .bead-quantity {
+    background-color: #e0e0e0;
+    color: #555;
+    font-size: 0.7rem;
+    font-weight: 600;
+    padding: 2px 6px;
+    border-radius: 4px;
+  }
+  
+  img.line-item__media {
+    border: .5px solid #f6f3f3;
+    padding: 4px;
+    margin-bottom:4px;
+  }
+
+  .bead-price {
+    font-size: 0.75rem;
+    color: #666;
+    font-weight: 500;
+  }
+  
+  /* Discounts */
+  .discount-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 6px;
+    margin-top: 5px;
+  }
+  
+  .discount-badge {
+    display: inline-flex;
+    align-items: center;
+    gap: 4px;
+    background-color: #fff8e1;
+    color: #b28704;
+    font-size: 0.75rem;
+    padding: 3px 8px;
+    border-radius: 4px;
+    font-weight: 500;
+  }
+  
+  /* Quantity Section */
+  .quantity-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+  }
+  
+  .quantity-value {
+    font-size: 1.1rem;
+    font-weight: 600;
+    margin: 0;
+    color: #333;
+  }
+  
+  .remove-link {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 32px;
+    height: 32px;
+    color: #888;
+    text-decoration: none;
+    transition: all 0.2s ease;
+    border-radius: 50%;
+  }
+  
+  .remove-link:hover {
+    background-color: #fee;
+    color: #e53935;
+    cursor:pointer;
+  }
+  
+  /* Price Section */
+  .price-breakdown {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+    min-width: 160px;
+  }
+  
+  .price-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 10px;
+    font-size: 0.85rem;
+  }
+  
+  .price-label {
+    color: #666;
+  }
+  
+  .price-value {
+    font-weight: 500;
+  }
+  
+  .total-row {
+    margin-top: 4px;
+    padding-top: 4px;
+    border-top: 1px solid #eee;
+  }
+  
+  .total-price {
+    font-weight: 700;
+    color: #333;
+    font-size: 0.95rem;
+  }
+  
+  .price-simple {
+    font-weight: 600;
+    color: #333;
+    font-size: 1rem;
+  }
+    td.line-item-cell.line-item-cell--product {
+    width:75%;
+    }
+   .line-item-cell--quantity {
+    display: flex;
+    width: 25%;
+    justify-content: space-between;
+    align-items: center;
+    padding-inline: 14px;
+  }
+
+  .line-item-cell--price {
+   width:inherit;
+  }
+  /* Responsive Design */
+  @media (max-width: 768px) {
+
+    
+    td.line-item-cell.line-item-cell--product {
+    width:100%;
+    }
+   .line-item-cell--quantity {
+    display: flex;
+    width: 100%;
+   }
+   td.line-item-cell.line-item-cell--quantity.text-center {
+    display:flex;
+        padding-inline: 12px;
+   }
+    .line-item {
+      flex-direction: column;
+      gap: 12px;
+      padding: 12px 0;
+    }
+    td.line-item-cell.line-item-cell--product {
+    padding-block-end: 0px !important;
+    }
+
+    .line-item__media {
+     min-width:65px;
+    }
+    
+    .property-tags {
+      gap: 4px 8px;
+    }
+    
+    .property-tag {
+      padding: 2px 6px;
+      font-size: 0.6rem;
+    }
+    
+    .tag-value {
+      max-width: 80px;
+    }
+    
+    .property-tag-text .tag-value {
+      max-width: 120px;
+    }
+    
+    .beads-list {
+      grid-template-columns: 1fr;
+    }
+    
+    .bead-item {
+      padding: 10px;
+    }
+    
+    .bead-image-container {
+      width: 50px;
+      height: 50px;
+    }
+    
+    .bead-name {
+      white-space: normal;
+    }
+    
+    .price-breakdown {
+      min-width: auto;
+      align-items: flex-end;
+    }
+    
+    .quantity-section {
+      flex-direction: row;
+      justify-content: space-between;
+    }
+  }
+</style>

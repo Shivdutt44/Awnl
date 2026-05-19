@@ -1,0 +1,147 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "collection-banner": {
+      "type": "collection-banner",
+      "disabled": true,
+      "custom_css": [],
+      "settings": {
+        "color_scheme": "scheme-3",
+        "image_size": "auto",
+        "allow_transparent_header": false,
+        "reveal": true,
+        "enable_parallax": false,
+        "show_image": true,
+        "show_collection_title": false,
+        "show_collection_description": false,
+        "show_breadcrumb": true,
+        "content_width": "xs",
+        "overlay_color": "#000000",
+        "overlay_opacity": 0
+      }
+    },
+    "main": {
+      "type": "main-collection",
+      "disabled": true,
+      "settings": {
+        "color_scheme": "scheme-2",
+        "hide_product_information": false,
+        "products_per_page": 24,
+        "products_per_row_mobile": "2",
+        "products_size_desktop": "medium",
+        "show_grid_mode_selector": true,
+        "horizontal_spacing_factor": 1.5,
+        "vertical_spacing_factor": 1.5,
+        "filter_layout": "drawer",
+        "quick_links_menu": "link-list-2",
+        "show_sort_by": true,
+        "show_filters": true,
+        "show_results_count": true,
+        "show_filter_group_name": false,
+        "show_filter_values_count": true,
+        "open_filters_by_default": false
+      }
+    },
+    "rich_text_iafCin": {
+      "type": "rich-text",
+      "blocks": {
+        "heading_qpMDAX": {
+          "type": "heading",
+          "settings": {
+            "text": "白色情人節活動已結束",
+            "heading_tag": "h1"
+          }
+        },
+        "button_xLLhgC": {
+          "type": "button",
+          "settings": {
+            "style": "solid",
+            "text": "繼續購物",
+            "url": "/",
+            "background": "",
+            "text_color": ""
+          }
+        }
+      },
+      "block_order": [
+        "heading_qpMDAX",
+        "button_xLLhgC"
+      ],
+      "settings": {
+        "color_scheme": "scheme-2",
+        "separate_section_with_border": true,
+        "content_width": "sm",
+        "text_position": "center",
+        "remove_vertical_spacing": false
+      }
+    },
+    "image_with_text_6j3VGp": {
+      "type": "image-with-text",
+      "blocks": {
+        "heading_WXiFNY": {
+          "type": "heading",
+          "settings": {
+            "text": "白色浪漫，心意雙全",
+            "heading_tag": "h1"
+          }
+        },
+        "richtext_FwtFJd": {
+          "type": "richtext",
+          "settings": {
+            "content": "<h4>1. 挑選兩件心儀之作</h4><ul><li>第一步：從7件商品中選擇套裝的第一件</li></ul><p>（尺寸可選的商品，請先選擇尺寸 → 點擊「加入優惠組合」）</p><ul><li>第二步：從10件商品中選擇套裝的第二件</li></ul><h4>2. 享兩件合計金額12%專屬折扣</h4><ul><li>點擊「加入購物車」，結賬時自動扣減</li></ul><p>* 如需退貨，請將兩件作品一同退回。<br/>* 除積分兌換折扣外，本活動不可與其他優惠同時使用。<br/>* 如有疑問，敬請聯絡專屬客服。</p>"
+          }
+        }
+      },
+      "block_order": [
+        "heading_WXiFNY",
+        "richtext_FwtFJd"
+      ],
+      "disabled": true,
+      "settings": {
+        "color_scheme": "scheme-1b02ad27-67f6-4363-902b-7afc4c7eb905",
+        "separate_section_with_border": false,
+        "image": "shopify://shop_images/2025-white-bundler-lp-tw.jpg",
+        "reveal_on_scroll": true,
+        "image_position": "start",
+        "content_width": "sm",
+        "remove_vertical_spacing": true
+      }
+    },
+    "17404700028d5aa9fa": {
+      "type": "apps",
+      "blocks": {
+        "bundler_custom_bundle_U4TtVp": {
+          "type": "shopify://apps/bundler/blocks/custom-bundle/7a6ae1b8-3b16-449b-8429-8bb89a62c664",
+          "settings": {
+            "shortcode": "cf5w"
+          }
+        }
+      },
+      "block_order": [
+        "bundler_custom_bundle_U4TtVp"
+      ],
+      "disabled": true,
+      "settings": {
+        "color_scheme": "scheme-a78906e4-c3c8-49a5-bce9-ea899e4ee6a0",
+        "separate_section_with_border": false,
+        "remove_vertical_spacing": true,
+        "remove_horizontal_spacing": false
+      }
+    }
+  },
+  "order": [
+    "collection-banner",
+    "main",
+    "rich_text_iafCin",
+    "image_with_text_6j3VGp",
+    "17404700028d5aa9fa"
+  ]
+}

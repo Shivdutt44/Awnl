@@ -1,0 +1,291 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "collection-banner": {
+      "type": "collection-banner",
+      "settings": {
+        "color_scheme": "",
+        "image": "shopify://shop_images/halloween-bats-background_1.jpg",
+        "mobile_image": "shopify://shop_images/halloween-bats-background-mb.jpg",
+        "image_size": "sm",
+        "allow_transparent_header": false,
+        "reveal": true,
+        "enable_parallax": false,
+        "show_image": true,
+        "show_collection_title": true,
+        "show_collection_description": true,
+        "show_breadcrumb": true,
+        "content_width": "xs",
+        "overlay_color": "#000000",
+        "overlay_opacity": 8
+      }
+    },
+    "8b9409b8-9555-410d-9ed0-c85dbc00a93a": {
+      "type": "rich-text",
+      "blocks": {
+        "template--16836801855726__8b9409b8-9555-410d-9ed0-c85dbc00a93a-heading-1": {
+          "type": "heading",
+          "settings": {
+            "text": "2024年萬聖節活動已結束",
+            "heading_tag": "h2"
+          }
+        },
+        "4942f685-1630-4ce2-ad09-8bfd45ecd494": {
+          "type": "liquid",
+          "settings": {
+            "liquid": "敬請期待更多驚喜折扣活動"
+          }
+        },
+        "button_UCeNdJ": {
+          "type": "button",
+          "settings": {
+            "style": "solid",
+            "text": "返回主頁",
+            "url": "/",
+            "background": "",
+            "text_color": ""
+          }
+        }
+      },
+      "block_order": [
+        "template--16836801855726__8b9409b8-9555-410d-9ed0-c85dbc00a93a-heading-1",
+        "4942f685-1630-4ce2-ad09-8bfd45ecd494",
+        "button_UCeNdJ"
+      ],
+      "settings": {
+        "color_scheme": "scheme-f0d106e0-a0c1-4801-bedd-496732dbd121",
+        "separate_section_with_border": false,
+        "content_width": "xs",
+        "text_position": "center",
+        "remove_vertical_spacing": false
+      }
+    },
+    "scrolling_content_c7Wex9": {
+      "type": "scrolling-content",
+      "blocks": {
+        "image_7b7FFe": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/2024-Halloween-crystal-skull_2.png"
+          }
+        },
+        "image_cUbEFB": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/2024-Halloween-crystal-skull_1.png"
+          }
+        },
+        "image_zxpfeH": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/2024-Halloween-crystal-skull_3.png"
+          }
+        },
+        "image_BAJbP7": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/2024-Halloween-crystal-skull_5.png"
+          }
+        },
+        "image_8WxLRj": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/2024-Halloween-crystal-skull_4.png"
+          }
+        }
+      },
+      "block_order": [
+        "image_7b7FFe",
+        "image_cUbEFB",
+        "image_zxpfeH",
+        "image_BAJbP7",
+        "image_8WxLRj"
+      ],
+      "disabled": true,
+      "settings": {
+        "separate_section_with_border": false,
+        "scrolling_speed": 0.1,
+        "scroll_direction": "left",
+        "pause_on_hover": true,
+        "text_font": "heading",
+        "text_font_size_mobile": 48,
+        "text_font_size_desktop": 80,
+        "section_vertical_spacing_mobile": 60,
+        "section_vertical_spacing_desktop": 68,
+        "item_horizontal_spacing_mobile": 30,
+        "item_horizontal_spacing_desktop": 70,
+        "background": "#f0e7ea",
+        "text_color": ""
+      }
+    },
+    "featured_collections_8j79LV": {
+      "type": "featured-collections",
+      "blocks": {
+        "collection_yTXYNE": {
+          "type": "collection",
+          "settings": {
+            "collection": "halloween-selected-gifts",
+            "products_count": 50,
+            "title": "",
+            "link_url": "",
+            "link_text": ""
+          }
+        }
+      },
+      "block_order": [
+        "collection_yTXYNE"
+      ],
+      "disabled": true,
+      "custom_css": [
+        "h2.h2 {display: none;}",
+        "p.h6.text-center {font-size: 21px;}"
+      ],
+      "settings": {
+        "color_scheme": "scheme-2",
+        "separate_section_with_border": false,
+        "hide_product_information": false,
+        "stack_products": true,
+        "products_per_row_mobile": "2",
+        "products_per_row_desktop": 5,
+        "horizontal_spacing_factor": 1.5,
+        "vertical_spacing_factor": 1.5,
+        "subheading": "萬聖節專場折扣商品"
+      }
+    },
+    "main": {
+      "type": "main-collection",
+      "disabled": true,
+      "settings": {
+        "color_scheme": "scheme-2",
+        "hide_product_information": false,
+        "products_per_page": 48,
+        "products_per_row_mobile": "2",
+        "products_size_desktop": "medium",
+        "show_grid_mode_selector": true,
+        "horizontal_spacing_factor": 1,
+        "vertical_spacing_factor": 1,
+        "filter_layout": "drawer",
+        "quick_links_menu": "",
+        "show_sort_by": true,
+        "show_filters": true,
+        "show_results_count": true,
+        "show_filter_group_name": false,
+        "show_filter_values_count": true,
+        "open_filters_by_default": false
+      }
+    },
+    "6957df6b-2f90-46bb-a0b1-5fcc1d224a6d": {
+      "type": "collection-list",
+      "blocks": {
+        "template--16117204975796__6957df6b-2f90-46bb-a0b1-5fcc1d224a6d-collection-1": {
+          "type": "collection",
+          "settings": {
+            "color_scheme": "scheme-4",
+            "collection": "{{ collection.metafields.my_fields.sub_collection_a.value }}",
+            "image": "{{ block.settings.collection.metafields.my_fields.collection_banner_mb.value }}",
+            "expand_collection": false,
+            "content_position": "place-self-end-center text-center",
+            "subheading": "",
+            "title": "",
+            "button_text": "{{ block.settings.collection.title }}",
+            "button_link": "",
+            "button_style": "solid",
+            "overlay_color": "#000000",
+            "overlay_opacity": 0
+          }
+        },
+        "template--16117204975796__6957df6b-2f90-46bb-a0b1-5fcc1d224a6d-collection-2": {
+          "type": "collection",
+          "settings": {
+            "color_scheme": "scheme-4",
+            "collection": "{{ collection.metafields.my_fields.sub_collection_b.value }}",
+            "image": "{{ block.settings.collection.metafields.my_fields.collection_banner_mb.value }}",
+            "expand_collection": false,
+            "content_position": "place-self-end-center text-center",
+            "subheading": "",
+            "title": "",
+            "button_text": "{{ block.settings.collection.title }}",
+            "button_link": "",
+            "button_style": "solid",
+            "overlay_color": "#000000",
+            "overlay_opacity": 0
+          }
+        },
+        "template--16117204975796__6957df6b-2f90-46bb-a0b1-5fcc1d224a6d-collection-3": {
+          "type": "collection",
+          "settings": {
+            "color_scheme": "scheme-4",
+            "collection": "{{ collection.metafields.my_fields.sub_colleciton_c.value }}",
+            "image": "{{ block.settings.collection.metafields.my_fields.collection_banner_mb.value }}",
+            "expand_collection": false,
+            "content_position": "place-self-end-center text-center",
+            "subheading": "",
+            "title": "",
+            "button_text": "{{ block.settings.collection.title }}",
+            "button_link": "",
+            "button_style": "solid",
+            "overlay_color": "#000000",
+            "overlay_opacity": 0
+          }
+        }
+      },
+      "block_order": [
+        "template--16117204975796__6957df6b-2f90-46bb-a0b1-5fcc1d224a6d-collection-1",
+        "template--16117204975796__6957df6b-2f90-46bb-a0b1-5fcc1d224a6d-collection-2",
+        "template--16117204975796__6957df6b-2f90-46bb-a0b1-5fcc1d224a6d-collection-3"
+      ],
+      "custom_css": [
+        ".button {background: transparent; border: none; color: white; text-decoration: none; position: relative; padding: 5px; display: inline-block; line-height: 1.6; border-bottom: 1px solid transparent; background-image: linear-gradient(to right, white, white); background-size: 100% 2px; background-repeat: no-repeat; background-position: 0% 100%; transition: background-size 0.8s ease-in-out;}",
+        ".button:hover {background-size: 0% 2px;}",
+        ".collection-card img {width: 100%; height: auto; aspect-ratio: 1 / 1; object-fit: cover; object-position: center;}"
+      ],
+      "settings": {
+        "color_scheme": "scheme-2",
+        "separate_section_with_border": false,
+        "image_size": "auto",
+        "show_text_outside": false,
+        "space_items": true,
+        "stack_collections": true,
+        "collections_per_row_mobile": "1",
+        "collections_per_row_desktop": 3,
+        "subheading": "",
+        "title": "More Inspirations",
+        "content": "<p>探索更多系列靈感</p>"
+      }
+    },
+    "6a16cbb0-f512-44e1-a7c4-dc7b3b927a5b": {
+      "type": "recently-viewed-products",
+      "settings": {
+        "separate_section_with_border": true,
+        "color_scheme": "scheme-2",
+        "hide_product_information": false,
+        "stack_products": false,
+        "products_count": 9,
+        "products_per_row_mobile": "2",
+        "products_per_row_desktop": 5,
+        "horizontal_spacing_factor": 1.5,
+        "vertical_spacing_factor": 1.5,
+        "subheading": "",
+        "title": "歷史瀏覽商品",
+        "content": ""
+      }
+    }
+  },
+  "order": [
+    "collection-banner",
+    "8b9409b8-9555-410d-9ed0-c85dbc00a93a",
+    "scrolling_content_c7Wex9",
+    "featured_collections_8j79LV",
+    "main",
+    "6957df6b-2f90-46bb-a0b1-5fcc1d224a6d",
+    "6a16cbb0-f512-44e1-a7c4-dc7b3b927a5b"
+  ]
+}

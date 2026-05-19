@@ -1,0 +1,182 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "main": {
+      "type": "main-product",
+      "blocks": {
+        "dbd0ac34-1fbd-4e82-a225-37beacaf1d3e": {
+          "type": "title",
+          "settings": {
+            "heading_tag": "h3"
+          }
+        },
+        "56213e8d-d248-49fe-ab76-052ea3c61b5c": {
+          "type": "price",
+          "settings": {
+            "show_taxes_notice": false
+          }
+        },
+        "bd51c12d-29da-4a0b-9e3c-2ac46afa5454": {
+          "type": "separator",
+          "settings": {}
+        },
+        "description": {
+          "type": "description",
+          "settings": {
+            "collapse_content": false,
+            "show_below_gallery": false
+          }
+        },
+        "product_variations_eP7GjL": {
+          "type": "product_variations",
+          "settings": {
+            "option_name": "",
+            "option_value_metafield": "",
+            "products": [],
+            "selector_style": "swatch"
+          }
+        },
+        "58241bc6-d849-451e-bac6-5f03206020ff": {
+          "type": "variant_picker",
+          "settings": {
+            "hide_sold_out_variants": true,
+            "selector_style": "block",
+            "swatch_selector_style": "swatch",
+            "variant_image_options": "",
+            "size_chart_page": ""
+          }
+        },
+        "quantity_selector": {
+          "type": "quantity_selector",
+          "settings": {}
+        },
+        "bss_variant_options_option_set_C4cPgn": {
+          "type": "shopify://apps/optis-product-options/blocks/option-set/2c446099-c349-4e73-80cd-49c9770b7807",
+          "settings": {}
+        },
+        "buy_buttons": {
+          "type": "buy_buttons",
+          "settings": {
+            "show_payment_button": false,
+            "show_gift_card_recipient": true,
+            "atc_button_background": "",
+            "atc_button_text_color": "",
+            "payment_button_background": "",
+            "payment_button_text_color": ""
+          }
+        },
+        "offers_bwhbeN": {
+          "type": "offers",
+          "settings": {
+            "stack_offers": false,
+            "offer_1_title": "",
+            "offer_1_content": "{{ product.metafields.my_fields.bracelet_wearing_tips | metafield_tag }}",
+            "offer_2_title": "",
+            "offer_2_content": "",
+            "offer_3_title": "",
+            "offer_3_content": "",
+            "background": "",
+            "text_color": "",
+            "border_color": ""
+          }
+        },
+        "846b5228-2627-42c5-9c87-ad1d83030e9c": {
+          "type": "payment_terms",
+          "settings": {}
+        },
+        "share_buttons": {
+          "type": "share_buttons",
+          "settings": {}
+        },
+        "c788a948-7915-47a1-925d-5d4457905100": {
+          "type": "accordion",
+          "settings": {
+            "show_below_gallery": true,
+            "icon": "none",
+            "title": "購前須知",
+            "content": "",
+            "liquid": "",
+            "page": "information-before-purchase"
+          }
+        },
+        "80d5c29b-3cb3-47b9-80e2-3f3498485ef8": {
+          "type": "accordion",
+          "settings": {
+            "show_below_gallery": true,
+            "icon": "none",
+            "title": "運送 & 退換",
+            "content": "",
+            "liquid": "",
+            "page": "shipping-exchange-return-policy-on-product-page"
+          }
+        }
+      },
+      "block_order": [
+        "dbd0ac34-1fbd-4e82-a225-37beacaf1d3e",
+        "56213e8d-d248-49fe-ab76-052ea3c61b5c",
+        "bd51c12d-29da-4a0b-9e3c-2ac46afa5454",
+        "description",
+        "product_variations_eP7GjL",
+        "58241bc6-d849-451e-bac6-5f03206020ff",
+        "quantity_selector",
+        "bss_variant_options_option_set_C4cPgn",
+        "buy_buttons",
+        "offers_bwhbeN",
+        "846b5228-2627-42c5-9c87-ad1d83030e9c",
+        "share_buttons",
+        "c788a948-7915-47a1-925d-5d4457905100",
+        "80d5c29b-3cb3-47b9-80e2-3f3498485ef8"
+      ],
+      "custom_css": [
+        "span {font-weight: 500;}",
+        "h5,strong {font-weight: 500;}",
+        ".po-dropdown-thumbnail-option span {font-size: 12px;}",
+        ".po-dropdown-selected-option {border-radius: 0;}",
+        ".po-select-dropdown-thumbnail {margin-left: -5px;}"
+      ],
+      "settings": {
+        "color_scheme": "scheme-2",
+        "container_size": "lg",
+        "product_info_size": 35,
+        "show_sticky_add_to_cart": true,
+        "center_basic_info": false,
+        "desktop_media_layout": "carousel_thumbnails_bottom",
+        "desktop_media_grid_gap": 30,
+        "mobile_controls": "thumbnails",
+        "enable_media_autoplay": true,
+        "enable_video_looping": true,
+        "enable_image_zoom": true,
+        "max_image_zoom_level": 3
+      }
+    },
+    "recently-viewed-products": {
+      "type": "recently-viewed-products",
+      "settings": {
+        "separate_section_with_border": true,
+        "color_scheme": "scheme-2",
+        "hide_product_information": false,
+        "stack_products": false,
+        "products_count": 9,
+        "products_per_row_mobile": "2",
+        "products_per_row_desktop": 4,
+        "horizontal_spacing_factor": 1,
+        "vertical_spacing_factor": 1,
+        "subheading": "",
+        "title": "Recently viewed",
+        "content": ""
+      }
+    }
+  },
+  "order": [
+    "main",
+    "recently-viewed-products"
+  ]
+}

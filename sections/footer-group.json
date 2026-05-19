@@ -1,0 +1,223 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "type": "footer",
+  "name": "Footer group",
+  "sections": {
+    "text-with-icons": {
+      "type": "text-with-icons",
+      "blocks": {
+        "icon-1": {
+          "type": "item",
+          "settings": {
+            "icon": "picto-delivery-truck",
+            "icon_width": 28,
+            "mobile_icon_width": 24,
+            "title": "<a href=\"/policies/shipping-policy\" title=\"Shipping Policy\">快速配送</a>",
+            "content": "<p>台港澳新馬地區滿3,500元免運，黑貓、順豐、好馬吉1-4天內送達</p>"
+          }
+        },
+        "icon-2": {
+          "type": "item",
+          "settings": {
+            "icon": "picto-happy-face",
+            "icon_width": 28,
+            "mobile_icon_width": 24,
+            "title": "<a href=\"/pages/return-and-refund\" title=\"退貨與退款政策\">30天滿意保證</a>",
+            "content": "<p>30天內可無理由退貨退款，安心購物有保障</p>"
+          }
+        },
+        "icon-3": {
+          "type": "item",
+          "disabled": true,
+          "settings": {
+            "icon": "picto-jewelry",
+            "icon_width": 28,
+            "mobile_icon_width": 24,
+            "title": "<a href=\"/pages/customized-jewelry\" title=\"定製客製服務\">客製化服務</a>",
+            "content": "<p>珠寶個性客製化服務，提供設計初稿以及預估報價。打造獨一無二。</p>"
+          }
+        },
+        "icon-4": {
+          "type": "item",
+          "settings": {
+            "icon": "picto-gift",
+            "icon_width": 28,
+            "mobile_icon_width": 24,
+            "title": "<a href=\"/pages/gift-packaging\" title=\"禮品包裝\">禮物包裝</a>",
+            "content": "<p>所有商品均提供免費包裝，另可升級加購高級禮品珠寶盒</p>"
+          }
+        },
+        "item_B3w9Vi": {
+          "type": "item",
+          "settings": {
+            "icon": "picto-info",
+            "icon_width": 28,
+            "mobile_icon_width": 24,
+            "title": "<a href=\"/pages/shopping-guide\" title=\"首次購物指南\">首次購物指南</a>",
+            "content": "<p>匯集購物流程、運送、付款、退換貨及保固等重要資訊，助您輕鬆下單無憂</p>"
+          }
+        }
+      },
+      "block_order": [
+        "icon-1",
+        "icon-2",
+        "icon-3",
+        "icon-4",
+        "item_B3w9Vi"
+      ],
+      "custom_css": [
+        "a {font-weight: 500; color: #1c1c1c;}"
+      ],
+      "settings": {
+        "color_scheme": "scheme-2",
+        "separate_section_with_border": true,
+        "stack_on_mobile": true,
+        "icon_color": "",
+        "text_color": "",
+        "text_alignment": "center"
+      }
+    },
+    "fa45d7d5-2244-44a0-8b96-db401cd2b9b5": {
+      "type": "newsletter",
+      "custom_css": [
+        "strong {font-weight: 500;}",
+        "p {margin-top: 10px;}"
+      ],
+      "settings": {
+        "color_scheme": "scheme-2",
+        "separate_section_with_border": false,
+        "image_size": "auto",
+        "subheading": "",
+        "title": "Join Us",
+        "content": "<h5>Join Our Circle</h5><p>訂閱獲取最新商品現貨，會員限定優惠等訊息。</p>",
+        "button_text": "立即訂閱",
+        "overlay_color": "#000000",
+        "overlay_opacity": 0
+      }
+    },
+    "image_with_text_block_GJCeDM": {
+      "type": "image-with-text-block",
+      "blocks": {
+        "subheading_iQKg7x": {
+          "type": "subheading",
+          "settings": {
+            "text": "MEMBERSHIP"
+          }
+        },
+        "richtext_MwnV37": {
+          "type": "richtext",
+          "settings": {
+            "content": "<p>即刻成為AWNL會員<br/>積分開啟專屬禮遇</p>"
+          }
+        },
+        "link_BNCHTj": {
+          "type": "link",
+          "settings": {
+            "text": "EXPLORE",
+            "url": "shopify://pages/membership-guide"
+          }
+        }
+      },
+      "block_order": [
+        "subheading_iQKg7x",
+        "richtext_MwnV37",
+        "link_BNCHTj"
+      ],
+      "custom_css": [
+        "div.text-center {background: rgba(0, 0, 0, 0.3); backdrop-filter: blur(8px); -webkit-backdrop-filter: blur(8px); width: 800px;}"
+      ],
+      "settings": {
+        "color_scheme": "scheme-3",
+        "image_size": "auto",
+        "image": "shopify://shop_images/banner.jpg",
+        "content_width": "lg",
+        "enable_parallax": true,
+        "remove_vertical_spacing": true
+      }
+    },
+    "footer": {
+      "type": "footer",
+      "blocks": {
+        "2c44f0b7-afe1-4a62-81f0-d866544d1c4a": {
+          "type": "links",
+          "settings": {
+            "menu": "link-list",
+            "show_menu_title": true,
+            "menu_title": ""
+          }
+        },
+        "0ce3cbce-e99f-4350-b3f1-f9eb10c7fe79": {
+          "type": "links",
+          "settings": {
+            "menu": "link-list-1",
+            "show_menu_title": true,
+            "menu_title": ""
+          }
+        },
+        "footer-1": {
+          "type": "links",
+          "settings": {
+            "menu": "footer",
+            "show_menu_title": true,
+            "menu_title": ""
+          }
+        },
+        "links_MXVdhb": {
+          "type": "links",
+          "settings": {
+            "menu": "awnl-member",
+            "show_menu_title": true,
+            "menu_title": "Member"
+          }
+        },
+        "95ba2678-8f0e-47b5-842f-5941180f323f": {
+          "type": "text",
+          "settings": {
+            "title": "品牌理念",
+            "content": "<p>在21世紀初，我們率先將擁有神祕力量的M隕石，帶進精品珠寶的世界。這顆承載著宇宙能量的稀有奇石，讓我們得以將古老文明的守護印記，搭配俐落時尚的設計，再結合蘊藏大地靈氣的天然水晶，打造出一系列充滿能量的現代守護珠寶，為每位配戴的人帶來獨特的守護力量。</p>",
+            "enable_follow_on_shop": false
+          }
+        }
+      },
+      "block_order": [
+        "2c44f0b7-afe1-4a62-81f0-d866544d1c4a",
+        "0ce3cbce-e99f-4350-b3f1-f9eb10c7fe79",
+        "footer-1",
+        "links_MXVdhb",
+        "95ba2678-8f0e-47b5-842f-5941180f323f"
+      ],
+      "custom_css": [
+        "a {font-size: 13px;}",
+        "p {font-size: 13px;}",
+        ".unstyled-list {line-height: 1;}",
+        ".footer__aside p {font-size: 12px;}",
+        ".footer__block-list {column-gap: 1.2rem;}",
+        ".footer p.h6 {font-weight: 500;}"
+      ],
+      "settings": {
+        "color_scheme": "scheme-2",
+        "separate_section_with_border": true,
+        "show_social_media": true,
+        "show_payment_icons": true,
+        "show_country_selector": true,
+        "show_country_name": true,
+        "show_country_flag": true,
+        "show_locale_selector": false
+      }
+    }
+  },
+  "order": [
+    "text-with-icons",
+    "fa45d7d5-2244-44a0-8b96-db401cd2b9b5",
+    "image_with_text_block_GJCeDM",
+    "footer"
+  ]
+}

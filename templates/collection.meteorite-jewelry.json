@@ -1,0 +1,315 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "collection-banner": {
+      "type": "collection-banner",
+      "custom_css": [],
+      "settings": {
+        "color_scheme": "",
+        "image": "{{ collection.metafields.my_fields.collection_banner_pc.value }}",
+        "mobile_image": "{{ collection.metafields.my_fields.collection_banner_mb.value }}",
+        "image_size": "lg",
+        "allow_transparent_header": true,
+        "reveal": false,
+        "enable_parallax": false,
+        "show_image": true,
+        "show_collection_title": true,
+        "show_collection_description": true,
+        "show_breadcrumb": true,
+        "content_width": "xs",
+        "overlay_color": "#000000",
+        "overlay_opacity": 25
+      }
+    },
+    "multiple_media_with_text_qkixzA": {
+      "type": "multiple-media-with-text",
+      "blocks": {
+        "image_3cV839": {
+          "type": "image",
+          "settings": {
+            "image": "{{ collection.metafields.my_fields.crystal_data.value.crystal_image.value }}",
+            "rotation": 0
+          }
+        }
+      },
+      "block_order": [
+        "image_3cV839"
+      ],
+      "custom_css": [
+        "@media (min-width: 250px) {.multiple-media-with-text__media-wrapper {max-width: 300px; margin: 0 auto; display: flex; align-items: center; justify-content: center; overflow: hidden; } .multiple-media-with-text__media-wrapper img {width: 100%; height: auto; object-fit: cover; }}",
+        ".multiple-media-with-text__content-wrapper {line-height: 1.2;}",
+        ".container {margin-top: -50px; margin-bottom: -50px;}"
+      ],
+      "settings": {
+        "color_scheme": "scheme-2",
+        "reveal_on_scroll": true,
+        "separate_section_with_border": false,
+        "media_position_desktop": "before_text",
+        "media_position_mobile": "before_text",
+        "media_layout": "overlap",
+        "media_alignment": "center",
+        "media_alignment_offset": 0,
+        "media_mobile_alignment_offset": 0,
+        "text_alignment": "center",
+        "subheading": "",
+        "title": "",
+        "content": "<p>{{ collection.metafields.my_fields.crystal_data.value.crystal_name.value }}｜{{ collection.metafields.my_fields.crystal_data.value.gemstone_name.value }}｜{{ collection.metafields.my_fields.crystal_data.value.alias.value }}</p>{{ collection.metafields.my_fields.crystal_data.value.star_sign | metafield_tag }}{{ collection.metafields.my_fields.crystal_data.value.chakra_subtle_body | metafield_tag }}<p><strong>關鍵字</strong>：{{ collection.metafields.my_fields.crystal_data.value.spiritual_keywords.value }}</p>{{ collection.metafields.my_fields.crystal_data.value.gemstone_description | metafield_tag }}{{ collection.metafields.my_fields.crystal_data.value.tips_tabus | metafield_tag }}",
+        "button_1_text": "",
+        "button_1_link": "",
+        "button_1_style": "solid",
+        "button_2_text": "",
+        "button_2_link": "",
+        "button_2_style": "solid"
+      }
+    },
+    "1c779757-5fd4-4a8b-8b91-4de7457aeac3": {
+      "type": "collection-list",
+      "blocks": {
+        "template--16201735864500__1c779757-5fd4-4a8b-8b91-4de7457aeac3-collection-1": {
+          "type": "collection",
+          "settings": {
+            "color_scheme": "",
+            "collection": "meteorite-bracelet",
+            "image": "shopify://shop_images/meteorite-bracelets-collection.jpg",
+            "expand_collection": false,
+            "content_position": "place-self-end-center text-center",
+            "subheading": "",
+            "title": "",
+            "button_text": "手鍊",
+            "button_link": "shopify://collections/meteorite-bracelet",
+            "button_style": "link",
+            "overlay_color": "#000000",
+            "overlay_opacity": 9
+          }
+        },
+        "template--16201735864500__1c779757-5fd4-4a8b-8b91-4de7457aeac3-collection-2": {
+          "type": "collection",
+          "settings": {
+            "color_scheme": "",
+            "collection": "meteorite-necklace",
+            "image": "shopify://shop_images/meteorite-necklaces-collection.jpg",
+            "expand_collection": false,
+            "content_position": "place-self-end-center text-center",
+            "subheading": "",
+            "title": "",
+            "button_text": "項鍊",
+            "button_link": "shopify://collections/meteorite-necklace",
+            "button_style": "link",
+            "overlay_color": "#000000",
+            "overlay_opacity": 8
+          }
+        },
+        "template--16201735864500__1c779757-5fd4-4a8b-8b91-4de7457aeac3-collection-3": {
+          "type": "collection",
+          "settings": {
+            "color_scheme": "",
+            "collection": "meteorite-ring",
+            "image": "shopify://shop_images/meteorite-rings-collection.jpg",
+            "expand_collection": false,
+            "content_position": "place-self-end-center text-center",
+            "subheading": "",
+            "title": "",
+            "button_text": "戒指",
+            "button_link": "shopify://collections/meteorite-ring",
+            "button_style": "link",
+            "overlay_color": "#000000",
+            "overlay_opacity": 9
+          }
+        }
+      },
+      "block_order": [
+        "template--16201735864500__1c779757-5fd4-4a8b-8b91-4de7457aeac3-collection-1",
+        "template--16201735864500__1c779757-5fd4-4a8b-8b91-4de7457aeac3-collection-2",
+        "template--16201735864500__1c779757-5fd4-4a8b-8b91-4de7457aeac3-collection-3"
+      ],
+      "custom_css": [
+        ".collection-card img {width: 100%; height: auto; aspect-ratio: 1 /1; object-fit: cover; object-position: center;}",
+        ".collection-card div.prose {font-weight: 400; margin-bottom: 20px;}"
+      ],
+      "settings": {
+        "color_scheme": "scheme-2",
+        "separate_section_with_border": false,
+        "image_size": "auto",
+        "show_text_outside": false,
+        "space_items": false,
+        "stack_collections": false,
+        "collections_per_row_mobile": "1",
+        "collections_per_row_desktop": 3,
+        "subheading": "",
+        "title": "按類型選擇",
+        "content": ""
+      }
+    },
+    "main": {
+      "type": "main-collection",
+      "settings": {
+        "color_scheme": "scheme-2",
+        "hide_product_information": false,
+        "products_per_page": 25,
+        "products_per_row_mobile": "2",
+        "products_size_desktop": "medium",
+        "show_grid_mode_selector": true,
+        "horizontal_spacing_factor": 1.5,
+        "vertical_spacing_factor": 1.5,
+        "filter_layout": "drawer",
+        "quick_links_menu": "link-list-2",
+        "show_sort_by": true,
+        "show_filters": true,
+        "show_results_count": true,
+        "show_filter_group_name": false,
+        "show_filter_values_count": true,
+        "open_filters_by_default": false
+      }
+    },
+    "ea65fe3b-8e1c-4f8c-9218-a61ebef9b0df": {
+      "type": "image-with-text-block",
+      "blocks": {
+        "template--16185771032756__ea65fe3b-8e1c-4f8c-9218-a61ebef9b0df-subheading-1": {
+          "type": "subheading",
+          "settings": {
+            "text": "Widmanstätten  魏德曼花紋"
+          }
+        },
+        "template--16185771032756__ea65fe3b-8e1c-4f8c-9218-a61ebef9b0df-richtext-1": {
+          "type": "richtext",
+          "settings": {
+            "content": "<ul><li>一段擁有45億年傳奇的歷史故事</li><li>於一百萬年前悄然墜落到地球上</li><li>在瑞典北部被探索出的神秘鐵隕石</li><li>獨特的象徵：Widmanstätten紋理</li></ul>"
+          }
+        },
+        "0fd379c0-2311-48a3-bad0-41f5cd3e0b68": {
+          "type": "richtext",
+          "settings": {
+            "content": "<h6><a href=\"https://awnl.tw/pages/swedish-meteorite\" target=\"_blank\" title=\"https://awnl.tw/pages/swedish-meteorite\"><strong>瞭解M隕石</strong></a></h6>"
+          }
+        }
+      },
+      "block_order": [
+        "template--16185771032756__ea65fe3b-8e1c-4f8c-9218-a61ebef9b0df-subheading-1",
+        "template--16185771032756__ea65fe3b-8e1c-4f8c-9218-a61ebef9b0df-richtext-1",
+        "0fd379c0-2311-48a3-bad0-41f5cd3e0b68"
+      ],
+      "custom_css": [],
+      "settings": {
+        "color_scheme": "",
+        "image_size": "sm",
+        "image": "shopify://shop_images/meteorite-production-collection-introduct-banner-pc.jpg",
+        "mobile_image": "shopify://shop_images/meteorite-production-collection-introduct-banner-mb.jpg",
+        "content_width": "lg",
+        "enable_parallax": true,
+        "remove_vertical_spacing": true
+      }
+    },
+    "a9b23a11-5fb6-4f48-8572-db578375598a": {
+      "type": "collection-list",
+      "blocks": {
+        "template--16043850956980__a9b23a11-5fb6-4f48-8572-db578375598a-collection-1": {
+          "type": "collection",
+          "settings": {
+            "color_scheme": "scheme-4",
+            "collection": "{{ collection.metafields.my_fields.sub_collection_a.value }}",
+            "image": "{{ block.settings.collection.metafields.my_fields.collection_banner_mb.value }}",
+            "expand_collection": false,
+            "content_position": "place-self-end-center text-center",
+            "subheading": "",
+            "title": "",
+            "button_text": "{{ block.settings.collection.title }}",
+            "button_link": "",
+            "button_style": "link",
+            "overlay_color": "#000000",
+            "overlay_opacity": 8
+          }
+        },
+        "template--16043850956980__a9b23a11-5fb6-4f48-8572-db578375598a-collection-2": {
+          "type": "collection",
+          "settings": {
+            "color_scheme": "scheme-4",
+            "collection": "{{ collection.metafields.my_fields.sub_collection_b.value }}",
+            "image": "{{ block.settings.collection.metafields.my_fields.collection_banner_mb.value }}",
+            "expand_collection": false,
+            "content_position": "place-self-end-center text-center",
+            "subheading": "",
+            "title": "",
+            "button_text": "{{ block.settings.collection.title }}",
+            "button_link": "",
+            "button_style": "link",
+            "overlay_color": "#000000",
+            "overlay_opacity": 10
+          }
+        },
+        "template--16043850956980__a9b23a11-5fb6-4f48-8572-db578375598a-collection-3": {
+          "type": "collection",
+          "settings": {
+            "color_scheme": "scheme-4",
+            "collection": "{{ collection.metafields.my_fields.sub_colleciton_c.value }}",
+            "image": "{{ block.settings.collection.metafields.my_fields.collection_banner_mb.value }}",
+            "expand_collection": false,
+            "content_position": "place-self-end-center text-center",
+            "subheading": "",
+            "title": "",
+            "button_text": "{{ block.settings.collection.title }}",
+            "button_link": "",
+            "button_style": "link",
+            "overlay_color": "#000000",
+            "overlay_opacity": 10
+          }
+        },
+        "collection_AQqaCK": {
+          "type": "collection",
+          "settings": {
+            "color_scheme": "scheme-4",
+            "collection": "{{ collection.metafields.my_fields.sub_collection_d.value }}",
+            "image": "{{ block.settings.collection.metafields.my_fields.collection_banner_mb.value }}",
+            "expand_collection": false,
+            "content_position": "place-self-end-center text-center",
+            "subheading": "",
+            "title": "",
+            "button_text": "{{ block.settings.collection.title }}",
+            "button_link": "",
+            "button_style": "link",
+            "overlay_color": "#000000",
+            "overlay_opacity": 10
+          }
+        }
+      },
+      "block_order": [
+        "template--16043850956980__a9b23a11-5fb6-4f48-8572-db578375598a-collection-1",
+        "template--16043850956980__a9b23a11-5fb6-4f48-8572-db578375598a-collection-2",
+        "template--16043850956980__a9b23a11-5fb6-4f48-8572-db578375598a-collection-3",
+        "collection_AQqaCK"
+      ],
+      "custom_css": [
+        ".collection-card img {width: 100%; height: auto; aspect-ratio: 1 /1; object-fit: cover; object-position: center;}",
+        ".collection-card div.prose {font-weight: 400; margin-bottom: 20px;}"
+      ],
+      "settings": {
+        "color_scheme": "scheme-2",
+        "separate_section_with_border": true,
+        "image_size": "auto",
+        "show_text_outside": false,
+        "space_items": false,
+        "stack_collections": false,
+        "collections_per_row_mobile": "1",
+        "collections_per_row_desktop": 4,
+        "subheading": "",
+        "title": "More Inspirations",
+        "content": "<p>探索更多系列靈感</p>"
+      }
+    }
+  },
+  "order": [
+    "collection-banner",
+    "multiple_media_with_text_qkixzA",
+    "1c779757-5fd4-4a8b-8b91-4de7457aeac3",
+    "main",
+    "ea65fe3b-8e1c-4f8c-9218-a61ebef9b0df",
+    "a9b23a11-5fb6-4f48-8572-db578375598a"
+  ]
+}

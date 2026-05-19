@@ -1,0 +1,451 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "custom_liquid_jzkpzq": {
+      "type": "custom-liquid",
+      "settings": {
+        "color_scheme": "scheme-2",
+        "separate_section_with_border": false,
+        "remove_vertical_spacing": false,
+        "remove_horizontal_spacing": false,
+        "liquid": "<style>\n  .custom-menu {\n    display: flex;\n    flex-wrap: wrap;\n    justify-content: center;\n    padding: 0;\n    margin-left:auto;\nmargin-right:auto;\n    list-style: none;\n    max-width:1000px;\n  }\n  .custom-menu li {\n    flex-basis: 20%;\n    margin-bottom: 5px;\n  }\n  .custom-menu a {\n    display: block;\n    text-align: center;\n    text-decoration: none;\n    color: #1C1C1C; \n    padding: 16px;\n    margin: 5px;\n    background-color: #e5e6eb;\n    border-radius: 5px;\n    transition: all 0.3s ease;\n    font-size: 18px;\n  }\n  .custom-menu a.link-5 {\n    font-weight: bold;\n    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);\n    background-color: #d2d4dc;\n  }\n  .custom-menu a:not(.link-5) {\n    color: #9A9A9A; \n  }\n  .custom-menu a:hover {\n    color: #1C1C1C;\n    background-color: #d2d4dc;\n    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);\n    font-weight:bold;\n  }\n  @media (max-width: 768px) {\n    .custom-menu li {\n      flex-basis: 50%;\n    }\n    .custom-menu a { \n      padding: 10px;\n      margin: 2px; \n      border-radius: 5px;\n      font-size: 12px;\n    }\n  }\n   h2{\nmargin-bottom:30px;\nfont-size:26px;}\n@media (max-width: 768px){ h2{\nmargin-bottom:18px;\nfont-size:20px;}}\n\n</style>\n<h2>商品包裝與服務</h2>\n<ul class=\"custom-menu\">\n  <li><a href=\"https://awnl.tw/pages/shopping-guide\" class=\"link-1\">首次購物指南\n</a></li>\n  <li><a href=\"https://awnl.tw/pages/shipping-policy\" class=\"link-2\">運費與配送</a></li>\n  <li><a href=\"https://awnl.tw/pages/order-and-payment\" class=\"link-3\">訂購與付款</a></li>\n  <li><a href=\"https://awnl.tw/pages/warranty-repair-service\n\n\" class=\"link-4\">商品保固與維修</a></li>\n  <li><a href=\"https://awnl.tw/pages/gift-packaging\" class=\"link-5\">包裝與禮品服務</a></li>\n  <li><a href=\"https://awnl.tw/pages/jewelry-care-and-clean\" class=\"link-6\">珠寶保養方法</a></li>\n  <li><a href=\"https://awnl.tw/pages/return-and-refund\" class=\"link-7\">退換貨與退款</a></li>\n  <li><a href=\"https://awnl.tw/pages/about-material\" class=\"link-8\">商品材質說明\n</a></li>\n<li><a href=\"https://awnljewelstaiwan.myshopify.com/pages/membership-guide\" class=\"link-9\">會員計畫</a></li>\n  <li><a href=\"https://awnl.tw/pages/choose-crystal-energy\" class=\"link-10\">天然石挑選指南</a></li>\n</ul>",
+        "text_alignment": "center"
+      }
+    },
+    "1fcf73c8-3ef3-442d-9ee6-a2ade1862627": {
+      "type": "multi-column",
+      "blocks": {
+        "image_with_text_XTbcr6": {
+          "type": "image_with_text",
+          "settings": {
+            "image": "shopify://shop_images/2024-new-grey-gift-packaging-page_5.jpg",
+            "title": "",
+            "heading_tag": "h3",
+            "content": "<p>運輸防撞外盒（灰色/白色隨機出貨）</p>",
+            "link_url": "",
+            "link_text": ""
+          }
+        },
+        "image_with_text_fHUieg": {
+          "type": "image_with_text",
+          "settings": {
+            "image": "shopify://shop_images/2024-new-grey-gift-packaging-page_10.jpg",
+            "title": "",
+            "heading_tag": "h3",
+            "content": "<p>運輸防撞外盒（灰色/白色隨機出貨）</p>",
+            "link_url": "",
+            "link_text": ""
+          }
+        },
+        "image_with_text_whJx6P": {
+          "type": "image_with_text",
+          "settings": {
+            "image": "shopify://shop_images/2024-new-grey-gift-packaging-page_4.jpg",
+            "title": "",
+            "heading_tag": "h3",
+            "content": "<p>手提袋</p>",
+            "link_url": "",
+            "link_text": ""
+          }
+        },
+        "image_with_text_L9PEC4": {
+          "type": "image_with_text",
+          "settings": {
+            "image": "shopify://shop_images/2024-new-grey-gift-packaging-page_6.jpg",
+            "title": "",
+            "heading_tag": "h3",
+            "content": "<p>禮盒（男士）</p>",
+            "link_url": "",
+            "link_text": ""
+          }
+        },
+        "image_with_text_GVGkEV": {
+          "type": "image_with_text",
+          "settings": {
+            "image": "shopify://shop_images/2024-new-grey-gift-packaging-page_7.jpg",
+            "title": "",
+            "heading_tag": "h3",
+            "content": "<p>禮盒（女士）</p>",
+            "link_url": "",
+            "link_text": ""
+          }
+        },
+        "image_with_text_j894MF": {
+          "type": "image_with_text",
+          "settings": {
+            "image": "shopify://shop_images/2024-new-grey-gift-packaging-page_12.jpg",
+            "title": "",
+            "heading_tag": "h3",
+            "content": "<p>定型枕包</p>",
+            "link_url": "",
+            "link_text": ""
+          }
+        },
+        "ebb4dd41-92a1-4dbd-a557-cbd0f0f45820": {
+          "type": "image_with_text",
+          "settings": {
+            "image": "shopify://shop_images/2024-new-grey-gift-packaging-page_3.jpg",
+            "title": "",
+            "heading_tag": "h3",
+            "content": "<p>信封＆賀卡</p>",
+            "link_url": "",
+            "link_text": ""
+          }
+        },
+        "image_with_text_zGC6WL": {
+          "type": "image_with_text",
+          "settings": {
+            "image": "shopify://shop_images/2024-new-grey-gift-packaging-page_2.jpg",
+            "title": "",
+            "heading_tag": "h3",
+            "content": "<p>珠寶收納袋</p>",
+            "link_url": "",
+            "link_text": ""
+          }
+        },
+        "image_with_text_JNWHiD": {
+          "type": "image_with_text",
+          "settings": {
+            "image": "shopify://shop_images/2024-new-grey-gift-packaging-page_8.jpg",
+            "title": "",
+            "heading_tag": "h3",
+            "content": "<p>擦銀布</p>",
+            "link_url": "",
+            "link_text": ""
+          }
+        },
+        "image_with_text_q7XWF3": {
+          "type": "image_with_text",
+          "settings": {
+            "image": "shopify://shop_images/2024-new-grey-gift-packaging-page_1.jpg",
+            "title": "",
+            "heading_tag": "h3",
+            "content": "<p>售後保固卡</p>",
+            "link_url": "",
+            "link_text": ""
+          }
+        },
+        "image_with_text_bGWWYh": {
+          "type": "image_with_text",
+          "settings": {
+            "image": "shopify://shop_images/2024-new-grey-gift-packaging-page_11.jpg",
+            "title": "",
+            "heading_tag": "h3",
+            "content": "<p>隕石證書（僅限隕石商品）</p>",
+            "link_url": "",
+            "link_text": ""
+          }
+        },
+        "image_with_text_eN8Jhm": {
+          "type": "image_with_text",
+          "settings": {
+            "image": "shopify://shop_images/2024-new-grey-gift-packaging-page_9.jpg",
+            "title": "",
+            "heading_tag": "h3",
+            "content": "<p>寶石說明卡</p>",
+            "link_url": "",
+            "link_text": ""
+          }
+        },
+        "74a44870-02b9-4270-b063-33fc90df9529": {
+          "type": "image_with_text",
+          "settings": {
+            "image": "shopify://shop_images/gift-packaging-test.webp",
+            "title": "",
+            "heading_tag": "h3",
+            "content": "<p>藍色禮物包裝（與灰色包裝隨機出貨）</p>",
+            "link_url": "",
+            "link_text": ""
+          }
+        }
+      },
+      "block_order": [
+        "image_with_text_XTbcr6",
+        "image_with_text_fHUieg",
+        "image_with_text_whJx6P",
+        "image_with_text_L9PEC4",
+        "image_with_text_GVGkEV",
+        "image_with_text_j894MF",
+        "ebb4dd41-92a1-4dbd-a557-cbd0f0f45820",
+        "image_with_text_zGC6WL",
+        "image_with_text_JNWHiD",
+        "image_with_text_q7XWF3",
+        "image_with_text_bGWWYh",
+        "image_with_text_eN8Jhm",
+        "74a44870-02b9-4270-b063-33fc90df9529"
+      ],
+      "custom_css": [
+        "@media (min-width: 769px) {.section-stack {max-width: 1000px; margin-left: auto; margin-right: auto; }}",
+        "div.prose {margin-top: -20px;}",
+        "img {border-radius: 5px;}"
+      ],
+      "settings": {
+        "color_scheme": "scheme-2",
+        "separate_section_with_border": false,
+        "columns_per_row": 5,
+        "stack_on_mobile": true,
+        "overlap_image": false,
+        "content_alignment": "center",
+        "text_alignment": "center",
+        "spacing": "xs",
+        "subheading": "",
+        "title": "禮品包裝",
+        "content": "<p>AWNL為所有商品提供以下<strong>免費</strong>精緻的禮品包裝，除晶石碎石擺飾等周邊商品。</p><p>藍色包裝＆新款灰色包裝盒隨機出貨。（很抱歉不額外提供緞帶包裝服務。）</p><p>男士女士禮盒為固定且無法更換，敬請諒解。</p>"
+      }
+    },
+    "image_with_text_kmecKQ": {
+      "type": "image-with-text",
+      "blocks": {
+        "heading_Qyk7DG": {
+          "type": "heading",
+          "settings": {
+            "text": "正品判定",
+            "heading_tag": "h2"
+          }
+        },
+        "richtext_yneyNE": {
+          "type": "richtext",
+          "settings": {
+            "content": "<ul><li>所有隕石商品均附有隕石認證卡，且每件商品都附有售後服務保證書。</li><li>保證書上標示了專屬的正規品判定碼（每件商品對應一個唯一的代碼）。您可以使用10元硬幣等物品刮開刮刮樂區域，即可查看判定碼。</li></ul>"
+          }
+        },
+        "button_pB4L7g": {
+          "type": "button",
+          "settings": {
+            "style": "solid",
+            "text": "進行正規品認證",
+            "url": "https://authentication.awnl.net/",
+            "background": "",
+            "text_color": ""
+          }
+        }
+      },
+      "block_order": [
+        "heading_Qyk7DG",
+        "richtext_yneyNE",
+        "button_pB4L7g"
+      ],
+      "custom_css": [
+        "@media (min-width: 769px) {image-with-text {max-width: 1000px; margin-left: auto; margin-right: auto; }}",
+        "@media (max-width: 769px) {p {text-align: left; }}"
+      ],
+      "settings": {
+        "color_scheme": "scheme-2",
+        "separate_section_with_border": false,
+        "image": "shopify://shop_images/meteorite-certificate.jpg",
+        "reveal_on_scroll": true,
+        "image_position": "start",
+        "content_width": "sm",
+        "remove_vertical_spacing": true
+      }
+    },
+    "image_with_text_DJ9XgH": {
+      "type": "image-with-text",
+      "blocks": {
+        "heading_VtTDnM": {
+          "type": "heading",
+          "settings": {
+            "text": "永續發展",
+            "heading_tag": "h2"
+          }
+        },
+        "richtext_MwnxHr": {
+          "type": "richtext",
+          "settings": {
+            "content": "<p>我們所有的包裝材料均採用回收材質製作，並優先考慮使用可持續的資源，以減少CO₂排放，實踐環保承諾。</p>"
+          }
+        },
+        "button_B7UhRb": {
+          "type": "button",
+          "settings": {
+            "style": "solid",
+            "text": "了解更多關於永續發展",
+            "url": "shopify://pages/sustainability",
+            "background": "",
+            "text_color": ""
+          }
+        }
+      },
+      "block_order": [
+        "heading_VtTDnM",
+        "richtext_MwnxHr",
+        "button_B7UhRb"
+      ],
+      "custom_css": [
+        "@media (min-width: 769px) {image-with-text {max-width: 1000px; margin-left: auto; margin-right: auto; }}",
+        "@media (max-width: 769px) {p {text-align: left; }}"
+      ],
+      "settings": {
+        "color_scheme": "scheme-2",
+        "separate_section_with_border": false,
+        "image": "shopify://shop_images/2024-awnl-unbox-video-cover-gift-packaging_1.jpg",
+        "reveal_on_scroll": true,
+        "image_position": "start",
+        "content_width": "sm",
+        "remove_vertical_spacing": false
+      }
+    },
+    "main": {
+      "type": "main-page",
+      "disabled": true,
+      "settings": {
+        "color_scheme": "",
+        "show_title": true,
+        "page_width": "xs"
+      }
+    },
+    "6f11213b-d2a7-49a6-b49e-fbacd765a025": {
+      "type": "multi-column",
+      "blocks": {
+        "8f2c84c1-dc0c-4c4b-b050-0cb38ee05a3f": {
+          "type": "image_with_text",
+          "settings": {
+            "image": "shopify://shop_images/travel-jewelry-case-others-awnl-stockholm_6.jpg",
+            "title": "珠寶收納盒",
+            "heading_tag": "h3",
+            "content": "<p>經典藏藍色外觀加上燙金工藝打造充滿格調的多功能首飾盒。</p>",
+            "link_url": "shopify://products/travel-jewelry-box-organizer",
+            "link_text": "點擊購買"
+          }
+        },
+        "ac659066-716e-456e-a188-56dbd31278c2": {
+          "type": "image_with_text",
+          "settings": {
+            "image": "shopify://shop_images/travel-jewelry-case-others-awnl-stockholm_5.jpg",
+            "title": "耐用便攜",
+            "heading_tag": "h3",
+            "content": "<p>無論是用來送禮、日常或者旅行收納，都能滿足您在各種場合的不同需求。</p>",
+            "link_url": "shopify://products/travel-jewelry-box-organizer",
+            "link_text": "點擊購買"
+          }
+        }
+      },
+      "block_order": [
+        "8f2c84c1-dc0c-4c4b-b050-0cb38ee05a3f",
+        "ac659066-716e-456e-a188-56dbd31278c2"
+      ],
+      "settings": {
+        "color_scheme": "scheme-2",
+        "separate_section_with_border": false,
+        "columns_per_row": 3,
+        "stack_on_mobile": false,
+        "overlap_image": false,
+        "content_alignment": "center",
+        "text_alignment": "center",
+        "spacing": "lg",
+        "subheading": "",
+        "title": "AWNL 高級珠寶盒",
+        "content": ""
+      }
+    },
+    "46a1efeb-1eaa-4764-b281-d51cbe3a76d4": {
+      "type": "images-with-text-scroll",
+      "blocks": {
+        "dcd8ec33-e71c-4a83-8f97-803c1378fd4d": {
+          "type": "image_with_text",
+          "settings": {
+            "image": "shopify://shop_images/1_66530d52-06a9-403c-9493-658130e3df73.jpg",
+            "subheading": "",
+            "title": "<strong>優雅設計</strong>",
+            "content": "<p>我們精心挑選優等木質基層結合新型超纖材質，首飾盒輕巧性又耐壓。最大化的兼顧了實用性和美觀，質感細緻，並且便於日常清潔和維護。</p>",
+            "link_text": "",
+            "link_url": "",
+            "link_style": "solid"
+          }
+        },
+        "023f7d9e-9074-4aeb-aba7-b0d95530c7e8": {
+          "type": "image_with_text",
+          "settings": {
+            "image": "shopify://shop_images/travel-jewelry-case-others-awnl-stockholm_10.jpg",
+            "subheading": "",
+            "title": "<strong>合理空間</strong>",
+            "content": "<p>多功能分區設計大大提升儲存空間，可以收納不同種類及各種尺寸的珠寶。</p>",
+            "link_text": "",
+            "link_url": "",
+            "link_style": "link"
+          }
+        },
+        "30c1e853-609f-48ec-b197-bfe19c8cf581": {
+          "type": "image_with_text",
+          "settings": {
+            "image": "shopify://shop_images/travel-jewelry-case-others-awnl-stockholm_3.jpg",
+            "subheading": "",
+            "title": "便攜設計",
+            "content": "<p>首飾盒輕巧性又耐壓。收納盒中的小禮盒設計精巧，可單獨攜帶使用。</p>",
+            "link_text": "",
+            "link_url": "",
+            "link_style": "link"
+          }
+        },
+        "71239fd9-4895-4f5d-8f4a-74789e3fedd9": {
+          "type": "image_with_text",
+          "settings": {
+            "image": "shopify://shop_images/travel-jewelry-case-others-awnl-stockholm_4.jpg",
+            "subheading": "",
+            "title": "拆卸&重組",
+            "content": "<p>隔板可輕鬆拆卸和重組，以適應不同的收納需求。確保您的珠寶擺放井然有序、一目了然，即使在旅行中也能保護它們免受到摩擦損壞。</p>",
+            "link_text": "",
+            "link_url": "",
+            "link_style": "link"
+          }
+        },
+        "89863b71-f9ad-4981-a84a-12fd55e354d4": {
+          "type": "image_with_text",
+          "settings": {
+            "image": "shopify://shop_images/exclusive-packaging-detail-travel-case-7.jpg",
+            "subheading": "",
+            "title": "<strong>高品質配件</strong>",
+            "content": "<p> 精緻且耐用的金屬扣環極具格調，確保安全密封又能輕鬆開合。</p>",
+            "link_text": "",
+            "link_url": "",
+            "link_style": "solid"
+          }
+        }
+      },
+      "block_order": [
+        "dcd8ec33-e71c-4a83-8f97-803c1378fd4d",
+        "023f7d9e-9074-4aeb-aba7-b0d95530c7e8",
+        "30c1e853-609f-48ec-b197-bfe19c8cf581",
+        "71239fd9-4895-4f5d-8f4a-74789e3fedd9",
+        "89863b71-f9ad-4981-a84a-12fd55e354d4"
+      ],
+      "settings": {
+        "color_scheme": "scheme-2",
+        "image_position": "start",
+        "text_alignment": "start",
+        "heading_tag": "h3",
+        "overlay_color": "#000000",
+        "overlay_opacity": 0
+      }
+    },
+    "custom_liquid_6QgcM9": {
+      "type": "custom-liquid",
+      "settings": {
+        "color_scheme": "scheme-2",
+        "separate_section_with_border": false,
+        "remove_vertical_spacing": false,
+        "remove_horizontal_spacing": false,
+        "liquid": "<style>\n  .custom-menu {\n    display: flex;\n    flex-wrap: wrap;\n    justify-content: center;\n    padding: 0;\n    margin-left:auto;\nmargin-right:auto;\n    list-style: none;\n    max-width:1000px;\n  }\n  .custom-menu li {\n    flex-basis: 20%;\n    margin-bottom: 5px;\n  }\n  .custom-menu a {\n    display: block;\n    text-align: center;\n    text-decoration: none;\n    color: #1C1C1C; \n    padding: 16px;\n    margin: 5px;\n    background-color: #e5e6eb;\n    border-radius: 5px;\n    transition: all 0.3s ease;\n    font-size: 18px;\n  }\n  .custom-menu a.link-5 {\n    font-weight: bold;\n    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);\n    background-color: #d2d4dc;\n  }\n  .custom-menu a:not(.link-5) {\n    color: #9A9A9A; \n  }\n  .custom-menu a:hover {\n    color: #1C1C1C;\n    background-color: #d2d4dc;\n    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);\n    font-weight:bold;\n  }\n  @media (max-width: 768px) {\n    .custom-menu li {\n      flex-basis: 50%;\n    }\n    .custom-menu a { \n      padding: 10px;\n      margin: 2px; \n      border-radius: 5px;\n      font-size: 12px;\n    }\n  }\n   h2{\nmargin-bottom:30px;\nfont-size:26px;}\n@media (max-width: 768px){ h2{\nmargin-bottom:18px;\nfont-size:20px;}}\n\n</style>\n<ul class=\"custom-menu\">\n  <li><a href=\"https://awnl.tw/pages/shopping-guide\" class=\"link-1\">首次購物指南\n</a></li>\n  <li><a href=\"https://awnl.tw/pages/shipping-policy\" class=\"link-2\">運費與配送</a></li>\n  <li><a href=\"https://awnl.tw/pages/order-and-payment\" class=\"link-3\">訂購與付款</a></li>\n  <li><a href=\"https://awnl.tw/pages/warranty-repair-service\n\n\" class=\"link-4\">商品保固與維修</a></li>\n  <li><a href=\"https://awnl.tw/pages/gift-packaging\" class=\"link-5\">包裝與禮品服務</a></li>\n  <li><a href=\"https://awnl.tw/pages/jewelry-care-and-clean\" class=\"link-6\">珠寶保養方法</a></li>\n  <li><a href=\"https://awnl.tw/pages/return-and-refund\" class=\"link-7\">退換貨與退款</a></li>\n  <li><a href=\"https://awnl.tw/pages/about-material\" class=\"link-8\">商品材質說明\n</a></li>\n<li><a href=\"https://awnljewelstaiwan.myshopify.com/pages/membership-guide\" class=\"link-9\">會員計畫</a></li>\n  <li><a href=\"https://awnl.tw/pages/choose-crystal-energy\" class=\"link-10\">天然石挑選指南</a></li>\n</ul>",
+        "text_alignment": "center"
+      }
+    }
+  },
+  "order": [
+    "custom_liquid_jzkpzq",
+    "1fcf73c8-3ef3-442d-9ee6-a2ade1862627",
+    "image_with_text_kmecKQ",
+    "image_with_text_DJ9XgH",
+    "main",
+    "6f11213b-d2a7-49a6-b49e-fbacd765a025",
+    "46a1efeb-1eaa-4764-b281-d51cbe3a76d4",
+    "custom_liquid_6QgcM9"
+  ]
+}

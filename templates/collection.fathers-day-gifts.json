@@ -1,0 +1,196 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "collection-banner": {
+      "type": "collection-banner",
+      "settings": {
+        "color_scheme": "",
+        "image": "shopify://shop_images/fathers-day-gifts-collection.jpg",
+        "mobile_image": "shopify://shop_images/father_day.jpg",
+        "image_size": "lg",
+        "allow_transparent_header": false,
+        "reveal": false,
+        "enable_parallax": false,
+        "show_image": true,
+        "show_collection_title": false,
+        "show_collection_description": false,
+        "show_breadcrumb": true,
+        "content_width": "xs",
+        "overlay_color": "#000000",
+        "overlay_opacity": 0
+      }
+    },
+    "8d9a78a2-b96f-4d55-8ece-a400c4a752a7": {
+      "type": "rich-text",
+      "blocks": {
+        "template--16031557451956__8d9a78a2-b96f-4d55-8ece-a400c4a752a7-heading-1": {
+          "type": "heading",
+          "settings": {
+            "text": "致偉大的父愛",
+            "heading_tag": "h1"
+          }
+        },
+        "template--16031557451956__8d9a78a2-b96f-4d55-8ece-a400c4a752a7-richtext-1": {
+          "type": "richtext",
+          "settings": {
+            "content": "<p>向所有偉大的父親們致以最誠摯的祝福！在父親節這個特別的日子裡，讓我們一起慶祝愛與感恩的時刻，讓心意化為珠寶，為愛而閃耀。</p><p>✰即日起此專欄享88折優惠✰</p>"
+          }
+        }
+      },
+      "block_order": [
+        "template--16031557451956__8d9a78a2-b96f-4d55-8ece-a400c4a752a7-heading-1",
+        "template--16031557451956__8d9a78a2-b96f-4d55-8ece-a400c4a752a7-richtext-1"
+      ],
+      "settings": {
+        "color_scheme": "scheme-2",
+        "separate_section_with_border": false,
+        "content_width": "sm",
+        "text_position": "center",
+        "remove_vertical_spacing": false
+      }
+    },
+    "main": {
+      "type": "main-collection",
+      "settings": {
+        "color_scheme": "scheme-2",
+        "hide_product_information": false,
+        "products_per_page": 30,
+        "products_per_row_mobile": "2",
+        "products_size_desktop": "medium",
+        "show_grid_mode_selector": true,
+        "horizontal_spacing_factor": 1,
+        "vertical_spacing_factor": 1,
+        "filter_layout": "sidebar",
+        "quick_links_menu": "",
+        "show_sort_by": true,
+        "show_filters": false,
+        "show_results_count": false,
+        "show_filter_group_name": false,
+        "show_filter_values_count": false,
+        "open_filters_by_default": false
+      }
+    },
+    "3e3cfaf0-68fc-42cc-afe5-804cb239f61f": {
+      "type": "image-with-text",
+      "blocks": {
+        "template--16031557451956__3e3cfaf0-68fc-42cc-afe5-804cb239f61f-subheading-1": {
+          "type": "subheading",
+          "disabled": true,
+          "settings": {
+            "text": "Gift for Father"
+          }
+        },
+        "template--16031557451956__3e3cfaf0-68fc-42cc-afe5-804cb239f61f-heading-1": {
+          "type": "heading",
+          "settings": {
+            "text": "送父親的守護之禮",
+            "heading_tag": "h1"
+          }
+        },
+        "template--16031557451956__3e3cfaf0-68fc-42cc-afe5-804cb239f61f-richtext-1": {
+          "type": "richtext",
+          "settings": {
+            "content": "<p>父親，是我們生命中最堅強的守護者，無論風雨或晴天，父親的愛與支持是永遠不變的。珠寶是永恆的象徵，AWNL嚴選最優質的天然寶石與獨特M隕石，配合精湛的工藝，將您對父親的感情深深凝聚。每一件珠寶都是愛的守護，陪伴父親走過每一個重要的時刻。</p>"
+          }
+        }
+      },
+      "block_order": [
+        "template--16031557451956__3e3cfaf0-68fc-42cc-afe5-804cb239f61f-subheading-1",
+        "template--16031557451956__3e3cfaf0-68fc-42cc-afe5-804cb239f61f-heading-1",
+        "template--16031557451956__3e3cfaf0-68fc-42cc-afe5-804cb239f61f-richtext-1"
+      ],
+      "settings": {
+        "color_scheme": "scheme-2",
+        "separate_section_with_border": false,
+        "image": "shopify://shop_images/fathers_day.jpg",
+        "reveal_on_scroll": true,
+        "image_position": "start",
+        "content_width": "sm",
+        "remove_vertical_spacing": true
+      }
+    },
+    "ebf07e85-4d9c-4daf-a79b-0fe228588bd6": {
+      "type": "collection-list",
+      "blocks": {
+        "template--16031557451956__ebf07e85-4d9c-4daf-a79b-0fe228588bd6-collection-1": {
+          "type": "collection",
+          "settings": {
+            "color_scheme": "",
+            "collection": "men-gemstone-bracelet",
+            "expand_collection": false,
+            "content_position": "place-self-end-center text-center",
+            "subheading": "",
+            "title": "",
+            "button_text": "男士晶石手鍊",
+            "button_link": "",
+            "overlay_color": "#1c1b1b",
+            "overlay_opacity": 0
+          }
+        },
+        "template--16031557451956__ebf07e85-4d9c-4daf-a79b-0fe228588bd6-collection-3": {
+          "type": "collection",
+          "settings": {
+            "color_scheme": "",
+            "collection": "mens-necklace",
+            "expand_collection": false,
+            "content_position": "place-self-end-center text-center",
+            "subheading": "",
+            "title": "",
+            "button_text": "所有男士項鍊",
+            "button_link": "",
+            "overlay_color": "#000000",
+            "overlay_opacity": 0
+          }
+        },
+        "87cc17d3-233f-4af2-be78-40d4d769c3c2": {
+          "type": "collection",
+          "settings": {
+            "color_scheme": "",
+            "collection": "mens-ring",
+            "expand_collection": false,
+            "content_position": "place-self-end-center text-center",
+            "subheading": "",
+            "title": "",
+            "button_text": "所有男士戒指",
+            "button_link": "",
+            "overlay_color": "#000000",
+            "overlay_opacity": 0
+          }
+        }
+      },
+      "block_order": [
+        "template--16031557451956__ebf07e85-4d9c-4daf-a79b-0fe228588bd6-collection-1",
+        "template--16031557451956__ebf07e85-4d9c-4daf-a79b-0fe228588bd6-collection-3",
+        "87cc17d3-233f-4af2-be78-40d4d769c3c2"
+      ],
+      "disabled": true,
+      "settings": {
+        "color_scheme": "scheme-2",
+        "separate_section_with_border": false,
+        "image_size": "auto",
+        "show_text_outside": true,
+        "space_items": true,
+        "stack_collections": true,
+        "collections_per_row_desktop": 4,
+        "subheading": "",
+        "title": "",
+        "content": ""
+      }
+    }
+  },
+  "order": [
+    "collection-banner",
+    "8d9a78a2-b96f-4d55-8ece-a400c4a752a7",
+    "main",
+    "3e3cfaf0-68fc-42cc-afe5-804cb239f61f",
+    "ebf07e85-4d9c-4daf-a79b-0fe228588bd6"
+  ]
+}

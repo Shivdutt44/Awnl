@@ -1,0 +1,126 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "main": {
+      "type": "create-bracelet-3",
+      "settings": {
+        "label_size": "Size:",
+        "label_color": "Color:",
+        "label_lock_style": "Lock Style:",
+        "label_base_price": "Base Price:",
+        "label_total_price": "Total Price:",
+        "btn_size": "WRIST SIZE",
+        "btn_beads": "BEADS",
+        "btn_engraving_beads": "ENGRAVING BEADS",
+        "btn_string_color": "STRING COLOR",
+        "btn_lock_style": "LOCK STYLE",
+        "btn_add_to_cart": "Add to Cart",
+        "loading_text": "Processing",
+        "sidebar_size_title": "Select Wrist Size:",
+        "sidebar_beads_title": "Select Beads:",
+        "sidebar_engraving_title": "Select Engraving Beads:",
+        "sidebar_string_title": "Select String Color:",
+        "sidebar_lock_title": "Select Lock Style:",
+        "label_gift_wrapping": "Gift Wrapping:",
+        "label_gift_free": "Free",
+        "label_engraving_title": "Engraving Text",
+        "label_text_input": "Text:",
+        "placeholder_text": "輸入刻印文字",
+        "text_engraving_instruction": "選擇字體，輸入專屬文字，專屬印記將鐫刻於您所選的刻印配件上。",
+        "error_beads_missing": "請為每個可見位置選擇寶石。",
+        "label_in_stock": "In stock:",
+        "label_out_of_stock": "Out of stock",
+        "instruction_title": "打造專屬飾品",
+        "instruction_text": "點選寶石並於選單中指定材質，確認後即顯示於設計頁面。其他設計元素請直接於選單中選取",
+        "measure_link": "",
+        "measure_link_text": "How to measure wrist size ?",
+        "policy_title": "Policies",
+        "policy_content": "",
+        "shipping_title": "Time estimate & Shipping",
+        "shipping_content": "",
+        "bead_size": 45,
+        "bead_radius": 41,
+        "center_x": 50,
+        "center_y": 50,
+        "bead_count_xxs": 12,
+        "bead_count_xs": 13,
+        "bead_count_s": 14,
+        "bead_count_m": 15,
+        "bead_count_l": 16,
+        "bead_count_xl": 17,
+        "bead_count_xxl": 18,
+        "bead_count_xxxl": 19,
+        "bead_count_4xl": 20,
+        "width_xxs": 300,
+        "width_xs": 320,
+        "width_s": 340,
+        "width_m": 380,
+        "width_l": 410,
+        "width_xl": 440,
+        "width_xxl": 470,
+        "width_xxxl": 500,
+        "width_4xl": 510,
+        "gap_xxs": 0,
+        "gap_xs": 0,
+        "gap_s": 0,
+        "gap_m": 0,
+        "gap_l": 0,
+        "gap_xl": 0,
+        "gap_xxl": 0,
+        "gap_xxxl": 0,
+        "gap_4xl": 0,
+        "gap_top": 0,
+        "gap_right": 0,
+        "gap_bottom": 0,
+        "gap_left": 0,
+        "even_fixed_part_1_enabled": true,
+        "even_fixed_part_1_angle": 270,
+        "even_fixed_part_1_width": 60,
+        "even_fixed_part_2_enabled": false,
+        "even_fixed_part_2_angle": 60,
+        "even_fixed_part_2_width": 24,
+        "even_fixed_part_3_enabled": false,
+        "even_fixed_part_3_angle": 108,
+        "even_fixed_part_3_width": 20,
+        "odd_fixed_part_1_enabled": true,
+        "odd_fixed_part_1_angle": 270,
+        "odd_fixed_part_1_width": 60,
+        "odd_fixed_part_2_enabled": false,
+        "odd_fixed_part_2_angle": 80,
+        "odd_fixed_part_2_width": 24,
+        "odd_fixed_part_3_enabled": false,
+        "odd_fixed_part_3_angle": 128,
+        "odd_fixed_part_3_width": 20
+      }
+    },
+    "recently-viewed-products": {
+      "type": "recently-viewed-products",
+      "settings": {
+        "separate_section_with_border": true,
+        "color_scheme": "scheme-2",
+        "hide_product_information": false,
+        "stack_products": false,
+        "products_count": 9,
+        "products_per_row_mobile": "2",
+        "products_per_row_desktop": 4,
+        "horizontal_spacing_factor": 1,
+        "vertical_spacing_factor": 1,
+        "subheading": "",
+        "title": "Recently viewed",
+        "content": ""
+      }
+    }
+  },
+  "order": [
+    "main",
+    "recently-viewed-products"
+  ]
+}

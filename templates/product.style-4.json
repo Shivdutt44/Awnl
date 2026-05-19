@@ -1,0 +1,311 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "main": {
+      "type": "main-product",
+      "blocks": {
+        "dbd0ac34-1fbd-4e82-a225-37beacaf1d3e": {
+          "type": "title",
+          "settings": {
+            "heading_tag": "h3"
+          }
+        },
+        "56213e8d-d248-49fe-ab76-052ea3c61b5c": {
+          "type": "price",
+          "settings": {
+            "show_taxes_notice": false
+          }
+        },
+        "bd51c12d-29da-4a0b-9e3c-2ac46afa5454": {
+          "type": "separator",
+          "settings": {}
+        },
+        "description": {
+          "type": "description",
+          "settings": {
+            "collapse_content": false,
+            "show_below_gallery": false
+          }
+        },
+        "product_variations_eP7GjL": {
+          "type": "product_variations",
+          "settings": {
+            "option_name": "",
+            "option_value_metafield": "",
+            "products": [],
+            "selector_style": "swatch"
+          }
+        },
+        "58241bc6-d849-451e-bac6-5f03206020ff": {
+          "type": "variant_picker",
+          "settings": {
+            "hide_sold_out_variants": true,
+            "selector_style": "block",
+            "swatch_selector_style": "swatch",
+            "variant_image_options": "",
+            "size_chart_page": ""
+          }
+        },
+        "quantity_selector": {
+          "type": "quantity_selector",
+          "settings": {}
+        },
+        "bss_variant_options_option_set_C4cPgn": {
+          "type": "shopify://apps/optis-product-options/blocks/option-set/2c446099-c349-4e73-80cd-49c9770b7807",
+          "settings": {}
+        },
+        "buy_buttons": {
+          "type": "buy_buttons",
+          "settings": {
+            "show_payment_button": false,
+            "show_gift_card_recipient": true,
+            "atc_button_background": "",
+            "atc_button_text_color": "",
+            "payment_button_background": "",
+            "payment_button_text_color": ""
+          }
+        },
+        "offers_bwhbeN": {
+          "type": "offers",
+          "settings": {
+            "stack_offers": false,
+            "offer_1_title": "",
+            "offer_1_content": "{{ product.metafields.my_fields.bracelet_wearing_tips | metafield_tag }}",
+            "offer_2_title": "",
+            "offer_2_content": "",
+            "offer_3_title": "",
+            "offer_3_content": "",
+            "background": "",
+            "text_color": "",
+            "border_color": ""
+          }
+        },
+        "846b5228-2627-42c5-9c87-ad1d83030e9c": {
+          "type": "payment_terms",
+          "settings": {}
+        },
+        "share_buttons": {
+          "type": "share_buttons",
+          "settings": {}
+        },
+        "c788a948-7915-47a1-925d-5d4457905100": {
+          "type": "accordion",
+          "settings": {
+            "show_below_gallery": true,
+            "icon": "none",
+            "title": "購前須知",
+            "content": "",
+            "liquid": "",
+            "page": "information-before-purchase"
+          }
+        },
+        "80d5c29b-3cb3-47b9-80e2-3f3498485ef8": {
+          "type": "accordion",
+          "settings": {
+            "show_below_gallery": true,
+            "icon": "none",
+            "title": "運送 & 退換",
+            "content": "",
+            "liquid": "",
+            "page": "shipping-exchange-return-policy-on-product-page"
+          }
+        }
+      },
+      "block_order": [
+        "dbd0ac34-1fbd-4e82-a225-37beacaf1d3e",
+        "56213e8d-d248-49fe-ab76-052ea3c61b5c",
+        "bd51c12d-29da-4a0b-9e3c-2ac46afa5454",
+        "description",
+        "product_variations_eP7GjL",
+        "58241bc6-d849-451e-bac6-5f03206020ff",
+        "quantity_selector",
+        "bss_variant_options_option_set_C4cPgn",
+        "buy_buttons",
+        "offers_bwhbeN",
+        "846b5228-2627-42c5-9c87-ad1d83030e9c",
+        "share_buttons",
+        "c788a948-7915-47a1-925d-5d4457905100",
+        "80d5c29b-3cb3-47b9-80e2-3f3498485ef8"
+      ],
+      "disabled": true,
+      "custom_css": [
+        "span {font-weight: 500;}",
+        "h5,strong {font-weight: 500;}",
+        ".po-dropdown-thumbnail-option span {font-size: 12px;}",
+        ".po-dropdown-selected-option {border-radius: 0;}",
+        ".po-select-dropdown-thumbnail {margin-left: -5px;}"
+      ],
+      "settings": {
+        "color_scheme": "scheme-2",
+        "container_size": "lg",
+        "product_info_size": 35,
+        "show_sticky_add_to_cart": true,
+        "center_basic_info": false,
+        "desktop_media_layout": "carousel_thumbnails_bottom",
+        "desktop_media_grid_gap": 30,
+        "mobile_controls": "thumbnails",
+        "enable_media_autoplay": true,
+        "enable_video_looping": true,
+        "enable_image_zoom": true,
+        "max_image_zoom_level": 3
+      }
+    },
+    "automation_2_YmeVXH": {
+      "type": "automation-2",
+      "name": "Automation 2",
+      "settings": {
+        "label_size": "Size:",
+        "label_color": "Color:",
+        "label_lock_style": "Lock Style:",
+        "label_base_price": "Base Price:",
+        "label_total_price": "Total Price:",
+        "btn_size": "WRIST SIZE",
+        "btn_beads": "BEADS",
+        "btn_engraving_beads": "ENGRAVING BEADS",
+        "btn_string_color": "STRING COLOR",
+        "btn_lock_style": "LOCK STYLE",
+        "btn_add_to_cart": "Add to Cart",
+        "loading_text": "Processing",
+        "sidebar_size_title": "Select Wrist Size:",
+        "sidebar_beads_title": "Select Beads:",
+        "sidebar_engraving_title": "Select Engraving Beads:",
+        "sidebar_string_title": "Select String Color:",
+        "sidebar_lock_title": "Select Lock Style:",
+        "label_gift_wrapping": "Gift Wrapping:",
+        "label_gift_free": "Free",
+        "label_engraving_title": "Engraving Text",
+        "label_text_input": "Text:",
+        "placeholder_text": "輸入刻印文字",
+        "text_engraving_instruction": "選擇字體，輸入專屬文字，專屬印記將鐫刻於您所選的刻印配件上。",
+        "error_beads_missing": "請為每個可見位置選擇寶石。",
+        "label_in_stock": "In stock:",
+        "label_out_of_stock": "Out of stock",
+        "instruction_title": "打造專屬飾品",
+        "instruction_text": "點選寶石並於選單中指定材質，確認後即顯示於設計頁面。其他設計元素請直接於選單中選取",
+        "measure_link": "",
+        "measure_link_text": "How to measure wrist size ?",
+        "policy_title": "Policies",
+        "policy_content": "",
+        "shipping_title": "Time estimate & Shipping",
+        "shipping_content": "",
+        "bead_size": 45,
+        "bead_radius": 41,
+        "center_x": 50,
+        "center_y": 50,
+        "bead_count_xxs": 12,
+        "bead_count_xs": 13,
+        "bead_count_s": 14,
+        "bead_count_m": 15,
+        "bead_count_l": 16,
+        "bead_count_xl": 17,
+        "bead_count_xxl": 18,
+        "bead_count_xxxl": 19,
+        "bead_count_4xl": 20,
+        "width_xxs": 300,
+        "width_xs": 320,
+        "width_s": 340,
+        "width_m": 380,
+        "width_l": 410,
+        "width_xl": 440,
+        "width_xxl": 470,
+        "width_xxxl": 500,
+        "width_4xl": 510,
+        "gap_xxs": 0,
+        "gap_xs": 0,
+        "gap_s": 0,
+        "gap_m": 0,
+        "gap_l": 0,
+        "gap_xl": 0,
+        "gap_xxl": 0,
+        "gap_xxxl": 0,
+        "gap_4xl": 0,
+        "gap_top": 0,
+        "gap_right": 0,
+        "gap_bottom": 0,
+        "gap_left": 0,
+        "fixed_part_1_enabled": false,
+        "fixed_part_1_angle": 0,
+        "fixed_part_1_width": 30,
+        "fixed_part_2_enabled": false,
+        "fixed_part_2_angle": 120,
+        "fixed_part_2_width": 30,
+        "fixed_part_3_enabled": false,
+        "fixed_part_3_angle": 240,
+        "fixed_part_3_width": 30,
+        "static_image_1_enabled": false,
+        "static_image_1_position": 6,
+        "static_image_1_offset": 0,
+        "static_image_1_rotation": 0,
+        "static_image_1_width": 40,
+        "static_image_1_height": 40,
+        "static_image_2_enabled": false,
+        "static_image_2_position": 12,
+        "static_image_2_offset": 0,
+        "static_image_2_rotation": 0,
+        "static_image_2_width": 40,
+        "static_image_2_height": 40,
+        "static_image_3_enabled": false,
+        "static_image_3_offset": 0,
+        "static_image_3_rotation": 0,
+        "static_image_3_width": 50,
+        "static_image_3_height": 50,
+        "static_image_4_enabled": false,
+        "static_image_4_offset": 0,
+        "static_image_4_rotation": 180,
+        "static_image_4_width": 50,
+        "static_image_4_height": 50,
+        "static_image_1_extra_spacing": 0,
+        "static_image_2_extra_spacing": 0,
+        "equal_spacing": 0,
+        "static_image_left_enabled": false,
+        "static_image_left_angle": 135,
+        "static_image_left_offset": 0,
+        "static_image_left_width": 60,
+        "static_image_left_height": 60,
+        "static_image_left_flip": false,
+        "static_image_right_enabled": false,
+        "static_image_right_angle": 45,
+        "static_image_right_offset": 0,
+        "static_image_right_width": 60,
+        "static_image_right_height": 60,
+        "static_image_right_flip": false,
+        "btn_clasp": "CLASP",
+        "sidebar_clasp_title": "Select Clasp",
+        "clasp_offset": 150,
+        "clasp_angle": 90,
+        "clasp_width": 60,
+        "clasp_height": 60
+      }
+    },
+    "recently-viewed-products": {
+      "type": "recently-viewed-products",
+      "settings": {
+        "separate_section_with_border": true,
+        "color_scheme": "scheme-2",
+        "hide_product_information": false,
+        "stack_products": false,
+        "products_count": 9,
+        "products_per_row_mobile": "2",
+        "products_per_row_desktop": 4,
+        "horizontal_spacing_factor": 1,
+        "vertical_spacing_factor": 1,
+        "subheading": "",
+        "title": "Recently viewed",
+        "content": ""
+      }
+    }
+  },
+  "order": [
+    "main",
+    "automation_2_YmeVXH",
+    "recently-viewed-products"
+  ]
+}

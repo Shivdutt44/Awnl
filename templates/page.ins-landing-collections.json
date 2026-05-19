@@ -1,0 +1,596 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "main": {
+      "type": "main-page",
+      "disabled": true,
+      "custom_css": [
+        "a {color: #3c99ba;}",
+        "h1 {font-size: 38px; font-weight: 700;}",
+        "p,li,span,br,div {font-size: 16px; line-height: 1.8;}",
+        "blockquote {font-weight: 600;}",
+        "@media (max-width: 680px) {h1 {font-size: 28px; line-height: 1.3; } p, li, span, br, div {font-size: 14px; line-height: 1.7; }}"
+      ],
+      "settings": {
+        "color_scheme": "scheme-2",
+        "show_title": true,
+        "page_width": "xs"
+      }
+    },
+    "rich_text_xDaTDM": {
+      "type": "rich-text",
+      "blocks": {
+        "subheading_Hd8dMK": {
+          "type": "subheading",
+          "settings": {
+            "text": "AWNL精選系列推薦"
+          }
+        },
+        "heading_imwGaV": {
+          "type": "heading",
+          "settings": {
+            "text": "您的珠寶新發現",
+            "heading_tag": "h1"
+          }
+        },
+        "richtext_G8DHbd": {
+          "type": "richtext",
+          "settings": {
+            "content": "<p>來自瑞典的現代護身符珠寶，瑞典隕石、特選晶石、超凡匠心與珠寶藝術的奢華融合。每件精品，不僅展現物質之美，更傳遞斯堪的納維亞風格的精神優雅和生活方式。專為欣賞者鑄造，邀您共享現代奢華與永恒之選。</p>"
+          }
+        }
+      },
+      "block_order": [
+        "subheading_Hd8dMK",
+        "heading_imwGaV",
+        "richtext_G8DHbd"
+      ],
+      "settings": {
+        "color_scheme": "scheme-2",
+        "separate_section_with_border": false,
+        "content_width": "xs",
+        "text_position": "center",
+        "remove_vertical_spacing": false
+      }
+    },
+    "image_with_text_overlay_Dhrznj": {
+      "type": "image-with-text-overlay",
+      "settings": {
+        "color_scheme": "",
+        "image_size": "auto",
+        "image": "shopify://shop_images/collection-vagabond-banner-1920X700.jpg",
+        "allow_transparent_header": false,
+        "reveal_on_scroll": true,
+        "remove_vertical_spacing": true,
+        "content_width": "md",
+        "mobile_text_position": "place-self-center text-center",
+        "desktop_text_position": "sm:place-self-center sm:text-center",
+        "overlay_color": "#000000",
+        "overlay_opacity": 0
+      }
+    },
+    "rich_text_nnb4eF": {
+      "type": "rich-text",
+      "blocks": {
+        "subheading_4NGkNK": {
+          "type": "subheading",
+          "settings": {
+            "text": "藍調精選：迎春致優雅"
+          }
+        },
+        "heading_YJfBgx": {
+          "type": "heading",
+          "settings": {
+            "text": "<strong>海洋之息：波塞頓系列</strong>",
+            "heading_tag": "h2"
+          }
+        },
+        "richtext_ygizLz": {
+          "type": "richtext",
+          "settings": {
+            "content": "<p>波塞頓系列，以藍色寶石為靈魂，每一款都細膩捕捉了海洋的無窮力量。海洋的偉大精神，現以精緻低調的設計，融入您的每一日。</p><h6>心靈的繪色：勇氣、力量、信念、靜謐、表達</h6>"
+          }
+        },
+        "button_PFTQeN": {
+          "type": "button",
+          "settings": {
+            "style": "solid",
+            "text": "讓波塞頓系列成為您的日常護身符",
+            "url": "shopify://collections/poseidons",
+            "background": "",
+            "text_color": ""
+          }
+        }
+      },
+      "block_order": [
+        "subheading_4NGkNK",
+        "heading_YJfBgx",
+        "richtext_ygizLz",
+        "button_PFTQeN"
+      ],
+      "settings": {
+        "color_scheme": "scheme-2",
+        "separate_section_with_border": false,
+        "content_width": "xs",
+        "text_position": "center",
+        "remove_vertical_spacing": false
+      }
+    },
+    "featured_collections_CPkmQD": {
+      "type": "featured-collections",
+      "blocks": {
+        "collection_4BB6HB": {
+          "type": "collection",
+          "settings": {
+            "collection": "poseidons",
+            "products_count": 4,
+            "title": "",
+            "link_url": "",
+            "link_text": ""
+          }
+        }
+      },
+      "block_order": [
+        "collection_4BB6HB"
+      ],
+      "custom_css": [
+        "h2 {display: none;}"
+      ],
+      "settings": {
+        "color_scheme": "scheme-2",
+        "separate_section_with_border": false,
+        "hide_product_information": true,
+        "stack_products": true,
+        "products_per_row_mobile": "2",
+        "products_per_row_desktop": 4,
+        "horizontal_spacing_factor": 2,
+        "vertical_spacing_factor": 2,
+        "subheading": ""
+      }
+    },
+    "rich_text_hQkMQn": {
+      "type": "rich-text",
+      "blocks": {
+        "link_KFKdhz": {
+          "type": "link",
+          "settings": {
+            "text": "探索全部",
+            "url": "shopify://collections/poseidons"
+          }
+        }
+      },
+      "block_order": [
+        "link_KFKdhz"
+      ],
+      "custom_css": [
+        "@media (min-width: 700px) {div {margin-top: -50px; font-size: 16px; }}",
+        "div {margin-top: -20px; font-weight: bold;}"
+      ],
+      "settings": {
+        "color_scheme": "scheme-2",
+        "separate_section_with_border": false,
+        "content_width": "xs",
+        "text_position": "center",
+        "remove_vertical_spacing": false
+      }
+    },
+    "image_with_text_overlay_qfneGA": {
+      "type": "image-with-text-overlay",
+      "custom_css": [],
+      "settings": {
+        "color_scheme": "",
+        "image_size": "auto",
+        "image": "shopify://shop_images/frontpage-nordic-runes-collection-banner3000X1200_PC.jpg",
+        "allow_transparent_header": false,
+        "reveal_on_scroll": true,
+        "remove_vertical_spacing": true,
+        "content_width": "md",
+        "mobile_text_position": "place-self-center text-center",
+        "desktop_text_position": "sm:place-self-center sm:text-center",
+        "overlay_color": "#000000",
+        "overlay_opacity": 0
+      }
+    },
+    "rich_text_cWzH6e": {
+      "type": "rich-text",
+      "blocks": {
+        "subheading_RDkVaw": {
+          "type": "subheading",
+          "settings": {
+            "text": "古智與現代韻律的融合"
+          }
+        },
+        "heading_rrJYkJ": {
+          "type": "heading",
+          "settings": {
+            "text": "<strong>北歐諸神的守護：盧恩符文</strong>",
+            "heading_tag": "h2"
+          }
+        },
+        "richtext_wDWgmA": {
+          "type": "richtext",
+          "settings": {
+            "content": "<p>在每一件精緻的首飾中，古維京的冒險無畏精神獲得了新生，藉由盧恩符文——北歐諸神的守護符號，將古老的力量與智慧賦予現代的美學。</p><h6>心靈的繪色：保護、驅邪、財富、正念、智慧</h6>"
+          }
+        },
+        "button_qCLtfk": {
+          "type": "button",
+          "settings": {
+            "style": "solid",
+            "text": "探索盧恩的秘密",
+            "url": "shopify://collections/runes",
+            "background": "",
+            "text_color": ""
+          }
+        }
+      },
+      "block_order": [
+        "subheading_RDkVaw",
+        "heading_rrJYkJ",
+        "richtext_wDWgmA",
+        "button_qCLtfk"
+      ],
+      "settings": {
+        "color_scheme": "scheme-2",
+        "separate_section_with_border": false,
+        "content_width": "xs",
+        "text_position": "center",
+        "remove_vertical_spacing": false
+      }
+    },
+    "featured_collections_mgXb39": {
+      "type": "featured-collections",
+      "blocks": {
+        "collection_8wyic3": {
+          "type": "collection",
+          "settings": {
+            "collection": "runes",
+            "products_count": 4,
+            "title": "",
+            "link_url": "",
+            "link_text": ""
+          }
+        }
+      },
+      "block_order": [
+        "collection_8wyic3"
+      ],
+      "custom_css": [
+        "h2 {display: none;}"
+      ],
+      "settings": {
+        "color_scheme": "scheme-2",
+        "separate_section_with_border": false,
+        "hide_product_information": true,
+        "stack_products": true,
+        "products_per_row_mobile": "2",
+        "products_per_row_desktop": 4,
+        "horizontal_spacing_factor": 2,
+        "vertical_spacing_factor": 2,
+        "subheading": ""
+      }
+    },
+    "rich_text_6HRNYg": {
+      "type": "rich-text",
+      "blocks": {
+        "link_WBVLht": {
+          "type": "link",
+          "settings": {
+            "text": "探索全部",
+            "url": "shopify://collections/runes"
+          }
+        }
+      },
+      "block_order": [
+        "link_WBVLht"
+      ],
+      "custom_css": [
+        "@media (min-width: 700px) {div {margin-top: -50px; font-size: 16px; }}",
+        "div {margin-top: -20px; font-weight: bold;}"
+      ],
+      "settings": {
+        "color_scheme": "scheme-2",
+        "separate_section_with_border": false,
+        "content_width": "xs",
+        "text_position": "center",
+        "remove_vertical_spacing": false
+      }
+    },
+    "image_with_text_overlay_Afm4CQ": {
+      "type": "image-with-text-overlay",
+      "settings": {
+        "color_scheme": "",
+        "image_size": "auto",
+        "image": "shopify://shop_images/muilticolor-gemstone-macrame-banner.jpg",
+        "allow_transparent_header": false,
+        "reveal_on_scroll": true,
+        "remove_vertical_spacing": true,
+        "content_width": "md",
+        "mobile_text_position": "place-self-center text-center",
+        "desktop_text_position": "sm:place-self-center sm:text-center",
+        "overlay_color": "#000000",
+        "overlay_opacity": 0
+      }
+    },
+    "rich_text_FrQdw8": {
+      "type": "rich-text",
+      "blocks": {
+        "subheading_G4CNdk": {
+          "type": "subheading",
+          "settings": {
+            "text": "流浪之魂，冒险之心"
+          }
+        },
+        "heading_wDmmBa": {
+          "type": "heading",
+          "settings": {
+            "text": "<strong>浪行者Vagabond系列</strong>",
+            "heading_tag": "h2"
+          }
+        },
+        "richtext_UA4T7c": {
+          "type": "richtext",
+          "settings": {
+            "content": "<p>浪行者系列是對遠方呼喚的回應，對未知世界的向往。地、水、火、風的元素在此交織，每一顆寶石都是對四季的頌歌，每一款都代表著一段旅程。佩戴它，就是向自由的靈魂致敬，讓每個日常瞬間都充滿探索的可能。</p><h6>心靈的繪色：遠見、視野、財富、機會、浪漫</h6>"
+          }
+        },
+        "button_BD8mRK": {
+          "type": "button",
+          "settings": {
+            "style": "solid",
+            "text": "立即佩戴浪行者：開啟探險之旅",
+            "url": "shopify://collections/vagabond-collection",
+            "background": "",
+            "text_color": ""
+          }
+        }
+      },
+      "block_order": [
+        "subheading_G4CNdk",
+        "heading_wDmmBa",
+        "richtext_UA4T7c",
+        "button_BD8mRK"
+      ],
+      "settings": {
+        "color_scheme": "scheme-2",
+        "separate_section_with_border": false,
+        "content_width": "xs",
+        "text_position": "center",
+        "remove_vertical_spacing": false
+      }
+    },
+    "featured_collections_AwJUHg": {
+      "type": "featured-collections",
+      "blocks": {
+        "collection_VKkfkB": {
+          "type": "collection",
+          "settings": {
+            "collection": "vagabond-collection",
+            "products_count": 4,
+            "title": "",
+            "link_url": "",
+            "link_text": ""
+          }
+        }
+      },
+      "block_order": [
+        "collection_VKkfkB"
+      ],
+      "custom_css": [
+        "h2 {display: none;}"
+      ],
+      "settings": {
+        "color_scheme": "scheme-2",
+        "separate_section_with_border": false,
+        "hide_product_information": true,
+        "stack_products": true,
+        "products_per_row_mobile": "2",
+        "products_per_row_desktop": 4,
+        "horizontal_spacing_factor": 2,
+        "vertical_spacing_factor": 2,
+        "subheading": ""
+      }
+    },
+    "rich_text_iJzhnt": {
+      "type": "rich-text",
+      "blocks": {
+        "link_K9iwU4": {
+          "type": "link",
+          "settings": {
+            "text": "探索全部",
+            "url": "shopify://collections/vagabond-collection"
+          }
+        }
+      },
+      "block_order": [
+        "link_K9iwU4"
+      ],
+      "custom_css": [
+        "@media (min-width: 700px) {div {margin-top: -50px; font-size: 16px; }}",
+        "div {margin-top: -20px; font-weight: bold;}"
+      ],
+      "settings": {
+        "color_scheme": "scheme-2",
+        "separate_section_with_border": false,
+        "content_width": "xs",
+        "text_position": "center",
+        "remove_vertical_spacing": false
+      }
+    },
+    "image_with_text_overlay_kimUac": {
+      "type": "image-with-text-overlay",
+      "settings": {
+        "color_scheme": "",
+        "image_size": "auto",
+        "image": "shopify://shop_images/morganite-multicolor-bracelet-gift-banner.jpg",
+        "allow_transparent_header": false,
+        "reveal_on_scroll": true,
+        "remove_vertical_spacing": true,
+        "content_width": "md",
+        "mobile_text_position": "place-self-center text-center",
+        "desktop_text_position": "sm:place-self-center sm:text-center",
+        "overlay_color": "#000000",
+        "overlay_opacity": 0
+      }
+    },
+    "rich_text_iz4cD4": {
+      "type": "rich-text",
+      "blocks": {
+        "subheading_8zaTQt": {
+          "type": "subheading",
+          "settings": {
+            "text": "精緻與優雅的和鳴"
+          }
+        },
+        "heading_3A6KxM": {
+          "type": "heading",
+          "settings": {
+            "text": "<strong>女士：花間幻境系列</strong>",
+            "heading_tag": "h2"
+          }
+        },
+        "richtext_ciiAWW": {
+          "type": "richtext",
+          "settings": {
+            "content": "<p>從綻放的花朵中汲取靈感，我們的設計巧妙將天然石的溫潤與花卉的優雅融合。色彩斑斕的寶石，如同花瓣柔和地展開，帶您進入一片繽紛夢幻的花園。</p><h6>心靈的繪色：堅強、幸運、吸引力、靈性、活力</h6>"
+          }
+        },
+        "button_3qb8hf": {
+          "type": "button",
+          "settings": {
+            "style": "solid",
+            "text": "現在就選擇您的幻境之花",
+            "url": "shopify://collections/scandinavian-garden-dreaming-within-blossoms",
+            "background": "",
+            "text_color": ""
+          }
+        }
+      },
+      "block_order": [
+        "subheading_8zaTQt",
+        "heading_3A6KxM",
+        "richtext_ciiAWW",
+        "button_3qb8hf"
+      ],
+      "settings": {
+        "color_scheme": "scheme-2",
+        "separate_section_with_border": false,
+        "content_width": "xs",
+        "text_position": "center",
+        "remove_vertical_spacing": false
+      }
+    },
+    "featured_collections_iqJLiy": {
+      "type": "featured-collections",
+      "blocks": {
+        "collection_J9t6zB": {
+          "type": "collection",
+          "settings": {
+            "collection": "scandinavian-garden-dreaming-within-blossoms",
+            "products_count": 4,
+            "title": "",
+            "link_url": "",
+            "link_text": ""
+          }
+        }
+      },
+      "block_order": [
+        "collection_J9t6zB"
+      ],
+      "custom_css": [
+        "h2 {display: none;}"
+      ],
+      "settings": {
+        "color_scheme": "scheme-2",
+        "separate_section_with_border": false,
+        "hide_product_information": true,
+        "stack_products": true,
+        "products_per_row_mobile": "2",
+        "products_per_row_desktop": 4,
+        "horizontal_spacing_factor": 2,
+        "vertical_spacing_factor": 2,
+        "subheading": ""
+      }
+    },
+    "rich_text_mekVnN": {
+      "type": "rich-text",
+      "blocks": {
+        "link_B9r7tp": {
+          "type": "link",
+          "settings": {
+            "text": "探索全部",
+            "url": "shopify://collections/scandinavian-garden-dreaming-within-blossoms"
+          }
+        }
+      },
+      "block_order": [
+        "link_B9r7tp"
+      ],
+      "custom_css": [
+        "@media (min-width: 700px) {div {margin-top: -50px; font-size: 16px; }}",
+        "div {margin-top: -20px; font-weight: bold;}"
+      ],
+      "settings": {
+        "color_scheme": "scheme-2",
+        "separate_section_with_border": false,
+        "content_width": "xs",
+        "text_position": "center",
+        "remove_vertical_spacing": false
+      }
+    },
+    "rich_text_zywh6a": {
+      "type": "rich-text",
+      "blocks": {
+        "button_AHyEQb": {
+          "type": "button",
+          "settings": {
+            "style": "solid",
+            "text": "發現更多內容",
+            "url": "/",
+            "background": "",
+            "text_color": ""
+          }
+        }
+      },
+      "block_order": [
+        "button_AHyEQb"
+      ],
+      "settings": {
+        "color_scheme": "scheme-2",
+        "separate_section_with_border": false,
+        "content_width": "sm",
+        "text_position": "center",
+        "remove_vertical_spacing": false
+      }
+    }
+  },
+  "order": [
+    "main",
+    "rich_text_xDaTDM",
+    "image_with_text_overlay_Dhrznj",
+    "rich_text_nnb4eF",
+    "featured_collections_CPkmQD",
+    "rich_text_hQkMQn",
+    "image_with_text_overlay_qfneGA",
+    "rich_text_cWzH6e",
+    "featured_collections_mgXb39",
+    "rich_text_6HRNYg",
+    "image_with_text_overlay_Afm4CQ",
+    "rich_text_FrQdw8",
+    "featured_collections_AwJUHg",
+    "rich_text_iJzhnt",
+    "image_with_text_overlay_kimUac",
+    "rich_text_iz4cD4",
+    "featured_collections_iqJLiy",
+    "rich_text_mekVnN",
+    "rich_text_zywh6a"
+  ]
+}

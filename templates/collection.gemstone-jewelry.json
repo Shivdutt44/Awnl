@@ -1,0 +1,272 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "collection-banner": {
+      "type": "collection-banner",
+      "custom_css": [],
+      "settings": {
+        "color_scheme": "",
+        "image": "{{ collection.metafields.my_fields.collection_banner_pc.value }}",
+        "mobile_image": "{{ collection.metafields.my_fields.collection_banner_mb.value }}",
+        "image_size": "auto",
+        "allow_transparent_header": false,
+        "reveal": true,
+        "enable_parallax": false,
+        "show_image": true,
+        "show_collection_title": true,
+        "show_collection_description": true,
+        "show_breadcrumb": true,
+        "content_width": "xs",
+        "overlay_color": "#000000",
+        "overlay_opacity": 52
+      }
+    },
+    "multi_column_rFnyQy": {
+      "type": "multi-column",
+      "blocks": {
+        "image_with_text_jjV9c7": {
+          "type": "image_with_text",
+          "settings": {
+            "image": "shopify://shop_images/page-natural-gemstone-jewelry-3.jpg",
+            "title": "能量晶石選擇指引",
+            "heading_tag": "h4",
+            "content": "<p>依照星座、誕生石、石頭顏色、脈輪、五行，為您找到最適合的天然石。</p>",
+            "link_url": "shopify://pages/choose-crystal-energy",
+            "link_text": ""
+          }
+        },
+        "image_with_text_XNAVfq": {
+          "type": "image_with_text",
+          "settings": {
+            "image": "shopify://shop_images/page-natural-gemstone-jewelry-2.jpg",
+            "title": "為初學者精選的天然石",
+            "heading_tag": "h4",
+            "content": "<p>無論單獨佩戴，還是與其他天然石搭配使用，都毫無問題。擁有溫暖能量的天然石系列。</p>",
+            "link_url": "shopify://pages/list-stone-collections",
+            "link_text": ""
+          }
+        }
+      },
+      "block_order": [
+        "image_with_text_jjV9c7",
+        "image_with_text_XNAVfq"
+      ],
+      "custom_css": [
+        "@media (min-width: 769px) {.section-stack {max-width: 1450px; margin-left: auto; margin-right: auto; }}",
+        "div.prose {margin-top: -20px;}",
+        "div.prose.text-center p,a.link {margin-top: 3px;}",
+        ".multi-column {grid-column-gap: 1px;}",
+        ".scroll-area {grid-auto-columns: 75vw;}"
+      ],
+      "settings": {
+        "color_scheme": "scheme-2",
+        "separate_section_with_border": false,
+        "columns_per_row": 2,
+        "stack_on_mobile": false,
+        "overlap_image": false,
+        "content_alignment": "center",
+        "text_alignment": "center",
+        "spacing": "xs",
+        "subheading": "",
+        "title": "如何選擇天然能量石",
+        "content": ""
+      }
+    },
+    "main": {
+      "type": "main-collection",
+      "settings": {
+        "color_scheme": "scheme-2",
+        "hide_product_information": false,
+        "products_per_page": 24,
+        "products_per_row_mobile": "2",
+        "products_size_desktop": "medium",
+        "show_grid_mode_selector": true,
+        "horizontal_spacing_factor": 1.5,
+        "vertical_spacing_factor": 1,
+        "filter_layout": "drawer",
+        "quick_links_menu": "",
+        "show_sort_by": true,
+        "show_filters": true,
+        "show_results_count": true,
+        "show_filter_group_name": false,
+        "show_filter_values_count": true,
+        "open_filters_by_default": false
+      }
+    },
+    "multi_column_a4cG3Q": {
+      "type": "multi-column",
+      "blocks": {
+        "image_with_text_dBFC4L": {
+          "type": "image_with_text",
+          "settings": {
+            "image": "shopify://shop_images/Natural_Crystal_Gravel_Demagnetizer_Stone.jpg",
+            "title": "購買充能消磁石",
+            "heading_tag": "h4",
+            "content": "<p><a href=\"https://awnl.tw/collections/crystal-natural-stone-healing-charging-items\" target=\"_blank\" title=\"https://awnl.tw/collections/crystal-natural-stone-healing-charging-items\">Clusters & Chips→</a></p>",
+            "link_url": "",
+            "link_text": ""
+          }
+        },
+        "image_with_text_i4Bc6H": {
+          "type": "image_with_text",
+          "settings": {
+            "image": "shopify://shop_images/The_Energy_and_Spiritual_Properties_of_Crystals.jpg",
+            "title": "晶石的能量",
+            "heading_tag": "h4",
+            "content": "<p><a href=\"https://awnl.tw/pages/%E6%99%B6%E7%9F%B3%E8%83%BD%E9%87%8F%E7%9A%84%E7%A7%98%E5%AF%86\" target=\"_blank\" title=\"https://awnl.tw/pages/%E6%99%B6%E7%9F%B3%E8%83%BD%E9%87%8F%E7%9A%84%E7%A7%98%E5%AF%86\">了解晶石能量的秘密→</a></p>",
+            "link_url": "",
+            "link_text": ""
+          }
+        },
+        "image_with_text_6GjQAR": {
+          "type": "image_with_text",
+          "settings": {
+            "image": "shopify://shop_images/The_Importance_of_Crystal_Cleansing_and_Charging.jpg",
+            "title": "淨化與充能",
+            "heading_tag": "h4",
+            "content": "<p><a href=\"https://awnl.tw/blogs/the-journal/gemstone-purify-charge\" target=\"_blank\" title=\"https://awnl.tw/blogs/the-journal/gemstone-purify-charge\">水晶淨化與充能說明→</a></p>",
+            "link_url": "",
+            "link_text": ""
+          }
+        }
+      },
+      "block_order": [
+        "image_with_text_dBFC4L",
+        "image_with_text_i4Bc6H",
+        "image_with_text_6GjQAR"
+      ],
+      "custom_css": [
+        "div.prose {margin-top: -20px;}",
+        "div.prose.text-center p,a.link {margin-top: 3px;}",
+        "@media (max-width: 769px) {img {aspect-ratio: 1/1.2; object-fit: cover; }}",
+        "@media (min-width: 770px) {img {aspect-ratio: 1.2/1; object-fit: cover; }}",
+        ".multi-column {grid-column-gap: 1px;}",
+        ".scroll-area {grid-auto-columns: 75vw;}"
+      ],
+      "settings": {
+        "color_scheme": "scheme-2",
+        "separate_section_with_border": false,
+        "columns_per_row": 3,
+        "stack_on_mobile": false,
+        "overlap_image": false,
+        "content_alignment": "center",
+        "text_alignment": "center",
+        "spacing": "xs",
+        "subheading": "",
+        "title": "Crystal Healing",
+        "content": ""
+      }
+    },
+    "a9b23a11-5fb6-4f48-8572-db578375598a": {
+      "type": "collection-list",
+      "blocks": {
+        "template--16043850956980__a9b23a11-5fb6-4f48-8572-db578375598a-collection-1": {
+          "type": "collection",
+          "settings": {
+            "color_scheme": "scheme-4",
+            "collection": "{{ collection.metafields.my_fields.sub_collection_a.value }}",
+            "image": "{{ block.settings.collection.metafields.my_fields.collection_banner_mb.value }}",
+            "expand_collection": false,
+            "content_position": "place-self-end-center text-center",
+            "subheading": "",
+            "title": "",
+            "button_text": "{{ block.settings.collection.title }}",
+            "button_link": "",
+            "button_style": "link",
+            "overlay_color": "#000000",
+            "overlay_opacity": 10
+          }
+        },
+        "template--16043850956980__a9b23a11-5fb6-4f48-8572-db578375598a-collection-2": {
+          "type": "collection",
+          "settings": {
+            "color_scheme": "scheme-4",
+            "collection": "{{ collection.metafields.my_fields.sub_collection_b.value }}",
+            "image": "{{ block.settings.collection.metafields.my_fields.collection_banner_mb.value }}",
+            "expand_collection": false,
+            "content_position": "place-self-end-center text-center",
+            "subheading": "",
+            "title": "",
+            "button_text": "{{ block.settings.collection.title }}",
+            "button_link": "",
+            "button_style": "link",
+            "overlay_color": "#000000",
+            "overlay_opacity": 9
+          }
+        },
+        "template--16043850956980__a9b23a11-5fb6-4f48-8572-db578375598a-collection-3": {
+          "type": "collection",
+          "settings": {
+            "color_scheme": "scheme-4",
+            "collection": "{{ collection.metafields.my_fields.sub_colleciton_c.value }}",
+            "image": "{{ block.settings.collection.metafields.my_fields.collection_banner_mb.value }}",
+            "expand_collection": false,
+            "content_position": "place-self-end-center text-center",
+            "subheading": "",
+            "title": "",
+            "button_text": "{{ block.settings.collection.title }}",
+            "button_link": "",
+            "button_style": "link",
+            "overlay_color": "#000000",
+            "overlay_opacity": 9
+          }
+        },
+        "collection_GFdRg7": {
+          "type": "collection",
+          "settings": {
+            "color_scheme": "scheme-4",
+            "collection": "{{ collection.metafields.my_fields.sub_collection_d.value }}",
+            "image": "{{ block.settings.collection.metafields.my_fields.collection_banner_mb.value }}",
+            "expand_collection": false,
+            "content_position": "place-self-end-center text-center",
+            "subheading": "",
+            "title": "",
+            "button_text": "{{ block.settings.collection.title }}",
+            "button_link": "",
+            "button_style": "link",
+            "overlay_color": "#000000",
+            "overlay_opacity": 9
+          }
+        }
+      },
+      "block_order": [
+        "template--16043850956980__a9b23a11-5fb6-4f48-8572-db578375598a-collection-1",
+        "template--16043850956980__a9b23a11-5fb6-4f48-8572-db578375598a-collection-2",
+        "template--16043850956980__a9b23a11-5fb6-4f48-8572-db578375598a-collection-3",
+        "collection_GFdRg7"
+      ],
+      "custom_css": [
+        ".collection-card img {width: 100%; height: auto; aspect-ratio: 1 /1.1; object-fit: cover; object-position: center;}",
+        ".collection-card div.prose {font-weight: 400; margin-bottom: 20px;}"
+      ],
+      "settings": {
+        "color_scheme": "scheme-2",
+        "separate_section_with_border": false,
+        "image_size": "auto",
+        "show_text_outside": false,
+        "space_items": false,
+        "stack_collections": false,
+        "collections_per_row_mobile": "1",
+        "collections_per_row_desktop": 4,
+        "subheading": "",
+        "title": "More Inspirations",
+        "content": "<p>探索更多系列靈感</p>"
+      }
+    }
+  },
+  "order": [
+    "collection-banner",
+    "multi_column_rFnyQy",
+    "main",
+    "multi_column_a4cG3Q",
+    "a9b23a11-5fb6-4f48-8572-db578375598a"
+  ]
+}

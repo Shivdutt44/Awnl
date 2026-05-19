@@ -1,0 +1,555 @@
+/*
+* ------------------------------------------------------------
+* IMPORTANT: The contents of this file are auto-generated.
+*
+* This file may be updated by the Shopify admin theme editor
+* or related systems. Please exercise caution as any changes
+* made to this file may be overwritten.
+* ------------------------------------------------------------
+*/
+{
+  "sections": {
+    "main": {
+      "type": "main-page",
+      "disabled": true,
+      "settings": {
+        "color_scheme": "scheme-2",
+        "show_title": true,
+        "page_width": "xs"
+      }
+    },
+    "1048c0ef-b676-45c7-8778-4e2b8d302a92": {
+      "type": "rich-text",
+      "blocks": {
+        "heading_nVtkiJ": {
+          "type": "heading",
+          "settings": {
+            "text": "AWNL禮物靈感",
+            "heading_tag": "h1"
+          }
+        }
+      },
+      "block_order": [
+        "heading_nVtkiJ"
+      ],
+      "custom_css": [
+
+      ],
+      "settings": {
+        "color_scheme": "scheme-2",
+        "separate_section_with_border": false,
+        "content_width": "sm",
+        "text_position": "center",
+        "remove_vertical_spacing": false
+      }
+    },
+    "multi_column_qBKdFV": {
+      "type": "multi-column",
+      "blocks": {
+        "image_with_text_dEnmir": {
+          "type": "image_with_text",
+          "settings": {
+            "image": "shopify://shop_images/2024-gift-idea-page-september_86dc3e32-1ae1-494a-984d-01834572313c.jpg",
+            "title": "STARRY NIGHT",
+            "heading_tag": "h4",
+            "content": "<p>M隕石蘊含實現願望的力量，作為求婚或紀念日的禮物珠寶最為合適。這種獨特的材質，將在她的珠寶收藏中展現無與倫比的魅力。</p>",
+            "link_url": "shopify://collections/starry-night",
+            "link_text": "查看詳情"
+          }
+        },
+        "image_with_text_KaBEQK": {
+          "type": "image_with_text",
+          "settings": {
+            "image": "shopify://shop_images/2024-gift-idea-page-september-2.jpg",
+            "title": "JEWELRY SETS",
+            "heading_tag": "h4",
+            "content": "<p>珠寶套組展現佩戴者的優雅品味，讓穿搭變得更輕鬆隨性。設計風格既簡約又精緻，完美提升整體造型。</p>",
+            "link_url": "shopify://collections/women-jewelry-sets",
+            "link_text": "查看詳情"
+          }
+        },
+        "image_with_text_HEtEWn": {
+          "type": "image_with_text",
+          "settings": {
+            "image": "shopify://shop_images/2024-gift-idea-dalahorse-collection.jpg",
+            "title": "DALAHÄST LEGACY",
+            "heading_tag": "h4",
+            "content": "<p>融入了瑞典傳統達拉木馬的元素，象徵勇氣、愛與懷舊情感。這是傳遞特別故事的獨特禮物。</p>",
+            "link_url": "shopify://collections/dala-horse-jewelry",
+            "link_text": "查看詳情"
+          }
+        },
+        "image_with_text_t8qRwK": {
+          "type": "image_with_text",
+          "settings": {
+            "image": "shopify://shop_images/2024-gift-idea-dreamblossom-collection.jpg",
+            "title": "DREAMING BLOSSOMS",
+            "heading_tag": "h4",
+            "content": "<p>這是一系列使用多種天然水晶製作的手鍊與項鍊，設計如同綻放的花朵。無論哪個年齡層的女性，都能從中找到凸顯優雅氣質的完美單品。</p>",
+            "link_url": "shopify://collections/scandinavian-garden-dreaming-within-blossoms",
+            "link_text": "查看詳情"
+          }
+        },
+        "image_with_text_nULKhK": {
+          "type": "image_with_text",
+          "settings": {
+            "image": "shopify://shop_images/2024-gift-idea-birthstone-collection.jpg",
+            "title": "BIRTHSTONE",
+            "heading_tag": "h4",
+            "content": "<p>不論什麼場合，銀十字架都能完美搭配，成為她最愛的珠寶之一。專屬的誕生石禮物，將讓她驚喜萬分。</p>",
+            "link_url": "shopify://collections/birthstone",
+            "link_text": "查看詳情"
+          }
+        },
+        "image_with_text_TaPawg": {
+          "type": "image_with_text",
+          "settings": {
+            "image": "shopify://shop_images/2024-gift-idea-atlantis-collection.jpg",
+            "title": "ATLANTIS",
+            "heading_tag": "h4",
+            "content": "<p>純天然寶石中蘊含著亞特蘭提斯的古老傳說。這份融合神秘與浪漫的珠寶禮物，必定會讓她感動不已。</p>",
+            "link_url": "shopify://collections/atlantis",
+            "link_text": "查看詳情"
+          }
+        }
+      },
+      "block_order": [
+        "image_with_text_dEnmir",
+        "image_with_text_KaBEQK",
+        "image_with_text_HEtEWn",
+        "image_with_text_t8qRwK",
+        "image_with_text_nULKhK",
+        "image_with_text_TaPawg"
+      ],
+      "custom_css": [
+        "@media (min-width: 769px) {.section-stack {max-width: 1500px; margin-left: auto; margin-right: auto; }}",
+        "div.prose {margin-top: -20px;}",
+        "img {border-radius: 10px;}",
+        "p {color: #565656;}",
+        "p.h4 {color: #1c1c1c;}",
+        ".overflow-hidden {box-shadow: 0 4px 10px rgba(0, 0, 0, 0.12), 0 0 6px rgba(0, 0, 0, 0.1); border-radius: 10px; transition: box-shadow 0.3s ease-in-out;}",
+        ".overflow-hidden:hover {box-shadow: 0 8px 16px rgba(0, 0, 0, 0.16), 0 4px 12px rgba(0, 0, 0, 0.12);}"
+      ],
+      "settings": {
+        "color_scheme": "scheme-2",
+        "separate_section_with_border": false,
+        "columns_per_row": 2,
+        "stack_on_mobile": true,
+        "overlap_image": false,
+        "content_alignment": "center",
+        "text_alignment": "center",
+        "spacing": "sm",
+        "subheading": "專屬她的心意",
+        "title": "FOR HER",
+        "content": ""
+      }
+    },
+    "multi_column_kydPzD": {
+      "type": "multi-column",
+      "blocks": {
+        "image_with_text_tYHJgW": {
+          "type": "image_with_text",
+          "settings": {
+            "image": "shopify://shop_images/2024-gift-idea-amethyst-necklace.jpg",
+            "title": "紫水晶 漿果 女士項鍊",
+            "heading_tag": "h4",
+            "content": "<p>這款以莓果為靈感的可愛紫水晶項鍊，為穿搭增添一抹神秘感。晶透的紫色能完美襯托各種膚色，散發優雅氣息。</p>",
+            "link_url": "shopify://products/womens-berry-necklace-with-amethyst",
+            "link_text": "查看商品"
+          }
+        },
+        "image_with_text_EgmGDU": {
+          "type": "image_with_text",
+          "settings": {
+            "image": "shopify://shop_images/2024-gift-idea-starry-night-necklace.jpg",
+            "title": "暗夜繁星 隕石項鍊",
+            "heading_tag": "h4",
+            "content": "<p>使用獨特M隕石打造的圓形項鍊，如同夜空中的星光般閃耀。隕石特有的紋理引人注目，提供銀色與玫瑰金兩種選擇。</p>",
+            "link_url": "shopify://products/womens-sterling-silver-y-shaped-necklace-swedish-meteorite",
+            "link_text": "查看商品"
+          }
+        },
+        "image_with_text_PN94Kt": {
+          "type": "image_with_text",
+          "settings": {
+            "image": "shopify://shop_images/multicolor-morganite-bracelet-on-model_1.jpg",
+            "title": "摩根石 女士編織手鍊",
+            "heading_tag": "h4",
+            "content": "<p>多彩的摩根石，被稱為愛與療癒的寶石，巧妙地展現女性的可愛特質。不論是日常佩戴還是度假出遊，都非常合適。</p>",
+            "link_url": "shopify://products/womens-protection-beaded-bracelet-morganite",
+            "link_text": "查看商品"
+          }
+        },
+        "image_with_text_6xy6UE": {
+          "type": "image_with_text",
+          "settings": {
+            "image": "shopify://shop_images/2024-gift-idea-dalahorse-bracelet.jpg",
+            "title": "達拉木馬 雙圈 粉水晶手鍊",
+            "heading_tag": "h4",
+            "content": "<p>象徵愛情和幸運的粉水晶與達拉木馬，傳遞思念與愛戀。這款手鍊展現了女性的柔美與優雅。</p>",
+            "link_url": "shopify://products/womens-stacked-dala-horse-bracelet-with-rose-quartz",
+            "link_text": "查看商品"
+          }
+        }
+      },
+      "block_order": [
+        "image_with_text_tYHJgW",
+        "image_with_text_EgmGDU",
+        "image_with_text_PN94Kt",
+        "image_with_text_6xy6UE"
+      ],
+      "custom_css": [
+        "@media (min-width: 769px) {.section-stack {max-width: 1500px; margin-left: auto; margin-right: auto; }}",
+        "div.prose {margin-top: -20px;}",
+        "img {border-radius: 10px;}",
+        "p {color: #565656;}",
+        "p.h4 {color: #1c1c1c;}",
+        ".overflow-hidden {box-shadow: 0 4px 10px rgba(0, 0, 0, 0.12), 0 0 6px rgba(0, 0, 0, 0.1); border-radius: 10px; transition: box-shadow 0.3s ease-in-out;}",
+        ".overflow-hidden:hover {box-shadow: 0 8px 16px rgba(0, 0, 0, 0.16), 0 4px 12px rgba(0, 0, 0, 0.12);}"
+      ],
+      "settings": {
+        "color_scheme": "scheme-2",
+        "separate_section_with_border": false,
+        "columns_per_row": 4,
+        "stack_on_mobile": false,
+        "overlap_image": false,
+        "content_alignment": "center",
+        "text_alignment": "center",
+        "spacing": "xs",
+        "subheading": "",
+        "title": "四季皆宜的推薦單品",
+        "content": ""
+      }
+    },
+    "9762b619-79ac-4047-9d24-7a0a5ca159dc": {
+      "type": "featured-collections",
+      "blocks": {
+        "template--16838309609710__9762b619-79ac-4047-9d24-7a0a5ca159dc-collection-1": {
+          "type": "collection",
+          "settings": {
+            "collection": "gifts-for-her",
+            "products_count": 10,
+            "title": "CHERISHED BY HER",
+            "link_url": "shopify://collections/gifts-for-her",
+            "link_text": "查看全部送給她的禮物推薦"
+          }
+        }
+      },
+      "block_order": [
+        "template--16838309609710__9762b619-79ac-4047-9d24-7a0a5ca159dc-collection-1"
+      ],
+      "custom_css": [
+        "div.container {margin-top: -50px;}",
+        "@media (min-width: 769px) {.section-stack {max-width: 1500px; margin-left: auto; margin-right: auto; }}"
+      ],
+      "settings": {
+        "color_scheme": "scheme-2",
+        "separate_section_with_border": false,
+        "hide_product_information": false,
+        "stack_products": true,
+        "products_per_row_mobile": "2",
+        "products_per_row_desktop": 5,
+        "horizontal_spacing_factor": 2,
+        "vertical_spacing_factor": 0.2,
+        "subheading": ""
+      }
+    },
+    "c3548244-496f-4029-80a9-9e583c848214": {
+      "type": "rich-text",
+      "blocks": {
+        "subheading_yhairh": {
+          "type": "subheading",
+          "settings": {
+            "text": "專屬他的驚喜"
+          }
+        },
+        "76cc2743-e706-4cd9-b75d-89a38ee1b22a": {
+          "type": "heading",
+          "settings": {
+            "text": "FOR HIM",
+            "heading_tag": "h2"
+          }
+        }
+      },
+      "block_order": [
+        "subheading_yhairh",
+        "76cc2743-e706-4cd9-b75d-89a38ee1b22a"
+      ],
+      "settings": {
+        "color_scheme": "scheme-2",
+        "separate_section_with_border": false,
+        "content_width": "sm",
+        "text_position": "center",
+        "remove_vertical_spacing": false
+      }
+    },
+    "multi_column_EnyWRJ": {
+      "type": "multi-column",
+      "blocks": {
+        "image_with_text_mWFfXm": {
+          "type": "image_with_text",
+          "settings": {
+            "image": "shopify://shop_images/2024-gift-idea-page-september11.jpg",
+            "title": "FACETED BEADS 切面珠",
+            "heading_tag": "h4",
+            "content": "<p>許多男性選擇佩戴天然石手鍊，因為它既能展現自然的魅力，又彰顯個人品味。AWNL高品質切面珠天然石手鍊，採用獨特切割的多面珠子，既休閒又不失精緻，突顯生活中的優雅趣味。</p>",
+            "link_url": "shopify://collections/faceted-beaded-bracelet",
+            "link_text": "查看詳情"
+          }
+        },
+        "image_with_text_nwL4Tw": {
+          "type": "image_with_text",
+          "settings": {
+            "image": "shopify://shop_images/2024-gift-ideas-_interstellar-collection1.jpg",
+            "title": "INTERSTELLAR",
+            "heading_tag": "h4",
+            "content": "<p>AWNL的純銀隕石系列，融合隕石獨特的「魏德曼花紋」和銳利的切割線條，讓這款珠寶成為紀念日或生日禮物的亮點，爲個性強烈的他賦予更獨特的視覺衝擊。</p>",
+            "link_url": "shopify://collections/interstellar",
+            "link_text": "查看詳情"
+          }
+        },
+        "image_with_text_FhVcCz": {
+          "type": "image_with_text",
+          "settings": {
+            "image": "shopify://shop_images/2024-gift-idea-page-september-2_1.jpg",
+            "title": "METEORITE FUSION",
+            "heading_tag": "h4",
+            "content": "<p>高雅的天然石與隕石手鍊系列，搭配純銀扣環和隕石裝飾，金屬與寶石的結合，帶來比一般手鍊更具質感的品味，與正裝也能完美搭配。</p>",
+            "link_url": "shopify://collections/classic-meteorite-fusion",
+            "link_text": "查看詳情"
+          }
+        },
+        "image_with_text_jTpPaw": {
+          "type": "image_with_text",
+          "settings": {
+            "image": "shopify://shop_images/2024-gift-idea-page-september.jpg",
+            "title": "FLATBEADS",
+            "heading_tag": "h4",
+            "content": "<p>經過拋光的方形扁珠，結合柔和的編織繩和陽剛的正方形設計，非常適合穩重的紳士佩戴。象徵護身符意義的墜飾，為禮物增添更深層次的含義。</p>",
+            "link_url": "shopify://collections/flatbead-bracelets",
+            "link_text": "查看詳情"
+          }
+        },
+        "image_with_text_QLtTD9": {
+          "type": "image_with_text",
+          "settings": {
+            "image": "shopify://shop_images/2024-gift-idea-solidlinx-collection.jpg",
+            "title": "SOLIDLINX",
+            "heading_tag": "h4",
+            "content": "<p>給喜愛項鍊的他，選擇一款低調的鏈條設計。AWNL的項鍊不僅質感優越，細節處理也非常精緻，必定能在打開禮物的瞬間打動他。</p>",
+            "link_url": "shopify://collections/link-chain-collection",
+            "link_text": "查看詳情"
+          }
+        },
+        "image_with_text_QrLmpB": {
+          "type": "image_with_text",
+          "settings": {
+            "image": "shopify://shop_images/2024-gift-ideas-_nuummite-bracelet-gift-for-men1.jpg",
+            "title": "NUUMMITE BEADS",
+            "heading_tag": "h4",
+            "content": "<p>充滿古代神秘色彩的格陵蘭產努烏邁特石，黑色水晶隱隱透出多彩光芒，低調中展現奢華，是讓他更為耀眼的獨特禮物。</p>",
+            "link_url": "shopify://collections/nuummite",
+            "link_text": "查看詳情"
+          }
+        }
+      },
+      "block_order": [
+        "image_with_text_mWFfXm",
+        "image_with_text_nwL4Tw",
+        "image_with_text_FhVcCz",
+        "image_with_text_jTpPaw",
+        "image_with_text_QLtTD9",
+        "image_with_text_QrLmpB"
+      ],
+      "custom_css": [
+        "@media (min-width: 769px) {.section-stack {max-width: 1500px; margin-left: auto; margin-right: auto; }}",
+        "div.prose {margin-top: -20px;}",
+        "img {border-radius: 10px;}",
+        "p {color: #565656;}",
+        "p.h4 {color: #1c1c1c;}",
+        ".overflow-hidden {box-shadow: 0 4px 10px rgba(0, 0, 0, 0.12), 0 0 6px rgba(0, 0, 0, 0.1); border-radius: 10px; transition: box-shadow 0.3s ease-in-out;}",
+        ".overflow-hidden:hover {box-shadow: 0 8px 16px rgba(0, 0, 0, 0.16), 0 4px 12px rgba(0, 0, 0, 0.12);}"
+      ],
+      "settings": {
+        "color_scheme": "scheme-2",
+        "separate_section_with_border": false,
+        "columns_per_row": 2,
+        "stack_on_mobile": true,
+        "overlap_image": false,
+        "content_alignment": "center",
+        "text_alignment": "center",
+        "spacing": "sm",
+        "subheading": "",
+        "title": "",
+        "content": ""
+      }
+    },
+    "multi_column_RKHeYx": {
+      "type": "multi-column",
+      "blocks": {
+        "image_with_text_JwceJU": {
+          "type": "image_with_text",
+          "settings": {
+            "image": "shopify://shop_images/2024-gift-idea-bronzite-hexa-necklace.jpg",
+            "title": "古銅輝 維京勇者之盾 男士項鍊",
+            "heading_tag": "h4",
+            "content": "<p>獨特的天然石項鍊因其稀有性而備受矚目。這款古銅輝項鍊的獨特棕色調，易於與各種顏色搭配，不如黑色沉重，但仍能輕鬆融入多種風格。</p>",
+            "link_url": "shopify://products/bronzite-hexagonal-pendant-necklace",
+            "link_text": "查看商品"
+          }
+        },
+        "image_with_text_UndFMR": {
+          "type": "image_with_text",
+          "settings": {
+            "image": "shopify://shop_images/2024-gift-idea-grey-hawk-eye-bracelet.jpg",
+            "title": "灰鷹眼石 男士手鍊",
+            "heading_tag": "h4",
+            "content": "<p>光滑的灰色鷹眼石編織手鍊，百搭的色調適合各種場合。可調整長度的設計，讓您不必擔心季節變化或體重波動，隨時享受舒適的佩戴體驗。</p>",
+            "link_url": "shopify://products/mens-beaded-drawstring-bracelet-with-grey-hawk-eye",
+            "link_text": "查看商品"
+          }
+        },
+        "image_with_text_a4Fdcj": {
+          "type": "image_with_text",
+          "settings": {
+            "image": "shopify://shop_images/2024-gift-idea-bind-rune-necklace.jpg",
+            "title": "純銀 維京 盧恩符文 男士項鍊",
+            "heading_tag": "h4",
+            "content": "<p>這款925純銀長項鍊，無論是墜飾還是鏈條，每個細節都顯示出精湛工藝。帶有組合符文圖案的設計，兼具護身符的意義，是一款可長期佩戴的靈性珠寶。</p>",
+            "link_url": "shopify://products/mens-sterling-silver-necklace-engraved-rune",
+            "link_text": "查看商品"
+          }
+        },
+        "image_with_text_8zmwgW": {
+          "type": "image_with_text",
+          "settings": {
+            "image": "shopify://shop_images/2024-gift-idea-mixcolor-macrame-bracelet.jpg",
+            "title": "曜石暗彩 男士手鍊",
+            "heading_tag": "h4",
+            "content": "<p>紅、黑與灰色相間的多面切割珠，完美融入日常穿搭，無論是外套還是T恤，都能搭配得當。編織繩長度可調，靈活應對不同穿搭需求。</p>",
+            "link_url": "shopify://products/mens-beaded-macrame-bracelet-tri-color-gemstones",
+            "link_text": "查看商品"
+          }
+        }
+      },
+      "block_order": [
+        "image_with_text_JwceJU",
+        "image_with_text_UndFMR",
+        "image_with_text_a4Fdcj",
+        "image_with_text_8zmwgW"
+      ],
+      "custom_css": [
+        "@media (min-width: 769px) {.section-stack {max-width: 1500px; margin-left: auto; margin-right: auto; }}",
+        "div.prose {margin-top: -20px;}",
+        "img {border-radius: 10px;}",
+        "p {color: #565656;}",
+        "p.h4 {color: #1c1c1c;}",
+        ".overflow-hidden {box-shadow: 0 4px 10px rgba(0, 0, 0, 0.12), 0 0 6px rgba(0, 0, 0, 0.1); border-radius: 10px; transition: box-shadow 0.3s ease-in-out;}",
+        ".overflow-hidden:hover {box-shadow: 0 8px 16px rgba(0, 0, 0, 0.16), 0 4px 12px rgba(0, 0, 0, 0.12);}"
+      ],
+      "settings": {
+        "color_scheme": "scheme-2",
+        "separate_section_with_border": false,
+        "columns_per_row": 4,
+        "stack_on_mobile": false,
+        "overlap_image": false,
+        "content_alignment": "center",
+        "text_alignment": "center",
+        "spacing": "xs",
+        "subheading": "",
+        "title": "四季皆宜的推薦單品",
+        "content": ""
+      }
+    },
+    "cea47b34-7b22-4bd0-8d36-5e0cd884641e": {
+      "type": "featured-collections",
+      "blocks": {
+        "template--16838309609710__cea47b34-7b22-4bd0-8d36-5e0cd884641e-collection-1": {
+          "type": "collection",
+          "settings": {
+            "collection": "gifts-for-him",
+            "products_count": 10,
+            "title": "HIS TOP PICKS",
+            "link_url": "shopify://collections/gifts-for-him",
+            "link_text": "查看全部送給他的禮物推薦"
+          }
+        }
+      },
+      "block_order": [
+        "template--16838309609710__cea47b34-7b22-4bd0-8d36-5e0cd884641e-collection-1"
+      ],
+      "custom_css": [
+        "div.container {margin-top: -50px;}",
+        "@media (min-width: 769px) {.section-stack {max-width: 1500px; margin-left: auto; margin-right: auto; }}"
+      ],
+      "settings": {
+        "color_scheme": "scheme-2",
+        "separate_section_with_border": false,
+        "hide_product_information": false,
+        "stack_products": true,
+        "products_per_row_mobile": "2",
+        "products_per_row_desktop": 5,
+        "horizontal_spacing_factor": 2,
+        "vertical_spacing_factor": 0.2,
+        "subheading": ""
+      }
+    },
+    "86098a4f-b7cb-4612-b4c1-c7b6fde0bfee": {
+      "type": "image-with-text",
+      "blocks": {
+        "ccb68a6a-5bd2-4a23-be8a-4880bd7ec6d7": {
+          "type": "heading",
+          "settings": {
+            "text": "免費包裝",
+            "heading_tag": "h3"
+          }
+        },
+        "1370d0c8-85bf-4f9e-94f9-369cdbed60ee": {
+          "type": "richtext",
+          "settings": {
+            "content": "<p>我們的禮品包裝採用環保材料製作，既豪華又充滿時尚感。每個包裝盒內均附有保證書，隕石產品還隨附認證卡。</p>"
+          }
+        },
+        "84970cae-8192-49c5-949a-f1154975fb7e": {
+          "type": "button",
+          "settings": {
+            "style": "solid",
+            "text": "LEARN MORE",
+            "url": "shopify://pages/gift-packaging",
+            "background": "",
+            "text_color": ""
+          }
+        }
+      },
+      "block_order": [
+        "ccb68a6a-5bd2-4a23-be8a-4880bd7ec6d7",
+        "1370d0c8-85bf-4f9e-94f9-369cdbed60ee",
+        "84970cae-8192-49c5-949a-f1154975fb7e"
+      ],
+      "custom_css": [
+        "@media (min-width: 769px) {image-with-text {max-width: 1500px; margin-left: auto; margin-right: auto; }}"
+      ],
+      "settings": {
+        "color_scheme": "scheme-2",
+        "separate_section_with_border": false,
+        "image": "shopify://shop_images/2024-awnl-unbox-video-cover-gift-packaging_2.jpg",
+        "reveal_on_scroll": true,
+        "image_position": "start",
+        "content_width": "sm",
+        "remove_vertical_spacing": false
+      }
+    }
+  },
+  "order": [
+    "main",
+    "1048c0ef-b676-45c7-8778-4e2b8d302a92",
+    "multi_column_qBKdFV",
+    "multi_column_kydPzD",
+    "9762b619-79ac-4047-9d24-7a0a5ca159dc",
+    "c3548244-496f-4029-80a9-9e583c848214",
+    "multi_column_EnyWRJ",
+    "multi_column_RKHeYx",
+    "cea47b34-7b22-4bd0-8d36-5e0cd884641e",
+    "86098a4f-b7cb-4612-b4c1-c7b6fde0bfee"
+  ]
+}

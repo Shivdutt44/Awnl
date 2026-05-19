@@ -1,0 +1,276 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "custom_liquid_KER9xT": {
+      "type": "custom-liquid",
+      "settings": {
+        "color_scheme": "scheme-2",
+        "separate_section_with_border": false,
+        "remove_vertical_spacing": false,
+        "remove_horizontal_spacing": false,
+        "liquid": "<style>\n  .custom-menu {\n    display: flex;\n    flex-wrap: wrap;\n    justify-content: center;\n    padding: 0;\n    margin-left:auto;\nmargin-right:auto;\n    list-style: none;\n    max-width:900px;\n  }\n  .custom-menu li {\n    flex-basis: 20%;\n    margin-bottom: 5px;\n  }\n  .custom-menu a {\n    display: block;\n    text-align: center;\n    text-decoration: none;\n    color: #1C1C1C; \n    padding: 16px;\n    margin: 5px;\n    background-color: #e5e6eb;\n    border-radius: 5px;\n    transition: all 0.3s ease;\n    font-size: 18px;\n  }\n  .custom-menu a.link-3 {\n    font-weight: bold;\n    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);\n    background-color: #d2d4dc;\n  }\n  .custom-menu a:not(.link-3) {\n    color: #9A9A9A; \n  }\n  .custom-menu a:hover {\n    color: #1C1C1C;\n    background-color: #d2d4dc;\n    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);\n    font-weight:bold;\n  }\n  @media (max-width: 768px) {\n    .custom-menu li {\n      flex-basis: 50%;\n    }\n    .custom-menu a { \n      padding: 10px;\n      margin: 2px; \n      border-radius: 5px;\n      font-size: 12px;\n    }\n  }\n   h2{\nmargin-bottom:30px;\nfont-size:26px;}\n@media (max-width: 768px){ h2{\nmargin-bottom:18px;\nfont-size:20px;}}\n\n</style>\n<h2>訂購與付款說明</h2>\n<ul class=\"custom-menu\">\n  <li><a href=\"https://awnl.tw/pages/shopping-guide\" class=\"link-1\">首次購物指南\n</a></li>\n  <li><a href=\"https://awnl.tw/pages/shipping-policy\" class=\"link-2\">運費與配送</a></li>\n  <li><a href=\"https://awnl.tw/pages/order-and-payment\" class=\"link-3\">訂購與付款</a></li>\n  <li><a href=\"https://awnl.tw/pages/warranty-repair-service\n\n\" class=\"link-4\">商品保固與維修</a></li>\n  <li><a href=\"https://awnl.tw/pages/gift-packaging\" class=\"link-5\">包裝與禮品服務</a></li>\n  <li><a href=\"https://awnl.tw/pages/jewelry-care-and-clean\" class=\"link-6\">珠寶保養方法</a></li>\n  <li><a href=\"https://awnl.tw/pages/return-and-refund\" class=\"link-7\">退換貨與退款</a></li>\n  <li><a href=\"https://awnl.tw/pages/about-material\" class=\"link-8\">商品材質說明\n</a></li>\n<li><a href=\"https://awnljewelstaiwan.myshopify.com/pages/membership-guide\" class=\"link-9\">會員計畫</a></li>\n  <li><a href=\"https://awnl.tw/pages/choose-crystal-energy\" class=\"link-10\">天然石挑選指南</a></li>\n</ul>",
+        "text_alignment": "center"
+      }
+    },
+    "main": {
+      "type": "main-page",
+      "custom_css": [
+        "h1 {font-size: 32px;}",
+        "p {margin-bottom: 40px; font-size: 15px; line-height: 2;}",
+        "li {font-size: 15px; color: #565656;}",
+        "h2 {border-bottom: 1px solid #dddddd; padding-bottom: 10px; font-size: 19px; margin-top: 30px;}",
+        "h3 {font-size: 15px;}",
+        "strong {color: #565656; font-weight: bold;}",
+        "@media (max-width: 680px) {h1 {font-size: 28px; line-height: 1.2; } h2 {font-size: 17px; } li {font-size: 14px; } p {margin-bottom: 35px; font-size: 14px; line-height: 1.7; }}"
+      ],
+      "settings": {
+        "color_scheme": "scheme-2",
+        "show_title": false,
+        "page_width": "xs"
+      }
+    },
+    "custom_liquid_tizwF3": {
+      "type": "custom-liquid",
+      "settings": {
+        "color_scheme": "scheme-2",
+        "separate_section_with_border": false,
+        "remove_vertical_spacing": false,
+        "remove_horizontal_spacing": false,
+        "liquid": "<style>\n  .custom-menu {\n    display: flex;\n    flex-wrap: wrap;\n    justify-content: center;\n    padding: 0;\n    margin-left:auto;\nmargin-right:auto;\n    list-style: none;\n    max-width:900px;\n  }\n  .custom-menu li {\n    flex-basis: 20%;\n    margin-bottom: 5px;\n  }\n  .custom-menu a {\n    display: block;\n    text-align: center;\n    text-decoration: none;\n    color: #1C1C1C; \n    padding: 16px;\n    margin: 5px;\n    background-color: #e5e6eb;\n    border-radius: 5px;\n    transition: all 0.3s ease;\n    font-size: 18px;\n  }\n  .custom-menu a.link-3 {\n    font-weight: bold;\n    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);\n    background-color: #d2d4dc;\n  }\n  .custom-menu a:not(.link-3) {\n    color: #9A9A9A; \n  }\n  .custom-menu a:hover {\n    color: #1C1C1C;\n    background-color: #d2d4dc;\n    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);\n    font-weight:bold;\n  }\n  @media (max-width: 768px) {\n    .custom-menu li {\n      flex-basis: 50%;\n    }\n    .custom-menu a { \n      padding: 10px;\n      margin: 2px; \n      border-radius: 5px;\n      font-size: 12px;\n    }\n  }\n   h2{\nmargin-bottom:30px;\nfont-size:26px;}\n@media (max-width: 768px){ h2{\nmargin-bottom:18px;\nfont-size:20px;}}\n\n</style>\n<ul class=\"custom-menu\">\n  <li><a href=\"https://awnl.tw/pages/shopping-guide\" class=\"link-1\">首次購物指南\n</a></li>\n  <li><a href=\"https://awnl.tw/pages/shipping-policy\" class=\"link-2\">運費與配送</a></li>\n  <li><a href=\"https://awnl.tw/pages/order-and-payment\" class=\"link-3\">訂購與付款</a></li>\n  <li><a href=\"https://awnl.tw/pages/warranty-repair-service\n\n\" class=\"link-4\">商品保固與維修</a></li>\n  <li><a href=\"https://awnl.tw/pages/gift-packaging\" class=\"link-5\">包裝與禮品服務</a></li>\n  <li><a href=\"https://awnl.tw/pages/jewelry-care-and-clean\" class=\"link-6\">珠寶保養方法</a></li>\n  <li><a href=\"https://awnl.tw/pages/return-and-refund\" class=\"link-7\">退換貨與退款</a></li>\n  <li><a href=\"https://awnl.tw/pages/about-material\" class=\"link-8\">商品材質說明\n</a></li>\n<li><a href=\"https://awnljewelstaiwan.myshopify.com/pages/membership-guide\" class=\"link-9\">會員計畫</a></li>\n  <li><a href=\"https://awnl.tw/pages/choose-crystal-energy\" class=\"link-10\">天然石挑選指南</a></li>\n</ul>",
+        "text_alignment": "center"
+      }
+    },
+    "faq_XUhPXk": {
+      "type": "faq",
+      "blocks": {
+        "category_HiJdJE": {
+          "type": "category",
+          "settings": {
+            "title": "訂購、運送相關",
+            "icon": "none",
+            "icon_width": 16
+          }
+        },
+        "question_FkN4g6": {
+          "type": "question",
+          "settings": {
+            "question": "如何支付訂單費用？",
+            "answer": "<p>我們接受信用卡、PayPal以及Google Pay等線上付款方式。暫不提供匯款、郵局、超商取貨付款或貨到付款服務。</p>"
+          }
+        },
+        "question_AXxKRD": {
+          "type": "question",
+          "settings": {
+            "question": "付款一直失敗",
+            "answer": "<p>如果一直出現付款失敗的提示，建議您更換付款方式，嘗試更換信用卡、PayPal付款或是Google Pay進行支付。</p>"
+          }
+        },
+        "question_hCGBJJ": {
+          "type": "question",
+          "settings": {
+            "question": "運送費用怎麼算？",
+            "answer": "<p>台灣、香港、澳門、新加坡、馬來西亞地區滿$3,500元免運，每筆訂單未滿$3,500元新台幣，運費為$100元新台幣。</p><p>其他地區以及運送費用詳情，請詳閱<a href=\"/pages/shipping-policy\" target=\"_blank\" title=\"運費與配送政策\">運送政策</a>。</p>"
+          }
+        },
+        "question_eNDDTn": {
+          "type": "question",
+          "settings": {
+            "question": "台灣有實體門市嗎？",
+            "answer": "<p>我們在台灣暫時沒有門市，目前僅提供官方網站購買服務。</p>"
+          }
+        },
+        "question_YeJbd8": {
+          "type": "question",
+          "settings": {
+            "question": "如何使用優惠碼？",
+            "answer": "<ol><li>複製您的優惠碼。</li><li>添加您心儀的商品至購物車後進入結帳頁面。</li><li>結帳時在「禮品卡或折扣碼」欄，輸入優惠碼並點選「套用」。</li></ol>"
+          }
+        },
+        "question_RhM7nk": {
+          "type": "question",
+          "settings": {
+            "question": "我的訂單什麼時候出貨？",
+            "answer": "<p>台灣倉庫有現貨的情況下，1-3個工作日內出貨。若需從海外倉庫調貨出貨，約需2-5個工作日出貨。</p>"
+          }
+        },
+        "question_UzdRME": {
+          "type": "question",
+          "settings": {
+            "question": "我的訂單什麼時候送達？",
+            "answer": "<ul><li>台灣地區的訂單將由台灣倉庫出貨，預計1-3天內送達。倉庫於工作日不出貨，通常中午12點前下單的訂單，會在當天發貨。</li><li>如需海外倉庫寄送，使用國際快遞順豐或FedEX、DHL等物流服務，送達時間約需5-7個工作日。</li></ul>"
+          }
+        },
+        "question_L63Gaq": {
+          "type": "question",
+          "settings": {
+            "question": "如何追蹤我的訂單？",
+            "answer": "<ul><li>當您的訂單順利出貨，您會收到一封含有包裹追蹤編碼的電子信件。</li><li>到貨時間可能因氣候、季節活動以及國定假日出現延遲，敬請見諒。</li></ul>"
+          }
+        },
+        "question_pmM7dB": {
+          "type": "question",
+          "settings": {
+            "question": "可以取消或更改我的訂單嗎？",
+            "answer": "<ul><li>成功下訂後，您可以取消或更改訂單信息，請立即聯絡我們線上客服。您也可以通過email <a href=\"mailto:contact@awnl.tw\" target=\"_blank\" title=\"AWNL瑞典輕珠寶 台灣客服\">contact@awnl.tw</a>或<a href=\"https://lin.ee/7e2zh8U\" target=\"_blank\" title=\"AWNL Taiwan LINE\">LINE@ </a>與我們聯絡。</li><li>一旦訂單從倉庫包裝出貨完成，您將無法取消或更改訂單資料信息。您可申請進入退換貨流程。</li></ul>"
+          }
+        },
+        "question_iN4Lcm": {
+          "type": "question",
+          "settings": {
+            "question": "為什麼我的訂單還沒送達？",
+            "answer": "<ul><li>若您的訂單在收到出貨通知email的５天後仍沒有收到，請聯絡我們。</li><li>除因假期、節日、天氣，或台灣倉庫沒有現貨需要從海外倉庫調貨情況以外，您的訂單會在1-3個工作天內送達。</li></ul>"
+          }
+        },
+        "question_DpU9eh": {
+          "type": "question",
+          "settings": {
+            "question": "為什麼我會收到需要實名認證的訊息？通關申報是什麼？",
+            "answer": "<ul><li>根據台灣海關的規定，自2022年7月1日起，所有入境台灣的包裹都需要進行實名認證。</li><li>收到需要實名認證的訊息，是因為您的訂單是從國際海外倉庫出貨，需要下載「易利委 EAZY WAY」APP通過台灣海關的清關程序。</li><li>實名認證是指收件人必須提供自己的真實姓名、身份證號碼、聯繫方式等資訊，以便海關進行查驗。如果不進行實名認證，包裹將無法清關，也無法送到收件人手中。</li><li>通關申報是指報關行向海關申報貨物的相關資訊，以便海關進行審核和放行。如果包裹涉及關稅，需要在APP中支付關稅。支付成功後，報關行會向海關申請放行包裹，物流公司會開始進行配送。</li></ul>"
+          }
+        },
+        "category_LMfeCH": {
+          "type": "category",
+          "settings": {
+            "title": "售後相關",
+            "icon": "none",
+            "icon_width": 16
+          }
+        },
+        "question_6GQ4tf": {
+          "type": "question",
+          "settings": {
+            "question": "如何保養我的首飾？",
+            "answer": "<ul><li>天然石、隕石以及純銀首飾的清潔方式都有些許不同。</li><li>詳細清潔方式請閱<a href=\"https://awnl.tw/pages/jewelry-care-and-clean\" target=\"_blank\" title=\"飾品保養\">飾品清潔保養</a>。</li></ul>"
+          }
+        },
+        "question_ckVVDD": {
+          "type": "question",
+          "settings": {
+            "question": "新買的天然石首飾需要淨化、消磁或者充能嗎？",
+            "answer": "<ul><li>關於水晶的保養，我們建議使用消磁石來幫助水晶回復至純淨狀態。消磁石能有效清除水晶內的殘留能量記憶，並與您的磁場達到更好的契合，還能持續補充能量，驅散負能量。</li><li>每種天然石因其特性，淨化消磁方式都有所不同。普遍的方式有日曬、海鹽、月光浴。</li><li>我們提供相關的消磁石周邊商品以及充能淨化的方法。</li></ul><p>詳情請閱<a href=\"https://awnl.tw/collections/crystal-natural-stone-healing-charging-items\" target=\"_blank\" title=\"https://awnl.tw/collections/crystal-natural-stone-healing-charging-items\">天然石淨化、消磁＆充能</a>。</p>"
+          }
+        },
+        "question_gedEin": {
+          "type": "question",
+          "settings": {
+            "question": "為什麼我購買的天然石顏色跟圖片的不一樣？",
+            "answer": "<p>我們採用嚴選的天然珠寶，因純天然形成，無法保證每一個寶石的色澤與花紋和商品圖片一致。詳細說明請閱<a href=\"https://awnl.tw/pages/natural-stone-disclaimer\" target=\"_blank\" title=\"天然石特別說明\">天然石特性說明</a>。</p>"
+          }
+        },
+        "question_fypxc6": {
+          "type": "question",
+          "settings": {
+            "question": "彈力線手鍊斷掉/鬆掉怎麼辦？",
+            "answer": "<ul><li>保固內非人為損壞，我們提供免費售後服務。超過保固期限，請聯絡客服專員。詳情請見<a href=\"https://awnl.tw/pages/warranty-repair-service\" target=\"_blank\" title=\"保修服務\">保修服務</a>說明。</li><li>也可以自己購買彈力線替換，詳細請見<a href=\"https://awnl.tw/blogs/the-journal/stretch-cord-bracelet-resize-repair-guide\" target=\"_blank\" title=\"DIY 指南：如何調整和更換手鍊彈力線\">DIY彈力線更換調整教學</a>說明。</li></ul>"
+          }
+        },
+        "question_V8d3w3": {
+          "type": "question",
+          "settings": {
+            "question": "如何退換商品？",
+            "answer": "<ul><li>如果您想更換商品或是退貨，請【<a href=\"https://awnl.tw/pages/after-sales-form\" title=\"https://awnl.tw/pages/after-sales-form\">填寫自助售後預約表單</a>】（填寫時間大約為3分鐘）；或者您可以使用Email/inbox即時通訊等<a href=\"https://awnl.tw/pages/contact-us\" target=\"_blank\" title=\"contact-us\">聯絡客服專員</a>，並提供您的訂單號碼以及1-2張商品照片。</li><li>瞭解更多資訊，請訪問<a href=\"https://awnl.tw/pages/return-and-refund\" title=\"https://awnl.tw/pages/return-and-refund\">退換政策</a>。</li></ul>"
+          }
+        },
+        "question_GkhPG4": {
+          "type": "question",
+          "settings": {
+            "question": "退款政策是什麼？",
+            "answer": "<ul><li>我們提供\"<strong>30天不滿意退貨保證</strong>\"，如果您對所購買的商品不滿意，請先<a href=\"https://awnl.tw/pages/contact-us\">連絡我們</a>您可以申請退款退貨（如商品已寄出，退款金額將扣除運費）。</li><li>瞭解更多資訊，請訪問<a href=\"https://awnl.tw/pages/return-and-refund\" title=\"https://awnl.tw/pages/return-and-refund\">退換政策</a>。</li></ul>"
+          }
+        },
+        "question_qy8jyE": {
+          "type": "question",
+          "settings": {
+            "question": "多久能收到退款？",
+            "answer": "<ul><li>我們收到並檢查退回的商品沒有損壞後，我們將進行退款手續，您支付的金額會在1-5個工作日內退回至您原始的付款方式（退回金額將扣除運費）。</li><li>瞭解更多資訊，請訪問<a href=\"https://awnl.tw/pages/return-and-refund\" title=\"https://awnl.tw/pages/return-and-refund\">退換政策</a>。</li></ul>"
+          }
+        },
+        "question_fPh8ck": {
+          "type": "question",
+          "settings": {
+            "question": "如何申請維修？",
+            "answer": "<ul><li>我們對自購買60天/90天內的商品提供免費維修服务。</li><li>凡是AWNL的正品，我們均提供保固期外的維修服務。</li><li>但因人為因素損壞的情况，將另收維修費用。</li><li>如需申請維修，請先填寫【<a href=\"https://awnl.tw/pages/after-sales-form\" title=\"https://awnl.tw/pages/after-sales-form\">售後服務預約表單</a>】；或者您可以寄email至<a href=\"mailto:contact@awnl.tw\" target=\"_blank\" title=\"AWNL瑞典輕珠寶 台灣客服\">contact@awnl.tw</a>或<a href=\"https://lin.ee/7e2zh8U\" target=\"_blank\" title=\"AWNL Taiwan LINE\"> LINE@ </a>等即時通訊聯絡客服專員，我們會進一步協助您。 </li></ul>"
+          }
+        },
+        "category_eDhAT4": {
+          "type": "category",
+          "settings": {
+            "title": "賬戶、安全相關",
+            "icon": "none",
+            "icon_width": 16
+          }
+        },
+        "question_h48Akn": {
+          "type": "question",
+          "settings": {
+            "question": "為什麼沒辦法登入自己的帳號？",
+            "answer": "<p>您需要在<a href=\"https://awnl.tw/account/login\">此頁面</a>點選「創建帳號」，填寫您的姓名、電子信箱及密碼後，點選「創建」。您會收到一封「顧客帳號確認」的電子郵件，說明您已成功啟用帳號。當您需要再次登入時，輸入您的電子信箱與密碼即可。如您仍登入不成功，請聯繫我們。</p>"
+          }
+        },
+        "question_AyNBqk": {
+          "type": "question",
+          "settings": {
+            "question": "是否有信用卡盜刷的風險？",
+            "answer": "<ul><li>網站使用Shopify支付結帳技術，是全球最安全穩定的結帳系統之一。</li><li>請您放心購物。您的資訊不會外流，我們也無法看見您的完整信用卡資訊。</li></ul>"
+          }
+        },
+        "question_axwkKB": {
+          "type": "question",
+          "settings": {
+            "question": "我的個人資訊是否安全？",
+            "answer": "<p>我們非常重視個人數據隱私和安​​全，絕不會與任何第三方共享您的個人信息。您可以相信您的信息在我們這裡是安全的。</p>"
+          }
+        }
+      },
+      "block_order": [
+        "category_HiJdJE",
+        "question_FkN4g6",
+        "question_AXxKRD",
+        "question_hCGBJJ",
+        "question_eNDDTn",
+        "question_YeJbd8",
+        "question_RhM7nk",
+        "question_UzdRME",
+        "question_L63Gaq",
+        "question_pmM7dB",
+        "question_iN4Lcm",
+        "question_DpU9eh",
+        "category_LMfeCH",
+        "question_6GQ4tf",
+        "question_ckVVDD",
+        "question_gedEin",
+        "question_fypxc6",
+        "question_V8d3w3",
+        "question_GkhPG4",
+        "question_qy8jyE",
+        "question_fPh8ck",
+        "category_eDhAT4",
+        "question_h48Akn",
+        "question_AyNBqk",
+        "question_axwkKB"
+      ],
+      "settings": {
+        "color_scheme": "scheme-2",
+        "separate_section_with_border": false,
+        "show_categories": true,
+        "subheading": "FAQS",
+        "title": "常見問題",
+        "content": ""
+      }
+    }
+  },
+  "order": [
+    "custom_liquid_KER9xT",
+    "main",
+    "custom_liquid_tizwF3",
+    "faq_XUhPXk"
+  ]
+}

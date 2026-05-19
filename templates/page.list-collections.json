@@ -1,0 +1,397 @@
+/*
+* ------------------------------------------------------------
+* IMPORTANT: The contents of this file are auto-generated.
+*
+* This file may be updated by the Shopify admin theme editor
+* or related systems. Please exercise caution as any changes
+* made to this file may be overwritten.
+* ------------------------------------------------------------
+*/
+{
+  "sections": {
+    "main": {
+      "type": "main-list-collections",
+      "disabled": true,
+      "settings": {
+        "color_scheme": "scheme-2",
+        "show_title": false,
+        "collections": [
+
+        ],
+        "collections_per_row_mobile": "2",
+        "collections_per_row_desktop": 4,
+        "image_size": "auto",
+        "content_position": "place-self-end-center text-center",
+        "text_color": "#ffffff",
+        "overlay_color": "#000000",
+        "overlay_opacity": 30
+      }
+    },
+    "collection_list_GVpJAk": {
+      "type": "collection-list",
+      "blocks": {
+        "collection_bmMqtP": {
+          "type": "collection",
+          "settings": {
+            "color_scheme": "scheme-2",
+            "collection": "viking-collection",
+            "expand_collection": false,
+            "content_position": "place-self-center text-center",
+            "subheading": "",
+            "title": "{{ block.settings.collection.title }}",
+            "button_text": "",
+            "button_link": "",
+            "overlay_color": "#000000",
+            "overlay_opacity": 0
+          }
+        },
+        "collection_EzhF63": {
+          "type": "collection",
+          "settings": {
+            "color_scheme": "scheme-2",
+            "collection": "nuummite",
+            "expand_collection": false,
+            "content_position": "place-self-center text-center",
+            "subheading": "",
+            "title": "{{ block.settings.collection.title }}",
+            "button_text": "",
+            "button_link": "",
+            "overlay_color": "#000000",
+            "overlay_opacity": 0
+          }
+        },
+        "collection_P9aFE9": {
+          "type": "collection",
+          "settings": {
+            "color_scheme": "scheme-2",
+            "collection": "runes",
+            "expand_collection": false,
+            "content_position": "place-self-center text-center",
+            "subheading": "",
+            "title": "{{ block.settings.collection.title }}",
+            "button_text": "",
+            "button_link": "",
+            "overlay_color": "#000000",
+            "overlay_opacity": 0
+          }
+        },
+        "collection_yRFCnE": {
+          "type": "collection",
+          "settings": {
+            "color_scheme": "scheme-2",
+            "collection": "atlantis",
+            "expand_collection": false,
+            "content_position": "place-self-center text-center",
+            "subheading": "",
+            "title": "{{ block.settings.collection.title }}",
+            "button_text": "",
+            "button_link": "",
+            "overlay_color": "#000000",
+            "overlay_opacity": 0
+          }
+        },
+        "collection_3J4TqF": {
+          "type": "collection",
+          "settings": {
+            "color_scheme": "scheme-2",
+            "collection": "zodiac",
+            "expand_collection": false,
+            "content_position": "place-self-center text-center",
+            "subheading": "",
+            "title": "{{ block.settings.collection.title }}",
+            "button_text": "",
+            "button_link": "",
+            "overlay_color": "#000000",
+            "overlay_opacity": 0
+          }
+        },
+        "collection_JhpPTP": {
+          "type": "collection",
+          "settings": {
+            "color_scheme": "scheme-2",
+            "collection": "space-odysssey",
+            "expand_collection": false,
+            "content_position": "place-self-center text-center",
+            "subheading": "",
+            "title": "{{ block.settings.collection.title }}",
+            "button_text": "",
+            "button_link": "",
+            "overlay_color": "#000000",
+            "overlay_opacity": 0
+          }
+        },
+        "collection_8fjYH6": {
+          "type": "collection",
+          "settings": {
+            "color_scheme": "scheme-2",
+            "collection": "beads-and-links",
+            "expand_collection": false,
+            "content_position": "place-self-center text-center",
+            "subheading": "",
+            "title": "{{ block.settings.collection.title }}",
+            "button_text": "",
+            "button_link": "",
+            "overlay_color": "#000000",
+            "overlay_opacity": 0
+          }
+        },
+        "collection_63Mb6i": {
+          "type": "collection",
+          "settings": {
+            "color_scheme": "scheme-2",
+            "collection": "faithful-guard",
+            "expand_collection": false,
+            "content_position": "place-self-center text-center",
+            "subheading": "",
+            "title": "{{ block.settings.collection.title }}",
+            "button_text": "",
+            "button_link": "",
+            "overlay_color": "#000000",
+            "overlay_opacity": 0
+          }
+        },
+        "collection_VDnmYM": {
+          "type": "collection",
+          "settings": {
+            "color_scheme": "scheme-2",
+            "collection": "classic-meteorite-fusion",
+            "expand_collection": false,
+            "content_position": "place-self-center text-center",
+            "subheading": "",
+            "title": "{{ block.settings.collection.title }}",
+            "button_text": "",
+            "button_link": "",
+            "overlay_color": "#000000",
+            "overlay_opacity": 0
+          }
+        },
+        "collection_iPT36f": {
+          "type": "collection",
+          "settings": {
+            "color_scheme": "scheme-2",
+            "collection": "astral-conquerors",
+            "expand_collection": false,
+            "content_position": "place-self-center text-center",
+            "subheading": "",
+            "title": "{{ block.settings.collection.title }}",
+            "button_text": "",
+            "button_link": "",
+            "overlay_color": "#000000",
+            "overlay_opacity": 0
+          }
+        },
+        "collection_m4QT6w": {
+          "type": "collection",
+          "settings": {
+            "color_scheme": "scheme-2",
+            "collection": "starry-night",
+            "expand_collection": false,
+            "content_position": "place-self-center text-center",
+            "subheading": "",
+            "title": "{{ block.settings.collection.title }}",
+            "button_text": "",
+            "button_link": "",
+            "overlay_color": "#000000",
+            "overlay_opacity": 0
+          }
+        },
+        "collection_EFQ3gc": {
+          "type": "collection",
+          "settings": {
+            "color_scheme": "scheme-2",
+            "collection": "pyramid-guardians",
+            "expand_collection": false,
+            "content_position": "place-self-center text-center",
+            "subheading": "",
+            "title": "{{ block.settings.collection.title }}",
+            "button_text": "",
+            "button_link": "",
+            "overlay_color": "#000000",
+            "overlay_opacity": 0
+          }
+        },
+        "collection_jGGJ6w": {
+          "type": "collection",
+          "settings": {
+            "color_scheme": "scheme-2",
+            "collection": "poseidons",
+            "expand_collection": false,
+            "content_position": "place-self-center text-center",
+            "subheading": "",
+            "title": "{{ block.settings.collection.title }}",
+            "button_text": "",
+            "button_link": "",
+            "overlay_color": "#000000",
+            "overlay_opacity": 0
+          }
+        },
+        "collection_mRNrJM": {
+          "type": "collection",
+          "settings": {
+            "color_scheme": "scheme-2",
+            "collection": "interstellar",
+            "expand_collection": false,
+            "content_position": "place-self-center text-center",
+            "subheading": "",
+            "title": "{{ block.settings.collection.title }}",
+            "button_text": "",
+            "button_link": "",
+            "overlay_color": "#000000",
+            "overlay_opacity": 0
+          }
+        },
+        "collection_yygRGp": {
+          "type": "collection",
+          "settings": {
+            "color_scheme": "scheme-2",
+            "collection": "vagabond-collection",
+            "expand_collection": false,
+            "content_position": "place-self-center text-center",
+            "subheading": "",
+            "title": "{{ block.settings.collection.title }}",
+            "button_text": "",
+            "button_link": "",
+            "overlay_color": "#000000",
+            "overlay_opacity": 0
+          }
+        },
+        "collection_jGe6ej": {
+          "type": "collection",
+          "settings": {
+            "color_scheme": "scheme-2",
+            "collection": "royal-tiger-roar",
+            "expand_collection": false,
+            "content_position": "place-self-center text-center",
+            "subheading": "",
+            "title": "{{ block.settings.collection.title }}",
+            "button_text": "",
+            "button_link": "",
+            "overlay_color": "#000000",
+            "overlay_opacity": 0
+          }
+        },
+        "collection_Yz7xME": {
+          "type": "collection",
+          "settings": {
+            "color_scheme": "scheme-2",
+            "collection": "bodhi-essence",
+            "expand_collection": false,
+            "content_position": "place-self-center text-center",
+            "subheading": "",
+            "title": "{{ block.settings.collection.title }}",
+            "button_text": "",
+            "button_link": "",
+            "overlay_color": "#000000",
+            "overlay_opacity": 0
+          }
+        },
+        "collection_zrUQXR": {
+          "type": "collection",
+          "settings": {
+            "color_scheme": "scheme-2",
+            "collection": "link-chain-collection",
+            "expand_collection": false,
+            "content_position": "place-self-center text-center",
+            "subheading": "",
+            "title": "{{ block.settings.collection.title }}",
+            "button_text": "",
+            "button_link": "",
+            "overlay_color": "#000000",
+            "overlay_opacity": 0
+          }
+        },
+        "collection_Gr6y6z": {
+          "type": "collection",
+          "settings": {
+            "color_scheme": "scheme-2",
+            "collection": "scandinavian-garden-dreaming-within-blossoms",
+            "expand_collection": false,
+            "content_position": "place-self-center text-center",
+            "subheading": "",
+            "title": "{{ block.settings.collection.title }}",
+            "button_text": "",
+            "button_link": "",
+            "overlay_color": "#000000",
+            "overlay_opacity": 0
+          }
+        },
+        "collection_QxG6eY": {
+          "type": "collection",
+          "settings": {
+            "color_scheme": "scheme-2",
+            "collection": "birthstone",
+            "expand_collection": false,
+            "content_position": "place-self-center text-center",
+            "subheading": "",
+            "title": "{{ block.settings.collection.title }}",
+            "button_text": "",
+            "button_link": "",
+            "overlay_color": "#000000",
+            "overlay_opacity": 0
+          }
+        },
+        "collection_BpQqzA": {
+          "type": "collection",
+          "settings": {
+            "color_scheme": "scheme-2",
+            "collection": "dala-horse-jewelry",
+            "expand_collection": false,
+            "content_position": "place-self-center text-center",
+            "subheading": "",
+            "title": "{{ block.settings.collection.title }}",
+            "button_text": "",
+            "button_link": "",
+            "overlay_color": "#000000",
+            "overlay_opacity": 0
+          }
+        }
+      },
+      "block_order": [
+        "collection_bmMqtP",
+        "collection_EzhF63",
+        "collection_P9aFE9",
+        "collection_yRFCnE",
+        "collection_3J4TqF",
+        "collection_JhpPTP",
+        "collection_8fjYH6",
+        "collection_63Mb6i",
+        "collection_VDnmYM",
+        "collection_iPT36f",
+        "collection_m4QT6w",
+        "collection_EFQ3gc",
+        "collection_jGGJ6w",
+        "collection_mRNrJM",
+        "collection_yygRGp",
+        "collection_jGe6ej",
+        "collection_Yz7xME",
+        "collection_zrUQXR",
+        "collection_Gr6y6z",
+        "collection_QxG6eY",
+        "collection_BpQqzA"
+      ],
+      "custom_css": [
+        ".collection-card img {width: 100%; height: 100%; aspect-ratio: 6.8 / 3.2; object-fit: cover; object-position: center; border-radius: 10px;}",
+        ".content-over-media,.content-over-media:hover {box-shadow: 0 4px 10px rgba(0, 0, 0, 0.12), 0 0 6px rgba(0, 0, 0, 0.1); border-radius: 10px; transition: box-shadow 0.3s ease-in-out;}",
+        "@media (min-width: 768px) {.content-over-media:hover {box-shadow: 0 4px 10px rgba(0, 0, 0, 0.25), 0 0 8px rgba(0, 0, 0, 0.2); }}",
+        ".collection-card {gap: 0.2rem;}",
+        ".button {line-height: 1.3; background: transparent; border: none; font-size: 16px;}"
+      ],
+      "settings": {
+        "color_scheme": "scheme-2",
+        "separate_section_with_border": true,
+        "image_size": "auto",
+        "show_text_outside": true,
+        "space_items": true,
+        "stack_collections": true,
+        "collections_per_row_desktop": 3,
+        "subheading": "",
+        "title": "",
+        "content": ""
+      }
+    }
+  },
+  "order": [
+    "main",
+    "collection_list_GVpJAk"
+  ]
+}

@@ -1,0 +1,151 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "image_with_text_overlay_U4Xc8J": {
+      "type": "image-with-text-overlay",
+      "blocks": {
+        "heading_HqGnNq": {
+          "type": "heading",
+          "settings": {
+            "text": "能量晶石目錄",
+            "heading_tag": "h2"
+          }
+        },
+        "richtext_TAwJj6": {
+          "type": "richtext",
+          "settings": {
+            "content": "<p>為您介紹多款蘊藏自然力量與美麗的天然石。<br/>能量石自古以來就被認為能癒合身心並提升能量。每一顆石頭都有其獨特的特性與魅力。</p>"
+          }
+        },
+        "button_ftawfA": {
+          "type": "button",
+          "settings": {
+            "style": "outline",
+            "text": "晶石能量 靈感空間",
+            "url": "https://awnl.tw/blogs/the-journal/tagged/%E6%99%B6%E7%9F%B3%E8%83%BD%E9%87%8F",
+            "background": "",
+            "text_color": "rgba(0,0,0,0)"
+          }
+        }
+      },
+      "block_order": [
+        "heading_HqGnNq",
+        "richtext_TAwJj6",
+        "button_ftawfA"
+      ],
+      "settings": {
+        "color_scheme": "scheme-4",
+        "image_size": "xs",
+        "image": "shopify://shop_images/gemstone-jewelry-collection-banner-pc.jpg",
+        "allow_transparent_header": false,
+        "reveal_on_scroll": true,
+        "remove_vertical_spacing": true,
+        "content_width": "xs",
+        "mobile_text_position": "place-self-center text-center",
+        "desktop_text_position": "sm:place-self-end-center sm:text-center",
+        "overlay_color": "#000000",
+        "overlay_opacity": 39
+      }
+    },
+    "custom_liquid_KER9xT": {
+      "type": "custom-liquid",
+      "custom_css": [
+        "div.text-center {margin-top: -40px; margin-bottom: -40px;}"
+      ],
+      "settings": {
+        "color_scheme": "scheme-2",
+        "separate_section_with_border": false,
+        "remove_vertical_spacing": false,
+        "remove_horizontal_spacing": false,
+        "liquid": "<style>\n  .custom-menu {\n    display: flex;\n    flex-wrap: wrap;\n    justify-content: center;\n    padding: 0;\n    margin-left:auto;\n    margin-right:auto;\n    list-style: none;\n    max-width:800px;\n  }\n  .custom-menu li {\n    flex-basis: 25%;\n    margin-bottom: 5px;\n  }\n  .custom-menu a {\n    display: block;\n    text-align: center;\n    text-decoration: none;\n    color: #1C1C1C; \n    padding: 12px;\n    margin: 5px;\n    background-color: #e5e6eb;\n    border-radius: 5px;\n    transition: all 0.3s ease;\n    font-size: 16px;\n  }\n  .custom-menu a.link-2 {\n    font-weight: bold;\n    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);\n    background-color: \t#d2d4dc;\n  }\n  .custom-menu a:not(.link-2) {\n    color: #9A9A9A; \n  }\n  .custom-menu a:hover {\n    color: #1C1C1C;\n    background-color: \t#d2d4dc;\n    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);\n    font-weight:bold;\n  }\n  @media (max-width: 768px) {\n    .custom-menu li {\n      flex-basis: 50%;\n    }\n    .custom-menu a { \n      padding: 10px;\n      margin: 2px; \n      border-radius: 5px;\n      font-size: 12px;\n    }\n  }\n   h1{\nmargin-bottom:30px;\nfont-size:26px;}\n@media (max-width: 768px){ h1{\nmargin-bottom:18px;\nfont-size:20px;}}\n\n</style>\n<h2>BIRTHSTONE</h2>\n<h1>依誕生石搜尋</h1>\n<ul class=\"custom-menu\">\n  <li><a href=\"https://www.awnl.tw/pages/choose-stone-by-name\" class=\"link-1\">依名稱搜尋\n</a></li>\n  <li><a href=\"https://www.awnl.tw/pages/choose-stone-by-birth\" class=\"link-2\">依誕生石搜尋</a></li>\n  <li><a href=\"https://www.awnl.tw/pages/choose-stone-by-zodiac\" class=\"link-3\">依星座搜尋</a></li>\n  <li><a href=\"https://www.awnl.tw/pages/choose-stone-by-wish\" class=\"link-4\">依願望搜尋</a></li>\n  <li><a href=\"https://www.awnl.tw/pages/choose-stone-by-number\" class=\"link-5\">依生命靈數搜尋</a></li>\n  <li><a href=\"https://www.awnl.tw/pages/choose-stone-by-elements\" class=\"link-6\">依五行搜尋</a></li>\n  <li><a href=\"https://www.awnl.tw/pages/choose-stone-by-chakra\" class=\"link-7\">依脈輪搜尋</a></li>\n  <li><a href=\"https://www.awnl.tw/pages/choose-stone-by-color\" class=\"link-8\">依顏色搜尋\n</a></li>\n</ul>",
+        "text_alignment": "center"
+      }
+    },
+    "rich_text_AwLzEA": {
+      "type": "rich-text",
+      "blocks": {
+        "richtext_hGXVig": {
+          "type": "richtext",
+          "settings": {
+            "content": "<p>誕生石的概念可追溯至古代，各大文明將寶石與月亮或星座相聯繫。誕生石不僅是美麗的飾品，還被認為具有象徵意義與神秘的力量。佩戴屬於自己的誕生石，能夠增強個人特質，平衡內在的能量，並帶來保護與幸運。</p>"
+          }
+        }
+      },
+      "block_order": [
+        "richtext_hGXVig"
+      ],
+      "settings": {
+        "color_scheme": "scheme-2",
+        "separate_section_with_border": false,
+        "content_width": "xs",
+        "text_position": "center",
+        "remove_vertical_spacing": true
+      }
+    },
+    "custom_liquid_fHcyFF": {
+      "type": "custom-liquid",
+      "custom_css": [
+        "@media (min-width: 789px) {div.text-center {max-width: 1100px; margin-left: auto; margin-right: auto; }}"
+      ],
+      "settings": {
+        "color_scheme": "scheme-2",
+        "separate_section_with_border": false,
+        "remove_vertical_spacing": false,
+        "remove_horizontal_spacing": false,
+        "liquid": "<style>\n  /* Container for the tabs */\n  .tab-container {\n    max-width: 1000px;\n    margin: 0 auto;\n    display: flex;\n    flex-wrap: wrap;\n    justify-content: center;\n   color:#b1995f;\n    border-bottom: 2px solid \t#b1995f;\n    text-align: center;\n  }\n  /* Individual tabs */\n  .tab {\n    font-size: 14px;\n    padding: 5px 25px;\n    cursor: pointer;\n    transition: font-weight 0.3s;\n    border-bottom: 2px solid #fff;}\n\n  .tab:hover,\n  .tab.active {\n    font-weight: bold;\n    border-bottom: 2px solid \t#9d8854;\n   color:#76663f;\n  }\n\n  /* Content wrapper for each tab */\n  .tab-content-wrapper {\n    width: 1200px;\n    margin: 0; auto;\n    overflow: hidden; \n  }\n\n  /* Content for each tab */\n  .tab-content {\n    display: none;\n    width: 100%; /* Ensure the tab content does not exceed the wrapper width */\n  }\n\n  .tab-content.active {\n    display: block;\n  }\n\n  .tab-content h2 {\n    font-size: 18px;\n    text-align: center;\n    margin: 50px;\n  }\n#description {\n    color: #404040;\n  margin-top:-30px;\nmax-width:600px;\nmargin-left:auto;\nmargin-right:auto;}\n\n  .wrap-column {\n    display: flex;\n    flex-wrap: wrap;\n    gap: 10px;\n    justify-content: flex-start;\n  }\n\n  .wrap-column .column {\n    flex: 0 0 calc(20% - 15px); /* 5 columns in a row for desktop */\n    text-align: center;\n  }\n\n  .wrap-column .column img {\n    width: 100%;\n    border-radius: 10px;\n  }\n\n  .wrap-column .column h4 {\n    font-size: 14px;\n    font-weight: bold;\n  }\n\n  .wrap-column .column p {\n    font-size: 12px;\n  }\n  /* Media query for mobile devices */\n  @media (max-width: 768px) {\n    .tab-content-wrapper {\n      width: 100%;\n      padding: 0 10px; /* Add padding to prevent content touching the edges */\n    }\n    .tab {\n      padding: 5px 12px;\n    }\n    .tab-container{ \n    border: none;\n\n                   justify-content:center;}\n    .wrap-column .column {\n      flex: 0 0 calc(50% - 10px); /* 2 columns in a row for mobile */\n    }\n  }\n</style>\n\n<div class=\"tab-container\">\n  <div class=\"tab active\" data-tab=\"tab1\">1月</div>\n  <div class=\"tab\" data-tab=\"tab2\">2月</div>\n  <div class=\"tab\" data-tab=\"tab3\">3月</div>\n  <div class=\"tab\" data-tab=\"tab4\">4月</div>\n  <div class=\"tab\" data-tab=\"tab5\">5月</div>\n  <div class=\"tab\" data-tab=\"tab6\">6月</div>\n  <div class=\"tab\" data-tab=\"tab7\">7月</div>\n  <div class=\"tab\" data-tab=\"tab8\">8月</div>\n  <div class=\"tab\" data-tab=\"tab9\">9月</div>\n  <div class=\"tab\" data-tab=\"tab10\">10月</div>\n  <div class=\"tab\" data-tab=\"tab11\">11月</div>\n  <div class=\"tab\" data-tab=\"tab12\">12月</div>\n</div>\n\n<div id=\"tab1\" class=\"tab-content active\">\n  <h2 >1月誕生石</h2>\n  <p id=\"description\">擁有決心與勇氣的1月出生者，佩戴紅石榴石可幫助恢復活力與精神的重生。</p>\n  <div class=\"wrap-column\">\n    <div class=\"column\">\n      <a href=\"https://awnl.tw/collections/pyrope-garnet\" class=\"column-link\">\n        <img src=\"https://cdn.shopify.com/s/files/1/0586/4026/9492/files/Pyrope_Garnet.jpg?v=1718848487\" alt=\"紅石榴石\">\n        <h4>紅石榴石</h4>\n        <p>Pyrope Garnet | 堅定的愛、信仰</p>\n      </a>\n    </div>  \n  </div>\n</div>\n\n\n<div id=\"tab2\" class=\"tab-content\">\n  <h2>2月誕生石</h2>\n  <p id=\"description\">富有創造力的2月出生者，佩戴紫水晶可幫助平靜心境，並保持精神的明晰。</p>\n  <div class=\"wrap-column\">\n    <div class=\"column\">\n      <a href=\"https://awnl.tw/collections/amethyst-jewelry\" class=\"column-link\">\n        <img src=\"https://cdn.shopify.com/s/files/1/0586/4026/9492/files/Brazilian_Amethyst.jpg?v=1710145341\" alt=\"紫水晶\">\n        <h4>紫水晶</h4>\n        <p>Amethyst | 靈性之石</p>\n      </a>\n    </div>\n  </div>\n</div>\n\n<div id=\"tab3\" class=\"tab-content\">\n  <h2>3月誕生石</h2>\n  <p id=\"description\">性格友善的3月出生者，佩戴海藍寶能獲得自信與安寧。當感到脆弱時，則可透過佩戴血石來尋求力量與保護。</p>\n  <div class=\"wrap-column\">\n<div class=\"column\">\n    <a href=\"https://awnl.tw/collections/aquamarine-jewelry\" class=\"column-link\">\n        <img src=\"https://cdn.shopify.com/s/files/1/0586/4026/9492/files/Brazilian_Aquamarine.jpg?v=1710141793\" alt=\"海藍寶石\">\n        <h4>海藍寶石</h4>\n        <p>Aquamarine | 美人魚的寶藏</p>\n    </a>\n</div>\n    <div class=\"column\">\n      <a href=\"https://awnl.tw/collections/bloodstone-jasper-jewelry\" class=\"column-link\">\n        <img src=\"https://cdn.shopify.com/s/files/1/0586/4026/9492/files/Nepalese_Bloodstone.jpg?v=1710207821\" alt=\"血石碧玉\">\n        <h4>血石碧玉</h4>\n        <p>Bloodstone | 戰士之石</p>\n      </a>\n    </div>\n  </div>\n</div>\n\n\n<div id=\"tab4\" class=\"tab-content\">\n  <h2>4月誕生石</h2>\n  <p id=\"description\">現實穩重的4月出生者，佩戴白水晶可幫助整理思緒，並作出精確的決策。在面對長期挑戰時，佩戴莫桑石能增強耐力與決心。佩戴摩根石則可提升愛與慈悲的能量，並帶來內心的溫暖。</p>\n  <div class=\"wrap-column\">\n<div class=\"column\">\n      <a href=\"https://awnl.tw/collections/clear-crystal-jewelry\" class=\"column-link\">\n        <img src=\"https://cdn.shopify.com/s/files/1/0586/4026/9492/files/Brazilian_Clear_Quartz.jpg?v=1710136320\" alt=\"白水晶\">\n        <h4>白水晶</h4>\n        <p>Clear Quartz | 治癒大師</p>\n      </a>\n    </div>\n<div class=\"column\">\n    <a href=\"https://awnl.tw/collections/moissanite\" class=\"column-link\">\n        <img src=\"https://cdn.shopify.com/s/files/1/0586/4026/9492/files/Moissanite.jpg?v=1710211140\" alt=\"莫桑石\">\n        <h4>莫桑石</h4>\n        <p>Moissanite | 堅定的選擇、永恆的承諾</p>\n    </a>\n</div>\n<div class=\"column\">\n    <a href=\"https://awnl.tw/collections/morganite\" class=\"column-link\">\n        <img src=\"https://cdn.shopify.com/s/files/1/0586/4026/9492/files/Brazilian_Morganite.jpg?v=1710140738\" alt=\"摩根石\">\n        <h4>摩根石</h4>\n        <p>Morganite | 神聖的愛</p>\n    </a>\n</div>\n  </div>\n</div>\n\n\n<div id=\"tab5\" class=\"tab-content\">\n  <h2>5月誕生石</h2>\n  <p id=\"description\">聰明的5月出生者，佩戴透輝石可提升洞察力，並達到理性與直覺的平衡。</p>\n  <div class=\"wrap-column\">\n    <div class=\"column\">\n      <a href=\"https://awnl.tw/collections/diopside\" class=\"column-link\">\n        <img src=\"https://cdn.shopify.com/s/files/1/0586/4026/9492/files/Diopside.jpg?v=1710211601\" alt=\"透輝石\">\n        <h4>透輝石</h4>\n        <p>Diopside | 成長加速器</p>\n      </a>\n    </div>\n<div class=\"column\">\n    <a href=\"https://awnl.tw/collections/fuchsite\" class=\"column-link\">\n        <img src=\"https://cdn.shopify.com/s/files/1/0586/4026/9492/files/Fuchsite.jpg?v=1737191919\" alt=\"祖母晶\">\n        <h4>祖母晶</h4>\n        <p>Fuchsite | 綠色天使石</p>\n    </a>\n</div>\n  </div>\n</div>\n\n\n<div id=\"tab6\" class=\"tab-content\">\n  <h2>6月誕生石</h2>\n  <p id=\"description\">情感豐富的6月出生者，佩戴藍月光石可強化直覺與靈性，並幫助平衡情緒。佩戴珍珠則能強化純粹與忠誠，幫助維持信任關係。</p>\n  <div class=\"wrap-column\">\n<div class=\"column\">\n    <a href=\"https://awnl.tw/collections/moonstone\" class=\"column-link\">\n        <img src=\"https://cdn.shopify.com/s/files/1/0586/4026/9492/files/Sri_Lankan_Blue_Moonstone.jpg?v=1710145738\" alt=\"藍月光石\">\n        <h4>藍月光石</h4>\n        <p>Blue Moonstone | 女性能量之石</p>\n    </a>\n</div>\n    <div class=\"column\">\n      <a href=\"https://awnl.tw/collections/pearl\" class=\"column-link\">\n        <img src=\"https://cdn.shopify.com/s/files/1/0586/4026/9492/files/Australian_Pearl.jpg?v=1710143317\" alt=\"珍珠\">\n        <h4>珍珠</h4>\n        <p>Pearl | 水中的寶石</p>\n      </a>\n    </div>\n  </div>\n</div>\n\n\n<div id=\"tab7\" class=\"tab-content\">\n  <h2>7月誕生石</h2>\n  <p id=\"description\">充滿激情的7月出生者，佩戴黑瑪瑙可增強力量，並獲得精神上的保護。</p>\n  <div class=\"wrap-column\">\n<div class=\"column\">\n    <a href=\"https://awnl.tw/collections/black-onyx-items\" class=\"column-link\">\n        <img src=\"https://cdn.shopify.com/s/files/1/0586/4026/9492/files/Brazilian_Black_Onyx.jpg?v=1706856555\" alt=\"黑瑪瑙\">\n        <h4>黑瑪瑙</h4>\n        <p>Onyx | 黑玉髓</p>\n    </a>\n</div>\n  </div>\n</div>\n\n\n<div id=\"tab8\" class=\"tab-content\">\n  <h2>8月誕生石</h2>\n  <p id=\"description\">充滿活力的8月出生者，佩戴黑尖晶可恢復能量，並透過佩戴橄欖石來保持積極的心態與幸福感。</p>\n  <div class=\"wrap-column\">\n    <div class=\"column\">\n      <a href=\"https://awnl.tw/collections/black-spinel\" class=\"column-link\">\n        <img src=\"https://cdn.shopify.com/s/files/1/0586/4026/9492/files/Sri_Lankan_Black_Spinel.jpg?v=1710134909\" alt=\"黑尖晶\">\n        <h4>黑尖晶</h4>\n        <p>Black Spinel | 高能量水晶</p>\n      </a>\n    </div>\n<div class=\"column\">\n    <a href=\"https://awnl.tw/collections/peridot\" class=\"column-link\">\n        <img src=\"https://cdn.shopify.com/s/files/1/0586/4026/9492/files/Peridot.jpg?v=1710211430\" alt=\"橄欖石\">\n        <h4>橄欖石</h4>\n        <p>Peridot | 好運護身符</p>\n    </a>\n</div>\n  </div>\n</div>\n\n<div id=\"tab9\" class=\"tab-content\">\n  <h2>9月誕生石</h2>\n  <p id=\"description\">性格溫和的9月出生者，佩戴紫鋰輝石可提升愛的表達能力，並透過佩戴藍寶石在重要決策時增強智慧與忠誠。</p>\n  <div class=\"wrap-column\">\n    <div class=\"column\">\n    <a href=\"https://awnl.tw/collections/kunzite\" class=\"column-link\">\n        <img src=\"https://cdn.shopify.com/s/files/1/0586/4026/9492/files/Madagascar_Kunzite.jpg?v=1710207154\" alt=\"紫鋰輝石\">\n        <h4>紫鋰輝石</h4>\n        <p>Kunzite | 無條件的愛</p>\n    </a>\n</div>\n<div class=\"column\">\n    <a href=\"https://awnl.tw/collections/sapphire\" class=\"column-link\">\n        <img src=\"https://cdn.shopify.com/s/files/1/0586/4026/9492/files/Sri_Lankan_Sapphire.jpg?v=1706859035\" alt=\"藍寶石\">\n        <h4>藍寶石</h4>\n        <p>Sapphire | 智慧寶石</p>\n    </a>\n</div>\n  </div>\n</div>\n\n\n<div id=\"tab10\" class=\"tab-content\">\n  <h2>10月誕生石</h2>\n  <p id=\"description\">感受性強烈的10月出生者，佩戴粉紅碧璽可提升愛的表達能力，並透過佩戴粉晶增強內心的平靜與愛的力量。佩戴澳寶（蛋白石）則能激發創造力與靈感。</p>\n  <div class=\"wrap-column\">\n  <div class=\"column\">\n    <a href=\"https://awnl.tw/collections/opal-jewelry\" class=\"column-link\">\n        <img src=\"https://cdn.shopify.com/s/files/1/0586/4026/9492/files/Australian_Opalite.jpg?v=1710142483\" alt=\"澳寶\">\n        <h4>澳寶</h4>\n        <p>Opal | 釋放之石</p>\n    </a>\n</div>\n    <div class=\"column\">\n      <a href=\"https://awnl.tw/collections/pink-tourmaline\" class=\"column-link\">\n        <img src=\"https://cdn.shopify.com/s/files/1/0586/4026/9492/files/Pink_Tourmaline.jpg?v=1710212061\" alt=\"粉紅碧璽\">\n        <h4>粉紅碧璽</h4>\n        <p>Pink Tourmaline | 心靈的OK繃</p>\n      </a>\n    </div>\n<div class=\"column\">\n    <a href=\"https://awnl.tw/collections/rose-quartz\" class=\"column-link\">\n        <img src=\"https://cdn.shopify.com/s/files/1/0586/4026/9492/files/Madagascar_Rose_Quartz.jpg?v=1710136997\" alt=\"粉晶\">\n        <h4>粉晶</h4>\n        <p>Rose Quartz | 無條件的愛、愛情護身符</p>\n    </a>\n</div>\n  </div>\n</div>\n\n\n<div id=\"tab11\" class=\"tab-content\">\n  <h2>11月誕生石</h2>\n  <p id=\"description\">充滿激情且直覺敏銳的11月出生者，佩戴托帕石可增強溝通能力與智慧。佩戴黃水晶聚集太陽的能量，帶來活力。</p>\n  <div class=\"wrap-column\">\n    <div class=\"column\">\n      <a href=\"https://awnl.tw/collections/topaz\" class=\"column-link\">\n        <img src=\"https://cdn.shopify.com/s/files/1/0586/4026/9492/files/Brazilian_Topaz.jpg?v=1710147190\" alt=\"托帕石\">\n        <h4>托帕石</h4>\n        <p>Topaz | 能量交響樂</p>\n      </a>\n    </div>\n    <div class=\"column\">\n      <a href=\"https://awnl.tw/collections/citrine\" class=\"column-link\">\n        <img src=\"https://cdn.shopify.com/s/files/1/0586/4026/9492/files/Brazilian_Citrine.jpg?v=1710142325\" alt=\"黃水晶\">\n        <h4>黃水晶</h4>\n        <p>Citrine | 財富水晶</p>\n      </a>\n    </div>\n  </div>\n</div>\n\n\n<div id=\"tab12\" class=\"tab-content\">\n  <h2>12月誕生石</h2>\n  <p id=\"description\">自由且樂觀的12月出生者，佩戴坦桑石可在變化中獲得平衡與支持。佩戴青金石則能提升自我認識與洞察力。</p>\n  <div class=\"wrap-column\">\n  <div class=\"column\">\n    <a href=\"https://awnl.tw/collections/tanzanite\" class=\"column-link\">\n        <img src=\"https://cdn.shopify.com/s/files/1/0586/4026/9492/files/Blue_Tanzanite.jpg?v=1710984905\" alt=\"坦桑石\">\n        <h4>坦桑石</h4>\n        <p>Tanzanite | 內心探索的工具</p>\n    </a>\n</div>\n    <div class=\"column\">\n      <a href=\"https://awnl.tw/collections/lapis-lazuli-jewelry\" class=\"column-link\">\n        <img src=\"https://cdn.shopify.com/s/files/1/0586/4026/9492/files/Afghan_Lapis_Lazuli.jpg?v=1700638080\" alt=\"青金石\">\n        <h4>青金石</h4>\n        <p>Lapis Lazuli | 天堂之石</p>\n      </a>\n    </div>\n  </div>\n</div>\n\n\n<script>\n  document.addEventListener('DOMContentLoaded', function() {\n    const tabs = document.querySelectorAll('.tab');\n    const contents = document.querySelectorAll('.tab-content');\n\n    tabs.forEach(tab => {\n      tab.addEventListener('click', () => {\n        const target = tab.getAttribute('data-tab');\n\n        tabs.forEach(t => t.classList.remove('active'));\n        tab.classList.add('active');\n\n        contents.forEach(content => {\n          if (content.id === target) {\n            content.classList.add('active');\n          } else {\n            content.classList.remove('active');\n          }\n        });\n      });\n    });\n  });\n</script>",
+        "text_alignment": "center"
+      }
+    },
+    "main": {
+      "type": "main-page",
+      "disabled": true,
+      "custom_css": [
+        "h1 {font-size: 32px;}",
+        "p {margin-bottom: 40px; font-size: 15px; line-height: 2;}",
+        "@media (max-width: 680px) {h1 {font-size: 28px; line-height: 1.2; } p {margin-bottom: 35px; font-size: 14px; line-height: 1.7; }}"
+      ],
+      "settings": {
+        "color_scheme": "scheme-2",
+        "show_title": false,
+        "page_width": "xs"
+      }
+    },
+    "blog_posts_TQQtjr": {
+      "type": "blog-posts",
+      "custom_css": [
+        ".blog-post-card img {width: 100%; height: auto; aspect-ratio: 1.6; object-fit: cover; object-position: center; border-radius: 10px;}"
+      ],
+      "settings": {
+        "color_scheme": "scheme-2",
+        "separate_section_with_border": false,
+        "blog": "the-journal",
+        "posts_count": 6,
+        "stack_on_mobile": false,
+        "show_category": true,
+        "show_excerpt": false,
+        "show_read_more": true,
+        "subheading": "",
+        "title": "AWNL部落格",
+        "content": "<p>提供穿搭靈感、晶石能量解析、珠寶推薦，以及品牌合作等多元內容。</p>",
+        "button_link": "shopify://blogs/the-journal",
+        "button_text": "查看更多"
+      }
+    }
+  },
+  "order": [
+    "image_with_text_overlay_U4Xc8J",
+    "custom_liquid_KER9xT",
+    "rich_text_AwLzEA",
+    "custom_liquid_fHcyFF",
+    "main",
+    "blog_posts_TQQtjr"
+  ]
+}

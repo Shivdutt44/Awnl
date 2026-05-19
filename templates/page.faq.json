@@ -1,0 +1,238 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "faq": {
+      "type": "faq",
+      "blocks": {
+        "category": {
+          "type": "category",
+          "settings": {
+            "title": "訂購、運送相關",
+            "icon": "none",
+            "icon_width": 16
+          }
+        },
+        "question-1": {
+          "type": "question",
+          "settings": {
+            "question": "<strong>Q: 如何支付訂單費用？</strong>",
+            "answer": "<p>我們接受信用卡、PayPal以及Google Pay等線上付款方式。暫不提供郵局、超商取貨付款或貨到付款服務。</p>"
+          }
+        },
+        "question-2": {
+          "type": "question",
+          "settings": {
+            "question": "<strong>Q: 運送費用怎麼算？</strong>",
+            "answer": "<p>台灣、香港、澳門、新加坡、馬來西亞地區滿$3,500元免運，每筆訂單未滿$3,500元新台幣，運費為$100元新台幣。</p><p>其他地區以及運送費用詳情，請詳閱<a href=\"/pages/shipping-policy\" target=\"_blank\" title=\"運費與配送政策\">運送政策</a>。</p>"
+          }
+        },
+        "question-3": {
+          "type": "question",
+          "settings": {
+            "question": "<strong>Q: 台灣有實體門市嗎？</strong>",
+            "answer": "<p>我們在台灣暫時沒有門市，目前僅提供官方網站購買服務。</p>"
+          }
+        },
+        "7f7fde59-854c-4cb1-8f19-57ba9be59b7a": {
+          "type": "question",
+          "settings": {
+            "question": "<strong>Q: 如何使用優惠碼？</strong>",
+            "answer": "<ol><li>複製您的優惠碼。</li><li>添加您心儀的商品至購物車後進入結帳頁面。</li><li>結帳時在「禮品卡或折扣碼」欄，輸入優惠碼並點選「套用」。</li></ol>"
+          }
+        },
+        "a10a7879-325b-4c49-99d7-78380fb42f91": {
+          "type": "question",
+          "disabled": true,
+          "settings": {
+            "question": "<strong>Q: 提供客制化服務嗎？</strong>",
+            "answer": "<p>我們提供客制化定製服務，在部分特定的款式上更換編織繩、彈力線、鏈條龍蝦扣手鍊款式、串珠、項鍊鏈條搭配服務。</p><p>個性化定製產品，我們將根據情況收取60-70％的定金後進行客製化生產，商品製作完成後，成功支付完尾款才會出貨。</p><p>詳情請諮詢我們的客服 <a href=\"mailto:contact@awnl.tw\" target=\"_blank\" title=\"AWNL瑞典輕珠寶 台灣客服\">contact@awnl.tw</a>。</p>"
+          }
+        },
+        "8617f082-6f5f-47c4-a9f4-6a2e9a32a78b": {
+          "type": "question",
+          "settings": {
+            "question": "<strong>Q: 我的訂單什麼時候出貨？</strong>",
+            "answer": "<p>台灣倉庫有現貨的情況下，1-3個工作日內出貨。若需從海外倉庫調貨出貨，約需2-5個工作日。</p>"
+          }
+        },
+        "35505638-8159-4cde-be3b-be046be8af1b": {
+          "type": "question",
+          "settings": {
+            "question": "<strong>Q: 我的訂單什麼時候送達？</strong>",
+            "answer": "<p>台灣地區訂單由台灣倉庫出貨後，預計1-3天送達。如需海外倉庫寄送，送達時間約需5-7個工作日。</p><p>詳細請查看<a href=\"https://awnl.tw/policies/shipping-policy\">運送服務</a>。</p>"
+          }
+        },
+        "bc300704-e19f-46f9-b2d0-2828a8cac538": {
+          "type": "question",
+          "settings": {
+            "question": "<strong>Q: 如何追蹤我的訂單？</strong>",
+            "answer": "<p>當您的訂單順利出貨，您會收到一封含有包裹追蹤編碼的電子信件。</p><p>到貨時間可能因氣候、季節活動以及國定假日出現延遲，敬請見諒。</p>"
+          }
+        },
+        "a3bea7da-c134-4fe1-bd96-e9499245b2ff": {
+          "type": "question",
+          "settings": {
+            "question": "<strong>Q: 可以取消或更改我的訂單嗎？</strong>",
+            "answer": "<p>成功下訂後，您可以取消或更改訂單信息，請立即聯絡我們線上客服。您也可以通過email <a href=\"mailto:contact@awnl.tw\" target=\"_blank\" title=\"AWNL瑞典輕珠寶 台灣客服\">contact@awnl.tw</a>或<a href=\"https://lin.ee/7e2zh8U\" target=\"_blank\" title=\"AWNL Taiwan LINE\">LINE@ </a>與我們聯絡。</p><p>一旦訂單從倉庫包裝出貨完成，您將無法取消或更改訂單資料信息。</p>"
+          }
+        },
+        "798f0440-5024-498c-9b43-91b777368fd9": {
+          "type": "question",
+          "settings": {
+            "question": "<strong>Q: 為什麼我的訂單還沒送達？</strong>",
+            "answer": "<p>若您的訂單在收到出貨通知email的５天後仍沒有收到，請<a href=\"https://awnl.tw/pages/contact-us\">聯絡我們</a>。</p><p>除因假期、節日、天氣，或台灣倉庫沒有現貨需要從海外倉庫調貨情況以外，您的訂單會在2-4天內送達。</p>"
+          }
+        },
+        "question_yEJnQz": {
+          "type": "question",
+          "settings": {
+            "question": "<strong>Q: 為什麼我會收到需要實名認證的訊息？通關申報是什麼？</strong>",
+            "answer": "<p>根據台灣海關的規定，自2022年7月1日起，所有入境台灣的包裹都需要進行實名認證。</p><p>收到需要實名認證的訊息，是因為您的訂單是從國際海外倉庫出貨，需要下載「易利委 EAZY WAY」APP通過台灣海關的清關程序。</p><p>實名認證是指收件人必須提供自己的真實姓名、身份證號碼、聯繫方式等資訊，以便海關進行查驗。如果不進行實名認證，包裹將無法清關，也無法送到收件人手中。</p><p>通關申報是指報關行向海關申報貨物的相關資訊，以便海關進行審核和放行。如果包裹涉及關稅，需要在APP中支付關稅。支付成功後，報關行會向海關申請放行包裹，物流公司會開始進行配送。</p>"
+          }
+        },
+        "1549e93b-6b65-4649-83c9-4bd9026a0aed": {
+          "type": "category",
+          "settings": {
+            "title": "售後相關",
+            "icon": "none",
+            "icon_width": 16
+          }
+        },
+        "question_ARtTEx": {
+          "type": "question",
+          "settings": {
+            "question": "<strong>Ｑ: 如何保養？</strong>",
+            "answer": "<p>天然石、隕石以及純銀首飾的清潔方式都有些許不同。</p><p>詳細清潔方式請閱<a href=\"/pages/jewelry-care-and-clean\" target=\"_blank\" title=\"飾品保養\">飾品清潔保養</a>。</p>"
+          }
+        },
+        "question_tthC4X": {
+          "type": "question",
+          "settings": {
+            "question": "<strong>Q: 天然石怎麼淨化、消磁＆充能？</strong>",
+            "answer": "<p>每種天然石因其特性，淨化消磁方式都有所不同。普遍的方式有日曬、海鹽、月光浴。</p><p>詳情請閱<a href=\"/pages/energy-jewellery-gemstone-purify-charge\" target=\"_blank\" title=\"能量寶石的淨化和充能\">天然石淨化、消磁＆充能</a>。</p>"
+          }
+        },
+        "5c8548a3-87d4-40f0-9840-2ac19661b2b3": {
+          "type": "question",
+          "settings": {
+            "question": "<strong>Q: 為什麼我購買的天然石顏色跟圖片的不一樣？</strong>",
+            "answer": "<p>我們採用嚴選的天然珠寶，因純天然形成，無法保證每一個寶石的色澤與花紋和商品圖片一致。詳細說明請閱<a href=\"/pages/natural-stone-disclaimer\" target=\"_blank\" title=\"天然石特別說明\">天然石特性說明</a>。</p>"
+          }
+        },
+        "question_T4wxbY": {
+          "type": "question",
+          "settings": {
+            "question": "<strong>Q: 彈力線手鍊斷掉/鬆掉怎麼辦？</strong>",
+            "answer": "<p>保固內非人為損壞，我們提供免費售後服務。超過保固期限，請聯絡客服專員。詳情請見<a href=\"/pages/warranty-repair-service\" target=\"_blank\" title=\"保修服務\">保修服務</a>說明。</p><p>也可以自己購買彈力線替換，詳細請見<a href=\"/blogs/the-journal/stretch-cord-bracelet-resize-repair-guide\" target=\"_blank\" title=\"DIY 指南：如何調整和更換手鍊彈力線\">DIY彈力線更換調整教學</a>說明。</p>"
+          }
+        },
+        "f617b354-8346-48f3-89ad-c917861b5752": {
+          "type": "question",
+          "settings": {
+            "question": "<strong>Q: 如何退換商品？</strong>",
+            "answer": "<ul><li>如果您想更換商品或是退貨，請【<a href=\"https://awnl.tw/pages/after-sales-form\" title=\"https://awnl.tw/pages/after-sales-form\">填寫自助售後預約表單</a>】（填寫時間大約為3分鐘）；或者您可以使用Email/inbox即時通訊等<a href=\"https://awnl.tw/pages/contact-us\" target=\"_blank\" title=\"contact-us\">聯絡客服專員</a>，並提供您的訂單號碼以及1-2張商品照片。</li><li>瞭解更多資訊，請訪問<a href=\"https://awnl.tw/pages/return-and-refund\" title=\"https://awnl.tw/pages/return-and-refund\">退換政策</a>。</li></ul>"
+          }
+        },
+        "8052f881-fe80-46c2-9ab1-7e5efadcb0f5": {
+          "type": "question",
+          "settings": {
+            "question": "<strong>Q: 退款政策是什麼？</strong>",
+            "answer": "<p>我們提供\"<strong>30天不滿意退貨保證</strong>\"，如果您對所購買的商品不滿意，請先<a href=\"https://awnl.tw/pages/contact-us\">連絡我們，</a>您可以申請退款退貨（如商品已寄出，退款金額將扣除運費）。</p><p>瞭解更多資訊，請訪問<a href=\"https://awnl.tw/policies/refund-policy\">退換政策</a>。</p>"
+          }
+        },
+        "e2e95d0d-5fe3-4137-96f3-da0122754379": {
+          "type": "question",
+          "settings": {
+            "question": "<strong>Q: 多久能收到退款？</strong>",
+            "answer": "<p>我們收到並檢查退回的商品沒有損壞後，我們將進行退款手續，您支付的金額會在1-5個工作日內退回至您原始的付款方式（退回金額將扣除運費）。</p><p>瞭解更多資訊，請訪問<a href=\"https://awnl.tw/policies/refund-policy\">退換政策</a>。</p>"
+          }
+        },
+        "1216d9a8-c5ff-4ddf-b60a-ce4534f4b3e9": {
+          "type": "question",
+          "settings": {
+            "question": "<strong>Q: 如何申請維修？</strong>",
+            "answer": "<ul><li>我們對自購買60天/90天內的商品提供免費維修服务。</li><li>凡是AWNL的正品，我們均提供保固期外的維修服務。</li><li>但因人為因素損壞的情况，將另收維修費用。</li><li>如需申請維修，請先填寫【<a href=\"https://awnl.tw/pages/after-sales-form\" title=\"https://awnl.tw/pages/after-sales-form\">售後服務預約表單</a>】；或者您可以寄email至<a href=\"mailto:contact@awnl.tw\" target=\"_blank\" title=\"AWNL瑞典輕珠寶 台灣客服\">contact@awnl.tw</a>或<a href=\"https://lin.ee/7e2zh8U\" target=\"_blank\" title=\"AWNL Taiwan LINE\"> LINE@ </a>等即時通訊聯絡客服專員，我們會進一步協助您。 </li></ul>"
+          }
+        },
+        "cb0aa2be-4767-41e3-9966-7a251bf77eb5": {
+          "type": "category",
+          "settings": {
+            "title": "其他問題",
+            "icon": "none",
+            "icon_width": 16
+          }
+        },
+        "06b597c4-9626-4170-9ff2-4589ab4d18bf": {
+          "type": "question",
+          "settings": {
+            "question": "<strong>Q: 為什麼沒辦法登入自己的帳號？</strong>",
+            "answer": "<p>您需要在<a href=\"https://awnl.tw/account/login\">此頁面</a>點選「創建帳號」，填寫您的姓名、電子信箱及密碼後，點選「創建」。您會收到一封「顧客帳號確認」的電子郵件，說明您已成功啟用帳號。當您需要再次登入時，輸入您的電子信箱與密碼即可。如您仍登入不成功，請聯繫我們。</p>"
+          }
+        },
+        "407d53a7-638e-4237-adaf-4086d454bc5a": {
+          "type": "question",
+          "settings": {
+            "question": "<strong>Q: 我的個人資訊是否安全？</strong>",
+            "answer": "<p>我們非常重視個人數據隱私和安​​全，絕不會與任何第三方共享您的個人信息。您可以相信您的信息在我們這裡是安全的。</p>"
+          }
+        }
+      },
+      "block_order": [
+        "category",
+        "question-1",
+        "question-2",
+        "question-3",
+        "7f7fde59-854c-4cb1-8f19-57ba9be59b7a",
+        "a10a7879-325b-4c49-99d7-78380fb42f91",
+        "8617f082-6f5f-47c4-a9f4-6a2e9a32a78b",
+        "35505638-8159-4cde-be3b-be046be8af1b",
+        "bc300704-e19f-46f9-b2d0-2828a8cac538",
+        "a3bea7da-c134-4fe1-bd96-e9499245b2ff",
+        "798f0440-5024-498c-9b43-91b777368fd9",
+        "question_yEJnQz",
+        "1549e93b-6b65-4649-83c9-4bd9026a0aed",
+        "question_ARtTEx",
+        "question_tthC4X",
+        "5c8548a3-87d4-40f0-9840-2ac19661b2b3",
+        "question_T4wxbY",
+        "f617b354-8346-48f3-89ad-c917861b5752",
+        "8052f881-fe80-46c2-9ab1-7e5efadcb0f5",
+        "e2e95d0d-5fe3-4137-96f3-da0122754379",
+        "1216d9a8-c5ff-4ddf-b60a-ce4534f4b3e9",
+        "cb0aa2be-4767-41e3-9966-7a251bf77eb5",
+        "06b597c4-9626-4170-9ff2-4589ab4d18bf",
+        "407d53a7-638e-4237-adaf-4086d454bc5a"
+      ],
+      "settings": {
+        "color_scheme": "scheme-2",
+        "separate_section_with_border": true,
+        "show_categories": true,
+        "subheading": "",
+        "title": "常見問題",
+        "content": ""
+      }
+    },
+    "c39ffe49-24c9-40cd-a801-eef16b9517c4": {
+      "type": "contact",
+      "settings": {
+        "color_scheme": "scheme-2",
+        "separate_section_with_border": false,
+        "subheading": "",
+        "title": "聯絡我們",
+        "content": "<p>如您有任何疑問、需要幫助或是寶貴意見，請填寫下方表格並傳送給我們。</p><p>我們將在1-2個工作日內回覆您。</p>"
+      }
+    }
+  },
+  "order": [
+    "faq",
+    "c39ffe49-24c9-40cd-a801-eef16b9517c4"
+  ]
+}

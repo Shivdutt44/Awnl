@@ -1,0 +1,160 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "main": {
+      "type": "main-product",
+      "blocks": {
+        "2bda636d-828f-4e37-92c7-b2170f1d5d72": {
+          "type": "title",
+          "settings": {
+            "heading_tag": "h3"
+          }
+        },
+        "77941daa-002f-4e01-a52d-143783d7712e": {
+          "type": "price",
+          "settings": {
+            "show_taxes_notice": false
+          }
+        },
+        "a3cc81f5-35a7-4605-a279-158938629ddb": {
+          "type": "variant_picker",
+          "settings": {
+            "hide_sold_out_variants": false,
+            "size_chart_page": ""
+          }
+        },
+        "quantity_selector": {
+          "type": "quantity_selector",
+          "settings": {}
+        },
+        "buy_buttons": {
+          "type": "buy_buttons",
+          "settings": {
+            "show_payment_button": true,
+            "show_gift_card_recipient": true,
+            "atc_button_background": "",
+            "atc_button_text_color": "",
+            "payment_button_background": "",
+            "payment_button_text_color": ""
+          }
+        },
+        "d0e1cbe8-70c4-4c22-8c22-67b5e4572ca7": {
+          "type": "payment_terms",
+          "settings": {}
+        },
+        "share_buttons": {
+          "type": "share_buttons",
+          "settings": {}
+        },
+        "eaf826d2-bca0-47b5-8aff-9902320fa407": {
+          "type": "text",
+          "settings": {
+            "text": "<ul><li><strong>此款為預售商品，出貨約需15-20個工作日。具體到貨時間可在購買前先諮詢客服專員。</strong></li></ul>"
+          }
+        },
+        "description": {
+          "type": "description",
+          "settings": {
+            "collapse_content": false,
+            "show_below_gallery": false
+          }
+        },
+        "df3a0418-8485-4759-97a2-d8078732c316": {
+          "type": "accordion",
+          "settings": {
+            "show_below_gallery": true,
+            "icon": "none",
+            "title": "晶石療癒",
+            "page": ""
+          }
+        },
+        "eecf16bf-173d-4432-8b25-f8ef64f492c5": {
+          "type": "accordion",
+          "settings": {
+            "show_below_gallery": true,
+            "icon": "none",
+            "title": "購前須知",
+            "content": "",
+            "page": ""
+          }
+        },
+        "489eda65-a48c-4086-bc70-5141c9f60751": {
+          "type": "accordion",
+          "settings": {
+            "show_below_gallery": true,
+            "icon": "none",
+            "title": "運送 ＆ 退換",
+            "content": "<p><a href=\"/policies/shipping-policy\" target=\"_blank\" title=\"Shipping Policy\"><strong>運送服務</strong></a></p><p>我們提供全台免運服務，黑貓宅急便急速配送。</p><p>購買後1-3個工作日內出貨。出貨後約1-2日送達。</p><p>如需緊急安排出貨，請在購買前先聯絡客服專員。</p><p>如遇法定節假日: 出貨時間可能延長，約需<strong>2-5天</strong>。配送約需<strong>2-3</strong>日送達。</p><p>如您購買的商品在台灣暫無現貨，我們將安排海外倉庫出貨或是調貨至台灣倉庫。如海外倉庫出貨，配送時間約需<strong>3-5個工作日</strong>。如調貨約需<strong>5-10個工作日</strong>。</p><p><strong>預售商品出貨約需15-20個工作日。</strong></p><p><a href=\"/policies/refund-policy\" target=\"_blank\" title=\"Refund Policy\"><strong>退換服務</strong></a></p><p>我們提供30天的退貨保證。您在收到商品的<strong>30天內</strong>，若對商品不滿意可申請退貨。</p><p>如您需要更換尺寸，請在收到貨後的<strong>7天內</strong>申請更換尺寸，首次試戴後發現不合適請直接將商品收回包裝盒中，保持<strong>無損壞</strong>的狀態。</p><p>退回商品必須和您收到時的包裝相同，未穿戴未使用，如有標籤需帶有標籤，並放在原始出貨包裝中。您需要提供訂單編號或購買證明。商品寄回過程中如有遺失需顧客自行負擔。</p><p>我們會在收到退回商品後的1-3個工作日內進行退款處理。</p><p>如欲退換貨，煩請先將商品拍照並發送電子郵件至 <a href=\"mailto:support@awnl.net\" target=\"_blank\">support@awnl.net</a> 和我們聯繫申請退換貨。如果您的退換貨審核通過，我們將向您發送退貨地址以及詳細說明。未先諮詢退貨便將商品退回的訂單，將不予接受退貨退款。每個訂單僅提供1次退貨服務，且須運費自理寄回，AWNL將不承擔退回運費。如您收到的商品是有瑕疵或是損壞，我們將承擔退回運費。（*請注意，如未經協商使用運費到付退回的商品，恐將被拒收並退件。）</p><p>客製＆出清商品、禮品卡以及贈品無法進行退貨退款，敬請諒解。</p>",
+            "page": ""
+          }
+        },
+        "f3037df0-0211-4c21-8dfd-a29dfe13473a": {
+          "type": "accordion",
+          "settings": {
+            "show_below_gallery": true,
+            "icon": "none",
+            "title": "材料＆工藝",
+            "content": "<p><strong>天然寶石</strong><br/>AWNL採用嚴選的天然寶石、晶石進行切割打磨，表面上如有小坑洞皆屬天然現象並非瑕疵。<br/><br/>天然寶石、晶石因其天然的特性，實際顏色與照片存在差異，商品隨機出貨。<a href=\"/pages/natural-stone-disclaimer\" target=\"_blank\" title=\"天然寶石免責聲明\">查看詳情</a><br/><br/><strong>瑞典隕石</strong><br/>AWNL珠寶擁有完善的隕石收集體系，所有含隕石商品均採用瑞典Muonionalusta鐵隕石打造而成。只有部分隕石可以加工成首飾；我們在不同的隕石材料中精挑細選，堅持挑選出最適合首飾加工的隕石，打造出卓越的設計。<br/><br/><strong>AWNL工藝</strong><br/>AWNL珠寶專業生產採用純天然寶石、925純銀、18K金和鉑金手工製作。獨特的晶石和隕石切割技術是我們專業珠寶製作的最大特色。AWNL將藝術與大自然的饋贈融為一體，打造出萬分獨特的珠寶設計，陪伴人們度過各種動人時刻。</p>",
+            "page": ""
+          }
+        }
+      },
+      "block_order": [
+        "2bda636d-828f-4e37-92c7-b2170f1d5d72",
+        "77941daa-002f-4e01-a52d-143783d7712e",
+        "a3cc81f5-35a7-4605-a279-158938629ddb",
+        "quantity_selector",
+        "buy_buttons",
+        "d0e1cbe8-70c4-4c22-8c22-67b5e4572ca7",
+        "share_buttons",
+        "eaf826d2-bca0-47b5-8aff-9902320fa407",
+        "description",
+        "df3a0418-8485-4759-97a2-d8078732c316",
+        "eecf16bf-173d-4432-8b25-f8ef64f492c5",
+        "489eda65-a48c-4086-bc70-5141c9f60751",
+        "f3037df0-0211-4c21-8dfd-a29dfe13473a"
+      ],
+      "settings": {
+        "container_size": "lg",
+        "product_info_size": 35,
+        "show_sticky_add_to_cart": true,
+        "center_basic_info": true,
+        "desktop_media_layout": "carousel_thumbnails_bottom",
+        "desktop_media_grid_gap": 30,
+        "mobile_controls": "thumbnails",
+        "enable_media_autoplay": false,
+        "enable_video_looping": false,
+        "enable_image_zoom": true,
+        "max_image_zoom_level": 3
+      }
+    },
+    "recently-viewed-products": {
+      "type": "recently-viewed-products",
+      "settings": {
+        "separate_section_with_border": true,
+        "hide_product_information": false,
+        "stack_products": false,
+        "products_count": 8,
+        "products_per_row_mobile": "2",
+        "products_per_row_desktop": 4,
+        "horizontal_spacing_factor": 1,
+        "vertical_spacing_factor": 0.2,
+        "subheading": "",
+        "title": "歷史瀏覽商品",
+        "content": ""
+      }
+    }
+  },
+  "order": [
+    "main",
+    "recently-viewed-products"
+  ]
+}

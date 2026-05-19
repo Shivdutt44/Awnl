@@ -1,0 +1,246 @@
+{%- comment -%}
+----------------------------------------------------------------------------------------------------------------------
+LINE ITEM
+----------------------------------------------------------------------------------------------------------------------
+
+This component renders a single line item product information, and is used on order and cart page.
+
+********************************************
+Supported variables
+********************************************
+
+* line_item: the line item to render (required)
+* show_quantity_selector: if set to true, the quantity selector is displayed (useful for instance of mini-cart)
+{%- endcomment -%}
+
+{%- comment -%} Initialize variable to ensure scope availability, though logic handles nil safely {%- endcomment -%}
+{%- assign total_beads_price = 0 -%}
+
+<td class="line-item-cell line-item-cell--product">
+  <div class="line-item-wrapper">
+
+    <div class="line-item-info">
+      {%- assign text_class = '' -%}
+      {%- if settings.product_card_text_font == 'heading' -%}
+        {%- assign text_class = 'h6' -%}
+      {%- endif -%}
+
+      <div class="product-header">
+        {%- if settings.show_vendor and line_item.vendor != blank -%}
+          {%- capture vendor_class -%}smallcaps {% if settings.product_card_text_font == 'heading' %}heading{% endif %}{% endcapture %}
+          {%- render 'vendor' with line_item.vendor, class: vendor_class -%}
+        {%- endif -%}
+
+        <div>
+        {%- if line_item.properties['Final Image'] != blank  %}
+        <img alt="{{ line_item.title }}" src ="{{ line_item.properties['Final Image']}}" width="215" height="215" loading="lazy" class="line-item__media">
+        {%- elsif line_item.image != blank -%}
+        {{- line_item.image | image_url: width: line_item.image.width | image_tag: loading: 'lazy', sizes: '(max-width: 699px) 70px, 120px', widths: '70,120,140,210,240,360', class: 'line-item__media' -}}
+        {%- endif -%}
+    
+        {%- if line_item.url != blank -%}
+          <a href="{{ line_item.url }}" class="{{ text_class }} product-title">{{ line_item.product.title | default: line_item.title }}</a>
+        {%- else -%}
+          <p class="{{ text_class }} product-title">{{ line_item.product.title | default: line_item.title }}</p>
+        {%- endif -%}
+
+        {%- unless line_item.product.has_only_default_variant or line_item.gift_card -%}
+          <p class="variant-title">{{ line_item.variant.title }}</p>
+        {%- endunless -%}
+
+        {%- if line_item.selling_plan_allocation -%}
+          <p class="selling-plan">{{ line_item.selling_plan_allocation.selling_plan.name }}</p>
+        {%- endif -%}
+         </div>
+
+          {%- if line_item.properties['Bracelet Size'] or line_item.properties['String Color'] or line_item.properties['Lock Style'] or line_item.properties['Gender'] -%}
+        <div class="bracelet-properties">
+          <div class="property-tags">
+            {%- if line_item.properties['Bracelet Size'] -%}
+              <span class="property-tag">
+                <span class="tag-key">Size:</span>
+                <span class="tag-value">{{ line_item.properties['Bracelet Size'] }}</span>
+              </span>
+            {%- endif -%}
+            {%- if line_item.properties['String Color'] -%}
+              <span class="property-tag">
+                <span class="tag-key">String:</span>
+                <span class="tag-value">{{ line_item.properties['String Color'] }}</span>
+              </span>
+            {%- endif -%}
+            {%- if line_item.properties['Lock Style'] -%}
+              <span class="property-tag">
+                <span class="tag-key">Lock:</span>
+                <span class="tag-value">{{ line_item.properties['Lock Style'] }}</span>
+              </span>
+            {%- endif -%}
+            {%- if line_item.properties['Gender'] -%}
+              <span class="property-tag">
+                <span class="tag-key">Gender:</span>
+                <span class="tag-value">{{ line_item.properties['Gender'] }}</span>
+              </span>
+            {%- endif -%}
+            {%- if line_item.properties['Gift Wrapping'] -%}
+              <span class="property-tag">
+                <span class="tag-key">Gift:</span>
+                <span class="tag-value">{{ line_item.properties['Gift Wrapping'] }}</span>
+              </span>
+            {%- endif -%}
+            {%- if line_item.properties['Engraving'] -%}
+              <span class="property-tag">
+                <span class="tag-key">Engraving:</span>
+                <span class="tag-value">Yes</span>
+              </span>
+            {%- endif -%}
+            {%- if line_item.properties['Text'] -%}
+              <span class="property-tag property-tag-text">
+                <span class="tag-key">Text:</span>
+                <span class="tag-value">{{ line_item.properties['Text'] }}</span>
+              </span>
+            {%- endif -%}
+          </div>
+        </div>
+      {%- endif -%}
+      
+
+      </div>
+
+
+      {%- if line_item.properties['Bead Items'] -%}
+        {%- comment -%} Liquid logic preserved {%- endcomment -%}
+        {%- assign total_beads_price = 0 -%}
+        {%- assign bead_items = line_item.properties['Bead Items'] | split: ', ' -%}
+        
+        <div class="beads-container">
+          <div class="beads-header">
+            <h3 class="beads-title">Beads Includes</h3>
+            <span class="beads-count">{{ bead_items.size }}</span>
+          </div>
+          
+          <ul class="beads-list">
+            {%- for bead in bead_items -%}
+              {%- assign bead_parts = bead | split: ' x ' -%}
+              {%- assign bead_title = bead_parts[0] | strip -%}
+              {%- assign bead_qty = bead_parts[1] | default: 1 | plus: 0 -%}
+
+              {%- assign bead_item = nil -%}
+              {%- for item in cart.items -%}
+                {%- if item.title == bead_title -%}
+                  {%- assign bead_item = item -%}  
+                  {%- assign single_total = item.final_price | times: bead_qty -%}
+                  {%- assign total_beads_price = total_beads_price | plus: single_total -%}
+                  {%- break -%}
+                {%- endif -%}
+              {%- endfor -%}
+
+              <li class="bead-item">
+                {%- if bead_item -%}
+                  <div class="bead-image-container">
+                    <img id="{{ bead_item.id }}" src="{{ bead_item.image | img_url: '60x60', crop: 'center' }}" 
+                         alt="{{ bead_item.title | escape }}" 
+                         class="bead-image"
+                         width="60" height="60">
+                  </div>
+                {%- else -%}
+                  <div class="bead-image-container placeholder">
+                    <div class="bead-placeholder"></div>
+                  </div>
+                {%- endif -%}
+                <div class="bead-details">
+                  <h4 class="bead-name" data-bead-variant-id="{{  bead_item.id }}" data-bead-qty="{{ bead_qty }}">{{ bead_title }}</h4>
+                  <div class="bead-meta">
+                    <span class="bead-quantity">{{ bead_qty }}x</span>
+                    {%- if bead_item -%}
+                      <span class="bead-price">
+                        {%- if settings.currency_code_enabled -%}
+                          {{ bead_item.final_price | money_with_currency }}
+                        {%- else -%}
+                          {{ bead_item.final_price | money }}
+                        {%- endif -%}
+                      </span>
+                      <span class="bead-total-price">
+                        {%- if settings.currency_code_enabled -%}
+                          ({{ single_total | money_with_currency }})
+                        {%- else -%}
+                          ({{ single_total | money }})
+                        {%- endif -%}
+                      </span>
+                    {%- endif -%}
+                  </div>
+                </div>
+              </li>
+            {%- endfor -%}
+          </ul>
+        </div>
+      {%- endif -%}
+
+      {%- if line_item.line_level_discount_allocations != blank -%}
+        <div class="discount-container">
+          {%- for discount_allocation in line_item.line_level_discount_allocations -%}
+            <div class="discount-badge">
+              {%- render 'icon' with 'discount', width: 12 -%} 
+              {{ discount_allocation.discount_application.title }} (-{{ discount_allocation.amount | money }})
+            </div>
+          {%- endfor -%}
+        </div>
+      {%- endif -%}
+    </div>
+  </div>
+</td>
+
+<td class="line-item-cell line-item-cell--quantity text-center">
+  <div class="quantity-section">
+    <div class="quantity-value">{{ line_item.quantity }}</div>
+    <span class="remove-link" aria-label="{{ 'cart.order.remove_with_title' | t: title: line_item.title | escape }}">
+      <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+        <polyline points="3 6 5 6 21 6"></polyline>
+        <path d="M19 6v14a2 2 0 0 1-2 2H7a2 2 0 0 1-2-2V6m3 0V4a2 2 0 0 1 2-2h4a2 2 0 0 1 2 2v2"></path>
+      </svg>
+    </span>     
+  </div>
+  <div class="line-item-cell line-item-cell--price text-end">
+       {%- if line_item.properties['Bead Items'] and total_beads_price > 0 -%}
+    {%- assign total_price = line_item.final_line_price | plus: total_beads_price -%}
+    <div class="price-breakdown">
+      <div class="price-row">
+        <span class="price-label">Base:</span>
+        <span class="price-value">
+          {%- if settings.currency_code_enabled -%}
+            {{ line_item.final_line_price | money_with_currency }}
+          {%- else -%}
+            {{ line_item.final_line_price | money }}
+          {%- endif -%}
+        </span>
+      </div>
+      <div class="price-row">
+        <span class="price-label">Beads:</span>
+        <span class="price-value">
+          {%- if settings.currency_code_enabled -%}
+            {{ total_beads_price | money_with_currency }}
+          {%- else -%}
+            {{ total_beads_price | money }}
+          {%- endif -%}
+        </span>
+      </div>
+      <div class="price-row total-row">
+        <span class="price-label">Total:</span>
+        <span class="price-value total-price">
+          {%- if settings.currency_code_enabled -%}
+            {{ total_price | money_with_currency }}
+          {%- else -%}
+            {{ total_price | money }}
+          {%- endif -%}
+        </span>
+      </div>
+    </div>
+  {%- else -%}
+    <div class="price-simple">
+      {%- if settings.currency_code_enabled -%}
+        {{- line_item.final_line_price | money_with_currency -}}
+      {%- else -%}
+        {{- line_item.final_line_price | money -}}
+      {%- endif -%}
+    </div>
+  {%- endif -%}
+  </div>
+</td>

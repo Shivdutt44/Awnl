@@ -1,0 +1,208 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "multi_column_Vjxxj9": {
+      "type": "multi-column",
+      "blocks": {
+        "image_with_text_Bmee33": {
+          "type": "image_with_text",
+          "source": "{{ metaobject }}",
+          "settings": {
+            "image": "{{ metaobject.style_1.value }}",
+            "title": "",
+            "heading_tag": "h3",
+            "content": "",
+            "link_url": "",
+            "link_text": ""
+          }
+        },
+        "image_with_text_K8yX7q": {
+          "type": "image_with_text",
+          "source": "{{ metaobject }}",
+          "settings": {
+            "image": "{{ metaobject.style_2.value }}",
+            "title": "",
+            "heading_tag": "h3",
+            "content": "",
+            "link_url": "",
+            "link_text": ""
+          }
+        },
+        "image_with_text_xkAEDM": {
+          "type": "image_with_text",
+          "source": "{{ metaobject }}",
+          "settings": {
+            "image": "{{ metaobject.style_3.value }}",
+            "title": "",
+            "heading_tag": "h3",
+            "content": "",
+            "link_url": "",
+            "link_text": ""
+          }
+        },
+        "image_with_text_TmNiRm": {
+          "type": "image_with_text",
+          "source": "{{ metaobject }}",
+          "settings": {
+            "image": "{{ metaobject.style_4.value }}",
+            "title": "",
+            "heading_tag": "h3",
+            "content": "",
+            "link_url": "",
+            "link_text": ""
+          }
+        }
+      },
+      "block_order": [
+        "image_with_text_Bmee33",
+        "image_with_text_K8yX7q",
+        "image_with_text_xkAEDM",
+        "image_with_text_TmNiRm"
+      ],
+      "custom_css": [
+        "@media (min-width: 769px) {.section-stack {max-width: 1300px; margin-left: auto; margin-right: auto; }}",
+        ".multi-column {grid-column-gap: 1px; grid-row-gap: 1px;}"
+      ],
+      "settings": {
+        "color_scheme": "scheme-2",
+        "separate_section_with_border": false,
+        "columns_per_row": 2,
+        "stack_on_mobile": true,
+        "overlap_image": false,
+        "content_alignment": "center",
+        "text_alignment": "center",
+        "spacing": "xs",
+        "subheading": "",
+        "title": "",
+        "content": "<h1><strong>{{ metaobject.influencer_name.value }}</strong><strong>×AWNL</strong></h1><h5><strong>{{ metaobject.product_name_1.value }}</strong></h5>"
+      }
+    },
+    "rich_text_wQhExe": {
+      "type": "rich-text",
+      "blocks": {
+        "link_mVNKez": {
+          "type": "link",
+          "settings": {
+            "text": "返回",
+            "url": "shopify://pages/influencer-community"
+          }
+        }
+      },
+      "block_order": [
+        "link_mVNKez"
+      ],
+      "custom_css": [
+        "div.prose {margin-top: -50px;}"
+      ],
+      "settings": {
+        "color_scheme": "scheme-2",
+        "separate_section_with_border": false,
+        "content_width": "lg",
+        "text_position": "start",
+        "remove_vertical_spacing": false
+      }
+    },
+    "featured_product_79MWaM": {
+      "type": "featured-product",
+      "blocks": {
+        "title_YUw4Nw": {
+          "type": "title",
+          "settings": {
+            "heading_tag": "h3"
+          }
+        },
+        "price_cWBRam": {
+          "type": "price",
+          "settings": {
+            "show_taxes_notice": false
+          }
+        },
+        "button_RWdRGd": {
+          "type": "button",
+          "settings": {
+            "link": "{{ metaobject.product_link_1.value }}",
+            "text": "查看詳情",
+            "stretch": true,
+            "background": "",
+            "text_color": ""
+          }
+        }
+      },
+      "block_order": [
+        "title_YUw4Nw",
+        "price_cWBRam",
+        "button_RWdRGd"
+      ],
+      "settings": {
+        "color_scheme": "scheme-2",
+        "product": "{{ metaobject.product_1.value }}",
+        "separate_section_with_border": false,
+        "container_size": "lg",
+        "product_info_size": 45,
+        "center_basic_info": false,
+        "desktop_media_layout": "carousel_thumbnails_bottom",
+        "desktop_media_grid_gap": 30,
+        "mobile_controls": "dots",
+        "enable_media_autoplay": false,
+        "enable_video_looping": true,
+        "enable_image_zoom": false,
+        "max_image_zoom_level": 3,
+        "subheading": "",
+        "title": "相關商品",
+        "content": ""
+      }
+    },
+    "collection_list_EVw7jR": {
+      "type": "collection-list",
+      "blocks": {
+        "collection_gEk3LP": {
+          "type": "collection",
+          "settings": {
+            "color_scheme": "",
+            "collection": "{{ metaobject.collection_1.value }}",
+            "image": "{{ block.settings.collection.metafields.my_fields.collection_banner_pc.value }}",
+            "expand_collection": true,
+            "content_position": "place-self-center text-center",
+            "subheading": "",
+            "title": "",
+            "button_text": "{{ block.settings.collection.title }}",
+            "button_link": "",
+            "button_style": "solid",
+            "overlay_color": "#000000",
+            "overlay_opacity": 9
+          }
+        }
+      },
+      "block_order": [
+        "collection_gEk3LP"
+      ],
+      "settings": {
+        "color_scheme": "scheme-2",
+        "separate_section_with_border": false,
+        "image_size": "xs",
+        "show_text_outside": false,
+        "space_items": false,
+        "stack_collections": false,
+        "collections_per_row_mobile": "1",
+        "collections_per_row_desktop": 1,
+        "subheading": "",
+        "title": "",
+        "content": ""
+      }
+    }
+  },
+  "order": [
+    "multi_column_Vjxxj9",
+    "rich_text_wQhExe",
+    "featured_product_79MWaM",
+    "collection_list_EVw7jR"
+  ]
+}

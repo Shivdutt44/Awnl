@@ -1,0 +1,227 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "type": "header",
+  "name": "Header group",
+  "sections": {
+    "header": {
+      "type": "header",
+      "blocks": {
+        "7c09581b-42e3-430b-8817-3633f744b16e": {
+          "type": "mega_menu",
+          "settings": {
+            "menu_item": "手鍊",
+            "images_position": "right",
+            "image_1": "shopify://shop_images/bracelet-ranking-mega-menu.jpg",
+            "image_1_heading": "Ranking | 人氣手鍊精選",
+            "image_1_text": "",
+            "image_1_link": "shopify://collections/best-sellers-bracelets",
+            "image_2": "shopify://shop_images/2024-sept-megamenu-img-10.jpg",
+            "image_2_heading": "情侶對鍊",
+            "image_2_text": "",
+            "image_2_link": "shopify://collections/couple-bracelet"
+          }
+        },
+        "124e29f7-c226-4d09-abe6-1587b10d2e91": {
+          "type": "mega_menu",
+          "settings": {
+            "menu_item": "項鍊",
+            "images_position": "right",
+            "image_1_heading": "",
+            "image_1_text": "",
+            "image_1_link": "",
+            "image_2": "shopify://shop_images/2024-sept-megamenu-img-7.jpg",
+            "image_2_heading": "Ranking | 人氣項鍊精選",
+            "image_2_text": "",
+            "image_2_link": "shopify://collections/best-sellers-necklaces"
+          }
+        },
+        "a66b8a61-6a3b-42dd-9652-8add53acb57e": {
+          "type": "mega_menu",
+          "settings": {
+            "menu_item": "經典隕石",
+            "images_position": "right",
+            "image_1": "shopify://shop_images/2024-sept-megamenu-img-8.jpg",
+            "image_1_heading": "Interstellar | 星際穿越",
+            "image_1_text": "",
+            "image_1_link": "shopify://collections/interstellar",
+            "image_2": "shopify://shop_images/2024-sept-megamenu-img-2.jpg",
+            "image_2_heading": "Meteorite Fusion | 星河秘語",
+            "image_2_text": "",
+            "image_2_link": "shopify://collections/classic-meteorite-fusion"
+          }
+        },
+        "mega_menu_7xifR4": {
+          "type": "mega_menu",
+          "settings": {
+            "menu_item": "天然石珠寶",
+            "images_position": "right",
+            "image_1": "shopify://shop_images/Faithful_Guard-2.jpg",
+            "image_1_heading": "詳細天然石選擇指南",
+            "image_1_text": "",
+            "image_1_link": "shopify://pages/choose-crystal-energy",
+            "image_2_heading": "",
+            "image_2_text": "",
+            "image_2_link": ""
+          }
+        },
+        "c25181e1-2aa1-4a0d-92e2-3bc403b004eb": {
+          "type": "mega_menu",
+          "settings": {
+            "menu_item": "女士精選",
+            "images_position": "right",
+            "image_1": "shopify://shop_images/2024-sept-megamenu-img-6.jpg",
+            "image_1_heading": "For Her | 送女生",
+            "image_1_text": "",
+            "image_1_link": "shopify://collections/gifts-for-her",
+            "image_2": "shopify://shop_images/2024-sept-megamenu-img.jpg",
+            "image_2_heading": "珠寶套裝",
+            "image_2_text": "",
+            "image_2_link": "shopify://collections/women-jewelry-sets"
+          }
+        },
+        "740f3f11-659f-485e-89d1-163cc651726c": {
+          "type": "mega_menu",
+          "settings": {
+            "menu_item": "設計系列",
+            "images_position": "right",
+            "image_1": "shopify://shop_images/2024-sept-megamenu-img-3.jpg",
+            "image_1_heading": "精選系列 | Beads & Links",
+            "image_1_text": "經典圓珠搭配半銀鏈奢品",
+            "image_1_link": "shopify://collections/beads-and-links",
+            "image_2": "shopify://shop_images/top-collection-mega-menu.jpg",
+            "image_2_heading": "精選系列 | 波賽頓 Poseidon",
+            "image_2_text": "",
+            "image_2_link": "shopify://collections/poseidons"
+          }
+        },
+        "30c4044a-d017-4962-974e-2109af9900ee": {
+          "type": "mega_menu",
+          "settings": {
+            "menu_item": "心意好禮",
+            "images_position": "right",
+            "image_1": "shopify://shop_images/2024-sept-megamenu-img-9.jpg",
+            "image_1_heading": "情侶禮物 | For Couples",
+            "image_1_text": "",
+            "image_1_link": "shopify://collections/gifts-for-couples",
+            "image_2": "shopify://shop_images/2024-sept-megamenu-img-13.jpg",
+            "image_2_heading": "禮物靈感｜Gift Ideas",
+            "image_2_text": "",
+            "image_2_link": "shopify://pages/best-selected-gift-ideas"
+          }
+        },
+        "1a79959d-e193-479c-bf65-9ce01f86a791": {
+          "type": "mega_menu",
+          "settings": {
+            "menu_item": "探索",
+            "images_position": "right",
+            "image_1": "shopify://shop_images/about-awnl_f9c054d2-2854-4b2d-a38e-2838ccc5b4d2.jpg",
+            "image_1_heading": "首次購物指南",
+            "image_1_text": "查看關於購物流程、運送、付款及保固等關鍵資訊，助您輕鬆下單無憂",
+            "image_1_link": "shopify://pages/shopping-guide",
+            "image_2": "shopify://shop_images/2024-sept-megamenu-img-4.jpg",
+            "image_2_heading": "盧恩符文 | Runes",
+            "image_2_text": "",
+            "image_2_link": "shopify://pages/runes"
+          }
+        }
+      },
+      "block_order": [
+        "7c09581b-42e3-430b-8817-3633f744b16e",
+        "124e29f7-c226-4d09-abe6-1587b10d2e91",
+        "a66b8a61-6a3b-42dd-9652-8add53acb57e",
+        "mega_menu_7xifR4",
+        "c25181e1-2aa1-4a0d-92e2-3bc403b004eb",
+        "740f3f11-659f-485e-89d1-163cc651726c",
+        "30c4044a-d017-4962-974e-2109af9900ee",
+        "1a79959d-e193-479c-bf65-9ce01f86a791"
+      ],
+      "custom_css": [],
+      "settings": {
+        "color_scheme": "scheme-2",
+        "enable_sticky": false,
+        "hide_on_scroll": false,
+        "show_separation_border": true,
+        "reduce_padding": true,
+        "logo": "shopify://shop_images/homepage-logo-400-120.png",
+        "logo_max_width": 140,
+        "logo_mobile_max_width": 115,
+        "menu": "menu-2024-sept",
+        "sidebar_menu": "menu-2024-sept",
+        "menu_open_trigger": "click",
+        "menu_text_font": "heading",
+        "enable_search": true,
+        "sidebar_color_scheme": "scheme-3",
+        "sidebar_text_font": "heading",
+        "sidebar_show_dividers": true,
+        "sidebar_open_second_level_menus": false,
+        "layout": "drawer",
+        "show_icons": true,
+        "show_country_selector": true,
+        "show_country_name": true,
+        "show_country_flag": true,
+        "show_locale_selector": false,
+        "transparent_header_text_color": "#ffffff",
+        "transparent_logo": "shopify://shop_images/homepage-logo-400-120_white.png"
+      }
+    },
+    "1741077827c66b0c8e": {
+      "type": "apps",
+      "custom_css": [
+        "div.h2 {font-weight: 400 !important;}",
+        ".essential_annoucement_bar_close_button_b6e10656-cf0a-4439-b881-1ef98026b49a {margin-right: 10px !important;}",
+        "@media (max-width: 767px) {.essential_annoucement_bar_close_button_b6e10656-cf0a-4439-b881-1ef98026b49a {margin-top: 5px !important; } div.h2 {font-size: 12px !important; }}"
+      ],
+      "settings": {
+        "color_scheme": "scheme-1b02ad27-67f6-4363-902b-7afc4c7eb905",
+        "separate_section_with_border": false,
+        "remove_vertical_spacing": true,
+        "remove_horizontal_spacing": true
+      }
+    },
+    "announcement-bar": {
+      "type": "announcement-bar",
+      "blocks": {
+        "message_fkPn46": {
+          "type": "message",
+          "settings": {
+            "text": "AWNL會員計畫已開啟積分折扣兌換【<a href=\"https://awnl.tw/apps/loyalty\" title=\"https://awnl.tw/apps/loyalty\"><strong>登入會員專區</strong></a>】"
+          }
+        },
+        "message_rparzC": {
+          "type": "message",
+          "settings": {
+            "text": "瑞典 AWNL 官方繁體中文網站，請於此購買正品"
+          }
+        }
+      },
+      "block_order": [
+        "message_fkPn46",
+        "message_rparzC"
+      ],
+      "custom_css": [
+        ".announcement-bar {padding-top: 8px; padding-bottom: 8px;}"
+      ],
+      "settings": {
+        "color_scheme": "scheme-3",
+        "enable_sticky": false,
+        "autoplay": true,
+        "cycle_speed": 4,
+        "desktop_font_size": 13,
+        "mobile_font_size": 12
+      }
+    }
+  },
+  "order": [
+    "header",
+    "1741077827c66b0c8e",
+    "announcement-bar"
+  ]
+}
