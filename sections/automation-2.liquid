@@ -3,6 +3,10 @@
   /* New static images (left & right top) */
 #static-image-left, #static-image-right {
   position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
   z-index: 8;
   pointer-events: none;
   transition: all 0.3s ease;
@@ -17,6 +21,10 @@
 /* Clasp image container (ensure it's on top) */
 #clasp-image-container {
   position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
   z-index: 10;
   pointer-events: none;
   transition: all 0.3s ease;
@@ -26,6 +34,16 @@
   height: 100%;
   object-fit: contain;
   display: block;
+}
+
+#emBrace {
+  height: 100% !important;
+  object-fit: contain !important;
+}
+
+#lockEr {
+  height: 100% !important;
+  object-fit: contain !important;
 }
 
 div#wishlisthero-product-page-button-container,
@@ -167,12 +185,14 @@ div#instruction p {
   flex-basis: 40%;
   height: 100%;
   overflow-y: auto;
+  order: 2;
 }
 
 .product-wrapper .product-beautify {
   flex-basis: 70%;
-  padding-top:4rem;
+  padding-top: 120px;
   height: 100%;
+  order: 1;
 }
 
 .product-wrapper .product-cont h2 {
@@ -2175,11 +2195,15 @@ const sizeBeadCounts = {
   '4xl': {{ section.settings.bead_count_4xl | default: 20 }}
 };
 
-const fixedParts = [
+let fixedParts = [
   {% if section.settings.fixed_part_1_enabled %}{ angle: {{ section.settings.fixed_part_1_angle | default: 0 }}, width: {{ section.settings.fixed_part_1_width | default: 30 }}, enabled: true },{% endif %}
   {% if section.settings.fixed_part_2_enabled %}{ angle: {{ section.settings.fixed_part_2_angle | default: 120 }}, width: {{ section.settings.fixed_part_2_width | default: 30 }}, enabled: true },{% endif %}
   {% if section.settings.fixed_part_3_enabled %}{ angle: {{ section.settings.fixed_part_3_angle | default: 240 }}, width: {{ section.settings.fixed_part_3_width | default: 30 }}, enabled: true },{% endif %}
 ];
+
+if (window.location.href.includes('style-3') || {{ product.handle | json }}.includes('style-3') || window.location.href.includes('style3')) {
+  fixedParts = [{ angle: 270, width: 60, enabled: true }];
+}
 
 const beadSettings = {
   size: {{ section.settings.bead_size | default: 45 }},
@@ -2267,12 +2291,12 @@ const staticImages = [
   {% if section.settings.static_image_left_enabled and section.settings.static_image_left %}
     {
       src: "{{ section.settings.static_image_left | image_url }}",
-      angle: {{ section.settings.static_image_left_angle | default: 135 }},
-      offset: {{ section.settings.static_image_left_offset | default: 0 }},
+      angle: {% if product.handle contains 'style-3' or template.suffix == 'style-3' %}250{% else %}{{ section.settings.static_image_left_angle | default: 135 }}{% endif %},
+      offset: {% if product.handle contains 'style-3' or template.suffix == 'style-3' %}20{% else %}{{ section.settings.static_image_left_offset | default: 0 }}{% endif %},
       rotation: {{ section.settings.static_image_left_rotation | default: 0 }},
-      width: {{ section.settings.static_image_left_width | default: 60 }},
-      height: {{ section.settings.static_image_left_height | default: 60 }},
-      flip: {{ section.settings.static_image_left_flip | default: false }},
+      width: {% if product.handle contains 'style-3' or template.suffix == 'style-3' %}150{% else %}{{ section.settings.static_image_left_width | default: 60 }}{% endif %},
+      height: {% if product.handle contains 'style-3' or template.suffix == 'style-3' %}150{% else %}{{ section.settings.static_image_left_height | default: 60 }}{% endif %},
+      flip: {% if product.handle contains 'style-3' or template.suffix == 'style-3' %}false{% else %}{{ section.settings.static_image_left_flip | default: false }}{% endif %},
       enabled: true,
       containerId: 'static-image-left'
     },
@@ -2280,12 +2304,12 @@ const staticImages = [
   {% if section.settings.static_image_right_enabled and section.settings.static_image_right %}
     {
       src: "{{ section.settings.static_image_right | image_url }}",
-      angle: {{ section.settings.static_image_right_angle | default: 45 }},
-      offset: {{ section.settings.static_image_right_offset | default: 0 }},
+      angle: {% if product.handle contains 'style-3' or template.suffix == 'style-3' %}290{% else %}{{ section.settings.static_image_right_angle | default: 45 }}{% endif %},
+      offset: {% if product.handle contains 'style-3' or template.suffix == 'style-3' %}20{% else %}{{ section.settings.static_image_right_offset | default: 0 }}{% endif %},
       rotation: {{ section.settings.static_image_right_rotation | default: 0 }},
-      width: {{ section.settings.static_image_right_width | default: 60 }},
-      height: {{ section.settings.static_image_right_height | default: 60 }},
-      flip: {{ section.settings.static_image_right_flip | default: false }},
+      width: {% if product.handle contains 'style-3' or template.suffix == 'style-3' %}150{% else %}{{ section.settings.static_image_right_width | default: 60 }}{% endif %},
+      height: {% if product.handle contains 'style-3' or template.suffix == 'style-3' %}150{% else %}{{ section.settings.static_image_right_height | default: 60 }}{% endif %},
+      flip: {% if product.handle contains 'style-3' or template.suffix == 'style-3' %}true{% else %}{{ section.settings.static_image_right_flip | default: false }}{% endif %},
       enabled: true,
       containerId: 'static-image-right'
     },
@@ -2514,7 +2538,7 @@ function refreshCircularLayout() {
     placeBeadsInAvailableAngles(parker, beadCount, sizeCode, availableAngles);
   }
   applyExtraGaps();
-  setTimeout(() => { placeStaticImages(); }, 50);
+  setTimeout(() => { placeStaticImages(); placeKnotBeads(); }, 50);
 }
 
 function applyExtraGaps() {
@@ -2624,10 +2648,71 @@ function placeStaticImages() {
       z-index: 8;
       pointer-events: none;
     `;
-    img.style.cssText = `width:100%; height:100%; object-fit:contain; display:block;`;
+    img.style.cssText = `width:100%; height:100%; object-fit:contain; display:block;${image.flip ? ' transform: scaleX(-1);' : ''}`;
     const container = image.containerId ? document.getElementById(image.containerId) : document.getElementById('static-images-container');
     if (container) container.appendChild(imgWrapper);
   });
+}
+
+// ============================================
+// KNOT BEADS AT CORD TIPS (STYLE-3)
+// ============================================
+function placeKnotBeads() {
+  {% if product.handle contains 'style-3' or template.suffix == 'style-3' %}
+  const parker = document.getElementById('parker');
+  if (!parker) return;
+  // If clasp is selected, it renders at cord tips instead of CSS circles
+  if (selectedClasp) {
+    ['knot-bead-left', 'knot-bead-right'].forEach(id => {
+      const el = document.getElementById(id);
+      if (el) el.remove();
+    });
+    return;
+  }
+  ['knot-bead-left', 'knot-bead-right'].forEach(id => {
+    const el = document.getElementById(id);
+    if (el) el.remove();
+  });
+  const rect = parker.getBoundingClientRect();
+  if (!rect.width) return;
+  const parkerSize = Math.min(rect.width, rect.height);
+  const centerX = rect.width / 2;
+  const centerY = rect.height / 2;
+  const radiusPx   = (beadSettings.radius / 100) * parkerSize;
+  const cordOffset = (20 / 100) * parkerSize; // matches static_image_left/right offset=20
+  const cordDist   = radiusPx + cordOffset;
+  const halfImg    = 50; // ~half of 150px cord image height (tip position)
+  const beads = [
+    { id: 'knot-bead-left',  angle: 250, color: 'radial-gradient(circle at 35% 30%, #555, #111)' },
+    { id: 'knot-bead-right', angle: 290, color: 'radial-gradient(circle at 35% 30%, #8B6040, #3d2010)' }
+  ];
+  beads.forEach(bead => {
+    const angleRad    = bead.angle * Math.PI / 180;
+    const totalRotRad = (bead.angle + 90) * Math.PI / 180;
+    const cordCX = centerX + cordDist * Math.cos(angleRad);
+    const cordCY = centerY + cordDist * Math.sin(angleRad);
+    // rotate tip offset (0, -halfImg) by totalRotRad
+    const tipX = cordCX + halfImg * Math.sin(totalRotRad);
+    const tipY = cordCY - halfImg * Math.cos(totalRotRad) + parkerSize * 0.05;
+    const beadPx = beadSettings.size;
+    const dot = document.createElement('div');
+    dot.id = bead.id;
+    dot.style.cssText = `
+      position: absolute;
+      left: ${tipX}px;
+      top: ${tipY}px;
+      transform: translate(-50%, -50%);
+      width: ${beadPx}px;
+      height: ${beadPx}px;
+      background: ${bead.color};
+      border-radius: 50%;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.5);
+      z-index: 9;
+      pointer-events: none;
+    `;
+    parker.appendChild(dot);
+  });
+  {% endif %}
 }
 
 // ============================================
@@ -2654,10 +2739,48 @@ function placeClaspImage() {
   if (!selectedClasp) return;
   const parker = document.getElementById('parker');
   const rect = parker.getBoundingClientRect();
+  if (!rect.width) return;
+  {% if product.handle contains 'style-3' or template.suffix == 'style-3' %}
+  // Style-3: place clasp image at both cord tip positions (matching placeKnotBeads positions)
+  const parkerSize = Math.min(rect.width, rect.height);
   const centerX = rect.width / 2;
   const centerY = rect.height / 2;
-  const radiusPercent = beadSettings.radius;
-  const radiusPx = (radiusPercent / 100) * Math.min(rect.width, rect.height);
+  const radiusPx  = (beadSettings.radius / 100) * parkerSize;
+  const cordDist  = radiusPx + (20 / 100) * parkerSize;
+  const halfImg   = 50;
+  const claspSize = beadSettings.size;
+  [250, 290].forEach(angle => {
+    const angleRad    = angle * Math.PI / 180;
+    const totalRotRad = (angle + 90) * Math.PI / 180;
+    const cordCX = centerX + cordDist * Math.cos(angleRad);
+    const cordCY = centerY + cordDist * Math.sin(angleRad);
+    const tipX = cordCX + halfImg * Math.sin(totalRotRad);
+    const tipY = cordCY - halfImg * Math.cos(totalRotRad) + parkerSize * 0.05;
+    const imgWrapper = document.createElement('div');
+    imgWrapper.style.cssText = `
+      position: absolute;
+      left: ${tipX}px;
+      top: ${tipY}px;
+      transform: translate(-50%, -50%);
+      width: ${claspSize}px;
+      height: ${claspSize}px;
+      border-radius: 50%;
+      overflow: hidden;
+      z-index: 10;
+      pointer-events: none;
+    `;
+    const img = document.createElement('img');
+    img.src = selectedClasp.image;
+    img.alt = selectedClasp.title;
+    img.style.cssText = 'width:100%; height:100%; object-fit:cover; display:block;';
+    imgWrapper.appendChild(img);
+    container.appendChild(imgWrapper);
+  });
+  {% else %}
+  // Other styles: original single-clasp behavior
+  const centerX = rect.width / 2;
+  const centerY = rect.height / 2;
+  const radiusPx = (beadSettings.radius / 100) * Math.min(rect.width, rect.height);
   const offsetPx = {{ section.settings.clasp_offset | default: 150 }};
   const angleDeg = {{ section.settings.clasp_angle | default: 90 }};
   const angleRad = angleDeg * Math.PI / 180;
@@ -2681,6 +2804,7 @@ function placeClaspImage() {
   img.alt = selectedClasp.title;
   imgWrapper.appendChild(img);
   container.appendChild(imgWrapper);
+  {% endif %}
 }
 
 function updateTotalPrice() {
@@ -3082,6 +3206,23 @@ document.addEventListener('DOMContentLoaded', function() {
       }
     });
   }
+  function updateHangingStrings(colorText) {
+    const lowerColor = colorText.toLowerCase();
+    let cordSrc = "";
+    if (lowerColor.includes("blk") || lowerColor.includes("black")) {
+      cordSrc = "{{ section.settings.static_image_left | image_url }}";
+    } else if (lowerColor.includes("brown")) {
+      cordSrc = "{{ section.settings.static_image_right | image_url }}";
+    }
+    if (cordSrc) {
+      staticImages.forEach(img => {
+        if (img.containerId === 'static-image-left' || img.containerId === 'static-image-right') {
+          img.src = cordSrc;
+        }
+      });
+    }
+  }
+
   // String color selection
   const StringColorCards = document.querySelectorAll('.stringcolor-card');
   const productSummery = document.querySelector(".product-summery");
@@ -3095,6 +3236,10 @@ document.addEventListener('DOMContentLoaded', function() {
       if (colorDisplay) colorDisplay.textContent = selectedStringColor;
       const colorInput = document.querySelector('input[name="properties[String Color]"]');
       if (colorInput) colorInput.value = selectedStringColor;
+
+      updateHangingStrings(selectedStringColor);
+      placeStaticImages();
+      placeKnotBeads();
     });
   });
   // Lock style selection
@@ -3245,6 +3390,11 @@ document.addEventListener('DOMContentLoaded', function() {
   droppers.forEach(dropper => dropper.addEventListener('click', () => dropper.classList.toggle('selected')));
   // Initialize clasp sidebar
   initClaspSidebar();
+  // Auto-select first available clasp so it renders immediately
+  setTimeout(() => {
+    const firstClasp = document.querySelector('.clasp-card:not(.is-disabled)');
+    if (firstClasp) firstClasp.click();
+  }, 300);
   // Resize handling for static images and clasp
   let resizeTimeout;
   window.addEventListener('resize', function() {
@@ -3253,11 +3403,16 @@ document.addEventListener('DOMContentLoaded', function() {
       if (document.getElementById('parker')) {
         placeStaticImages();
         placeClaspImage();
+        placeKnotBeads();
       }
     }, 250);
   });
   // Initial calls
-  setTimeout(() => placeStaticImages(), 200);
+  const initialStringCard = document.querySelector('.stringcolor-card.active');
+  if (initialStringCard) {
+    updateHangingStrings(initialStringCard.querySelector('h6').textContent.trim());
+  }
+  setTimeout(() => { placeStaticImages(); placeKnotBeads(); }, 200);
   // Show loader/hide loader
   window.showLoader = function() { document.getElementById('loadingOverlay').style.display = 'flex'; };
   window.hideLoader = function() { document.getElementById('loadingOverlay').style.display = 'none'; };

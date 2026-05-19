@@ -1,12 +1,3 @@
-/*
- * ------------------------------------------------------------
- * IMPORTANT: The contents of this file are auto-generated.
- *
- * This file may be updated by the Shopify admin theme editor
- * or related systems. Please exercise caution as any changes
- * made to this file may be overwritten.
- * ------------------------------------------------------------
- */
 {
   "sections": {
     "main": {
@@ -270,21 +261,21 @@
         "static_image_left_enabled": true,
         "static_image_left": "shopify://shop_images/style3-style4-blk-string_1aa55512-4b8e-4dd1-9013-e98ee2d2e3c8.png",
         "static_image_left_angle": 270,
-        "static_image_left_offset": 50,
+        "static_image_left_offset": 12,
         "static_image_left_width": 150,
         "static_image_left_height": 150,
         "static_image_left_flip": false,
         "static_image_right_enabled": true,
         "static_image_right": "shopify://shop_images/style3-style4-brown-string_990f52b9-449b-444e-a545-90d46507d59d.png",
-        "static_image_right_angle": 275,
-        "static_image_right_offset": 29,
+        "static_image_right_angle": 270,
+        "static_image_right_offset": 12,
         "static_image_right_width": 150,
         "static_image_right_height": 150,
         "static_image_right_flip": true,
         "btn_clasp": "CLASP",
         "sidebar_clasp_title": "Select Clasp",
-        "clasp_offset": 30,
-        "clasp_angle": 85,
+        "clasp_offset": 0,
+        "clasp_angle": 270,
         "clasp_width": 60,
         "clasp_height": 60
       }
