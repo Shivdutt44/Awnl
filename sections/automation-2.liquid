@@ -356,8 +356,9 @@ div#instruction p {
   opacity: 0;
   transform: translateX(10px);
   pointer-events: none;
-  /* transition: opacity 0.4s ease, transform 0.4s ease; */
+  transition: opacity 0.3s ease, transform 0.3s cubic-bezier(0.4, 0, 0.2, 1);
   overflow-y: auto;
+  contain: paint;
 }
 
 .assets-wrapper .assets-sidebar.active {
@@ -2559,20 +2560,29 @@ function placeBeadsInAvailableAngles(parker, beadCount, sizeCode, availableAngle
 }
 
 function refreshCircularLayout() {
-  const parker = document.getElementById('parker');
-  if (!parker) return;
-  const activeSizeCard = document.querySelector('.size-card.active');
-  if (!activeSizeCard) return;
-  const sizeCode = activeSizeCard.querySelector('h5').textContent.trim().toLowerCase();
-  const beadCount = sizeBeadCounts[sizeCode] || 15;
-  const availableAngles = getAvailableAngles(fixedParts);
-  if (fixedParts.length === 0 || availableAngles.length === 0) {
-    placeBeadsSimpleCircular(parker, beadCount, sizeCode);
-  } else {
-    placeBeadsInAvailableAngles(parker, beadCount, sizeCode, availableAngles);
-  }
-  applyExtraGaps();
-  setTimeout(() => { placeStaticImages(); placeKnotBeads(); positionLockEr(); }, 50);
+  if (window.pendingLayoutUpdate) cancelAnimationFrame(window.pendingLayoutUpdate);
+  window.pendingLayoutUpdate = requestAnimationFrame(() => {
+    const parker = document.getElementById('parker');
+    if (!parker) return;
+    const activeSizeCard = document.querySelector('.size-card.active');
+    if (!activeSizeCard) return;
+    const sizeCode = activeSizeCard.querySelector('h5').textContent.trim().toLowerCase();
+    const beadCount = sizeBeadCounts[sizeCode] || 15;
+    const availableAngles = getAvailableAngles(fixedParts);
+    if (fixedParts.length === 0 || availableAngles.length === 0) {
+      placeBeadsSimpleCircular(parker, beadCount, sizeCode);
+    } else {
+      placeBeadsInAvailableAngles(parker, beadCount, sizeCode, availableAngles);
+    }
+    applyExtraGaps();
+    
+    // Defer static elements to next frame to avoid long tasks
+    requestAnimationFrame(() => {
+        placeStaticImages();
+        placeKnotBeads();
+        positionLockEr();
+    });
+  });
 }
 
 function applyExtraGaps() {
@@ -3304,21 +3314,29 @@ document.addEventListener('DOMContentLoaded', function() {
   const parker = document.getElementById('parker');
   const addToCartBtn = document.querySelector('input.add-cart');
   function isVisible(el) { return !!(el.offsetParent !== null && getComputedStyle(el).display !== 'none'); }
+  // Validate droppers - throttled with requestAnimationFrame
+  let validationPending = false;
   function validateDroppers() {
-    const droppers = parker.querySelectorAll('.dropper');
-    let allValid = true;
-    droppers.forEach(drop => {
-      if (isVisible(drop) && !drop.querySelector('.selected-stone')) allValid = false;
+    if (validationPending) return;
+    validationPending = true;
+    requestAnimationFrame(() => {
+        const droppers = parker.querySelectorAll('.dropper');
+        let allValid = true;
+        droppers.forEach(drop => {
+          if (isVisible(drop) && !drop.querySelector('.selected-stone')) allValid = false;
+        });
+        const warning = document.getElementById('bead-warning');
+        if (warning) warning.style.display = allValid ? 'none' : 'block';
+        if (addToCartBtn) { addToCartBtn.disabled = false; addToCartBtn.style.opacity = '1'; }
+        validationPending = false;
     });
-    const warning = document.getElementById('bead-warning');
-    if (warning) warning.style.display = allValid ? 'none' : 'block';
-    // Button stays enabled always — warning is shown but does not block submission
-    if (addToCartBtn) { addToCartBtn.disabled = false; addToCartBtn.style.opacity = '1'; }
   }
   const observer = new MutationObserver(() => validateDroppers());
   if (parker) {
     observer.observe(parker, { attributes: true, subtree: true, childList: true, attributeFilter: ['class', 'style'] });
-    parker.addEventListener('click', (e) => { if (e.target.closest('.dropper')) setTimeout(validateDroppers, 50); });
+    parker.addEventListener('click', (e) => { 
+        if (e.target.closest('.dropper')) validateDroppers(); 
+    });
     validateDroppers();
   }
   // Instruction close
@@ -3570,7 +3588,6 @@ document.addEventListener('DOMContentLoaded', function() {
   if (initialStringCard) {
     updateHangingStrings(initialStringCard.querySelector('h6').textContent.trim());
   }
-  setTimeout(() => { placeStaticImages(); placeKnotBeads(); positionLockEr(); }, 200);
   // Show loader/hide loader
   window.showLoader = function() { document.getElementById('loadingOverlay').style.display = 'flex'; };
   window.hideLoader = function() { document.getElementById('loadingOverlay').style.display = 'none'; };
