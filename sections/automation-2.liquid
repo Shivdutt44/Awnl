@@ -2638,7 +2638,7 @@ function placeStaticImages() {
     const x = centerX + distance * Math.cos(angleRad);
     let y = centerY + distance * Math.sin(angleRad);
 
-    // Apply size-specific adjustment for XXL strings to move them lower ("niche")
+    // Apply vertical shift for all sizes to move strings lower and hide white gaps
     if (image.containerId === 'static-image-left' || image.containerId === 'static-image-right') {
         y += 4.5; // Shift down by 4.5% of container height for all sizes to hide white gaps
     }
@@ -2701,7 +2701,7 @@ function placeKnotBeads() {
     const cordCX_pct = cX + cordDist_pct * Math.cos(angleRad);
     let cordCY_pct = cY + cordDist_pct * Math.sin(angleRad);
 
-    // Apply vertical shift for all sizes to hide white gaps
+    // Apply vertical shift for all sizes to move strings lower and hide white gaps
     cordCY_pct += 4.5; 
     
 
