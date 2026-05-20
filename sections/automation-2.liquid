@@ -3341,7 +3341,8 @@ document.addEventListener('DOMContentLoaded', function() {
 
       updateHangingStrings(selectedStringColor);
       placeStaticImages();
-      placeKnotBeads();
+      // placeKnotBeads() intentionally skipped — knot bead positions don't change
+      // on string color change, and recreating them would wipe any placed clasp.
       positionLockEr();
     });
   });
