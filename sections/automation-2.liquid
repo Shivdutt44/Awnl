@@ -1855,13 +1855,23 @@ input#engraving-text {
 <div id="static-image-right"></div>
 
                   <div id="clasp-image-container"></div>
-    {% comment %} String/background image {% endcomment %} 
-    {% assign string_image = product.metafields.bracelets.strings.value | first %}
-    <img id="emBrace" src="{% if string_image %}{{ string_image | image_url }}{% endif %}" role="presentation" data-ac-alt-type="image" height="" width="">
+    {%- assign string_image = product.metafields.bracelets.strings.value | first -%}
+    <img id="emBrace" 
+         src="{% if string_image %}{{ string_image | image_url: width: 1000 }}{% endif %}" 
+         role="presentation" 
+         data-ac-alt-type="image" 
+         height="auto" 
+         width="1000"
+         fetchpriority="high">
     
-    {% comment %} Lock image {% endcomment %} 
-    {% assign lock_image = product.metafields.bracelets.locks.value | first %}
-    <img id="lockEr" src="{% if lock_image %}{{ lock_image | image_url }}{% endif %}" role="presentation" data-ac-alt-type="image" height="" width="">
+    {%- assign lock_image = product.metafields.bracelets.locks.value | first -%}
+    <img id="lockEr" 
+         src="{% if lock_image %}{{ lock_image | image_url: width: 1000 }}{% endif %}" 
+         role="presentation" 
+         data-ac-alt-type="image" 
+         height="auto" 
+         width="1000"
+         fetchpriority="high">
     
     {% comment %} Instruction overlay {% endcomment %}
     <div id="instruction">
@@ -2004,7 +2014,11 @@ input#engraving-text {
       data-inventory="{{ variant.inventory_quantity }}"
       {% unless in_stock %}aria-disabled="true"{% endunless %}
     >
-      <img src="{{ p.featured_image | image_url }}" alt="{{ p.title }}">
+      <img src="{{ p.featured_image | image_url: width: 200 }}" 
+           alt="{{ p.title }}" 
+           loading="lazy" 
+           width="200" 
+           height="200">
 
       <div class="stone-cont">
         <h6>{{ p.title }}</h6>
@@ -2056,7 +2070,11 @@ input#engraving-text {
                          data-title="{{ clasp.title }}"
                          data-image="{{ clasp.featured_image | image_url }}"
                          {% unless in_stock %}aria-disabled="true"{% endunless %}>
-                        <img src="{{ clasp.featured_image | image_url }}" alt="{{ clasp.title }}">
+                        <img src="{{ clasp.featured_image | image_url: width: 200 }}" 
+                             alt="{{ clasp.title }}" 
+                             loading="lazy"
+                             width="200"
+                             height="200">
                         <div class="stone-cont">
                             <h6>{{ clasp.title }}</h6>
                             <p>{{ clasp.description }}</p>
@@ -2095,7 +2113,11 @@ input#engraving-text {
       data-inventory="{{ variant.inventory_quantity }}"
       {% unless in_stock %}aria-disabled="true"{% endunless %}
     >
-      <img src="{{ p.featured_image | image_url }}" alt="{{ p.title }}">
+      <img src="{{ p.featured_image | image_url: width: 200 }}" 
+           alt="{{ p.title }}" 
+           loading="lazy"
+           width="200"
+           height="200">
 
       <div class="stone-cont">
         <h6>{{ p.title }}</h6>
@@ -2138,7 +2160,11 @@ input#engraving-text {
                               {% assign image = string_image | image_url | split:'files' | last %}
                               {% assign image = image | split:'?' | first | replace:'/','' %}
                               {% assign image = image | split:'-' | first %}
-                              <img src="{{ string_image | image_url }}" alt="{{ image }}" height="" width="">
+                              <img src="{{ string_image | image_url: width: 200 }}" 
+                                   alt="{{ image }}" 
+                                   height="200" 
+                                   width="200"
+                                   loading="lazy">
                               <h6>{{ image }}</h6>
                           </div>
                         {% endfor %}
@@ -2298,7 +2324,7 @@ const staticImages = [
   {% endif %}
   {% if section.settings.static_image_left_enabled and section.settings.static_image_left %}
     {
-      src: "{{ section.settings.static_image_left | image_url }}",
+      src: "{{ section.settings.static_image_left | image_url: width: 400 }}",
       angle: {% if product.handle contains 'style-3' or template.suffix == 'style-3' %}250{% else %}{{ section.settings.static_image_left_angle | default: 135 }}{% endif %},
       offset: {% if product.handle contains 'style-3' or template.suffix == 'style-3' %}20{% else %}{{ section.settings.static_image_left_offset | default: 0 }}{% endif %},
       rotation: {{ section.settings.static_image_left_rotation | default: 0 }},
@@ -2311,7 +2337,7 @@ const staticImages = [
   {% endif %}
   {% if section.settings.static_image_right_enabled and section.settings.static_image_right %}
     {
-      src: "{{ section.settings.static_image_right | image_url }}",
+      src: "{{ section.settings.static_image_right | image_url: width: 400 }}",
       angle: {% if product.handle contains 'style-3' or template.suffix == 'style-3' %}290{% else %}{{ section.settings.static_image_right_angle | default: 45 }}{% endif %},
       offset: {% if product.handle contains 'style-3' or template.suffix == 'style-3' %}20{% else %}{{ section.settings.static_image_right_offset | default: 0 }}{% endif %},
       rotation: {{ section.settings.static_image_right_rotation | default: 0 }},
@@ -3337,9 +3363,9 @@ document.addEventListener('DOMContentLoaded', function() {
     const lowerColor = colorText.toLowerCase();
     let cordSrc = "";
     if (lowerColor.includes("blk") || lowerColor.includes("black")) {
-      cordSrc = "{{ section.settings.static_image_left | image_url }}";
+      cordSrc = "{{ section.settings.static_image_left | image_url: width: 400 }}";
     } else if (lowerColor.includes("brown")) {
-      cordSrc = "{{ section.settings.static_image_right | image_url }}";
+      cordSrc = "{{ section.settings.static_image_right | image_url: width: 400 }}";
     }
     if (cordSrc) {
       staticImages.forEach(img => {
