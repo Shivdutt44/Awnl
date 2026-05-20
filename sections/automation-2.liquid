@@ -2669,27 +2669,30 @@ function placeKnotBeads() {
     const el = document.getElementById(id);
     if (el) el.remove();
   });
+  // Get current parker pixel size — used only to convert the fixed 150px cord height to %
   const rect = parker.getBoundingClientRect();
   if (!rect.width) return;
   const parkerSize = Math.min(rect.width, rect.height);
-  const centerX = rect.width / 2;
-  const centerY = rect.height / 2;
-  const radiusPx   = (beadSettings.radius / 100) * parkerSize;
-  const cordOffset = (20 / 100) * parkerSize; // matches static_image_left/right offset=20
-  const cordDist   = radiusPx + cordOffset;
-  const halfImg    = 50; // ~half of 150px cord image height (tip position)
+  // Cord center: % coordinates (same formula as placeStaticImages, immune to transition timing)
+  const cX = beadSettings.centerX;             // % from left
+  const cY = beadSettings.centerY;             // % from top
+  const cordDist_pct = beadSettings.radius + 20; // % (radius% + offset 20%, matches staticImages)
+  // Cord image is 150px tall; knot is at the outer tip = 75px from cord centre
+  // Convert to % of current parker size so it aligns with the %-positioned cord image
+  const halfImg_pct = (75 / parkerSize) * 100;
   const knotBeadPlaceholder = `{% if product.metafields.bracelets.beads_placeholder_image.value %}url('{{ product.metafields.bracelets.beads_placeholder_image.value | image_url }}'){% else %}none{% endif %}`;
   const beads = [
     { id: 'knot-bead-left',  angle: 250 },
     { id: 'knot-bead-right', angle: 290 }
   ];
   beads.forEach(bead => {
-    const angleRad    = bead.angle * Math.PI / 180;
-    const totalRotRad = (bead.angle + 90) * Math.PI / 180;
-    const cordCX = centerX + cordDist * Math.cos(angleRad);
-    const cordCY = centerY + cordDist * Math.sin(angleRad);
-    const tipX = cordCX + halfImg * Math.sin(totalRotRad);
-    const tipY = cordCY - halfImg * Math.cos(totalRotRad) + parkerSize * 0.05;
+    const angleRad = bead.angle * Math.PI / 180;
+    // Cord image centre in % — identical to placeStaticImages calculation
+    const cordCX_pct = cX + cordDist_pct * Math.cos(angleRad);
+    const cordCY_pct = cY + cordDist_pct * Math.sin(angleRad);
+    // Outer tip of cord (the knot) = cord centre + halfImg in the radial direction
+    const tipX_pct = cordCX_pct + halfImg_pct * Math.cos(angleRad);
+    const tipY_pct = cordCY_pct + halfImg_pct * Math.sin(angleRad);
     const beadPx = beadSettings.size;
     const dot = document.createElement('div');
     dot.id = bead.id;
@@ -2697,8 +2700,8 @@ function placeKnotBeads() {
     dot.dataset.placeholder = knotBeadPlaceholder;
     dot.style.cssText = `
       position: absolute;
-      left: ${tipX}px;
-      top: ${tipY}px;
+      left: ${tipX_pct.toFixed(2)}%;
+      top: ${tipY_pct.toFixed(2)}%;
       transform: translate(-50%, -50%);
       width: ${beadPx}px;
       height: ${beadPx}px;
@@ -3378,6 +3381,9 @@ document.addEventListener('DOMContentLoaded', function() {
       parkerEl.classList.add(`size-${selectedSizeClass}`);
       updateLockImageBasedOnSize();
       refreshCircularLayout();
+      // Re-place knot beads after the 400ms CSS transition finishes so the final
+      // parker pixel size is used for the cord-tip % calculation
+      setTimeout(placeKnotBeads, 450);
       const sizeSidebar = document.getElementById('bracelet-size-sidebar');
       if (sizeSidebar) sizeSidebar.classList.remove('active');
       if (typeof activeSidebar !== 'undefined' && activeSidebar === sizeSidebar) activeSidebar = null;
@@ -3398,6 +3404,7 @@ document.addEventListener('DOMContentLoaded', function() {
       parkerEl.classList.add(`size-${selectedSizeClass}`);
       updateLockImageBasedOnSize();
       refreshCircularLayout();
+      setTimeout(placeKnotBeads, 450);
     } else {
       const sizeCards = document.querySelectorAll('.size-card');
       if (sizeCards.length > 0) {
@@ -3415,6 +3422,7 @@ document.addEventListener('DOMContentLoaded', function() {
         parkerEl.classList.add(`size-${selectedSizeClass}`);
         updateLockImageBasedOnSize();
         refreshCircularLayout();
+        setTimeout(placeKnotBeads, 450);
       }
     }
   }, 100);
