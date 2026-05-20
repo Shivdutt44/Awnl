@@ -3038,7 +3038,7 @@ function resetProductForm() {
   const beadWarning = document.getElementById('bead-warning');
   if (beadWarning) beadWarning.style.display = 'none';
   const addToCartBtn = document.querySelector('.add-cart');
-  if (addToCartBtn) { addToCartBtn.disabled = true; addToCartBtn.style.opacity = '0.5'; }
+  if (addToCartBtn) { addToCartBtn.disabled = false; addToCartBtn.style.opacity = '1'; }
   const errorMessage = document.querySelector('.error-message');
   if (errorMessage) errorMessage.style.display = 'none';
   resetClasp();
@@ -3241,7 +3241,8 @@ document.addEventListener('DOMContentLoaded', function() {
     });
     const warning = document.getElementById('bead-warning');
     if (warning) warning.style.display = allValid ? 'none' : 'block';
-    if (addToCartBtn) { addToCartBtn.disabled = !allValid; addToCartBtn.style.opacity = allValid ? '1' : '0.5'; }
+    // Button stays enabled always — warning is shown but does not block submission
+    if (addToCartBtn) { addToCartBtn.disabled = false; addToCartBtn.style.opacity = '1'; }
   }
   const observer = new MutationObserver(() => validateDroppers());
   if (parker) {
