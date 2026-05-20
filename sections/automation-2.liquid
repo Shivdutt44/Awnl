@@ -2742,18 +2742,8 @@ function syncKnotBeadColors() {
 // POSITION LOCK IMAGE FOR STYLE-3
 // ============================================
 function positionLockEr() {
-  {% if product.handle contains 'style-3' or template.suffix == 'style-3' %}
-  const lockEr = document.getElementById('lockEr');
-  if (!lockEr) return;
-  // For style-3: the clasp sits at the TOP of the bracelet ring (angle 270° = straight up).
-  // In % coordinates: top = centerY - radius, left = centerX.
-  // This covers the white gap between the two cord images (at 250° and 290°).
-  const claspTop  = beadSettings.centerY - beadSettings.radius; // e.g. 50 - 41 = 9%
-  const claspLeft = beadSettings.centerX;                        // 50%
-  lockEr.style.top       = `${claspTop}%`;
-  lockEr.style.left      = `${claspLeft}%`;
-  lockEr.style.transform = 'translate(-50%, -50%)';
-  {% endif %}
+  // lockEr stays at its CSS-defined position (top:50%, left:50%)
+  // — do not reposition dynamically.
 }
 
 // ============================================
@@ -2899,9 +2889,12 @@ function resetClasp() {
   document.querySelectorAll('.knot-bead-dropper[data-has-clasp]').forEach(d => {
     d.innerHTML = '';
     d.removeAttribute('data-has-clasp');
-    d.style.background = d.dataset.color;
+    d.style.backgroundImage = d.dataset.placeholder || 'none';
+    d.style.background = d.dataset.color || '';
+    d.style.opacity = '0.3';
+    d.style.zIndex = '9';
     d.style.outline = '';
-    d.style.boxShadow = '0 2px 6px rgba(0,0,0,0.5)';
+    d.style.boxShadow = '';
   });
   updateTotalPrice();
   updateClaspCosting();
@@ -2948,12 +2941,15 @@ function initClaspSidebar() {
         d.removeAttribute('data-has-clasp');
       });
       document.querySelectorAll('.knot-bead-dropper[data-has-clasp]').forEach(d => {
-        d.querySelector('.selected-clasp')?.remove();
+        d.innerHTML = '';
         d.removeAttribute('data-has-clasp');
-        d.style.background = d.dataset.color;
+        d.style.backgroundImage = d.dataset.placeholder || 'none';
+        d.style.background = d.dataset.color || '';
+        d.style.opacity = '0.3';
+        d.style.zIndex = '9';
         d.style.outline = '';
         d.style.outlineOffset = '';
-        d.style.boxShadow = '0 2px 6px rgba(0,0,0,0.5)';
+        d.style.boxShadow = '';
       });
       // Place clasp in regular selected droppers
       selectedDroppers.forEach(pos => {
@@ -2977,10 +2973,13 @@ function initClaspSidebar() {
         dot.appendChild(img);
         dot.setAttribute('data-has-clasp', 'true');
         dot.classList.remove('selected');
+        dot.style.backgroundImage = 'none';
         dot.style.background = 'transparent';
+        dot.style.opacity = '1';
+        dot.style.zIndex = '15';
         dot.style.outline = '';
         dot.style.outlineOffset = '';
-        dot.style.boxShadow = '0 2px 6px rgba(0,0,0,0.5)';
+        dot.style.boxShadow = 'none';
       });
       {% else %}
       placeClaspImage();
