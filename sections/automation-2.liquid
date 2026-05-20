@@ -2677,9 +2677,9 @@ function placeKnotBeads() {
   const cX = beadSettings.centerX;             // % from left
   const cY = beadSettings.centerY;             // % from top
   const cordDist_pct = beadSettings.radius + 20; // % (radius% + offset 20%, matches staticImages)
-  // Cord image is 150px tall; knot is at the outer tip = 75px from cord centre
-  // Convert to % of current parker size so it aligns with the %-positioned cord image
-  const halfImg_pct = (75 / parkerSize) * 100;
+  // Cord image is 150px tall; the knot (dark ball) sits ~50px from the image centre
+  // (not at the very edge) — using 50px lands the dropper on the knot itself.
+  const halfImg_pct = (50 / parkerSize) * 100;
   const knotBeadPlaceholder = `{% if product.metafields.bracelets.beads_placeholder_image.value %}url('{{ product.metafields.bracelets.beads_placeholder_image.value | image_url }}'){% else %}none{% endif %}`;
   const beads = [
     { id: 'knot-bead-left',  angle: 250 },
@@ -2692,7 +2692,7 @@ function placeKnotBeads() {
     const cordCY_pct = cY + cordDist_pct * Math.sin(angleRad);
     // Outer tip of cord (the knot) = cord centre + halfImg in the radial direction
     const tipX_pct = cordCX_pct + halfImg_pct * Math.cos(angleRad);
-    const tipY_pct = cordCY_pct + halfImg_pct * Math.sin(angleRad) + 5;
+    const tipY_pct = cordCY_pct + halfImg_pct * Math.sin(angleRad);
     const beadPx = beadSettings.size;
     const dot = document.createElement('div');
     dot.id = bead.id;
