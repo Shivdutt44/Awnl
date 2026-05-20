@@ -1678,38 +1678,42 @@ input#engraving-text {
  display:none;
 }
 
-/* ========================================= */
-/* ADD: MOBILE BEAD SIZE CONTROL             */
-/* ========================================= */
-
-/* Mobile bead size control - add this section after the existing CSS */
-:root {
-  /* Default mobile bead size - can be overridden by schema */
-  --mobile-bead-size: 11vw;
-}
-
-/* Override for small phones */
+/* Mobile: Dynamic Bead Sizing to prevent overlap based on wrist size */
 @media (max-width: 767px) {
   .product-wrapper .product-beautify #parker .dropper {
     width: var(--mobile-bead-size) !important;
     height: var(--mobile-bead-size) !important;
     background-size: var(--mobile-bead-size) var(--mobile-bead-size) !important;
+    transition: all 0.4s ease;
   }
   
-  /* Ensure container doesn't overflow on small screens */
+  /* Transition for smooth scaling of container */
   .product-wrapper .product-beautify #parker {
-    width: 90vw !important;
-    height: 90vw !important;
-    max-width: 90vw !important;
+    max-width: 95vw !important;
+    transition: width 0.5s cubic-bezier(0.34, 1.56, 0.64, 1), height 0.5s cubic-bezier(0.34, 1.56, 0.64, 1);
   }
+  
+  /* Adjust bead size and container width based on size code to avoid overlap but scale visually */
+  #parker.size-xxs { --mobile-bead-size: 11vw; width: 68vw !important; height: 68vw !important; }
+  #parker.size-xs  { --mobile-bead-size: 11vw; width: 73vw !important; height: 73vw !important; }
+  #parker.size-s   { --mobile-bead-size: 11vw; width: 78vw !important; height: 78vw !important; }
+  
+  #parker.size-m   { --mobile-bead-size: 10vw; width: 85vw !important; height: 85vw !important; }
+  #parker.size-l   { --mobile-bead-size: 10vw; width: 92vw !important; height: 92vw !important; }
+  
+  #parker.size-xl  { --mobile-bead-size: 9.5vw; width: 95vw !important; height: 95vw !important; }
+  #parker.size-xxl { --mobile-bead-size: 9.5vw; width: 98vw !important; height: 98vw !important; }
+  
+  #parker.size-xxxl { --mobile-bead-size: 8.5vw; width: 100vw !important; height: 100vw !important; }
+  #parker.size-4xl  { --mobile-bead-size: 8.5vw; width: 102vw !important; height: 102vw !important; margin-left:-1vw; }
 }
 
-/* Extra small phones (below 480px) */
-@media (max-width: 480px) {
-  .product-wrapper .product-beautify #parker .dropper {
-    width: var(--mobile-bead-size) !important;
-    height: var(--mobile-bead-size) !important;
-  }
+/* Ensure cart item image is not cropped */
+.line-item__media, 
+.cart-item__image, 
+.cart__image, 
+[data-cart-item-image] {
+  object-fit: contain !important;
 }
 </style>
 <div class="twocol-wrapper">
@@ -2632,7 +2636,15 @@ function placeStaticImages() {
     const angleRad = angleDegrees * Math.PI / 180;
     const distance = baseRadius + (image.offset || 0);
     const x = centerX + distance * Math.cos(angleRad);
-    const y = centerY + distance * Math.sin(angleRad);
+    let y = centerY + distance * Math.sin(angleRad);
+
+    // Apply size-specific adjustment for XXL strings to move them lower ("niche")
+    const activeSizeCard = document.querySelector('.size-card.active');
+    const sizeCode = activeSizeCard ? activeSizeCard.querySelector('h5').textContent.trim().toLowerCase() : '';
+    if (sizeCode === 'xxl' && (image.containerId === 'static-image-left' || image.containerId === 'static-image-right')) {
+        y += 4.5; // Shift down by 4.5% of container height
+    }
+
     let totalRotation = angleDegrees + 90 + (image.rotation || 0);
     totalRotation = ((totalRotation % 360) + 360) % 360;
     const imgWrapper = document.createElement('div');
@@ -2689,7 +2701,15 @@ function placeKnotBeads() {
     const angleRad = bead.angle * Math.PI / 180;
     // Cord image centre in % — identical to placeStaticImages calculation
     const cordCX_pct = cX + cordDist_pct * Math.cos(angleRad);
-    const cordCY_pct = cY + cordDist_pct * Math.sin(angleRad);
+    let cordCY_pct = cY + cordDist_pct * Math.sin(angleRad);
+
+    // Apply same size-specific adjustment for XXL strings
+    const activeSizeCard = document.querySelector('.size-card.active');
+    const sizeCode = activeSizeCard ? activeSizeCard.querySelector('h5').textContent.trim().toLowerCase() : '';
+    if (sizeCode === 'xxl') {
+        cordCY_pct += 4.5; // Match the 4.5% shift from placeStaticImages
+    }
+
     // Outer tip of cord (the knot) = cord centre + halfImg in the radial direction
     const tipX_pct = cordCX_pct + halfImg_pct * Math.cos(angleRad);
     const tipY_pct = cordCY_pct + halfImg_pct * Math.sin(angleRad);
@@ -2784,7 +2804,15 @@ function placeClaspImage() {
     const angleRad    = angle * Math.PI / 180;
     const totalRotRad = (angle + 90) * Math.PI / 180;
     const cordCX = centerX + cordDist * Math.cos(angleRad);
-    const cordCY = centerY + cordDist * Math.sin(angleRad);
+    let cordCY = centerY + cordDist * Math.sin(angleRad);
+
+    // Apply same size-specific adjustment for XXL strings
+    const activeSizeCard = document.querySelector('.size-card.active');
+    const sizeCode = activeSizeCard ? activeSizeCard.querySelector('h5').textContent.trim().toLowerCase() : '';
+    if (sizeCode === 'xxl') {
+        cordCY += (parkerSize * 0.045); // Match the 4.5% shift
+    }
+
     const tipX = cordCX + halfImg * Math.sin(totalRotRad);
     const tipY = cordCY - halfImg * Math.cos(totalRotRad) + parkerSize * 0.05;
     const imgWrapper = document.createElement('div');
@@ -2812,7 +2840,12 @@ function placeClaspImage() {
   const centerX = rect.width / 2;
   const centerY = rect.height / 2;
   const radiusPx = (beadSettings.radius / 100) * Math.min(rect.width, rect.height);
-  const offsetPx = {{ section.settings.clasp_offset | default: 150 }};
+  
+  // Calculate a scale factor based on 380px (Size M) so clasp and gaps scale harmoniously
+  const scaleFactor = rect.width / 380;
+  const baseOffset = {{ section.settings.clasp_offset | default: 150 }};
+  const offsetPx = baseOffset * scaleFactor;
+  
   const angleDeg = {{ section.settings.clasp_angle | default: 90 }};
   const angleRad = angleDeg * Math.PI / 180;
   const distance = radiusPx + offsetPx;
@@ -2825,8 +2858,8 @@ function placeClaspImage() {
     left: ${x}px;
     top: ${y}px;
     transform: translate(-50%, -50%) rotate(${angleDeg + 90}deg);
-    width: {{ section.settings.clasp_width | default: 60 }}px;
-    height: {{ section.settings.clasp_height | default: 60 }}px;
+    width: ${ {{ section.settings.clasp_width | default: 60 }} * scaleFactor }px;
+    height: ${ {{ section.settings.clasp_height | default: 60 }} * scaleFactor }px;
     z-index: 10;
     pointer-events: none;
   `;

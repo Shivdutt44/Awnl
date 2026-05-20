@@ -1,0 +1,1619 @@
+﻿diff --git a/sections/automation-2.liquid b/sections/automation-2.liquid
+index 824421a..b909bde 100644
+--- a/sections/automation-2.liquid
++++ b/sections/automation-2.liquid
+@@ -1150,7 +1150,7 @@ div#instruction p {
+ .product-wrapper .product-beautify #parker .dropper .selected-stone img {
+   width: 100%;
+   height: 100%;
+-  object-fit: cover;
++  object-fit: contain;
+   display: block;
+   border-radius: 50%;
+   filter:
+@@ -1482,6 +1482,201 @@ input#engraving-text {
+ }
+ 
+ 
++/* media query */
++
++  .product-wrapper .product-beautify #parker .dropper{
++    {% if product.metafields.bracelets.beads_placeholder_image.value %}
++      background-image:url('{{ product.metafields.bracelets.beads_placeholder_image.value | image_url }}')
++    {% endif %}
++  }
++
++/* ========================================= */
++/* UPDATED: DYNAMIC BRACELET SIZING LOGIC   */
++/* ========================================= */
++
++/* 1. Define Bead Size (Fixed on Desktop, Responsive on Mobile) */
++:root {
++  /* Default for mobile/tablet */
++  --bead-size: 11vw; 
++}
++
++/* Desktop: Beads stay fixed size (45px), Container grows */
++}
++
++  .product-action {
++    flex-direction: column;
++  }
++
++  .quantity {
++    width: 100%;
++  }
++}
++
++/* Stone Costing Section */
++.stone-costing {
++  margin: 0.5rem 0;
++  border-radius: 6px;
++  overflow: hidden;
++}
++
++.stone-group {
++  display: flex;
++  justify-content: space-between;
++  align-items: center;
++  padding: 0.5rem 1rem;
++  background: #fff;
++  border-bottom: 1px solid #f0f0f0;
++  transition: background 0.2s ease;
++}
++
++.stone-group:last-child {
++  border-bottom: none;
++}
++
++.stone-group:hover {
++  background: #f9f9f9;
++}
++
++.stone-title {
++  font-weight: 500;
++  color: #333;
++}
++
++.stone-price {
++  font-weight: 600;
++  color: #d32f2f;
++}
++
++/* Responsive adjustments */
++@media (max-width: 480px) {
++  .stone-group {
++    flex-direction: column;
++    align-items: flex-start;
++    gap: 0.5rem;
++    padding: 0.8rem 1rem;
++  }
++
++  .stone-price {
++    align-self: flex-end;
++    font-size: 0.9rem;
++  }
++}
++
++.radio-form {
++  display: flex;
++  gap: 8px;
++  margin: 2px 0;
++  flex-wrap: wrap;
++  justify-content: flex-start;
++  width: 80%;
++}
++
++.radio-form label {
++  display: flex;
++  align-items: center;
++  gap: 5px;
++  padding: 5px;
++  border: 1px solid #ddd;
++  border-radius: 4px;
++  cursor: pointer;
++  transition: all .2s ease;
++  white-space: nowrap
++}
++
++img[src=""],
++img:not([src]),
++img[src="#"] {
++  display: none !important;
++}
++
++.radio-form label:hover {
++  border-color: #888;
++  background: #f8f8f8
++}
++
++.radio-form input[type=radio] {
++  margin: 0;
++  width: 14px;
++  height: 14px;
++  accent-color: #000
++}
++
++@media(max-width:480px) {
++  .radio-form {
++    gap: 6px
++  }
++
++  .radio-form label {
++    padding: 4px 8px;
++    font-size: 10px
++  }
++
++  .radio-form input[type=radio] {
++    width: 12px;
++    height: 12px
++  }
++}
++
++input#engraving-text {
++  border: 1px solid #ddd;
++  border-radius: 2px;
++  width: 100%;
++  padding: 2px;
++}
++
++/* accordion css */
++
++.accordion {
++  max-width: 100%;
++  margin: 15px auto;
++  border-top: 1px solid #000;
++}
++
++.accordion-item {
++  border-bottom: 1px solid #000;
++}
++
++.accordion-header {
++  display: flex;
++  align-items: center;
++  padding: 12px 12px;
++  cursor: pointer;
++  justify-content: space-between;
++}
++
++.accordion-header .symbol {
++  margin-right: 20px;
++  font-weight: bold;
++  transition: transform 0.2s ease;
++}
++
++.accordion-header .title {
++  flex: 1;
++}
++
++.accordion-content {
++  max-height: 0;
++  overflow: hidden;
++  transition: max-height 0.3s ease;
++  padding: 0 20px;
++}
++
++.accordion-content p {
++  margin: 0px 0px 10px 0px;
++  color: #333;
++}
++
++.accordion-item.active .accordion-content {
++  max-height: 200px;
++  /* Adjust as needed */
++}
++
++.accordion-item.active .symbol {
++  transform: rotate(45deg);
++  /* Turns + into ├ù (like open) */
++}
++
++
+ /* media query */
+ 
+   .product-wrapper .product-beautify #parker .dropper{
+@@ -1510,13 +1705,14 @@ input#engraving-text {
+   .product-wrapper .product-beautify #parker {
+     max-width: 100% !important; 
+     /* Smooth transition for resizing the bracelet circle */
+-    transition: width 0.4s cubic-bezier(0.25, 1, 0.5, 1), height 0.4s cubic-bezier(0.25, 1, 0.5, 1);
++    transition: width 0.5s cubic-bezier(0.34, 1.56, 0.64, 1), height 0.5s cubic-bezier(0.34, 1.56, 0.64, 1);
+   }
+ 
+   /* Bead (Dropper) Sizing - Use the variable, NOT percentage */
+   .product-wrapper .product-beautify #parker .dropper {
+     width: var(--bead-size) !important;
+     height: var(--bead-size) !important;
++    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+   }
+ 
+   /* 
+@@ -1580,87 +1776,99 @@ input#engraving-text {
+   }
+ }
+ 
+-/* Mobile: Container fits screen, Beads use variable from root */
++/* Mobile: Dynamic Bead Sizing to prevent overlap based on wrist size */
+ @media (max-width: 767px) {
+   .product-wrapper .product-beautify #parker .dropper {
+-    width: var(--bead-size) !important;
+-    height: var(--bead-size) !important;
+-    background-size: var(--bead-size) var(--bead-size) !important;
++    width: var(--mobile-bead-size) !important;
++    height: var(--mobile-bead-size) !important;
++    background-size: var(--mobile-bead-size) var(--mobile-bead-size) !important;
++    transition: all 0.4s ease;
+   }
+   
+-  /* Ensure container doesn't overflow on small screens, but allows sizing */
++  /* Transition for smooth scaling of container */
+   .product-wrapper .product-beautify #parker {
+-    width: 90vw !important;
+-    height: 90vw !important;
+-    max-width: 90vw !important;
++    max-width: 95vw !important;
++    transition: width 0.5s cubic-bezier(0.34, 1.56, 0.64, 1), height 0.5s cubic-bezier(0.34, 1.56, 0.64, 1);
+   }
++  
++  /* Adjust bead size and container width based on size code to avoid overlap but scale visually */
++  #parker.size-xxs { --mobile-bead-size: 11vw; width: 68vw !important; height: 68vw !important; }
++  #parker.size-xs  { --mobile-bead-size: 11vw; width: 73vw !important; height: 73vw !important; }
++  #parker.size-s   { --mobile-bead-size: 11vw; width: 78vw !important; height: 78vw !important; }
++  
++  #parker.size-m   { --mobile-bead-size: 10vw; width: 85vw !important; height: 85vw !important; }
++  #parker.size-l   { --mobile-bead-size: 10vw; width: 92vw !important; height: 92vw !important; }
++  
++  #parker.size-xl  { --mobile-bead-size: 9.5vw; width: 95vw !important; height: 95vw !important; }
++  #parker.size-xxl { --mobile-bead-size: 9.5vw; width: 98vw !important; height: 98vw !important; }
++  
++  #parker.size-xxxl { --mobile-bead-size: 8.5vw; width: 100vw !important; height: 100vw !important; }
++  #parker.size-4xl  { --mobile-bead-size: 8.5vw; width: 102vw !important; height: 102vw !important; margin-left:-1vw; }
+ }
+ 
+ /* ========================================= */
+ /* END UPDATED CSS                          */
+ /* ========================================= */
+ 
+-    @media(min-width:1000px){
+-    .size-xxs, .size-xs, .size-s {
+-    max-width:37vw !important;
++@media(min-width:1000px){
++  .product-wrapper .product-beautify #parker.size-xxs,
++  .product-wrapper .product-beautify #parker.size-xs,
++  .product-wrapper .product-beautify #parker.size-s {
++    max-width: 37vw !important;
+   }
+-   .size-m, .size-l, .size-xl {
+-    max-width:39vw !important;
++  .product-wrapper .product-beautify #parker.size-m,
++  .product-wrapper .product-beautify #parker.size-l,
++  .product-wrapper .product-beautify #parker.size-xl {
++    max-width: 39vw !important;
+   }
+-   .size-xxl, .size-xxxl, .size-4xl {
+-    max-width:41vw !important;
++  .product-wrapper .product-beautify #parker.size-xxl,
++  .product-wrapper .product-beautify #parker.size-xxxl,
++  .product-wrapper .product-beautify #parker.size-4xl {
++    max-width: 41vw !important;
+   }
+-  }
+-
++}
+ 
+-  /* Dynamic Container Widths based on Schema */
++/* Dynamic Container Widths based on Schema (Desktop overrides) */
+ @media (min-width: 768px) {
+   .product-wrapper .product-beautify.style-1 #parker.size-xxs {
+     width: {{ section.settings.width_xxs | default: 300 }}px !important;
+     height: {{ section.settings.width_xxs | default: 300 }}px !important;
+   }
+-
+   .product-wrapper .product-beautify.style-1 #parker.size-xs {
+     width: {{ section.settings.width_xs | default: 320 }}px !important;
+     height: {{ section.settings.width_xs | default: 320 }}px !important;
+   }
+-
+   .product-wrapper .product-beautify.style-1 #parker.size-s {
+     width: {{ section.settings.width_s | default: 340 }}px !important;
+     height: {{ section.settings.width_s | default: 340 }}px !important;
+   }
+-
+   .product-wrapper .product-beautify.style-1 #parker.size-m {
+     width: {{ section.settings.width_m | default: 380 }}px !important;
+     height: {{ section.settings.width_m | default: 380 }}px !important;
+   }
+-
+   .product-wrapper .product-beautify.style-1 #parker.size-l {
+     width: {{ section.settings.width_l | default: 410 }}px !important;
+     height: {{ section.settings.width_l | default: 410 }}px !important;
+   }
+-
+   .product-wrapper .product-beautify.style-1 #parker.size-xl {
+     width: {{ section.settings.width_xl | default: 440 }}px !important;
+     height: {{ section.settings.width_xl | default: 440 }}px !important;
+   }
+-
+   .product-wrapper .product-beautify.style-1 #parker.size-xxl {
+     width: {{ section.settings.width_xxl | default: 470 }}px !important;
+     height: {{ section.settings.width_xxl | default: 470 }}px !important;
+   }
+-
+   .product-wrapper .product-beautify.style-1 #parker.size-xxxl {
+     width: {{ section.settings.width_xxxl | default: 500 }}px !important;
+     height: {{ section.settings.width_xxxl | default: 500 }}px !important;
+   }
+-
+   .product-wrapper .product-beautify.style-1 #parker.size-4xl {
+     width: {{ section.settings.width_4xl | default: 510 }}px !important;
+     height: {{ section.settings.width_4xl | default: 510 }}px !important;
+   }
+ }
+-/* Static image elements */
++
++/* Static image elements (Clasp and others) */
+ .static-bead-image {
+   position: absolute;
+   z-index: 7;
+@@ -1674,1127 +1882,17 @@ input#engraving-text {
+   height: 100%;
+   object-fit: contain;
+ }
+- p.hide { 
+- display:none;
+-}
+-
+-/* ========================================= */
+-/* ADD: MOBILE BEAD SIZE CONTROL             */
+-/* ========================================= */
+-
+-/* Mobile bead size control - add this section after the existing CSS */
+-:root {
+-  /* Default mobile bead size - can be overridden by schema */
+-  --mobile-bead-size: 11vw;
+-}
+-
+-/* Override for small phones */
+-@media (max-width: 767px) {
+-  .product-wrapper .product-beautify #parker .dropper {
+-    width: var(--mobile-bead-size) !important;
+-    height: var(--mobile-bead-size) !important;
+-    background-size: var(--mobile-bead-size) var(--mobile-bead-size) !important;
+-  }
+-  
+-  /* Ensure container doesn't overflow on small screens */
+-  .product-wrapper .product-beautify #parker {
+-    width: 90vw !important;
+-    height: 90vw !important;
+-    max-width: 90vw !important;
+-  }
+-}
+-
+-/* Extra small phones (below 480px) */
+-@media (max-width: 480px) {
+-  .product-wrapper .product-beautify #parker .dropper {
+-    width: var(--mobile-bead-size) !important;
+-    height: var(--mobile-bead-size) !important;
+-  }
+-}
+-</style>
+-<div class="twocol-wrapper">
+-        <div class="product-wrapper">
+-            <div class="product-cont">
+-                <h2>{{ product.title }}</h2>
+-              
+-<form action="/cart/add.js" method="POST">
+-  <div class="product-summery">
+-    <p class="size">{{ section.settings.label_size }} <b></b></p>
+-    <p class="string-color">{{ section.settings.label_color }} <b></b></p>
+-    <p class="lock-style">{{ section.settings.label_lock_style }} <b></b></p>
+-    {% comment %} <p class="gender">Gender: <b></b></p> {% endcomment %}
+-    <p class="priced">{{ section.settings.label_base_price }} <b>{{ product.price | money_with_currency }}</b></p>
+-  </div>
+-
+-  <!-- Hidden input for the selected product's variant ID -->
+-  <input type="hidden" name="id" value="{{ product.variants.first.id }}">
+-  <input id="custom_photo" type="hidden" name="properties[Image]" style="display:none;" aria-label="input 85">
+-  <!-- Quantity Input -->
+-  <input type="hidden" name="quantity" value="1" class="quantity">
+-
+-  <!-- Line Item Properties (custom data) -->
+-  <input type="hidden" name="properties[Bracelet Size]" value="">
+-  <input type="hidden" name="properties[String Color]" value="">
+-  <input type="hidden" name="properties[Lock Style]" value="">
+-  {% comment %} <input type="hidden" name="properties[Gender]" value=""> {% endcomment %}
+-  <!-- <input type="hidden" name="properties[Base Price]" value="${{ product.price | divided_by: 100 }}"> -->
+-
+-  <!-- Product Bundle Section -->
+-  <div class="stone-costing">
+-    <!-- Optional: Add dynamic stones with JavaScript as properties -->
+-  </div>
+-
+-  <div class="product-summery">
+-     <p class="total-fare">
+-        {{ section.settings.label_total_price }}
+-        <span class="price-count">{{ product.price | money_with_currency }}</span>
+-    </p>
+-  </div>
+-  <!-- Total Fare for the Bundle -->
+-
+-
+-    <div class="product-summery">
+-    <p class="size">{{ section.settings.label_gift_wrapping }} 
+-     <span class="radio-form">
+-         <label>{{ section.settings.label_gift_free }}
+-         <input type="radio" name="properties[Gift Wrapping]" value="free" checked>
+-         </label>
+-         {% comment %} <label>Option 1
+-         <input type="radio" name="properties[Gift Wrapping]" value="$12">
+-         </label>
+-         <label>Option 2
+-         <input type="radio" name="properties[Gift Wrapping]" value="$15">
+-         </label> {% endcomment %}
+-     </span>
+-    </p>
+-    
+-  
+-     {% if product.metafields.custom.engraving != blank %}
+-  {% assign engraving_files = product.metafields.custom.engraving.value %}
+-
+-  {% if engraving_files != blank %}
+-    <p class="size">{{ section.settings.label_engraving_title }}</p>
+-    <div class="engraving-options">
+-      {% for file in engraving_files %}
+-        {% assign file_name = file.src | split: '/' | last %}
+-        <label class="engraving-card">
+-          <input 
+-            type="radio" 
+-            name="properties[Engraving]" 
+-            value="{{ file_name | split:"." | first }}" 
+-          >
+-          <div class="engraving-preview">
+-            <img src="{{ file.src | img_url: '200x200' }}" alt="{{ file_name | split:"." | first }}">
+-          </div>
+-          {% comment %} <span class="engraving-name">{{ file_name }}</span> {% endcomment %}
+-        </label>
+-      {% endfor %}
+-    </div>
+-  {% endif %}
+-{% endif %}
+-
+-    <p class="size" id="Engraving_text_field">{{ section.settings.label_text_input }} 
+-     <span class="radio-form">
+-         <input type="text" name="properties[Text]" placeholder="{{ section.settings.placeholder_text }}" id="engraving-text">
+-          <small id="engraving-instruction" style="display:block; color:#555;">
+-            {{ section.settings.text_engraving_instruction }}
+-          </small>
+-     </span>
+-    </p>
+-        <small class="error-message" style="color:red; display:none;"></small>
+-    </div>
+-  
+-  <!-- Add to Cart Button -->
+-  <div class="product-action">
+-    <input type="number" class="Bquantity quantity" name="quantity" value="1" size="2">
+-    <input class="add-cart" type="submit" value="{{ section.settings.btn_add_to_cart }}">
+-  </div>
+-    <p id="bead-warning" style="color:red; display:none;text-align: right;margin-top: 8px;">{{ section.settings.error_beads_missing }}</p>
+-
+-</form>
+-
+- <div class="accordion">
+-  {% if section.settings.policy_content != blank %}
+-  <div class="accordion-item">
+-    <div class="accordion-header">
+-      <span class="symbol">+</span>
+-      <span class="title">{{ section.settings.policy_title }}</span>
+-    </div>
+-    <div class="accordion-content">
+-      <p>{{ section.settings.policy_content  }}</p>
+-    </div>
+-  </div>
+-{% endif %}
+-  {% if section.settings.shipping_content != blank %}
+-
+-  <div class="accordion-item">
+-    <div class="accordion-header">
+-      <span class="symbol">+</span>
+-      <span class="title">{{ section.settings.shipping_title }}</span>
+-    </div>
+-    <div class="accordion-content">
+-      <p>{{ section.settings.shipping_content }}</p>
+-    </div>
+-  </div>
+- {% endif %} 
+-
+-
+-</div> 
+-
+-
+-                   
+-            </div>
+-            <div class="product-beautify style-1">
+-                <div id="parker" class="size-m">
+-
+-                  <div id="static-image-left"></div>
+-<div id="static-image-right"></div>
+-
+-                  <div id="clasp-image-container"></div>
+-    {% comment %} String/background image {% endcomment %} 
+-    {% assign string_image = product.metafields.bracelets.strings.value | first %}
+-    <img id="emBrace" src="{% if string_image %}{{ string_image | image_url }}{% endif %}" role="presentation" data-ac-alt-type="image" height="" width="">
+-    
+-    {% comment %} Lock image {% endcomment %} 
+-    {% assign lock_image = product.metafields.bracelets.locks.value | first %}
+-    <img id="lockEr" src="{% if lock_image %}{{ lock_image | image_url }}{% endif %}" role="presentation" data-ac-alt-type="image" height="" width="">
+-    
+-    {% comment %} Instruction overlay {% endcomment %}
+-    <div id="instruction">
+-        <button id="close-instruction">Γ£ò</button>
+-        <p><b>{{ section.settings.instruction_title }}∩╝Ü</b> {{ section.settings.instruction_text }}</p>
+-    </div>
+-    
+-    {% comment %} Container for static images (will be populated by JavaScript) {% endcomment %}
+-    <div id="static-images-container"></div>
+-    
+-    {% comment %} Bead droppers - numbered from 1 to 24 {% endcomment %}
+-    <div class="dropper" id="drop1"></div>
+-    <div class="dropper" id="drop2"></div>
+-    <div class="dropper" id="drop3"></div>
+-    <div class="dropper" id="drop4"></div>
+-    <div class="dropper" id="drop5"></div>
+-    <div class="dropper" id="drop6"></div>
+-    <div class="dropper" id="drop7"></div>
+-    <div class="dropper" id="drop8"></div>
+-    <div class="dropper" id="drop9"></div>
+-    <div class="dropper" id="drop10"></div>
+-    <div class="dropper" id="drop11"></div>
+-    <div class="dropper" id="drop12"></div>
+-    <div class="dropper" id="drop13"></div>
+-    <div class="dropper" id="drop14"></div>
+-    <div class="dropper" id="drop15"></div>
+-    <div class="dropper" id="drop16"></div>
+-    <div class="dropper" id="drop17"></div>
+-    <div class="dropper" id="drop18"></div>
+-    <div class="dropper" id="drop19"></div>
+-    <div class="dropper" id="drop20"></div>
+-    <div class="dropper" id="drop21"></div>
+-    <div class="dropper" id="drop22"></div>
+-    <div class="dropper" id="drop23"></div>
+-    <div class="dropper" id="drop24"></div>
+-</div>
+-            </div>
+-        </div>
+-        
+-        <div class="assets-wrapper">
+-            <div class="button-set">
+-                {% comment %} <button class="assets-btn" id="gender">Gender</button> {% endcomment %}
+-                <button class="assets-btn" id="bracelet-size">{{ section.settings.btn_size }}</button>
+-                <button class="assets-btn" id="beads">{{ section.settings.btn_beads }}</button>
+-                <button class="assets-btn" id="ebeads">{{ section.settings.btn_engraving_beads }}</button>
+-                <button class="assets-btn" id="string-color">{{ section.settings.btn_string_color }}</button>
+-                <button class="assets-btn" id="lock-style">{{ section.settings.btn_lock_style }}</button>
+-                <button class="assets-btn" id="clasp">{{ section.settings.btn_clasp }}</button>
+-            </div>
+-            {% comment %} <div class="assets-sidebar" id="gender-sidebar">
+-                <div class="sidebar-cont">
+-                    <div class="sidebar-grid">
+-                        <div class="gender-card active">
+-                            <h5>Male</h5>
+-                        </div>
+-                        <div class="gender-card">
+-                            <h5>Female</h5>
+-                        </div>
+-                    </div>
+-                </div>
+-                <div class="sidebar-actions">
+-                    <span class="close-btn cross">Γ¿»</span>
+-                    <span class="close-btn check">Γ£ô</span>
+-                </div>
+-            </div> {% endcomment %}
+-            <div class="assets-sidebar" id="bracelet-size-sidebar">
+-                <p class="sidebar-header">{{ section.settings.sidebar_size_title }}</p>
+-                <div class="sidebar-cont">
+-                    <div class="sidebar-grid">
+-                        
+-                        <div class="size-card measure">
+-                            <a href="{{ section.settings.measure_link }}"><h5>{{ section.settings.measure_link_text }}</h5></a>
+-                        </div>
+-
+-                        <div class="size-card">
+-                            <h5>XXS</h5>
+-                            <p class="hide">Extra Extra Small (12cm)</p>
+-                            <div>Extra Extra Small (13cm)</div>
+-                        </div>
+-                        <div class="size-card">
+-                            <h5>XS</h5>
+-                            <p class="hide">Extra Small (13cm)</p>
+-                            <div>Extra Small (14cm)</div>
+-                        </div>
+-                        <div class="size-card">
+-                            <h5>S</h5>
+-                            <p class="hide">Small (14cm)</p>
+-                            <div>Small (15cm)</div>
+-                        </div>
+-                        <div class="size-card active">
+-                            <h5>M</h5>
+-                            <p class="hide">Medium (15cm)</p>
+-                            <div>Medium (16cm)</div>
+-                        </div>
+-                        <div class="size-card">
+-                            <h5>L</h5>
+-                            <p class="hide">Large (16cm)</p>
+-                            <div>Large (17cm)</div>
+-                        </div>
+-                        <div class="size-card">
+-                            <h5>XL</h5>
+-                            <p class="hide">Extra Large (17cm)</p>
+-                            <div>Extra Large (18cm)</div>
+-                        </div>
+-                        <div class="size-card">
+-                            <h5>XXL</h5>
+-                            <p class="hide">Double Extra Large (18cm)</p>
+-                            <div>Double Extra Large (19cm)</div>
+-                        </div>
+-                        <div class="size-card">
+-                            <h5>XXXL</h5>
+-                            <p class="hide">Triple Extra Large (19cm)</p>
+-                            <div>Triple Extra Large (20cm)</div>
+-                        </div>
+-                        <div class="size-card">
+-                            <h5>4XL</h5>
+-                            <p class="hide">Four Extra Large (20cm)</p>
+-                            <div>Four Extra Large (21cm)</div>
+-                        </div>
+-                    </div>
+-                </div>
+-                {% comment %} <div class="sidebar-actions">
+-                    <span class="close-btn cross">Γ¿»</span>
+-                    <span class="close-btn check">Γ£ô</span>
+-                </div> {% endcomment %}
+-            </div>
+-            <div class="assets-sidebar" id="beads-sidebar">
+-                <p class="sidebar-header">{{ section.settings.sidebar_beads_title }}</p>    
+-                <div class="sidebar-cont">
+-                    <div class="sidebar-grid">
+-     
+-                        {% for p in product.metafields.bracelets.beads.value %}
+-  {% assign variant = p.variants.first %}
+-  {% assign in_stock = variant.available %}
+-
+-  {% if p.available %}
+-    <div
+-      class="stone-card {% unless in_stock %}is-disabled{% endunless %}"
+-      data-variant-id="{{ variant.id }}"
+-      data-inventory="{{ variant.inventory_quantity }}"
+-      {% unless in_stock %}aria-disabled="true"{% endunless %}
+-    >
+-      <img src="{{ p.featured_image | image_url }}" alt="{{ p.title }}">
+-
+-      <div class="stone-cont">
+-        <h6>{{ p.title }}</h6>
+-
+-        <input type="hidden" data-bride-id="{{ variant.id }}">
+-
+-        <p>{{ p.description }}</p>
+-
+-        <div class="bead-stock">
+-          {% if in_stock %}
+-            {{ section.settings.label_in_stock }} {{ variant.inventory_quantity }}
+-          {% else %}
+-            {{ section.settings.label_out_of_stock }}
+-          {% endif %}
+-        </div>
+-
+-        <p style="display:none;"
+-           data-bead-price="{{ p.price | money_without_currency }}"
+-           data-currency="{{ cart.currency.iso_code }}">
+-        </p>
+-      </div>
+-    </div>
+-  {% endif %}
+-{% endfor %}
+-
+-
+-
+-                    </div>
+-                </div>
+-                <div class="sidebar-actions">
+-                    <span class="close-btn cross">Γ¿»</span>
+-                    <span class="close-btn check">Γ£ô</span>
+-                </div>
+-            </div>
+-
+-
+-            <div class="assets-sidebar" id="clasp-sidebar">
+-    <p class="sidebar-header">{{ section.settings.sidebar_clasp_title }}</p>
+-    <div class="sidebar-cont">
+-        <div class="sidebar-grid">
+-            {% for clasp in product.metafields.custom.clasp.value %}
+-                {% assign variant = clasp.variants.first %}
+-                {% assign in_stock = variant.available %}
+-                {% if clasp.available %}
+-                    <div class="stone-card clasp-card {% unless in_stock %}is-disabled{% endunless %}"
+-                         data-variant-id="{{ variant.id }}"
+-                         data-inventory="{{ variant.inventory_quantity }}"
+-                         data-price="{{ variant.price | divided_by: 100.0 }}"
+-                         data-title="{{ clasp.title }}"
+-                         data-image="{{ clasp.featured_image | image_url }}"
+-                         {% unless in_stock %}aria-disabled="true"{% endunless %}>
+-                        <img src="{{ clasp.featured_image | image_url }}" alt="{{ clasp.title }}">
+-                        <div class="stone-cont">
+-                            <h6>{{ clasp.title }}</h6>
+-                            <p>{{ clasp.description }}</p>
+-                            <div class="bead-stock">
+-                                {% if in_stock %}
+-                                    {{ section.settings.label_in_stock }} {{ variant.inventory_quantity }}
+-                                {% else %}
+-                                    {{ section.settings.label_out_of_stock }}
+-                                {% endif %}
+-                            </div>
+-                        </div>
+-                    </div>
+-                {% endif %}
+-            {% endfor %}
+-        </div>
+-    </div>
+-    <div class="sidebar-actions">
+-        <span class="close-btn cross">Γ¿»</span>
+-        <span class="close-btn check">Γ£ô</span>
+-    </div>
+-</div>
+-
+-
+-              <div class="assets-sidebar" id="ebeads-sidebar">
+-                <p class="sidebar-header">{{ section.settings.sidebar_engraving_title }}</p>
+-                <div class="sidebar-cont">
+-                    <div class="sidebar-grid">
+-                        {% for p in product.metafields.engraving.beads.value %}                          
+-  {% assign variant = p.variants.first %}
+-  {% assign in_stock = variant.available %}
+-
+-  {% if p.available %}
+-    <div
+-      class="stone-card {% unless in_stock %}is-disabled{% endunless %}"
+-      data-variant-id="{{ variant.id }}"
+-      data-inventory="{{ variant.inventory_quantity }}"
+-      {% unless in_stock %}aria-disabled="true"{% endunless %}
+-    >
+-      <img src="{{ p.featured_image | image_url }}" alt="{{ p.title }}">
+-
+-      <div class="stone-cont">
+-        <h6>{{ p.title }}</h6>
+-
+-        <input type="hidden" data-bride-id="{{ variant.id }}">
+-
+-        <p>{{ p.description }}</p>
+-
+-        <div class="bead-stock">
+-          {% if in_stock %}
+-            {{ section.settings.label_in_stock }} {{ variant.inventory_quantity }}
+-          {% else %}
+-            {{ section.settings.label_out_of_stock }}
+-          {% endif %}
+-        </div>
+-
+-        <p style="display:none;"
+-           data-bead-price="{{ p.price | money_without_currency }}"
+-           data-currency="{{ cart.currency.iso_code }}">
+-        </p>
+-      </div>
+-    </div>
+-  {% endif %}
+-                        {% endfor %}
+-                    </div>
+-                </div>
+-                <div class="sidebar-actions">
+-                    <span class="close-btn cross">Γ¿»</span>
+-                    <span class="close-btn check">Γ£ô</span>
+-                </div>
+-            </div>
+-
+-
+-            <div class="assets-sidebar" id="string-color-sidebar">
+-                <p class="sidebar-header">{{ section.settings.sidebar_string_title }}</p>
+-                <div class="sidebar-cont">
+-                    <div class="sidebar-grid">
+-                        {% for string_image in product.metafields.bracelets.strings.value %}
+-                          <div class="stringcolor-card {% if forloop.first %} active {% endif %}" data-src="{{ string_image | image_url }}">
+-                              {% assign image = string_image | image_url | split:'files' | last %}
+-                              {% assign image = image | split:'?' | first | replace:'/','' %}
+-                              {% assign image = image | split:'-' | first %}
+-                              <img src="{{ string_image | image_url }}" alt="{{ image }}" height="" width="">
+-                              <h6>{{ image }}</h6>
+-                          </div>
+-                        {% endfor %}
+-                    </div>
+-                </div>
+-                <div class="sidebar-actions">
+-                    <span class="close-btn cross">Γ¿»</span>
+-                    <span class="close-btn check">Γ£ô</span>
+-                </div>
+-            </div>
+-            <div class="assets-sidebar" id="lock-style-sidebar">
+-                <p class="sidebar-header">{{ section.settings.sidebar_lock_title }}</p>
+-                <div class="sidebar-cont">
+-                    <div class="sidebar-grid">
+-                       {% for lock_image in product.metafields.bracelets.locks.value %}
+-                            {% assign lock_image_url = lock_image | image_url %}
+-                            {% assign odd_image_url = lock_image_url | replace: '.png', '-odd.png' %}
+-
+-                          <div class="lockstyle-card {% if forloop.first %} active {% endif %}" data-src="{{ lock_image_url }}" data-odd-src="{{ odd_image_url }}">
+-                              {% assign image = lock_image | image_url | split:'files' | last %}
+-                              {% assign image = image | split:'?' | first | replace:'/','' %}
+-                              {% assign image = image | split:'-' | first %}
+-                              <img src="{{ lock_image | image_url }}" alt="{{ image }}" height="" width="">
+-                              <h6>{{ image }}</h6>
+-                          </div>
+-                         {% endfor %}
+-
+-
+-
+-
+-                    </div>
+-                </div>
+-                <div class="sidebar-actions">
+-                    <span class="close-btn cross">Γ¿»</span>
+-                    <span class="close-btn check">Γ£ô</span>
+-                </div>
+-            </div>
+-        </div>
+-    </div>
+-
+-<div id="loadingOverlay" style="display:none; position:fixed; top:0; left:0; width:100%; height:100%; background:rgba(255,255,255,0.75); z-index:999999; align-items:center; justify-content:center;">
+-  <div style="width:48px; height:48px; border:5px solid #ddd; border-top-color:#111; border-radius:50%; animation:spin 0.8s linear infinite;"></div>
+-</div>
+-<style>@keyframes spin { to { transform: rotate(360deg); } }</style>
+-
+-<script>
+-
+-// ============================================
+-// GLOBAL VARIABLES & CONFIGURATION
+-// ============================================
+-const isDesignMode = window.Shopify && window.Shopify.designMode;
+-
+-const sizeBeadCounts = {
+-  'xxs': {{ section.settings.bead_count_xxs | default: 12 }},
+-  'xs': {{ section.settings.bead_count_xs | default: 13 }},
+-  's': {{ section.settings.bead_count_s | default: 14 }},
+-  'm': {{ section.settings.bead_count_m | default: 15 }},
+-  'l': {{ section.settings.bead_count_l | default: 16 }},
+-  'xl': {{ section.settings.bead_count_xl | default: 17 }},
+-  'xxl': {{ section.settings.bead_count_xxl | default: 18 }},
+-  'xxxl': {{ section.settings.bead_count_xxxl | default: 19 }},
+-  '4xl': {{ section.settings.bead_count_4xl | default: 20 }}
+-};
+-
+-let fixedParts = [
+-  {% if section.settings.fixed_part_1_enabled %}{ angle: {{ section.settings.fixed_part_1_angle | default: 0 }}, width: {{ section.settings.fixed_part_1_width | default: 30 }}, enabled: true },{% endif %}
+-  {% if section.settings.fixed_part_2_enabled %}{ angle: {{ section.settings.fixed_part_2_angle | default: 120 }}, width: {{ section.settings.fixed_part_2_width | default: 30 }}, enabled: true },{% endif %}
+-  {% if section.settings.fixed_part_3_enabled %}{ angle: {{ section.settings.fixed_part_3_angle | default: 240 }}, width: {{ section.settings.fixed_part_3_width | default: 30 }}, enabled: true },{% endif %}
+-];
+-
+-if (window.location.href.includes('style-3') || {{ product.handle | json }}.includes('style-3') || window.location.href.includes('style3')) {
+-  fixedParts = [{ angle: 270, width: 60, enabled: true }];
+-}
+-
+-const beadSettings = {
+-  size: {{ section.settings.bead_size | default: 45 }},
+-  radius: {{ section.settings.bead_radius | default: 41 }},
+-  centerX: {{ section.settings.center_x | default: 50 }},
+-  centerY: {{ section.settings.center_y | default: 50 }}
+-};
+-
+-const equalSpacing = {{ section.settings.equal_spacing | default: 0 }};
+-
+-const sizeGaps = {
+-  'xxs': {{ section.settings.gap_xxs | default: 0 }},
+-  'xs': {{ section.settings.gap_xs | default: 0 }},
+-  's': {{ section.settings.gap_s | default: 0 }},
+-  'm': {{ section.settings.gap_m | default: 0 }},
+-  'l': {{ section.settings.gap_l | default: 0 }},
+-  'xl': {{ section.settings.gap_xl | default: 0 }},
+-  'xxl': {{ section.settings.gap_xxl | default: 0 }},
+-  'xxxl': {{ section.settings.gap_xxxl | default: 0 }},
+-  '4xl': {{ section.settings.gap_4xl | default: 0 }}
+-};
+-
+-const quadrantGaps = {
+-  'top': {{ section.settings.gap_top | default: 0 }},
+-  'right': {{ section.settings.gap_right | default: 0 }},
+-  'bottom': {{ section.settings.gap_bottom | default: 0 }},
+-  'left': {{ section.settings.gap_left | default: 0 }}
+-};
+-
+-let selectedStones = {};
+-let selectedClasp = null; // { variantId, title, price, image, inventory }
+-
+-// ============================================
+-// STATIC IMAGES CONFIGURATION
+-// ============================================
+-const staticImages = [
+-  {% if section.settings.static_image_1_enabled and section.settings.static_image_1 %}
+-    {
+-      src: "{{ section.settings.static_image_1 | image_url }}",
+-      position: {{ section.settings.static_image_1_position | default: 6 }},
+-      extraSpacing: {{ section.settings.static_image_1_extra_spacing | default: 0 }},
+-      offset: {{ section.settings.static_image_1_offset | default: 0 }},
+-      rotation: {{ section.settings.static_image_1_rotation | default: 0 }},
+-      width: {{ section.settings.static_image_1_width | default: 40 }},
+-      height: {{ section.settings.static_image_1_height | default: 40 }},
+-      enabled: true,
+-      type: 'position-based'
+-    },
+-  {% endif %}
+-  {% if section.settings.static_image_2_enabled and section.settings.static_image_2 %}
+-    {
+-      src: "{{ section.settings.static_image_2 | image_url }}",
+-      position: {{ section.settings.static_image_2_position | default: 12 }},
+-      extraSpacing: {{ section.settings.static_image_2_extra_spacing | default: 0 }},
+-      offset: {{ section.settings.static_image_2_offset | default: 0 }},
+-      rotation: {{ section.settings.static_image_2_rotation | default: 0 }},
+-      width: {{ section.settings.static_image_2_width | default: 40 }},
+-      height: {{ section.settings.static_image_2_height | default: 40 }},
+-      enabled: true,
+-      type: 'position-based'
+-    },
+-  {% endif %}
+-  {% if section.settings.static_image_3_enabled and section.settings.static_image_3 %}
+-    {
+-      src: "{{ section.settings.static_image_3 | image_url }}",
+-      offset: {{ section.settings.static_image_3_offset | default: 0 }},
+-      rotation: {{ section.settings.static_image_3_rotation | default: 0 }},
+-      width: {{ section.settings.static_image_3_width | default: 50 }},
+-      height: {{ section.settings.static_image_3_height | default: 50 }},
+-      enabled: true,
+-      type: 'dynamic-top'
+-    },
+-  {% endif %}
+-  {% if section.settings.static_image_4_enabled and section.settings.static_image_4 %}
+-    {
+-      src: "{{ section.settings.static_image_4 | image_url }}",
+-      offset: {{ section.settings.static_image_4_offset | default: 0 }},
+-      rotation: {{ section.settings.static_image_4_rotation | default: 0 }},
+-      width: {{ section.settings.static_image_4_width | default: 50 }},
+-      height: {{ section.settings.static_image_4_height | default: 50 }},
+-      enabled: true,
+-      type: 'dynamic-bottom'
+-    },
+-  {% endif %}
+-  {% if section.settings.static_image_left_enabled and section.settings.static_image_left %}
+-    {
+-      src: "{{ section.settings.static_image_left | image_url }}",
+-      angle: {% if product.handle contains 'style-3' or template.suffix == 'style-3' %}250{% else %}{{ section.settings.static_image_left_angle | default: 135 }}{% endif %},
+-      offset: {% if product.handle contains 'style-3' or template.suffix == 'style-3' %}20{% else %}{{ section.settings.static_image_left_offset | default: 0 }}{% endif %},
+-      rotation: {{ section.settings.static_image_left_rotation | default: 0 }},
+-      width: {% if product.handle contains 'style-3' or template.suffix == 'style-3' %}150{% else %}{{ section.settings.static_image_left_width | default: 60 }}{% endif %},
+-      height: {% if product.handle contains 'style-3' or template.suffix == 'style-3' %}150{% else %}{{ section.settings.static_image_left_height | default: 60 }}{% endif %},
+-      flip: {% if product.handle contains 'style-3' or template.suffix == 'style-3' %}false{% else %}{{ section.settings.static_image_left_flip | default: false }}{% endif %},
+-      enabled: true,
+-      containerId: 'static-image-left'
+-    },
+-  {% endif %}
+-  {% if section.settings.static_image_right_enabled and section.settings.static_image_right %}
+-    {
+-      src: "{{ section.settings.static_image_right | image_url }}",
+-      angle: {% if product.handle contains 'style-3' or template.suffix == 'style-3' %}290{% else %}{{ section.settings.static_image_right_angle | default: 45 }}{% endif %},
+-      offset: {% if product.handle contains 'style-3' or template.suffix == 'style-3' %}20{% else %}{{ section.settings.static_image_right_offset | default: 0 }}{% endif %},
+-      rotation: {{ section.settings.static_image_right_rotation | default: 0 }},
+-      width: {% if product.handle contains 'style-3' or template.suffix == 'style-3' %}150{% else %}{{ section.settings.static_image_right_width | default: 60 }}{% endif %},
+-      height: {% if product.handle contains 'style-3' or template.suffix == 'style-3' %}150{% else %}{{ section.settings.static_image_right_height | default: 60 }}{% endif %},
+-      flip: {% if product.handle contains 'style-3' or template.suffix == 'style-3' %}true{% else %}{{ section.settings.static_image_right_flip | default: false }}{% endif %},
+-      enabled: true,
+-      containerId: 'static-image-right'
+-    },
+-  {% endif %}
+-];
+-
+-// ============================================
+-// HELPER FUNCTIONS (BEAD POSITIONING, ETC.)
+-// ============================================
+-function redistributeGaps(originalAngles, targetIndices, extraSpacings) {
+-  const n = originalAngles.length;
+-  if (n === 0) return originalAngles;
+-  let gaps = [];
+-  for (let i = 0; i < n; i++) {
+-    const next = (i + 1) % n;
+-    let gap = originalAngles[next] - originalAngles[i];
+-    if (gap < 0) gap += 360;
+-    gaps.push(gap);
+-  }
+-  let totalExtra = 0;
+-  for (let idx = 0; idx < targetIndices.length; idx++) {
+-    const i = targetIndices[idx];
+-    const extra = extraSpacings[idx];
+-    gaps[i] += extra;
+-    totalExtra += extra;
+-  }
+-  const currentSum = gaps.reduce((a, b) => a + b, 0);
+-  const adjust = (360 - currentSum) / (n - targetIndices.length);
+-  const nonTargetIndices = [];
+-  for (let i = 0; i < n; i++) {
+-    if (!targetIndices.includes(i)) nonTargetIndices.push(i);
+-  }
+-  if (nonTargetIndices.length > 0) {
+-    for (const i of nonTargetIndices) {
+-      gaps[i] += adjust;
+-      if (gaps[i] < 0) gaps[i] = 0;
+-    }
+-  }
+-  let newAngles = [originalAngles[0]];
+-  for (let i = 0; i < n - 1; i++) {
+-    let nextAngle = newAngles[i] + gaps[i];
+-    if (nextAngle >= 360) nextAngle -= 360;
+-    newAngles.push(nextAngle);
+-  }
+-  newAngles.sort((a, b) => a - b);
+-  return newAngles;
+-}
+-
+-function findClosestGapAngle(beadAngles, targetAngle) {
+-  if (beadAngles.length < 2) return targetAngle;
+-  const sorted = [...beadAngles].sort((a, b) => a - b);
+-  let bestMid = targetAngle;
+-  let bestDistance = Infinity;
+-  for (let i = 0; i < sorted.length; i++) {
+-    const start = sorted[i];
+-    const end = sorted[(i + 1) % sorted.length];
+-    let gapSize, mid;
+-    if (i === sorted.length - 1) {
+-      gapSize = (360 - start) + end;
+-      mid = (start + end + 360) / 2;
+-      if (mid >= 360) mid -= 360;
+-    } else {
+-      gapSize = end - start;
+-      mid = (start + end) / 2;
+-    }
+-    let dist = Math.abs(mid - targetAngle);
+-    dist = Math.min(dist, 360 - dist);
+-    if (dist < bestDistance) {
+-      bestDistance = dist;
+-      bestMid = mid;
+-    }
+-  }
+-  return bestMid;
+-}
+-
+-function getQuadrant(angleDegrees) {
+-  angleDegrees = ((angleDegrees % 360) + 360) % 360;
+-  if (angleDegrees >= 315 || angleDegrees < 45) return 'right';
+-  if (angleDegrees >= 45 && angleDegrees < 135) return 'top';
+-  if (angleDegrees >= 135 && angleDegrees < 225) return 'left';
+-  return 'bottom';
+-}
+-
+-function getQuadrantAdjustment(angleDegrees, sizeCode) {
+-  const quadrant = getQuadrant(angleDegrees);
+-  const sizeGap = sizeGaps[sizeCode] || 0;
+-  const quadrantGap = quadrantGaps[quadrant] || 0;
+-  return (sizeGap + quadrantGap) * Math.PI / 180;
+-}
+-
+-function isAngleInFixedPart(angle, fixedParts) {
+-  angle = ((angle % 360) + 360) % 360;
+-  for (const part of fixedParts) {
+-    if (!part.enabled) continue;
+-    let start = (part.angle - part.width/2 + 360) % 360;
+-    let end = (part.angle + part.width/2) % 360;
+-    if (end < start) {
+-      if (angle >= start || angle <= end) return true;
+-    } else {
+-      if (angle >= start && angle <= end) return true;
+-    }
+-  }
+-  return false;
+-}
+-
+-function getAvailableAngles(fixedParts, step = 1) {
+-  const availableAngles = [];
+-  for (let angle = 0; angle < 360; angle += step) {
+-    if (!isAngleInFixedPart(angle, fixedParts)) {
+-      availableAngles.push(angle);
+-    }
+-  }
+-  return availableAngles;
+-}
+-
+-function getBeadPositions() {
+-  const parker = document.getElementById('parker');
+-  const droppers = Array.from(parker.querySelectorAll('.dropper'));
+-  const positions = [];
+-  droppers.forEach((dropper, index) => {
+-    if (dropper.style.display !== 'none') {
+-      const left = parseFloat(dropper.style.left);
+-      const top = parseFloat(dropper.style.top);
+-      positions.push({ left, top, index });
+-    }
+-  });
+-  return positions;
+-}
+-
+-function calculateAngleBetweenBeads(bead1, bead2, centerX, centerY) {
+-  const angle1 = Math.atan2(bead1.top - centerY, bead1.left - centerX);
+-  const angle2 = Math.atan2(bead2.top - centerY, bead2.left - centerX);
+-  let avgAngle = (angle1 + angle2) / 2;
+-  if (Math.abs(angle1 - angle2) > Math.PI) avgAngle += Math.PI;
+-  return avgAngle;
+-}
+-
+-function getBeadAngles() {
+-  const parker = document.getElementById('parker');
+-  const droppers = Array.from(parker.querySelectorAll('.dropper:not([style*="display: none"])'));
+-  const centerX = beadSettings.centerX;
+-  const centerY = beadSettings.centerY;
+-  const beadAngles = [];
+-  droppers.forEach(dropper => {
+-    const left = parseFloat(dropper.style.left);
+-    const top = parseFloat(dropper.style.top);
+-    if (!isNaN(left) && !isNaN(top)) {
+-      let angle = Math.atan2(top - centerY, left - centerX) * 180 / Math.PI;
+-      angle = ((angle + 360) % 360);
+-      beadAngles.push(angle);
+-    }
+-  });
+-  return beadAngles;
+-}
+-
+-function placeBeadsSimpleCircular(parker, beadCount, sizeCode) {
+-  const allDroppers = Array.from(parker.querySelectorAll('.dropper'));
+-  const centerX = beadSettings.centerX;
+-  const centerY = beadSettings.centerY;
+-  const radius = beadSettings.radius;
+-  allDroppers.forEach((dropper, index) => {
+-    if (index < beadCount) {
+-      dropper.style.display = 'flex';
+-      const baseAngle = ((index / beadCount) * 2 * Math.PI) - (Math.PI / 2);
+-      const equalSpacingRad = (equalSpacing * Math.PI) / 180;
+-      let angle = baseAngle + (index * equalSpacingRad);
+-      const angleDegrees = angle * 180 / Math.PI;
+-      angle += getQuadrantAdjustment(angleDegrees, sizeCode);
+-      const x = centerX + radius * Math.cos(angle);
+-      const y = centerY + radius * Math.sin(angle);
+-      dropper.style.left = `${x}%`;
+-      dropper.style.top = `${y}%`;
+-      dropper.style.transform = 'translate(-50%, -50%)';
+-      dropper.style.width = beadSettings.size + 'px';
+-      dropper.style.height = beadSettings.size + 'px';
+-      dropper.dataset.beadIndex = index;
+-    } else {
+-      dropper.style.display = 'none';
+-      delete dropper.dataset.beadIndex;
+-    }
+-  });
+-}
+ 
+-function placeBeadsInAvailableAngles(parker, beadCount, sizeCode, availableAngles) {
+-  const allDroppers = Array.from(parker.querySelectorAll('.dropper'));
+-  const centerX = beadSettings.centerX;
+-  const centerY = beadSettings.centerY;
+-  const radius = beadSettings.radius;
+-  const totalAvailableAngles = availableAngles.length;
+-  const angleStep = totalAvailableAngles / beadCount;
+-  for (let i = 0; i < beadCount; i++) {
+-    const dropper = allDroppers[i];
+-    if (!dropper) break;
+-    dropper.style.display = 'flex';
+-    const angleIndex = Math.floor(i * angleStep) % totalAvailableAngles;
+-    let angleDegrees = availableAngles[angleIndex];
+-    angleDegrees += (i * equalSpacing);
+-    let angle = angleDegrees * Math.PI / 180;
+-    angle += getQuadrantAdjustment(angleDegrees, sizeCode);
+-    const x = centerX + radius * Math.cos(angle);
+-    const y = centerY + radius * Math.sin(angle);
+-    dropper.style.left = `${x}%`;
+-    dropper.style.top = `${y}%`;
+-    dropper.style.transform = 'translate(-50%, -50%)';
+-    dropper.style.width = beadSettings.size + 'px';
+-    dropper.style.height = beadSettings.size + 'px';
+-    dropper.dataset.beadIndex = i;
+-  }
+-  for (let i = beadCount; i < allDroppers.length; i++) {
+-    allDroppers[i].style.display = 'none';
+-    delete allDroppers[i].dataset.beadIndex;
+-  }
+-}
+-
+-function refreshCircularLayout() {
+-  const parker = document.getElementById('parker');
+-  if (!parker) return;
+-  const activeSizeCard = document.querySelector('.size-card.active');
+-  if (!activeSizeCard) return;
+-  const sizeCode = activeSizeCard.querySelector('h5').textContent.trim().toLowerCase();
+-  const beadCount = sizeBeadCounts[sizeCode] || 15;
+-  const availableAngles = getAvailableAngles(fixedParts);
+-  if (fixedParts.length === 0 || availableAngles.length === 0) {
+-    placeBeadsSimpleCircular(parker, beadCount, sizeCode);
+-  } else {
+-    placeBeadsInAvailableAngles(parker, beadCount, sizeCode, availableAngles);
+-  }
+-  applyExtraGaps();
+-  setTimeout(() => { placeStaticImages(); placeKnotBeads(); positionLockEr(); }, 50);
+-}
+-
+-function applyExtraGaps() {
+-  const parker = document.getElementById('parker');
+-  const droppers = Array.from(parker.querySelectorAll('.dropper:not([style*="display: none"])'));
+-  const beadCount = droppers.length;
+-  if (beadCount === 0) return;
+-  const centerX = beadSettings.centerX;
+-  const centerY = beadSettings.centerY;
+-  const radius = beadSettings.radius;
+-  let beadAngles = [];
+-  droppers.forEach(dropper => {
+-    const left = parseFloat(dropper.style.left);
+-    const top = parseFloat(dropper.style.top);
+-    let angle = Math.atan2(top - centerY, left - centerX) * 180 / Math.PI;
+-    angle = (angle + 360) % 360;
+-    beadAngles.push(angle);
+-  });
+-  beadAngles.sort((a, b) => a - b);
+-  const targetIndices = [];
+-  const extraSpacings = [];
+-  staticImages.forEach(image => {
+-    if (image.enabled && image.type === 'position-based' && image.extraSpacing > 0) {
+-      const pos = image.position - 1;
+-      if (pos < beadCount) {
+-        targetIndices.push(pos % beadCount);
+-        extraSpacings.push(image.extraSpacing);
+-      }
+-    }
+-  });
+-  if (targetIndices.length === 0) return;
+-  const newAngles = redistributeGaps(beadAngles, targetIndices, extraSpacings);
+-  const sortedIndices = newAngles.map((_, idx) => idx).sort((a, b) => newAngles[a] - newAngles[b]);
+-  for (let i = 0; i < beadCount; i++) {
+-    const dropper = droppers[sortedIndices[i]];
+-    const angleRad = newAngles[sortedIndices[i]] * Math.PI / 180;
+-    const x = centerX + radius * Math.cos(angleRad);
+-    const y = centerY + radius * Math.sin(angleRad);
+-    dropper.style.left = `${x}%`;
+-    dropper.style.top = `${y}%`;
+-  }
+-}
+-
+-// ============================================
+-// MODIFIED placeStaticImages FUNCTION
+-// ============================================
+-function placeStaticImages() {
+-  const parker = document.getElementById('parker');
+-  if (!parker) return;
+-  document.querySelectorAll('#static-images-container, #static-image-left, #static-image-right').forEach(container => {
+-    if (container) container.innerHTML = '';
+-  });
+-  const centerX = beadSettings.centerX;
+-  const centerY = beadSettings.centerY;
+-  const baseRadius = beadSettings.radius;
+-  const beadAngles = getBeadAngles();
+-  staticImages.forEach((image, index) => {
+-    if (!image.enabled) return;
+-    let angleDegrees;
+-    let positionFound = false;
+-    if (image.type === 'position-based') {
+-      const beadPositions = getBeadPositions();
+-      const beadIndex = image.position - 1;
+-      const bead1 = beadPositions.find(b => b.index === beadIndex);
+-      let bead2;
+-      if (beadIndex === beadPositions.length - 1) {
+-        bead2 = beadPositions[0];
+-      } else {
+-        bead2 = beadPositions.find(b => b.index === beadIndex + 1);
+-      }
+-      if (bead1 && bead2) {
+-        const angleRad = calculateAngleBetweenBeads(bead1, bead2, centerX, centerY);
+-        angleDegrees = angleRad * 180 / Math.PI;
+-        positionFound = true;
+-      }
+-    } else if (image.type === 'dynamic-top') {
+-      angleDegrees = findClosestGapAngle(beadAngles, 90);
+-      positionFound = true;
+-    } else if (image.type === 'dynamic-bottom') {
+-      angleDegrees = findClosestGapAngle(beadAngles, 270);
+-      positionFound = true;
+-    } else if (image.containerId) {
+-      angleDegrees = image.angle;
+-      positionFound = true;
+-    }
+-    if (!positionFound) return;
+-    const angleRad = angleDegrees * Math.PI / 180;
+-    const distance = baseRadius + (image.offset || 0);
+-    const x = centerX + distance * Math.cos(angleRad);
+-    const y = centerY + distance * Math.sin(angleRad);
+-    let totalRotation = angleDegrees + 90 + (image.rotation || 0);
+-    totalRotation = ((totalRotation % 360) + 360) % 360;
+-    const imgWrapper = document.createElement('div');
+-    imgWrapper.className = 'static-bead-image';
+-    const img = document.createElement('img');
+-    img.src = image.src;
+-    img.alt = `Static Image ${index + 1}`;
+-    if (image.flip) img.style.transform = 'scaleX(-1)';
+-    imgWrapper.appendChild(img);
+-    imgWrapper.style.cssText = `
+-      position: absolute;
+-      left: ${x}%;
+-      top: ${y}%;
+-      transform: translate(-50%, -50%) rotate(${totalRotation}deg);
+-      width: ${image.width}px;
+-      height: ${image.height}px;
+-      z-index: 8;
+-      pointer-events: none;
+-    `;
+-    img.style.cssText = `width:100%; height:100%; object-fit:contain; display:block;${image.flip ? ' transform: scaleX(-1);' : ''}`;
+-    const container = image.containerId ? document.getElementById(image.containerId) : document.getElementById('static-images-container');
+-    if (container) container.appendChild(imgWrapper);
+-  });
+-}
+-
+-// ============================================
+-// KNOT BEADS AT CORD TIPS (STYLE-3)
+-// ============================================
+-function placeKnotBeads() {
+-  {% if product.handle contains 'style-3' or template.suffix == 'style-3' %}
+-  const parker = document.getElementById('parker');
+-  if (!parker) return;
+-  ['knot-bead-left', 'knot-bead-right'].forEach(id => {
+-    const el = document.getElementById(id);
+-    if (el) el.remove();
+-  });
+-  // Get current parker pixel size ΓÇö used only to convert the fixed 150px cord height to %
+-  const rect = parker.getBoundingClientRect();
+-  if (!rect.width) return;
+-  const parkerSize = Math.min(rect.width, rect.height);
+-  // Cord center: % coordinates (same formula as placeStaticImages, immune to transition timing)
+-  const cX = beadSettings.centerX;             // % from left
+-  const cY = beadSettings.centerY;             // % from top
+-  const cordDist_pct = beadSettings.radius + 20; // % (radius% + offset 20%, matches staticImages)
+-  // Cord image is 150px tall; the knot (dark ball) sits ~50px from the image centre
+-  // (not at the very edge) ΓÇö using 50px lands the dropper on the knot itself.
+-  const halfImg_pct = (50 / parkerSize) * 100;
+-  const knotBeadPlaceholder = `{% if product.metafields.bracelets.beads_placeholder_image.value %}url('{{ product.metafields.bracelets.beads_placeholder_image.value | image_url }}'){% else %}none{% endif %}`;
+-  const beads = [
+-    { id: 'knot-bead-left',  angle: 250 },
+-    { id: 'knot-bead-right', angle: 290 }
+-  ];
+-  beads.forEach(bead => {
+-    const angleRad = bead.angle * Math.PI / 180;
+-    // Cord image centre in % ΓÇö identical to placeStaticImages calculation
+-    const cordCX_pct = cX + cordDist_pct * Math.cos(angleRad);
+-    const cordCY_pct = cY + cordDist_pct * Math.sin(angleRad);
+-    // Outer tip of cord (the knot) = cord centre + halfImg in the radial direction
+-    const tipX_pct = cordCX_pct + halfImg_pct * Math.cos(angleRad);
+-    const tipY_pct = cordCY_pct + halfImg_pct * Math.sin(angleRad);
+-    const beadPx = beadSettings.size;
+-    const dot = document.createElement('div');
+-    dot.id = bead.id;
+-    dot.className = 'knot-bead-dropper';
+-    dot.dataset.placeholder = knotBeadPlaceholder;
+-    dot.style.cssText = `
+-      position: absolute;
+-      left: ${tipX_pct.toFixed(2)}%;
+-      top: ${tipY_pct.toFixed(2)}%;
+-      transform: translate(-50%, -50%);
+-      width: ${beadPx}px;
+-      height: ${beadPx}px;
+-      background-image: ${knotBeadPlaceholder};
+-      background-size: contain;
+-      background-repeat: no-repeat;
+-      background-position: center;
+-      border-radius: 50%;
+-      opacity: 0.3;
+-      z-index: 9;
+-      cursor: pointer;
+-      overflow: hidden;
+-    `;
+-    // Click to toggle selection (same as regular droppers)
+-    dot.addEventListener('click', () => {
+-      dot.classList.toggle('selected');
+-      if (dot.classList.contains('selected')) {
+-        dot.style.outline = '2.5px solid #ffd700';
+-        dot.style.outlineOffset = '3px';
+-        dot.style.boxShadow = '0 0 0 3px rgba(255,215,0,0.5), 0 0 12px 4px rgba(255,215,0,0.45)';
+-      } else {
+-        dot.style.outline = '';
+-        dot.style.outlineOffset = '';
+-        dot.style.boxShadow = '0 2px 6px rgba(0,0,0,0.5)';
+-      }
+-    });
+-    parker.appendChild(dot);
+-  });
+-  {% endif %}
+-}
+-
+-// Knot beads (style-3) are reserved for clasp only ΓÇö no bead image sync
+-function syncKnotBeadColors() {
+-  // Intentionally empty: knot beads show only placeholder or clasp image (handled by placeClaspImage)
+-}
+-
+-// ============================================
+-// POSITION LOCK IMAGE FOR STYLE-3
+-// ============================================
+-function positionLockEr() {
+-  // lockEr stays at its CSS-defined position (top:50%, left:50%)
+-  // ΓÇö do not reposition dynamically.
++p.hide { 
++  display:none;
+ }
+-
+-// ============================================
+-// CLASP FUNCTIONALITY
+-// ============================================
+-function updateClaspStockUI(card, remaining) {
+-  const stockLabel = card.querySelector(".bead-stock");
+-  if (!stockLabel) return;
+-  if (remaining > 0) {
+-    stockLabel.textContent = `In stock: ${remaining}`;
+-    card.classList.remove("is-disabled");
+-    card.removeAttribute("aria-disabled");
+-  } else {
+-    stockLabel.textContent = "Insufficient stock";
+-    card.classList.add("is-disabled");
+-    card.setAttribute("aria-disabled", "true");
++  /* Ensure cart item image is not cropped */
++  .line-item__media, 
++  .cart-item__image, 
++  .cart__image, 
++  [data-cart-item-image] {
++    object-fit: contain !important;
+   }
+-}
+-
+-function placeClaspImage() {
+-  const container = document.getElementById('clasp-image-container');
+-  if (!container) return;
+-  container.innerHTML = '';
+-  if (!selectedClasp) return;
+-  const parker = document.getElementById('parker');
+-  const rect = parker.getBoundingClientRect();
+-  if (!rect.width) return;
+-  {% if product.handle contains 'style-3' or template.suffix == 'style-3' %}
+-  // Style-3: place clasp image at both cord tip positions (matching placeKnotBeads positions)
+-  const parkerSize = Math.min(rect.width, rect.height);
+-  const centerX = rect.width / 2;
+-  const centerY = rect.height / 2;
+-  const radiusPx  = (beadSettings.radius / 100) * parkerSize;
+-  const cordDist  = radiusPx + (20 / 100) * parkerSize;
+-  const halfImg   = 50;
+-  const claspSize = beadSettings.size;
+-  [250, 290].forEach(angle => {
+-    const angleRad    = angle * Math.PI / 180;
+-    const totalRotRad = (angle + 90) * Math.PI / 180;
+-    const cordCX = centerX + cordDist * Math.cos(angleRad);
+-    const cordCY = centerY + cordDist * Math.sin(angleRad);
+-    const tipX = cordCX + halfImg * Math.sin(totalRotRad);
+-    const tipY = cordCY - halfImg * Math.cos(totalRotRad) + parkerSize * 0.05;
+-    const imgWrapper = document.createElement('div');
+-    imgWrapper.style.cssText = `
+-      position: absolute;
+-      left: ${tipX}px;
+-      top: ${tipY}px;
+-      transform: translate(-50%, -50%);
+-      width: ${claspSize}px;
+-      height: ${claspSize}px;
+       border-radius: 50%;
+       overflow: hidden;
+       z-index: 10;
+@@ -3072,14 +2170,18 @@ document.addEventListener('DOMContentLoaded', function() {
+   const form = document.querySelector('form[action="/cart/add.js"]');
+   if (!form) return;
+   const html2canvasPromise = loadHtml2Canvas();
++  
+   form.addEventListener('submit', async function(e) {
+     e.preventDefault();
+     showLoader();
+-    document.querySelector("div#instruction").style.display = "none";
+-    const submitBtn = form.querySelector('[type="submit"]');
+-    const originalBtnText = submitBtn.value;
+-    submitBtn.value = 'Processing...';
++    const instruction = document.querySelector("div#instruction");
++    if (instruction) instruction.style.display = "none";
++    
++    const submitBtn = form.querySelector('[type="submit"]') || form.querySelector('.add-cart');
++    const originalBtnText = submitBtn.value || submitBtn.textContent;
++    if (submitBtn.tagName === 'INPUT') submitBtn.value = 'Processing...'; else submitBtn.textContent = 'Processing...';
+     submitBtn.disabled = true;
++    
+     try {
+       const imageData = await captureCustomDesign();
+       const { mainProductData, beadItems, claspItem } = prepareCartData(form, imageData);
+@@ -3091,27 +2193,43 @@ document.addEventListener('DOMContentLoaded', function() {
+       console.error('Cart Submission Error:', error);
+       alert(error.message || 'Could not complete your request. Please try again.');
+     } finally {
+-      submitBtn.value = originalBtnText;
++      if (submitBtn.tagName === 'INPUT') submitBtn.value = originalBtnText; else submitBtn.textContent = originalBtnText;
+       submitBtn.disabled = false;
+     }
+   });
++
+   async function captureCustomDesign() {
+     try {
+       await html2canvasPromise;
+       const element = document.getElementById('parker');
+       if (!element) return null;
+-      let canvas = await html2canvas(element, { scale: 0.8, quality: 0.6, logging: false, useCORS: true, backgroundColor: '#ffffff' });
+-      let imageUrl = canvas.toDataURL('image/jpeg', 0.6);
+-      if (imageUrl.length > 60000) {
+-        canvas = await html2canvas(element, { scale: 0.6, quality: 0.4, logging: false, useCORS: true });
+-        imageUrl = canvas.toDataURL('image/jpeg', 0.4);
++      
++      // Capture the element with a white background and decent scale
++      const captureOptions = { 
++        scale: 1.5, 
++        quality: 0.9, 
++        logging: false, 
++        useCORS: true, 
++        backgroundColor: '#ffffff' 
++      };
++      
++      let canvas = await html2canvas(element, captureOptions);
++      let imageUrl = canvas.toDataURL('image/jpeg', 0.9);
++      
++      // Shopify property size limit handling
++      if (imageUrl.length > 75000) {
++        captureOptions.scale = 1.0;
++        canvas = await html2canvas(element, captureOptions);
++        imageUrl = canvas.toDataURL('image/jpeg', 0.8);
+       }
+-      return imageUrl.length < 60000 ? imageUrl : null;
++      
++      return imageUrl;
+     } catch (error) {
+       console.error('Design Capture Failed:', error);
+       return null;
+     }
+   }
++
+   function prepareCartData(form, imageData) {
+     const formData = new FormData(form);
+     const bundleId = 'bundle_' + Date.now();
+@@ -3138,16 +2256,24 @@ document.addEventListener('DOMContentLoaded', function() {
+           .join(', ')
+       }
+     };
+-    if (imageData) mainProductData.properties['Final Image'] = imageData;
++    
++    if (imageData) {
++      // Send both property names for maximum compatibility with theme snippets
++      mainProductData.properties['Final Image'] = imageData;
++      mainProductData.properties['Image'] = imageData; 
++    }
++    
+     const beadItems = [];
+     document.querySelectorAll('.stone-price[beads="true"]').forEach(el => {
+       const id = el.getAttribute('product-id');
+       const quantity = el.getAttribute('product-quantity') || 1;
+       if (id) beadItems.push({ id, quantity });
+     });
+-    const claspItem = selectedClasp ? { id: selectedClasp.variantId, quantity: 1 } : null;
++    
++    const claspItem = typeof selectedClasp !== 'undefined' && selectedClasp ? { id: selectedClasp.variantId, quantity: 1 } : null;
+     return { mainProductData, beadItems, claspItem };
+   }
++
+   async function processCartSubmission(mainProduct, beadItems, claspItem) {
+     const mainResponse = await fetch('/cart/add.js', {
+       method: 'POST',
+@@ -3156,6 +2282,7 @@ document.addEventListener('DOMContentLoaded', function() {
+     });
+     const mainResult = await mainResponse.json();
+     if (!mainResponse.ok) throw new Error(mainResult.description || mainResult.message || 'Could not add item to cart.');
++    
+     for (const [index, item] of beadItems.entries()) {
+       try {
+         await fetch('/cart/add.js', {
+@@ -3168,6 +2295,7 @@ document.addEventListener('DOMContentLoaded', function() {
+         console.error(`Bead ${index + 1} failed:`, error);
+       }
+     }
++    
+     if (claspItem) {
+       try {
+         await fetch('/cart/add.js', {
+@@ -3180,6 +2308,7 @@ document.addEventListener('DOMContentLoaded', function() {
+       }
+     }
+   }
++
+   function loadHtml2Canvas() {
+     if (typeof html2canvas === 'function') return Promise.resolve();
+     return new Promise((resolve, reject) => {
