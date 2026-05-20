@@ -2542,7 +2542,7 @@ function refreshCircularLayout() {
     placeBeadsInAvailableAngles(parker, beadCount, sizeCode, availableAngles);
   }
   applyExtraGaps();
-  setTimeout(() => { placeStaticImages(); placeKnotBeads(); }, 50);
+  setTimeout(() => { placeStaticImages(); placeKnotBeads(); positionLockEr(); }, 50);
 }
 
 function applyExtraGaps() {
@@ -2692,7 +2692,7 @@ function placeKnotBeads() {
     const cordCY_pct = cY + cordDist_pct * Math.sin(angleRad);
     // Outer tip of cord (the knot) = cord centre + halfImg in the radial direction
     const tipX_pct = cordCX_pct + halfImg_pct * Math.cos(angleRad);
-    const tipY_pct = cordCY_pct + halfImg_pct * Math.sin(angleRad);
+    const tipY_pct = cordCY_pct + halfImg_pct * Math.sin(angleRad) + 5;
     const beadPx = beadSettings.size;
     const dot = document.createElement('div');
     dot.id = bead.id;
@@ -2736,6 +2736,24 @@ function placeKnotBeads() {
 // Knot beads (style-3) are reserved for clasp only — no bead image sync
 function syncKnotBeadColors() {
   // Intentionally empty: knot beads show only placeholder or clasp image (handled by placeClaspImage)
+}
+
+// ============================================
+// POSITION LOCK IMAGE FOR STYLE-3
+// ============================================
+function positionLockEr() {
+  {% if product.handle contains 'style-3' or template.suffix == 'style-3' %}
+  const lockEr = document.getElementById('lockEr');
+  if (!lockEr) return;
+  // For style-3: the clasp sits at the TOP of the bracelet ring (angle 270° = straight up).
+  // In % coordinates: top = centerY - radius, left = centerX.
+  // This covers the white gap between the two cord images (at 250° and 290°).
+  const claspTop  = beadSettings.centerY - beadSettings.radius; // e.g. 50 - 41 = 9%
+  const claspLeft = beadSettings.centerX;                        // 50%
+  lockEr.style.top       = `${claspTop}%`;
+  lockEr.style.left      = `${claspLeft}%`;
+  lockEr.style.transform = 'translate(-50%, -50%)';
+  {% endif %}
 }
 
 // ============================================
@@ -3325,6 +3343,7 @@ document.addEventListener('DOMContentLoaded', function() {
       updateHangingStrings(selectedStringColor);
       placeStaticImages();
       placeKnotBeads();
+      positionLockEr();
     });
   });
   // Lock style selection
@@ -3383,7 +3402,7 @@ document.addEventListener('DOMContentLoaded', function() {
       refreshCircularLayout();
       // Re-place knot beads after the 400ms CSS transition finishes so the final
       // parker pixel size is used for the cord-tip % calculation
-      setTimeout(placeKnotBeads, 450);
+      setTimeout(() => { placeKnotBeads(); positionLockEr(); }, 450);
       const sizeSidebar = document.getElementById('bracelet-size-sidebar');
       if (sizeSidebar) sizeSidebar.classList.remove('active');
       if (typeof activeSidebar !== 'undefined' && activeSidebar === sizeSidebar) activeSidebar = null;
@@ -3404,7 +3423,7 @@ document.addEventListener('DOMContentLoaded', function() {
       parkerEl.classList.add(`size-${selectedSizeClass}`);
       updateLockImageBasedOnSize();
       refreshCircularLayout();
-      setTimeout(placeKnotBeads, 450);
+      setTimeout(() => { placeKnotBeads(); positionLockEr(); }, 450);
     } else {
       const sizeCards = document.querySelectorAll('.size-card');
       if (sizeCards.length > 0) {
@@ -3422,7 +3441,7 @@ document.addEventListener('DOMContentLoaded', function() {
         parkerEl.classList.add(`size-${selectedSizeClass}`);
         updateLockImageBasedOnSize();
         refreshCircularLayout();
-        setTimeout(placeKnotBeads, 450);
+        setTimeout(() => { placeKnotBeads(); positionLockEr(); }, 450);
       }
     }
   }, 100);
@@ -3491,6 +3510,7 @@ document.addEventListener('DOMContentLoaded', function() {
         placeStaticImages();
         placeClaspImage();
         placeKnotBeads();
+        positionLockEr();
       }
     }, 250);
   });
@@ -3499,7 +3519,7 @@ document.addEventListener('DOMContentLoaded', function() {
   if (initialStringCard) {
     updateHangingStrings(initialStringCard.querySelector('h6').textContent.trim());
   }
-  setTimeout(() => { placeStaticImages(); placeKnotBeads(); }, 200);
+  setTimeout(() => { placeStaticImages(); placeKnotBeads(); positionLockEr(); }, 200);
   // Show loader/hide loader
   window.showLoader = function() { document.getElementById('loadingOverlay').style.display = 'flex'; };
   window.hideLoader = function() { document.getElementById('loadingOverlay').style.display = 'none'; };
