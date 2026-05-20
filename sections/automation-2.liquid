@@ -2639,10 +2639,8 @@ function placeStaticImages() {
     let y = centerY + distance * Math.sin(angleRad);
 
     // Apply size-specific adjustment for XXL strings to move them lower ("niche")
-    const activeSizeCard = document.querySelector('.size-card.active');
-    const sizeCode = activeSizeCard ? activeSizeCard.querySelector('h5').textContent.trim().toLowerCase() : '';
-    if (sizeCode === 'xxl' && (image.containerId === 'static-image-left' || image.containerId === 'static-image-right')) {
-        y += 4.5; // Shift down by 4.5% of container height
+    if (image.containerId === 'static-image-left' || image.containerId === 'static-image-right') {
+        y += 4.5; // Shift down by 4.5% of container height for all sizes to hide white gaps
     }
 
     let totalRotation = angleDegrees + 90 + (image.rotation || 0);
@@ -2703,12 +2701,9 @@ function placeKnotBeads() {
     const cordCX_pct = cX + cordDist_pct * Math.cos(angleRad);
     let cordCY_pct = cY + cordDist_pct * Math.sin(angleRad);
 
-    // Apply same size-specific adjustment for XXL strings
-    const activeSizeCard = document.querySelector('.size-card.active');
-    const sizeCode = activeSizeCard ? activeSizeCard.querySelector('h5').textContent.trim().toLowerCase() : '';
-    if (sizeCode === 'xxl') {
-        cordCY_pct += 4.5; // Match the 4.5% shift from placeStaticImages
-    }
+    // Apply vertical shift for all sizes to hide white gaps
+    cordCY_pct += 4.5; 
+    
 
     // Outer tip of cord (the knot) = cord centre + halfImg in the radial direction
     const tipX_pct = cordCX_pct + halfImg_pct * Math.cos(angleRad);
@@ -2806,12 +2801,9 @@ function placeClaspImage() {
     const cordCX = centerX + cordDist * Math.cos(angleRad);
     let cordCY = centerY + cordDist * Math.sin(angleRad);
 
-    // Apply same size-specific adjustment for XXL strings
-    const activeSizeCard = document.querySelector('.size-card.active');
-    const sizeCode = activeSizeCard ? activeSizeCard.querySelector('h5').textContent.trim().toLowerCase() : '';
-    if (sizeCode === 'xxl') {
-        cordCY += (parkerSize * 0.045); // Match the 4.5% shift
-    }
+    // Apply vertical shift for all sizes to hide white gaps
+    cordCY += (parkerSize * 0.045);
+    
 
     const tipX = cordCX + halfImg * Math.sin(totalRotRad);
     const tipY = cordCY - halfImg * Math.cos(totalRotRad) + parkerSize * 0.05;
