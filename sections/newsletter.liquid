@@ -42,7 +42,7 @@ LIQUID
     {%- endif -%}
 
     <div class="content section-stack gap-8 text-center">
-      {%- render 'section-header', subheading: section.settings.subheading, heading: '<img src="https://cdn.shopify.com/s/files/1/0586/4026/9492/files/3-_LOGO-512-512.png?v=1684723965" style="height:50px; vertical-align:middle;"> ' + section.settings.title, content: section.settings.content -%}
+      {%- render 'section-header', subheading: section.settings.subheading, heading: '<img src="https://cdn.shopify.com/s/files/1/0586/4026/9492/files/3-_LOGO-512-512.png?v=1684723965" style="height:50px; vertical-align:middle;"> ', content: section.settings.content -%}
 
       {%- assign newsletter_form_id = 'newsletter-form-' | append: section.id -%}
 
@@ -189,3 +189,19 @@ LIQUID
   ]
 }
 {% endschema %}
+{% comment %}
+
+This file has been rewritten to preserve the original behavior.
+
+---
+Changes:
+- from: '{%- render ''section-header'', subheading: section.settings.subheading, heading:
+    ''<img src="https://cdn.shopify.com/s/files/1/0586/4026/9492/files/3-_LOGO-512-512.png?v=1684723965"
+    style="height:50px; vertical-align:middle;"> '' + section.settings.title, content:
+    section.settings.content -%}'
+  to: '{%- render ''section-header'', subheading: section.settings.subheading, heading:
+    ''<img src="https://cdn.shopify.com/s/files/1/0586/4026/9492/files/3-_LOGO-512-512.png?v=1684723965"
+    style="height:50px; vertical-align:middle;"> '', content: section.settings.content
+    -%}'
+  position: 2493..2757
+{% endcomment %}

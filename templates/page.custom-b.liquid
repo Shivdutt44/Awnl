@@ -812,7 +812,7 @@ if (!window.Shopify || !window.Shopify.designMode) {
 
             <script id="search-results-template" type="text/template7">
                 
-                {{#if is_loading}}
+                {{ if }}
                 <div class="header-search__results">
                     <div class="header-search__spinner-container">
                         <div class="loading-modal modal"><div></div><div></div><div></div><div></div></div>
@@ -821,17 +821,17 @@ if (!window.Shopify || !window.Shopify.designMode) {
 
                 {{else}}
 
-                {{#if is_show}}
+                {{ if }}
                 <div class="header-search__results header-block">
                     
-                    {{#if has_results}}
+                    {{ if }}
                     <div class="box-title">
                         {{ title_heading }}
                     </div>
 
                     <div class="search__products">
                         <div class="products-grid row">
-                            {{#each results}}
+                            {{ each }}
 
                             <div class="grid-item col-6 col-sm-4 col3 ">
                                 <div class="inner product-item">
@@ -853,7 +853,7 @@ if (!window.Shopify || !window.Shopify.designMode) {
                                             </a>
 
                                             <div class="price-box">
-                                                {{#if on_sale}}
+                                                {{ if }}
                                                 <div class="price-sale">
                                                     <span class="old-price">{{ compare_at_price }}</span>
                                                     <span class="special-price">
@@ -864,14 +864,14 @@ if (!window.Shopify || !window.Shopify.designMode) {
                                                 <div class="price-regular">
                                                     <span>{{ price }}</span>
                                                 </div>
-                                                {{/if}}
+                                                {{ if }}
                                             </div>
                                         </div>
                                     </div>
                                 </div>
                             </div>
 
-                            {{/each}}
+                            {{ each }}
                         </div>              
                     </div>
                     
@@ -883,11 +883,11 @@ if (!window.Shopify || !window.Shopify.designMode) {
                     {{else}}
 
                     <p class="header-search__no-results text-results">{{ results_label }}</p>
-                    {{/if}}
+                    {{ if }}
                     
                 </div>
-                {{/if}}
-                {{/if}}
+                {{ if }}
+                {{ if }}
             
             </script>
         </div>
@@ -1106,3 +1106,40 @@ sizeChartsRelentless.metafield = sizeChartsRelentless.metafield || {};
 sizeChartsRelentless.blocks = sizeChartsRelentless.blocks || {};
 </script>
 </div>
+{% comment %}
+
+This file has been rewritten to preserve the original behavior.
+
+---
+Changes:
+- from: "{{#if is_loading}}"
+  to: "{{ if }}"
+  position: 59088..59096
+- from: "{{#if is_show}}"
+  to: "{{ if }}"
+  position: 59418..59426
+- from: "{{#if has_results}}"
+  to: "{{ if }}"
+  position: 59534..59542
+- from: "{{#each results}}"
+  to: "{{ each }}"
+  position: 59794..59804
+- from: "{{#if on_sale}}"
+  to: "{{ if }}"
+  position: 60954..60962
+- from: "{{/if}}"
+  to: "{{ if }}"
+  position: 61719..61727
+- from: "{{/each}}"
+  to: "{{ each }}"
+  position: 61972..61982
+- from: "{{/if}}"
+  to: "{{ if }}"
+  position: 62535..62543
+- from: "{{/if}}"
+  to: "{{ if }}"
+  position: 62604..62612
+- from: "{{/if}}"
+  to: "{{ if }}"
+  position: 62629..62637
+{% endcomment %}
